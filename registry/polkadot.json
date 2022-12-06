@@ -1,0 +1,830 @@
+[
+    {
+        "chainID": 0,
+        "paraID": 0,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 10,
+        "symbol": "DOT",
+        "xcmInteriorKey": "here~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "here": null
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            []
+        ],
+        "xcContractAddress": {
+            "2004": "0xffffffff1fcacbd218edc0eba20fc2308c778080",
+            "2006": "0xffffffffffffffffffffffffffffffffffffffff"
+        },
+        "xcCurrencyID": {
+            "2004": "42259045809535163221576417993425387648",
+            "2006": "340282366920938463463374607431768211455",
+            "2012": "101",
+            "2035": "0"
+        }
+    },
+    {
+        "chainID": 1000,
+        "paraID": 1000,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 18,
+        "symbol": "WETH",
+        "xcmInteriorKey": "[{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":100}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 100
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000003e8",
+                "0x040000000000000032",
+                "0x0564"
+            ]
+        ],
+        "xcContractAddress": {},
+        "xcCurrencyID": {}
+    },
+    {
+        "chainID": 1000,
+        "paraID": 1000,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 6,
+        "symbol": "USDT",
+        "xcmInteriorKey": "[{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 1984
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000003e8",
+                "0x040000000000000032",
+                "0x0507c0"
+            ]
+        ],
+        "xcContractAddress": {
+            "2004": "0xffffffffea09fb06d082fd1275cd48b191cbcd1d",
+            "2006": "0xffffffff000000000000000000000001000007c0"
+        },
+        "xcCurrencyID": {
+            "1000": "1984",
+            "2004": "311091173110107856861649819128533077277",
+            "2006": "4294969280",
+            "2012": "102"
+        }
+    },
+    {
+        "chainID": 1000,
+        "paraID": 1000,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 8,
+        "symbol": "WBTC",
+        "xcmInteriorKey": "[{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":21}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 21
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000003e8",
+                "0x040000000000000032",
+                "0x0515"
+            ]
+        ],
+        "xcContractAddress": {},
+        "xcCurrencyID": {}
+    },
+    {
+        "chainID": 2000,
+        "paraID": 2000,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 12,
+        "symbol": "ACA",
+        "xcmInteriorKey": "[{\"parachain\":2000},{\"generalKey\":\"0x0000\"}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0000"
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007d0",
+                "0x060000"
+            ]
+        ],
+        "xcContractAddress": {
+            "2004": "0xffffffffa922fef94566104a6e5a35a4fcddaa9f",
+            "2006": "0xffffffff00000000000000010000000000000000"
+        },
+        "xcCurrencyID": {
+            "2004": "224821240862170613278369189818311486111",
+            "2006": "18446744073709551616",
+            "2012": "108",
+            "2035": "5"
+        }
+    },
+    {
+        "chainID": 2000,
+        "paraID": 2000,
+        "relayChain": "polkadot",
+        "isUSD": 1,
+        "decimals": 12,
+        "symbol": "AUSD",
+        "xcmInteriorKey": "[{\"parachain\":2000},{\"generalKey\":\"0x0001\"}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0001"
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007d0",
+                "0x060001"
+            ]
+        ],
+        "xcContractAddress": {
+            "2004": "0xffffffff52c56a9257bb97f4b2b6f7b2d624ecda",
+            "2006": "0xffffffff00000000000000010000000000000001"
+        },
+        "xcCurrencyID": {
+            "2004": "110021739665376159354538090254163045594",
+            "2006": "18446744073709551617",
+            "2012": "104",
+            "2035": "3"
+        }
+    },
+    {
+        "chainID": 2000,
+        "paraID": 2000,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 10,
+        "symbol": "LDOT",
+        "xcmInteriorKey": "[{\"parachain\":2000},{\"generalKey\":\"0x0003\"}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0003"
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007d0",
+                "0x060003"
+            ]
+        ],
+        "xcContractAddress": {
+            "2006": "0xffffffff00000000000000010000000000000002"
+        },
+        "xcCurrencyID": {
+            "2006": "18446744073709551618",
+            "2012": "110",
+            "2035": "4"
+        }
+    },
+    {
+        "chainID": 2000,
+        "paraID": 2000,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 10,
+        "symbol": "lcDOT",
+        "xcmInteriorKey": "[{\"parachain\":2000},{\"generalKey\":\"0x040d000000\"}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x040d000000"
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007d0",
+                "0x06040d000000"
+            ]
+        ],
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2012": "106"
+        }
+    },
+    {
+        "chainID": 2002,
+        "paraID": 2002,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 18,
+        "symbol": "CLV",
+        "xcmInteriorKey": "{\"parachain\":2002}~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2002
+                    }
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007d2"
+            ]
+        ],
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2012": "130"
+        }
+    },
+    {
+        "chainID": 2004,
+        "paraID": 2004,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 18,
+        "symbol": "GLMR",
+        "xcmInteriorKey": "[{\"parachain\":2004},{\"palletInstance\":10}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2004
+                        },
+                        {
+                            "palletInstance": 10
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007d4",
+                "0x04000000000000000a"
+            ]
+        ],
+        "xcContractAddress": {
+            "2004": "0x0000000000000000000000000000000000000802",
+            "2006": "0xffffffff00000000000000010000000000000003"
+        },
+        "xcCurrencyID": {
+            "2006": "18446744073709551619",
+            "2012": "114",
+            "2035": "1"
+        }
+    },
+    {
+        "chainID": 2006,
+        "paraID": 2006,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 18,
+        "symbol": "ASTR",
+        "xcmInteriorKey": "{\"parachain\":2006}~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2006
+                    }
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007d6"
+            ]
+        ],
+        "xcContractAddress": {
+            "2004": "0xffffffffa893ad19e540e172c10d78d4d479b5cf"
+        },
+        "xcCurrencyID": {
+            "2004": "224077081838586484055667086558292981199",
+            "2012": "112"
+        }
+    },
+    {
+        "chainID": 2012,
+        "paraID": 2012,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 12,
+        "symbol": "PARA",
+        "xcmInteriorKey": "[{\"parachain\":2012},{\"generalKey\":\"0x50415241\"}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2012
+                        },
+                        {
+                            "generalKey": "0x50415241"
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007dc",
+                "0x0650415241"
+            ]
+        ],
+        "xcContractAddress": {
+            "2004": "0xffffffff18898cb5fe1e88e668152b4f4052a947"
+        },
+        "xcCurrencyID": {
+            "2004": "32615670524745285411807346420584982855",
+            "2012": "1",
+            "2035": "2"
+        }
+    },
+    {
+        "chainID": 2030,
+        "paraID": 2030,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 12,
+        "symbol": "BNC",
+        "xcmInteriorKey": "[{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0001"
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007ee",
+                "0x060001"
+            ]
+        ],
+        "xcContractAddress": {},
+        "xcCurrencyID": {}
+    },
+    {
+        "chainID": 2030,
+        "paraID": 2030,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 12,
+        "symbol": "BNC",
+        "xcmInteriorKey": "[{\"parachain\":2030},{\"generalKey\":\"0x0104\"}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0104"
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007ee",
+                "0x060104"
+            ]
+        ],
+        "xcContractAddress": {
+            "2006": "0xffffffff00000000000000010000000000000007"
+        },
+        "xcCurrencyID": {
+            "2006": "18446744073709551623"
+        }
+    },
+    {
+        "chainID": 2032,
+        "paraID": 2032,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 8,
+        "symbol": "IBTC",
+        "xcmInteriorKey": "[{\"parachain\":2032},{\"generalKey\":\"0x0001\"}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2032
+                        },
+                        {
+                            "generalKey": "0x0001"
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007f0",
+                "0x060001"
+            ]
+        ],
+        "xcContractAddress": {
+            "2004": "0xffffffff5ac1f9a51a93f5c527385edf7fe98a52",
+            "2006": "0xffffffff00000000000000010000000000000004"
+        },
+        "xcCurrencyID": {
+            "2004": "120637696315203257380661607956669368914",
+            "2006": "18446744073709551620",
+            "2012": "122"
+        }
+    },
+    {
+        "chainID": 2032,
+        "paraID": 2032,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 10,
+        "symbol": "INTR",
+        "xcmInteriorKey": "[{\"parachain\":2032},{\"generalKey\":\"0x0002\"}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2032
+                        },
+                        {
+                            "generalKey": "0x0002"
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007f0",
+                "0x060002"
+            ]
+        ],
+        "xcContractAddress": {
+            "2004": "0xffffffff4c1cbcd97597339702436d4f18a375ab",
+            "2006": "0xffffffff00000000000000010000000000000005"
+        },
+        "xcCurrencyID": {
+            "2004": "101170542313601871197860408087030232491",
+            "2006": "18446744073709551621",
+            "2012": "120"
+        }
+    },
+    {
+        "chainID": 2035,
+        "paraID": 2035,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 12,
+        "symbol": "PHA",
+        "xcmInteriorKey": "{\"parachain\":2035}~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2035
+                    }
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007f3"
+            ]
+        ],
+        "xcContractAddress": {
+            "2004": "0xffffffff63d24ecc8eb8a7b5d0803e900f7b6ced"
+        },
+        "xcCurrencyID": {
+            "2004": "132685552157663328694213725410064821485",
+            "2012": "115"
+        }
+    },
+    {
+        "chainID": 2046,
+        "paraID": 2046,
+        "relayChain": "polkadot",
+        "isUSD": 0,
+        "decimals": 18,
+        "symbol": "RING",
+        "xcmInteriorKey": "[{\"parachain\":2046},{\"palletInstance\":5}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2046
+                        },
+                        {
+                            "palletInstance": 5
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007fe",
+                "0x040000000000000005"
+            ]
+        ],
+        "xcContractAddress": {},
+        "xcCurrencyID": {}
+    },
+    {
+        "chainID": 2011,
+        "paraID": 2011,
+        "relayChain": "polkadot",
+        "isUSD": false,
+        "decimals": null,
+        "symbol": null,
+        "xcmInteriorKey": "[{\"parachain\":2011},{\"generalKey\":\"0x657164\"}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2011
+                        },
+                        {
+                            "generalKey": "0x657164"
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007db",
+                "0x06657164"
+            ]
+        ],
+        "xcContractAddress": {},
+        "xcCurrencyID": {}
+    },
+    {
+        "chainID": 2011,
+        "paraID": 2011,
+        "relayChain": "polkadot",
+        "isUSD": false,
+        "decimals": null,
+        "symbol": null,
+        "xcmInteriorKey": "{\"parachain\":2011}~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2011
+                    }
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007db"
+            ]
+        ],
+        "xcContractAddress": {},
+        "xcCurrencyID": {}
+    },
+    {
+        "chainID": 2012,
+        "paraID": 2012,
+        "relayChain": "polkadot",
+        "isUSD": false,
+        "decimals": null,
+        "symbol": null,
+        "xcmInteriorKey": "[{\"parachain\":2012},{\"generalKey\":\"0x73444f54\"}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2012
+                        },
+                        {
+                            "generalKey": "0x73444f54"
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007dc",
+                "0x0673444f54"
+            ]
+        ],
+        "xcContractAddress": {},
+        "xcCurrencyID": {}
+    },
+    {
+        "chainID": 2030,
+        "paraID": 2030,
+        "relayChain": "polkadot",
+        "isUSD": false,
+        "decimals": null,
+        "symbol": null,
+        "xcmInteriorKey": "[{\"parachain\":2030},{\"generalKey\":\"0x0403\"}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0403"
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007ee",
+                "0x060403"
+            ]
+        ],
+        "xcContractAddress": {
+            "2006": "0xffffffff0000000000000001000000000000000a"
+        },
+        "xcCurrencyID": {
+            "2006": "18446744073709551626"
+        }
+    },
+    {
+        "chainID": 2030,
+        "paraID": 2030,
+        "relayChain": "polkadot",
+        "isUSD": false,
+        "decimals": null,
+        "symbol": null,
+        "xcmInteriorKey": "[{\"parachain\":2030},{\"generalKey\":\"0x0900\"}]~polkadot",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0900"
+                        }
+                    ]
+                }
+            }
+        },
+        "evmMultiLocation": [
+            1,
+            [
+                "0x00000007ee",
+                "0x060900"
+            ]
+        ],
+        "xcContractAddress": {
+            "2006": "0xffffffff00000000000000010000000000000008"
+        },
+        "xcCurrencyID": {
+            "2006": "18446744073709551624"
+        }
+    }
+]
