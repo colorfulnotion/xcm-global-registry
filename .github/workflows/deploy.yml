@@ -1,0 +1,51 @@
+name: CICD for polka
+
+on:
+  push:
+    branches:
+        - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [17.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use node js
+        uses: actions/setup-node@v2
+        with:
+         node-version: ${{ matrix.node-version }}
+      - name: npm install and build
+        run: |
+          npm install
+          #          npm run build
+
+        env: 
+          CI: true   
+
+
+  depoly:
+    needs: [build]
+    runs-on: ubuntu-latest
+
+    steps:
+     - name: SSH deploy
+       uses: appleboy/ssh-action@master
+       with:
+         host: ${{ secrets.HOST }}
+         username: ${{ secrets.USER }}
+         key: ${{ secrets.PRIVATE_KEY }}
+         port: 22
+         script: |
+           curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+           source ~/.bashrc
+           nvm install v17.0.1
+           cd /CICD/xcm-global-registry
+           git pull origin main
+           npm install
+           cd registry/
+           node polkadot.json
+           node kusama.json
