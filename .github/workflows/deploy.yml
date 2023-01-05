@@ -37,7 +37,7 @@ jobs:
        with:
          host: ${{ secrets.HOST }}
          username:  ${{ secrets.USER }}
-         key:  ${{ secrets.KEY }}
+         key:  ${{ secrets.SSH_PRIVATE_KEY }}
          port:  ${{ secrets.PORT }}
          script: |
            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
