@@ -40,9 +40,12 @@ jobs:
          key:  ${{ secrets.KEY }}
          port:  ${{ secrets.PORT }}
          script: |
-           cd /CICD/
+           curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+           source ~/.bashrc
+           nvm install v17.0.1
+           cd /CICD/xcm-global-registry
            git pull origin main
            npm install
-           cd xcm-global-registry/registry/
+           cd registry/
            node polkadot.json
            node kusama.json
