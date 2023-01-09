@@ -1,0 +1,1460 @@
+[
+  {
+    "chainID": 2,
+    "paraID": 0,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 12,
+    "symbol": "KSM",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},\"here\"]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "here": null
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      []
+    ],
+    "xcContractAddress": {
+      "2007": "0xffffffffffffffffffffffffffffffffffffffff",
+      "2023": "0xffffffff1fcacbd218edc0eba20fc2308c778080"
+    },
+    "xcCurrencyID": {
+      "2004": "0",
+      "2007": "340282366920938463463374607431768211455",
+      "2023": "42259045809535163221576417993425387648",
+      "2048": "4294967295",
+      "2084": "12",
+      "2085": "100",
+      "2090": "1",
+      "2107": "100",
+      "2110": "4",
+      "2118": "2"
+    }
+  },
+  {
+    "chainID": 21000,
+    "paraID": 1000,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 8,
+    "symbol": "ARIS",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":16}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x3": [
+            {
+              "parachain": 1000
+            },
+            {
+              "palletInstance": 50
+            },
+            {
+              "generalIndex": 16
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000003e8",
+        "0x040000000000000032",
+        "0x0510"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {
+      "1000": "16"
+    }
+  },
+  {
+    "chainID": 21000,
+    "paraID": 1000,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 6,
+    "symbol": "USDT",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x3": [
+            {
+              "parachain": 1000
+            },
+            {
+              "palletInstance": 50
+            },
+            {
+              "generalIndex": 1984
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000003e8",
+        "0x040000000000000032",
+        "0x0507c0"
+      ]
+    ],
+    "xcContractAddress": {
+      "2007": "0xffffffff000000000000000000000001000007c0",
+      "2023": "0xffffffffea09fb06d082fd1275cd48b191cbcd1d"
+    },
+    "xcCurrencyID": {
+      "1000": "1984",
+      "2007": "4294969280",
+      "2023": "311091173110107856861649819128533077277",
+      "2085": "102"
+    }
+  },
+  {
+    "chainID": 21000,
+    "paraID": 1000,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 10,
+    "symbol": "RMRK",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":8}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x3": [
+            {
+              "parachain": 1000
+            },
+            {
+              "palletInstance": 50
+            },
+            {
+              "generalIndex": 8
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000003e8",
+        "0x040000000000000032",
+        "0x0508"
+      ]
+    ],
+    "xcContractAddress": {
+      "2023": "0xffffffff893264794d9d57e1e0e21e0042af5a0a"
+    },
+    "xcCurrencyID": {
+      "1000": "8",
+      "2023": "182365888117048807484804376330534607370"
+    }
+  },
+  {
+    "chainID": 22000,
+    "paraID": 2000,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 12,
+    "symbol": "KAR",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0080\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2000
+            },
+            {
+              "generalKey": "0x0080"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007d0",
+        "0x060080"
+      ]
+    ],
+    "xcContractAddress": {
+      "2007": "0xffffffff00000000000000010000000000000002",
+      "2023": "0xffffffff08220ad2e6e157f26ed8bd22a336a0a5"
+    },
+    "xcCurrencyID": {
+      "2004": "1",
+      "2007": "18446744073709551618",
+      "2012": "10810581592933651521121702237638664357",
+      "2023": "10810581592933651521121702237638664357",
+      "2084": "8",
+      "2085": "107",
+      "2107": "102",
+      "2118": "128"
+    }
+  },
+  {
+    "chainID": 22000,
+    "paraID": 2000,
+    "relayChain": "kusama",
+    "isUSD": 1,
+    "decimals": 12,
+    "symbol": "KUSD",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0081\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2000
+            },
+            {
+              "generalKey": "0x0081"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007d0",
+        "0x060081"
+      ]
+    ],
+    "xcContractAddress": {
+      "2007": "0xffffffff00000000000000010000000000000000",
+      "2023": "0xffffffffa1b026a00fbaa67c86d5d1d5bf8d8228"
+    },
+    "xcCurrencyID": {
+      "2004": "4",
+      "2007": "18446744073709551616",
+      "2012": "214920334981412447805621250067209749032",
+      "2023": "214920334981412447805621250067209749032",
+      "2084": "9",
+      "2085": "103",
+      "2090": "2",
+      "2107": "10",
+      "2118": "129"
+    }
+  },
+  {
+    "chainID": 22000,
+    "paraID": 2000,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 12,
+    "symbol": "LKSM",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0083\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2000
+            },
+            {
+              "generalKey": "0x0083"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007d0",
+        "0x060083"
+      ]
+    ],
+    "xcContractAddress": {
+      "2007": "0xffffffff00000000000000010000000000000003"
+    },
+    "xcCurrencyID": {
+      "2007": "18446744073709551619",
+      "2084": "10",
+      "2085": "109",
+      "2118": "131"
+    }
+  },
+  {
+    "chainID": 22001,
+    "paraID": 2001,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 12,
+    "symbol": "BNC",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2001
+            },
+            {
+              "generalKey": "0x0001"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007d1",
+        "0x060001"
+      ]
+    ],
+    "xcContractAddress": {
+      "2023": "0xfffffffff075423be54811ecb478e911f22dde7d"
+    },
+    "xcCurrencyID": {
+      "2004": "2",
+      "2023": "319623561105283008236062145480775032445"
+    }
+  },
+  {
+    "chainID": 22001,
+    "paraID": 2001,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 18,
+    "symbol": "ZLK",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0207\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2001
+            },
+            {
+              "generalKey": "0x0207"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007d1",
+        "0x060207"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {
+      "2004": "3"
+    }
+  },
+  {
+    "chainID": 22001,
+    "paraID": 2001,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 12,
+    "symbol": "VSKSM",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0404\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2001
+            },
+            {
+              "generalKey": "0x0404"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007d1",
+        "0x060404"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {}
+  },
+  {
+    "chainID": 22004,
+    "paraID": 2004,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 12,
+    "symbol": "PHA",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2004}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x1": {
+            "parachain": 2004
+          }
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007d4"
+      ]
+    ],
+    "xcContractAddress": {
+      "2007": "0xffffffff00000000000000010000000000000007",
+      "2023": "0xffffffff8e6b63d9e447b6d4c45bda8af9dc9603"
+    },
+    "xcCurrencyID": {
+      "2007": "18446744073709551623",
+      "2023": "189307976387032586987344677431204943363",
+      "2084": "13",
+      "2085": "115"
+    }
+  },
+  {
+    "chainID": 22007,
+    "paraID": 2007,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 18,
+    "symbol": "SDN",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2007}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x1": {
+            "parachain": 2007
+          }
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007d7"
+      ]
+    ],
+    "xcContractAddress": {
+      "2023": "0xffffffff0ca324c842330521525e7de111f38972"
+    },
+    "xcCurrencyID": {
+      "2023": "16797826370226091782818345603793389938",
+      "2085": "111"
+    }
+  },
+  {
+    "chainID": 22012,
+    "paraID": 2012,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 12,
+    "symbol": "CSM",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2012}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x1": {
+            "parachain": 2012
+          }
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007dc"
+      ]
+    ],
+    "xcContractAddress": {
+      "2023": "0xffffffff519811215e05efa24830eebe9c43acd7"
+    },
+    "xcCurrencyID": {
+      "2023": "108457044225666871745333730479173774551"
+    }
+  },
+  {
+    "chainID": 22015,
+    "paraID": 2015,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 12,
+    "symbol": "TEER",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2015},{\"generalKey\":\"0x54454552\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2015
+            },
+            {
+              "generalKey": "0x54454552"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007df",
+        "0x0654454552"
+      ]
+    ],
+    "xcContractAddress": {
+      "2023": "0xffffffff4f0cd46769550e5938f6bee2f5d4ef1e"
+    },
+    "xcCurrencyID": {
+      "2023": "105075627293246237499203909093923548958"
+    }
+  },
+  {
+    "chainID": 22023,
+    "paraID": 2023,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 18,
+    "symbol": "MOVR",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2023},{\"palletInstance\":10}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2023
+            },
+            {
+              "palletInstance": 10
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007e7",
+        "0x04000000000000000a"
+      ]
+    ],
+    "xcContractAddress": {
+      "2007": "0xffffffff00000000000000010000000000000004",
+      "2023": "0x0000000000000000000000000000000000000802"
+    },
+    "xcCurrencyID": {
+      "2004": "6",
+      "2007": "18446744073709551620",
+      "2085": "113"
+    }
+  },
+  {
+    "chainID": 22048,
+    "paraID": 2048,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 9,
+    "symbol": "XRT",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2048}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x1": {
+            "parachain": 2048
+          }
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x0000000800"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {}
+  },
+  {
+    "chainID": 22084,
+    "paraID": 2084,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 12,
+    "symbol": "KMA",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2084}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x1": {
+            "parachain": 2084
+          }
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x0000000824"
+      ]
+    ],
+    "xcContractAddress": {
+      "2023": "0xffffffffa083189f870640b141ae1e882c2b5bad"
+    },
+    "xcCurrencyID": {
+      "2004": "8",
+      "2023": "213357169630950964874127107356898319277"
+    }
+  },
+  {
+    "chainID": 22085,
+    "paraID": 2085,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 12,
+    "symbol": "HKO",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2085},{\"generalKey\":\"0x484b4f\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2085
+            },
+            {
+              "generalKey": "0x484b4f"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x0000000825",
+        "0x06484b4f"
+      ]
+    ],
+    "xcContractAddress": {
+      "2023": "0xffffffff394054bcda1902b6a6436840435655a3"
+    },
+    "xcCurrencyID": {
+      "2004": "7",
+      "2023": "76100021443485661246318545281171740067"
+    }
+  },
+  {
+    "chainID": 22088,
+    "paraID": 2088,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 18,
+    "symbol": "AIR",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2088},{\"generalKey\":\"0x0001\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2088
+            },
+            {
+              "generalKey": "0x0001"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x0000000828",
+        "0x060001"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {}
+  },
+  {
+    "chainID": 22090,
+    "paraID": 2090,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 12,
+    "symbol": "BSX",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2090},{\"generalIndex\":0}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2090
+            },
+            {
+              "generalIndex": 0
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x000000082a",
+        "0x0500"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {
+      "2004": "9"
+    }
+  },
+  {
+    "chainID": 22092,
+    "paraID": 2092,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 8,
+    "symbol": "KBTC",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2092},{\"generalKey\":\"0x000b\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2092
+            },
+            {
+              "generalKey": "0x000b"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x000000082c",
+        "0x06000b"
+      ]
+    ],
+    "xcContractAddress": {
+      "2007": "0xffffffff00000000000000010000000000000005",
+      "2023": "0xfffffffff6e528ad57184579beee00c5d5e646f0"
+    },
+    "xcCurrencyID": {
+      "2007": "18446744073709551621",
+      "2023": "328179947973504579459046439826496046832",
+      "2085": "121"
+    }
+  },
+  {
+    "chainID": 22092,
+    "paraID": 2092,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 12,
+    "symbol": "KINT",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2092},{\"generalKey\":\"0x000c\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2092
+            },
+            {
+              "generalKey": "0x000c"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x000000082c",
+        "0x06000c"
+      ]
+    ],
+    "xcContractAddress": {
+      "2007": "0xffffffff00000000000000010000000000000006",
+      "2023": "0xffffffff83f4f317d3cbf6ec6250aec3697b3ff2"
+    },
+    "xcCurrencyID": {
+      "2007": "18446744073709551622",
+      "2023": "175400718394635817552109270754364440562",
+      "2085": "119"
+    }
+  },
+  {
+    "chainID": 22095,
+    "paraID": 2095,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 18,
+    "symbol": "QTZ",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2095}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x1": {
+            "parachain": 2095
+          }
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x000000082f"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {}
+  },
+  {
+    "chainID": 22096,
+    "paraID": 2096,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 18,
+    "symbol": "NEER",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2096},{\"generalKey\":\"0x000000000000000000\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2096
+            },
+            {
+              "generalKey": "0x000000000000000000"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x0000000830",
+        "0x06000000000000000000"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {}
+  },
+  {
+    "chainID": 22102,
+    "paraID": 2102,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 18,
+    "symbol": "PCHU",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2102},{\"generalKey\":\"0x50434855\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2102
+            },
+            {
+              "generalKey": "0x50434855"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x0000000836",
+        "0x0650434855"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {}
+  },
+  {
+    "chainID": 22105,
+    "paraID": 2105,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 18,
+    "symbol": "CRAB",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2105},{\"palletInstance\":5}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2105
+            },
+            {
+              "palletInstance": 5
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x0000000839",
+        "0x040000000000000005"
+      ]
+    ],
+    "xcContractAddress": {
+      "2023": "0xffffffff8283448b3cb519ca4732f2dddc6a6165"
+    },
+    "xcCurrencyID": {
+      "2004": "11",
+      "2023": "173481220575862801646329923366065693029"
+    }
+  },
+  {
+    "chainID": 22106,
+    "paraID": 2106,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 12,
+    "symbol": "LIT",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2106},{\"palletInstance\":10}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2106
+            },
+            {
+              "palletInstance": 10
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x000000083a",
+        "0x04000000000000000a"
+      ]
+    ],
+    "xcContractAddress": {
+      "2023": "0xffffffff31103d490325bb0a8e40ef62e2f614c0"
+    },
+    "xcCurrencyID": {
+      "2023": "65216491554813189869575508812319036608"
+    }
+  },
+  {
+    "chainID": 22107,
+    "paraID": 2107,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 14,
+    "symbol": "KICO",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2107},{\"generalKey\":\"0x4b49434f\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2107
+            },
+            {
+              "generalKey": "0x4b49434f"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x000000083b",
+        "0x064b49434f"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {
+      "2118": "10"
+    }
+  },
+  {
+    "chainID": 22114,
+    "paraID": 2114,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 10,
+    "symbol": "TUR",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2114}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x1": {
+            "parachain": 2114
+          }
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x0000000842"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {
+      "2004": "10",
+      "2085": "125",
+      "2110": "7"
+    }
+  },
+  {
+    "chainID": 22118,
+    "paraID": 2118,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 12,
+    "symbol": "LT",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2118},{\"generalKey\":\"0x4c54\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2118
+            },
+            {
+              "generalKey": "0x4c54"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x0000000846",
+        "0x064c54"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {
+      "2107": "12"
+    }
+  },
+  {
+    "chainID": 22125,
+    "paraID": 2125,
+    "relayChain": "kusama",
+    "isUSD": 0,
+    "decimals": 12,
+    "symbol": "TNKR",
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2125},{\"generalIndex\":0}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2125
+            },
+            {
+              "generalIndex": 0
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x000000084d",
+        "0x0500"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {
+      "2090": "6"
+    }
+  },
+  {
+    "chainID": 22000,
+    "paraID": 2000,
+    "relayChain": "kusama",
+    "isUSD": false,
+    "decimals": null,
+    "symbol": null,
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2000
+            },
+            {
+              "generalKey": "0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007d0",
+        "0x06021f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {}
+  },
+  {
+    "chainID": 22000,
+    "paraID": 2000,
+    "relayChain": "kusama",
+    "isUSD": false,
+    "decimals": null,
+    "symbol": null,
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a70\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2000
+            },
+            {
+              "generalKey": "0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a70"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007d0",
+        "0x06024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a70"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {}
+  },
+  {
+    "chainID": 22000,
+    "paraID": 2000,
+    "relayChain": "kusama",
+    "isUSD": false,
+    "decimals": null,
+    "symbol": null,
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0254e183e533fd3c6e72debb2d1cab451d017faf72\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2000
+            },
+            {
+              "generalKey": "0x0254e183e533fd3c6e72debb2d1cab451d017faf72"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007d0",
+        "0x060254e183e533fd3c6e72debb2d1cab451d017faf72"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {}
+  },
+  {
+    "chainID": 22000,
+    "paraID": 2000,
+    "relayChain": "kusama",
+    "isUSD": false,
+    "decimals": null,
+    "symbol": null,
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0266291c7d88d2ed9a708147bae4e0814a76705e2f\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2000
+            },
+            {
+              "generalKey": "0x0266291c7d88d2ed9a708147bae4e0814a76705e2f"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007d0",
+        "0x060266291c7d88d2ed9a708147bae4e0814a76705e2f"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {}
+  },
+  {
+    "chainID": 22000,
+    "paraID": 2000,
+    "relayChain": "kusama",
+    "isUSD": false,
+    "decimals": null,
+    "symbol": null,
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02ece0cc38021e734bef1d5da071b027ac2f71181f\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2000
+            },
+            {
+              "generalKey": "0x02ece0cc38021e734bef1d5da071b027ac2f71181f"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007d0",
+        "0x0602ece0cc38021e734bef1d5da071b027ac2f71181f"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {}
+  },
+  {
+    "chainID": 22001,
+    "paraID": 2001,
+    "relayChain": "kusama",
+    "isUSD": false,
+    "decimals": null,
+    "symbol": null,
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0104\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2001
+            },
+            {
+              "generalKey": "0x0104"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007d1",
+        "0x060104"
+      ]
+    ],
+    "xcContractAddress": {
+      "2007": "0xffffffff0000000000000001000000000000000c"
+    },
+    "xcCurrencyID": {
+      "2007": "18446744073709551628"
+    }
+  },
+  {
+    "chainID": 22016,
+    "paraID": 2016,
+    "relayChain": "kusama",
+    "isUSD": false,
+    "decimals": null,
+    "symbol": null,
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2016}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x1": {
+            "parachain": 2016
+          }
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007e0"
+      ]
+    ],
+    "xcContractAddress": {
+      "2007": "0xffffffff0000000000000001000000000000000a"
+    },
+    "xcCurrencyID": {
+      "2007": "18446744073709551626"
+    }
+  },
+  {
+    "chainID": 22024,
+    "paraID": 2024,
+    "relayChain": "kusama",
+    "isUSD": false,
+    "decimals": null,
+    "symbol": null,
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2024},{\"generalKey\":\"0x657164\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2024
+            },
+            {
+              "generalKey": "0x657164"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007e8",
+        "0x06657164"
+      ]
+    ],
+    "xcContractAddress": {
+      "2007": "0xffffffff0000000000000001000000000000000f"
+    },
+    "xcCurrencyID": {
+      "2007": "18446744073709551631"
+    }
+  },
+  {
+    "chainID": 22024,
+    "paraID": 2024,
+    "relayChain": "kusama",
+    "isUSD": false,
+    "decimals": null,
+    "symbol": null,
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2024}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x1": {
+            "parachain": 2024
+          }
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x00000007e8"
+      ]
+    ],
+    "xcContractAddress": {
+      "2007": "0xffffffff0000000000000001000000000000000e"
+    },
+    "xcCurrencyID": {
+      "2007": "18446744073709551630"
+    }
+  },
+  {
+    "chainID": 22085,
+    "paraID": 2085,
+    "relayChain": "kusama",
+    "isUSD": false,
+    "decimals": null,
+    "symbol": null,
+    "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2085},{\"generalKey\":\"0x734b534d\"}]",
+    "xcmV1MultiLocation": {
+      "v1": {
+        "parents": 1,
+        "interior": {
+          "x2": [
+            {
+              "parachain": 2085
+            },
+            {
+              "generalKey": "0x734b534d"
+            }
+          ]
+        }
+      }
+    },
+    "evmMultiLocation": [
+      1,
+      [
+        "0x0000000825",
+        "0x06734b534d"
+      ]
+    ],
+    "xcContractAddress": {},
+    "xcCurrencyID": {}
+  }
+]

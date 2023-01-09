@@ -35,11 +35,11 @@ So how does polkadot unify the same asset across different parachains?  Partial 
 Thus parachain engineers, dapp developers and analytics providers are currently faced with a "Tower of Babel" to align each parachain's asset registry and XCM asset registry and associated weights/fees - multichain dapp developers (including multi-chain indexers like [Polkaholic.io](https://polkaholic.io)) are required to independently develop this mapping just to initiate seemly simple XCM tasks like transferring “KSM” or "USDT" from one chain to another or indexing XCM transfers.   In our opinion, it’s counter-productive to require multichain app developers to independently piece this together, and futhermore, read fee constants in N parachains to support their multi-chain dapps and be faced with so much friction.  
 
 In our work in Polkaholic.io XCM Indexing, we have developed a useful API that attempts to address the Tower of Babel:
-* [snapshot here for all Polkadot XCM Assets](https://api.polkaholic.io/xcm/multilocation/polkadot)
-* [snapshot here for all Kusama XCM Assets](https://api.polkaholic.io/xcm/multilocation/kusama)
+* [snapshot here for all Polkadot XCM Assets](https://raw.githubusercontent.com/colorfulnotion/main/xcmConcept/gar/registry/polkadot.json)
+* [snapshot here for all Kusama XCM Assets](https://raw.githubusercontent.com/colorfulnotion/main/xcmConcept/gar/registry/kusama.json)
 This can be found in the following UI:
 * [Polkaholic.io Multilocation Tool](https://polkaholic.io/multilocation)
-We believe this already covers as much as 90% of the cross-chain transferable assets and over 97% of the XCM Transfer USD volume in Polkadot + Kusama at present.  However, we believe that the recipe for this dataset construction should be managed not by one "trusted" team but with 
+We believe this already covers as much as 90% of the cross-chain transferable assets and over 97% of the XCM Transfer USD volume in Polkadot + Kusama at present.  However, we believe that the recipe for this dataset construction should be managed not by one "trusted" team but with
 
 * (A) _Open Source Data Generation_ (automated Github Action) - Given Input: Polkadot + Kusama WSEndpoints from polkadot.js apps, augmented with a polkadot.toml file containing details of how to process the (xc)asset registry of each parachain
     * Step 1: Crawl assetRegistry + xcAssetRegistry and store it in JSON file
@@ -52,8 +52,8 @@ The data generation process is technically simple, but we cant stress enough the
 
 Key Use cases for the XCM Global Asset Registry (GAR):
 * Powering XCM Transfer dapps with `Multilocation`
-* Parachain Bridge Monitoring 
-* Statemine DEX Aggregator 
+* Parachain Bridge Monitoring
+* Statemine DEX Aggregator
 * Cross-chain Price Quote Mechanism that have `MultiLocation`
 
 Together, we can do much better, and be more reactive to any incompleteness and inaccuracy, because simply put, 90-97% is not good enough to   Here the expectation is to collaborate for the common good/maximal impact:
@@ -102,8 +102,8 @@ Funding may be from Treasury (of Polkadot/Kusama or parachains, Web3F, or other 
 
 ## Contributors:
 
-**To indicate your interest, please submit a PR:** 
-1. Adding your name/email and any ideas you have on this project 
+**To indicate your interest, please submit a PR:**
+1. Adding your name/email and any ideas you have on this project
 2. if you wish to contribute significantly more than 25 hours/quarter (or significantly less)
 3. if you do or do not wish to be paid, mark "non-paid volunteer".  All paid volunteers will be compensated at 100 USDT.
 
