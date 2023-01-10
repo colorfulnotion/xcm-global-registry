@@ -1,0 +1,45 @@
+#!/usr/bin/env node
+// Usage: ./garcmd [relayChain]
+
+var GlobalAssetRegistry = require("./globalassetregistry");
+const endpoints = require("./endpoints");
+
+async function main() {
+    var targetedRelaychain = 'polkadot'
+    process.argv.forEach(function(val, index, array) {
+        if (index == 2 && val.length > 0) {
+            targetedRelaychain = val;
+        }
+    });
+
+    var gar = new GlobalAssetRegistry();
+    await gar.initPublicEndpointsMap(targetedRelaychain)
+    let supportedChains = gar.getSupportedChains()
+    let supportedChainKeys = Object.keys(supportedChains)
+    let supportedChainHelper = gar.printChainhelper()
+    console.log(`[${targetedRelaychain}] SupportedChains`, supportedChainHelper)
+
+    let failedChainkeys = await gar.batchApiInit(supportedChainKeys)
+    console.log(`failedChainkeys`, failedChainkeys)
+    for (chainkey of supportedChainKeys){
+        let api = await gar.getAPI(chainkey)
+        if (api){
+            await gar.crawlRegistry(api, chainkey)
+        }
+    }
+    let chainAssetMap = gar.getchainAssetMap()
+    let xcmAssetMap = gar.getXcmAssetMap()
+    console.log(`AssetMap`, chainAssetMap)
+    console.log(`XcmAssetMap`, xcmAssetMap)
+    await gar.updateXcmConcept()
+}
+
+main()
+    .then(() => {
+        console.log("finishing...")
+        process.exit(0);
+    })
+    .catch((e) => {
+        console.error('ERROR', e);
+        process.exit(1);
+    });
