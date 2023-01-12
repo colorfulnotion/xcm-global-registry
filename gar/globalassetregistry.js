@@ -471,9 +471,13 @@ module.exports = class GlobalAssetRegistry {
     }
 
     setXcmAsset(xcmInteriorKey, xcmAssetInfo) {
+        let paraIDSoure = xcmAssetInfo.source[0]
         if (this.xcmAssetMap[xcmInteriorKey] == undefined) {
             console.log(`add new xcm Asset ${xcmInteriorKey}`)
             this.xcmAssetMap[xcmInteriorKey] = xcmAssetInfo
+        } else {
+            this.xcmAssetMap[xcmInteriorKey].confidence += 1
+            this.xcmAssetMap[xcmInteriorKey].source.push(paraIDSoure)
         }
     }
 
