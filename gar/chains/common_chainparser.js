@@ -123,7 +123,7 @@ module.exports = class ChainParser {
                 let assetInfo = {
                     name: name,
                     symbol: assetMetadata.symbol,
-                    decimals: assetMetadata.decimals,
+                    decimals: garTool.dechexToInt(assetMetadata.decimals),
                     assetType: garTool.assetTypeToken,
                     currencyID: assetID
                 };
@@ -230,7 +230,7 @@ module.exports = class ChainParser {
                 let assetInfo = {
                     name: name,
                     symbol: symbol,
-                    decimals: assetMetadata.decimals,
+                    decimals: garTool.dechexToInt(assetMetadata.decimals),
                     assetType: garTool.assetTypeToken
                 };
                 assetList[assetChainkey] = assetInfo
@@ -281,6 +281,7 @@ module.exports = class ChainParser {
                 //console.log(`cached AssetInfo found`, cachedAssetInfo)
                 let symbol = (cachedAssetInfo.symbol) ? cachedAssetInfo.symbol : ''
                 let nativeSymbol = symbol
+                let decimals = cachedAssetInfo.decimals
 
                 let xcmAssetType = val.toJSON()
                 // type V0/V1/...
@@ -325,13 +326,17 @@ module.exports = class ChainParser {
                     }
                     //over-write statemine asset with assetID
                     if (paraID == 1000) {
-                        nativeSymbol = `${generalIndex}`
+                        //nativeSymbol = `${generalIndex}`
+                        nativeSymbol = symbol
                     }
                 }
-                if (symbol == 'AUSD') {
-                    nativeSymbol = 'KUSD'
-                } else if (symbol == 'aUSD') {
-                    nativeSymbol = 'AUSD'
+                // standardizing Acala's stablecoin to AUSD on polkadot; karura's stablecoin to KUSD on kusama
+                if (symbol.toUpperCase == 'AUSD' || symbol.toUpperCase == 'KUSD') {
+                    if (relayChain == 'polkadot') {
+                        nativeSymbol = 'AUSD'
+                    } else if (relayChain == 'kusama') {
+                        nativeSymbol = 'KUSD'
+                    }
                 }
                 let nativeParsedAsset = {
                     Token: nativeSymbol
@@ -352,25 +357,26 @@ module.exports = class ChainParser {
                     interiorVStr = '"here"'
                 }
                 let xcmInteriorKey = garTool.makeXcmInteriorKey(interiorVStr, network)
+                let xcmStandardized = JSON.parse(xcmInteriorKey)
                 let xcmV1MultiLocation = garTool.convertXcmInteriorKeyToXcmV1MultiLocation(xcmInteriorKey)
-                let xcmV1MultilocationByte = (xcmV1MultiLocation) ? garTool.convertXcmV1MultiLocationToByte(xcmV1MultiLocation, api) : null
+                let xcmV1MultiLocationByte = (xcmV1MultiLocation) ? garTool.convertXcmV1MultiLocationToByte(xcmV1MultiLocation, api) : null
                 let nativeAssetChainkey = garTool.makeAssetChain(nativeAsset, chainkey);
 
                 let xcmAssetInfo = {
-                    //chainID: chainID,
-                    xcmConcept: interiorVStr, //interior
-                    asset: nativeAsset,
+                    //interior: interiorVStr, //interior
                     paraID: paraID,
                     relayChain: relayChain,
-                    parents: parents,
-                    interiorType: interiorK,
-                    xcmInteriorKey: xcmInteriorKey,
-                    xcmV1multilocationByte: xcmV1MultilocationByte,
+                    symbol: nativeSymbol,
+                    decimals: decimals,
+                    interiorType: interiork,
+                    //xcmInteriorKey: xcmInteriorKey,
+                    xcmStandardized: xcmStandardized,
+                    xcmV1MultiLocationByte: xcmV1MultiLocationByte,
                     xcmV1MultiLocation: xcmV1MultiLocation,
-                    nativeAssetChainkey: nativeAssetChainkey,
                     xcContractAddress: {},
                     xcCurrencyID: {},
-                    source: chainkey,
+                    confidence: 1,
+                    source: [paraIDSoure],
                 }
                 //For cached found case: let's write xcmInteriorKey back to the cachedAssetInfo
                 cachedAssetInfo.xcmInteriorKey = xcmInteriorKey
@@ -430,6 +436,7 @@ module.exports = class ChainParser {
                     console.log(`cached AssetInfo found`, cachedAssetInfo)
                     let symbol = (cachedAssetInfo.symbol) ? cachedAssetInfo.symbol.replace('xc', '') : ''
                     let nativeSymbol = symbol
+                    let decimals = cachedAssetInfo.decimals
                     let xcmAssetJSON = val.toJSON()
                     let xcmAsset = (xcmAssetJSON.xcm != undefined) ? xcmAssetJSON.xcm : xcmAssetJSON
                     let parents = xcmAsset.parents
@@ -438,6 +445,35 @@ module.exports = class ChainParser {
                     let interiorK = Object.keys(interior)[0]
                     let interiork = garTool.firstCharLowerCase(interiorK)
                     let interiorV = interior[interiorK]
+
+                    // need to expand if xc registry use parents=0
+                    if (parents == 1) {
+                        // easy case: no expansion
+                    } else if (parents == 0) {
+                        // standardizing to relaychain's perspective
+                        let new_interiorV = []
+                        let expandedParachainPiece = {
+                            parachain: paraIDSoure
+                        }
+                        let new_interiork = interiork
+                        new_interiorV.push(expandedParachainPiece)
+                        if (interiork == 'here') {
+                            new_interiork = 'x1'
+                        } else if (interiork == 'x1') {
+                            new_interiorV.push(interiorV)
+                            new_interiork = 'x2'
+                        } else if (Array.isArray(interiorV)) {
+                            let xTypeInt = garTool.dechexToInt(z.substr(1)) + 1
+                            new_interiork = `x${xTypeInt}`
+                            //x2/x3...
+                            for (const v of interiorV) {
+                                new_interiorV.push(v)
+                            }
+                        }
+                        interiorV = new_interiorV
+                        interiork = new_interiork
+                    }
+
                     let interiorVStr = JSON.stringify(interiorV)
                     let network = {}
                     if (relayChain == 'kusama' || relayChain == 'polkadot') {
@@ -453,8 +489,9 @@ module.exports = class ChainParser {
                         interiorVStr = '"here"'
                     }
                     let xcmInteriorKey = garTool.makeXcmInteriorKey(interiorVStr, network)
+                    let xcmStandardized = JSON.parse(xcmInteriorKey)
                     let xcmV1MultiLocation = garTool.convertXcmInteriorKeyToXcmV1MultiLocation(xcmInteriorKey)
-                    let xcmV1MultilocationByte = (xcmV1MultiLocation) ? garTool.convertXcmV1MultiLocationToByte(xcmV1MultiLocation, api) : null
+                    let xcmV1MultiLocationByte = (xcmV1MultiLocation) ? garTool.convertXcmV1MultiLocationToByte(xcmV1MultiLocation, api) : null
                     if ((typeof interiorK == "string") && (interiorK.toLowerCase() == 'here')) {
                         //relaychain case
                         //chainID = relayChainID
@@ -473,15 +510,18 @@ module.exports = class ChainParser {
                         }
                         //over-write statemine asset with assetID
                         if (paraID == 1000) {
-                            nativeSymbol = `${generalIndex}`
+                            //nativeSymbol = `${generalIndex}`
+                            nativeSymbol = symbol
                         }
                     }
 
-                    // standarizing ausd -> to kusd on kusama;
-                    if (symbol == 'AUSD') {
-                        nativeSymbol = 'KUSD'
-                    } else if (symbol == 'aUSD') {
-                        nativeSymbol = 'AUSD'
+                    // standardizing Acala's stablecoin to AUSD on polkadot; karura's stablecoin to KUSD on kusama
+                    if (symbol.toUpperCase == 'AUSD' || symbol.toUpperCase == 'KUSD') {
+                        if (relayChain == 'polkadot') {
+                            nativeSymbol = 'AUSD'
+                        } else if (relayChain == 'kusama') {
+                            nativeSymbol = 'KUSD'
+                        }
                     }
                     let nativeParsedAsset = {
                         Token: nativeSymbol
@@ -494,20 +534,20 @@ module.exports = class ChainParser {
                     let nativeAssetChainkey = garTool.makeAssetChain(nativeAsset, nativechainKey);
 
                     let xcmAssetInfo = {
-                        //chainID: chainID,
-                        xcmConcept: interiorVStr, //interior
-                        asset: nativeAsset,
+                        //interior: interiorVStr, //interior
                         paraID: paraID,
                         relayChain: relayChain,
-                        parents: parents,
-                        interiorType: interiorK,
-                        xcmInteriorKey: xcmInteriorKey,
-                        xcmV1multilocationByte: xcmV1MultilocationByte,
+                        symbol: nativeSymbol,
+                        decimals: decimals,
+                        interiorType: interiork,
+                        //xcmInteriorKey: xcmInteriorKey,
+                        xcmStandardized: xcmStandardized,
+                        xcmV1MultiLocationByte: xcmV1MultiLocationByte,
                         xcmV1MultiLocation: xcmV1MultiLocation,
-                        nativeAssetChainkey: nativeAssetChainkey,
                         xcContractAddress: {},
                         xcCurrencyID: {},
-                        source: chainkey,
+                        confidence: 1,
+                        source: [paraIDSoure],
                     }
 
                     //For cached found case: let's write xcmInteriorKey back to the cachedAssetInfo
@@ -575,7 +615,7 @@ module.exports = class ChainParser {
                 //console.log(`cached AssetInfo found`, cachedAssetInfo)
                 let symbol = (cachedAssetInfo.symbol) ? cachedAssetInfo.symbol : ''
                 let nativeSymbol = symbol
-
+                let decimals = cachedAssetInfo.decimals
                 let xcmAsset = val.toJSON()
                 let parents = xcmAsset.parents
                 let interior = xcmAsset.interior
@@ -591,6 +631,33 @@ module.exports = class ChainParser {
                 //hack: lower first char
                 let interiorV = JSON.parse(interiorVStr0)
 
+                // need to expand if xc registry use parents=0
+                if (parents == 1) {
+                    // easy case: no expansion
+                } else if (parents == 0) {
+                    // standardizing to relaychain's perspective
+                    let new_interiorV = []
+                    let expandedParachainPiece = {
+                        parachain: paraIDSoure
+                    }
+                    let new_interiork = interiork
+                    new_interiorV.push(expandedParachainPiece)
+                    if (interiork == 'here') {
+                        new_interiork = 'x1'
+                    } else if (interiork == 'x1') {
+                        new_interiorV.push(interiorV)
+                        new_interiork = 'x2'
+                    } else if (Array.isArray(interiorV)) {
+                        let xTypeInt = garTool.dechexToInt(z.substr(1)) + 1
+                        new_interiork = `x${xTypeInt}`
+                        //x2/x3...
+                        for (const v of interiorV) {
+                            new_interiorV.push(v)
+                        }
+                    }
+                    interiorV = new_interiorV
+                    interiork = new_interiork
+                }
                 if (interiork == 'here') {
                     //relaychain case
                     //chainID = relayChainID
@@ -616,13 +683,17 @@ module.exports = class ChainParser {
                     }
                     //over-write statemine asset with assetID
                     if (paraID == 1000) {
-                        nativeSymbol = `${generalIndex}`
+                        //nativeSymbol = `${generalIndex}`
+                        nativeSymbol = symbol
                     }
                 }
-                if (symbol == 'AUSD') {
-                    nativeSymbol = 'KUSD'
-                } else if (symbol == 'aUSD') {
-                    nativeSymbol = 'AUSD'
+                // standardizing Acala's stablecoin to AUSD on polkadot; karura's stablecoin to KUSD on kusama
+                if (symbol.toUpperCase == 'AUSD' || symbol.toUpperCase == 'KUSD') {
+                    if (relayChain == 'polkadot') {
+                        nativeSymbol = 'AUSD'
+                    } else if (relayChain == 'kusama') {
+                        nativeSymbol = 'KUSD'
+                    }
                 }
                 let nativeParsedAsset = {
                     Token: nativeSymbol
@@ -644,27 +715,28 @@ module.exports = class ChainParser {
                     interiorVStr = '"here"'
                 }
                 let xcmInteriorKey = garTool.makeXcmInteriorKey(interiorVStr, network)
+                let xcmStandardized = JSON.parse(xcmInteriorKey)
                 let xcmV1MultiLocation = garTool.convertXcmInteriorKeyToXcmV1MultiLocation(xcmInteriorKey)
-                let xcmV1MultilocationByte = (xcmV1MultiLocation) ? garTool.convertXcmV1MultiLocationToByte(xcmV1MultiLocation, api) : null
+                let xcmV1MultiLocationByte = (xcmV1MultiLocation) ? garTool.convertXcmV1MultiLocationToByte(xcmV1MultiLocation, api) : null
 
                 //console.log(`${chainID} '${interiorVStr}' ${nativeAsset} [${paraID}] | [${symbol}] [${interiorK}]`)
                 //if (this.debugLevel >= garTool.debugInfo) console.log(`addXcmAssetInfo [${asset}]`, assetInfo)
-                let nativeAssetChainkey = garTool.makeAssetChain(nativeAsset, chainID);
+                let nativeAssetChainkey = garTool.makeAssetChain(nativeAsset, chainkey);
                 let xcmAssetInfo = {
-                    //chainID: chainID,
-                    xcmConcept: interiorVStr, //interior
-                    asset: nativeAsset,
+                    //interior: interiorVStr, //interior
                     paraID: paraID,
                     relayChain: relayChain,
-                    parents: parents,
-                    interiorType: interiorK,
-                    xcmInteriorKey: xcmInteriorKey,
-                    xcmV1multilocationByte: xcmV1MultilocationByte,
+                    symbol: nativeSymbol,
+                    decimals: decimals,
+                    interiorType: interiork,
+                    //xcmInteriorKey: xcmInteriorKey,
+                    xcmStandardized: xcmStandardized,
+                    xcmV1MultiLocationByte: xcmV1MultiLocationByte,
                     xcmV1MultiLocation: xcmV1MultiLocation,
-                    nativeAssetChainkey: nativeAssetChainkey,
                     xcContractAddress: {},
                     xcCurrencyID: {},
-                    source: chainkey,
+                    confidence: 1,
+                    source: [paraIDSoure],
                 }
 
                 //For cached found case: let's write xcmInteriorKey back to the cachedAssetInfo
@@ -672,11 +744,6 @@ module.exports = class ChainParser {
                 xcAssetList[xcmInteriorKey] = xcmAssetInfo
                 assetIDList[xcmInteriorKey] = assetID
                 updatedAssetList[assetChainkey] = cachedAssetInfo
-
-                //this.manager.setChainAsset(assetChainkey, cachedAssetInfo, true)
-                //console.log(`xcmAssetInfo ${xcmInteriorKey}`, xcmAssetInfo)
-                //this.manager.setXcmAsset(xcmInteriorKey, xcmAssetInfo)
-                //this.manager.addXcmAssetLocalCurrencyID(xcmInteriorKey, paraIDSoure, assetID)
 
             } else {
                 console.log(`[${chainkey}] AssetInfo unknown -- skip`, assetChainkey)
@@ -1077,7 +1144,7 @@ module.exports = class ChainParser {
                         //if (this.debugLevel >= paraTool.debugInfo) console.log(`processV1ConcreteFungible targetedAsset parents:0, here`, targetSymbol)
                     } else if (v1_id_concrete_parents != undefined && v1_id_concrete_parents == 1) {
                         //ump
-                        targetXcmInteriorKey = this.getRelayChainXcmInteriorKey()
+                        targetXcmInteriorKey = this.getRelayChainXcmInteriorKey(relayChain)
                         //targetedAsset = indexer.getRelayChainAsset()
                         //rawTargetedAsset = indexer.getRelayChainAsset()
                         //if (this.debugLevel >= paraTool.debugInfo) console.log(`processV1ConcreteFungible targetedAsset parents:1, here`, targetSymbol)
@@ -1089,6 +1156,7 @@ module.exports = class ChainParser {
                     let xType = Object.keys(v1_id_concrete_interior)[0]
                     let v1_id_concrete_interiorVal = v1_id_concrete_interior[xType]
                     if (v1_id_concrete_parents == 1) {
+
                         // easy case: no expansion
                     } else {
                         // expand the key
