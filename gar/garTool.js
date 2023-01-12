@@ -34,6 +34,13 @@ const {
     stringToHex
 } = require("@polkadot/util");
 
+function dechexToInt(number) {
+    if (number && typeof number == "string" && (number.length > 2) && number.substring(0, 2) == "0x") {
+        return parseInt(number);
+    }
+    return parseInt(number)
+}
+
 function dechexAssetID(number) {
     if ((number.length > 2) && number.substring(0, 2) == "0x") {
         let n = hexToBn(number)
@@ -118,7 +125,7 @@ function convert_xcmInteriorKey_to_xcmV1MultiLocation(xcmInteriorKey = 'polkadot
         let assetUnparsed = (pieces.length > 1) ? pieces[1] : undefined;
         */
         let pieces = JSON.parse(xcmInteriorKey)
-        console.log(`xcmInteriorKey=${xcmInteriorKey}`, pieces)
+        //console.log(`xcmInteriorKey=${xcmInteriorKey}`, pieces)
         let network = pieces.shift()
         let assetUnparsed = {}
         if (pieces.length == 1) {
@@ -470,19 +477,24 @@ module.exports = {
         return stringToHex(x)
     },
 
-    makeAssetChain: function(asset, k = 'relaychain-paraID') {
-        //return (asset + assetChainSeparator + k);
-        return (asset + assetChainSeparator + k);
+    dechexToInt: function(number) {
+        return dechexToInt(number);
+    },
+    dechexAssetID: function(number) {
+        return dechexAssetID(number);
     },
 
-    /*
+    makeAssetChain: function(asset, chainkey = 'relaychain-paraID') {
+        return (asset + assetChainSeparator + chainkey);
+    },
+
     parseAssetChain: function(assetChainkey) {
         let pieces = assetChain.split(assetChainSeparator);
         let assetUnparsed = pieces[0];
-        let chainID = (pieces.length > 1) ? parseInt(pieces[1], 10) : undefined;
-        return [assetUnparsed, chainID];
+        let chainkey = (pieces.length > 1) ? pieces[1] : undefined;
+        return [assetUnparsed, chainkey];
     },
-    */
+
     /*
     makeXcmInteriorKeyV1: function(interior, relayChain = 'kusama') {
         return makeXcmInteriorKeyV1(interior, relayChain)
@@ -516,6 +528,9 @@ module.exports = {
     },
     cleanedAssetID: function(assetID) {
         return toNumWithoutComma(assetID);
+    },
+    toNumWithComma: function(tx) {
+        return toNumWithComma(tx)
     },
     firstCharLowerCase: function(inp) {
         if (inp.toUpperCase() == inp) { // if the whole thing is uppercase, then return all lowercase

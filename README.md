@@ -35,8 +35,8 @@ So how does polkadot unify the same asset across different parachains?  Partial 
 Thus parachain engineers, dapp developers and analytics providers are currently faced with a "Tower of Babel" to align each parachain's asset registry and XCM asset registry and associated weights/fees - multichain dapp developers (including multi-chain indexers like [Polkaholic.io](https://polkaholic.io)) are required to independently develop this mapping just to initiate seemly simple XCM tasks like transferring “KSM” or "USDT" from one chain to another or indexing XCM transfers.   In our opinion, it’s counter-productive to require multichain app developers to independently piece this together, and futhermore, read fee constants in N parachains to support their multi-chain dapps and be faced with so much friction.  
 
 In our work in Polkaholic.io XCM Indexing, we have developed a useful API that attempts to address the Tower of Babel:
-* [snapshot here for all Polkadot XCM Assets](https://raw.githubusercontent.com/colorfulnotion/main/xcmConcept/gar/registry/polkadot.json)
-* [snapshot here for all Kusama XCM Assets](https://raw.githubusercontent.com/colorfulnotion/main/xcmConcept/gar/registry/kusama.json)
+* [snapshot here for all Polkadot XCM Assets](https://api.polkaholic.io/xcm/multilocation/polkadot)
+* [snapshot here for all Kusama XCM Assets](https://api.polkaholic.io/xcm/multilocation/kusama)
 This can be found in the following UI:
 * [Polkaholic.io Multilocation Tool](https://polkaholic.io/multilocation)
 We believe this already covers as much as 90% of the cross-chain transferable assets and over 97% of the XCM Transfer USD volume in Polkadot + Kusama at present.  However, we believe that the recipe for this dataset construction should be managed not by one "trusted" team but with
