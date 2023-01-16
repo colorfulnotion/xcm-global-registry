@@ -236,7 +236,7 @@ function parseXcmInteriorKeyV2(xcmInteriorKey = '[{"network":"polkadot"},{"parac
     */
     try {
         let pieces = JSON.parse(xcmInteriorKey)
-        console.log(`xcmInteriorKey=${xcmInteriorKey}`, pieces)
+        //console.log(`xcmInteriorKey=${xcmInteriorKey}`, pieces)
         let network = pieces.shift()
         let assetUnparsed = {}
         if (pieces.length == 1) {
@@ -489,7 +489,7 @@ module.exports = {
     },
 
     parseAssetChain: function(assetChainkey) {
-        let pieces = assetChain.split(assetChainSeparator);
+        let pieces = assetChainkey.split(assetChainSeparator);
         let assetUnparsed = pieces[0];
         let chainkey = (pieces.length > 1) ? pieces[1] : undefined;
         return [assetUnparsed, chainkey];
