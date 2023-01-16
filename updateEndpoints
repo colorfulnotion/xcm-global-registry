@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+// Usage:
+
+var XCMGlobalAssetRegistry = require("./xcmgar");
+
+
+var polkadotEndpoint = {
+    chainkey: 'polkadot-0',
+    relaychain: 'polkadot',
+    endpoints: ['wss://rpc.polkadot.io']
+}
+var kusamaEndpoint = {
+    chainkey: 'kusama-0',
+    relaychain: 'kusama',
+    endpoints: ['wss://kusama-rpc.polkadot.io']
+}
+
+async function main() {
+    var xcmgar = new XCMGlobalAssetRegistry();
+    let relaychains = ['polkadot', 'kusama']
+    let validParachainList = await xcmgar.fetchParaIDs([polkadotEndpoint, kusamaEndpoint])
+    await xcmgar.updatePublicEndpoints(relaychains, validParachainList)
+}
+
+main()
+    .then(() => {
+        console.log("DONE")
+        process.exit(0);
+    })
+    .catch((e) => {
+        console.error('ERROR', e);
+        process.exit(1);
+    });

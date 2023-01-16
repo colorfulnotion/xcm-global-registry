@@ -3,7 +3,12 @@ name: CICD for polka
 on:
   push:
     branches:
-        - main
+      - main
+    paths:
+      - .github/workflows/deploy.yml
+      - publicEndpoints/*.json
+    schedule:
+      - cron: '* */1 * * *'
 
 jobs:
   build:
@@ -18,34 +23,23 @@ jobs:
         uses: actions/setup-node@v2
         with:
          node-version: ${{ matrix.node-version }}
-      - name: npm install and build
+      - name: Install dependencies
+        run: npm install
+      - name: Run polkdot
+        run: node xcmgarcli polkadot
+      - name: Run kusama
+        run: node xcmgarcli kusama
+      - name: Show diff
+        run: git diff assets
+      - name: Configure Git Client
         run: |
-          npm install
-          #          npm run build
-
-        env: 
-          CI: true   
-
-
-  depoly:
-    needs: [build]
-    runs-on: ubuntu-latest
-
-    steps:
-     - name: SSH deploy
-       uses: appleboy/ssh-action@master
-       with:
-         host: ${{ secrets.HOST }}
-         username: ${{ secrets.USER }}
-         key: ${{ secrets.PRIVATE_KEY }}
-         port: 22
-         script: |
-           curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-           source ~/.bashrc
-           nvm install v17.0.1
-           cd /CICD/xcm-global-registry
-           git pull origin main
-           npm install
-           cd registry/
-           node polkadot.json
-           node kusama.json
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+      - name: Commit changes to assets
+        run: |
+          git add assets && \
+          git commit -m "Auto check-in assets changs"
+      - name: Push changes to assets
+        run: git push origin $BRANCH_NAME
+        env:
+          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
