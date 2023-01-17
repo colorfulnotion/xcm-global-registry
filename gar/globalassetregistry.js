@@ -30,11 +30,13 @@ module.exports = class GlobalAssetRegistry {
     fnDirFn = {};
 
     publicEndpointsMap = {};
+    validParachains = [];
+    knownParathreads = [];
     chainAPIs = {} // chainkey -> {crawler, ... }
-
     assetMap = {}; // ex: {"Token":"DOT"}~polkadot-0-> { assetType: 'Token', name: 'DOT', symbol: 'DOT', decimals: 10 }
     chainAssetMap = {};
     xcmAssetMap = {};
+    chainXcmAssetMap = {};
     relaychain = false;
     debugLevel;
 
@@ -176,11 +178,51 @@ module.exports = class GlobalAssetRegistry {
         }
     }
 
-    async updatePublicEndpoints(relaychains = ['polkadot', 'kusama']) {
+    async fetchParaIDs(relayEndpoints) {
+        let validParachainList = []
+        for (const relayEndpoint of relayEndpoints) {
+            let relay_api = await this.init_api(relayEndpoint.endpoints[0])
+            let [validParachains, knownParathreads] = await this.crawl_valid_parachains(relay_api, relayEndpoint.relaychain)
+            if (validParachains.length > 0) {
+                validParachainList = validParachainList.concat(validParachains)
+            }
+        }
+        return validParachainList
+    }
+
+    async crawl_valid_parachains(api, relaychain) {
+        var allParaIds = (await api.query.paras.paraLifecycles.entries()).map(([key, _]) => key.args[0].toJSON());
+        var allParaTypes = (await api.query.paras.paraLifecycles.entries()).map(([_, v]) => v.toString()); //Parathread/Parachain
+
+        let relay_chainkey = `${relaychain}-0`
+        let parachainList = [relay_chainkey] //store relaychain itself as paraID:0
+        let paraIDs = [];
+        let parathreadList = []
+
+        for (let x = 0; x < allParaIds.length; x++) {
+            let paraID = allParaIds[x]
+            let paraType = allParaTypes[x]
+            let chainkey = `${relaychain}-${paraID}`
+            if (paraType == 'Parathread') {
+                parathreadList.push(chainkey)
+            } else if (paraType == 'Parachain') {
+                parachainList.push(chainkey)
+            }
+        }
+        this.validParachains = parachainList.sort()
+        this.knownParathreads = parathreadList.sort()
+        console.log(`[${relaychain}] validParachains`, parachainList)
+        console.log(`[${relaychain}] knownParathreads`, parathreadList)
+        return [parachainList, parathreadList]
+    }
+
+    async updatePublicEndpoints(relaychains = ['polkadot', 'kusama'], validParachainList = []) {
         for (const relayChain of relaychains) {
-            let [supportedList, unsupportedList] = endpoints.getEndpointsByRelaychain(relayChain);
+            let [supportedList, unverifiedList, rejectedList, missingList] = endpoints.getEndpointsByRelaychain(relayChain, validParachainList);
+            console.log(`Missing ${relayChain} endpoints[${Object.keys(missingList).length}]`, Object.keys(missingList))
+            console.log(`Rejected: ${relayChain} endpoints[${Object.keys(rejectedList).length}]`, Object.keys(rejectedList))
             console.log(`Supported: ${relayChain} endpoints[${Object.keys(supportedList).length}]`, Object.keys(supportedList))
-            console.log(`Unsuppored ${relayChain} endpoints[${Object.keys(unsupportedList).length}]`, Object.keys(unsupportedList))
+            console.log(`Unverified ${relayChain} endpoints[${Object.keys(unverifiedList).length}]`, Object.keys(unverifiedList))
             await this.writeJSONFn(relayChain, 'publicEndpoints', supportedList)
         }
     }
@@ -198,7 +240,7 @@ module.exports = class GlobalAssetRegistry {
             let paraIDSoure = pieces[1]
             let localAssetMap = chainAssetMap[chainkey]
             let localAssetList = []
-            let localAssetChainkeys =  Object.keys(localAssetMap)
+            let localAssetChainkeys = Object.keys(localAssetMap)
             localAssetChainkeys.sort()
             for (const localAssetChainkey of localAssetChainkeys) {
                 let localAsset = localAssetMap[localAssetChainkey]
@@ -256,7 +298,7 @@ module.exports = class GlobalAssetRegistry {
         return h
     }
 
-    async batchApiInit(supportedChainKeys = ['polkadot-0', 'polkadot-2000', 'polkadot-2004']) {
+    async batchApiInit(supportedChainKeys = ['polkadot-0']) {
         let batchApiInitStartTS = new Date().getTime();
         let initChainkeys = []
         for (const chainkey of supportedChainKeys) {
@@ -309,6 +351,9 @@ module.exports = class GlobalAssetRegistry {
     }
 
     async init_api_crawler(chainkey) {
+        let pieces = chainkey.split('-')
+        let relayChain = pieces[0]
+        let paraIDSoure = pieces[1]
         let ep = this.getEndpointsBykey(chainkey)
         if (ep) {
             let wsEndpoint = ep.WSEndpoints[0]
@@ -321,6 +366,9 @@ module.exports = class GlobalAssetRegistry {
                 paraID: ep.paraID,
             }
             this.chainAPIs[chainkey] = crawler
+            if (paraIDSoure == '0') {
+                await this.crawl_valid_parachains(api, relayChain)
+            }
             console.log(`[${chainkey}] endpoint:${wsEndpoint} ready`)
             return true
         } else {
@@ -547,7 +595,7 @@ module.exports = class GlobalAssetRegistry {
         return this.xcmAssetMap
     }
 
-    setXcmAsset(xcmInteriorKey, xcmAssetInfo) {
+    setXcmAsset(xcmInteriorKey, xcmAssetInfo, chainkey) {
         let paraIDSoure = garTool.dechexToInt(xcmAssetInfo.source[0])
         if (this.xcmAssetMap[xcmInteriorKey] == undefined) {
             console.log(`add new xcm Asset ${xcmInteriorKey}`)
@@ -556,6 +604,9 @@ module.exports = class GlobalAssetRegistry {
             this.xcmAssetMap[xcmInteriorKey].confidence += 1
             this.xcmAssetMap[xcmInteriorKey].source.push(paraIDSoure)
         }
+        if (this.chainXcmAssetMap[chainkey] == undefined) this.chainXcmAssetMap[chainkey] = {}
+        if (this.chainXcmAssetMap[chainkey][xcmInteriorKey] == undefined) this.chainXcmAssetMap[chainkey][xcmInteriorKey] = {}
+        this.chainXcmAssetMap[chainkey][xcmInteriorKey] = xcmAssetInfo
     }
 
     getXcmAsset(xcmInteriorKey) {
@@ -595,5 +646,11 @@ module.exports = class GlobalAssetRegistry {
         return this.chainAssetMap
     }
 
+    getLocalAssetMap(chainkey) {
+        if (this.chainAssetMap[chainkey] != undefined) {
+            return this.chainAssetMap[chainkey]
+        }
+        return {}
+    }
 
 }
