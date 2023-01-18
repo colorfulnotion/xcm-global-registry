@@ -1,6 +1,6 @@
 # XCM Global Asset Registry (xcGAR)
 
-## Filling the lack of XCM Global Asset Registry (GAR)
+## Filling the lack of XCM Global Asset Registry
 
 Engineers, dapp developers and analytics providers are currently faced with a "Tower of Babel" to align each parachain's asset registry and XCM asset registry and associated weights/fees. Multichain dapp developers (including multi-chain indexers like [Polkaholic.io](https://polkaholic.io)) are required to independently develop this mapping just to initiate seemly simple XCM tasks like transferring “KSM” or "USDT" from one chain to another or indexing XCM transfers.   In our opinion, it’s counter-productive to require multichain app developers to independently piece this together, and futhermore, read fee constants in N parachains to support their multi-chain dapps and be faced with so much friction.  
 
@@ -130,7 +130,7 @@ Ideally, Parachain-specific Assest Regsitry will enable teams/contributors exami
 | Glossary   |      Defined As      |  Example |  Rationale/Use case |
 |----------|:-------------:|:-------------:|:------|
 | chainkey |  `relaychain-paraID` | polkadot-1000 |chainkey is used to identify a parachain within relaychain and potentially across different relaychains in the future |
-| fullchainkey |  `relaychain-paraID|projectID` |polkadot-1000\|statemint | fullchainkey is used as filter within common parser. The projectID portion makes the codeblock more readable for human (other developers)|
+| fullchainkey |  <code>relaychain-paraID&#124;projectID;</code> |<code>polkadot-1000&#124;statemint;</code> | fullchainkey is used as filter within common parser. The projectID portion makes the codeblock more readable for human (other developers)|
 | xcmInteriorkey |  `'[{“network”:"relaychain"},{parachain:"paraID"}, {palletInstance/generalKey/generalIndex: 'val'}, ...]'` | '[{"network":"polkadot"},{"parachain":1000},{"palletInstance":50},{"generalIndex":1984}]' | xcmInteriorkey is used to identify a xcAsset within relaychain and potentially across different relaychains in the future. Specifically, (1) The network {polkadot, kusama, named:byte} has been added to the front to support global registry.  (2) X1/X2/.../X7 has been convered to flat array for easier serialization. |
 | garLocation |  `garPallet:garStorage` | assets:metadata | garLocation is where a parachain's asset registry is located on-chain `api.query[garPallet][garStorage]`.  |
 | xcGarLocation |  `xcGarPallet:xcGarStorage` | assetManager:assetIdType | xcGarLocation is where a parachain's xcm registry is located on-chain `api.query[xcGarPallet][xcGarStorage]`. |
