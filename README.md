@@ -128,9 +128,9 @@ Ideally, Parachain-specific Assest Regsitry will enable teams/contributors exami
 *Disclaimer: as initial implementer, I've made some arbitrary decisions just to get the system working. I welcome all feedbacks & criticism to make this project maximally usable. Thank you - mkchungs*
 
 | Glossary   |      Defined As      |  Example |  Rationale/Use case |
-|----------|:-------------:|:-------------:|:------|
+|----------|:-------------|:-------------|:------|
 | chainkey |  `relaychain-paraID` | polkadot-1000 |chainkey is used to identify a parachain within relaychain and potentially across different relaychains in the future |
-| fullchainkey |  <code>relaychain-paraID&#124;projectID;</code> |<code>polkadot-1000&#124;statemint;</code> | fullchainkey is used as filter within common parser. The projectID portion makes the codeblock more readable for human (other developers)|
+| fullchainkey |  <code>relaychain-paraID&#124;projectID</code> | polkadot-1000&#124;statemint | fullchainkey is used as filter within common parser. The projectID portion makes the codeblock more readable for human (other developers)|
 | xcmInteriorkey |  `'[{“network”:"relaychain"},{parachain:"paraID"}, {palletInstance/generalKey/generalIndex: 'val'}, ...]'` | '[{"network":"polkadot"},{"parachain":1000},{"palletInstance":50},{"generalIndex":1984}]' | xcmInteriorkey is used to identify a xcAsset within relaychain and potentially across different relaychains in the future. Specifically, (1) The network {polkadot, kusama, named:byte} has been added to the front to support global registry.  (2) X1/X2/.../X7 has been convered to flat array for easier serialization. |
 | garLocation |  `garPallet:garStorage` | assets:metadata | garLocation is where a parachain's asset registry is located on-chain `api.query[garPallet][garStorage]`.  |
 | xcGarLocation |  `xcGarPallet:xcGarStorage` | assetManager:assetIdType | xcGarLocation is where a parachain's xcm registry is located on-chain `api.query[xcGarPallet][xcGarStorage]`. |
