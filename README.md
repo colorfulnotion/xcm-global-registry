@@ -57,7 +57,7 @@ Follow the [tutorial](https://github.com/colorfulnotion/xcm-global-registry/blob
   * Step 3 - [optional] Augment the XCM result from previous step
 * Aggregate multiple parachains' XCM Registry into one map keyed by the standardized multilocation
 
-For more details (including design choice), see the doc [here](https://github.com/colorfulnotion/xcm-global-registry/blob/main/DETAILS.md).
+For more details (including design choice), see the doc [here](https://github.com/colorfulnotion/xcm-global-registry/blob/main/docs/DETAILS.md).
 
 ## Goal: Filling the lack of XCM Global Asset Registry
 
