@@ -4,6 +4,9 @@ on:
   push:
     branches:
         - main
+  pull_request:
+    branches:
+        - main
 
 jobs:
   build:
@@ -46,6 +49,5 @@ jobs:
            cd /CICD/xcm-global-registry
            git pull origin main
            npm install
-           cd registry/
            node polkadot.json
            node kusama.json
