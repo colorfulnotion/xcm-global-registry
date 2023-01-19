@@ -23,5 +23,6 @@ jobs:
           npm install
           node xcmgarcli polkadot
           node xcmgarcli kusama
+          
           #          npm run build
 
