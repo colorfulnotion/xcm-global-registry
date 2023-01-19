@@ -11,7 +11,7 @@ Support chains
 
 module.exports = class SampleParser extends ChainParser {
 
-    parserName = 'ChangeToProjectName';
+    parserName = 'Sample';
 
     //change [garPallet:garPallet] to the location where the asset registry is located.  ex: [assets:metadata]
     garPallet = 'assets';
