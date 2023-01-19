@@ -3,7 +3,10 @@ name: CICD for polka
 on:
   push:
     branches:
-        - workflow-actions
+      - workflow-actions
+    paths:
+      - .github/workflows/deploy.yml
+      - publicEndpoints/*.json
 
 jobs:
   build:
@@ -26,5 +29,13 @@ jobs:
         run: node xcmgarcli kusama
       - name: Show diff
         run: git diff assets
+      - name: Commit changes to assets
+        run: |
+          git add assets && \
+          git commit -m "Auto check-in assets changs"
+      - name: Push changes to assets
+        run: git push origin $BRANCH_NAME
+        env:
+          BRANCH_NAME: ${{ github.head_ref || github.ref_name }} 
           
 
