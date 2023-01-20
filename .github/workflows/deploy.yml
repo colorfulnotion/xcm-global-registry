@@ -13,7 +13,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     strategy:
       matrix:
         node-version: [17.x]
@@ -27,9 +27,9 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run polkadot
-        run: node xcmgar registry -r polkadot
+        run: node xcmgar registry -r polkadot -s
       - name: Run kusama
-        run: node xcmgar registry -r kusama
+        run: node xcmgar registry -r kusama -s
       - name: Show diff
         run:  |
             git diff assets

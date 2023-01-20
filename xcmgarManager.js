@@ -1,3 +1,4 @@
+const Crawler = require("./crawler");
 const xcmgarTool = require("./xcmgarTool");
 const endpoints = require("./endpoints");
 
@@ -215,8 +216,14 @@ module.exports = class XCMGlobalAssetRegistryManager {
     async fetchParaIDs(relayEndpoints) {
         let validParachainList = []
         for (const relayEndpoint of relayEndpoints) {
-            let relay_api = await this.init_api(relayEndpoint.endpoints[0])
-            let [validParachains, knownParathreads] = await this.crawl_valid_parachains(relay_api, relayEndpoint.relaychain)
+            let relayChainkey = relayEndpoint.chainkey
+            let relayCrawler = new Crawler(relayChainkey)
+            let relay_api = await relayCrawler.init_api(relayEndpoint.endpoints[0])
+            relayCrawler.chainParser = this.chainParserInit(relayChainkey, relay_api, this)
+            relayCrawler.api = relay_api
+            relayCrawler.paraID = 0
+            //let relay_api = await this.init_api(relayEndpoint.endpoints[0])
+            let [validParachains, knownParathreads] = await this.crawl_valid_parachains(relayCrawler, relayEndpoint.relaychain)
             if (validParachains.length > 0) {
                 validParachainList = validParachainList.concat(validParachains)
             }
@@ -224,11 +231,13 @@ module.exports = class XCMGlobalAssetRegistryManager {
         return validParachainList
     }
 
-    async crawl_valid_parachains(api, relaychain) {
+    async crawl_valid_parachains(crawler, relaychain) {
+        let api = crawler.api
         var allParaIds = (await api.query.paras.paraLifecycles.entries()).map(([key, _]) => key.args[0].toJSON());
         var allParaTypes = (await api.query.paras.paraLifecycles.entries()).map(([_, v]) => v.toString()); //Parathread/Parachain
 
-        let relay_chainkey = `${relaychain}-0`
+        //let relay_chainkey = `${relaychain}-0`
+        let relay_chainkey = crawler.chainkey
         let parachainList = [relay_chainkey] //store relaychain itself as paraID:0
         let paraIDs = [];
         let parathreadList = []
@@ -257,7 +266,7 @@ module.exports = class XCMGlobalAssetRegistryManager {
             console.log(`Rejected: ${relayChain} endpoints[${Object.keys(rejectedList).length}]`, Object.keys(rejectedList))
             console.log(`Supported: ${relayChain} endpoints[${Object.keys(supportedList).length}]`, Object.keys(supportedList))
             console.log(`Unverified ${relayChain} endpoints[${Object.keys(unverifiedList).length}]`, Object.keys(unverifiedList))
-            if (isUpdate) {
+            if (isUpdate){
                 await this.writeJSONFn(relayChain, 'publicEndpoints', supportedList)
             }
         }
@@ -334,7 +343,22 @@ module.exports = class XCMGlobalAssetRegistryManager {
         return h
     }
 
-    async batchApiInit(supportedChainKeys = ['polkadot-0']) {
+    async serialCrawlerInit(supportedChainKeys = ['polkadot-0']) {
+        let failedChainkeys = []
+        for (const chainkey of supportedChainKeys) {
+            console.log(`[${chainkey}] Crawler Init Start`)
+            let stautus = await this.init_api_crawler(chainkey)
+            if (!stautus){
+                console.log(`[${chainkey}] Crawler Init Stuck!!`)
+                failedChainkeys.push(chainkey)
+            }else{
+                console.log(`[${chainkey}] Crawler Init DONE`)
+            }
+        }
+        return failedChainkeys
+    }
+
+    async batchCrawlerInit(supportedChainKeys = ['polkadot-0']) {
         let batchApiInitStartTS = new Date().getTime();
         let initChainkeys = []
         for (const chainkey of supportedChainKeys) {
@@ -377,7 +401,7 @@ module.exports = class XCMGlobalAssetRegistryManager {
         return failedChainkeys
     }
 
-    async init_api(wsEndpoint) {
+    async init_api_simple(wsEndpoint) {
         const provider = new WsProvider(wsEndpoint);
         const api = await ApiPromise.create({
             provider
@@ -393,17 +417,14 @@ module.exports = class XCMGlobalAssetRegistryManager {
         let ep = this.getEndpointsBykey(chainkey)
         if (ep) {
             let wsEndpoint = ep.WSEndpoints[0]
-            let api = await this.init_api(wsEndpoint)
-            let chainParser = this.chainParserInit(chainkey, api, this)
-            let crawler = {
-                chainkey: chainkey,
-                chainParser: chainParser,
-                api: api,
-                paraID: ep.paraID,
-            }
+            let crawler = new Crawler(chainkey)
+            let api = await crawler.init_api(wsEndpoint)
+            crawler.chainParser = this.chainParserInit(chainkey, api, this)
+            crawler.api = api
+            crawler.paraID = ep.paraID
             this.chainAPIs[chainkey] = crawler
             if (paraIDSource == '0') {
-                await this.crawl_valid_parachains(api, relayChain)
+                await this.crawl_valid_parachains(crawler, relayChain)
             }
             console.log(`[${chainkey}] endpoint:${wsEndpoint} ready`)
             return true
@@ -564,7 +585,7 @@ module.exports = class XCMGlobalAssetRegistryManager {
             chainParser = new MangataxParser(api, manager)
         } else if (this.isMatched(chainkey, ['kusama-2048|robonomics'])) {
             chainParser = new RobonomicsParser(api, manager)
-        } else if (this.isMatched(chainkey, ['polkadot-2031|centrifuge', 'kusama-2088|altair'])) {
+        } else if (this.isMatched(chainkey, ['polkadot-2031|centrifuge','kusama-2088|altair'])) {
             chainParser = new CentrifugeParser(api, manager)
         } else if (this.isMatched(chainkey, ['polkadot-2090|oak', 'kusama-2114|turing'])) {
             chainParser = new OakParser(api, manager)
