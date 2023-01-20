@@ -2,7 +2,7 @@
 
 (keep it here for now. remove later)
 
-As of this commit, [xcGar](https://github.com/colorfulnotion/xcm-global-registry/tree/main/gar/xcmConcept) is currently compiled with:
+As of this commit, [xcGar](https://github.com/colorfulnotion/xcm-global-registry/tree/main/gar/xcmRegistry) is currently compiled with:
 
 ```
 22 polkadot-parachain supported endpoints.
@@ -81,7 +81,7 @@ Unverified kusama endpoints[8] [
 ]
 ```
 
-xcGAR Currently covers 30 [xcAssets](https://github.com/colorfulnotion/xcm-global-registry/tree/main/gar/xcmConcept/polkadot_xcmConcept.json) on Polkadot:
+xcGAR Currently covers 30 [xcAssets](https://github.com/colorfulnotion/xcm-global-registry/tree/main/gar/xcmRegistry/polkadot_xcmRegistry.json) on Polkadot:
 
 | xcmInteriorKey                                                                                            | Symbol     | paraID | decimals |
 |-----------------------------------------------------------------------------------------------------------|------------|--------|----------|
@@ -116,7 +116,7 @@ xcGAR Currently covers 30 [xcAssets](https://github.com/colorfulnotion/xcm-globa
 | [{"network":"polkadot"},{"parachain":2035}]                                                               | PHA        |   2035 |       12 |
 | [{"network":"polkadot"},{"parachain":2046},{"palletInstance":5}]                                          | RING       |   2046 |       18 |
 
-And 44 [xcAssets](https://github.com/colorfulnotion/xcm-global-registry/tree/main/gar/xcmConcept/kusama_xcmConcept.json) on Kusama:
+And 44 [xcAssets](https://github.com/colorfulnotion/xcm-global-registry/tree/main/gar/xcmRegistry/kusama_xcmRegistry.json) on Kusama:
 
 | xcmInteriorKey                                                                                          | symbol  | paraID | decimals |
 |---------------------------------------------------------------------------------------------------------|---------|--------|----------|

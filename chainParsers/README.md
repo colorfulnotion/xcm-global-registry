@@ -216,7 +216,7 @@ Two types of Augmentation are supported: Automatic-Inferring and Manual Registra
 
 ### Automatic-Inferring
 
-(experimental) use Polkaholic's more powerful xcm parser to automatically infer the mapping between localAsset currencyID <-> XcmInteriorKey by providing a list of extrinsicIDs to infer from. See the example below where the custom parser automatically pickup KSM from Listen ('kusama-2118') when registry is not published/nor maintained by the team:
+(experimental) use Polkaholic's more powerful xcm parser to automatically infer the mapping between localAsset's `currencyID <-> XcmInteriorKey` by providing a list of extrinsicIDs to infer from. See the example below where the Listen ('kusama-2118') parser automatically picks up KSM from  registry is not published/maintained by the team:
 
 ```
 augment = {
@@ -253,7 +253,7 @@ manualRegistry = {
 
 ```
 
-/*Note: xcmInteriorkey format is documented [here](https://github.com/colorfulnotion/xcm-global-registry/blob/main/docs/DETAILS.md) */
+Note: xcmInteriorkey format is documented [here](https://github.com/colorfulnotion/xcm-global-registry/blob/main/docs/DETAILS.md)
 
 
 ## Step 7 - Test Custom Parser
