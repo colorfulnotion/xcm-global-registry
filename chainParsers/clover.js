@@ -2,24 +2,24 @@ const xcmgarTool = require("../xcmgarTool");
 const ChainParser = require("./common_chainparser");
 
 /*
-Fork this template to create new custom parser. And replace all [OriginTrail] in this
+Fork this template to create new custom parser. And replace all [Clover] in this
 file with para name
 
 Support chains
-polkadot-2043|origintrail
+polkadot-2002|clover
 */
 
-module.exports = class OriginTrailParser extends ChainParser {
+module.exports = class CloverParser extends ChainParser {
 
-    parserName = 'OriginTrail';
+    parserName = 'Clover';
 
     //change [garPallet:garPallet] to the location where the asset registry is located.  ex: [assets:metadata]
     garPallet = 'assets';
     garStorage = 'metadata';
 
     //change [xcGarPallet:xcGarStorage] to the location where the xc registry is located.  ex: [assetManager:assetIdType]
-    xcGarPallet = 'xcAssetConfig'
-    xcGarStorage = 'assetIdToLocation'
+    xcGarPallet = 'assetConfig'
+    xcGarStorage = 'assetIdLocation'
 
     /*
     Not every parachain has published its xc Asset registry. But we
@@ -36,6 +36,19 @@ module.exports = class OriginTrailParser extends ChainParser {
     }
     */
 
+    /*
+    Parachain usually does not publish native asset in its own xc registry.
+    Allow team to polish xcRegistry using the following format:
+
+    manualRegistry = {
+        "relaychain-paraID": [{
+            asset: {
+                "Token": "currencyID"
+            },
+            xcmV1Standardized: [{"network":"relaychain"},{"parachain":paraID},{palletInstance/generalKey/generalIndex...}],
+        }]
+    }
+    */
     augment = {}
     manualRegistry = {}
 
@@ -44,7 +57,7 @@ module.exports = class OriginTrailParser extends ChainParser {
     //step 1: parse gar pallet, storage for parachain's asset registry
     async fetchGar(chainkey) {
         // implement your gar parsing function here.
-        await this.processOriginTrailGar(chainkey)
+        await this.processCloverGar(chainkey)
     }
 
     //step 2: parse xcGar pallet, storage for parachain's xc asset registry
@@ -55,19 +68,19 @@ module.exports = class OriginTrailParser extends ChainParser {
             return
         }
         // implement your xcGar parsing function here.
-        await this.processOriginTrailXcGar(chainkey)
+        await this.processCloverXcGar(chainkey)
     }
 
     //step 3: Optional augmentation by providing (a) a list xcm extrinsicIDs or (b) known xcmInteriorKeys-assets mapping
     async fetchAugments(chainkey) {
         //[Optional A] implement your augment parsing function here.
-        await this.processOriginTrailAugment(chainkey)
+        await this.processCloverAugment(chainkey)
         //[Optional B ] implement your manual registry here.
-        await this.processOriginTrailManualRegistry(chainkey)
+        await this.processCloverManualRegistry(chainkey)
     }
 
-    // Implement OriginTrail gar parsing function here
-    async processOriginTrailGar(chainkey) {
+    // Implement Clover gar parsing function here
+    async processCloverGar(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom GAR parser`)
         //step 0: use fetchQuery to retrieve gar registry at the location [assets:garStorage]
         let a = await super.fetchQuery(chainkey, this.garPallet, this.garStorage, 'GAR')
@@ -82,8 +95,8 @@ module.exports = class OriginTrailParser extends ChainParser {
         }
     }
 
-    // Implement OriginTrail xcgar parsing function here
-    async processOriginTrailXcGar(chainkey) {
+    // Implement Clover xcgar parsing function here
+    async processCloverXcGar(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom xcGAR parser`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]
@@ -110,8 +123,8 @@ module.exports = class OriginTrailParser extends ChainParser {
         }
     }
 
-    // Implement OriginTrail manual registry function here
-    async processOriginTrailManualRegistry(chainkey) {
+    // Implement Clover manual registry function here
+    async processCloverManualRegistry(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} manual`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]
@@ -120,8 +133,8 @@ module.exports = class OriginTrailParser extends ChainParser {
         this.processManualRegistry(chainkey, manualRecs)
     }
 
-    // Implement OriginTrail Augment function here
-    async processOriginTrailAugment(chainkey) {
+    // Implement Clover Augment function here
+    async processCloverAugment(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom augmentation`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]

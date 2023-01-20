@@ -2,24 +2,24 @@ const xcmgarTool = require("../xcmgarTool");
 const ChainParser = require("./common_chainparser");
 
 /*
-Fork this template to create new custom parser. And replace all [Robonomics] in this
+Fork this template to create new custom parser. And replace all [Sample] in this
 file with para name
 
 Support chains
-kusama-2048|robonomics
+[relaychain-paraID|projectName]
 */
 
-module.exports = class RobonomicsParser extends ChainParser {
+module.exports = class SampleParser extends ChainParser {
 
-    parserName = 'Robonomics';
+    parserName = 'Sample';
 
     //change [garPallet:garPallet] to the location where the asset registry is located.  ex: [assets:metadata]
     garPallet = 'assets';
     garStorage = 'metadata';
 
     //change [xcGarPallet:xcGarStorage] to the location where the xc registry is located.  ex: [assetManager:assetIdType]
-    xcGarPallet = ''
-    xcGarStorage = ''
+    xcGarPallet = 'assetManager'
+    xcGarStorage = 'assetIdType'
 
     /*
     Not every parachain has published its xc Asset registry. But we
@@ -52,12 +52,12 @@ module.exports = class RobonomicsParser extends ChainParser {
     augment = {}
     manualRegistry = {}
 
-    isXcRegistryAvailable = false
+    isXcRegistryAvailable = true
 
     //step 1: parse gar pallet, storage for parachain's asset registry
     async fetchGar(chainkey) {
         // implement your gar parsing function here.
-        await this.processRobonomicsGar(chainkey)
+        await this.processSampleGar(chainkey)
     }
 
     //step 2: parse xcGar pallet, storage for parachain's xc asset registry
@@ -68,19 +68,19 @@ module.exports = class RobonomicsParser extends ChainParser {
             return
         }
         // implement your xcGar parsing function here.
-        await this.processRobonomicsXcGar(chainkey)
+        await this.processSampleXcGar(chainkey)
     }
 
     //step 3: Optional augmentation by providing (a) a list xcm extrinsicIDs or (b) known xcmInteriorKeys-assets mapping
     async fetchAugments(chainkey) {
         //[Optional A] implement your augment parsing function here.
-        await this.processRobonomicsAugment(chainkey)
+        await this.processSampleAugment(chainkey)
         //[Optional B ] implement your manual registry here.
-        await this.processRobonomicsManualRegistry(chainkey)
+        await this.processSampleManualRegistry(chainkey)
     }
 
-    // Implement Robonomics gar parsing function here
-    async processRobonomicsGar(chainkey) {
+    // Implement Sample gar parsing function here
+    async processSampleGar(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom GAR parser`)
         //step 0: use fetchQuery to retrieve gar registry at the location [assets:garStorage]
         let a = await super.fetchQuery(chainkey, this.garPallet, this.garStorage, 'GAR')
@@ -95,8 +95,8 @@ module.exports = class RobonomicsParser extends ChainParser {
         }
     }
 
-    // Implement Robonomics xcgar parsing function here
-    async processRobonomicsXcGar(chainkey) {
+    // Implement Sample xcgar parsing function here
+    async processSampleXcGar(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom xcGAR parser`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]
@@ -123,8 +123,8 @@ module.exports = class RobonomicsParser extends ChainParser {
         }
     }
 
-    // Implement Robonomics manual registry function here
-    async processRobonomicsManualRegistry(chainkey) {
+    // Implement Sample manual registry function here
+    async processSampleManualRegistry(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} manual`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]
@@ -133,8 +133,8 @@ module.exports = class RobonomicsParser extends ChainParser {
         this.processManualRegistry(chainkey, manualRecs)
     }
 
-    // Implement Robonomics Augment function here
-    async processRobonomicsAugment(chainkey) {
+    // Implement Sample Augment function here
+    async processSampleAugment(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom augmentation`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]

@@ -2,25 +2,24 @@ const xcmgarTool = require("../xcmgarTool");
 const ChainParser = require("./common_chainparser");
 
 /*
-Fork this template to create new custom parser. And replace all [Oak] in this
+Fork this template to create new custom parser. And replace all [Robonomics] in this
 file with para name
 
 Support chains
-polkadot-2090|oak
-kusama-2114|turing
+kusama-2048|robonomics
 */
 
-module.exports = class OakParser extends ChainParser {
+module.exports = class RobonomicsParser extends ChainParser {
 
-    parserName = 'Oak';
+    parserName = 'Robonomics';
 
     //change [garPallet:garPallet] to the location where the asset registry is located.  ex: [assets:metadata]
-    garPallet = 'assetRegistry';
+    garPallet = 'assets';
     garStorage = 'metadata';
 
     //change [xcGarPallet:xcGarStorage] to the location where the xc registry is located.  ex: [assetManager:assetIdType]
-    xcGarPallet = 'assetRegistry'
-    xcGarStorage = 'metadata'
+    xcGarPallet = ''
+    xcGarStorage = ''
 
     /*
     Not every parachain has published its xc Asset registry. But we
@@ -53,12 +52,12 @@ module.exports = class OakParser extends ChainParser {
     augment = {}
     manualRegistry = {}
 
-    isXcRegistryAvailable = true
+    isXcRegistryAvailable = false
 
     //step 1: parse gar pallet, storage for parachain's asset registry
     async fetchGar(chainkey) {
         // implement your gar parsing function here.
-        await this.processOakGar(chainkey)
+        await this.processRobonomicsGar(chainkey)
     }
 
     //step 2: parse xcGar pallet, storage for parachain's xc asset registry
@@ -69,19 +68,19 @@ module.exports = class OakParser extends ChainParser {
             return
         }
         // implement your xcGar parsing function here.
-        await this.processOakXcGar(chainkey)
+        await this.processRobonomicsXcGar(chainkey)
     }
 
     //step 3: Optional augmentation by providing (a) a list xcm extrinsicIDs or (b) known xcmInteriorKeys-assets mapping
     async fetchAugments(chainkey) {
         //[Optional A] implement your augment parsing function here.
-        await this.processOakAugment(chainkey)
+        await this.processRobonomicsAugment(chainkey)
         //[Optional B ] implement your manual registry here.
-        await this.processOakManualRegistry(chainkey)
+        await this.processRobonomicsManualRegistry(chainkey)
     }
 
-    // Implement Oak gar parsing function here
-    async processOakGar(chainkey) {
+    // Implement Robonomics gar parsing function here
+    async processRobonomicsGar(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom GAR parser`)
         //step 0: use fetchQuery to retrieve gar registry at the location [assets:garStorage]
         let a = await super.fetchQuery(chainkey, this.garPallet, this.garStorage, 'GAR')
@@ -96,8 +95,8 @@ module.exports = class OakParser extends ChainParser {
         }
     }
 
-    // Implement Oak xcgar parsing function here
-    async processOakXcGar(chainkey) {
+    // Implement Robonomics xcgar parsing function here
+    async processRobonomicsXcGar(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom xcGAR parser`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]
@@ -106,8 +105,8 @@ module.exports = class OakParser extends ChainParser {
         var a = await super.fetchQuery(chainkey, this.xcGarPallet, this.xcGarStorage, 'xcGAR')
         if (!a) return
         if (a) {
-            // step 1: use common XcmAssetsRegistryAssetMetadata parser func available at generic chainparser.
-            let [xcAssetList, assetIDList, updatedAssetList, unknownAsset] = await this.processXcmAssetsRegistryAssetMetadata(chainkey, a)
+            // step 1: use common XcmAssetIdType parser func available at generic chainparser.
+            let [xcAssetList, assetIDList, updatedAssetList, unknownAsset] = await this.processXcmAssetIdType(chainkey, a)
             console.log(`custom xcAssetList=[${Object.keys(xcAssetList)}], updatedAssetList=[${Object.keys(updatedAssetList)}], unknownAsset=[${Object.keys(unknownAsset)}], assetIDList=[${Object.keys(assetIDList)}]`, xcAssetList)
             // step 2: load up results
             for (const xcmInteriorKey of Object.keys(xcAssetList)) {
@@ -124,8 +123,8 @@ module.exports = class OakParser extends ChainParser {
         }
     }
 
-    // Implement Oak manual registry function here
-    async processOakManualRegistry(chainkey) {
+    // Implement Robonomics manual registry function here
+    async processRobonomicsManualRegistry(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} manual`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]
@@ -134,8 +133,8 @@ module.exports = class OakParser extends ChainParser {
         this.processManualRegistry(chainkey, manualRecs)
     }
 
-    // Implement Oak Augment function here
-    async processOakAugment(chainkey) {
+    // Implement Robonomics Augment function here
+    async processRobonomicsAugment(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom augmentation`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]

@@ -2,47 +2,49 @@ const xcmgarTool = require("../xcmgarTool");
 const ChainParser = require("./common_chainparser");
 
 /*
-Fork this template to create new custom parser
+Fork this template to create new custom parser. And replace all [OriginTrail] in this
+file with para name
 
 Support chains
-polkadot-2000|acala
-kusama-2000|karura
+polkadot-2043|origintrail
 */
 
-module.exports = class AcalaParser extends ChainParser {
+module.exports = class OriginTrailParser extends ChainParser {
 
-    parserName = 'Acala';
+    parserName = 'OriginTrail';
 
     //change [garPallet:garPallet] to the location where the asset registry is located.  ex: [assets:metadata]
-    garPallet = 'assetRegistry';
-    garStorage = 'assetMetadatas';
+    garPallet = 'assets';
+    garStorage = 'metadata';
 
     //change [xcGarPallet:xcGarStorage] to the location where the xc registry is located.  ex: [assetManager:assetIdType]
-    xcGarPallet = 'assetRegistry'
-    xcGarStorage = 'foreignAssetLocations'
+    xcGarPallet = 'xcAssetConfig'
+    xcGarStorage = 'assetIdToLocation'
 
-    augment = {}
-    manualRegistry = {
-        "polkadot-2000": [{
-            asset: {
-                "Token": "ACA"
-            },
-            xcmInteriorKey: '[{"network":"polkadot"},{"parachain":2000},{"generalKey":"0x0000"}]'
-        }],
-        'kusama-2000': [{
-            asset: {
-                "Erc20": "0x1f3a10587a20114ea25ba1b388ee2dd4a337ce27"
-            },
-            xcmInteriorKey: '[{"network":"kusama"},{"parachain":2000},{"generalKey":"0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27"}]'
+    /*
+    Not every parachain has published its xc Asset registry. But we
+    can still augment xcAsset registry by inferring.
+
+    To augment the xcAsset by parsing, please provide an array of xcm extrinsicIDs
+    containing the xcAsset asset you try to cover:
+
+    augment = {
+        'relaychain-paraID': [{
+            paraID: 'paraID',
+            extrinsicIDs: ['extrinsicID']
         }]
     }
+    */
+
+    augment = {}
+    manualRegistry = {}
 
     isXcRegistryAvailable = true
 
     //step 1: parse gar pallet, storage for parachain's asset registry
     async fetchGar(chainkey) {
         // implement your gar parsing function here.
-        await this.processAcalaGar(chainkey)
+        await this.processOriginTrailGar(chainkey)
     }
 
     //step 2: parse xcGar pallet, storage for parachain's xc asset registry
@@ -53,25 +55,25 @@ module.exports = class AcalaParser extends ChainParser {
             return
         }
         // implement your xcGar parsing function here.
-        await this.processAcalaXcGar(chainkey)
+        await this.processOriginTrailXcGar(chainkey)
     }
 
     //step 3: Optional augmentation by providing (a) a list xcm extrinsicIDs or (b) known xcmInteriorKeys-assets mapping
     async fetchAugments(chainkey) {
         //[Optional A] implement your augment parsing function here.
-        //await this.processAcalaAugment(chainkey)
+        await this.processOriginTrailAugment(chainkey)
         //[Optional B ] implement your manual registry here.
-        await this.processAcalaManualRegistry(chainkey)
+        await this.processOriginTrailManualRegistry(chainkey)
     }
 
-    // Implement acala gar parsing function here
-    async processAcalaGar(chainkey) {
+    // Implement OriginTrail gar parsing function here
+    async processOriginTrailGar(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom GAR parser`)
         //step 0: use fetchQuery to retrieve gar registry at the location [assets:garStorage]
         let a = await super.fetchQuery(chainkey, this.garPallet, this.garStorage, 'GAR')
         if (a) {
             // step 1: use common Asset pallet parser func available at generic chainparser.
-            let assetList = this.processGarTokensPallet(chainkey, a)
+            let assetList = this.processGarAssetPallet(chainkey, a)
             // step 2: load up results
             for (const assetChainkey of Object.keys(assetList)) {
                 let assetInfo = assetList[assetChainkey]
@@ -80,8 +82,8 @@ module.exports = class AcalaParser extends ChainParser {
         }
     }
 
-    // Implement acala xcGar parsing function here
-    async processAcalaXcGar(chainkey) {
+    // Implement OriginTrail xcgar parsing function here
+    async processOriginTrailXcGar(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom xcGAR parser`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]
@@ -91,7 +93,7 @@ module.exports = class AcalaParser extends ChainParser {
         if (!a) return
         if (a) {
             // step 1: use common XcmAssetIdType parser func available at generic chainparser.
-            let [xcAssetList, assetIDList, updatedAssetList, unknownAsset] = await this.processXcmForeignAssetLocations(chainkey, a, true)
+            let [xcAssetList, assetIDList, updatedAssetList, unknownAsset] = await this.processXcmAssetIdToLocation(chainkey, a)
             console.log(`custom xcAssetList=[${Object.keys(xcAssetList)}], updatedAssetList=[${Object.keys(updatedAssetList)}], unknownAsset=[${Object.keys(unknownAsset)}], assetIDList=[${Object.keys(assetIDList)}]`, xcAssetList)
             // step 2: load up results
             for (const xcmInteriorKey of Object.keys(xcAssetList)) {
@@ -108,7 +110,8 @@ module.exports = class AcalaParser extends ChainParser {
         }
     }
 
-    async processAcalaManualRegistry(chainkey) {
+    // Implement OriginTrail manual registry function here
+    async processOriginTrailManualRegistry(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} manual`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]
@@ -117,7 +120,8 @@ module.exports = class AcalaParser extends ChainParser {
         this.processManualRegistry(chainkey, manualRecs)
     }
 
-    async processAcalaAugment(chainkey) {
+    // Implement OriginTrail Augment function here
+    async processOriginTrailAugment(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom augmentation`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]
