@@ -2,62 +2,47 @@ const xcmgarTool = require("../xcmgarTool");
 const ChainParser = require("./common_chainparser");
 
 /*
-Fork this template to create new custom parser. And replace all [Clover] in this
-file with para name
+Fork this template to create new custom parser
 
 Support chains
-polkadot-2002|clover
+polkadot-2000|acala
+kusama-2000|karura
 */
 
-module.exports = class CloverParser extends ChainParser {
+module.exports = class AcalaParser extends ChainParser {
 
-    parserName = 'Clover';
+    parserName = 'Acala';
 
     //change [garPallet:garPallet] to the location where the asset registry is located.  ex: [assets:metadata]
-    garPallet = 'assets';
-    garStorage = 'metadata';
+    garPallet = 'assetRegistry';
+    garStorage = 'assetMetadatas';
 
     //change [xcGarPallet:xcGarStorage] to the location where the xc registry is located.  ex: [assetManager:assetIdType]
-    xcGarPallet = 'assetConfig'
-    xcGarStorage = 'assetIdLocation'
+    xcGarPallet = 'assetRegistry'
+    xcGarStorage = 'foreignAssetLocations'
 
-    /*
-    Not every parachain has published its xc Asset registry. But we
-    can still augment xcAsset registry by inferring.
-
-    To augment the xcAsset by parsing, please provide an array of xcm extrinsicIDs
-    containing the xcAsset asset you try to cover:
-
-    augment = {
-        'relaychain-paraID': [{
-            paraID: 'paraID',
-            extrinsicIDs: ['extrinsicID']
-        }]
-    }
-    */
-
-    /*
-    Parachain usually does not publish native asset in its own xc registry.
-    Allow team to polish xcRegistry using the following format:
-
-    manualRegistry = {
-        "relaychain-paraID": [{
-            asset: {
-                "Token": "currencyID"
-            },
-            xcmV1Standardized: [{"network":"relaychain"},{"parachain":paraID},{palletInstance/generalKey/generalIndex...}],
-        }]
-    }
-    */
     augment = {}
-    manualRegistry = {}
+    manualRegistry = {
+        "polkadot-2000": [{
+            asset: {
+                "Token": "ACA"
+            },
+            xcmInteriorKey: '[{"network":"polkadot"},{"parachain":2000},{"generalKey":"0x0000"}]'
+        }],
+        'kusama-2000': [{
+            asset: {
+                "Erc20": "0x1f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+            },
+            xcmInteriorKey: '[{"network":"kusama"},{"parachain":2000},{"generalKey":"0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27"}]'
+        }]
+    }
 
     isXcRegistryAvailable = true
 
     //step 1: parse gar pallet, storage for parachain's asset registry
     async fetchGar(chainkey) {
         // implement your gar parsing function here.
-        await this.processCloverGar(chainkey)
+        await this.processAcalaGar(chainkey)
     }
 
     //step 2: parse xcGar pallet, storage for parachain's xc asset registry
@@ -68,25 +53,25 @@ module.exports = class CloverParser extends ChainParser {
             return
         }
         // implement your xcGar parsing function here.
-        await this.processCloverXcGar(chainkey)
+        await this.processAcalaXcGar(chainkey)
     }
 
     //step 3: Optional augmentation by providing (a) a list xcm extrinsicIDs or (b) known xcmInteriorKeys-assets mapping
     async fetchAugments(chainkey) {
         //[Optional A] implement your augment parsing function here.
-        await this.processCloverAugment(chainkey)
+        //await this.processAcalaAugment(chainkey)
         //[Optional B ] implement your manual registry here.
-        await this.processCloverManualRegistry(chainkey)
+        await this.processAcalaManualRegistry(chainkey)
     }
 
-    // Implement Clover gar parsing function here
-    async processCloverGar(chainkey) {
+    // Implement acala gar parsing function here
+    async processAcalaGar(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom GAR parser`)
         //step 0: use fetchQuery to retrieve gar registry at the location [assets:garStorage]
         let a = await super.fetchQuery(chainkey, this.garPallet, this.garStorage, 'GAR')
         if (a) {
             // step 1: use common Asset pallet parser func available at generic chainparser.
-            let assetList = this.processGarAssetPallet(chainkey, a)
+            let assetList = this.processGarTokensPallet(chainkey, a)
             // step 2: load up results
             for (const assetChainkey of Object.keys(assetList)) {
                 let assetInfo = assetList[assetChainkey]
@@ -95,8 +80,8 @@ module.exports = class CloverParser extends ChainParser {
         }
     }
 
-    // Implement Clover xcgar parsing function here
-    async processCloverXcGar(chainkey) {
+    // Implement acala xcGar parsing function here
+    async processAcalaXcGar(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom xcGAR parser`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]
@@ -106,7 +91,7 @@ module.exports = class CloverParser extends ChainParser {
         if (!a) return
         if (a) {
             // step 1: use common XcmAssetIdType parser func available at generic chainparser.
-            let [xcAssetList, assetIDList, updatedAssetList, unknownAsset] = await this.processXcmAssetIdToLocation(chainkey, a)
+            let [xcAssetList, assetIDList, updatedAssetList, unknownAsset] = await this.processXcmForeignAssetLocations(chainkey, a, true)
             console.log(`custom xcAssetList=[${Object.keys(xcAssetList)}], updatedAssetList=[${Object.keys(updatedAssetList)}], unknownAsset=[${Object.keys(unknownAsset)}], assetIDList=[${Object.keys(assetIDList)}]`, xcAssetList)
             // step 2: load up results
             for (const xcmInteriorKey of Object.keys(xcAssetList)) {
@@ -123,8 +108,7 @@ module.exports = class CloverParser extends ChainParser {
         }
     }
 
-    // Implement Clover manual registry function here
-    async processCloverManualRegistry(chainkey) {
+    async processAcalaManualRegistry(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} manual`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]
@@ -133,8 +117,7 @@ module.exports = class CloverParser extends ChainParser {
         this.processManualRegistry(chainkey, manualRecs)
     }
 
-    // Implement Clover Augment function here
-    async processCloverAugment(chainkey) {
+    async processAcalaAugment(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom augmentation`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]

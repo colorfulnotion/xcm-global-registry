@@ -1,8 +1,8 @@
 ## Custom Parser Tutorial:
 
 Available resources within this directory:
-* [common_chainparser](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chains/common_chainparser.js) - Implements common registry parsing logics sahred among different parachains.
-* [custom_parser_template](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chains/custom_parser_template.js) - Fork this template to create new custom parser for a project.
+* [common_chainparser](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chainParsers/common_chainparser.js) - Implements common registry parsing logics sahred among different parachains.
+* [custom_parser_template](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chainParsers/custom_parser_template.js) - Fork this template to create new custom parser for a project.
 
 ## Overview
 In this tutorial, we will go through how to implement a custom chain parser for your project under 30 min.
@@ -13,15 +13,15 @@ Usually parachain teams deployed identical pallets on both production and canary
 
 ## Quick Start
 
-In this tutorial, I will go over how moonbeam.js was created using [custom_parser_template.js](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chains/custom_parser_template.js), Hopefully, this should give you some basic ideas how to spin up a new custom parser effortlessly.
+In this tutorial, I will go over how moonbeam.js was created using [custom_parser_template.js](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chainParsers/custom_parser_template.js), Hopefully, this should give you some basic ideas how to spin up a new custom parser effortlessly.
 
 ## Step 1 - Fork Template:
-Fork [custom_parser_template.js](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chains/custom_parser_template.js) and rename it `YourProjectID.js`.
+Fork [custom_parser_template.js](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chainParsers/custom_parser_template.js) and rename it `YourProjectID.js`.
 
 ```
-chains# cp custom_parser_template.js moonbeam.js
+chainParsers# cp custom_parser_template.js moonbeam.js
 ```
-In this case, we will use 'moonbeam' as projectID. Note that both moonbeam/moonriver has same logic for its registry nNo need to create two custom parser). As a convention, we will use *production network over canary network* for naming purposes whenever possible. (i.e moonbeam over moonriver)
+In this case, we will use 'moonbeam' as projectID. Note that both moonbeam/moonriver has same logic for its registry nNo need to create two custom parser). As a convention, we will use *production network name over canary network name* for naming purposes whenever possible. (i.e moonbeam over moonriver)
 
 
 ## Step 2 - Rename Project:
@@ -164,24 +164,24 @@ let [xcAssetList, assetIDList, updatedAssetList, unknownAsset] = await this.proc
 ```
 to use one of the commonly recognized xcmRegistry parsers. If there's no proper match, you are welcome implement one or submit an issue.
 
-## Step 6 - Add Custom Parser to xcmgar:
-Now that custom parser is ready we will add it to xcmgar. In [xcmgar](https://github.com/colorfulnotion/xcm-global-registry/blob/main/xcmgar.js), you can see how custom parser get included:
+## Step 6 - Add Custom Parser to xcmgarManager:
+Now that custom parser is ready we will add it to xcmgarManager. In [xcmgarManager](https://github.com/colorfulnotion/xcm-global-registry/blob/main/xcmgarManager.js), you can see how custom parser get included:
 
 ```
 const xcmgarTool = require("./xcmgarTool");
 const endpoints = require("./endpoints");
 
-//const SampleParser = require("./chains/custom_parser_template") // fork this file to include new chain parser
-const CommonChainParser = require("./chains/common_chainparser");
+//const SampleParser = require("./chainParsers/custom_parser_template") // fork this file to include new chain parser
+const CommonChainParser = require("./chainParsers/common_chainparser");
 ```
 
-First add your custom parser `{projectName}Parser` from `./chains/{projectID.js}`, for example:
+First add your custom parser `{projectName}Parser` from `./chainParsers/{projectID.js}`, for example:
 
 ```
-const CommonChainParser = require("./chains/common_chainparser");
+const CommonChainParser = require("./chainParsers/common_chainparser");
 ...
 // Add new custom parser
-const MoonbeamParser = require("./chains/moonbeam")
+const MoonbeamParser = require("./chainParsers/moonbeam")
 ...
 ```
 Custom parser is used by `chainParserInit(chainkey, api, manager)`:
@@ -211,16 +211,80 @@ Specify the custom chainparser using fullchainkey format `{relaychain}-{paraID}|
 } else if (
 ```
 
-## Step 7 - Test Custom Parser
+## Step 6c - Optional Augmentation:
+Two types of Augmentation are supported: Automatic-Inferring and Manual Registration
 
-Test your custom by running the following cmd at [Main Directory](https://github.com/colorfulnotion/xcm-global-registry/tree/main/). If your parser cover both production and canary network, make sure to test both
+### Automatic-Inferring
+
+(experimental) use Polkaholic's more powerful xcm parser to automatically infer the mapping between localAsset's `currencyID <-> XcmInteriorKey` by providing a list of extrinsicIDs to infer from. See the example below where the Listen ('kusama-2118') parser automatically picks up KSM from  registry is not published/maintained by the team:
 
 ```
-# To execute cmd, run: node xcmgarcli [relaychain] [targetParaID]
+augment = {
+    'kusama-2118': [{
+        paraID: 2118,
+        extrinsicIDs: ['118722-2']
+    }]
+}
+```
 
+(TODO): Use Polkaholic's generic `XcmDecHexCurrencyID` parser
+
+### Manual Registration
+
+Most parachain teams don't publish XCM/MultiLocation for "native" assets originated from their own parachain. By manually providing the xcmInteriorkey, native xcAsset can be augmented with xcmInteriorkey like other asset.
+
+In the following example, we will go over how to add Moonbeam's GLMR and Moonriver's MOVR into global xcm asset registry:
+
+```
+manualRegistry = {
+    "polkadot-2004": [{
+        asset: {
+            "Token": "GLMR"
+        },
+        xcmInteriorKey: '[{"network":"polkadot"},{"parachain":2004},{"palletInstance":10}]'
+    }],
+    'kusama-2023': [{
+        asset: {
+            "Token": "MOVR"
+        },
+        xcmInteriorKey: '[{"network":"kusama"},{"parachain":2023},{"palletInstance":10}]'
+    }]
+}
+
+```
+
+Note: xcmInteriorkey format is documented [here](https://github.com/colorfulnotion/xcm-global-registry/blob/main/docs/DETAILS.md)
+
+
+## Step 7 - Test Custom Parser
+
+Test your custom parser by inspecting with xcmgar cli available at [Main Directory](https://github.com/colorfulnotion/xcm-global-registry/tree/main/).
+
+```
+# See available from xcmgar cli
+node xcmgar
+Usage: xcmgar [options] [command]
+
+XCM Global Asset Registry. Repo: https://github.com/colorfulnotion/xcm-global-registry
+
+Options:
+  -V, --version       output the version number
+  -h, --help          display help for command
+
+Commands:
+  registry [options]  Fetch on-chain Asset Registry and XCM MultiLocation Registry
+  endpoint [options]  Update public endpoints
+  help [command]      display help for command
+```
+
+If your parser cover both production and canary network, make sure to test both:
+```
 # generate moonbeam's (xc)Asset registry:
-node xcmgarcli polkadot 2004
+node xcmgar registry -r polkadot -p 2004
+...
+✅ Success: polkadot-2004 Local Asset Regsitry (Found:14) cahced @
+    assets/polkadot/polkadot_2004_assets.json
 
-# generate moonriver's (xc)Asset registry:
-node xcmgarcli kusama 2023
+# dry-run moonriver's (xc)Asset registry for debugging:
+node xcmgar registry -r kusama -p 2023
 ```

@@ -2,24 +2,25 @@ const xcmgarTool = require("../xcmgarTool");
 const ChainParser = require("./common_chainparser");
 
 /*
-Fork this template to create new custom parser. And replace all [Sample] in this
+Fork this template to create new custom parser. And replace all [Oak] in this
 file with para name
 
 Support chains
-[relaychain-paraID|projectName]
+polkadot-2090|oak
+kusama-2114|turing
 */
 
-module.exports = class SampleParser extends ChainParser {
+module.exports = class OakParser extends ChainParser {
 
-    parserName = 'Sample';
+    parserName = 'Oak';
 
     //change [garPallet:garPallet] to the location where the asset registry is located.  ex: [assets:metadata]
-    garPallet = 'assets';
+    garPallet = 'assetRegistry';
     garStorage = 'metadata';
 
     //change [xcGarPallet:xcGarStorage] to the location where the xc registry is located.  ex: [assetManager:assetIdType]
-    xcGarPallet = 'assetManager'
-    xcGarStorage = 'assetIdType'
+    xcGarPallet = 'assetRegistry'
+    xcGarStorage = 'metadata'
 
     /*
     Not every parachain has published its xc Asset registry. But we
@@ -57,7 +58,7 @@ module.exports = class SampleParser extends ChainParser {
     //step 1: parse gar pallet, storage for parachain's asset registry
     async fetchGar(chainkey) {
         // implement your gar parsing function here.
-        await this.processSampleGar(chainkey)
+        await this.processOakGar(chainkey)
     }
 
     //step 2: parse xcGar pallet, storage for parachain's xc asset registry
@@ -68,19 +69,19 @@ module.exports = class SampleParser extends ChainParser {
             return
         }
         // implement your xcGar parsing function here.
-        await this.processSampleXcGar(chainkey)
+        await this.processOakXcGar(chainkey)
     }
 
     //step 3: Optional augmentation by providing (a) a list xcm extrinsicIDs or (b) known xcmInteriorKeys-assets mapping
     async fetchAugments(chainkey) {
         //[Optional A] implement your augment parsing function here.
-        await this.processSampleAugment(chainkey)
+        await this.processOakAugment(chainkey)
         //[Optional B ] implement your manual registry here.
-        await this.processSampleManualRegistry(chainkey)
+        await this.processOakManualRegistry(chainkey)
     }
 
-    // Implement Sample gar parsing function here
-    async processSampleGar(chainkey) {
+    // Implement Oak gar parsing function here
+    async processOakGar(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom GAR parser`)
         //step 0: use fetchQuery to retrieve gar registry at the location [assets:garStorage]
         let a = await super.fetchQuery(chainkey, this.garPallet, this.garStorage, 'GAR')
@@ -95,8 +96,8 @@ module.exports = class SampleParser extends ChainParser {
         }
     }
 
-    // Implement Sample xcgar parsing function here
-    async processSampleXcGar(chainkey) {
+    // Implement Oak xcgar parsing function here
+    async processOakXcGar(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom xcGAR parser`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]
@@ -105,8 +106,8 @@ module.exports = class SampleParser extends ChainParser {
         var a = await super.fetchQuery(chainkey, this.xcGarPallet, this.xcGarStorage, 'xcGAR')
         if (!a) return
         if (a) {
-            // step 1: use common XcmAssetIdType parser func available at generic chainparser.
-            let [xcAssetList, assetIDList, updatedAssetList, unknownAsset] = await this.processXcmAssetIdType(chainkey, a)
+            // step 1: use common XcmAssetsRegistryAssetMetadata parser func available at generic chainparser.
+            let [xcAssetList, assetIDList, updatedAssetList, unknownAsset] = await this.processXcmAssetsRegistryAssetMetadata(chainkey, a)
             console.log(`custom xcAssetList=[${Object.keys(xcAssetList)}], updatedAssetList=[${Object.keys(updatedAssetList)}], unknownAsset=[${Object.keys(unknownAsset)}], assetIDList=[${Object.keys(assetIDList)}]`, xcAssetList)
             // step 2: load up results
             for (const xcmInteriorKey of Object.keys(xcAssetList)) {
@@ -123,8 +124,8 @@ module.exports = class SampleParser extends ChainParser {
         }
     }
 
-    // Implement Sample manual registry function here
-    async processSampleManualRegistry(chainkey) {
+    // Implement Oak manual registry function here
+    async processOakManualRegistry(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} manual`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]
@@ -133,8 +134,8 @@ module.exports = class SampleParser extends ChainParser {
         this.processManualRegistry(chainkey, manualRecs)
     }
 
-    // Implement Sample Augment function here
-    async processSampleAugment(chainkey) {
+    // Implement Oak Augment function here
+    async processOakAugment(chainkey) {
         console.log(`[${chainkey}] ${this.parserName} custom augmentation`)
         let pieces = chainkey.split('-')
         let relayChain = pieces[0]

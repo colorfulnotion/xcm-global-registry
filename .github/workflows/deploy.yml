@@ -25,10 +25,10 @@ jobs:
          node-version: ${{ matrix.node-version }}
       - name: Install dependencies
         run: npm install
-      - name: Run polkdot
-        run: node xcmgarcli polkadot
+      - name: Run polkadot
+        run: node xcmgar registry -r polkadot
       - name: Run kusama
-        run: node xcmgarcli kusama
+        run: node xcmgar registry -r kusama
       - name: Show diff
         run: git diff assets
       - name: Configure Git Client
@@ -42,4 +42,4 @@ jobs:
       - name: Push changes to assets
         run: git push origin $BRANCH_NAME
         env:
-          BRANCH_NAME: ${{ github.head_ref || github.ref_name }} 
+          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
