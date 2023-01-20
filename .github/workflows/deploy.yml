@@ -37,7 +37,7 @@ jobs:
           git config user.email github-actions@github.com
       - name: Commit changes to assets
         run: |
-          git add assets && \
+          git add assets/polkadot/*.json assets/kusama/*.json && \
           git commit -m "Auto check-in assets changs"
       - name: Push changes to assets
         run: git push origin $BRANCH_NAME
