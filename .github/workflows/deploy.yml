@@ -25,10 +25,10 @@ jobs:
          node-version: ${{ matrix.node-version }}
       - name: Install dependencies
         run: npm install
-      - name: Run polkdot
-        run: node xcmgarcli polkadot
+      - name: Run polkadot
+        run: node xcmgar polkadot
       - name: Run kusama
-        run: node xcmgarcli kusama
+        run: node xcmgar kusama
       - name: Show diff
         run: git diff assets
       - name: Configure Git Client
