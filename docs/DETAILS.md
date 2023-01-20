@@ -1,6 +1,5 @@
 ## How it works
-*Long verison*:
-*TL;DR verison*:
+*Long version*:
 * Given a relaychain, retrieve a list of its partaIDs on-chain via `api.query.paras.paraLifecycles`. exclude parathread, as its not live yet.
 
 * Crawl polkadot.js's [public endpoint registry](https://github.com/polkadot-js/apps/blob/master/packages/apps-config/src/endpoints/), reject invalid endpoint like polkadex. Also remove endpoints that are unreachable or have no public endpoints
@@ -11,7 +10,7 @@
   * Step 2 - Implement `fetchXcGar()` to process its XCM/Multilocation registry located at `xcGarLocation` on-chain.
   * Step 3 - [optional] Implement `fetchAugments()` to Augment the XCM result from previous step if certain assets are missing. Two types of augmentations are available:
       * Auto Inferring - supply a list extrinsicIDs containing unpublished xcAsset Xtokens transfers. An xcmInteriorkey will be inserted to result from step2 if we can succesfully infer the asset using other chains' published XCM registry
-      * Manual-Registry - most parachain teams don't publish XCM/Multilocation for "native" assets originated from thier own parachain. By manually providing the xcmInteriorkey, native xcAsset can be augmented with xcmInteriorkey as well.
+      * Manual-Registry - most parachain teams don't publish XCM/Multilocation for "native" assets originated from their own parachain. By manually providing the xcmInteriorkey, native xcAsset can be augmented with xcmInteriorkey as well.
 
 * Aggregate multiple parachains' XCM Registry into one map keyed by the standardized xcmInteriorkey. Update "confidence" per each xcAsset. Dump the result as a file by calling `xcmgar.updateXcmGar()` `xcmgar.updateLocalAsset()`
 
@@ -19,7 +18,7 @@
 This repo has been organized as following:
 ```
 xcm-global-registry~$tree
-
+.
 ├── LICENSE
 ├── README.md
 ├── assets
@@ -27,51 +26,52 @@ xcm-global-registry~$tree
 │   │   ├── kusama_paraID_assets.json
 │   │   └── ...
 │   └── polkadot
-│       ├── polkadot_0_assets.json
+│       ├── polkadot_paraID_assets.json
 │       └── ...
-├── chains
+├── chainParsers
+│   ├── README.md
 │   ├── common_chainparser.js
 │   ├── custom_parser_template.js
 │   └── custom_chainparser ...
+├── docs
+│   ├── CONTRIBUTING.md
+│   ├── DETAILS.md
+│   └── STATUS.md
 ├── endpoints.js
 ├── node_modules
 │   ├── packages...
-├── package-lock.json
-├── package.json
 ├── publicEndpoints
 │   ├── kusama_publicEndpoints.json
-│   └── polkadot_publicEndpoints.json
-├── test.txt
-├── updateEndpoints
+│   ├── polkadot_publicEndpoints.json
+│   └── rococo_publicEndpoints.json
+├── xcmRegistry
+│   ├── kusama_xcmRegistry.json
+│   └── polkadot_xcmRegistry.json
 ├── xcmgar
-│   ├── kusama_xcmgar.json
-│   └── polkadot_xcmgar.json
-├── xcmgar.js
-├── xcmgarcli.js
+├── xcmgarManager.js
 └── xcmgarTool.js
 ```
 
 ### [Main Directory](https://github.com/colorfulnotion/xcm-global-registry/tree/main/)
-* [xcmgarcli](https://github.com/colorfulnotion/xcm-global-registry/blob/main/xcmgarcli): command line tool for xc gar registry generation.
-* [updateEndpoints](https://github.com/colorfulnotion/xcm-global-registry/blob/main/updateEndpoints): command line tool for public endpoint generation.
-* [xcmgarTool](https://github.com/colorfulnotion/xcm-global-registry/blob/main/garTool.js): Stand-alone library forked from [polkaholic](https://github.com/colorfulnotion/polkaholic) to supports various data transformation
-* [xcmgar](https://github.com/colorfulnotion/xcm-global-registry/blob/main/xcmgar.js): main driver for on-chain crawling + local read/write tasks
+* [xcmgar](https://github.com/colorfulnotion/xcm-global-registry/blob/main/xcmgar): command line tool for xc gar registry generation & public endpoint generation.
+* [xcmgarTool](https://github.com/colorfulnotion/xcm-global-registry/blob/main/xcmgarTool.js): Stand-alone library forked from [polkaholic](https://github.com/colorfulnotion/polkaholic) to supports various data transformation
+* [xcmgarManager](https://github.com/colorfulnotion/xcm-global-registry/blob/main/xcmgarManager.js): main driver for on-chain crawling + local read/write tasks
 
 
-### [Chains directory](https://github.com/colorfulnotion/xcm-global-registry/tree/main/chains)
-* [common_chainparser](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chains/common_chainparser.js) - Implements common registry parsing logics sahred among different parachains.
-* [custom_parser_template](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chains/custom_parser_template.js) - Fork this template to create new custom parser for a project. Usually parachain teams deployed identical pallets on both production and canary networks, therefore the same custom parser can be used for both Polkadot and Kusama parachain. The custom parser must implement {`fetchGar`, `fetchXcGar`}. Optional augmentation {`automatic on-chain inferring`, `manualRegistry`} can be included to include chain-specific xcGar coverage, but it's not strictly required.
+### [chainParsers directory](https://github.com/colorfulnotion/xcm-global-registry/tree/main/chainParsers)
+* [common_chainparser](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chainParsers/common_chainparser.js) - Implements common registry parsing logics sahred among different parachains.
+* [custom_parser_template](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chainParsers/custom_parser_template.js) - Fork this template to create new custom parser for a project. Usually parachain teams deployed identical pallets on both production and canary networks, therefore the same custom parser can be used for both Polkadot and Kusama parachain. The custom parser must implement {`fetchGar`, `fetchXcGar`}. Optional augmentation {`automatic on-chain inferring`, `manualRegistry`} can be included to include chain-specific xcGar coverage, but it's not strictly required.
 
-If custom parser is not specified, the parachain will be parsed using generic parser; (xc)Assets will likely be missing if parachain does not have use commonly recognizable `pallet:storage` selection for thier registry. More: see detailed tutorial of [how to implement a custom parser](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chains/README.md) under 30min.
+If custom parser is not specified, the parachain will be parsed using generic parser; (xc)Assets will likely be missing if parachain does not have use commonly recognizable `pallet:storage` selection for their registry. More: see detailed tutorial of [how to implement a custom parser](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chainParsers/README.md) under 30min.
 
 
 ### [Assets directory](https://github.com/colorfulnotion/xcm-global-registry/tree/main/assets)  
-* `relaychain_paraID_assets.json`: In this directory, you can find each parachain's (xc)Assets covered by the chainParser, which is then used to power [XCM Global Asset Registry](https://github.com/colorfulnotion/xcm-global-registry/tree/main/xcmgar)  - aggregated at relaychain level.
+* `relaychain_paraID_assets.json`: In this directory, you can find each parachain's (xc)Assets covered by the chainParser, which is then used to power [XCM Global Asset Registry](https://github.com/colorfulnotion/xcm-global-registry/tree/main/xcmRegistry)  - aggregated at relaychain level.
 
 Ideally, Parachain-specific Assest Regsitry will enable teams/contributors examine any given parachain and quickly identify missing asset.
 
-### [XCMGAR directory](https://github.com/colorfulnotion/xcm-global-registry/tree/main/xcmgar)  
-* `relaychain_xcmConcept.json`: In this directory, you can find global xcm asset registry aggregated at relaychain level. Currently only support polkadot/kusama but can be easily extended to include westend and rococo.  
+### [xcmRegistry directory](https://github.com/colorfulnotion/xcm-global-registry/tree/main/xcmRegistry)  
+* `relaychain_xcmConcept.json`: In this directory, you can find global xcm asset registry aggregated at relaychain level. Currently only support polkadot/kusama but can be easily extended to include Westend and Rococo.  
 
 ### [PublicEndpoints directory](https://github.com/colorfulnotion/xcm-global-registry/tree/main/assets)
 * `relaychain_publicEndpoints.json`: A list public parachain endpointss generated by [updateEndpoints](https://github.com/colorfulnotion/xcm-global-registry/blob/main/updateEndpoints) - organized at relaychain level
