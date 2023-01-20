@@ -256,8 +256,8 @@
         "id": "pichiu",
         "paraID": 2102,
         "WSEndpoints": [
-            "wss://kusama.kylin-node.co.uk",
             "wss://pichiu.api.onfinality.io/public-ws"
+            "wss://kusama.kylin-node.co.uk",
         ],
         "relaychain": "kusama"
     },
