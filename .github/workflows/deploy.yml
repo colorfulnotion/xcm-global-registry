@@ -3,7 +3,12 @@ name: CICD for polka
 on:
   push:
     branches:
-        - workflow-actions
+      - main
+    paths:
+      - .github/workflows/deploy.yml
+      - publicEndpoints/*.json
+    schedule:
+      - cron: '* */1 * * *'
 
 jobs:
   build:
@@ -18,10 +23,23 @@ jobs:
         uses: actions/setup-node@v2
         with:
          node-version: ${{ matrix.node-version }}
-      - name: npm install and build
+      - name: Install dependencies
+        run: npm install
+      - name: Run polkdot
+        run: node xcmgarcli polkadot
+      - name: Run kusama
+        run: node xcmgarcli kusama
+      - name: Show diff
+        run: git diff assets
+      - name: Configure Git Client
         run: |
-          npm install
-          node xcmgarcli polkadot
-          node xcmgarcli kusama
-          #          npm run build
-
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+      - name: Commit changes to assets
+        run: |
+          git add assets && \
+          git commit -m "Auto check-in assets changs"
+      - name: Push changes to assets
+        run: git push origin $BRANCH_NAME
+        env:
+          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
