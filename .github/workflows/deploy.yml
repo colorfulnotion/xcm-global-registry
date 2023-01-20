@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - .github/workflows/deploy.yml
+            #      - .github/workflows/deploy.yml
       - publicEndpoints/*.json
     schedule:
       - cron: '* */1 * * *'
@@ -37,8 +37,8 @@ jobs:
           git config user.email github-actions@github.com
       - name: Commit changes to assets
         run: |
-          git add assets && \
-          git commit -m "Auto check-in assets changs"
+          git add assets/polkadot/*.json assets/kusama/*.json && \
+          git commit -m "Auto check-in assets changes"
       - name: Push changes to assets
         run: git push origin $BRANCH_NAME
         env:
