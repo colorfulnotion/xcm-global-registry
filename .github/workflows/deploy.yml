@@ -26,9 +26,9 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run polkadot
-        run: node xcmgar polkadot
+        run: node xcmgar registry -r polkadot
       - name: Run kusama
-        run: node xcmgar kusama
+        run: node xcmgar registry -r kusama
       - name: Show diff
         run: git diff assets
       - name: Configure Git Client
