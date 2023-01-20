@@ -343,16 +343,15 @@ module.exports = class XCMGlobalAssetRegistryManager {
         return h
     }
 
+    //Does not work with setupAPIWithTimeout. Work around: treat serial as batch of size 1
     async serialCrawlerInit(supportedChainKeys = ['polkadot-0']) {
         let failedChainkeys = []
         for (const chainkey of supportedChainKeys) {
             console.log(`[${chainkey}] Crawler Init Start`)
-            let stautus = await this.init_api_crawler(chainkey)
-            if (!stautus){
-                console.log(`[${chainkey}] Crawler Init Stuck!!`)
+            let failedChainkey = await this.batchCrawlerInit([chainkey])
+            if (failedChainkey.length > 0 ){
+                console.log(`[${chainkey}] Crawler Init TIMEOUT!!`)
                 failedChainkeys.push(chainkey)
-            }else{
-                console.log(`[${chainkey}] Crawler Init DONE`)
             }
         }
         return failedChainkeys
@@ -390,7 +389,7 @@ module.exports = class XCMGlobalAssetRegistryManager {
             if (apiInitState.status != undefined && apiInitState.status == "fulfilled") {
                 //console.log(`api Init ${initChainkey} Init Completed DONE`)
             } else {
-                this.crawlUsageMap[initChainkey].initStatus = `Failed`
+                //this.crawlUsageMap[initChainkey].initStatus = `Failed`
                 console.log(`api Init ${initChainkey} state`, apiInitState)
                 console.log(`api Init ${initChainkey} Failed! reason=${apiInitState['reason']}`)
                 failedChainkeys.push(initChainkey)
@@ -418,9 +417,13 @@ module.exports = class XCMGlobalAssetRegistryManager {
         if (ep) {
             let wsEndpoint = ep.WSEndpoints[0]
             let crawler = new Crawler(chainkey)
-            let api = await crawler.init_api(wsEndpoint)
-            crawler.chainParser = this.chainParserInit(chainkey, api, this)
-            crawler.api = api
+            console.log(`[${chainkey}] setupAPIWithTimeout start`)
+            //let api = await crawler.init_api(wsEndpoint)
+            //crawler.api = api
+            //crawler.chainParser = this.chainParserInit(chainkey, api, this)
+            let status = await crawler.setupAPIWithTimeout(wsEndpoint)
+            console.log(`[${chainkey}] setupAPIWithTimeout done [${status}]`)
+            crawler.chainParser = this.chainParserInit(chainkey, crawler.api, this)
             crawler.paraID = ep.paraID
             this.chainAPIs[chainkey] = crawler
             if (paraIDSource == '0') {
@@ -434,33 +437,7 @@ module.exports = class XCMGlobalAssetRegistryManager {
         }
     }
 
-    async initAPI(chainkey = 'kusama-0') {
-        if (this.chainAPIs[chainkey] != undefined) {
-            //console.log(`${chainkey} already initiated`)
-            return this.chainAPIs[chainkey]
-        }
-        let ep = this.getEndpointsBykey(chainkey)
-        if (ep) {
-            let wsEndpoint = ep.WSEndpoints[0]
-            let api = await this.init_api(wsEndpoint)
-            this.chainAPIs[chainkey] = api
-            console.log(`[${chainkey}] endpoint:${wsEndpoint} ready`)
-            return this.chainAPIs[chainkey]
-        } else {
-            console.log(`${chainkey} not supported`)
-            return false
-        }
-    }
-
     async getCrawler(chainkey = 'kusama-0') {
-        if (this.chainAPIs[chainkey] != undefined) {
-            return this.chainAPIs[chainkey]
-        } else {
-            return false
-        }
-    }
-
-    async getAPI(chainkey = 'kusama-0') {
         if (this.chainAPIs[chainkey] != undefined) {
             return this.chainAPIs[chainkey]
         } else {

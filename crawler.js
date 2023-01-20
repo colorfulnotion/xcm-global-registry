@@ -125,4 +125,89 @@ module.exports = class crawler {
         });
         return api;
     }
+
+    async setupAPI(wsEndpoint) {
+        if (!this.api) {
+            this.api = await this.init_api(wsEndpoint);
+        }
+    }
+
+
+    waitMaxAPIRetry(callback, self, chainkey, maxDisconnectedCnt) {
+        let checkIntervalMS = 500
+        let maxInteration = 30
+        return new Promise((_, reject) => {
+            let iteration = 0;
+            const interval = setInterval(async () => {
+                let apiInitStatus = await callback(self, chainkey, maxDisconnectedCnt, interval)
+                if (apiInitStatus == 'terminate') {
+                    //console.log(`waitInterval`, callback)
+                    clearInterval(interval);
+                    //setTimeout(() => reject(new Error(`TERMINATING ${chainkey} checkAPIStatus maxDisconnectedCnt reached!!!`)), 10);
+                    return reject(new Error(`TERMINATING ${chainkey} checkAPIStatus maxDisconnectedCnt reached!!!`))
+                } else if (apiInitStatus == "done") {
+                    clearInterval(interval);
+                }
+                if (iteration >= maxInteration) {
+                    clearInterval(interval);
+                }
+                iteration++;
+            }, checkIntervalMS);
+        });
+    }
+
+    wait(maxTimeMS) {
+        return new Promise((_, reject) => {
+            setTimeout(() => reject(new Error(`TIMEOUT in ${maxTimeMS/1000}s`)), maxTimeMS);
+        });
+    }
+
+    async validateApi() {
+        //TODO
+        if (this.debugLevel > xcmgarTool.debugVerbose) console.log(`[chainkey=${this.chainkey}], connected=${this.getConnected()}, exitOnDisconnect=${this.getExitOnDisconnect()}`)
+    }
+
+    checkAPIStatus(self, chainkey, maxDisconnectedCnt) {
+        let connected = self.getConnected()
+        let disconnectedCnt = self.getDisconnectedCnt()
+        // If the condition below is true the timer finishes
+        let apiInitStatus = 'pending'
+        if (disconnectedCnt >= maxDisconnectedCnt) {
+            console.log(`${chainkey} checkAPIStatus MaxDisconnectedCnt(${maxDisconnectedCnt}) reached`)
+            apiInitStatus = 'terminate'
+        }
+        if (connected) {
+            console.log(`${chainkey} checkAPIStatus connected!`)
+            apiInitStatus = 'done'
+        }
+        return apiInitStatus
+    }
+
+    async setupAPIWithTimeout(wsEndpoint) {
+        let maxTimeMS = 30000
+        let maxDisconnectedCnt = 3
+        let chainkey = this.chainkey
+        let resolve = this.setupAPI(wsEndpoint);
+        //race: {maxTimeMS reached, maxDisconnectedCnt reached, successfully initiated} whichever comes first
+        try {
+            await Promise.race([this.wait(maxTimeMS), resolve, this.waitMaxAPIRetry(this.checkAPIStatus, this, chainkey, maxDisconnectedCnt)]);
+        } catch (err) {
+            if (this.debugLevel > xcmgarTool.debugInfo) console.log(`race error caught`, err);
+        }
+
+        let resolve2 = this.validateApi();
+        await new Promise((resolve2, reject) => {
+            setTimeout(() => {
+                if (this.getConnected()) {
+                    resolve2();
+                } else {
+                    console.log(`${chainkey} endpoints:${wsEndpoint} unreachable !!!`)
+                    return reject(new Error(`${chainkey} endpoints:${wsEndpoint} Exit!`));
+                }
+            }, 10);
+        });
+        return true;
+    }
+
+
 }
