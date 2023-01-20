@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-            #      - .github/workflows/deploy.yml
+      - .github/workflows/deploy.yml
       - publicEndpoints/*.json
     schedule:
       - cron: '* */1 * * *'
