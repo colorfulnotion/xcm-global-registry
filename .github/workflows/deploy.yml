@@ -43,6 +43,3 @@ jobs:
         run: git push origin $BRANCH_NAME
         env:
           BRANCH_NAME: ${{ github.head_ref || github.ref_name }} 
-          
-
-
