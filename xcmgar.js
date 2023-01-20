@@ -535,7 +535,7 @@ module.exports = class XCMGlobalAssetRegistry {
             chainParser = new MangataxParser(api, manager)
         } else if (this.isMatched(chainkey, ['kusama-2048|robonomics'])) {
             chainParser = new RobonomicsParser(api, manager)
-        } else if (this.isMatched(chainkey, ['polkadot-2031|centrifuge','kusama-2088|altair'])) {
+        } else if (this.isMatched(chainkey, ['polkadot-2031|centrifuge', 'kusama-2088|altair'])) {
             chainParser = new CentrifugeParser(api, manager)
         } else if (this.isMatched(chainkey, ['polkadot-2090|oak', 'kusama-2114|turing'])) {
             chainParser = new OakParser(api, manager)

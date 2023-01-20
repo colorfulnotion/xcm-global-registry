@@ -257,7 +257,7 @@ module.exports = class XCMGlobalAssetRegistryManager {
             console.log(`Rejected: ${relayChain} endpoints[${Object.keys(rejectedList).length}]`, Object.keys(rejectedList))
             console.log(`Supported: ${relayChain} endpoints[${Object.keys(supportedList).length}]`, Object.keys(supportedList))
             console.log(`Unverified ${relayChain} endpoints[${Object.keys(unverifiedList).length}]`, Object.keys(unverifiedList))
-            if (isUpdate){
+            if (isUpdate) {
                 await this.writeJSONFn(relayChain, 'publicEndpoints', supportedList)
             }
         }
@@ -564,7 +564,7 @@ module.exports = class XCMGlobalAssetRegistryManager {
             chainParser = new MangataxParser(api, manager)
         } else if (this.isMatched(chainkey, ['kusama-2048|robonomics'])) {
             chainParser = new RobonomicsParser(api, manager)
-        } else if (this.isMatched(chainkey, ['polkadot-2031|centrifuge','kusama-2088|altair'])) {
+        } else if (this.isMatched(chainkey, ['polkadot-2031|centrifuge', 'kusama-2088|altair'])) {
             chainParser = new CentrifugeParser(api, manager)
         } else if (this.isMatched(chainkey, ['polkadot-2090|oak', 'kusama-2114|turing'])) {
             chainParser = new OakParser(api, manager)
