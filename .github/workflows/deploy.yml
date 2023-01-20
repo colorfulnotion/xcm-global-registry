@@ -30,7 +30,9 @@ jobs:
       - name: Run kusama
         run: node xcmgar registry -r kusama
       - name: Show diff
-        run: git diff assets
+        run:  |
+            git diff assets
+            git diff xcmRegistry
       - name: Configure Git Client
         run: |
           git config user.name github-actions
@@ -38,7 +40,8 @@ jobs:
       - name: Commit changes to assets
         run: |
           git add assets/polkadot/*.json assets/kusama/*.json && \
-          git commit -m "Auto check-in assets changs"
+          git add xcmRegistry/*.json && \
+          git commit -m "Auto check-in assets/registry changes"
       - name: Push changes to assets
         run: git push origin $BRANCH_NAME
         env:
