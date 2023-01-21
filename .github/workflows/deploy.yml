@@ -7,6 +7,10 @@ on:
     paths:
       - .github/workflows/deploy.yml
       - publicEndpoints/*.json
+      - chainParsers/*.js
+      - xcmgar
+      - xcmgarManager.js
+      - xcmgarTool.js
   schedule:
     - cron: '* */1 * * *'
 
