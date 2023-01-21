@@ -31,12 +31,13 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run polkadot
-        run: node xcmgar registry -r polkadot -s
+        run: node xcmgar registry -r polkadot
       - name: Run kusama
-        run: node xcmgar registry -r kusama -s
+        run: node xcmgar registry -r kusama
       - name: Show diff
         run:  |
             git diff assets
+            git diff xcAssets
             git diff xcmRegistry
       - name: Configure Git Client
         run: |
@@ -46,6 +47,7 @@ jobs:
         run: |
           git add assets/polkadot/*.json assets/kusama/*.json && \
           git add xcmRegistry/*.json && \
+          git add xcAssets/*.json && \
           git commit -m "Auto check-in assets/registry changes"
       - name: Push changes to assets
         run: git push origin $BRANCH_NAME
