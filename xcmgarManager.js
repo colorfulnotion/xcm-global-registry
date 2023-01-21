@@ -110,7 +110,8 @@ module.exports = class XCMGlobalAssetRegistryManager {
                 console.log(`✅ Success: ${relayChain}-${paraID} Local Asset Regsitry (Found:${assetCnt}) cahced @\n    ${fnDirFn}`)
                 break;
             case 'xcAssets':
-                console.log(`✅ Success: ${relayChain}-${paraID} XCM/MultiLocation Regsitry cahced @\n    ${fnDirFn}`)
+                let xcAssetCnt = jsonObj.length
+                console.log(`✅ Success: ${relayChain}-${paraID} XCM/MultiLocation Regsitry (Found:${xcAssetCnt}) cahced @\n    ${fnDirFn}`)
                 break;
             default:
                 console.log(`✅ Success: ${relayChain}-${paraID} cahced @n    ${fnDirFn}`)
@@ -275,6 +276,40 @@ module.exports = class XCMGlobalAssetRegistryManager {
     async updateXcmRegistry() {
         let relayChain = this.relaychain
         await this.writeJSONFn(relayChain, 'xcmRegistry', this.getXcmAssetMap())
+    }
+
+    async updateLocalMultilocation() {
+        let relayChain = this.relaychain
+        let chainXcmAssetMap = this.getChainXcmAssetMap()
+        for (const chainkey of Object.keys(chainXcmAssetMap)) {
+            let pieces = chainkey.split('-')
+            let paraIDSource = pieces[1]
+            let localXcAssetMap = chainXcmAssetMap[chainkey]
+            let localXcAssetList = []
+            let localXcAssetChainkeys = Object.keys(localXcAssetMap)
+            localXcAssetChainkeys.sort()
+            for (const localXcAssetChainkey of localXcAssetChainkeys) {
+                let localXcAsset = localXcAssetMap[localXcAssetChainkey]
+                //delete localAsset.xcmInteriorKeyV1;
+                //let [parseAssetChain, _] = xcmgarTool.parseAssetChain(localAssetChainkey)
+                let xcAsset = localXcAsset
+                if (xcAsset.xcCurrencyID != undefined && xcAsset.xcCurrencyID[paraIDSource] != undefined){
+                    xcAsset.asset = xcAsset.xcCurrencyID[paraIDSource]
+                }
+                if (xcAsset.xcContractAddress != undefined && xcAsset.xcContractAddress[paraIDSource] != undefined){
+                    xcAsset.contractAddress = xcAsset.xcContractAddress[paraIDSource]
+                }
+                delete xcAsset.xcCurrencyID
+                delete xcAsset.xcContractAddress
+                delete xcAsset.source
+                delete xcAsset.confidence
+                xcAsset.source = [paraIDSource]
+                localXcAssetList.push(xcAsset)
+            }
+            if (localXcAssetList.length > 0) {
+                await this.writeParaJSONFn(relayChain, paraIDSource, 'xcAssets', localXcAssetList)
+            }
+        }
     }
 
     async updateLocalAsset() {
@@ -646,9 +681,14 @@ module.exports = class XCMGlobalAssetRegistryManager {
             this.xcmAssetMap[xcmInteriorKey].confidence += 1
             this.xcmAssetMap[xcmInteriorKey].source.push(paraIDSource)
         }
-        if (this.chainXcmAssetMap[chainkey] == undefined) this.chainXcmAssetMap[chainkey] = {}
-        if (this.chainXcmAssetMap[chainkey][xcmInteriorKey] == undefined) this.chainXcmAssetMap[chainkey][xcmInteriorKey] = {}
-        this.chainXcmAssetMap[chainkey][xcmInteriorKey] = xcmAssetInfo
+        if (this.chainXcmAssetMap[chainkey] == undefined) {
+            this.chainXcmAssetMap[chainkey] = {}
+            console.log(`creating this.chainXcmAssetMap[${chainkey}]!!!`, this.chainXcmAssetMap[chainkey])
+        }
+        if (this.chainXcmAssetMap[chainkey][xcmInteriorKey] == undefined) {
+            this.chainXcmAssetMap[chainkey][xcmInteriorKey] = xcmAssetInfo
+            console.log(`setting this.chainXcmAssetMap[${chainkey}][${xcmInteriorKey}] !!!`, this.chainXcmAssetMap[chainkey][xcmInteriorKey])
+        }
     }
 
     getXcmAsset(xcmInteriorKey) {
@@ -659,12 +699,27 @@ module.exports = class XCMGlobalAssetRegistryManager {
         return false
     }
 
-    addXcmAssetLocalCurrencyID(xcmInteriorKey, localParaID, localCurrencyID) {
+    addXcmAssetLocalCurrencyID(xcmInteriorKey, localParaID, localCurrencyID, chainkey) {
         let xcmAsset = this.xcmAssetMap[xcmInteriorKey]
         if (xcmAsset != undefined) {
             //console.log(`add LocalCurrencyID ${xcmInteriorKey}`)
             this.xcmAssetMap[xcmInteriorKey]['xcCurrencyID'][localParaID] = localCurrencyID
         }
+        if (this.chainXcmAssetMap[chainkey] == undefined) {
+            this.chainXcmAssetMap[chainkey] = {}
+            console.log(`currencyID creating this.chainXcmAssetMap[${chainkey}]!!!`, this.chainXcmAssetMap[chainkey])
+        }
+        try {
+            if (this.chainXcmAssetMap[chainkey][xcmInteriorKey] != undefined) {
+                this.chainXcmAssetMap[chainkey][xcmInteriorKey]['xcCurrencyID'][localParaID] = localCurrencyID
+                console.log(`currencyID setting this.chainXcmAssetMap[${chainkey}][${xcmInteriorKey}]['xcCurrencyID'][${localParaID}] !!!`, this.chainXcmAssetMap[chainkey][xcmInteriorKey]['xcCurrencyID'][localParaID])
+            }else{
+                console.log(`ELSE! currencyID setting this.chainXcmAssetMap[${chainkey}][${xcmInteriorKey}]['xcCurrencyID'][${localParaID}] !!!`, this.chainXcmAssetMap[chainkey][xcmInteriorKey]['xcCurrencyID'][localParaID])
+            }
+        } catch (e){
+            console.log(`[${chainkey}] addXcmAssetLocalCurrencyID xcmInteriorKey=${xcmInteriorKey}, localParaID=${localParaID}, localCurrencyID`, localCurrencyID, e)
+        }
+
     }
 
     addXcmAssetLocalxcContractAddress(xcmInteriorKey, localParaID, localCurrencyID) {
@@ -686,6 +741,18 @@ module.exports = class XCMGlobalAssetRegistryManager {
 
     getChainAssetMap() {
         return this.chainAssetMap
+    }
+
+    getChainXcmAssetMap() {
+        return this.chainXcmAssetMap
+    }
+
+    getLocalXcAssetMap(chainkey) {
+        if (this.chainXcmAssetMap[chainkey] != undefined) {
+            return this.chainXcmAssetMap[chainkey]
+        } else {
+            return false
+        }
     }
 
     getLocalAssetMap(chainkey) {
