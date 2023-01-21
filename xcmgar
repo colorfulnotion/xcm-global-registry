@@ -48,6 +48,7 @@ class XCMGlobalAssetRegistryCLI {
                 await xcmgarm.updateXcmRegistry()
             }
             await xcmgarm.updateLocalAsset()
+            await xcmgarm.updateLocalMultilocation()
         }
     }
 
