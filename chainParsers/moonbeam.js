@@ -7,6 +7,8 @@ Fork this template to create new custom parser
 Support chains
 polkadot-2004|moonbeam
 kusama-2023|moonriver
+moonbase-1000|alpha
+moonbase-888|beta
 */
 
 

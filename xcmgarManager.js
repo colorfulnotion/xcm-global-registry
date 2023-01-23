@@ -34,7 +34,6 @@ const path = require("path");
 module.exports = class XCMGlobalAssetRegistryManager {
 
     fnDirFn = {};
-
     publicEndpointsMap = {};
     validParachains = [];
     knownParathreads = [];
@@ -267,7 +266,7 @@ module.exports = class XCMGlobalAssetRegistryManager {
             console.log(`Rejected: ${relayChain} endpoints[${Object.keys(rejectedList).length}]`, Object.keys(rejectedList))
             console.log(`Supported: ${relayChain} endpoints[${Object.keys(supportedList).length}]`, Object.keys(supportedList))
             console.log(`Unverified ${relayChain} endpoints[${Object.keys(unverifiedList).length}]`, Object.keys(unverifiedList))
-            if (isUpdate){
+            if (isUpdate) {
                 await this.writeJSONFn(relayChain, 'publicEndpoints', supportedList)
             }
         }
@@ -293,10 +292,10 @@ module.exports = class XCMGlobalAssetRegistryManager {
                 //delete localAsset.xcmInteriorKeyV1;
                 //let [parseAssetChain, _] = xcmgarTool.parseAssetChain(localAssetChainkey)
                 let xcAsset = localXcAsset
-                if (xcAsset.xcCurrencyID != undefined && xcAsset.xcCurrencyID[paraIDSource] != undefined){
+                if (xcAsset.xcCurrencyID != undefined && xcAsset.xcCurrencyID[paraIDSource] != undefined) {
                     xcAsset.asset = xcAsset.xcCurrencyID[paraIDSource]
                 }
-                if (xcAsset.xcContractAddress != undefined && xcAsset.xcContractAddress[paraIDSource] != undefined){
+                if (xcAsset.xcContractAddress != undefined && xcAsset.xcContractAddress[paraIDSource] != undefined) {
                     xcAsset.contractAddress = xcAsset.xcContractAddress[paraIDSource]
                 }
                 delete xcAsset.xcCurrencyID
@@ -384,7 +383,7 @@ module.exports = class XCMGlobalAssetRegistryManager {
         for (const chainkey of supportedChainKeys) {
             console.log(`[${chainkey}] Crawler Init Start`)
             let failedChainkey = await this.batchCrawlerInit([chainkey])
-            if (failedChainkey.length > 0 ){
+            if (failedChainkey.length > 0) {
                 console.log(`[${chainkey}] Crawler Init TIMEOUT!!`)
                 failedChainkeys.push(chainkey)
             }
@@ -511,7 +510,7 @@ module.exports = class XCMGlobalAssetRegistryManager {
         let chainParser;
         if (this.isMatched(chainkey, ['polkadot-2000|acala', 'kusama-2000|karura'])) {
             chainParser = new AcalaParser(api, manager)
-        } else if (this.isMatched(chainkey, ['polkadot-2004|moonbeam', 'kusama-2023|moonriver'])) {
+        } else if (this.isMatched(chainkey, ['polkadot-2004|moonbeam', 'kusama-2023|moonriver', 'moonbase-1000|alpha', 'moonbase-888|beta'])) {
             chainParser = new MoonbeamParser(api, manager)
         } else if (this.isMatched(chainkey, ['polkadot-1000|statemint', 'kusama-1000|statemine'])) {
             chainParser = new StatemintParser(api, manager)
@@ -535,7 +534,7 @@ module.exports = class XCMGlobalAssetRegistryManager {
             chainParser = new MangataxParser(api, manager)
         } else if (this.isMatched(chainkey, ['kusama-2048|robonomics'])) {
             chainParser = new RobonomicsParser(api, manager)
-        } else if (this.isMatched(chainkey, ['polkadot-2031|centrifuge','kusama-2088|altair'])) {
+        } else if (this.isMatched(chainkey, ['polkadot-2031|centrifuge', 'kusama-2088|altair'])) {
             chainParser = new CentrifugeParser(api, manager)
         } else if (this.isMatched(chainkey, ['polkadot-2090|oak', 'kusama-2114|turing'])) {
             chainParser = new OakParser(api, manager)
@@ -651,10 +650,10 @@ module.exports = class XCMGlobalAssetRegistryManager {
             if (this.chainXcmAssetMap[chainkey][xcmInteriorKey] != undefined) {
                 this.chainXcmAssetMap[chainkey][xcmInteriorKey]['xcCurrencyID'][localParaID] = localCurrencyID
                 console.log(`currencyID setting this.chainXcmAssetMap[${chainkey}][${xcmInteriorKey}]['xcCurrencyID'][${localParaID}] !!!`, this.chainXcmAssetMap[chainkey][xcmInteriorKey]['xcCurrencyID'][localParaID])
-            }else{
+            } else {
                 console.log(`ELSE! currencyID setting this.chainXcmAssetMap[${chainkey}][${xcmInteriorKey}]['xcCurrencyID'][${localParaID}] !!!`, this.chainXcmAssetMap[chainkey][xcmInteriorKey]['xcCurrencyID'][localParaID])
             }
-        } catch (e){
+        } catch (e) {
             console.log(`[${chainkey}] addXcmAssetLocalCurrencyID xcmInteriorKey=${xcmInteriorKey}, localParaID=${localParaID}, localCurrencyID`, localCurrencyID, e)
         }
 
