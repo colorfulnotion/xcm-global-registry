@@ -3,9 +3,9 @@
 ## TL;DR
 This XCM Global Asset Registry (XCMGAR) repo does all the data processing needed to aggregate multiple on-chain asset registries from the Polkadot and Kusama ecosystem into one XCM Global Asset Registry.  
 
-* Input: known [Polkadot + Kusama RPC endpoints](https://github.com/colorfulnotion/xcm-global-registry/tree/main/assets) 
+* Input: known [Polkadot + Kusama RPC endpoints](https://github.com/colorfulnotion/xcm-global-registry/tree/main/assets)
 
-* Output: one [[XCM Global Asset Registry](https://github.com/colorfulnotion/xcm-global-registry/tree/main/xcmRegistry)] containing all xcAsset across parachains and a [[local (xc)Assets registry](https://github.com/colorfulnotion/xcm-global-registry/tree/main/assets/polkadot)] per each parachain.
+* Output: one [[XCM Global Asset Registry](https://github.com/colorfulnotion/xcm-global-registry/tree/main/xcmRegistry)] containing all xcAsset across parachains and [[local (xc)Assets registry](https://github.com/colorfulnotion/xcm-global-registry/tree/main/assets/polkadot) + [local xcm registry](https://github.com/colorfulnotion/xcm-global-registry/tree/main/xcAssets/polkadot)] per each parachain.
 
 As of mid-January 2023, XCMGAR covers 55+ chains with 30 xcAssets on Polkadot and 44 on Kusama. This is a work in progress and needs contributions from parachain teams to be successful. Data is updated daily via Github Actions.
 

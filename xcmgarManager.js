@@ -34,7 +34,6 @@ const path = require("path");
 module.exports = class XCMGlobalAssetRegistryManager {
 
     fnDirFn = {};
-
     publicEndpointsMap = {};
     validParachains = [];
     knownParathreads = [];
@@ -511,7 +510,7 @@ module.exports = class XCMGlobalAssetRegistryManager {
         let chainParser;
         if (this.isMatched(chainkey, ['polkadot-2000|acala', 'kusama-2000|karura'])) {
             chainParser = new AcalaParser(api, manager)
-        } else if (this.isMatched(chainkey, ['polkadot-2004|moonbeam', 'kusama-2023|moonriver'])) {
+        } else if (this.isMatched(chainkey, ['polkadot-2004|moonbeam', 'kusama-2023|moonriver', 'moonbase-1000|alpha', 'moonbase-888|beta'])) {
             chainParser = new MoonbeamParser(api, manager)
         } else if (this.isMatched(chainkey, ['polkadot-1000|statemint', 'kusama-1000|statemine'])) {
             chainParser = new StatemintParser(api, manager)

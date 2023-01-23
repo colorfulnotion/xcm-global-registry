@@ -12,7 +12,7 @@ on:
       - xcmgarManager.js
       - xcmgarTool.js
   schedule:
-    - cron: '30 * * * *'
+    - cron: '30 */2 * * *'
 
 jobs:
   build:
@@ -34,6 +34,8 @@ jobs:
         run: node xcmgar registry -r polkadot
       - name: Kusama XCM Global Asset Registry Generation
         run: node xcmgar registry -r kusama
+      - name: Moonbase XCM Global Asset Registry Generation
+        run: node xcmgar registry -r moonbase
       - name: Show diff
         run:  |
             git diff assets
@@ -46,12 +48,13 @@ jobs:
       - name: Set timestamp
         run: |
           echo "CURRENT_TIMESTAMP=$(date +'%Y-%m-%d %H:%M')" >> $GITHUB_ENV
+          echo "CommitHash=$(cut -d'-' -f2 <<< $(node xcmgar -V))" >> $GITHUB_ENV
       - name: Commit changes to assets
         run: |
-          git add assets/polkadot/*.json assets/kusama/*.json && \
+          git add assets/*.json && \
           git add xcmRegistry/*.json && \
           git add xcAssets/*.json && \
-          git commit -m "xcmgar assets/registry changes @ ${{ env.CURRENT_TIMESTAMP }}" || echo "No changes to commit"
+          git commit -m "[Auto] XCM Assets/Registry Updates (${{ env.CURRENT_TIMESTAMP }}-${{env.CommitHash}})" || echo "No changes to commit"
       - name: Push changes to assets
         run: git push origin $BRANCH_NAME
         env:

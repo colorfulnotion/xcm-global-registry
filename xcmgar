@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const { Command } = require('commander');
 const endpoints = require("./endpoints");
+const xcmgarTool = require("./xcmgarTool");
 const fs = require('fs');
 var XCMGlobalAssetRegistryManager = require("./xcmgarManager");
 
@@ -93,11 +94,12 @@ class XCMGlobalAssetRegistryCLI {
 }
 
 async function main() {
+    let cli_version = '0.0.1'
     const program = new Command();
     program
 	.name('xcmgar')
 	.description('XCM Global Asset Registry. Repo: https://github.com/colorfulnotion/xcm-global-registry')
-	.version('0.0.1');
+	.version(`${cli_version}-commit.${xcmgarTool.commitHash()}`);
 
     program.command('registry')
 	.description('Fetch on-chain Asset Registry and XCM MultiLocation Registry')
