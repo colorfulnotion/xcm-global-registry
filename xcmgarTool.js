@@ -282,10 +282,10 @@ function git_hash(isRelativePath = true) {
     try {
         const rev = fs.readFileSync(`${path}/.git/HEAD`).toString().trim().split(/.*[: ]/).slice(-1)[0];
         if (rev.indexOf('/') === -1) {
-            commitHash = `${rev}`.substr(0,8)
+            commitHash = `${rev}`.substr(0, 8)
             return commitHash;
         } else {
-            commitHash = `${fs.readFileSync(`${path}/.git/` + rev).toString().trim()}`.substr(0,8);
+            commitHash = `${fs.readFileSync(`${path}/.git/` + rev).toString().trim()}`.substr(0, 8);
             return commitHash;
         }
     } catch (e) {
