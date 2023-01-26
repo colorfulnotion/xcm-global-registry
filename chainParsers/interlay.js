@@ -35,9 +35,33 @@ module.exports = class InterlayParser extends ChainParser {
         }]
     }
     */
-
     augment = {}
-    manualRegistry = {}
+    manualRegistry = {
+        "polkadot-2032": [{
+            asset: {
+                "Token": "INTR"
+            },
+            xcmInteriorKey: '[{"network":"polkadot"},{"parachain":2032},{"generalKey":"0x0002"}]'
+        },
+        {
+            asset: {
+                "Token": "IBTC"
+            },
+            xcmInteriorKey: '[{"network":"polkadot"},{"parachain":2032},{"generalKey":"0x0001"}]'
+        }],
+        'kusama-2092': [{
+            asset: {
+                "Token": "KINT"
+            },
+            xcmInteriorKey: '[{"network":"kusama"},{"parachain":2092},{"generalKey":"0x000c"}]'
+        },
+        {
+            asset: {
+                "Token": "KBTC"
+            },
+            xcmInteriorKey: '[{"network":"kusama"},{"parachain":2092},{"generalKey":"0x000b"}]'
+        }]
+    }
 
     isXcRegistryAvailable = true
 
@@ -62,6 +86,7 @@ module.exports = class InterlayParser extends ChainParser {
     async fetchAugments(chainkey) {
         // implement your augment parsing function here.
         await this.processInterlayAugment(chainkey)
+        await this.processInterlayManualRegistry(chainkey)
 
     }
 
@@ -76,7 +101,6 @@ module.exports = class InterlayParser extends ChainParser {
             // step 2: load up results
             for (const assetChainkey of Object.keys(assetList)) {
                 let assetInfo = assetList[assetChainkey]
-                console.log(`assetChainkey=${assetChainkey}, assetInfo`, assetInfo)
                 // [opinionated] Interlay's token:account is using 'ForeignAsset' prefix - we will manually generate this to match
                 let standardizedAssetChainkey = this.padCurrencyID(assetChainkey)
                 this.manager.setChainAsset(chainkey, standardizedAssetChainkey, assetInfo)
@@ -121,17 +145,14 @@ module.exports = class InterlayParser extends ChainParser {
                 let assetID = assetIDList[xcmInteriorKey]
                 this.manager.setXcmAsset(xcmInteriorKey, xcmAssetInfo, chainkey)
                 // update global xcRegistry to include assetID used by this parachain
-                console.log(`xcmInteriorKey=${xcmInteriorKey}, assetID=`, assetID)
                 if (xcmgarTool.isNumeric(assetID)){
                   // [opinionated] Interlay's token:account is using 'ForeignAsset' prefix - we will manually generate this to match
                   let foreignAssetID = {
                     ForeignAsset: `${assetID}`
                   }
-                  console.log(`foreignAssetID xcmInteriorKey=${xcmInteriorKey}, asset=${assetID}, foreignAssetID`, foreignAssetID)
                   this.manager.addXcmAssetLocalCurrencyID(xcmInteriorKey, paraIDSource, foreignAssetID, chainkey)
                 }else{
                   //system properties tokens like INTR, IBTC, ... etc
-                  console.log(`system properties xcmInteriorKey=${xcmInteriorKey}, asset=`, assetID)
                   this.manager.addXcmAssetLocalCurrencyID(xcmInteriorKey, paraIDSource, assetID, chainkey)
                 }
             }
@@ -141,6 +162,15 @@ module.exports = class InterlayParser extends ChainParser {
                 this.manager.setChainAsset(chainkey, assetChainkey, assetInfo, true)
             }
         }
+    }
+
+    async processInterlayManualRegistry(chainkey) {
+        console.log(`[${chainkey}] ${this.parserName} manual`)
+        let pieces = chainkey.split('-')
+        let relayChain = pieces[0]
+        let paraIDSource = pieces[1]
+        let manualRecs = this.manualRegistry[chainkey]
+        this.processManualRegistry(chainkey, manualRecs)
     }
 
     async processInterlayAugment(chainkey) {
