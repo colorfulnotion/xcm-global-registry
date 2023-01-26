@@ -76,9 +76,30 @@ module.exports = class InterlayParser extends ChainParser {
             // step 2: load up results
             for (const assetChainkey of Object.keys(assetList)) {
                 let assetInfo = assetList[assetChainkey]
-                this.manager.setChainAsset(chainkey, assetChainkey, assetInfo)
+                console.log(`assetChainkey=${assetChainkey}, assetInfo`, assetInfo)
+                // [opinionated] Interlay's token:account is using 'ForeignAsset' prefix - we will manually generate this to match
+                let standardizedAssetChainkey = this.padCurrencyID(assetChainkey)
+                this.manager.setChainAsset(chainkey, standardizedAssetChainkey, assetInfo)
             }
         }
+    }
+
+    padCurrencyID(assetChainkey, prefixType = 'ForeignAsset'){
+      let updatedAssetChainkey = assetChainkey
+      let [assetUnparsed, chainkey] = xcmgarTool.parseAssetChain(assetChainkey)
+      try {
+        let asset = JSON.parse(assetUnparsed)
+        let assetID = asset.Token
+        if (assetID != undefined && xcmgarTool.isNumeric(assetID)){
+          let updatedAssetID = {}
+          updatedAssetID[prefixType] = `${assetID}`
+          let assetString = xcmgarTool
+          updatedAssetChainkey = xcmgarTool.makeAssetChain(JSON.stringify(updatedAssetID), chainkey)
+        }
+      } catch (e){
+        console.log(`padCurrencyID err`, e)
+      }
+      return updatedAssetChainkey
     }
 
     // Implement interlay xcGar parsing function here
@@ -100,10 +121,23 @@ module.exports = class InterlayParser extends ChainParser {
                 let assetID = assetIDList[xcmInteriorKey]
                 this.manager.setXcmAsset(xcmInteriorKey, xcmAssetInfo, chainkey)
                 // update global xcRegistry to include assetID used by this parachain
-                this.manager.addXcmAssetLocalCurrencyID(xcmInteriorKey, paraIDSource, assetID, chainkey)
+                console.log(`xcmInteriorKey=${xcmInteriorKey}, assetID=`, assetID)
+                if (xcmgarTool.isNumeric(assetID)){
+                  // [opinionated] Interlay's token:account is using 'ForeignAsset' prefix - we will manually generate this to match
+                  let foreignAssetID = {
+                    ForeignAsset: `${assetID}`
+                  }
+                  console.log(`foreignAssetID xcmInteriorKey=${xcmInteriorKey}, asset=${assetID}, foreignAssetID`, foreignAssetID)
+                  this.manager.addXcmAssetLocalCurrencyID(xcmInteriorKey, paraIDSource, foreignAssetID, chainkey)
+                }else{
+                  //system properties tokens like INTR, IBTC, ... etc
+                  console.log(`system properties xcmInteriorKey=${xcmInteriorKey}, asset=`, assetID)
+                  this.manager.addXcmAssetLocalCurrencyID(xcmInteriorKey, paraIDSource, assetID, chainkey)
+                }
             }
             for (const assetChainkey of Object.keys(updatedAssetList)) {
                 let assetInfo = updatedAssetList[assetChainkey]
+                let standardizedAssetChainkey = this.padCurrencyID(assetChainkey)
                 this.manager.setChainAsset(chainkey, assetChainkey, assetInfo, true)
             }
         }
