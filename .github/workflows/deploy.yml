@@ -12,7 +12,7 @@ on:
       - xcmgarManager.js
       - xcmgarTool.js
   schedule:
-    - cron: '30 */2 * * *'
+    - cron: '30 */8 * * *'
 
 jobs:
   build:
