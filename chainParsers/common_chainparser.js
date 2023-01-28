@@ -384,6 +384,14 @@ module.exports = class ChainParser {
             }else{
               parsedAsset.Token = assetID
             }
+            if (this.isObject(assetID)){
+                try {
+                  let prefixType = Object.keys(assetID)[0]
+                  parsedAsset = assetID
+                } catch(e){
+                  console.log(`processXcmAssetsRegistryAssetMetadata err`, e)
+                }
+            }
             //let paraID = 0
             let chainID = -1
 
