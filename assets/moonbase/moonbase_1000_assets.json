@@ -85,7 +85,7 @@
         },
         "name": "Tinker",
         "symbol": "xcTNKR",
-        "decimals": 18,
+        "decimals": 12,
         "currencyID": "138512078356357941985706694377215053953",
         "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2125},{\"generalIndex\":0}]"
     },

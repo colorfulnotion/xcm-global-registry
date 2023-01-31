@@ -119,7 +119,7 @@
         "paraID": 2125,
         "relayChain": "moonbase",
         "symbol": "TNKR",
-        "decimals": 18,
+        "decimals": 12,
         "interiorType": "x2",
         "xcmV1Standardized": [
             {
