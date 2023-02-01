@@ -1163,6 +1163,15 @@
     },
     {
         "asset": {
+            "Token": "862812"
+        },
+        "name": "Virto CUBO",
+        "symbol": "CUBO",
+        "decimals": 9,
+        "currencyID": "862812"
+    },
+    {
+        "asset": {
             "Token": "87"
         },
         "name": "Xexr",
