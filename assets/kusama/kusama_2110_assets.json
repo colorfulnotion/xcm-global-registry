@@ -140,6 +140,16 @@
     },
     {
         "asset": {
+            "Token": "23"
+        },
+        "name": "Voucher BNC",
+        "symbol": "vBNC",
+        "decimals": 12,
+        "currencyID": "23",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0101\"}]"
+    },
+    {
+        "asset": {
             "Token": "3"
         },
         "name": "LiquidityPoolToken0x00000003",
