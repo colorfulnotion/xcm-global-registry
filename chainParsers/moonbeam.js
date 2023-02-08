@@ -104,7 +104,7 @@ module.exports = class MoonbeamParser extends ChainParser {
                 // update global xcRegistry to include assetID used by this parachain
                 this.manager.addXcmAssetLocalCurrencyID(xcmInteriorKey, paraIDSource, assetID, chainkey)
                 // compute xcContractAddress
-                this.manager.addXcmAssetLocalxcContractAddress(xcmInteriorKey, paraIDSource, assetID)
+                this.manager.addXcmAssetLocalxcContractAddress(chainkey, xcmInteriorKey, paraIDSource, assetID)
             }
             for (const assetChainkey of Object.keys(updatedAssetList)) {
                 let assetInfo = updatedAssetList[assetChainkey]
