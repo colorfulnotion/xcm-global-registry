@@ -19,7 +19,7 @@ module.exports = class MoonbeamParser extends ChainParser {
     //change [garPallet:garPallet] to the location where the asset registry is located.  ex: [assets:metadata]
     garPallet = 'assets';
     garStorage = 'metadata';
-    getPalletExtra = 'localAssets';
+    garPalletExtra = 'localAssets';
 
     //change [xcGarPallet:xcGarStorage] to the location where the xc registry is located.  ex: [assetManager:assetIdType]
     xcGarPallet = 'assetManager'
@@ -88,7 +88,12 @@ module.exports = class MoonbeamParser extends ChainParser {
             let assetList = this.processGarAssetPallet(chainkey, la)
             // step 2: load up results
             for (const assetChainkey of Object.keys(assetList)) {
+                // [opinionated] publish moonbeam localXcAsset with xcmInteriorKey
+                let xcmV1Standardized = this.isMoonbeamLocalXcAsset(assetChainkey)
                 let assetInfo = assetList[assetChainkey]
+                if (xcmV1Standardized){
+                  assetInfo.xcmInteriorKey = JSON.stringify(xcmV1Standardized)
+                }
                 this.manager.setChainAsset(chainkey, assetChainkey, assetInfo)
             }
         }
@@ -122,6 +127,29 @@ module.exports = class MoonbeamParser extends ChainParser {
                 this.manager.setChainAsset(chainkey, assetChainkey, assetInfo, true)
             }
         }
+    }
+
+
+    // add xcmInteriorKey for erc20
+    isMoonbeamLocalXcAsset(assetChainkey, prefixType = 'Token'){
+      let xcmV1Standardized = false
+      let [assetUnparsed, chainkey] = xcmgarTool.parseAssetChain(assetChainkey)
+      try {
+        console.log(`assetUnparsed`, assetUnparsed)
+        let asset = JSON.parse(assetUnparsed)
+        if (asset[prefixType] != undefined){
+          let pieces = chainkey.split('-')
+          let relayChain = pieces[0]
+          let paraIDSource = xcmgarTool.dechexToInt(pieces[1])
+          //Erc20: 228256396637196286254896220398224702687 -> 0xabb8953ac77edece4a6e251a849c7cdf
+          // > '[{"network":"polkadot"},{"parachain":2004},{"palletInstance":108},{"generalIndex":"0x CurrencyId encoded"}]'
+          let generalIndexEncoded = xcmgarTool.bnToHex(asset[prefixType])
+          xcmV1Standardized = [{network:relayChain},{parachain:paraIDSource},{palletInstance: 108},{generalIndex: generalIndexEncoded}]
+        }
+      } catch (e){
+        console.log(`isMoonbeamLocalXcAsset err`, e)
+      }
+      return xcmV1Standardized
     }
 
     // Implement Moonbeam manual registry function here
