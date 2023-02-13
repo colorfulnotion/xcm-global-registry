@@ -1860,49 +1860,6 @@
             2085
         ]
     },
-    "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27\"}]": {
-        "paraID": 2000,
-        "relayChain": "kusama",
-        "symbol": "USDCet",
-        "decimals": 6,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2000
-            },
-            {
-                "generalKey": "0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27"
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010200411f0654021f3a10587a20114ea25ba1b388ee2dd4a337ce27",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 2000
-                        },
-                        {
-                            "generalKey": "0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27"
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": "9",
-        "source": [
-            2090
-        ],
-        "xcCurrencyID": {
-            "2090": "9"
-        },
-        "xcContractAddress": {},
-        "confidence": 1
-    },
     "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a70\"}]": {
         "paraID": 2000,
         "relayChain": "kusama",
@@ -1936,20 +1893,19 @@
                 }
             }
         },
-        "asset": "13",
-        "source": [
-            2090
-        ],
+        "xcContractAddress": {},
         "xcCurrencyID": {
             "2090": "13"
         },
-        "xcContractAddress": {},
-        "confidence": 1
+        "confidence": 1,
+        "source": [
+            2090
+        ]
     },
-    "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0254e183e533fd3c6e72debb2d1cab451d017faf72\"}]": {
+    "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27\"}]": {
         "paraID": 2000,
         "relayChain": "kusama",
-        "symbol": "wUSDT",
+        "symbol": "USDCet",
         "decimals": 6,
         "interiorType": "x2",
         "xcmV1Standardized": [
@@ -1960,10 +1916,10 @@
                 "parachain": 2000
             },
             {
-                "generalKey": "0x0254e183e533fd3c6e72debb2d1cab451d017faf72"
+                "generalKey": "0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200411f06540254e183e533fd3c6e72debb2d1cab451d017faf72",
+        "xcmV1MultiLocationByte": "0x010200411f0654021f3a10587a20114ea25ba1b388ee2dd4a337ce27",
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -1973,64 +1929,20 @@
                             "parachain": 2000
                         },
                         {
-                            "generalKey": "0x0254e183e533fd3c6e72debb2d1cab451d017faf72"
+                            "generalKey": "0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27"
                         }
                     ]
                 }
             }
         },
-        "asset": "12",
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2090": "9"
+        },
+        "confidence": 1,
         "source": [
             2090
-        ],
-        "xcCurrencyID": {
-            "2090": "12"
-        },
-        "xcContractAddress": {},
-        "confidence": 1
-    },
-    "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0266291c7d88d2ed9a708147bae4e0814a76705e2f\"}]": {
-        "paraID": 2000,
-        "relayChain": "kusama",
-        "symbol": "wBTC",
-        "decimals": 8,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2000
-            },
-            {
-                "generalKey": "0x0266291c7d88d2ed9a708147bae4e0814a76705e2f"
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010200411f06540266291c7d88d2ed9a708147bae4e0814a76705e2f",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 2000
-                        },
-                        {
-                            "generalKey": "0x0266291c7d88d2ed9a708147bae4e0814a76705e2f"
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": "11",
-        "source": [
-            2090
-        ],
-        "xcCurrencyID": {
-            "2090": "11"
-        },
-        "xcContractAddress": {},
-        "confidence": 1
+        ]
     },
     "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02ece0cc38021e734bef1d5da071b027ac2f71181f\"}]": {
         "paraID": 2000,
@@ -2065,15 +1977,14 @@
                 }
             }
         },
-        "asset": "10",
-        "source": [
-            2090
-        ],
+        "xcContractAddress": {},
         "xcCurrencyID": {
             "2090": "10"
         },
-        "xcContractAddress": {},
-        "confidence": 1
+        "confidence": 1,
+        "source": [
+            2090
+        ]
     },
     "[{\"network\":\"kusama\"},{\"parachain\":2125},{\"generalIndex\":0}]": {
         "paraID": 2125,
@@ -2108,15 +2019,98 @@
                 }
             }
         },
-        "asset": "6",
-        "source": [
-            2090
-        ],
+        "xcContractAddress": {},
         "xcCurrencyID": {
             "2090": "6"
         },
+        "confidence": 1,
+        "source": [
+            2090
+        ]
+    },
+    "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0266291c7d88d2ed9a708147bae4e0814a76705e2f\"}]": {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "symbol": "wBTC",
+        "decimals": 8,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x0266291c7d88d2ed9a708147bae4e0814a76705e2f"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f06540266291c7d88d2ed9a708147bae4e0814a76705e2f",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0266291c7d88d2ed9a708147bae4e0814a76705e2f"
+                        }
+                    ]
+                }
+            }
+        },
         "xcContractAddress": {},
-        "confidence": 1
+        "xcCurrencyID": {
+            "2090": "11"
+        },
+        "confidence": 1,
+        "source": [
+            2090
+        ]
+    },
+    "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0254e183e533fd3c6e72debb2d1cab451d017faf72\"}]": {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "symbol": "wUSDT",
+        "decimals": 6,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x0254e183e533fd3c6e72debb2d1cab451d017faf72"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f06540254e183e533fd3c6e72debb2d1cab451d017faf72",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0254e183e533fd3c6e72debb2d1cab451d017faf72"
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2090": "12"
+        },
+        "confidence": 1,
+        "source": [
+            2090
+        ]
     },
     "[{\"network\":\"kusama\"},{\"parachain\":2121},{\"generalKey\":\"0x0096\"}]": {
         "paraID": 2121,
