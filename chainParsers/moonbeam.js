@@ -19,6 +19,7 @@ module.exports = class MoonbeamParser extends ChainParser {
     //change [garPallet:garPallet] to the location where the asset registry is located.  ex: [assets:metadata]
     garPallet = 'assets';
     garStorage = 'metadata';
+    getPalletExtra = 'localAssets';
 
     //change [xcGarPallet:xcGarStorage] to the location where the xc registry is located.  ex: [assetManager:assetIdType]
     xcGarPallet = 'assetManager'
@@ -75,6 +76,16 @@ module.exports = class MoonbeamParser extends ChainParser {
         if (a) {
             // step 1: use common Asset pallet parser func available at generic chainparser.
             let assetList = this.processGarAssetPallet(chainkey, a)
+            // step 2: load up results
+            for (const assetChainkey of Object.keys(assetList)) {
+                let assetInfo = assetList[assetChainkey]
+                this.manager.setChainAsset(chainkey, assetChainkey, assetInfo)
+            }
+        }
+        let la = await super.fetchQuery(chainkey, this.garPalletExtra, this.garStorage, 'GAR')
+        if (la) {
+            // step 1: use common Asset pallet parser func available at generic chainparser.
+            let assetList = this.processGarAssetPallet(chainkey, la)
             // step 2: load up results
             for (const assetChainkey of Object.keys(assetList)) {
                 let assetInfo = assetList[assetChainkey]
