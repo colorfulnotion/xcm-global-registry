@@ -656,16 +656,20 @@
             "2030": {
                 "Token2": "2"
             },
+            "2031": {
+                "ForeignAsset": "1"
+            },
             "2032": {
                 "ForeignAsset": "2"
             }
         },
-        "confidence": 5,
+        "confidence": 6,
         "source": [
             2004,
             2006,
             2012,
             2030,
+            2031,
             2032
         ]
     },
@@ -1316,56 +1320,6 @@
         "confidence": 1,
         "source": [
             2012
-        ]
-    },
-    "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalKey\":\"0x31393834\"}]": {
-        "paraID": 1000,
-        "relayChain": "polkadot",
-        "symbol": "USDT",
-        "decimals": 6,
-        "interiorType": "x3",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 1000
-            },
-            {
-                "palletInstance": 50
-            },
-            {
-                "generalKey": "0x31393834"
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010300a10f0432061031393834",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x3": [
-                        {
-                            "parachain": 1000
-                        },
-                        {
-                            "palletInstance": 50
-                        },
-                        {
-                            "generalKey": "0x31393834"
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {},
-        "xcCurrencyID": {
-            "2031": {
-                "ForeignAsset": "1"
-            }
-        },
-        "confidence": 1,
-        "source": [
-            2031
         ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0207df96d1341a7d16ba1ad431e2c847d978bc2bce\"}]": {
