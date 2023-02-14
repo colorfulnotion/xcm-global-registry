@@ -947,6 +947,15 @@
     },
     {
         "asset": {
+            "Token": "61"
+        },
+        "name": "CRYPTONITAS",
+        "symbol": "CRY",
+        "decimals": 12,
+        "currencyID": "61"
+    },
+    {
+        "asset": {
             "Token": "64"
         },
         "name": "oh!",

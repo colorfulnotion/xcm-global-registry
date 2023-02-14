@@ -168,6 +168,25 @@
     },
     {
         "asset": {
+            "Token": "26"
+        },
+        "name": "Zenlink",
+        "symbol": "ZLK",
+        "decimals": 18,
+        "currencyID": "26",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0207\"}]"
+    },
+    {
+        "asset": {
+            "Token": "27"
+        },
+        "name": "LiquidityPoolToken0x0000001B",
+        "symbol": "TKN0x0000001A-TKN0x00000000",
+        "decimals": 18,
+        "currencyID": "27"
+    },
+    {
+        "asset": {
             "Token": "3"
         },
         "name": "LiquidityPoolToken0x00000003",
