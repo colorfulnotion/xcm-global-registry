@@ -662,19 +662,15 @@
             },
             "2031": {
                 "ForeignAsset": "1"
-            },
-            "2032": {
-                "ForeignAsset": "2"
             }
         },
-        "confidence": 6,
+        "confidence": 5,
         "source": [
             2004,
             2006,
             2012,
             2030,
-            2031,
-            2032
+            2031
         ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]": {
@@ -905,16 +901,12 @@
         "xcCurrencyID": {
             "2006": "18446744073709551618",
             "2012": "110",
-            "2032": {
-                "ForeignAsset": "1"
-            },
             "2035": "4"
         },
-        "confidence": 4,
+        "confidence": 3,
         "source": [
             2006,
             2012,
-            2032,
             2035
         ]
     },
