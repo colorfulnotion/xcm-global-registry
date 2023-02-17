@@ -446,14 +446,52 @@
             },
             "2004": "132685552157663328694213725410064821485",
             "2006": "18446744073709551622",
-            "2012": "115"
+            "2012": "115",
+            "2034": "8"
         },
-        "confidence": 4,
+        "confidence": 5,
         "source": [
             2000,
             2004,
             2006,
-            2012
+            2012,
+            2034
+        ]
+    },
+    "[{\"network\":\"polkadot\"},{\"parachain\":2037}]": {
+        "paraID": 2037,
+        "relayChain": "polkadot",
+        "symbol": "UNQ",
+        "decimals": 18,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2037
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010100d51f",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2037
+                    }
+                }
+            }
+        },
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2000": {
+                "ForeignAsset": "10"
+            }
+        },
+        "confidence": 1,
+        "source": [
+            2000
         ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2012},{\"generalKey\":\"0x50415241\"}]": {
