@@ -1800,18 +1800,19 @@
                 }
             }
         },
-        "xcContractAddress": {
-            "2023": "0xffffffff51470dca3dbe535bd2880a9ccdbc6bd9"
-        },
+        "asset": "108036400430056508975016746969135344601",
+        "source": [
+            2012,
+            2023
+        ],
         "xcCurrencyID": {
             "2012": "108036400430056508975016746969135344601",
             "2023": "108036400430056508975016746969135344601"
         },
-        "confidence": 2,
-        "source": [
-            2012,
-            2023
-        ]
+        "xcContractAddress": {
+            "2023": "0xffffffff51470dca3dbe535bd2880a9ccdbc6bd9"
+        },
+        "confidence": 2
     },
     "[{\"network\":\"kusama\"},{\"parachain\":2085},{\"palletInstance\":6},{\"generalIndex\":1000}]": {
         "paraID": 2085,
