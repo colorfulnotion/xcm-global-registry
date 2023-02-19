@@ -1181,6 +1181,15 @@
     },
     {
         "asset": {
+            "Token": "863012"
+        },
+        "name": "VIrto COP",
+        "symbol": "VCOP",
+        "decimals": 2,
+        "currencyID": "863012"
+    },
+    {
+        "asset": {
             "Token": "87"
         },
         "name": "Xexr",
