@@ -311,6 +311,16 @@
     },
     {
         "asset": {
+            "Token": "337673893687553151312436182236099273778"
+        },
+        "name": "MangataX",
+        "symbol": "xcMGX",
+        "decimals": 18,
+        "currencyID": "337673893687553151312436182236099273778",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2110},{\"generalKey\":\"0x00000000\"}]"
+    },
+    {
+        "asset": {
             "Token": "339028723712074529056817184013808486301"
         },
         "name": "xcPOOP",
