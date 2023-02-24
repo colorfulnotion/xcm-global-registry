@@ -91,6 +91,16 @@
     },
     {
         "asset": {
+            "Token": "133300872918374599700079037156071917454"
+        },
+        "name": "Turing Network",
+        "symbol": "xcTUR",
+        "decimals": 10,
+        "currencyID": "133300872918374599700079037156071917454",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2114}]"
+    },
+    {
+        "asset": {
             "Token": "138512078356357941985706694377215053953"
         },
         "name": "Tinker",

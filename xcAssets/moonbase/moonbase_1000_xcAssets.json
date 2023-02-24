@@ -1112,6 +1112,37 @@
         ]
     },
     {
+        "paraID": 2114,
+        "relayChain": "moonbase",
+        "symbol": "TUR",
+        "decimals": 10,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2114
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x0101000921",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2114
+                    }
+                }
+            }
+        },
+        "asset": "133300872918374599700079037156071917454",
+        "contractAddress": "0xffffffff6448d0746f2a66342b67ef9caf89478e",
+        "source": [
+            "1000"
+        ]
+    },
+    {
         "paraID": 2125,
         "relayChain": "moonbase",
         "symbol": "TNKR",
