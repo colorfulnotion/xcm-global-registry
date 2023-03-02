@@ -1,5 +1,238 @@
 {
-    "assets": [],
-    "xcAssets": [],
-    "xcmRegistry": []
+    "assets": [
+        {
+            "chainkey": "kusama-0",
+            "assetCnt": "1",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_0_assets.json"
+        },
+        {
+            "chainkey": "kusama-1000",
+            "assetCnt": "147",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_1000_assets.json"
+        },
+        {
+            "chainkey": "kusama-2000",
+            "assetCnt": "36",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2000_assets.json"
+        },
+        {
+            "chainkey": "kusama-2001",
+            "assetCnt": "47",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2001_assets.json"
+        },
+        {
+            "chainkey": "kusama-2004",
+            "assetCnt": "17",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2004_assets.json"
+        },
+        {
+            "chainkey": "kusama-2007",
+            "assetCnt": "23",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2007_assets.json"
+        },
+        {
+            "chainkey": "kusama-2012",
+            "assetCnt": "8",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2012_assets.json"
+        },
+        {
+            "chainkey": "kusama-2015",
+            "assetCnt": "1",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2015_assets.json"
+        },
+        {
+            "chainkey": "kusama-2023",
+            "assetCnt": "18",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2023_assets.json"
+        },
+        {
+            "chainkey": "kusama-2024",
+            "assetCnt": "1",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2024_assets.json"
+        },
+        {
+            "chainkey": "kusama-2048",
+            "assetCnt": "6",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2048_assets.json"
+        },
+        {
+            "chainkey": "kusama-2084",
+            "assetCnt": "7",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2084_assets.json"
+        },
+        {
+            "chainkey": "kusama-2085",
+            "assetCnt": "30",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2085_assets.json"
+        },
+        {
+            "chainkey": "kusama-2087",
+            "assetCnt": "1",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2087_assets.json"
+        },
+        {
+            "chainkey": "kusama-2088",
+            "assetCnt": "3",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2088_assets.json"
+        },
+        {
+            "chainkey": "kusama-2090",
+            "assetCnt": "11",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2090_assets.json"
+        },
+        {
+            "chainkey": "kusama-2092",
+            "assetCnt": "12",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2092_assets.json"
+        },
+        {
+            "chainkey": "kusama-2095",
+            "assetCnt": "1",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2095_assets.json"
+        },
+        {
+            "chainkey": "kusama-2096",
+            "assetCnt": "1",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2096_assets.json"
+        },
+        {
+            "chainkey": "kusama-2101",
+            "assetCnt": "1",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2101_assets.json"
+        },
+        {
+            "chainkey": "kusama-2102",
+            "assetCnt": "1",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2102_assets.json"
+        },
+        {
+            "chainkey": "kusama-2105",
+            "assetCnt": "1",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2105_assets.json"
+        },
+        {
+            "chainkey": "kusama-2106",
+            "assetCnt": "1",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2106_assets.json"
+        },
+        {
+            "chainkey": "kusama-2110",
+            "assetCnt": "29",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2110_assets.json"
+        },
+        {
+            "chainkey": "kusama-2113",
+            "assetCnt": "1",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2113_assets.json"
+        },
+        {
+            "chainkey": "kusama-2114",
+            "assetCnt": "10",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2114_assets.json"
+        },
+        {
+            "chainkey": "kusama-2115",
+            "assetCnt": "1",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2115_assets.json"
+        },
+        {
+            "chainkey": "kusama-2118",
+            "assetCnt": "10",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2118_assets.json"
+        },
+        {
+            "chainkey": "kusama-2119",
+            "assetCnt": "1",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2119_assets.json"
+        },
+        {
+            "chainkey": "kusama-2121",
+            "assetCnt": "1",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2121_assets.json"
+        },
+        {
+            "chainkey": "kusama-2222",
+            "assetCnt": "1",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/assets/kusama/kusama_2222_assets.json"
+        }
+    ],
+    "xcAssets": [
+        {
+            "chainkey": "kusama-2000",
+            "xcAssetCnt": "21",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/xcAssets/kusama/kusama_2000_xcAssets.json"
+        },
+        {
+            "chainkey": "kusama-2001",
+            "xcAssetCnt": "15",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/xcAssets/kusama/kusama_2001_xcAssets.json"
+        },
+        {
+            "chainkey": "kusama-2004",
+            "xcAssetCnt": "15",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/xcAssets/kusama/kusama_2004_xcAssets.json"
+        },
+        {
+            "chainkey": "kusama-2007",
+            "xcAssetCnt": "17",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/xcAssets/kusama/kusama_2007_xcAssets.json"
+        },
+        {
+            "chainkey": "kusama-2012",
+            "xcAssetCnt": "7",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/xcAssets/kusama/kusama_2012_xcAssets.json"
+        },
+        {
+            "chainkey": "kusama-2023",
+            "xcAssetCnt": "17",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/xcAssets/kusama/kusama_2023_xcAssets.json"
+        },
+        {
+            "chainkey": "kusama-2084",
+            "xcAssetCnt": "6",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/xcAssets/kusama/kusama_2084_xcAssets.json"
+        },
+        {
+            "chainkey": "kusama-2085",
+            "xcAssetCnt": "9",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/xcAssets/kusama/kusama_2085_xcAssets.json"
+        },
+        {
+            "chainkey": "kusama-2088",
+            "xcAssetCnt": "2",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/xcAssets/kusama/kusama_2088_xcAssets.json"
+        },
+        {
+            "chainkey": "kusama-2090",
+            "xcAssetCnt": "9",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/xcAssets/kusama/kusama_2090_xcAssets.json"
+        },
+        {
+            "chainkey": "kusama-2092",
+            "xcAssetCnt": "6",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/xcAssets/kusama/kusama_2092_xcAssets.json"
+        },
+        {
+            "chainkey": "kusama-2110",
+            "xcAssetCnt": "7",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/xcAssets/kusama/kusama_2110_xcAssets.json"
+        },
+        {
+            "chainkey": "kusama-2114",
+            "xcAssetCnt": "9",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/xcAssets/kusama/kusama_2114_xcAssets.json"
+        }
+    ],
+    "xcmRegistry": [
+        {
+            "relayChain": "kusama",
+            "registryCnt": "47",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/xcmRegistry/kusama_xcmRegistry.json"
+        },
+        {
+            "relayChain": "polkadot",
+            "registryCnt": "35",
+            "url": "https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry/main/xcmRegistry/polkadot_xcmRegistry.json"
+        }
+    ]
 }
