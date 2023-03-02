@@ -101,6 +101,11 @@ class XCMGlobalAssetRegistryCLI {
         let validParachainList = await xcmgarm.fetchParaIDs(relayEndpoints)
         await xcmgarm.updatePublicEndpoints(relaychains, validParachainList, !isDryRun)
     }
+
+    async prepareURL(opt) {
+        var xcmgarm = new XCMGlobalAssetRegistryManager();
+        await xcmgarm.generateURL()
+    }
 }
 
 async function main() {
@@ -130,6 +135,14 @@ async function main() {
 	    let xcmgarcli = new XCMGlobalAssetRegistryCLI();
 	    await xcmgarcli.updateEndpoints(opt);
 	});
+
+    program.command('url')
+    .description('generate urls to all files')
+    .action(async (opt) => {
+        let xcmgarcli = new XCMGlobalAssetRegistryCLI();
+        await xcmgarcli.prepareURL(opt);
+    });
+
     await program.parseAsync(process.argv);
 }
 

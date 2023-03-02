@@ -55,17 +55,157 @@ module.exports = class XCMGlobalAssetRegistryManager {
         }
     }
 
-    //readFilelist('kusama', 'xcAssets')
-    //readFilelist('polkadot', 'assets')
-    readFilelist(relayChain = 'polkadot', fExt = 'assets') {
+    async generateURL(){
+        let manefest = {}
+        let dirs = ['assets', 'xcAssets', 'xcmRegistry']
+        let relayChains = ['polkadot', 'kusama'] //skip moonbase, rococo for now
+        for (const dir of dirs){
+            switch (dir) {
+                case 'xcmRegistry':
+                    let xcmRegistryFnList = this.genFilelist("", dir)
+                    manefest[dir] = xcmRegistryFnList
+                    //console.log(`${dir} xcmRegistryFnList`, xcmRegistryFnList)
+                    break;
+                case 'assets':
+                    for (const relayChain of relayChains){
+                        let assetFnList = this.genFilelist(relayChain, dir)
+                        manefest[dir] = assetFnList
+                        //console.log(`${relayChain} ${dir} assetFnList`, assetFnList)
+                    }
+                case 'xcAssets':
+                    for (const relayChain of relayChains){
+                        let xcAssetsFnList = this.genFilelist(relayChain, dir)
+                        manefest[dir] = xcAssetsFnList
+                        //console.log(`${relayChain} ${dir} xcAssetsFnList`, xcAssetsFnList)
+                    }
+                default:
+            }
+        }
+        await this.writeMetaFn('metadata', 'xcmgarUrl', manefest)
+        //console.log(`!!! manefest`, JSON.stringify(manefest, null, 4))
+    }
+
+    async writeMetaFn(fExt = 'metadata', fType = 'xcmgarUrl', jsonObj = {}) {
+        let jsonStr = JSON.stringify(jsonObj, null, 4)
+        if (jsonObj == undefined) {
+            console.log(`jsonObj missing`)
+            return false
+        }
+        const logDir = "./"
+        let fn = `${fType}.json`
+        let fnDirFn = false
+        try {
+            // create fnDir directory
+            let fnDir = path.join(logDir, fExt);
+            if (!fs.existsSync(fnDir)) {
+                await fs.mkdirSync(fnDir);
+            }
+            // set up fnDir fn  (deleting old file if exists)
+            try {
+                fnDirFn = path.join(fnDir, fn);
+                //console.log("****open_file****", fnDirFn);
+                await fs.closeSync(fs.openSync(fnDirFn, 'w'));
+            } catch (err) {
+                console.log(`❌ Error setting up ${fnDir}`, err);
+                process.exit(0)
+            }
+        } catch (err0) {
+            console.log(`❌ Error Opening ${fn}:`, err0);
+            process.exit(0)
+        }
+        try {
+            //console.log("***** write_json ***** ", fnDirFn)
+            await fs.appendFileSync(fnDirFn, jsonStr);
+        } catch (err1) {
+            console.log(`❌ Error writing ${fnDirFn}:`, err1);
+            process.exit(0)
+        }
+
+        switch (fExt) {
+            default:
+                console.log(`✅ Success: ${fExt} cached @\n    ${fnDirFn}`)
+        }
+        return fnDirFn
+    }
+
+    genFilelist(relayChain = 'polkadot', fExt = 'assets', defaultURL = 'https://raw.githubusercontent.com/colorfulnotion/xcm-global-registry', branch = 'main') {
         const logDir = ""
         let fnDir = path.join(logDir, fExt, relayChain);
+        if (fExt == 'xcmRegistry'){
+            fnDir = path.join(logDir, fExt);
+        }
         let fn = ``
         let fnDirFn = false
         let files = false
         try {
             fnDirFn = path.join(fnDir, fn)
-            console.log(`fnDirFn`, fnDirFn)
+            files = fs.readdirSync(fnDirFn, 'utf8');
+        } catch (err) {
+            console.log(err, "readJSONFn", fnDirFn);
+            return false
+        }
+        let meta = []
+        switch (fExt) {
+            case 'xcmRegistry':
+                for (const fn of files){
+                    let r = fn.split('/').pop().split('_')
+                    let fnDirFn = path.join(fnDir, fn)
+                    const fnContent = fs.readFileSync(fnDirFn, 'utf8');
+                    let jsonObj = JSON.parse(fnContent)
+                    let res = {
+                        relayChain: `${r[0]}`,
+                        registryCnt: `${Object.keys(jsonObj).length}`,
+                        url: `${defaultURL}/${branch}/${fnDir}/${fn}`
+                    }
+                    if (r[0] == 'polkadot' || r[0] == 'kusama') meta.push(res) // skip moonbase, rococo for now
+                }
+                break;
+            case 'assets':
+                for (const fn of files){
+                    let r = fn.split('/').pop().split('_')
+                    let fnDirFn = path.join(fnDir, fn)
+                    const fnContent = fs.readFileSync(fnDirFn, 'utf8');
+                    let jsonObj = JSON.parse(fnContent)
+                    let res = {
+                        chainkey: `${r[0]}-${r[1]}`,
+                        assetCnt: `${jsonObj.length}`,
+                        url: `${defaultURL}/${branch}/${fnDir}/${fn}`
+                    }
+                    meta.push(res)
+                }
+                break;
+            case 'xcAssets':
+                for (const fn of files){
+                    let r = fn.split('/').pop().split('_')
+                    let fnDirFn = path.join(fnDir, fn)
+                    const fnContent = fs.readFileSync(fnDirFn, 'utf8');
+                    let jsonObj = JSON.parse(fnContent)
+                    let res = {
+                        chainkey: `${r[0]}-${r[1]}`,
+                        xcAssetCnt: `${jsonObj.length}`,
+                        url: `${defaultURL}/${branch}/${fnDir}/${fn}`
+                    }
+                    meta.push(res)
+                }
+                break;
+            default:
+
+        }
+        return meta
+    }
+
+
+    readFilelist(relayChain = 'polkadot', fExt = 'assets') {
+        const logDir = ""
+        let fnDir = path.join(logDir, fExt, relayChain);
+        if (fExt == 'xcmRegistry'){
+            fnDir = path.join(logDir, fExt);
+        }
+        let fn = ``
+        let fnDirFn = false
+        let files = false
+        try {
+            fnDirFn = path.join(fnDir, fn)
             files = fs.readdirSync(fnDirFn, 'utf8');
         } catch (err) {
             console.log(err, "readJSONFn", fnDirFn);
@@ -241,6 +381,7 @@ module.exports = class XCMGlobalAssetRegistryManager {
             default:
                 console.log(`✅ Success: ${relayChain}-${paraID} cached @n    ${fnDirFn}`)
         }
+        return fnDirFn
     }
 
     async writeJSONFn(relayChain, fExt = 'publicEndpoints', jsonObj = {}) {
@@ -291,6 +432,7 @@ module.exports = class XCMGlobalAssetRegistryManager {
             default:
                 console.log(`✅ Success: ${relayChain} ${fExt} cached @\n    ${fnDirFn}`)
         }
+        return fnDirFn
     }
 
     async open_log(relayChain, fType = 'endpoint') {
@@ -400,7 +542,7 @@ module.exports = class XCMGlobalAssetRegistryManager {
 
     async updateXcmRegistry() {
         let relayChain = this.relaychain
-        await this.writeJSONFn(relayChain, 'xcmRegistry', this.getXcmAssetMap())
+        let fnDirFn = await this.writeJSONFn(relayChain, 'xcmRegistry', this.getXcmAssetMap())
     }
 
     async updateLocalMultilocation() {
@@ -432,12 +574,13 @@ module.exports = class XCMGlobalAssetRegistryManager {
                 localXcAssetList.push(xcAsset)
             }
             if (localXcAssetList.length > 0) {
-                await this.writeParaJSONFn(relayChain, paraIDSource, 'xcAssets', localXcAssetList)
+                let fnDirFn =  await this.writeParaJSONFn(relayChain, paraIDSource, 'xcAssets', localXcAssetList)
             }
         }
     }
 
     async updateLocalAsset() {
+        let meta = {}
         let relayChain = this.relaychain
         let chainAssetMap = this.getChainAssetMap()
         for (const chainkey of Object.keys(chainAssetMap)) {
@@ -462,7 +605,9 @@ module.exports = class XCMGlobalAssetRegistryManager {
                 localAssetList.push(a)
             }
             if (localAssetList.length > 0) {
-                await this.writeParaJSONFn(relayChain, paraIDSource, 'assets', localAssetList)
+                let fnDirFn =  await this.writeParaJSONFn(relayChain, paraIDSource, 'assets', localAssetList)
+                console.log(`updateLocalAsset`, fnDirFn)
+                meta[chainkey] = fnDirFn
             }
         }
     }
