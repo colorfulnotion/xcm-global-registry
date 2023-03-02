@@ -1854,11 +1854,15 @@
         },
         "xcContractAddress": {},
         "xcCurrencyID": {
-            "2085": "1000"
+            "2085": "1000",
+            "2092": {
+                "ForeignAsset": "6"
+            }
         },
-        "confidence": 1,
+        "confidence": 2,
         "source": [
-            2085
+            2085,
+            2092
         ]
     },
     "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a70\"}]": {
