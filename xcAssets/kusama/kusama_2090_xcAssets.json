@@ -2,6 +2,7 @@
     {
         "paraID": 0,
         "relayChain": "kusama",
+        "nativeChainID": "kusama",
         "symbol": "KSM",
         "decimals": 12,
         "interiorType": "here",
@@ -28,6 +29,7 @@
     {
         "paraID": 1000,
         "relayChain": "kusama",
+        "nativeChainID": "statemine",
         "symbol": "USDT",
         "decimals": 6,
         "interiorType": "x3",
@@ -72,6 +74,7 @@
     {
         "paraID": 2000,
         "relayChain": "kusama",
+        "nativeChainID": "karura",
         "symbol": "aUSD",
         "decimals": 12,
         "interiorType": "x2",
@@ -110,6 +113,7 @@
     {
         "paraID": 2000,
         "relayChain": "kusama",
+        "nativeChainID": "karura",
         "symbol": "USDCet",
         "decimals": 6,
         "interiorType": "x2",
@@ -148,6 +152,7 @@
     {
         "paraID": 2000,
         "relayChain": "kusama",
+        "nativeChainID": "karura",
         "symbol": "DAI",
         "decimals": 18,
         "interiorType": "x2",
@@ -186,6 +191,7 @@
     {
         "paraID": 2000,
         "relayChain": "kusama",
+        "nativeChainID": "karura",
         "symbol": "wUSDT",
         "decimals": 6,
         "interiorType": "x2",
@@ -224,6 +230,7 @@
     {
         "paraID": 2000,
         "relayChain": "kusama",
+        "nativeChainID": "karura",
         "symbol": "wBTC",
         "decimals": 8,
         "interiorType": "x2",
@@ -262,6 +269,7 @@
     {
         "paraID": 2000,
         "relayChain": "kusama",
+        "nativeChainID": "karura",
         "symbol": "wETH",
         "decimals": 18,
         "interiorType": "x2",
@@ -300,6 +308,7 @@
     {
         "paraID": 2125,
         "relayChain": "kusama",
+        "nativeChainID": null,
         "symbol": "TNKR",
         "decimals": 12,
         "interiorType": "x2",

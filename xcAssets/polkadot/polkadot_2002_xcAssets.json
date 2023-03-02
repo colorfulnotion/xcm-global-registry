@@ -2,6 +2,7 @@
     {
         "paraID": 2006,
         "relayChain": "polkadot",
+        "nativeChainID": "astar",
         "symbol": "ASTR",
         "decimals": 18,
         "interiorType": "x1",
@@ -32,6 +33,7 @@
     {
         "paraID": 2012,
         "relayChain": "polkadot",
+        "nativeChainID": "parallel",
         "symbol": "PARA",
         "decimals": 12,
         "interiorType": "x2",

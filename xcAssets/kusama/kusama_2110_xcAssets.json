@@ -2,6 +2,7 @@
     {
         "paraID": 2001,
         "relayChain": "kusama",
+        "nativeChainID": "bifrost",
         "symbol": "BNC",
         "decimals": 12,
         "interiorType": "x2",
@@ -40,6 +41,7 @@
     {
         "paraID": 2001,
         "relayChain": "kusama",
+        "nativeChainID": "bifrost",
         "symbol": "vBNC",
         "decimals": 12,
         "interiorType": "x2",
@@ -78,6 +80,7 @@
     {
         "paraID": 2001,
         "relayChain": "kusama",
+        "nativeChainID": "bifrost",
         "symbol": "vKSM",
         "decimals": 12,
         "interiorType": "x2",
@@ -116,6 +119,7 @@
     {
         "paraID": 2001,
         "relayChain": "kusama",
+        "nativeChainID": "bifrost",
         "symbol": "ZLK",
         "decimals": 18,
         "interiorType": "x2",
@@ -154,6 +158,7 @@
     {
         "paraID": 2001,
         "relayChain": "kusama",
+        "nativeChainID": "bifrost",
         "symbol": "vsKSM",
         "decimals": 12,
         "interiorType": "x2",
@@ -192,6 +197,7 @@
     {
         "paraID": 2114,
         "relayChain": "kusama",
+        "nativeChainID": "turing",
         "symbol": "TUR",
         "decimals": 10,
         "interiorType": "x1",
@@ -222,6 +228,7 @@
     {
         "paraID": 2121,
         "relayChain": "kusama",
+        "nativeChainID": "imbue",
         "symbol": "IMBU",
         "decimals": 12,
         "interiorType": "x2",

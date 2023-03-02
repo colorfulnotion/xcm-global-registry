@@ -2,6 +2,7 @@
     {
         "paraID": 1000,
         "relayChain": "polkadot",
+        "nativeChainID": "statemint",
         "symbol": "USDT",
         "decimals": 6,
         "interiorType": "x3",
@@ -48,6 +49,7 @@
     {
         "paraID": 2000,
         "relayChain": "polkadot",
+        "nativeChainID": "acala",
         "symbol": "aUSD",
         "decimals": 12,
         "interiorType": "x2",
@@ -88,6 +90,7 @@
     {
         "paraID": 2004,
         "relayChain": "polkadot",
+        "nativeChainID": "moonbeam",
         "symbol": "GLMR",
         "decimals": 18,
         "interiorType": "x2",

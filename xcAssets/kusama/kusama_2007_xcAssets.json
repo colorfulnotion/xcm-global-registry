@@ -2,6 +2,7 @@
     {
         "paraID": 0,
         "relayChain": "kusama",
+        "nativeChainID": "kusama",
         "symbol": "KSM",
         "decimals": 12,
         "interiorType": "here",
@@ -29,6 +30,7 @@
     {
         "paraID": 1000,
         "relayChain": "kusama",
+        "nativeChainID": "statemine",
         "symbol": "USDT",
         "decimals": 6,
         "interiorType": "x3",
@@ -74,6 +76,7 @@
     {
         "paraID": 2000,
         "relayChain": "kusama",
+        "nativeChainID": "karura",
         "symbol": "KAR",
         "decimals": 12,
         "interiorType": "x2",
@@ -113,6 +116,7 @@
     {
         "paraID": 2000,
         "relayChain": "kusama",
+        "nativeChainID": "karura",
         "symbol": "aUSD",
         "decimals": 12,
         "interiorType": "x2",
@@ -152,6 +156,7 @@
     {
         "paraID": 2000,
         "relayChain": "kusama",
+        "nativeChainID": "karura",
         "symbol": "LKSM",
         "decimals": 12,
         "interiorType": "x2",
@@ -191,6 +196,7 @@
     {
         "paraID": 2001,
         "relayChain": "kusama",
+        "nativeChainID": "bifrost",
         "symbol": "BNC",
         "decimals": 12,
         "interiorType": "x2",
@@ -230,6 +236,7 @@
     {
         "paraID": 2001,
         "relayChain": "kusama",
+        "nativeChainID": "bifrost",
         "symbol": "vKSM",
         "decimals": 12,
         "interiorType": "x2",
@@ -269,6 +276,7 @@
     {
         "paraID": 2001,
         "relayChain": "kusama",
+        "nativeChainID": "bifrost",
         "symbol": "vsKSM",
         "decimals": 12,
         "interiorType": "x2",
@@ -308,6 +316,7 @@
     {
         "paraID": 2004,
         "relayChain": "kusama",
+        "nativeChainID": "khala",
         "symbol": "PHA",
         "decimals": 12,
         "interiorType": "x1",
@@ -339,6 +348,7 @@
     {
         "paraID": 2012,
         "relayChain": "kusama",
+        "nativeChainID": "shadow",
         "symbol": "CSM",
         "decimals": 12,
         "interiorType": "x1",
@@ -370,6 +380,7 @@
     {
         "paraID": 2016,
         "relayChain": "kusama",
+        "nativeChainID": null,
         "symbol": "SKU",
         "decimals": 18,
         "interiorType": "x1",
@@ -401,6 +412,7 @@
     {
         "paraID": 2023,
         "relayChain": "kusama",
+        "nativeChainID": "moonriver",
         "symbol": "MOVR",
         "decimals": 18,
         "interiorType": "x2",
@@ -440,6 +452,7 @@
     {
         "paraID": 2024,
         "relayChain": "kusama",
+        "nativeChainID": null,
         "symbol": "EQD",
         "decimals": 9,
         "interiorType": "x2",
@@ -479,6 +492,7 @@
     {
         "paraID": 2024,
         "relayChain": "kusama",
+        "nativeChainID": null,
         "symbol": "GENS",
         "decimals": 9,
         "interiorType": "x1",
@@ -510,6 +524,7 @@
     {
         "paraID": 2092,
         "relayChain": "kusama",
+        "nativeChainID": "kintsugi",
         "symbol": "KBTC",
         "decimals": 8,
         "interiorType": "x2",
@@ -549,6 +564,7 @@
     {
         "paraID": 2092,
         "relayChain": "kusama",
+        "nativeChainID": "kintsugi",
         "symbol": "KINT",
         "decimals": 12,
         "interiorType": "x2",
@@ -588,6 +604,7 @@
     {
         "paraID": 2105,
         "relayChain": "kusama",
+        "nativeChainID": "crab",
         "symbol": "CRAB",
         "decimals": 18,
         "interiorType": "x2",

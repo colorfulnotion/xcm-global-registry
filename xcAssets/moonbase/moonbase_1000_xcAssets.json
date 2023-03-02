@@ -2,6 +2,7 @@
     {
         "paraID": 0,
         "relayChain": "moonbase",
+        "nativeChainID": "moonbase-relay",
         "symbol": "UNIT",
         "decimals": 12,
         "interiorType": "here",
@@ -29,6 +30,7 @@
     {
         "paraID": 1001,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "mRMRK",
         "decimals": 10,
         "interiorType": "x3",
@@ -74,6 +76,7 @@
     {
         "paraID": 1001,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "TT1",
         "decimals": 18,
         "interiorType": "x3",
@@ -119,6 +122,7 @@
     {
         "paraID": 1001,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "SQD",
         "decimals": 2,
         "interiorType": "x3",
@@ -164,6 +168,7 @@
     {
         "paraID": 1002,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "KBTC",
         "decimals": 8,
         "interiorType": "x2",
@@ -203,6 +208,7 @@
     {
         "paraID": 1002,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "XCKINT",
         "decimals": 12,
         "interiorType": "x2",
@@ -242,6 +248,7 @@
     {
         "paraID": 2000,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "KAR",
         "decimals": 12,
         "interiorType": "x2",
@@ -281,6 +288,7 @@
     {
         "paraID": 2000,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "KUSD",
         "decimals": 12,
         "interiorType": "x2",
@@ -320,6 +328,7 @@
     {
         "paraID": 2000,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "LKSM",
         "decimals": 12,
         "interiorType": "x2",
@@ -359,6 +368,7 @@
     {
         "paraID": 2001,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "BNC",
         "decimals": 12,
         "interiorType": "x2",
@@ -398,6 +408,7 @@
     {
         "paraID": 2001,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "vKSM",
         "decimals": 12,
         "interiorType": "x2",
@@ -437,6 +448,7 @@
     {
         "paraID": 2004,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "PHA",
         "decimals": 12,
         "interiorType": "x1",
@@ -468,6 +480,7 @@
     {
         "paraID": 2006,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "ICZ",
         "decimals": 18,
         "interiorType": "x2",
@@ -507,6 +520,7 @@
     {
         "paraID": 2007,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "ASTR",
         "decimals": 18,
         "interiorType": "x1",
@@ -538,6 +552,7 @@
     {
         "paraID": 2011,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "EQD",
         "decimals": 9,
         "interiorType": "x2",
@@ -577,6 +592,7 @@
     {
         "paraID": 2011,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "EQ",
         "decimals": 9,
         "interiorType": "x1",
@@ -608,6 +624,7 @@
     {
         "paraID": 2012,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "CSM",
         "decimals": 12,
         "interiorType": "x1",
@@ -639,6 +656,7 @@
     {
         "paraID": 2015,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "TEER",
         "decimals": 12,
         "interiorType": "x2",
@@ -678,6 +696,7 @@
     {
         "paraID": 2024,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "GENS",
         "decimals": 9,
         "interiorType": "x1",
@@ -709,6 +728,7 @@
     {
         "paraID": 2048,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "XRT",
         "decimals": 9,
         "interiorType": "x1",
@@ -740,6 +760,7 @@
     {
         "paraID": 2084,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "KMA",
         "decimals": 12,
         "interiorType": "x1",
@@ -771,6 +792,7 @@
     {
         "paraID": 2085,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "HKO",
         "decimals": 12,
         "interiorType": "x2",
@@ -810,6 +832,7 @@
     {
         "paraID": 2090,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "BSX",
         "decimals": 12,
         "interiorType": "x2",
@@ -849,6 +872,7 @@
     {
         "paraID": 2095,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "AUQ",
         "decimals": 18,
         "interiorType": "x1",
@@ -880,6 +904,7 @@
     {
         "paraID": 2096,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "NEER",
         "decimals": 18,
         "interiorType": "x2",
@@ -919,6 +944,7 @@
     {
         "paraID": 2096,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "BIT",
         "decimals": 18,
         "interiorType": "x2",
@@ -958,6 +984,7 @@
     {
         "paraID": 2101,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "ZTG",
         "decimals": 10,
         "interiorType": "x2",
@@ -997,6 +1024,7 @@
     {
         "paraID": 2105,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "PARING",
         "decimals": 18,
         "interiorType": "x2",
@@ -1036,6 +1064,7 @@
     {
         "paraID": 2106,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "LIT",
         "decimals": 12,
         "interiorType": "x2",
@@ -1075,6 +1104,7 @@
     {
         "paraID": 2110,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "MGX",
         "decimals": 18,
         "interiorType": "x2",
@@ -1114,6 +1144,7 @@
     {
         "paraID": 2114,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "TUR",
         "decimals": 10,
         "interiorType": "x1",
@@ -1145,6 +1176,7 @@
     {
         "paraID": 2125,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "TNKR",
         "decimals": 12,
         "interiorType": "x2",
@@ -1184,6 +1216,7 @@
     {
         "paraID": 888,
         "relayChain": "moonbase",
+        "nativeChainID": "moonbase-beta",
         "symbol": "BetaDev",
         "decimals": 18,
         "interiorType": "x2",

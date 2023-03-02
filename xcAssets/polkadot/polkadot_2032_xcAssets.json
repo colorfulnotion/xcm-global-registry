@@ -2,6 +2,7 @@
     {
         "paraID": 1000,
         "relayChain": "polkadot",
+        "nativeChainID": "statemint",
         "symbol": "USDT",
         "decimals": 6,
         "interiorType": "x3",
@@ -48,6 +49,7 @@
     {
         "paraID": 2000,
         "relayChain": "polkadot",
+        "nativeChainID": "acala",
         "symbol": "LDOT",
         "decimals": 10,
         "interiorType": "x2",

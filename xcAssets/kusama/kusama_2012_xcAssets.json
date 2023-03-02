@@ -2,6 +2,7 @@
     {
         "paraID": 2000,
         "relayChain": "kusama",
+        "nativeChainID": "karura",
         "symbol": "KAR",
         "decimals": 12,
         "interiorType": "x2",
@@ -40,6 +41,7 @@
     {
         "paraID": 2000,
         "relayChain": "kusama",
+        "nativeChainID": "karura",
         "symbol": "AUSD",
         "decimals": 12,
         "interiorType": "x2",
@@ -78,6 +80,7 @@
     {
         "paraID": 2001,
         "relayChain": "kusama",
+        "nativeChainID": "bifrost",
         "symbol": "BNC",
         "decimals": 12,
         "interiorType": "x2",
@@ -116,6 +119,7 @@
     {
         "paraID": 2007,
         "relayChain": "kusama",
+        "nativeChainID": "shiden",
         "symbol": "SDN",
         "decimals": 18,
         "interiorType": "x1",
@@ -146,6 +150,7 @@
     {
         "paraID": 2023,
         "relayChain": "kusama",
+        "nativeChainID": "moonriver",
         "symbol": "MOVR",
         "decimals": 18,
         "interiorType": "x2",
@@ -184,6 +189,7 @@
     {
         "paraID": 2048,
         "relayChain": "kusama",
+        "nativeChainID": "robonomics",
         "symbol": "XRT",
         "decimals": 9,
         "interiorType": "x1",
@@ -214,6 +220,7 @@
     {
         "paraID": 2105,
         "relayChain": "kusama",
+        "nativeChainID": "crab",
         "symbol": "CRAB",
         "decimals": 18,
         "interiorType": "x2",

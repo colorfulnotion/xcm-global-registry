@@ -2,6 +2,7 @@
     {
         "paraID": 2043,
         "relayChain": "polkadot",
+        "nativeChainID": "origintrail-parachain",
         "symbol": "TRAC",
         "decimals": 18,
         "interiorType": "x2",

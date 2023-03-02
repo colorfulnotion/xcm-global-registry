@@ -2,6 +2,7 @@
     {
         "paraID": 1000,
         "relayChain": "moonbase",
+        "nativeChainID": "moonbase-alpha",
         "symbol": "xUSDC",
         "decimals": 6,
         "interiorType": "x3",
@@ -47,6 +48,7 @@
     {
         "paraID": 1000,
         "relayChain": "moonbase",
+        "nativeChainID": "moonbase-alpha",
         "symbol": "AlphaDev",
         "decimals": 18,
         "interiorType": "x2",
@@ -86,6 +88,7 @@
     {
         "paraID": 1000,
         "relayChain": "moonbase",
+        "nativeChainID": "moonbase-alpha",
         "symbol": "ALAN",
         "decimals": 18,
         "interiorType": "x3",

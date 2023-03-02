@@ -2,6 +2,7 @@
     {
         "paraID": 0,
         "relayChain": "polkadot",
+        "nativeChainID": "polkadot",
         "symbol": "DOT",
         "decimals": 10,
         "interiorType": "here",
@@ -28,6 +29,7 @@
     {
         "paraID": 1000,
         "relayChain": "polkadot",
+        "nativeChainID": "statemint",
         "symbol": "USDT",
         "decimals": 6,
         "interiorType": "x3",
@@ -72,6 +74,7 @@
     {
         "paraID": 2000,
         "relayChain": "polkadot",
+        "nativeChainID": "acala",
         "symbol": "ACA",
         "decimals": 12,
         "interiorType": "x2",
@@ -110,6 +113,7 @@
     {
         "paraID": 2000,
         "relayChain": "polkadot",
+        "nativeChainID": "acala",
         "symbol": "LDOT",
         "decimals": 10,
         "interiorType": "x2",
@@ -148,6 +152,7 @@
     {
         "paraID": 2000,
         "relayChain": "polkadot",
+        "nativeChainID": "acala",
         "symbol": "lcDOT",
         "decimals": 10,
         "interiorType": "x2",
@@ -186,6 +191,7 @@
     {
         "paraID": 2002,
         "relayChain": "polkadot",
+        "nativeChainID": "clover",
         "symbol": "CLV",
         "decimals": 18,
         "interiorType": "x1",
@@ -216,6 +222,7 @@
     {
         "paraID": 2004,
         "relayChain": "polkadot",
+        "nativeChainID": "moonbeam",
         "symbol": "GLMR",
         "decimals": 18,
         "interiorType": "x2",
@@ -254,6 +261,7 @@
     {
         "paraID": 2012,
         "relayChain": "polkadot",
+        "nativeChainID": "parallel",
         "symbol": "sDOT",
         "decimals": 10,
         "interiorType": "x2",
@@ -292,6 +300,7 @@
     {
         "paraID": 2012,
         "relayChain": "polkadot",
+        "nativeChainID": "parallel",
         "symbol": "cDOT-6/13",
         "decimals": 10,
         "interiorType": "x3",
@@ -336,6 +345,7 @@
     {
         "paraID": 2012,
         "relayChain": "polkadot",
+        "nativeChainID": "parallel",
         "symbol": "cDOT-7/14",
         "decimals": 10,
         "interiorType": "x3",
@@ -380,6 +390,7 @@
     {
         "paraID": 2012,
         "relayChain": "polkadot",
+        "nativeChainID": "parallel",
         "symbol": "cDOT-8/15",
         "decimals": 10,
         "interiorType": "x3",
@@ -424,6 +435,7 @@
     {
         "paraID": 2012,
         "relayChain": "polkadot",
+        "nativeChainID": "parallel",
         "symbol": "cDOT-9/16",
         "decimals": 10,
         "interiorType": "x3",
@@ -468,6 +480,7 @@
     {
         "paraID": 2012,
         "relayChain": "polkadot",
+        "nativeChainID": "parallel",
         "symbol": "cDOT-10/17",
         "decimals": 10,
         "interiorType": "x3",
@@ -512,6 +525,7 @@
     {
         "paraID": 2032,
         "relayChain": "polkadot",
+        "nativeChainID": "interlay",
         "symbol": "IBTC",
         "decimals": 8,
         "interiorType": "x2",
@@ -550,6 +564,7 @@
     {
         "paraID": 2032,
         "relayChain": "polkadot",
+        "nativeChainID": "interlay",
         "symbol": "INTR",
         "decimals": 10,
         "interiorType": "x2",
@@ -588,6 +603,7 @@
     {
         "paraID": 2035,
         "relayChain": "polkadot",
+        "nativeChainID": "phala",
         "symbol": "PHA",
         "decimals": 12,
         "interiorType": "x1",

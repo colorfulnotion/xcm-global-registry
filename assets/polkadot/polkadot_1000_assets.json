@@ -46,6 +46,15 @@
     },
     {
         "asset": {
+            "Token": "11"
+        },
+        "name": "web3.online",
+        "symbol": "web3",
+        "decimals": 18,
+        "currencyID": "11"
+    },
+    {
+        "asset": {
             "Token": "123"
         },
         "name": "123",

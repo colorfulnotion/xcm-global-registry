@@ -2,6 +2,7 @@
     {
         "paraID": 1000,
         "relayChain": "polkadot",
+        "nativeChainID": "statemint",
         "symbol": "WETH",
         "decimals": 18,
         "interiorType": "x3",
@@ -48,6 +49,7 @@
     {
         "paraID": 1000,
         "relayChain": "polkadot",
+        "nativeChainID": "statemint",
         "symbol": "WBTC",
         "decimals": 8,
         "interiorType": "x3",
@@ -94,6 +96,7 @@
     {
         "paraID": 2004,
         "relayChain": "polkadot",
+        "nativeChainID": "moonbeam",
         "symbol": "GLMR",
         "decimals": 18,
         "interiorType": "x2",
@@ -134,6 +137,7 @@
     {
         "paraID": 2006,
         "relayChain": "polkadot",
+        "nativeChainID": "astar",
         "symbol": "ASTR",
         "decimals": 18,
         "interiorType": "x1",
@@ -166,6 +170,7 @@
     {
         "paraID": 2011,
         "relayChain": "polkadot",
+        "nativeChainID": "equilibrium",
         "symbol": "EQD",
         "decimals": 9,
         "interiorType": "x2",
@@ -206,6 +211,7 @@
     {
         "paraID": 2011,
         "relayChain": "polkadot",
+        "nativeChainID": "equilibrium",
         "symbol": "EQ",
         "decimals": 9,
         "interiorType": "x1",
@@ -238,6 +244,7 @@
     {
         "paraID": 2012,
         "relayChain": "polkadot",
+        "nativeChainID": "parallel",
         "symbol": "PARA",
         "decimals": 12,
         "interiorType": "x2",
@@ -278,6 +285,7 @@
     {
         "paraID": 2032,
         "relayChain": "polkadot",
+        "nativeChainID": "interlay",
         "symbol": "IBTC",
         "decimals": 8,
         "interiorType": "x2",
@@ -318,6 +326,7 @@
     {
         "paraID": 2032,
         "relayChain": "polkadot",
+        "nativeChainID": "interlay",
         "symbol": "INTR",
         "decimals": 10,
         "interiorType": "x2",
@@ -358,6 +367,7 @@
     {
         "paraID": 2035,
         "relayChain": "polkadot",
+        "nativeChainID": "phala",
         "symbol": "PHA",
         "decimals": 12,
         "interiorType": "x1",
@@ -390,6 +400,7 @@
     {
         "paraID": 2037,
         "relayChain": "polkadot",
+        "nativeChainID": "unique",
         "symbol": "UNQ",
         "decimals": 18,
         "interiorType": "x1",

@@ -2,6 +2,7 @@
     {
         "paraID": 0,
         "relayChain": "polkadot",
+        "nativeChainID": "polkadot",
         "symbol": "DOT",
         "decimals": 10,
         "interiorType": "here",
@@ -29,6 +30,7 @@
     {
         "paraID": 1000,
         "relayChain": "polkadot",
+        "nativeChainID": "statemint",
         "symbol": "USDT",
         "decimals": 6,
         "interiorType": "x3",
@@ -74,6 +76,7 @@
     {
         "paraID": 2000,
         "relayChain": "polkadot",
+        "nativeChainID": "acala",
         "symbol": "ACA",
         "decimals": 12,
         "interiorType": "x2",
@@ -113,6 +116,7 @@
     {
         "paraID": 2000,
         "relayChain": "polkadot",
+        "nativeChainID": "acala",
         "symbol": "aUSD",
         "decimals": 12,
         "interiorType": "x2",
@@ -152,6 +156,7 @@
     {
         "paraID": 2000,
         "relayChain": "polkadot",
+        "nativeChainID": "acala",
         "symbol": "LDOT",
         "decimals": 10,
         "interiorType": "x2",
@@ -191,6 +196,7 @@
     {
         "paraID": 2002,
         "relayChain": "polkadot",
+        "nativeChainID": "clover",
         "symbol": "CLV",
         "decimals": 18,
         "interiorType": "x1",
@@ -222,6 +228,7 @@
     {
         "paraID": 2004,
         "relayChain": "polkadot",
+        "nativeChainID": "moonbeam",
         "symbol": "GLMR",
         "decimals": 18,
         "interiorType": "x2",
@@ -261,6 +268,7 @@
     {
         "paraID": 2011,
         "relayChain": "polkadot",
+        "nativeChainID": "equilibrium",
         "symbol": "EQD",
         "decimals": 9,
         "interiorType": "x2",
@@ -300,6 +308,7 @@
     {
         "paraID": 2011,
         "relayChain": "polkadot",
+        "nativeChainID": "equilibrium",
         "symbol": "EQ",
         "decimals": 9,
         "interiorType": "x1",
@@ -331,6 +340,7 @@
     {
         "paraID": 2030,
         "relayChain": "polkadot",
+        "nativeChainID": "bifrost",
         "symbol": "BNC",
         "decimals": 12,
         "interiorType": "x2",
@@ -370,6 +380,7 @@
     {
         "paraID": 2030,
         "relayChain": "polkadot",
+        "nativeChainID": "bifrost",
         "symbol": "vsDOT",
         "decimals": 10,
         "interiorType": "x2",
@@ -409,6 +420,7 @@
     {
         "paraID": 2030,
         "relayChain": "polkadot",
+        "nativeChainID": "bifrost",
         "symbol": "vDOT",
         "decimals": 10,
         "interiorType": "x2",
@@ -448,6 +460,7 @@
     {
         "paraID": 2032,
         "relayChain": "polkadot",
+        "nativeChainID": "interlay",
         "symbol": "IBTC",
         "decimals": 8,
         "interiorType": "x2",
@@ -487,6 +500,7 @@
     {
         "paraID": 2032,
         "relayChain": "polkadot",
+        "nativeChainID": "interlay",
         "symbol": "INTR",
         "decimals": 10,
         "interiorType": "x2",
@@ -526,6 +540,7 @@
     {
         "paraID": 2034,
         "relayChain": "polkadot",
+        "nativeChainID": "hydra",
         "symbol": "HDX",
         "decimals": 12,
         "interiorType": "x2",
@@ -565,6 +580,7 @@
     {
         "paraID": 2035,
         "relayChain": "polkadot",
+        "nativeChainID": "phala",
         "symbol": "PHA",
         "decimals": 12,
         "interiorType": "x1",
@@ -596,6 +612,7 @@
     {
         "paraID": 2046,
         "relayChain": "polkadot",
+        "nativeChainID": "darwinia",
         "symbol": "RING",
         "decimals": 18,
         "interiorType": "x2",

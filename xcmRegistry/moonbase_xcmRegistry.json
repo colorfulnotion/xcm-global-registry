@@ -2,6 +2,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2012}]": {
         "paraID": 2012,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "CSM",
         "decimals": 12,
         "interiorType": "x1",
@@ -38,6 +39,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2007}]": {
         "paraID": 2007,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "ASTR",
         "decimals": 18,
         "interiorType": "x1",
@@ -74,6 +76,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2085},{\"generalKey\":\"0x484b4f\"}]": {
         "paraID": 2085,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "HKO",
         "decimals": 12,
         "interiorType": "x2",
@@ -118,6 +121,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2125},{\"generalIndex\":0}]": {
         "paraID": 2125,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "TNKR",
         "decimals": 12,
         "interiorType": "x2",
@@ -162,6 +166,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1001},{\"palletInstance\":50},{\"generalIndex\":1}]": {
         "paraID": 1001,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "mRMRK",
         "decimals": 10,
         "interiorType": "x3",
@@ -212,6 +217,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2048}]": {
         "paraID": 2048,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "XRT",
         "decimals": 9,
         "interiorType": "x1",
@@ -248,6 +254,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2114}]": {
         "paraID": 2114,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "TUR",
         "decimals": 10,
         "interiorType": "x1",
@@ -284,6 +291,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2011},{\"generalKey\":\"0x657164\"}]": {
         "paraID": 2011,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "EQD",
         "decimals": 9,
         "interiorType": "x2",
@@ -328,6 +336,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2110},{\"generalKey\":\"0x00000000\"}]": {
         "paraID": 2110,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "MGX",
         "decimals": 18,
         "interiorType": "x2",
@@ -372,6 +381,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2011}]": {
         "paraID": 2011,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "EQ",
         "decimals": 9,
         "interiorType": "x1",
@@ -408,6 +418,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2084}]": {
         "paraID": 2084,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "KMA",
         "decimals": 12,
         "interiorType": "x1",
@@ -444,6 +455,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2106},{\"palletInstance\":10}]": {
         "paraID": 2106,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "LIT",
         "decimals": 12,
         "interiorType": "x2",
@@ -488,6 +500,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1001},{\"palletInstance\":50},{\"generalIndex\":2}]": {
         "paraID": 1001,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "TT1",
         "decimals": 18,
         "interiorType": "x3",
@@ -538,6 +551,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2105},{\"palletInstance\":5}]": {
         "paraID": 2105,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "PARING",
         "decimals": 18,
         "interiorType": "x2",
@@ -582,6 +596,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2004}]": {
         "paraID": 2004,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "PHA",
         "decimals": 12,
         "interiorType": "x1",
@@ -618,6 +633,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2095}]": {
         "paraID": 2095,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "AUQ",
         "decimals": 18,
         "interiorType": "x1",
@@ -654,6 +670,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2101},{\"generalKey\":\"0x0001\"}]": {
         "paraID": 2101,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "ZTG",
         "decimals": 10,
         "interiorType": "x2",
@@ -698,6 +715,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2096},{\"generalKey\":\"0x020000000000000000\"}]": {
         "paraID": 2096,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "BIT",
         "decimals": 18,
         "interiorType": "x2",
@@ -742,6 +760,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2000},{\"generalKey\":\"0x0081\"}]": {
         "paraID": 2000,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "KUSD",
         "decimals": 12,
         "interiorType": "x2",
@@ -786,6 +805,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2015},{\"generalKey\":\"0x54454552\"}]": {
         "paraID": 2015,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "TEER",
         "decimals": 12,
         "interiorType": "x2",
@@ -830,6 +850,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2096},{\"generalKey\":\"0x000000000000000000\"}]": {
         "paraID": 2096,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "NEER",
         "decimals": 18,
         "interiorType": "x2",
@@ -874,6 +895,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":888},{\"palletInstance\":3}]": {
         "paraID": 888,
         "relayChain": "moonbase",
+        "nativeChainID": "moonbase-beta",
         "symbol": "BetaDev",
         "decimals": 18,
         "interiorType": "x2",
@@ -918,6 +940,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2000},{\"generalKey\":\"0x0083\"}]": {
         "paraID": 2000,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "LKSM",
         "decimals": 12,
         "interiorType": "x2",
@@ -962,6 +985,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2024}]": {
         "paraID": 2024,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "GENS",
         "decimals": 9,
         "interiorType": "x1",
@@ -998,6 +1022,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2090},{\"generalKey\":\"0x00000000\"}]": {
         "paraID": 2090,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "BSX",
         "decimals": 12,
         "interiorType": "x2",
@@ -1042,6 +1067,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},\"here\"]": {
         "paraID": 0,
         "relayChain": "moonbase",
+        "nativeChainID": "moonbase-relay",
         "symbol": "UNIT",
         "decimals": 12,
         "interiorType": "here",
@@ -1074,6 +1100,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2001},{\"generalKey\":\"0x0104\"}]": {
         "paraID": 2001,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "vKSM",
         "decimals": 12,
         "interiorType": "x2",
@@ -1118,6 +1145,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2000},{\"generalKey\":\"0x0080\"}]": {
         "paraID": 2000,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "KAR",
         "decimals": 12,
         "interiorType": "x2",
@@ -1162,6 +1190,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1002},{\"generalKey\":\"0x000c\"}]": {
         "paraID": 1002,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "XCKINT",
         "decimals": 12,
         "interiorType": "x2",
@@ -1206,6 +1235,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1002},{\"generalKey\":\"0x000b\"}]": {
         "paraID": 1002,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "KBTC",
         "decimals": 8,
         "interiorType": "x2",
@@ -1250,6 +1280,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1001},{\"palletInstance\":50},{\"generalIndex\":3}]": {
         "paraID": 1001,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "SQD",
         "decimals": 2,
         "interiorType": "x3",
@@ -1300,6 +1331,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2006},{\"generalKey\":\"0x0000\"}]": {
         "paraID": 2006,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "ICZ",
         "decimals": 18,
         "interiorType": "x2",
@@ -1344,6 +1376,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]": {
         "paraID": 2001,
         "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "BNC",
         "decimals": 12,
         "interiorType": "x2",
@@ -1388,6 +1421,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":{\"any\":null},\"key\":\"0x9133c5a22024118804089f1fb752b7b2ce2a6351\"}}]": {
         "paraID": 1000,
         "relayChain": "moonbase",
+        "nativeChainID": "moonbase-alpha",
         "symbol": "ALAN",
         "decimals": 18,
         "interiorType": "x3",
@@ -1448,6 +1482,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":3}]": {
         "paraID": 1000,
         "relayChain": "moonbase",
+        "nativeChainID": "moonbase-alpha",
         "symbol": "AlphaDev",
         "decimals": 18,
         "interiorType": "x2",
@@ -1492,6 +1527,7 @@
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":36},{\"generalIndex\":\"0xfd9d0bf45a2947a519a741c4b9e99eb6\"}]": {
         "paraID": 1000,
         "relayChain": "moonbase",
+        "nativeChainID": "moonbase-alpha",
         "symbol": "xUSDC",
         "decimals": 6,
         "interiorType": "x3",
