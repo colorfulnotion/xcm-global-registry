@@ -36,11 +36,14 @@ jobs:
         run: node xcmgar registry -r kusama
       - name: Moonbase XCM Global Asset Registry Generation
         run: node xcmgar registry -r moonbase
+      - name: XCM GAR metadata Generation
+        run: node xcmgar url
       - name: Show diff
         run:  |
             git diff assets
             git diff xcAssets
             git diff xcmRegistry
+            git diff metadata
       - name: Configure Git Client
         run: |
           git config user.name github-actions
@@ -54,6 +57,7 @@ jobs:
           git add assets/*.json && \
           git add xcmRegistry/*.json && \
           git add xcAssets/*.json && \
+          git add metadata/*.json && \
           git commit -m "[Auto] XCM Assets/Registry Updates (${{ env.CURRENT_TIMESTAMP }}-${{env.CommitHash}})" || echo "No changes to commit"
       - name: Push changes to assets
         run: git push origin $BRANCH_NAME
