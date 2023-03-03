@@ -28,6 +28,46 @@
         ]
     },
     {
+        "paraID": 888,
+        "relayChain": "moonbase",
+        "nativeChainID": "moonbase-beta",
+        "symbol": "BetaDev",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 888
+            },
+            {
+                "palletInstance": 3
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200e10d0403",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 888
+                        },
+                        {
+                            "palletInstance": 3
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "35487752324713722007834302681851459189",
+        "contractAddress": "0xffffffff1ab2b146c526d4154905ff12e6e57675",
+        "source": [
+            "1000"
+        ]
+    },
+    {
         "paraID": 1001,
         "relayChain": "moonbase",
         "nativeChainID": null,
@@ -553,6 +593,38 @@
         "paraID": 2011,
         "relayChain": "moonbase",
         "nativeChainID": null,
+        "symbol": "EQ",
+        "decimals": 9,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2011
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x0101006d1f",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2011
+                    }
+                }
+            }
+        },
+        "asset": "190590555344745888270686124937537713878",
+        "contractAddress": "0xffffffff8f6267e040d8a0638c576dfba4f0f6d6",
+        "source": [
+            "1000"
+        ]
+    },
+    {
+        "paraID": 2011,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "EQD",
         "decimals": 9,
         "interiorType": "x2",
@@ -585,38 +657,6 @@
         },
         "asset": "187224307232923873519830480073807488153",
         "contractAddress": "0xffffffff8cda1707baf23834d211b08726b1e499",
-        "source": [
-            "1000"
-        ]
-    },
-    {
-        "paraID": 2011,
-        "relayChain": "moonbase",
-        "nativeChainID": null,
-        "symbol": "EQ",
-        "decimals": 9,
-        "interiorType": "x1",
-        "xcmV1Standardized": [
-            {
-                "named": "0x6d6f6f6e62617365"
-            },
-            {
-                "parachain": 2011
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x0101006d1f",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x1": {
-                        "parachain": 2011
-                    }
-                }
-            }
-        },
-        "asset": "190590555344745888270686124937537713878",
-        "contractAddress": "0xffffffff8f6267e040d8a0638c576dfba4f0f6d6",
         "source": [
             "1000"
         ]
@@ -1209,46 +1249,6 @@
         },
         "asset": "138512078356357941985706694377215053953",
         "contractAddress": "0xffffffff683474b842852111cc31d470bd8f5081",
-        "source": [
-            "1000"
-        ]
-    },
-    {
-        "paraID": 888,
-        "relayChain": "moonbase",
-        "nativeChainID": "moonbase-beta",
-        "symbol": "BetaDev",
-        "decimals": 18,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "named": "0x6d6f6f6e62617365"
-            },
-            {
-                "parachain": 888
-            },
-            {
-                "palletInstance": 3
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010200e10d0403",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 888
-                        },
-                        {
-                            "palletInstance": 3
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": "35487752324713722007834302681851459189",
-        "contractAddress": "0xffffffff1ab2b146c526d4154905ff12e6e57675",
         "source": [
             "1000"
         ]
