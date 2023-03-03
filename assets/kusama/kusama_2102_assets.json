@@ -5,6 +5,7 @@
         },
         "name": "PCHU",
         "symbol": "PCHU",
-        "decimals": 18
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2102},{\"generalKey\":\"0x50434855\"}]"
     }
 ]

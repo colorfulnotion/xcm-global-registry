@@ -6,7 +6,10 @@
         "name": "Mangata",
         "symbol": "MGX",
         "decimals": 18,
-        "currencyID": "0"
+        "currencyID": "0",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2110},{\"generalKey\":\"0x00000000\"}]",
+        "inferred": true,
+        "confidence": 0
     },
     {
         "asset": {
@@ -264,6 +267,9 @@
         },
         "name": "MGX",
         "symbol": "MGX",
-        "decimals": 18
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2110},{\"generalKey\":\"0x00000000\"}]",
+        "inferred": true,
+        "confidence": 0
     }
 ]

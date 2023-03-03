@@ -75,6 +75,9 @@
         },
         "name": "CSM",
         "symbol": "CSM",
-        "decimals": 12
+        "decimals": 12,
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2012}]",
+        "inferred": true,
+        "confidence": 0
     }
 ]

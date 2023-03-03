@@ -5,6 +5,9 @@
         },
         "name": "QTZ",
         "symbol": "QTZ",
-        "decimals": 18
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2095}]",
+        "inferred": true,
+        "confidence": 0
     }
 ]

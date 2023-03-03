@@ -235,11 +235,26 @@ module.exports = class XCMGlobalAssetRegistryManager {
                     currencyID: localAsset.currencyID,
                     xcmInteriorKey: localAsset.xcmInteriorKey,
                 }
+
+                //auto-infer xcmInteriorKey from sibl's registry
+                let knownBlacklist = ['ASTR', 'BSX']
+                if (a.xcmInteriorKey == undefined && this.getXcmInteriorkeyByParaIDAndSymbol(relayChain, paraIDSource, localAsset.symbol) && !knownBlacklist.includes(localAsset.symbol.toUpperCase())){
+                    let inferredInteriorykey = this.getXcmInteriorkeyByParaIDAndSymbol(relayChain, paraIDSource, localAsset.symbol)
+                    if (inferredInteriorykey){
+                        //must invalidate statemine/statemint ass
+                        if (paraIDSource != 1000 || (paraIDSource == 1000 && inferredInteriorykey.includes(`{"generalIndex":${localAsset.currencyID}}`))){
+                            a.xcmInteriorKey = inferredInteriorykey
+                            a.inferred = true
+                            a.confidence = 0
+                        }
+                    }
+                }
                 localAssetList.push(a)
             }
             if (localAssetList.length > 0) {
+                //console.log(`localAssetList`, localAssetList)
                 let fnDirFn =  await xcmgarFileMngr.writeParaJSONFn(relayChain, paraIDSource, 'assets', localAssetList)
-                console.log(`updateLocalAsset`, fnDirFn)
+                //console.log(`updateLocalAsset`, fnDirFn)
                 meta[chainkey] = fnDirFn
             }
         }
@@ -659,6 +674,17 @@ module.exports = class XCMGlobalAssetRegistryManager {
             return this.chainAssetMap[chainkey]
         }
         return {}
+    }
+
+    getXcmInteriorkeyByParaIDAndSymbol(relayChain, paraID, symbol){
+        let xcmAssetMap = this.xcmAssetMap
+        for (const xcmInteriorKey of Object.keys(xcmAssetMap)){
+            let r = xcmAssetMap[xcmInteriorKey]
+            if (r.symbol.toUpperCase() == symbol.toUpperCase() && r.paraID == paraID && r.relayChain == relayChain){
+                return xcmInteriorKey
+            }
+        }
+        return false
     }
 
 }

@@ -6,7 +6,8 @@
         "name": "listen",
         "symbol": "LT",
         "decimals": 12,
-        "currencyID": "0"
+        "currencyID": "0",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2118},{\"generalKey\":\"0x4c54\"}]"
     },
     {
         "asset": {
@@ -87,6 +88,7 @@
         },
         "name": "LT",
         "symbol": "LT",
-        "decimals": 12
+        "decimals": 12,
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2118},{\"generalKey\":\"0x4c54\"}]"
     }
 ]

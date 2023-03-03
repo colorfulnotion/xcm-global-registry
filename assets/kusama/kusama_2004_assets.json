@@ -164,6 +164,9 @@
         },
         "name": "PHA",
         "symbol": "PHA",
-        "decimals": 12
+        "decimals": 12,
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2004}]",
+        "inferred": true,
+        "confidence": 0
     }
 ]
