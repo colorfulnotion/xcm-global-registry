@@ -285,6 +285,43 @@ function parseXcmInteriorKeyV1(xcmInteriorKey = '[{"parachain":2023},{"palletIns
     return [assetUnparsed, relayChain];
 }
 
+function dynamicSort(property) {
+    var sortOrder = 1;
+    if(property[0] === "-") {
+        sortOrder = -1;
+        property = property.substr(1);
+    }
+    return function (a,b) {
+        var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
+        return result * sortOrder;
+    }
+}
+
+function dynamicSortMultiple() {
+    var props = arguments;
+    return function (obj1, obj2) {
+        var i = 0, result = 0, numberOfProperties = props.length;
+        while(result === 0 && i < numberOfProperties) {
+            result = dynamicSort(props[i])(obj1, obj2);
+            i++;
+        }
+        return result;
+    }
+}
+
+function SortXcmRegistry(xcmRegistry){
+    let sortedRegistry = {}
+    let xcmRegistryVals = Object.values(xcmRegistry)
+    // sort by paraID, xcmInteriorKey, xcmV1MultiLocationByte
+    let sortedXcmRegistryVals = xcmRegistryVals.sort(dynamicSortMultiple("relayChain", "paraID", "xcmV1MultiLocationByte"));
+    for (const xcmRegistryVal of sortedXcmRegistryVals){
+        let xcmInteriorKey = JSON.stringify(xcmRegistryVal.xcmV1Standardized)
+        sortedRegistry[xcmInteriorKey] = xcmRegistryVal
+    }
+    //console.log(`*** sorted`, sortedRegistry)
+    return sortedRegistry
+}
+
 function git_hash(isRelativePath = true) {
     //let path = (isRelativePath) ? '.' : ''
     let path = '.'
@@ -418,4 +455,5 @@ module.exports = {
     bnToHex: function(x) {
         return bnToHex(x)
     },
+    SortXcmRegistry: SortXcmRegistry,
 };

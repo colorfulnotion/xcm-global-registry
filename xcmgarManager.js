@@ -241,6 +241,8 @@ module.exports = class XCMGlobalAssetRegistryManager {
 
     async updateXcmRegistry() {
         let relayChain = this.relaychain
+        //sort xcm registry by paraID, then by MultiLocation
+        this.sortXcmAssetMap()
         let fnDirFn = await xcmgarFileMngr.writeJSONFn(relayChain, 'xcmRegistry', this.getXcmAssetMap())
     }
 
@@ -578,6 +580,11 @@ module.exports = class XCMGlobalAssetRegistryManager {
 
     getXcmAssetMap() {
         return this.xcmAssetMap
+    }
+
+    sortXcmAssetMap(){
+        let sortedXcmAssetMap = xcmgarTool.SortXcmRegistry(this.xcmAssetMap)
+        this.xcmAssetMap = sortedXcmAssetMap
     }
 
     setXcmAsset(xcmInteriorKey, xcmAssetInfo, chainkey) {

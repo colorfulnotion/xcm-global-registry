@@ -90,7 +90,7 @@ function genFilelist(relayChain = 'polkadot', fExt = 'assets', endpointMap = fal
                     registryCnt: `${Object.keys(jsonObj).length}`,
                 }
                 if (!includeContent) res.url = `${defaultURL}/${branch}/${fnDir}/${fn}`
-                if (includeContent) res.data = jsonObj
+                if (includeContent) res.data = xcmgarTool.SortXcmRegistry(jsonObj)
                 if (r[0] == 'polkadot' || r[0] == 'kusama') meta.push(res) // skip moonbase, rococo for now
             }
             break;

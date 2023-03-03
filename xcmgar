@@ -52,7 +52,7 @@ class XCMGlobalAssetRegistryCLI {
                 }
             }
         }
-
+        xcmgarm.sortXcmAssetMap()
         let chainAssetMap = xcmgarm.getChainAssetMap()
         let xcmAssetMap = xcmgarm.getXcmAssetMap()
         console.log(`AssetMap`, chainAssetMap)
@@ -106,8 +106,8 @@ class XCMGlobalAssetRegistryCLI {
     async generateData(opt) {
         let isURL = (opt.url)? true : false
         let isMeta = (opt.metadata)? true : false
-        if (isURL) await xcmgarFileMngr.generateMeta()
-        if (isMeta) await xcmgarFileMngr.generateURL()
+        if (isMeta) await xcmgarFileMngr.generateMeta()
+        if (isURL) await xcmgarFileMngr.generateURL()
     }
 }
 
