@@ -38,6 +38,7 @@ Options:
 Commands:
   registry [options]  Fetch on-chain Asset Registry and XCM MultiLocation Registry
   endpoint [options]  Update public endpoints
+  generate [options]  generate metadata from cached results
   help [command]      display help for command
 ```
 
@@ -77,7 +78,7 @@ Single parachain (xc)Asset registry can be generated/inspected by passing in wit
 ./xcmgar registry -r polkadot -p 2000
 
 # dry-run moonriver's (xc)Asset registry:
-./xcmgar registry -r polkadot -p 2000 -d
+./xcmgar registry -r kusama -p 2023 -d
 ```
 
 ### Implement Custom Parser:
