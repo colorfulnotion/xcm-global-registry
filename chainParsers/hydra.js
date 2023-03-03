@@ -23,8 +23,14 @@ module.exports = class HydraParser extends ChainParser {
     xcGarStorage = 'assetLocations'
 
     augment = {}
-    manualRegistry = {}
-
+    manualRegistry = {
+        'kusama-2090': [{
+            asset: {
+                "Token": "BSX"
+            },
+            xcmInteriorKey: '[{"network":"kusama"},{"parachain":2090},{"generalKey":"0x00000000"}]'
+        }]
+    }
     isXcRegistryAvailable = true
 
     //step 1: parse gar pallet, storage for parachain's asset registry

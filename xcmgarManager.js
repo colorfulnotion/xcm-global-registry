@@ -57,74 +57,6 @@ module.exports = class XCMGlobalAssetRegistryManager {
         }
     }
 
-    /*
-    readFilelist(relayChain = 'polkadot', fExt = 'assets') {
-        const logDir = ""
-        let fnDir = path.join(logDir, fExt, relayChain);
-        if (fExt == 'xcmRegistry'){
-            fnDir = path.join(logDir, fExt);
-        }
-        let fn = ``
-        let fnDirFn = false
-        let files = false
-        try {
-            fnDirFn = path.join(fnDir, fn)
-            files = fs.readdirSync(fnDirFn, 'utf8');
-        } catch (err) {
-            console.log(err, "readJSONFn", fnDirFn);
-            return false
-        }
-        return files
-    }
-
-    readParachainFiles(relayChain = 'polkadot', fn = 'polkadot_2000_assets.json') {
-        const logDir = ""
-        let pieces = fn.split('_')
-        let paraID = xcmgarTool.dechexToInt(pieces[1])
-        let fExt = pieces[2].split('.')[0]
-        let chainkey = `${relayChain}-${paraID}`
-        let fnDir = path.join(logDir, fExt, relayChain);
-        let fnDirFn = false
-        let jsonObj = false
-        try {
-            fnDirFn = path.join(fnDir, fn)
-            const fnContent = fs.readFileSync(fnDirFn, 'utf8');
-            jsonObj = JSON.parse(fnContent)
-        } catch (err) {
-            console.log(err, "readParachainAssets", fnDirFn);
-            return [false, false]
-        }
-        let assetMap = {}
-        if (fExt == 'assets'){
-            for (const a of jsonObj){
-                let rawAsset = a.asset
-                let assetString = JSON.stringify(rawAsset)
-                if (a.xcmInteriorKey != undefined) a.xcmInteriorKeyV1 = xcmgarTool.convertXcmInteriorKeyV2toV1(a.xcmInteriorKey)
-                let assetChain = xcmgarTool.makeAssetChain(assetString, chainkey)
-                delete a.asset
-                assetMap[assetChain] = a
-            }
-        }else if (fExt == 'xcAssets'){
-            for (const x of jsonObj){
-                let xcmInteriorKeyV2 = JSON.stringify(x.xcmV1Standardized)
-                //Add back the removed fields: xcCurrencyID, xcContractAddress, source, confidence
-                x.xcCurrencyID = {}
-                x.xcContractAddress = {}
-                x.source = [paraID]
-                x.confidence = 1
-                x.xcCurrencyID[paraID] = x.asset
-                if (x.contractAddress != undefined){
-                    x.xcContractAddress[paraID] = x.contractAddress
-                    delete x.contractAddress
-                }
-                delete x.Asset
-                assetMap[xcmInteriorKeyV2] = x
-            }
-        }
-        return [chainkey, assetMap]
-    }
-    */
-
     loadCachedRegistry(relayChain = 'polkadot'){
         let assetList = xcmgarFileMngr.readFilelist(relayChain, 'assets')
         for (const aFn of assetList){
@@ -241,6 +173,8 @@ module.exports = class XCMGlobalAssetRegistryManager {
 
     async updateXcmRegistry() {
         let relayChain = this.relaychain
+        //sort xcm registry by paraID, then by MultiLocation
+        this.sortXcmAssetMap()
         let fnDirFn = await xcmgarFileMngr.writeJSONFn(relayChain, 'xcmRegistry', this.getXcmAssetMap())
     }
 
@@ -253,7 +187,7 @@ module.exports = class XCMGlobalAssetRegistryManager {
             let localXcAssetMap = chainXcmAssetMap[chainkey]
             let localXcAssetList = []
             let localXcAssetChainkeys = Object.keys(localXcAssetMap)
-            localXcAssetChainkeys.sort()
+            //localXcAssetChainkeys.sort()
             for (const localXcAssetChainkey of localXcAssetChainkeys) {
                 let localXcAsset = localXcAssetMap[localXcAssetChainkey]
                 //delete localAsset.xcmInteriorKeyV1;
@@ -301,11 +235,26 @@ module.exports = class XCMGlobalAssetRegistryManager {
                     currencyID: localAsset.currencyID,
                     xcmInteriorKey: localAsset.xcmInteriorKey,
                 }
+
+                //auto-infer xcmInteriorKey from sibl's registry
+                let knownBlacklist = ['ASTR', 'BSX']
+                if (a.xcmInteriorKey == undefined && this.getXcmInteriorkeyByParaIDAndSymbol(relayChain, paraIDSource, localAsset.symbol) && !knownBlacklist.includes(localAsset.symbol.toUpperCase())){
+                    let inferredInteriorykey = this.getXcmInteriorkeyByParaIDAndSymbol(relayChain, paraIDSource, localAsset.symbol)
+                    if (inferredInteriorykey){
+                        //must invalidate statemine/statemint ass
+                        if (paraIDSource != 1000 || (paraIDSource == 1000 && inferredInteriorykey.includes(`{"generalIndex":${localAsset.currencyID}}`))){
+                            a.xcmInteriorKey = inferredInteriorykey
+                            a.inferred = true
+                            a.confidence = 0
+                        }
+                    }
+                }
                 localAssetList.push(a)
             }
             if (localAssetList.length > 0) {
+                //console.log(`localAssetList`, localAssetList)
                 let fnDirFn =  await xcmgarFileMngr.writeParaJSONFn(relayChain, paraIDSource, 'assets', localAssetList)
-                console.log(`updateLocalAsset`, fnDirFn)
+                //console.log(`updateLocalAsset`, fnDirFn)
                 meta[chainkey] = fnDirFn
             }
         }
@@ -580,6 +529,11 @@ module.exports = class XCMGlobalAssetRegistryManager {
         return this.xcmAssetMap
     }
 
+    sortXcmAssetMap(){
+        let sortedXcmAssetMap = xcmgarTool.SortXcmRegistry(this.xcmAssetMap)
+        this.xcmAssetMap = sortedXcmAssetMap
+    }
+
     setXcmAsset(xcmInteriorKey, xcmAssetInfo, chainkey) {
         let paraIDSource = xcmgarTool.dechexToInt(xcmAssetInfo.source[0])
         if (this.xcmAssetMap[xcmInteriorKey] == undefined) {
@@ -665,6 +619,22 @@ module.exports = class XCMGlobalAssetRegistryManager {
         return this.chainAssetMap
     }
 
+    sortChainXcmAssetMap(){
+        let chainXcmAssetMap = this.chainXcmAssetMap
+        let chainkeys = Object.keys(chainXcmAssetMap)
+        chainkeys.sort()
+        let sortedChainXcmAssetMap = {}
+        for (const chainkey of chainkeys) {
+            let pieces = chainkey.split('-')
+            let localXcAssetMap = chainXcmAssetMap[chainkey]
+            let sortedLocalXcAssetMap = xcmgarTool.SortXcmRegistry(localXcAssetMap)
+            sortedChainXcmAssetMap[chainkey] = sortedLocalXcAssetMap
+            //this.chainXcmAssetMap[chainkey] = sortedLocalXcAssetMap
+        }
+        //console.log(`sortedChainXcmAssetMap`, sortedChainXcmAssetMap)
+        this.chainXcmAssetMap = sortedChainXcmAssetMap
+    }
+
     getChainXcmAssetMap() {
         return this.chainXcmAssetMap
     }
@@ -677,11 +647,44 @@ module.exports = class XCMGlobalAssetRegistryManager {
         }
     }
 
+    sortChainAssetMap(){
+        let chainAssetMap = this.chainAssetMap
+        let chainkeys = Object.keys(chainAssetMap)
+        chainkeys.sort()
+        let sortedChainAssetMap = {}
+        //custom sorting method
+        var collator = new Intl.Collator(undefined, {numeric: true, sensitivity: 'base'});
+        for (const chainkey of chainkeys) {
+            let localAssetMap = chainAssetMap[chainkey]
+            let localXcAssetChainkeys = Object.keys(localAssetMap)
+            let sortedLocalAssetMap = {}
+            //localXcAssetChainkeys.sort()
+            localXcAssetChainkeys.sort(collator.compare)
+            for (const localXcAssetChainkey of localXcAssetChainkeys) {
+                sortedLocalAssetMap[localXcAssetChainkey] = localAssetMap[localXcAssetChainkey]
+            }
+            sortedChainAssetMap[chainkey] = sortedLocalAssetMap
+        }
+        //console.log(`sortedChainAssetMap`, sortedChainAssetMap)
+        this.chainAssetMap = sortedChainAssetMap
+    }
+
     getLocalAssetMap(chainkey) {
         if (this.chainAssetMap[chainkey] != undefined) {
             return this.chainAssetMap[chainkey]
         }
         return {}
+    }
+
+    getXcmInteriorkeyByParaIDAndSymbol(relayChain, paraID, symbol){
+        let xcmAssetMap = this.xcmAssetMap
+        for (const xcmInteriorKey of Object.keys(xcmAssetMap)){
+            let r = xcmAssetMap[xcmInteriorKey]
+            if (r.symbol.toUpperCase() == symbol.toUpperCase() && r.paraID == paraID && r.relayChain == relayChain){
+                return xcmInteriorKey
+            }
+        }
+        return false
     }
 
 }

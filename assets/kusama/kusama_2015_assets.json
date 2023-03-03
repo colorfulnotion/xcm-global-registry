@@ -5,6 +5,9 @@
         },
         "name": "TEER",
         "symbol": "TEER",
-        "decimals": 12
+        "decimals": 12,
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2015},{\"generalKey\":\"0x54454552\"}]",
+        "inferred": true,
+        "confidence": 0
     }
 ]

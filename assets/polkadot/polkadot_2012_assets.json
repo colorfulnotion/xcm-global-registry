@@ -345,6 +345,9 @@
         },
         "name": "PARA",
         "symbol": "PARA",
-        "decimals": 12
+        "decimals": 12,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2012},{\"generalKey\":\"0x50415241\"}]",
+        "inferred": true,
+        "confidence": 0
     }
 ]

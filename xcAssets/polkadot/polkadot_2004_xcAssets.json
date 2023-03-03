@@ -189,6 +189,38 @@
         "paraID": 2011,
         "relayChain": "polkadot",
         "nativeChainID": "equilibrium",
+        "symbol": "EQ",
+        "decimals": 9,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2011
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x0101006d1f",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2011
+                    }
+                }
+            }
+        },
+        "asset": "190590555344745888270686124937537713878",
+        "contractAddress": "0xffffffff8f6267e040d8a0638c576dfba4f0f6d6",
+        "source": [
+            "2004"
+        ]
+    },
+    {
+        "paraID": 2011,
+        "relayChain": "polkadot",
+        "nativeChainID": "equilibrium",
         "symbol": "EQD",
         "decimals": 9,
         "interiorType": "x2",
@@ -221,38 +253,6 @@
         },
         "asset": "187224307232923873519830480073807488153",
         "contractAddress": "0xffffffff8cda1707baf23834d211b08726b1e499",
-        "source": [
-            "2004"
-        ]
-    },
-    {
-        "paraID": 2011,
-        "relayChain": "polkadot",
-        "nativeChainID": "equilibrium",
-        "symbol": "EQ",
-        "decimals": 9,
-        "interiorType": "x1",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 2011
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x0101006d1f",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x1": {
-                        "parachain": 2011
-                    }
-                }
-            }
-        },
-        "asset": "190590555344745888270686124937537713878",
-        "contractAddress": "0xffffffff8f6267e040d8a0638c576dfba4f0f6d6",
         "source": [
             "2004"
         ]

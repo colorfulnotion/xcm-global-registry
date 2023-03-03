@@ -24,7 +24,10 @@
         "name": "Wrapped Ether",
         "symbol": "WETH",
         "decimals": 18,
-        "currencyID": "100"
+        "currencyID": "100",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":100}]",
+        "inferred": true,
+        "confidence": 0
     },
     {
         "asset": {
@@ -106,7 +109,10 @@
         "name": "Wrapped Bitcoin",
         "symbol": "WBTC",
         "decimals": 8,
-        "currencyID": "21"
+        "currencyID": "21",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":21}]",
+        "inferred": true,
+        "confidence": 0
     },
     {
         "asset": {
