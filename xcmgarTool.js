@@ -309,6 +309,21 @@ function dynamicSortMultiple() {
     }
 }
 
+function SortLocalAssets(localAssetMap){
+    let sortedlocalAssetMap = {}
+    let xcmRegistryVals = Object.values(xcmRegistry)
+    var collator = new Intl.Collator(undefined, {numeric: true, sensitivity: 'base'});
+
+    // sort by paraID, xcmInteriorKey, xcmV1MultiLocationByte
+    let sortedXcmRegistryVals = xcmRegistryVals.sort(dynamicSortMultiple("relayChain", "paraID", "xcmV1MultiLocationByte"));
+    for (const xcmRegistryVal of sortedXcmRegistryVals){
+        let xcmInteriorKey = JSON.stringify(xcmRegistryVal.xcmV1Standardized)
+        sortedRegistry[xcmInteriorKey] = xcmRegistryVal
+    }
+    //console.log(`*** sorted`, sortedRegistry)
+    return sortedRegistry
+}
+
 function SortXcmRegistry(xcmRegistry){
     let sortedRegistry = {}
     let xcmRegistryVals = Object.values(xcmRegistry)
@@ -456,4 +471,5 @@ module.exports = {
         return bnToHex(x)
     },
     SortXcmRegistry: SortXcmRegistry,
+    SortLocalAssets: SortLocalAssets,
 };

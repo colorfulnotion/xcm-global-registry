@@ -269,6 +269,38 @@
         "paraID": 2011,
         "relayChain": "polkadot",
         "nativeChainID": "equilibrium",
+        "symbol": "EQ",
+        "decimals": 9,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2011
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x0101006d1f",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2011
+                    }
+                }
+            }
+        },
+        "asset": "18446744073709551628",
+        "contractAddress": "0xffffffff0000000000000001000000000000000c",
+        "source": [
+            "2006"
+        ]
+    },
+    {
+        "paraID": 2011,
+        "relayChain": "polkadot",
+        "nativeChainID": "equilibrium",
         "symbol": "EQD",
         "decimals": 9,
         "interiorType": "x2",
@@ -301,38 +333,6 @@
         },
         "asset": "18446744073709551629",
         "contractAddress": "0xffffffff0000000000000001000000000000000d",
-        "source": [
-            "2006"
-        ]
-    },
-    {
-        "paraID": 2011,
-        "relayChain": "polkadot",
-        "nativeChainID": "equilibrium",
-        "symbol": "EQ",
-        "decimals": 9,
-        "interiorType": "x1",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 2011
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x0101006d1f",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x1": {
-                        "parachain": 2011
-                    }
-                }
-            }
-        },
-        "asset": "18446744073709551628",
-        "contractAddress": "0xffffffff0000000000000001000000000000000c",
         "source": [
             "2006"
         ]

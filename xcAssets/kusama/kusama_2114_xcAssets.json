@@ -27,6 +27,36 @@
         ]
     },
     {
+        "relayChain": "kusama",
+        "nativeChainID": null,
+        "symbol": "TUR",
+        "decimals": 10,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2114
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x0101000921",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2114
+                    }
+                }
+            }
+        },
+        "asset": "0",
+        "source": [
+            "2114"
+        ]
+    },
+    {
         "paraID": 2000,
         "relayChain": "kusama",
         "nativeChainID": "karura",
@@ -279,36 +309,6 @@
             }
         },
         "asset": "6",
-        "source": [
-            "2114"
-        ]
-    },
-    {
-        "relayChain": "kusama",
-        "nativeChainID": null,
-        "symbol": "TUR",
-        "decimals": 10,
-        "interiorType": "x1",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2114
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x0101000921",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x1": {
-                        "parachain": 2114
-                    }
-                }
-            }
-        },
-        "asset": "0",
         "source": [
             "2114"
         ]
