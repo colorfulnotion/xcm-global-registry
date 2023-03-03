@@ -182,7 +182,7 @@
                 "relayChain": "kusama",
                 "paraID": 2001,
                 "id": "bifrost",
-                "assetCnt": "47",
+                "assetCnt": "48",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2001_assets.json"
             },
             {

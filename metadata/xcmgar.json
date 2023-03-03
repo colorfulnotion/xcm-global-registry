@@ -3911,7 +3911,7 @@
                 "relayChain": "kusama",
                 "paraID": 2001,
                 "id": "bifrost",
-                "assetCnt": "47",
+                "assetCnt": "48",
                 "data": [
                     {
                         "asset": {
@@ -4364,6 +4364,19 @@
                         },
                         "name": "vsBOND-KSM-2129-24-31",
                         "symbol": "vsBOND-KSM-2129-24-31",
+                        "decimals": 12
+                    },
+                    {
+                        "asset": {
+                            "VSBond": [
+                                "KSM",
+                                "2,241",
+                                "28",
+                                "35"
+                            ]
+                        },
+                        "name": "vsBOND-KSM-2241-28-35",
+                        "symbol": "vsBOND-KSM-2241-28-35",
                         "decimals": 12
                     },
                     {

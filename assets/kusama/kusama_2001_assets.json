@@ -456,6 +456,19 @@
         "asset": {
             "VSBond": [
                 "KSM",
+                "2,241",
+                "28",
+                "35"
+            ]
+        },
+        "name": "vsBOND-KSM-2241-28-35",
+        "symbol": "vsBOND-KSM-2241-28-35",
+        "decimals": 12
+    },
+    {
+        "asset": {
+            "VSBond": [
+                "KSM",
                 "2,256",
                 "27",
                 "34"
