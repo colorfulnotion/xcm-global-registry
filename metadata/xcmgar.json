@@ -5772,7 +5772,7 @@
                         "symbol": "DAI",
                         "decimals": 18,
                         "currencyID": "13",
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a70\"}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71\"}]"
                     },
                     {
                         "asset": {
@@ -14547,10 +14547,10 @@
                                 "parachain": 2000
                             },
                             {
-                                "generalKey": "0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a70"
+                                "generalKey": "0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71"
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010200411f0654024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a70",
+                        "xcmV1MultiLocationByte": "0x010200411f0654024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71",
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -14560,7 +14560,7 @@
                                             "parachain": 2000
                                         },
                                         {
-                                            "generalKey": "0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a70"
+                                            "generalKey": "0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71"
                                         }
                                     ]
                                 }
@@ -16059,7 +16059,7 @@
                         2090
                     ]
                 },
-                "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a70\"}]": {
+                "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71\"}]": {
                     "paraID": 2000,
                     "relayChain": "kusama",
                     "nativeChainID": "karura",
@@ -16074,10 +16074,10 @@
                             "parachain": 2000
                         },
                         {
-                            "generalKey": "0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a70"
+                            "generalKey": "0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71"
                         }
                     ],
-                    "xcmV1MultiLocationByte": "0x010200411f0654024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a70",
+                    "xcmV1MultiLocationByte": "0x010200411f0654024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71",
                     "xcmV1MultiLocation": {
                         "v1": {
                             "parents": 1,
@@ -16087,7 +16087,7 @@
                                         "parachain": 2000
                                     },
                                     {
-                                        "generalKey": "0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a70"
+                                        "generalKey": "0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71"
                                     }
                                 ]
                             }
