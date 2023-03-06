@@ -2,6 +2,17 @@ const fs = require('fs');
 const path = require("path");
 const xcmgarTool = require("./xcmgarTool");
 const endpoints = require("./endpoints");
+const fetch = require("node-fetch");
+
+async function fetchXcmGarRegistry() {
+    // Storing response
+    const response = await fetch(xcmgarSourceURL);
+
+    // Storing data in form of JSON
+    var data = await response.json();
+    console.log(`xcmgarSourceURL res`, data);
+    return data
+}
 
 async function generateURL(){
     let manefest = {}
@@ -397,5 +408,5 @@ module.exports = {
     readJSONFn: readJSONFn,
     writeParaJSONFn: writeParaJSONFn,
     writeJSONFn: writeJSONFn,
-
+    fetchXcmGarRegistry: fetchXcmGarRegistry,
 }

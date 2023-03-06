@@ -6,13 +6,39 @@ This XCM Global Asset Registry (XCMGAR) repo does all the data processing needed
 * Input: known [Polkadot + Kusama RPC endpoints](https://github.com/colorfulnotion/xcm-global-registry/tree/main/assets)
 
 * Output:
-	* [xcmgar.json](https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry/metadata/xcmgar.json): a registry file containing all assets, xcAssets, xcmRegsitry across parachains.  (CDN: `https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry/metadata/xcmgar.json`)
-	*  [xcmgar_url.json](https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry/metadata/xcmgar_url.json): a metadata file containing links to every individual asset, xcAsset. xcmRegistry files. Each file can be served individually, depending on your use case  (CDN: `https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry/metadata/xcmgar_url.json`)
-	* [[local (xc)Assets registry](https://github.com/colorfulnotion/xcm-global-registry/tree/main/assets/polkadot) + [local xcm registry](https://github.com/colorfulnotion/xcm-global-registry/tree/main/xcAssets/polkadot)] per each parachain. Used as cached backups when endpoints are temporarily unreachable during the periodic on-chain crawl.
+	* [xcmgar.json](https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry/metadata/xcmgar.json): a registry file containing all assets, xcAssets, xcmRegsitry across parachains.
+        * CDN: `https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry/metadata/xcmgar.json`
+	*  [xcmgar_url.json](https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry/metadata/xcmgar_url.json): a metadata file containing links to every individual asset, xcAsset. xcmRegistry files. Each file can be served individually, depending on your use case
+        * CDN: `https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry/metadata/xcmgar_url.json`
+	* [local (xc)Assets registry](https://github.com/colorfulnotion/xcm-global-registry/tree/main/assets/polkadot) + [local xcm registry](https://github.com/colorfulnotion/xcm-global-registry/tree/main/xcAssets/polkadot) per each parachain.
+        * Used as cached backups when endpoints are temporarily unreachable during the periodic on-chain crawl.
 
-As of mid-January 2023, XCMGAR covers 55+ chains with 35 xcAssets on Polkadot and 47 on Kusama. This is a work in progress and needs contributions from parachain teams to be successful. Data is updated daily via Github Actions.
+As of March 2023, XCMGAR covers 55+ chains with 35 xcAssets on Polkadot and 47 on Kusama. This is a work in progress and needs contributions from parachain teams to be successful. Data is updated daily via Github Actions.
 
 Target use cases: multichain dapps, chain analytics in the Substrate ecosystem
+
+### Roadmap
+
+**Spring 2023**
+* [x] Implementing common chainParser to automatically parse {assets, tokens} pallets registry, which are commonly used by many parachains.
+* [x] Periodic registry fetching via [Github workflow](https://github.com/colorfulnotion/xcm-global-registry/actions)
+* [x] [local (xc)Assets registry](https://github.com/colorfulnotion/xcm-global-registry/tree/main/assets/polkadot) + [local xcm registry](https://github.com/colorfulnotion/xcm-global-registry/tree/main/xcAssets/polkadot) per each parachain for debuggability
+* [x] Publishing [results](https://github.com/colorfulnotion/xcm-global-registry/tree/main/metadata) as CDN files for easier importing/exporting.
+* [x] Load public endpoints from Polkadot.js
+
+**Summer/Fall 2023**
+* [ ] Fetch public endpoints from additional sources like [polkadot_network_directory](https://github.com/paritytech/polkadot_network_directory), [subrpc](https://github.com/chevdor/subrpc)
+* [ ] Convert XcmInteriorKey to support GlobalConsensus
+* [ ] Full XCMv3 Multilocation support
+* [ ] Disclose uncovered parachains(i.e Imbue, Composable Finance which are currently not maintaining their registry on-chain)
+* [ ] Support Statemine/Statemint's ForeignAsset pallet
+* [ ] Publish results to IPFS (in addition to CDN)
+* [ ] Integration with [Substrate-etl](https://github.com/colorfulnotion/substrate-etl) repo to enable Dotsama account asset balance look up.
+* [ ] New functionality based on community feedback
+
+**Fall/Winter 2023**
+* [ ] On-Chain weight, fee, existential deposit parsing
+* [ ] XCM Transfer SDK
 
 ## Install
 To get started, clone this repo:
@@ -94,7 +120,7 @@ Follow the [tutorial](https://github.com/colorfulnotion/xcm-global-registry/blob
   * Step 3 - [optional] Augment the XCM result from previous step
 * Aggregate multiple parachains' XCM Registry into one map keyed by the standardized multilocation
 
-For implementation details (including design choice), see the doc [here](https://github.com/colorfulnotion/xcm-global-registry/blob/main/docs/DETAILS.md).
+For implementation details (including design choice), see the doc [here](https://github.com/colorfulnotion/xcm-global-registry/blob/main/docs/DETAIL.md).
 
 ## Goal: Filling the lack of XCM Global Asset Registry
 

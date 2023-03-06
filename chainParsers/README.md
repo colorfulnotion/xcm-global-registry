@@ -1,7 +1,7 @@
 ## Custom Parser Tutorial:
 
 Available resources within this directory:
-* [common_chainparser](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chainParsers/common_chainparser.js) - Implements common registry parsing logics sahred among different parachains.
+* [common_chainparser](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chainParsers/common_chainparser.js) - Implements common registry parsing logics shared among different parachains.
 * [custom_parser_template](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chainParsers/custom_parser_template.js) - Fork this template to create new custom parser for a project.
 
 ## Overview
@@ -253,7 +253,7 @@ manualRegistry = {
 
 ```
 
-Note: xcmInteriorkey format is documented [here](https://github.com/colorfulnotion/xcm-global-registry/blob/main/docs/DETAILS.md)
+Note: xcmInteriorkey format is documented [here](https://github.com/colorfulnotion/xcm-global-registry/blob/main/docs/DETAIL.md)
 
 
 ## Step 7 - Test Custom Parser
