@@ -35,7 +35,7 @@ xcm-global-registry~$tree
 │   └── custom_chainparser ...
 ├── docs
 │   ├── CONTRIBUTING.md
-│   ├── DETAILS.md
+│   ├── DETAIL.md
 │   └── STATUS.md
 ├── endpoints.js
 ├── node_modules
