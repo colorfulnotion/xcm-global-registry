@@ -553,7 +553,7 @@
     "xcmRegistry": [
         {
             "relayChain": "kusama",
-            "registryCnt": "46",
+            "registryCnt": "47",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/kusama_xcmRegistry.json"
         },
         {
