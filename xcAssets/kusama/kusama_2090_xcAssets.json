@@ -306,6 +306,37 @@
         ]
     },
     {
+        "paraID": 2048,
+        "relayChain": "kusama",
+        "nativeChainID": "robonomics",
+        "symbol": "XRT",
+        "decimals": 9,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2048
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x0101000120",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2048
+                    }
+                }
+            }
+        },
+        "asset": "16",
+        "source": [
+            "2090"
+        ]
+    },
+    {
         "paraID": 2125,
         "relayChain": "kusama",
         "nativeChainID": null,

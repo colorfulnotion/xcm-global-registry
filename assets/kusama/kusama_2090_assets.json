@@ -70,6 +70,16 @@
     },
     {
         "asset": {
+            "Token": "16"
+        },
+        "name": "XRT",
+        "symbol": "XRT",
+        "decimals": 9,
+        "currencyID": "16",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2048}]"
+    },
+    {
+        "asset": {
             "Token": "2"
         },
         "name": "aUSD",

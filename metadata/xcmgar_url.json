@@ -266,7 +266,7 @@
                 "relayChain": "kusama",
                 "paraID": 2090,
                 "id": "basilisk",
-                "assetCnt": "11",
+                "assetCnt": "12",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2090_assets.json"
             },
             {
@@ -524,7 +524,7 @@
                 "relayChain": "kusama",
                 "paraID": 2090,
                 "id": "basilisk",
-                "xcAssetCnt": "9",
+                "xcAssetCnt": "10",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/kusama/kusama_2090_xcAssets.json"
             },
             {
@@ -553,7 +553,7 @@
     "xcmRegistry": [
         {
             "relayChain": "kusama",
-            "registryCnt": "47",
+            "registryCnt": "46",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/kusama_xcmRegistry.json"
         },
         {
