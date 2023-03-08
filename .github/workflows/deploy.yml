@@ -37,7 +37,7 @@ jobs:
       - name: Moonbase XCM Global Asset Registry Generation
         run: node xcmgar registry -r moonbase
       - name: XCM GAR metadata Generation
-        run: node xcmgar generate -u -m
+        run: node xcmgar generate -m -u 
       - name: Show diff
         run:  |
             git diff assets

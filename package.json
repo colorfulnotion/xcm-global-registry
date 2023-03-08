@@ -60,6 +60,7 @@
     "memcached-promise": "^1.0.1",
     "moonbeam-types-bundle": "^2.0.4",
     "mysql2": "^2.3.3-rc.0",
+    "node-fetch": "2.6.1",
     "node-ini": "^1.0.0",
     "nodemailer": "^6.7.5",
     "qrcode": "^1.5.0",
