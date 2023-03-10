@@ -761,6 +761,15 @@
     },
     {
         "asset": {
+            "Token": "404"
+        },
+        "name": "MAXI",
+        "symbol": "MAXI",
+        "decimals": 8,
+        "currencyID": "404"
+    },
+    {
+        "asset": {
             "Token": "41"
         },
         "name": "GooseCoin",

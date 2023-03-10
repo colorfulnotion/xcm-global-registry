@@ -2312,7 +2312,7 @@
                 "relayChain": "kusama",
                 "paraID": 1000,
                 "id": "statemine",
-                "assetCnt": "147",
+                "assetCnt": "148",
                 "data": [
                     {
                         "asset": {
@@ -3073,6 +3073,15 @@
                         "symbol": "ERIC",
                         "decimals": 10,
                         "currencyID": "40"
+                    },
+                    {
+                        "asset": {
+                            "Token": "404"
+                        },
+                        "name": "MAXI",
+                        "symbol": "MAXI",
+                        "decimals": 8,
+                        "currencyID": "404"
                     },
                     {
                         "asset": {
