@@ -168,6 +168,39 @@
         ]
     },
     {
+        "paraID": 2008,
+        "relayChain": "polkadot",
+        "nativeChainID": null,
+        "symbol": "CRU",
+        "decimals": 12,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2008
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010100611f",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2008
+                    }
+                }
+            }
+        },
+        "asset": {
+            "ForeignAsset": "11"
+        },
+        "source": [
+            "2000"
+        ]
+    },
+    {
         "paraID": 2011,
         "relayChain": "polkadot",
         "nativeChainID": "equilibrium",

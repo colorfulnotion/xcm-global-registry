@@ -73,6 +73,15 @@
     },
     {
         "asset": {
+            "ForeignAsset": "11"
+        },
+        "name": "Crust Parachain Native Token",
+        "symbol": "CRU",
+        "decimals": 12,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2008}]"
+    },
+    {
+        "asset": {
             "ForeignAsset": "2"
         },
         "name": "Astar Native Token",

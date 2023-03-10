@@ -19,7 +19,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2000,
                 "id": "acala",
-                "assetCnt": "23",
+                "assetCnt": "24",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2000_assets.json"
             },
             {
@@ -382,7 +382,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2000,
                 "id": "acala",
-                "xcAssetCnt": "11",
+                "xcAssetCnt": "12",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2000_xcAssets.json"
             },
             {
@@ -558,7 +558,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "35",
+            "registryCnt": "36",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/polkadot_xcmRegistry.json"
         }
     ]

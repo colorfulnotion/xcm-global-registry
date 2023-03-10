@@ -272,7 +272,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2000,
                 "id": "acala",
-                "assetCnt": "23",
+                "assetCnt": "24",
                 "data": [
                     {
                         "asset": {
@@ -345,6 +345,15 @@
                         "symbol": "UNQ",
                         "decimals": 18,
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2037}]"
+                    },
+                    {
+                        "asset": {
+                            "ForeignAsset": "11"
+                        },
+                        "name": "Crust Parachain Native Token",
+                        "symbol": "CRU",
+                        "decimals": 12,
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2008}]"
                     },
                     {
                         "asset": {
@@ -6658,7 +6667,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2000,
                 "id": "acala",
-                "xcAssetCnt": "11",
+                "xcAssetCnt": "12",
                 "data": [
                     {
                         "paraID": 1000,
@@ -6823,6 +6832,39 @@
                         },
                         "asset": {
                             "ForeignAsset": "2"
+                        },
+                        "source": [
+                            "2000"
+                        ]
+                    },
+                    {
+                        "paraID": 2008,
+                        "relayChain": "polkadot",
+                        "nativeChainID": null,
+                        "symbol": "CRU",
+                        "decimals": 12,
+                        "interiorType": "x1",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2008
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010100611f",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x1": {
+                                        "parachain": 2008
+                                    }
+                                }
+                            }
+                        },
+                        "asset": {
+                            "ForeignAsset": "11"
                         },
                         "source": [
                             "2000"
@@ -17951,7 +17993,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "35",
+            "registryCnt": "36",
             "data": {
                 "[{\"network\":\"polkadot\"},\"here\"]": {
                     "paraID": 0,
@@ -18729,6 +18771,43 @@
                         2004,
                         2030,
                         2035
+                    ]
+                },
+                "[{\"network\":\"polkadot\"},{\"parachain\":2008}]": {
+                    "paraID": 2008,
+                    "relayChain": "polkadot",
+                    "nativeChainID": null,
+                    "symbol": "CRU",
+                    "decimals": 12,
+                    "interiorType": "x1",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 2008
+                        }
+                    ],
+                    "xcmV1MultiLocationByte": "0x010100611f",
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x1": {
+                                    "parachain": 2008
+                                }
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2000": {
+                            "ForeignAsset": "11"
+                        }
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2000
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2011}]": {
