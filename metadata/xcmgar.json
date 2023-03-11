@@ -2312,7 +2312,7 @@
                 "relayChain": "kusama",
                 "paraID": 1000,
                 "id": "statemine",
-                "assetCnt": "148",
+                "assetCnt": "149",
                 "data": [
                     {
                         "asset": {
@@ -3352,6 +3352,15 @@
                         "symbol": "CHAOS",
                         "decimals": 10,
                         "currencyID": "69420"
+                    },
+                    {
+                        "asset": {
+                            "Token": "6967"
+                        },
+                        "name": "expectchaos.com",
+                        "symbol": "CHAOS",
+                        "decimals": 10,
+                        "currencyID": "6967"
                     },
                     {
                         "asset": {

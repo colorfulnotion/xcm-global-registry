@@ -1040,6 +1040,15 @@
     },
     {
         "asset": {
+            "Token": "6967"
+        },
+        "name": "expectchaos.com",
+        "symbol": "CHAOS",
+        "decimals": 10,
+        "currencyID": "6967"
+    },
+    {
+        "asset": {
             "Token": "7"
         },
         "name": "DogeSeven",
