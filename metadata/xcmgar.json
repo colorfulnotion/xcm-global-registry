@@ -6108,7 +6108,7 @@
                 "relayChain": "kusama",
                 "paraID": 2110,
                 "id": "mangata",
-                "assetCnt": "29",
+                "assetCnt": "30",
                 "data": [
                     {
                         "asset": {
@@ -6307,6 +6307,15 @@
                         "symbol": "TKN0x00000004-TKN0x0000001A",
                         "decimals": 18,
                         "currencyID": "28"
+                    },
+                    {
+                        "asset": {
+                            "Token": "29"
+                        },
+                        "name": "LiquidityPoolToken0x0000001D",
+                        "symbol": "TKN0x00000004-TKN0x0000000E",
+                        "decimals": 18,
+                        "currencyID": "29"
                     },
                     {
                         "asset": {
