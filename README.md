@@ -1,5 +1,7 @@
 # XCM Global Asset Registry
 
+<img src="/resources/Framework.jpg?raw=true" width="450">
+
 ## TL;DR
 This XCM Global Asset Registry (XCMGAR) repo does all the data processing needed to aggregate multiple on-chain asset registries from the Polkadot and Kusama ecosystem into one XCM Global Asset Registry.  
 
@@ -111,6 +113,7 @@ Single parachain (xc)Asset registry can be generated/inspected by passing in wit
 Follow the [tutorial](https://github.com/colorfulnotion/xcm-global-registry/blob/main/chainParsers/README.md) to spin up a custom parser under 30min.
 
 ## How it works
+
 *TL;DR version*:
 * Given a relaychain, retrieve a list of its parachains (paraIDs) on-chain.
 * Use polkadot.js's [public endpoint registry](https://github.com/polkadot-js/apps/blob/master/packages/apps-config/src/endpoints/) to spin up crawlers for every reachable parachains(paraIDs).
