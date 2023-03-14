@@ -222,6 +222,37 @@
         ]
     },
     {
+        "paraID": 2006,
+        "relayChain": "polkadot",
+        "nativeChainID": "astar",
+        "symbol": "ASTR",
+        "decimals": 18,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2006
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010100591f",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2006
+                    }
+                }
+            }
+        },
+        "asset": "9",
+        "source": [
+            "2034"
+        ]
+    },
+    {
         "paraID": 2035,
         "relayChain": "polkadot",
         "nativeChainID": "phala",

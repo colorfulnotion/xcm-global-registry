@@ -80,6 +80,16 @@
     },
     {
         "asset": {
+            "Token": "9"
+        },
+        "name": "ASTR",
+        "symbol": "ASTR",
+        "decimals": 18,
+        "currencyID": "9",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2006}]"
+    },
+    {
+        "asset": {
             "Token": "HDX"
         },
         "name": "HDX",
