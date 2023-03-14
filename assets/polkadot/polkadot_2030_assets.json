@@ -326,5 +326,13 @@
         "name": "Voucher GLMR",
         "symbol": "vGLMR",
         "decimals": 18
+    },
+    {
+        "asset": {
+            "VToken2": "4"
+        },
+        "name": "Voucher FIL",
+        "symbol": "vFIL",
+        "decimals": 18
     }
 ]

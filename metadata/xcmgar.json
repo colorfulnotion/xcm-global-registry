@@ -1481,7 +1481,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "assetCnt": "40",
+                "assetCnt": "41",
                 "data": [
                     {
                         "asset": {
@@ -1809,6 +1809,14 @@
                         },
                         "name": "Voucher GLMR",
                         "symbol": "vGLMR",
+                        "decimals": 18
+                    },
+                    {
+                        "asset": {
+                            "VToken2": "4"
+                        },
+                        "name": "Voucher FIL",
+                        "symbol": "vFIL",
                         "decimals": 18
                     }
                 ]
