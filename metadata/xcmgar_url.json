@@ -238,7 +238,7 @@
                 "relayChain": "kusama",
                 "paraID": 2084,
                 "id": "calamari",
-                "assetCnt": "7",
+                "assetCnt": "8",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2084_assets.json"
             },
             {
@@ -503,7 +503,7 @@
                 "relayChain": "kusama",
                 "paraID": 2084,
                 "id": "calamari",
-                "xcAssetCnt": "6",
+                "xcAssetCnt": "7",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/kusama/kusama_2084_xcAssets.json"
             },
             {

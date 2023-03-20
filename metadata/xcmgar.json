@@ -5349,7 +5349,7 @@
                 "relayChain": "kusama",
                 "paraID": 2084,
                 "id": "calamari",
-                "assetCnt": "7",
+                "assetCnt": "8",
                 "data": [
                     {
                         "asset": {
@@ -5390,6 +5390,16 @@
                         "decimals": 12,
                         "currencyID": "13",
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2004}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "14"
+                        },
+                        "name": "Tether USD",
+                        "symbol": "USDT",
+                        "decimals": 6,
+                        "currencyID": "14",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]"
                     },
                     {
                         "asset": {
@@ -13857,7 +13867,7 @@
                 "relayChain": "kusama",
                 "paraID": 2084,
                 "id": "calamari",
-                "xcAssetCnt": "6",
+                "xcAssetCnt": "7",
                 "data": [
                     {
                         "paraID": 0,
@@ -13882,6 +13892,51 @@
                             }
                         },
                         "asset": "12",
+                        "source": [
+                            "2084"
+                        ]
+                    },
+                    {
+                        "paraID": 1000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "statemine",
+                        "symbol": "USDT",
+                        "decimals": 6,
+                        "interiorType": "x3",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 1000
+                            },
+                            {
+                                "palletInstance": 50
+                            },
+                            {
+                                "generalIndex": 1984
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010300a10f043205011f",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x3": [
+                                        {
+                                            "parachain": 1000
+                                        },
+                                        {
+                                            "palletInstance": 50
+                                        },
+                                        {
+                                            "generalIndex": 1984
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "14",
                         "source": [
                             "2084"
                         ]
@@ -15875,6 +15930,7 @@
                         },
                         "2007": "4294969280",
                         "2023": "311091173110107856861649819128533077277",
+                        "2084": "14",
                         "2085": "102",
                         "2088": {
                             "ForeignAsset": "1"
@@ -15884,12 +15940,13 @@
                             "ForeignAsset": "3"
                         }
                     },
-                    "confidence": 8,
+                    "confidence": 9,
                     "source": [
                         2000,
                         2001,
                         2007,
                         2023,
+                        2084,
                         2085,
                         2088,
                         2090,

@@ -27,6 +27,51 @@
         ]
     },
     {
+        "paraID": 1000,
+        "relayChain": "kusama",
+        "nativeChainID": "statemine",
+        "symbol": "USDT",
+        "decimals": 6,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 50
+            },
+            {
+                "generalIndex": 1984
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010300a10f043205011f",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 1984
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "14",
+        "source": [
+            "2084"
+        ]
+    },
+    {
         "paraID": 2000,
         "relayChain": "kusama",
         "nativeChainID": "karura",

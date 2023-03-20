@@ -41,6 +41,16 @@
     },
     {
         "asset": {
+            "Token": "14"
+        },
+        "name": "Tether USD",
+        "symbol": "USDT",
+        "decimals": 6,
+        "currencyID": "14",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]"
+    },
+    {
+        "asset": {
             "Token": "8"
         },
         "name": "Karura Native Token",
