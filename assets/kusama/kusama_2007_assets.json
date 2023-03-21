@@ -151,6 +151,16 @@
     },
     {
         "asset": {
+            "Token": "18446744073709551632"
+        },
+        "name": " Metaverse.Network Pioneer",
+        "symbol": "NEER",
+        "decimals": 18,
+        "currencyID": "18446744073709551632",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2096},{\"generalKey\":\"0x000000000000000000\"}]"
+    },
+    {
+        "asset": {
             "Token": "311"
         },
         "name": "Sygma",

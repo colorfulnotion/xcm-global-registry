@@ -4742,7 +4742,7 @@
                 "relayChain": "kusama",
                 "paraID": 2007,
                 "id": "shiden",
-                "assetCnt": "23",
+                "assetCnt": "24",
                 "data": [
                     {
                         "asset": {
@@ -4893,6 +4893,16 @@
                         "decimals": 9,
                         "currencyID": "18446744073709551631",
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2024},{\"generalKey\":\"0x657164\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "18446744073709551632"
+                        },
+                        "name": " Metaverse.Network Pioneer",
+                        "symbol": "NEER",
+                        "decimals": 18,
+                        "currencyID": "18446744073709551632",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2096},{\"generalKey\":\"0x000000000000000000\"}]"
                     },
                     {
                         "asset": {
@@ -12304,7 +12314,7 @@
                 "relayChain": "kusama",
                 "paraID": 2007,
                 "id": "shiden",
-                "xcAssetCnt": "17",
+                "xcAssetCnt": "18",
                 "data": [
                     {
                         "paraID": 0,
@@ -12904,6 +12914,46 @@
                         },
                         "asset": "18446744073709551622",
                         "contractAddress": "0xffffffff00000000000000010000000000000006",
+                        "source": [
+                            "2007"
+                        ]
+                    },
+                    {
+                        "paraID": 2096,
+                        "relayChain": "kusama",
+                        "nativeChainID": "bitcountryPioneer",
+                        "symbol": "NEER",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2096
+                            },
+                            {
+                                "generalKey": "0x000000000000000000"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200c1200624000000000000000000",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2096
+                                        },
+                                        {
+                                            "generalKey": "0x000000000000000000"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "18446744073709551632",
+                        "contractAddress": "0xffffffff00000000000000010000000000000010",
                         "source": [
                             "2007"
                         ]
@@ -17652,17 +17702,21 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "xcContractAddress": {
+                        "2007": "0xffffffff00000000000000010000000000000010"
+                    },
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "9"
                         },
-                        "2004": "13"
+                        "2004": "13",
+                        "2007": "18446744073709551632"
                     },
-                    "confidence": 2,
+                    "confidence": 3,
                     "source": [
                         2000,
-                        2004
+                        2004,
+                        2007
                     ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2096},{\"generalKey\":\"0x020000000000000000\"}]": {

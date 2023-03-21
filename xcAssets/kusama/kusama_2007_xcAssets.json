@@ -602,6 +602,46 @@
         ]
     },
     {
+        "paraID": 2096,
+        "relayChain": "kusama",
+        "nativeChainID": "bitcountryPioneer",
+        "symbol": "NEER",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2096
+            },
+            {
+                "generalKey": "0x000000000000000000"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200c1200624000000000000000000",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2096
+                        },
+                        {
+                            "generalKey": "0x000000000000000000"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "18446744073709551632",
+        "contractAddress": "0xffffffff00000000000000010000000000000010",
+        "source": [
+            "2007"
+        ]
+    },
+    {
         "paraID": 2105,
         "relayChain": "kusama",
         "nativeChainID": "crab",
