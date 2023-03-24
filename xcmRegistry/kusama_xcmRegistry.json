@@ -1636,15 +1636,14 @@
                 }
             }
         },
-        "asset": "5",
-        "source": [
-            2004
-        ],
+        "xcContractAddress": {},
         "xcCurrencyID": {
             "2004": "5"
         },
-        "xcContractAddress": {},
-        "confidence": 1
+        "confidence": 1,
+        "source": [
+            2004
+        ]
     },
     "[{\"network\":\"kusama\"},{\"parachain\":2092},{\"generalKey\":\"0x000b\"}]": {
         "paraID": 2092,
@@ -1876,15 +1875,14 @@
                 }
             }
         },
-        "asset": "14",
-        "source": [
-            2004
-        ],
+        "xcContractAddress": {},
         "xcCurrencyID": {
             "2004": "14"
         },
-        "xcContractAddress": {},
-        "confidence": 1
+        "confidence": 1,
+        "source": [
+            2004
+        ]
     },
     "[{\"network\":\"kusama\"},{\"parachain\":2102},{\"generalKey\":\"0x50434855\"}]": {
         "paraID": 2102,
