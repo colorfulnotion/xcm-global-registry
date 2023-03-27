@@ -189,6 +189,84 @@
         ]
     },
     {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
+        "symbol": "USDC",
+        "decimals": 6,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f0654021f3a10587a20114ea25ba1b388ee2dd4a337ce27",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "16",
+        "source": [
+            "2084"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
+        "symbol": "DAI",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f0654024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "15",
+        "source": [
+            "2084"
+        ]
+    },
+    {
         "paraID": 2004,
         "relayChain": "kusama",
         "nativeChainID": "khala",

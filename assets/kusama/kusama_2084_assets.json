@@ -51,6 +51,26 @@
     },
     {
         "asset": {
+            "Token": "15"
+        },
+        "name": "DAI Stablecoin (via Karura Wormhole)",
+        "symbol": "DAI",
+        "decimals": 18,
+        "currencyID": "15",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71\"}]"
+    },
+    {
+        "asset": {
+            "Token": "16"
+        },
+        "name": "USD Coin (via Karura Wormhole)",
+        "symbol": "USDC",
+        "decimals": 6,
+        "currencyID": "16",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27\"}]"
+    },
+    {
+        "asset": {
             "Token": "8"
         },
         "name": "Karura Native Token",

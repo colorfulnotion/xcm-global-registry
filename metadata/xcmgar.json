@@ -5359,7 +5359,7 @@
                 "relayChain": "kusama",
                 "paraID": 2084,
                 "id": "calamari",
-                "assetCnt": "8",
+                "assetCnt": "10",
                 "data": [
                     {
                         "asset": {
@@ -5410,6 +5410,26 @@
                         "decimals": 6,
                         "currencyID": "14",
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "15"
+                        },
+                        "name": "DAI Stablecoin (via Karura Wormhole)",
+                        "symbol": "DAI",
+                        "decimals": 18,
+                        "currencyID": "15",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "16"
+                        },
+                        "name": "USD Coin (via Karura Wormhole)",
+                        "symbol": "USDC",
+                        "decimals": 6,
+                        "currencyID": "16",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27\"}]"
                     },
                     {
                         "asset": {
@@ -13917,7 +13937,7 @@
                 "relayChain": "kusama",
                 "paraID": 2084,
                 "id": "calamari",
-                "xcAssetCnt": "7",
+                "xcAssetCnt": "9",
                 "data": [
                     {
                         "paraID": 0,
@@ -14104,6 +14124,84 @@
                             }
                         },
                         "asset": "10",
+                        "source": [
+                            "2084"
+                        ]
+                    },
+                    {
+                        "paraID": 2000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "karura",
+                        "symbol": "USDC",
+                        "decimals": 6,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200411f0654021f3a10587a20114ea25ba1b388ee2dd4a337ce27",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "16",
+                        "source": [
+                            "2084"
+                        ]
+                    },
+                    {
+                        "paraID": 2000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "karura",
+                        "symbol": "DAI",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200411f0654024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "15",
                         "source": [
                             "2084"
                         ]
@@ -16302,7 +16400,7 @@
                     "paraID": 2000,
                     "relayChain": "kusama",
                     "nativeChainID": "karura",
-                    "symbol": "USDCet",
+                    "symbol": "USDC",
                     "decimals": 6,
                     "interiorType": "x2",
                     "xcmV1Standardized": [
@@ -16334,10 +16432,12 @@
                     },
                     "xcContractAddress": {},
                     "xcCurrencyID": {
+                        "2084": "16",
                         "2090": "9"
                     },
-                    "confidence": 1,
+                    "confidence": 2,
                     "source": [
+                        2084,
                         2090
                     ]
                 },
@@ -16377,10 +16477,12 @@
                     },
                     "xcContractAddress": {},
                     "xcCurrencyID": {
+                        "2084": "15",
                         "2090": "13"
                     },
-                    "confidence": 1,
+                    "confidence": 2,
                     "source": [
+                        2084,
                         2090
                     ]
                 },

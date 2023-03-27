@@ -424,7 +424,7 @@
         "paraID": 2000,
         "relayChain": "kusama",
         "nativeChainID": "karura",
-        "symbol": "USDCet",
+        "symbol": "USDC",
         "decimals": 6,
         "interiorType": "x2",
         "xcmV1Standardized": [
@@ -456,10 +456,12 @@
         },
         "xcContractAddress": {},
         "xcCurrencyID": {
+            "2084": "16",
             "2090": "9"
         },
-        "confidence": 1,
+        "confidence": 2,
         "source": [
+            2084,
             2090
         ]
     },
@@ -499,10 +501,12 @@
         },
         "xcContractAddress": {},
         "xcCurrencyID": {
+            "2084": "15",
             "2090": "13"
         },
-        "confidence": 1,
+        "confidence": 2,
         "source": [
+            2084,
             2090
         ]
     },
