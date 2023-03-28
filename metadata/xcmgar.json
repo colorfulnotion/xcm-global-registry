@@ -1966,7 +1966,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "10",
+                "assetCnt": "12",
                 "data": [
                     {
                         "asset": {
@@ -1976,6 +1976,26 @@
                         "symbol": "LRNA",
                         "decimals": 12,
                         "currencyID": "1"
+                    },
+                    {
+                        "asset": {
+                            "Token": "10"
+                        },
+                        "name": "USDT",
+                        "symbol": "USDT",
+                        "decimals": 6,
+                        "currencyID": "10",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "11"
+                        },
+                        "name": "iBTC",
+                        "symbol": "iBTC",
+                        "decimals": 8,
+                        "currencyID": "11",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0001\"}]"
                     },
                     {
                         "asset": {
@@ -9542,7 +9562,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "8",
+                "xcAssetCnt": "10",
                 "data": [
                     {
                         "paraID": 0,
@@ -9567,6 +9587,51 @@
                             }
                         },
                         "asset": "5",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 1000,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "statemint",
+                        "symbol": "USDT",
+                        "decimals": 6,
+                        "interiorType": "x3",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 1000
+                            },
+                            {
+                                "palletInstance": 50
+                            },
+                            {
+                                "generalIndex": 1984
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010300a10f043205011f",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x3": [
+                                        {
+                                            "parachain": 1000
+                                        },
+                                        {
+                                            "palletInstance": 50
+                                        },
+                                        {
+                                            "generalIndex": 1984
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "10",
                         "source": [
                             "2034"
                         ]
@@ -9793,6 +9858,45 @@
                             }
                         },
                         "asset": "9",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 2032,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "interlay",
+                        "symbol": "iBTC",
+                        "decimals": 8,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2032
+                            },
+                            {
+                                "generalKey": "0x0001"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200c11f06080001",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2032
+                                        },
+                                        {
+                                            "generalKey": "0x0001"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "11",
                         "source": [
                             "2034"
                         ]
@@ -18382,16 +18486,18 @@
                         },
                         "2032": {
                             "ForeignAsset": "2"
-                        }
+                        },
+                        "2034": "10"
                     },
-                    "confidence": 6,
+                    "confidence": 7,
                     "source": [
                         2004,
                         2006,
                         2012,
                         2030,
                         2031,
-                        2032
+                        2032,
+                        2034
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":21}]": {
@@ -19734,14 +19840,16 @@
                         },
                         "2004": "120637696315203257380661607956669368914",
                         "2006": "18446744073709551620",
-                        "2012": "122"
+                        "2012": "122",
+                        "2034": "11"
                     },
-                    "confidence": 4,
+                    "confidence": 5,
                     "source": [
                         2000,
                         2004,
                         2006,
-                        2012
+                        2012,
+                        2034
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0002\"}]": {

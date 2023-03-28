@@ -10,6 +10,26 @@
     },
     {
         "asset": {
+            "Token": "10"
+        },
+        "name": "USDT",
+        "symbol": "USDT",
+        "decimals": 6,
+        "currencyID": "10",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]"
+    },
+    {
+        "asset": {
+            "Token": "11"
+        },
+        "name": "iBTC",
+        "symbol": "iBTC",
+        "decimals": 8,
+        "currencyID": "11",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0001\"}]"
+    },
+    {
+        "asset": {
             "Token": "2"
         },
         "name": "DAI",
