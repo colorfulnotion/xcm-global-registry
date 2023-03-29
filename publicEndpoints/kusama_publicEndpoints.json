@@ -279,8 +279,7 @@
         "id": "mangata",
         "paraID": 2110,
         "WSEndpoints": [
-            "wss://prod-kusama-collator-01.mangatafinance.cloud",
-            "wss://mangata-x.api.onfinality.io/public-ws"
+            "wss://prod-kusama-collator-01.mangatafinance.cloud"
         ],
         "relaychain": "kusama"
     },
