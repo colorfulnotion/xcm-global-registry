@@ -923,6 +923,15 @@
     },
     {
         "asset": {
+            "Token": "555"
+        },
+        "name": "GameDAO",
+        "symbol": "GAME",
+        "decimals": 10,
+        "currencyID": "555"
+    },
+    {
+        "asset": {
             "Token": "567"
         },
         "name": "Chrawnna Coin",

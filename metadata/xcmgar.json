@@ -2350,7 +2350,7 @@
                 "relayChain": "kusama",
                 "paraID": 1000,
                 "id": "statemine",
-                "assetCnt": "149",
+                "assetCnt": "150",
                 "data": [
                     {
                         "asset": {
@@ -3273,6 +3273,15 @@
                         "symbol": "MTS",
                         "decimals": 8,
                         "currencyID": "55"
+                    },
+                    {
+                        "asset": {
+                            "Token": "555"
+                        },
+                        "name": "GameDAO",
+                        "symbol": "GAME",
+                        "decimals": 10,
+                        "currencyID": "555"
                     },
                     {
                         "asset": {
@@ -6086,9 +6095,7 @@
                         "name": "QTZ",
                         "symbol": "QTZ",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2095}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2095}]"
                     }
                 ]
             },
