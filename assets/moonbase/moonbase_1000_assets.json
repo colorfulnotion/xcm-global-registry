@@ -206,8 +206,7 @@
         "name": "Calamari Token",
         "symbol": "xcKMA",
         "decimals": 12,
-        "currencyID": "213357169630950964874127107356898319277",
-        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2084}]"
+        "currencyID": "213357169630950964874127107356898319277"
     },
     {
         "asset": {
