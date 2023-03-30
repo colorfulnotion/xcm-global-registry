@@ -141,6 +141,16 @@
     },
     {
         "asset": {
+            "Token": "166446646689194205559791995948102903873"
+        },
+        "name": "Manta Token",
+        "symbol": "xcMANTA",
+        "decimals": 18,
+        "currencyID": "166446646689194205559791995948102903873",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2104}]"
+    },
+    {
+        "asset": {
             "Token": "16797826370226091782818345603793389938"
         },
         "name": "Astar",
@@ -198,15 +208,6 @@
         "decimals": 18,
         "currencyID": "199439015574556113723291251263369885338",
         "xcmInteriorKey": "[{\"network\":\"moonbase\"},{\"parachain\":1000},{\"palletInstance\":108},{\"generalIndex\":\"0x960a8ea5ccee2720828ebe2dbd97b69a\"}]"
-    },
-    {
-        "asset": {
-            "Token": "213357169630950964874127107356898319277"
-        },
-        "name": "Calamari Token",
-        "symbol": "xcKMA",
-        "decimals": 12,
-        "currencyID": "213357169630950964874127107356898319277"
     },
     {
         "asset": {
