@@ -551,9 +551,18 @@ module.exports = class ChainParser {
                     generalIndex = v.generalIndex
                 } else if (v.generalKey != undefined) {
                     let generalKey = v.generalKey
-                    if (generalKey.substr(0, 2) != '0x') {
-                        generalKey = xcmgarTool.stringToHex(generalKey)
-                        v.generalKey = generalKey
+                    //console.log(`generalKey`, generalKey)
+                    if (typeof generalKey === 'object' && generalKey !== null){
+                        //khala-specific
+                        if (generalKey.data != undefined && generalKey.length != undefined){
+                            v.generalKey = generalKey.data.substr(0, 2+generalKey.length*2)
+                        }
+
+                    }else{
+                        if (generalKey.substr(0, 2) != '0x') {
+                            generalKey = xcmgarTool.stringToHex(generalKey)
+                            v.generalKey = generalKey
+                        }
                     }
                 }
             }

@@ -318,12 +318,6 @@ const polkaholicKnownPublicEndpoints = {
         "paraID": 22115,
         "relaychain": "kusama"
     },
-    "kusama-2118": {
-        "id": "listen",
-        "chainID": 22118,
-        "paraID": 22118,
-        "relaychain": "kusama"
-    },
     "kusama-2119": {
         "id": "bajun",
         "chainID": 22119,
@@ -1056,16 +1050,6 @@ const prodParasKusama = [{
         text: 'Kpron',
         providers: {
             Kpron: 'wss://kusama-kpron-rpc.apron.network/'
-        }
-    },
-    {
-        info: 'listen',
-        homepage: 'https://listen.io/',
-        paraId: 2118,
-        text: 'Listen Network',
-        providers: {
-            'Listen Foundation 1': 'wss://rpc.mainnet.listen.io',
-            'Listen Foundation 2': 'wss://wss.mainnet.listen.io'
         }
     },
     {
