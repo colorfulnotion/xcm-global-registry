@@ -217,6 +217,35 @@
     },
     {
         "asset": {
+            "Token": "30"
+        },
+        "name": "Tether USD",
+        "symbol": "USDT",
+        "decimals": 6,
+        "currencyID": "30",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]"
+    },
+    {
+        "asset": {
+            "Token": "31"
+        },
+        "name": "RMRK.app",
+        "symbol": "RMRK",
+        "decimals": 10,
+        "currencyID": "31",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":8}]"
+    },
+    {
+        "asset": {
+            "Token": "32"
+        },
+        "name": "LiquidityPoolToken0x00000020",
+        "symbol": "TKN0x00000004-TKN0x0000001E",
+        "decimals": 18,
+        "currencyID": "32"
+    },
+    {
+        "asset": {
             "Token": "4"
         },
         "name": "Kusama Native",

@@ -925,7 +925,7 @@
         "asset": {
             "Token": "555"
         },
-        "name": "GameDAO",
+        "name": "GAME",
         "symbol": "GAME",
         "decimals": 10,
         "currencyID": "555"

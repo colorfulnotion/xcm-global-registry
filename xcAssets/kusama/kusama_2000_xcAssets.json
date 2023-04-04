@@ -792,7 +792,7 @@
     {
         "paraID": 2118,
         "relayChain": "kusama",
-        "nativeChainID": "listen",
+        "nativeChainID": null,
         "symbol": "LT",
         "decimals": 12,
         "interiorType": "x2",

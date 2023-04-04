@@ -1,5 +1,95 @@
 [
     {
+        "paraID": 1000,
+        "relayChain": "kusama",
+        "nativeChainID": "statemine",
+        "symbol": "USDT",
+        "decimals": 6,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 50
+            },
+            {
+                "generalIndex": 1984
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010300a10f043205011f",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 1984
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "30",
+        "source": [
+            "2110"
+        ]
+    },
+    {
+        "paraID": 1000,
+        "relayChain": "kusama",
+        "nativeChainID": "statemine",
+        "symbol": "RMRK",
+        "decimals": 10,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 50
+            },
+            {
+                "generalIndex": 8
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010300a10f04320520",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 8
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "31",
+        "source": [
+            "2110"
+        ]
+    },
+    {
         "paraID": 2001,
         "relayChain": "kusama",
         "nativeChainID": "bifrost",

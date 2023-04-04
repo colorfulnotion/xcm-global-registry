@@ -40,7 +40,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2006,
                 "id": "astar",
-                "assetCnt": "33",
+                "assetCnt": "35",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2006_assets.json"
             },
             {
@@ -322,7 +322,7 @@
                 "relayChain": "kusama",
                 "paraID": 2110,
                 "id": "mangata",
-                "assetCnt": "30",
+                "assetCnt": "33",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2110_assets.json"
             },
             {
@@ -349,7 +349,7 @@
             {
                 "relayChain": "kusama",
                 "paraID": 2118,
-                "id": "listen",
+                "id": null,
                 "assetCnt": "10",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2118_assets.json"
             },
@@ -538,7 +538,7 @@
                 "relayChain": "kusama",
                 "paraID": 2110,
                 "id": "mangata",
-                "xcAssetCnt": "7",
+                "xcAssetCnt": "9",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/kusama/kusama_2110_xcAssets.json"
             },
             {

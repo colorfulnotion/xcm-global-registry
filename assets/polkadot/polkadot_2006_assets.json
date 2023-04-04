@@ -1,6 +1,24 @@
 [
     {
         "asset": {
+            "Token": "1324"
+        },
+        "name": "love",
+        "symbol": "ASTR",
+        "decimals": 20,
+        "currencyID": "1324"
+    },
+    {
+        "asset": {
+            "Token": "1325"
+        },
+        "name": "love",
+        "symbol": "MASTR",
+        "decimals": 18,
+        "currencyID": "1325"
+    },
+    {
+        "asset": {
             "Token": "1326"
         },
         "name": "aASTR",
