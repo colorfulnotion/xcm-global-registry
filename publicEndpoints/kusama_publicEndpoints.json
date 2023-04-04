@@ -314,17 +314,6 @@
         ],
         "relaychain": "kusama"
     },
-    "kusama-2118": {
-        "chainkey": "kusama-2118",
-        "name": "Listen Network",
-        "id": "listen",
-        "paraID": 2118,
-        "WSEndpoints": [
-            "wss://rpc.mainnet.listen.io",
-            "wss://wss.mainnet.listen.io"
-        ],
-        "relaychain": "kusama"
-    },
     "kusama-2119": {
         "chainkey": "kusama-2119",
         "name": "Bajun Network",
