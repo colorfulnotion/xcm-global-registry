@@ -30,6 +30,26 @@
     },
     {
         "asset": {
+            "Token": "12"
+        },
+        "name": "ZTG",
+        "symbol": "ZTG",
+        "decimals": 10,
+        "currencyID": "12",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2092},{\"generalKey\":\"0x0001\"}]"
+    },
+    {
+        "asset": {
+            "Token": "13"
+        },
+        "name": "CFG",
+        "symbol": "CFG",
+        "decimals": 18,
+        "currencyID": "13",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0001\"}]"
+    },
+    {
+        "asset": {
             "Token": "2"
         },
         "name": "DAI",

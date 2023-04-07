@@ -1984,7 +1984,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "12",
+                "assetCnt": "14",
                 "data": [
                     {
                         "asset": {
@@ -2013,6 +2013,26 @@
                         "symbol": "iBTC",
                         "decimals": 8,
                         "currencyID": "11",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0001\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "12"
+                        },
+                        "name": "ZTG",
+                        "symbol": "ZTG",
+                        "decimals": 10,
+                        "currencyID": "12",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2092},{\"generalKey\":\"0x0001\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "13"
+                        },
+                        "name": "CFG",
+                        "symbol": "CFG",
+                        "decimals": 18,
+                        "currencyID": "13",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0001\"}]"
                     },
                     {
@@ -9618,7 +9638,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "10",
+                "xcAssetCnt": "11",
                 "data": [
                     {
                         "paraID": 0,
@@ -9984,6 +10004,45 @@
                             }
                         },
                         "asset": "8",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 2092,
+                        "relayChain": "polkadot",
+                        "nativeChainID": null,
+                        "symbol": "ZTG",
+                        "decimals": 10,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2092
+                            },
+                            {
+                                "generalKey": "0x0001"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200b12006080001",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2092
+                                        },
+                                        {
+                                            "generalKey": "0x0001"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "12",
                         "source": [
                             "2034"
                         ]
@@ -18536,7 +18595,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "36",
+            "registryCnt": "37",
             "data": {
                 "[{\"network\":\"polkadot\"},\"here\"]": {
                     "paraID": 0,
@@ -20279,6 +20338,49 @@
                         2004,
                         2006,
                         2035
+                    ]
+                },
+                "[{\"network\":\"polkadot\"},{\"parachain\":2092},{\"generalKey\":\"0x0001\"}]": {
+                    "paraID": 2092,
+                    "relayChain": "polkadot",
+                    "nativeChainID": null,
+                    "symbol": "ZTG",
+                    "decimals": 10,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 2092
+                        },
+                        {
+                            "generalKey": "0x0001"
+                        }
+                    ],
+                    "xcmV1MultiLocationByte": "0x010200b12006080001",
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2092
+                                    },
+                                    {
+                                        "generalKey": "0x0001"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2034": "12"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2034
                     ]
                 }
             }
