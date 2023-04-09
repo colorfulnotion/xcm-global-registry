@@ -24,7 +24,9 @@
         "name": "BNC",
         "symbol": "BNC",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]"
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]",
+        "inferred": true,
+        "confidence": 0
     },
     {
         "asset": {
@@ -521,7 +523,9 @@
         "name": "Voucher BNC",
         "symbol": "vBNC",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0101\"}]"
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0101\"}]",
+        "inferred": true,
+        "confidence": 0
     },
     {
         "asset": {
