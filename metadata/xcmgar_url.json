@@ -175,7 +175,7 @@
                 "relayChain": "kusama",
                 "paraID": 2000,
                 "id": "karura",
-                "assetCnt": "36",
+                "assetCnt": "47",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2000_assets.json"
             },
             {
