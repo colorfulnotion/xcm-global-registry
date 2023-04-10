@@ -238,7 +238,7 @@
                 "relayChain": "kusama",
                 "paraID": 2084,
                 "id": "calamari",
-                "assetCnt": "10",
+                "assetCnt": "21",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2084_assets.json"
             },
             {
@@ -503,7 +503,7 @@
                 "relayChain": "kusama",
                 "paraID": 2084,
                 "id": "calamari",
-                "xcAssetCnt": "9",
+                "xcAssetCnt": "20",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/kusama/kusama_2084_xcAssets.json"
             },
             {
@@ -553,7 +553,7 @@
     "xcmRegistry": [
         {
             "relayChain": "kusama",
-            "registryCnt": "47",
+            "registryCnt": "56",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/kusama_xcmRegistry.json"
         },
         {

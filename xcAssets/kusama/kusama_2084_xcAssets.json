@@ -231,6 +231,84 @@
         "paraID": 2000,
         "relayChain": "kusama",
         "nativeChainID": "karura",
+        "symbol": "LINK",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x022c7de70b32cf5f20e02329a88d2e3b00ef85eb90"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f0654022c7de70b32cf5f20e02329a88d2e3b00ef85eb90",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x022c7de70b32cf5f20e02329a88d2e3b00ef85eb90"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "24",
+        "source": [
+            "2084"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
+        "symbol": "APE",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x0230b1f4ba0b07789be9986fa090a57e0fe5631ebb"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f06540230b1f4ba0b07789be9986fa090a57e0fe5631ebb",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0230b1f4ba0b07789be9986fa090a57e0fe5631ebb"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "25",
+        "source": [
+            "2084"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
         "symbol": "DAI",
         "decimals": 18,
         "interiorType": "x2",
@@ -262,6 +340,357 @@
             }
         },
         "asset": "15",
+        "source": [
+            "2084"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
+        "symbol": "BUSD",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x02577f6a0718a468e8a995f6075f2325f86a07c83b"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f065402577f6a0718a468e8a995f6075f2325f86a07c83b",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x02577f6a0718a468e8a995f6075f2325f86a07c83b"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "23",
+        "source": [
+            "2084"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
+        "symbol": "WBTC",
+        "decimals": 8,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x0266291c7d88d2ed9a708147bae4e0814a76705e2f"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f06540266291c7d88d2ed9a708147bae4e0814a76705e2f",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0266291c7d88d2ed9a708147bae4e0814a76705e2f"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "26",
+        "source": [
+            "2084"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
+        "symbol": "UNI",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x0277cf14f938cb97308d752647d554439d99b39a3f"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f06540277cf14f938cb97308d752647d554439d99b39a3f",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0277cf14f938cb97308d752647d554439d99b39a3f"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "22",
+        "source": [
+            "2084"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
+        "symbol": "SHIB",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x029759ca009cbcd75a84786ac19bb5d02f8e68bcd9"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f0654029759ca009cbcd75a84786ac19bb5d02f8e68bcd9",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x029759ca009cbcd75a84786ac19bb5d02f8e68bcd9"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "19",
+        "source": [
+            "2084"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
+        "symbol": "MATIC",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x02a2a37aaf4730aeedada5aa8ee20a4451cb8b1c4e"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f065402a2a37aaf4730aeedada5aa8ee20a4451cb8b1c4e",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x02a2a37aaf4730aeedada5aa8ee20a4451cb8b1c4e"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "20",
+        "source": [
+            "2084"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
+        "symbol": "LDO",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x02b4ce1f6109854243d1af13b8ea34ed28542f31e0"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f065402b4ce1f6109854243d1af13b8ea34ed28542f31e0",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x02b4ce1f6109854243d1af13b8ea34ed28542f31e0"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "18",
+        "source": [
+            "2084"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
+        "symbol": "ARB",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x02c621abc3afa3f24886ea278fffa7e10e8969d755"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f065402c621abc3afa3f24886ea278fffa7e10e8969d755",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x02c621abc3afa3f24886ea278fffa7e10e8969d755"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "17",
+        "source": [
+            "2084"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
+        "symbol": "WETH",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x02ece0cc38021e734bef1d5da071b027ac2f71181f"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f065402ece0cc38021e734bef1d5da071b027ac2f71181f",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x02ece0cc38021e734bef1d5da071b027ac2f71181f"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "27",
+        "source": [
+            "2084"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
+        "symbol": "BNB",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0xe02278651e8ff8e2efa83d7f84205084ebc90688be"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f0654e02278651e8ff8e2efa83d7f84205084ebc90688be",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0xe02278651e8ff8e2efa83d7f84205084ebc90688be"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "21",
         "source": [
             "2084"
         ]

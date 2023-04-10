@@ -5525,7 +5525,7 @@
                 "relayChain": "kusama",
                 "paraID": 2084,
                 "id": "calamari",
-                "assetCnt": "10",
+                "assetCnt": "21",
                 "data": [
                     {
                         "asset": {
@@ -5596,6 +5596,116 @@
                         "decimals": 6,
                         "currencyID": "16",
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "17"
+                        },
+                        "name": "Arbitrum (via Karura Wormhole)",
+                        "symbol": "ARB",
+                        "decimals": 18,
+                        "currencyID": "17",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02c621abc3afa3f24886ea278fffa7e10e8969d755\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "18"
+                        },
+                        "name": "Lido (via Karura Wormhole)",
+                        "symbol": "LDO",
+                        "decimals": 18,
+                        "currencyID": "18",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02b4ce1f6109854243d1af13b8ea34ed28542f31e0\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "19"
+                        },
+                        "name": "Shiba Inu (via Karura Wormhole)",
+                        "symbol": "SHIB",
+                        "decimals": 18,
+                        "currencyID": "19",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x029759ca009cbcd75a84786ac19bb5d02f8e68bcd9\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "20"
+                        },
+                        "name": "Polygon (via Karura Wormhole)",
+                        "symbol": "MATIC",
+                        "decimals": 18,
+                        "currencyID": "20",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02a2a37aaf4730aeedada5aa8ee20a4451cb8b1c4e\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "21"
+                        },
+                        "name": "BNB (via Karura Wormhole)",
+                        "symbol": "BNB",
+                        "decimals": 18,
+                        "currencyID": "21",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0xe02278651e8ff8e2efa83d7f84205084ebc90688be\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "22"
+                        },
+                        "name": "Uniswap (via Karura Wormhole)",
+                        "symbol": "UNI",
+                        "decimals": 18,
+                        "currencyID": "22",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0277cf14f938cb97308d752647d554439d99b39a3f\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "23"
+                        },
+                        "name": "Binance USD (via Karura Wormhole)",
+                        "symbol": "BUSD",
+                        "decimals": 18,
+                        "currencyID": "23",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02577f6a0718a468e8a995f6075f2325f86a07c83b\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "24"
+                        },
+                        "name": "Chainlink (via Karura Wormhole)",
+                        "symbol": "LINK",
+                        "decimals": 18,
+                        "currencyID": "24",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x022c7de70b32cf5f20e02329a88d2e3b00ef85eb90\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "25"
+                        },
+                        "name": "Apecoin (via Karura Wormhole)",
+                        "symbol": "APE",
+                        "decimals": 18,
+                        "currencyID": "25",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0230b1f4ba0b07789be9986fa090a57e0fe5631ebb\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "26"
+                        },
+                        "name": "Wrapped Bitcoin (via Karura Wormhole)",
+                        "symbol": "WBTC",
+                        "decimals": 8,
+                        "currencyID": "26",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0266291c7d88d2ed9a708147bae4e0814a76705e2f\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "27"
+                        },
+                        "name": "Wrapped Ether (via Karura Wormhole)",
+                        "symbol": "WETH",
+                        "decimals": 18,
+                        "currencyID": "27",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02ece0cc38021e734bef1d5da071b027ac2f71181f\"}]"
                     },
                     {
                         "asset": {
@@ -14255,7 +14365,7 @@
                 "relayChain": "kusama",
                 "paraID": 2084,
                 "id": "calamari",
-                "xcAssetCnt": "9",
+                "xcAssetCnt": "20",
                 "data": [
                     {
                         "paraID": 0,
@@ -14489,6 +14599,84 @@
                         "paraID": 2000,
                         "relayChain": "kusama",
                         "nativeChainID": "karura",
+                        "symbol": "LINK",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0x022c7de70b32cf5f20e02329a88d2e3b00ef85eb90"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200411f0654022c7de70b32cf5f20e02329a88d2e3b00ef85eb90",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0x022c7de70b32cf5f20e02329a88d2e3b00ef85eb90"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "24",
+                        "source": [
+                            "2084"
+                        ]
+                    },
+                    {
+                        "paraID": 2000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "karura",
+                        "symbol": "APE",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0x0230b1f4ba0b07789be9986fa090a57e0fe5631ebb"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200411f06540230b1f4ba0b07789be9986fa090a57e0fe5631ebb",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0x0230b1f4ba0b07789be9986fa090a57e0fe5631ebb"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "25",
+                        "source": [
+                            "2084"
+                        ]
+                    },
+                    {
+                        "paraID": 2000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "karura",
                         "symbol": "DAI",
                         "decimals": 18,
                         "interiorType": "x2",
@@ -14520,6 +14708,357 @@
                             }
                         },
                         "asset": "15",
+                        "source": [
+                            "2084"
+                        ]
+                    },
+                    {
+                        "paraID": 2000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "karura",
+                        "symbol": "BUSD",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0x02577f6a0718a468e8a995f6075f2325f86a07c83b"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200411f065402577f6a0718a468e8a995f6075f2325f86a07c83b",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0x02577f6a0718a468e8a995f6075f2325f86a07c83b"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "23",
+                        "source": [
+                            "2084"
+                        ]
+                    },
+                    {
+                        "paraID": 2000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "karura",
+                        "symbol": "WBTC",
+                        "decimals": 8,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0x0266291c7d88d2ed9a708147bae4e0814a76705e2f"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200411f06540266291c7d88d2ed9a708147bae4e0814a76705e2f",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0x0266291c7d88d2ed9a708147bae4e0814a76705e2f"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "26",
+                        "source": [
+                            "2084"
+                        ]
+                    },
+                    {
+                        "paraID": 2000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "karura",
+                        "symbol": "UNI",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0x0277cf14f938cb97308d752647d554439d99b39a3f"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200411f06540277cf14f938cb97308d752647d554439d99b39a3f",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0x0277cf14f938cb97308d752647d554439d99b39a3f"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "22",
+                        "source": [
+                            "2084"
+                        ]
+                    },
+                    {
+                        "paraID": 2000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "karura",
+                        "symbol": "SHIB",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0x029759ca009cbcd75a84786ac19bb5d02f8e68bcd9"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200411f0654029759ca009cbcd75a84786ac19bb5d02f8e68bcd9",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0x029759ca009cbcd75a84786ac19bb5d02f8e68bcd9"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "19",
+                        "source": [
+                            "2084"
+                        ]
+                    },
+                    {
+                        "paraID": 2000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "karura",
+                        "symbol": "MATIC",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0x02a2a37aaf4730aeedada5aa8ee20a4451cb8b1c4e"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200411f065402a2a37aaf4730aeedada5aa8ee20a4451cb8b1c4e",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0x02a2a37aaf4730aeedada5aa8ee20a4451cb8b1c4e"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "20",
+                        "source": [
+                            "2084"
+                        ]
+                    },
+                    {
+                        "paraID": 2000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "karura",
+                        "symbol": "LDO",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0x02b4ce1f6109854243d1af13b8ea34ed28542f31e0"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200411f065402b4ce1f6109854243d1af13b8ea34ed28542f31e0",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0x02b4ce1f6109854243d1af13b8ea34ed28542f31e0"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "18",
+                        "source": [
+                            "2084"
+                        ]
+                    },
+                    {
+                        "paraID": 2000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "karura",
+                        "symbol": "ARB",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0x02c621abc3afa3f24886ea278fffa7e10e8969d755"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200411f065402c621abc3afa3f24886ea278fffa7e10e8969d755",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0x02c621abc3afa3f24886ea278fffa7e10e8969d755"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "17",
+                        "source": [
+                            "2084"
+                        ]
+                    },
+                    {
+                        "paraID": 2000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "karura",
+                        "symbol": "WETH",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0x02ece0cc38021e734bef1d5da071b027ac2f71181f"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200411f065402ece0cc38021e734bef1d5da071b027ac2f71181f",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0x02ece0cc38021e734bef1d5da071b027ac2f71181f"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "27",
+                        "source": [
+                            "2084"
+                        ]
+                    },
+                    {
+                        "paraID": 2000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "karura",
+                        "symbol": "BNB",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0xe02278651e8ff8e2efa83d7f84205084ebc90688be"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200411f0654e02278651e8ff8e2efa83d7f84205084ebc90688be",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0xe02278651e8ff8e2efa83d7f84205084ebc90688be"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "21",
                         "source": [
                             "2084"
                         ]
@@ -16381,7 +16920,7 @@
     "xcmRegistry": [
         {
             "relayChain": "kusama",
-            "registryCnt": "47",
+            "registryCnt": "56",
             "data": {
                 "[{\"network\":\"kusama\"},\"here\"]": {
                     "paraID": 0,
@@ -16853,6 +17392,92 @@
                         2090
                     ]
                 },
+                "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x022c7de70b32cf5f20e02329a88d2e3b00ef85eb90\"}]": {
+                    "paraID": 2000,
+                    "relayChain": "kusama",
+                    "nativeChainID": "karura",
+                    "symbol": "LINK",
+                    "decimals": 18,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "kusama"
+                        },
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x022c7de70b32cf5f20e02329a88d2e3b00ef85eb90"
+                        }
+                    ],
+                    "xcmV1MultiLocationByte": "0x010200411f0654022c7de70b32cf5f20e02329a88d2e3b00ef85eb90",
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2000
+                                    },
+                                    {
+                                        "generalKey": "0x022c7de70b32cf5f20e02329a88d2e3b00ef85eb90"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2084": "24"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2084
+                    ]
+                },
+                "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0230b1f4ba0b07789be9986fa090a57e0fe5631ebb\"}]": {
+                    "paraID": 2000,
+                    "relayChain": "kusama",
+                    "nativeChainID": "karura",
+                    "symbol": "APE",
+                    "decimals": 18,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "kusama"
+                        },
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0230b1f4ba0b07789be9986fa090a57e0fe5631ebb"
+                        }
+                    ],
+                    "xcmV1MultiLocationByte": "0x010200411f06540230b1f4ba0b07789be9986fa090a57e0fe5631ebb",
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2000
+                                    },
+                                    {
+                                        "generalKey": "0x0230b1f4ba0b07789be9986fa090a57e0fe5631ebb"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2084": "25"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2084
+                    ]
+                },
                 "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x024bb6afb5fa2b07a5d1c499e1c3ddb5a15e709a71\"}]": {
                     "paraID": 2000,
                     "relayChain": "kusama",
@@ -16941,11 +17566,54 @@
                         2090
                     ]
                 },
+                "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02577f6a0718a468e8a995f6075f2325f86a07c83b\"}]": {
+                    "paraID": 2000,
+                    "relayChain": "kusama",
+                    "nativeChainID": "karura",
+                    "symbol": "BUSD",
+                    "decimals": 18,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "kusama"
+                        },
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x02577f6a0718a468e8a995f6075f2325f86a07c83b"
+                        }
+                    ],
+                    "xcmV1MultiLocationByte": "0x010200411f065402577f6a0718a468e8a995f6075f2325f86a07c83b",
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2000
+                                    },
+                                    {
+                                        "generalKey": "0x02577f6a0718a468e8a995f6075f2325f86a07c83b"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2084": "23"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2084
+                    ]
+                },
                 "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0266291c7d88d2ed9a708147bae4e0814a76705e2f\"}]": {
                     "paraID": 2000,
                     "relayChain": "kusama",
                     "nativeChainID": "karura",
-                    "symbol": "wBTC",
+                    "symbol": "WBTC",
                     "decimals": 8,
                     "interiorType": "x2",
                     "xcmV1Standardized": [
@@ -16977,18 +17645,235 @@
                     },
                     "xcContractAddress": {},
                     "xcCurrencyID": {
+                        "2084": "26",
                         "2090": "11"
+                    },
+                    "confidence": 2,
+                    "source": [
+                        2084,
+                        2090
+                    ]
+                },
+                "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0277cf14f938cb97308d752647d554439d99b39a3f\"}]": {
+                    "paraID": 2000,
+                    "relayChain": "kusama",
+                    "nativeChainID": "karura",
+                    "symbol": "UNI",
+                    "decimals": 18,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "kusama"
+                        },
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0277cf14f938cb97308d752647d554439d99b39a3f"
+                        }
+                    ],
+                    "xcmV1MultiLocationByte": "0x010200411f06540277cf14f938cb97308d752647d554439d99b39a3f",
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2000
+                                    },
+                                    {
+                                        "generalKey": "0x0277cf14f938cb97308d752647d554439d99b39a3f"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2084": "22"
                     },
                     "confidence": 1,
                     "source": [
-                        2090
+                        2084
+                    ]
+                },
+                "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x029759ca009cbcd75a84786ac19bb5d02f8e68bcd9\"}]": {
+                    "paraID": 2000,
+                    "relayChain": "kusama",
+                    "nativeChainID": "karura",
+                    "symbol": "SHIB",
+                    "decimals": 18,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "kusama"
+                        },
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x029759ca009cbcd75a84786ac19bb5d02f8e68bcd9"
+                        }
+                    ],
+                    "xcmV1MultiLocationByte": "0x010200411f0654029759ca009cbcd75a84786ac19bb5d02f8e68bcd9",
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2000
+                                    },
+                                    {
+                                        "generalKey": "0x029759ca009cbcd75a84786ac19bb5d02f8e68bcd9"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2084": "19"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2084
+                    ]
+                },
+                "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02a2a37aaf4730aeedada5aa8ee20a4451cb8b1c4e\"}]": {
+                    "paraID": 2000,
+                    "relayChain": "kusama",
+                    "nativeChainID": "karura",
+                    "symbol": "MATIC",
+                    "decimals": 18,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "kusama"
+                        },
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x02a2a37aaf4730aeedada5aa8ee20a4451cb8b1c4e"
+                        }
+                    ],
+                    "xcmV1MultiLocationByte": "0x010200411f065402a2a37aaf4730aeedada5aa8ee20a4451cb8b1c4e",
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2000
+                                    },
+                                    {
+                                        "generalKey": "0x02a2a37aaf4730aeedada5aa8ee20a4451cb8b1c4e"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2084": "20"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2084
+                    ]
+                },
+                "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02b4ce1f6109854243d1af13b8ea34ed28542f31e0\"}]": {
+                    "paraID": 2000,
+                    "relayChain": "kusama",
+                    "nativeChainID": "karura",
+                    "symbol": "LDO",
+                    "decimals": 18,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "kusama"
+                        },
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x02b4ce1f6109854243d1af13b8ea34ed28542f31e0"
+                        }
+                    ],
+                    "xcmV1MultiLocationByte": "0x010200411f065402b4ce1f6109854243d1af13b8ea34ed28542f31e0",
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2000
+                                    },
+                                    {
+                                        "generalKey": "0x02b4ce1f6109854243d1af13b8ea34ed28542f31e0"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2084": "18"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2084
+                    ]
+                },
+                "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02c621abc3afa3f24886ea278fffa7e10e8969d755\"}]": {
+                    "paraID": 2000,
+                    "relayChain": "kusama",
+                    "nativeChainID": "karura",
+                    "symbol": "ARB",
+                    "decimals": 18,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "kusama"
+                        },
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x02c621abc3afa3f24886ea278fffa7e10e8969d755"
+                        }
+                    ],
+                    "xcmV1MultiLocationByte": "0x010200411f065402c621abc3afa3f24886ea278fffa7e10e8969d755",
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2000
+                                    },
+                                    {
+                                        "generalKey": "0x02c621abc3afa3f24886ea278fffa7e10e8969d755"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2084": "17"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2084
                     ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02ece0cc38021e734bef1d5da071b027ac2f71181f\"}]": {
                     "paraID": 2000,
                     "relayChain": "kusama",
                     "nativeChainID": "karura",
-                    "symbol": "wETH",
+                    "symbol": "WETH",
                     "decimals": 18,
                     "interiorType": "x2",
                     "xcmV1Standardized": [
@@ -17020,11 +17905,56 @@
                     },
                     "xcContractAddress": {},
                     "xcCurrencyID": {
+                        "2084": "27",
                         "2090": "10"
+                    },
+                    "confidence": 2,
+                    "source": [
+                        2084,
+                        2090
+                    ]
+                },
+                "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0xe02278651e8ff8e2efa83d7f84205084ebc90688be\"}]": {
+                    "paraID": 2000,
+                    "relayChain": "kusama",
+                    "nativeChainID": "karura",
+                    "symbol": "BNB",
+                    "decimals": 18,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "kusama"
+                        },
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0xe02278651e8ff8e2efa83d7f84205084ebc90688be"
+                        }
+                    ],
+                    "xcmV1MultiLocationByte": "0x010200411f0654e02278651e8ff8e2efa83d7f84205084ebc90688be",
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2000
+                                    },
+                                    {
+                                        "generalKey": "0xe02278651e8ff8e2efa83d7f84205084ebc90688be"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2084": "21"
                     },
                     "confidence": 1,
                     "source": [
-                        2090
+                        2084
                     ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]": {
