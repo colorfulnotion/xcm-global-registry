@@ -205,8 +205,8 @@
     "id": "phala",
     "paraID": 2035,
     "WSEndpoints": [
-      "wss://api.phala.network/ws",
-      "wss://phala.api.onfinality.io/public-ws"
+      "wss://skip.api.phala.network/ws",
+      "wss://skip.phala.api.onfinality.io/public-ws"
     ],
     "relaychain": "polkadot"
   },
