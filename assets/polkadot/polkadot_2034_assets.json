@@ -46,7 +46,7 @@
         "symbol": "CFG",
         "decimals": 18,
         "currencyID": "13",
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0001\"}]"
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]"
     },
     {
         "asset": {

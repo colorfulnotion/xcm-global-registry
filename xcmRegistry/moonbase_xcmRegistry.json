@@ -1022,6 +1022,43 @@
             1000
         ]
     },
+    "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2040}]": {
+        "paraID": 2040,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "PDEX",
+        "decimals": 12,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2040
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010100e11f",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2040
+                    }
+                }
+            }
+        },
+        "xcContractAddress": {
+            "1000": "0xffffffff43e0d9b84010b1b67ba501bc81e33c7a"
+        },
+        "xcCurrencyID": {
+            "1000": "90225766094594282577230355136633846906"
+        },
+        "confidence": 1,
+        "source": [
+            1000
+        ]
+    },
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2048}]": {
         "paraID": 2048,
         "relayChain": "moonbase",

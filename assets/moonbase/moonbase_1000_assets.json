@@ -431,6 +431,16 @@
     },
     {
         "asset": {
+            "Token": "90225766094594282577230355136633846906"
+        },
+        "name": "Polkadex Test Token",
+        "symbol": "xcPDEX",
+        "decimals": 12,
+        "currencyID": "90225766094594282577230355136633846906",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2040}]"
+    },
+    {
+        "asset": {
             "Token": "95328064580428769161981851380106820590"
         },
         "name": "Circle USD",
