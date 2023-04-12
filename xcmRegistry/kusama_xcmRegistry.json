@@ -12,7 +12,7 @@
             },
             "here"
         ],
-        "xcmV1MultiLocationByte": "0x0100",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -239,68 +239,6 @@
             2000
         ]
     },
-    "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0080\"}]": {
-        "paraID": 2000,
-        "relayChain": "kusama",
-        "nativeChainID": "karura",
-        "symbol": "KAR",
-        "decimals": 12,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2000
-            },
-            {
-                "generalKey": "0x0080"
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010200411f06080080",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 2000
-                        },
-                        {
-                            "generalKey": "0x0080"
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {
-            "2007": "0xffffffff00000000000000010000000000000002",
-            "2023": "0xffffffff08220ad2e6e157f26ed8bd22a336a0a5"
-        },
-        "xcCurrencyID": {
-            "2001": {
-                "Token": "KAR"
-            },
-            "2004": "1",
-            "2007": "18446744073709551618",
-            "2012": "10810581592933651521121702237638664357",
-            "2023": "10810581592933651521121702237638664357",
-            "2084": "8",
-            "2085": "107",
-            "2114": "3"
-        },
-        "confidence": 8,
-        "source": [
-            2001,
-            2004,
-            2007,
-            2012,
-            2023,
-            2084,
-            2085,
-            2114
-        ]
-    },
     "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0081\"}]": {
         "paraID": 2000,
         "relayChain": "kusama",
@@ -319,7 +257,7 @@
                 "generalKey": "0x0081"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200411f06080081",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -366,6 +304,68 @@
             2088,
             2090,
             2092,
+            2114
+        ]
+    },
+    "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0080\"}]": {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
+        "symbol": "KAR",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x0080"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0080"
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "2007": "0xffffffff00000000000000010000000000000002",
+            "2023": "0xffffffff08220ad2e6e157f26ed8bd22a336a0a5"
+        },
+        "xcCurrencyID": {
+            "2001": {
+                "Token": "KAR"
+            },
+            "2004": "1",
+            "2007": "18446744073709551618",
+            "2012": "10810581592933651521121702237638664357",
+            "2023": "10810581592933651521121702237638664357",
+            "2084": "8",
+            "2085": "107",
+            "2114": "3"
+        },
+        "confidence": 8,
+        "source": [
+            2001,
+            2004,
+            2007,
+            2012,
+            2023,
+            2084,
+            2085,
             2114
         ]
     },
@@ -1034,6 +1034,161 @@
             2084
         ]
     },
+    "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0104\"}]": {
+        "paraID": 2001,
+        "relayChain": "kusama",
+        "nativeChainID": "bifrost",
+        "symbol": "vKSM",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2001
+            },
+            {
+                "generalKey": "0x0104"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2001
+                        },
+                        {
+                            "generalKey": "0x0104"
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "2007": "0xffffffff0000000000000001000000000000000c"
+        },
+        "xcCurrencyID": {
+            "2001": {
+                "VToken": "KSM"
+            },
+            "2007": "18446744073709551628",
+            "2092": {
+                "ForeignAsset": "5"
+            },
+            "2110": "15"
+        },
+        "confidence": 4,
+        "source": [
+            2001,
+            2007,
+            2092,
+            2110
+        ]
+    },
+    "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0207\"}]": {
+        "paraID": 2001,
+        "relayChain": "kusama",
+        "nativeChainID": "bifrost",
+        "symbol": "ZLK",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2001
+            },
+            {
+                "generalKey": "0x0207"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2001
+                        },
+                        {
+                            "generalKey": "0x0207"
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2001": {
+                "Token": "ZLK"
+            },
+            "2004": "3",
+            "2110": "26"
+        },
+        "confidence": 3,
+        "source": [
+            2001,
+            2004,
+            2110
+        ]
+    },
+    "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0404\"}]": {
+        "paraID": 2001,
+        "relayChain": "kusama",
+        "nativeChainID": "bifrost",
+        "symbol": "VSvsKSM",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2001
+            },
+            {
+                "generalKey": "0x0404"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2001
+                        },
+                        {
+                            "generalKey": "0x0404"
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "2007": "0xffffffff0000000000000001000000000000000d"
+        },
+        "xcCurrencyID": {
+            "2001": {
+                "VSToken": "KSM"
+            },
+            "2007": "18446744073709551629",
+            "2110": "16"
+        },
+        "confidence": 3,
+        "source": [
+            2001,
+            2007,
+            2110
+        ]
+    },
     "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]": {
         "paraID": 2001,
         "relayChain": "kusama",
@@ -1052,7 +1207,7 @@
                 "generalKey": "0x0001"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200451f06080001",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -1135,161 +1290,6 @@
             2110
         ]
     },
-    "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0104\"}]": {
-        "paraID": 2001,
-        "relayChain": "kusama",
-        "nativeChainID": "bifrost",
-        "symbol": "vKSM",
-        "decimals": 12,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2001
-            },
-            {
-                "generalKey": "0x0104"
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010200451f06080104",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 2001
-                        },
-                        {
-                            "generalKey": "0x0104"
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {
-            "2007": "0xffffffff0000000000000001000000000000000c"
-        },
-        "xcCurrencyID": {
-            "2001": {
-                "VToken": "KSM"
-            },
-            "2007": "18446744073709551628",
-            "2092": {
-                "ForeignAsset": "5"
-            },
-            "2110": "15"
-        },
-        "confidence": 4,
-        "source": [
-            2001,
-            2007,
-            2092,
-            2110
-        ]
-    },
-    "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0207\"}]": {
-        "paraID": 2001,
-        "relayChain": "kusama",
-        "nativeChainID": "bifrost",
-        "symbol": "ZLK",
-        "decimals": 18,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2001
-            },
-            {
-                "generalKey": "0x0207"
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010200451f06080207",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 2001
-                        },
-                        {
-                            "generalKey": "0x0207"
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {},
-        "xcCurrencyID": {
-            "2001": {
-                "Token": "ZLK"
-            },
-            "2004": "3",
-            "2110": "26"
-        },
-        "confidence": 3,
-        "source": [
-            2001,
-            2004,
-            2110
-        ]
-    },
-    "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0404\"}]": {
-        "paraID": 2001,
-        "relayChain": "kusama",
-        "nativeChainID": "bifrost",
-        "symbol": "VSvsKSM",
-        "decimals": 12,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2001
-            },
-            {
-                "generalKey": "0x0404"
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010200451f06080404",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 2001
-                        },
-                        {
-                            "generalKey": "0x0404"
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {
-            "2007": "0xffffffff0000000000000001000000000000000d"
-        },
-        "xcCurrencyID": {
-            "2001": {
-                "VSToken": "KSM"
-            },
-            "2007": "18446744073709551629",
-            "2110": "16"
-        },
-        "confidence": 3,
-        "source": [
-            2001,
-            2007,
-            2110
-        ]
-    },
     "[{\"network\":\"kusama\"},{\"parachain\":2004}]": {
         "paraID": 2004,
         "relayChain": "kusama",
@@ -1305,7 +1305,7 @@
                 "parachain": 2004
             }
         ],
-        "xcmV1MultiLocationByte": "0x010100511f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -2062,7 +2062,7 @@
                 "generalKey": "0x000b"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200b1200608000b",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -2116,7 +2116,7 @@
                 "generalKey": "0x000c"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200b1200608000c",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -2496,7 +2496,7 @@
                 "generalKey": "0x00000000"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200f920061000000000",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
