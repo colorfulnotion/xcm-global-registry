@@ -12,7 +12,7 @@
             },
             "here"
         ],
-        "xcmV1MultiLocationByte": "0x0100",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -45,7 +45,7 @@
                 "palletInstance": 3
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200e10d0403",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -88,7 +88,7 @@
                 "generalIndex": 1
             }
         ],
-        "xcmV1MultiLocationByte": "0x010300a50f04320504",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -134,7 +134,7 @@
                 "generalIndex": 2
             }
         ],
-        "xcmV1MultiLocationByte": "0x010300a50f04320508",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -180,7 +180,7 @@
                 "generalIndex": 3
             }
         ],
-        "xcmV1MultiLocationByte": "0x010300a50f0432050c",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -209,46 +209,6 @@
         "paraID": 1002,
         "relayChain": "moonbase",
         "nativeChainID": null,
-        "symbol": "KBTC",
-        "decimals": 8,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "named": "0x6d6f6f6e62617365"
-            },
-            {
-                "parachain": 1002
-            },
-            {
-                "generalKey": "0x000b"
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010200a90f0608000b",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 1002
-                        },
-                        {
-                            "generalKey": "0x000b"
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": "122531866982275221270783173426160033062",
-        "contractAddress": "0xffffffff5c2ec77818d0863088929c1106635d26",
-        "source": [
-            "1000"
-        ]
-    },
-    {
-        "paraID": 1002,
-        "relayChain": "moonbase",
-        "nativeChainID": null,
         "symbol": "XCKINT",
         "decimals": 12,
         "interiorType": "x2",
@@ -263,7 +223,7 @@
                 "generalKey": "0x000c"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200a90f0608000c",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -286,41 +246,41 @@
         ]
     },
     {
-        "paraID": 2000,
+        "paraID": 1002,
         "relayChain": "moonbase",
         "nativeChainID": null,
-        "symbol": "KAR",
-        "decimals": 12,
+        "symbol": "KBTC",
+        "decimals": 8,
         "interiorType": "x2",
         "xcmV1Standardized": [
             {
                 "named": "0x6d6f6f6e62617365"
             },
             {
-                "parachain": 2000
+                "parachain": 1002
             },
             {
-                "generalKey": "0x0080"
+                "generalKey": "0x000b"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200411f06080080",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
                 "interior": {
                     "x2": [
                         {
-                            "parachain": 2000
+                            "parachain": 1002
                         },
                         {
-                            "generalKey": "0x0080"
+                            "generalKey": "0x000b"
                         }
                     ]
                 }
             }
         },
-        "asset": "10810581592933651521121702237638664357",
-        "contractAddress": "0xffffffff08220ad2e6e157f26ed8bd22a336a0a5",
+        "asset": "122531866982275221270783173426160033062",
+        "contractAddress": "0xffffffff5c2ec77818d0863088929c1106635d26",
         "source": [
             "1000"
         ]
@@ -343,7 +303,7 @@
                 "generalKey": "0x0081"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200411f06080081",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -383,7 +343,7 @@
                 "generalKey": "0x0083"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200411f06080083",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -406,10 +366,10 @@
         ]
     },
     {
-        "paraID": 2001,
+        "paraID": 2000,
         "relayChain": "moonbase",
         "nativeChainID": null,
-        "symbol": "BNC",
+        "symbol": "KAR",
         "decimals": 12,
         "interiorType": "x2",
         "xcmV1Standardized": [
@@ -417,30 +377,30 @@
                 "named": "0x6d6f6f6e62617365"
             },
             {
-                "parachain": 2001
+                "parachain": 2000
             },
             {
-                "generalKey": "0x0001"
+                "generalKey": "0x0080"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200451f06080001",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
                 "interior": {
                     "x2": [
                         {
-                            "parachain": 2001
+                            "parachain": 2000
                         },
                         {
-                            "generalKey": "0x0001"
+                            "generalKey": "0x0080"
                         }
                     ]
                 }
             }
         },
-        "asset": "319623561105283008236062145480775032445",
-        "contractAddress": "0xfffffffff075423be54811ecb478e911f22dde7d",
+        "asset": "10810581592933651521121702237638664357",
+        "contractAddress": "0xffffffff08220ad2e6e157f26ed8bd22a336a0a5",
         "source": [
             "1000"
         ]
@@ -463,7 +423,7 @@
                 "generalKey": "0x0104"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200451f06080104",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -486,6 +446,46 @@
         ]
     },
     {
+        "paraID": 2001,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "BNC",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2001
+            },
+            {
+                "generalKey": "0x0001"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2001
+                        },
+                        {
+                            "generalKey": "0x0001"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "319623561105283008236062145480775032445",
+        "contractAddress": "0xfffffffff075423be54811ecb478e911f22dde7d",
+        "source": [
+            "1000"
+        ]
+    },
+    {
         "paraID": 2004,
         "relayChain": "moonbase",
         "nativeChainID": null,
@@ -500,7 +500,7 @@
                 "parachain": 2004
             }
         ],
-        "xcmV1MultiLocationByte": "0x010100511f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -535,7 +535,7 @@
                 "generalKey": "0x0000"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200591f06080000",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -572,7 +572,7 @@
                 "parachain": 2007
             }
         ],
-        "xcmV1MultiLocationByte": "0x0101005d1f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -585,38 +585,6 @@
         },
         "asset": "16797826370226091782818345603793389938",
         "contractAddress": "0xffffffff0ca324c842330521525e7de111f38972",
-        "source": [
-            "1000"
-        ]
-    },
-    {
-        "paraID": 2011,
-        "relayChain": "moonbase",
-        "nativeChainID": null,
-        "symbol": "EQ",
-        "decimals": 9,
-        "interiorType": "x1",
-        "xcmV1Standardized": [
-            {
-                "named": "0x6d6f6f6e62617365"
-            },
-            {
-                "parachain": 2011
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x0101006d1f",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x1": {
-                        "parachain": 2011
-                    }
-                }
-            }
-        },
-        "asset": "190590555344745888270686124937537713878",
-        "contractAddress": "0xffffffff8f6267e040d8a0638c576dfba4f0f6d6",
         "source": [
             "1000"
         ]
@@ -639,7 +607,7 @@
                 "generalKey": "0x657164"
             }
         ],
-        "xcmV1MultiLocationByte": "0x0102006d1f060c657164",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -662,6 +630,38 @@
         ]
     },
     {
+        "paraID": 2011,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "EQ",
+        "decimals": 9,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2011
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2011
+                    }
+                }
+            }
+        },
+        "asset": "190590555344745888270686124937537713878",
+        "contractAddress": "0xffffffff8f6267e040d8a0638c576dfba4f0f6d6",
+        "source": [
+            "1000"
+        ]
+    },
+    {
         "paraID": 2012,
         "relayChain": "moonbase",
         "nativeChainID": null,
@@ -676,7 +676,7 @@
                 "parachain": 2012
             }
         ],
-        "xcmV1MultiLocationByte": "0x010100711f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -711,7 +711,7 @@
                 "generalKey": "0x54454552"
             }
         ],
-        "xcmV1MultiLocationByte": "0x0102007d1f061054454552",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -748,7 +748,7 @@
                 "parachain": 2024
             }
         ],
-        "xcmV1MultiLocationByte": "0x010100a11f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -780,7 +780,7 @@
                 "parachain": 2040
             }
         ],
-        "xcmV1MultiLocationByte": "0x010100e11f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -812,7 +812,7 @@
                 "parachain": 2048
             }
         ],
-        "xcmV1MultiLocationByte": "0x0101000120",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -847,7 +847,7 @@
                 "generalKey": "0x484b4f"
             }
         ],
-        "xcmV1MultiLocationByte": "0x0102009520060c484b4f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -887,7 +887,7 @@
                 "generalKey": "0x00000000"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200a920061000000000",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -924,7 +924,7 @@
                 "parachain": 2095
             }
         ],
-        "xcmV1MultiLocationByte": "0x010100bd20",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -937,46 +937,6 @@
         },
         "asset": "69536036667157951501899290870203586130",
         "contractAddress": "0xffffffff3450274d4ab181de8830c189f4509652",
-        "source": [
-            "1000"
-        ]
-    },
-    {
-        "paraID": 2096,
-        "relayChain": "moonbase",
-        "nativeChainID": null,
-        "symbol": "NEER",
-        "decimals": 18,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "named": "0x6d6f6f6e62617365"
-            },
-            {
-                "parachain": 2096
-            },
-            {
-                "generalKey": "0x000000000000000000"
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010200c1200624000000000000000000",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 2096
-                        },
-                        {
-                            "generalKey": "0x000000000000000000"
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": "52280927600883288560727505734200597597",
-        "contractAddress": "0xffffffff2754f0bdf7eb215503c69204ccd61c5d",
         "source": [
             "1000"
         ]
@@ -999,7 +959,7 @@
                 "generalKey": "0x020000000000000000"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200c1200624020000000000000000",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -1022,6 +982,46 @@
         ]
     },
     {
+        "paraID": 2096,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "NEER",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2096
+            },
+            {
+                "generalKey": "0x000000000000000000"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2096
+                        },
+                        {
+                            "generalKey": "0x000000000000000000"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "52280927600883288560727505734200597597",
+        "contractAddress": "0xffffffff2754f0bdf7eb215503c69204ccd61c5d",
+        "source": [
+            "1000"
+        ]
+    },
+    {
         "paraID": 2101,
         "relayChain": "moonbase",
         "nativeChainID": null,
@@ -1039,7 +1039,7 @@
                 "generalKey": "0x0001"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200d52006080001",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -1079,7 +1079,7 @@
                 "palletInstance": 5
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200e5200405",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -1119,7 +1119,7 @@
                 "palletInstance": 10
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200e920040a",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -1159,7 +1159,7 @@
                 "generalKey": "0x00000000"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200f920061000000000",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -1196,7 +1196,7 @@
                 "parachain": 2114
             }
         ],
-        "xcmV1MultiLocationByte": "0x0101000921",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -1231,7 +1231,7 @@
                 "generalIndex": 0
             }
         ],
-        "xcmV1MultiLocationByte": "0x01020035210500",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
