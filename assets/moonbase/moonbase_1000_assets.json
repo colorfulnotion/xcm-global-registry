@@ -91,6 +91,16 @@
     },
     {
         "asset": {
+            "Token": "128910205779035707777113095265150484699"
+        },
+        "name": "Nodle",
+        "symbol": "xcNODL",
+        "decimals": 11,
+        "currencyID": "128910205779035707777113095265150484699",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2036},{\"palletInstance\":2}]"
+    },
+    {
+        "asset": {
             "Token": "133300872918374599700079037156071917454"
         },
         "name": "Turing Network",
