@@ -173,6 +173,67 @@
             888
         ]
     },
+    "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":{\"any\":null},\"key\":\"0x566c1cebc6a4afa1c122e039c4bebe77043148ee\"}}]": {
+        "paraID": 1000,
+        "relayChain": "moonbase",
+        "nativeChainID": "moonbase-alpha",
+        "symbol": "FTM.wh",
+        "decimals": 18,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 48
+            },
+            {
+                "accountKey20": {
+                    "network": {
+                        "any": null
+                    },
+                    "key": "0x566c1cebc6a4afa1c122e039c4bebe77043148ee"
+                }
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010300a10f04300300566c1cebc6a4afa1c122e039c4bebe77043148ee",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 48
+                        },
+                        {
+                            "accountKey20": {
+                                "network": {
+                                    "any": null
+                                },
+                                "key": "0x566c1cebc6a4afa1c122e039c4bebe77043148ee"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "888": "0xffffffff958faf8e6b11da766006df735c4a8da0"
+        },
+        "xcCurrencyID": {
+            "888": "198801030527939140930753142903035039136"
+        },
+        "confidence": 1,
+        "source": [
+            888
+        ]
+    },
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":{\"any\":null},\"key\":\"0x9133c5a22024118804089f1fb752b7b2ce2a6351\"}}]": {
         "paraID": 1000,
         "relayChain": "moonbase",

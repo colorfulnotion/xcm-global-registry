@@ -11,6 +11,16 @@
     },
     {
         "asset": {
+            "Token": "198801030527939140930753142903035039136"
+        },
+        "name": "Fantom (Wormhole)",
+        "symbol": "xcFTM.wh",
+        "decimals": 18,
+        "currencyID": "198801030527939140930753142903035039136",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":{\"any\":null},\"key\":\"0x566c1cebc6a4afa1c122e039c4bebe77043148ee\"}}]"
+    },
+    {
+        "asset": {
             "Token": "222902676330054289648817870329963141953"
         },
         "name": "xcDEV",
