@@ -196,5 +196,61 @@
         "source": [
             "888"
         ]
+    },
+    {
+        "paraID": 1000,
+        "relayChain": "moonbase",
+        "nativeChainID": "moonbase-alpha",
+        "symbol": "USDC.wh",
+        "decimals": 6,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 48
+            },
+            {
+                "accountKey20": {
+                    "network": {
+                        "any": null
+                    },
+                    "key": "0xe5de10c4b744bac6b783faf8d9b9fdff14acc3c9"
+                }
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010300a10f04300300e5de10c4b744bac6b783faf8d9b9fdff14acc3c9",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 48
+                        },
+                        {
+                            "accountKey20": {
+                                "network": {
+                                    "any": null
+                                },
+                                "key": "0xe5de10c4b744bac6b783faf8d9b9fdff14acc3c9"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "319794858556516669238969276945382613133",
+        "contractAddress": "0xfffffffff0963fd9b1d84d5740e911aa5d99a08d",
+        "source": [
+            "888"
+        ]
     }
 ]

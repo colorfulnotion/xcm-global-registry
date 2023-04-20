@@ -31,6 +31,16 @@
     },
     {
         "asset": {
+            "Token": "319794858556516669238969276945382613133"
+        },
+        "name": "USDC (Wormhole)",
+        "symbol": "xcUSDC.wh",
+        "decimals": 6,
+        "currencyID": "319794858556516669238969276945382613133",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":{\"any\":null},\"key\":\"0xe5de10c4b744bac6b783faf8d9b9fdff14acc3c9\"}}]"
+    },
+    {
+        "asset": {
             "Token": "85534404031760856987006367174489651085"
         },
         "name": "xc-ALAN",
