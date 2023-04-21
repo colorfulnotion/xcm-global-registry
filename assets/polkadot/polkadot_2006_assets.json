@@ -1,6 +1,24 @@
 [
     {
         "asset": {
+            "Token": "100001"
+        },
+        "name": "Injective",
+        "symbol": "xcINJ",
+        "decimals": 18,
+        "currencyID": "100001"
+    },
+    {
+        "asset": {
+            "Token": "100002"
+        },
+        "name": "Cosmos Hub",
+        "symbol": "xcATOM",
+        "decimals": 6,
+        "currencyID": "100002"
+    },
+    {
+        "asset": {
             "Token": "1324"
         },
         "name": "love",
@@ -133,6 +151,15 @@
         "symbol": "TST",
         "decimals": 18,
         "currencyID": "1338"
+    },
+    {
+        "asset": {
+            "Token": "1339"
+        },
+        "name": "test token",
+        "symbol": "TST",
+        "decimals": 18,
+        "currencyID": "1339"
     },
     {
         "asset": {

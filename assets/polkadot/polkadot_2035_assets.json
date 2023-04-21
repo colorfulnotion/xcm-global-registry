@@ -31,6 +31,15 @@
     },
     {
         "asset": {
+            "Token": "10000"
+        },
+        "name": "Wrapped PHA",
+        "symbol": "wPHA",
+        "decimals": 12,
+        "currencyID": "10000"
+    },
+    {
+        "asset": {
             "Token": "11"
         },
         "name": "HydraDX",
