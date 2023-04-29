@@ -13822,7 +13822,7 @@
                             },
                             "here"
                         ],
-                        "xcmV1MultiLocationByte": "0x0100",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -13858,7 +13858,7 @@
                                 "generalIndex": 1984
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010300a10f043205011f",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -13904,7 +13904,7 @@
                                 "generalIndex": 8
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010300a10f04320520",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -13933,46 +13933,6 @@
                         "paraID": 2000,
                         "relayChain": "kusama",
                         "nativeChainID": "karura",
-                        "symbol": "KAR",
-                        "decimals": 12,
-                        "interiorType": "x2",
-                        "xcmV1Standardized": [
-                            {
-                                "network": "kusama"
-                            },
-                            {
-                                "parachain": 2000
-                            },
-                            {
-                                "generalKey": "0x0080"
-                            }
-                        ],
-                        "xcmV1MultiLocationByte": "0x010200411f06080080",
-                        "xcmV1MultiLocation": {
-                            "v1": {
-                                "parents": 1,
-                                "interior": {
-                                    "x2": [
-                                        {
-                                            "parachain": 2000
-                                        },
-                                        {
-                                            "generalKey": "0x0080"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        "asset": "10810581592933651521121702237638664357",
-                        "contractAddress": "0xffffffff08220ad2e6e157f26ed8bd22a336a0a5",
-                        "source": [
-                            "2023"
-                        ]
-                    },
-                    {
-                        "paraID": 2000,
-                        "relayChain": "kusama",
-                        "nativeChainID": "karura",
                         "symbol": "AUSD",
                         "decimals": 12,
                         "interiorType": "x2",
@@ -13987,7 +13947,7 @@
                                 "generalKey": "0x0081"
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010200411f06080081",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -14010,6 +13970,46 @@
                         ]
                     },
                     {
+                        "paraID": 2000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "karura",
+                        "symbol": "KAR",
+                        "decimals": 12,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0x0080"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": false,
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0x0080"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "10810581592933651521121702237638664357",
+                        "contractAddress": "0xffffffff08220ad2e6e157f26ed8bd22a336a0a5",
+                        "source": [
+                            "2023"
+                        ]
+                    },
+                    {
                         "paraID": 2001,
                         "relayChain": "kusama",
                         "nativeChainID": "bifrost",
@@ -14027,7 +14027,7 @@
                                 "generalKey": "0x0001"
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010200451f06080001",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -14064,7 +14064,7 @@
                                 "parachain": 2004
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010100511f",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -14096,7 +14096,7 @@
                                 "parachain": 2007
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x0101005d1f",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -14128,7 +14128,7 @@
                                 "parachain": 2012
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010100711f",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -14163,7 +14163,7 @@
                                 "generalKey": "0x54454552"
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x0102007d1f061054454552",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -14200,7 +14200,7 @@
                                 "parachain": 2048
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x0101000120",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -14232,7 +14232,7 @@
                                 "parachain": 2084
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x0101009120",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -14267,7 +14267,7 @@
                                 "generalKey": "0x484b4f"
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x0102009520060c484b4f",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -14307,7 +14307,7 @@
                                 "generalKey": "0x000b"
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010200b1200608000b",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -14347,7 +14347,7 @@
                                 "generalKey": "0x000c"
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010200b1200608000c",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -14387,7 +14387,7 @@
                                 "palletInstance": 5
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010200e5200405",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -14427,7 +14427,7 @@
                                 "palletInstance": 10
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010200e920040a",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
