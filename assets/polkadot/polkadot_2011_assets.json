@@ -6,6 +6,8 @@
         "name": "EQ",
         "symbol": "EQ",
         "decimals": 9,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2011}]"
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2011}]",
+        "inferred": true,
+        "confidence": 0
     }
 ]
