@@ -21,16 +21,6 @@
     },
     {
         "asset": {
-            "Token": "103375685556851705998693585864132362191"
-        },
-        "name": "Voucher KSM",
-        "symbol": "vKSM",
-        "decimals": 12,
-        "currencyID": "103375685556851705998693585864132362191",
-        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2001},{\"generalKey\":\"0x0104\"}]"
-    },
-    {
-        "asset": {
             "Token": "105075627293246237499203909093923548958"
         },
         "name": "TEER",
@@ -288,16 +278,6 @@
         "decimals": 18,
         "currencyID": "319515966007349957795820176952936446433",
         "xcmInteriorKey": "[{\"network\":\"moonbase\"},{\"parachain\":1000},{\"palletInstance\":108},{\"generalIndex\":\"0xf0608962d5801b39f437d4cc416939e1\"}]"
-    },
-    {
-        "asset": {
-            "Token": "319623561105283008236062145480775032445"
-        },
-        "name": "BNC",
-        "symbol": "xcBNC",
-        "decimals": 12,
-        "currencyID": "319623561105283008236062145480775032445",
-        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]"
     },
     {
         "asset": {

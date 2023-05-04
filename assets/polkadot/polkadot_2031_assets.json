@@ -48,6 +48,18 @@
     },
     {
         "asset": {
+            "ForeignAsset": "5"
+        },
+        "name": "DOT",
+        "symbol": "DOT",
+        "decimals": 10,
+        "currencyID": {
+            "ForeignAsset": "5"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},\"here\"]"
+    },
+    {
+        "asset": {
             "Token": "CFG"
         },
         "name": "CFG",
@@ -56,5 +68,15 @@
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]",
         "inferred": true,
         "confidence": 0
+    },
+    {
+        "asset": {
+            "Token": "Native"
+        },
+        "name": "Centrifuge",
+        "symbol": "CFG",
+        "decimals": 18,
+        "currencyID": "Native",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]"
     }
 ]
