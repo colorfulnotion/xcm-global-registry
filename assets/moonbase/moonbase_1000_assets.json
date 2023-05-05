@@ -241,6 +241,16 @@
     },
     {
         "asset": {
+            "Token": "264344629840762281112027368930249420542"
+        },
+        "name": "Voucher KSM",
+        "symbol": "xcvKSM",
+        "decimals": 12,
+        "currencyID": "264344629840762281112027368930249420542",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2001},{\"generalKey\":\"0x0104\"}]"
+    },
+    {
+        "asset": {
             "Token": "280024949790879322861822169150106601773"
         },
         "name": "xcMockRMRK",
@@ -378,6 +388,16 @@
         "decimals": 9,
         "currencyID": "54799287759721089563242211737206786491",
         "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2024}]"
+    },
+    {
+        "asset": {
+            "Token": "565025040449484090264950386168462197"
+        },
+        "name": "BNC",
+        "symbol": "xcBNC",
+        "decimals": 12,
+        "currencyID": "565025040449484090264950386168462197",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]"
     },
     {
         "asset": {
