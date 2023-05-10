@@ -117,7 +117,7 @@
         "symbol": "BNB",
         "decimals": 18,
         "currencyID": "21",
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0xe02278651e8ff8e2efa83d7f84205084ebc90688be\"}]"
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02e278651e8ff8e2efa83d7f84205084ebc90688be\"}]"
     },
     {
         "asset": {

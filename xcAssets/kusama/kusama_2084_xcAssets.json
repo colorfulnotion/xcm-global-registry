@@ -621,6 +621,45 @@
         "paraID": 2000,
         "relayChain": "kusama",
         "nativeChainID": "karura",
+        "symbol": "BNB",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x02e278651e8ff8e2efa83d7f84205084ebc90688be"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f065402e278651e8ff8e2efa83d7f84205084ebc90688be",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x02e278651e8ff8e2efa83d7f84205084ebc90688be"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "21",
+        "source": [
+            "2084"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
         "symbol": "WETH",
         "decimals": 18,
         "interiorType": "x2",
@@ -652,45 +691,6 @@
             }
         },
         "asset": "27",
-        "source": [
-            "2084"
-        ]
-    },
-    {
-        "paraID": 2000,
-        "relayChain": "kusama",
-        "nativeChainID": "karura",
-        "symbol": "BNB",
-        "decimals": 18,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2000
-            },
-            {
-                "generalKey": "0xe02278651e8ff8e2efa83d7f84205084ebc90688be"
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010200411f0654e02278651e8ff8e2efa83d7f84205084ebc90688be",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 2000
-                        },
-                        {
-                            "generalKey": "0xe02278651e8ff8e2efa83d7f84205084ebc90688be"
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": "21",
         "source": [
             "2084"
         ]
