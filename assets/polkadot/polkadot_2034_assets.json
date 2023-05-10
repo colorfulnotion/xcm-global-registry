@@ -50,6 +50,26 @@
     },
     {
         "asset": {
+            "Token": "14"
+        },
+        "name": "BNC",
+        "symbol": "BNC",
+        "decimals": 12,
+        "currencyID": "14",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]"
+    },
+    {
+        "asset": {
+            "Token": "15"
+        },
+        "name": "vDOT",
+        "symbol": "vDOT",
+        "decimals": 10,
+        "currencyID": "15",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0900\"}]"
+    },
+    {
+        "asset": {
             "Token": "2"
         },
         "name": "DAI",

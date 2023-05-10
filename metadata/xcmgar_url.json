@@ -110,7 +110,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "14",
+                "assetCnt": "16",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2034_assets.json"
             },
             {
@@ -438,7 +438,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "12",
+                "xcAssetCnt": "14",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2034_xcAssets.json"
             },
             {

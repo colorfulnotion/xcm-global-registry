@@ -24,12 +24,12 @@
     },
     {
         "asset": {
-            "Token": "AUSD"
+            "Token": "Native"
         },
-        "name": "Acala Dollar",
-        "symbol": "aUSD",
-        "decimals": 12,
-        "currencyID": "AUSD",
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0081\"}]"
+        "name": "Altair",
+        "symbol": "AIR",
+        "decimals": 18,
+        "currencyID": "Native",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2088},{\"generalKey\":\"0x0001\"}]"
     }
 ]

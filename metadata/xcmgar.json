@@ -2039,7 +2039,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "14",
+                "assetCnt": "16",
                 "data": [
                     {
                         "asset": {
@@ -2089,6 +2089,26 @@
                         "decimals": 18,
                         "currencyID": "13",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "14"
+                        },
+                        "name": "BNC",
+                        "symbol": "BNC",
+                        "decimals": 12,
+                        "currencyID": "14",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "15"
+                        },
+                        "name": "vDOT",
+                        "symbol": "vDOT",
+                        "decimals": 10,
+                        "currencyID": "15",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0900\"}]"
                     },
                     {
                         "asset": {
@@ -6140,13 +6160,13 @@
                     },
                     {
                         "asset": {
-                            "Token": "AUSD"
+                            "Token": "Native"
                         },
-                        "name": "Acala Dollar",
-                        "symbol": "aUSD",
-                        "decimals": 12,
-                        "currencyID": "AUSD",
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0081\"}]"
+                        "name": "Altair",
+                        "symbol": "AIR",
+                        "decimals": 18,
+                        "currencyID": "Native",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2088},{\"generalKey\":\"0x0001\"}]"
                     }
                 ]
             },
@@ -6477,7 +6497,9 @@
                         "name": "CRAB",
                         "symbol": "CRAB",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2105},{\"palletInstance\":5}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2105},{\"palletInstance\":5}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -9986,7 +10008,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "12",
+                "xcAssetCnt": "14",
                 "data": [
                     {
                         "paraID": 0,
@@ -10282,6 +10304,84 @@
                             }
                         },
                         "asset": "9",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 2030,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "bifrost",
+                        "symbol": "BNC",
+                        "decimals": 12,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2030
+                            },
+                            {
+                                "generalKey": "0x0001"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200b91f06080001",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2030
+                                        },
+                                        {
+                                            "generalKey": "0x0001"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "14",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 2030,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "bifrost",
+                        "symbol": "vDOT",
+                        "decimals": 10,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2030
+                            },
+                            {
+                                "generalKey": "0x0900"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200b91f06080900",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2030
+                                        },
+                                        {
+                                            "generalKey": "0x0900"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "15",
                         "source": [
                             "2034"
                         ]
@@ -15718,40 +15818,40 @@
                         ]
                     },
                     {
-                        "paraID": 2000,
+                        "paraID": 2088,
                         "relayChain": "kusama",
-                        "nativeChainID": "karura",
-                        "symbol": "aUSD",
-                        "decimals": 12,
+                        "nativeChainID": "altair",
+                        "symbol": "AIR",
+                        "decimals": 18,
                         "interiorType": "x2",
                         "xcmV1Standardized": [
                             {
                                 "network": "kusama"
                             },
                             {
-                                "parachain": 2000
+                                "parachain": 2088
                             },
                             {
-                                "generalKey": "0x0081"
+                                "generalKey": "0x0001"
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010200411f06080081",
+                        "xcmV1MultiLocationByte": "0x010200a12006080001",
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
                                 "interior": {
                                     "x2": [
                                         {
-                                            "parachain": 2000
+                                            "parachain": 2088
                                         },
                                         {
-                                            "generalKey": "0x0081"
+                                            "generalKey": "0x0001"
                                         }
                                     ]
                                 }
                             }
                         },
-                        "asset": "AUSD",
+                        "asset": "Native",
                         "source": [
                             "2088"
                         ]
@@ -17387,14 +17487,13 @@
                         "2012": "214920334981412447805621250067209749032",
                         "2023": "214920334981412447805621250067209749032",
                         "2084": "9",
-                        "2088": "AUSD",
                         "2090": "2",
                         "2092": {
                             "ForeignAsset": "1"
                         },
                         "2114": "2"
                     },
-                    "confidence": 10,
+                    "confidence": 9,
                     "source": [
                         2001,
                         2004,
@@ -17402,7 +17501,6 @@
                         2012,
                         2023,
                         2084,
-                        2088,
                         2090,
                         2092,
                         2114
@@ -19048,11 +19146,13 @@
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "12"
-                        }
+                        },
+                        "2088": "Native"
                     },
-                    "confidence": 1,
+                    "confidence": 2,
                     "source": [
-                        2000
+                        2000,
+                        2088
                     ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2090},{\"generalKey\":\"0x00000000\"}]": {
@@ -21109,12 +21209,14 @@
                     "xcCurrencyID": {
                         "2004": "165823357460190568952172802245839421906",
                         "2006": "18446744073709551623",
+                        "2034": "14",
                         "2035": "8"
                     },
-                    "confidence": 3,
+                    "confidence": 4,
                     "source": [
                         2004,
                         2006,
+                        2034,
                         2035
                     ]
                 },
@@ -21208,12 +21310,14 @@
                         "2006": "18446744073709551624",
                         "2030": {
                             "VToken2": "0"
-                        }
+                        },
+                        "2034": "15"
                     },
-                    "confidence": 2,
+                    "confidence": 3,
                     "source": [
                         2006,
-                        2030
+                        2030,
+                        2034
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]": {
