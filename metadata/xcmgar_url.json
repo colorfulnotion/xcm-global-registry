@@ -259,7 +259,7 @@
                 "relayChain": "kusama",
                 "paraID": 2088,
                 "id": "altair",
-                "assetCnt": "3",
+                "assetCnt": "5",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2088_assets.json"
             },
             {
@@ -517,7 +517,7 @@
                 "relayChain": "kusama",
                 "paraID": 2088,
                 "id": "altair",
-                "xcAssetCnt": "2",
+                "xcAssetCnt": "4",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/kusama/kusama_2088_xcAssets.json"
             },
             {

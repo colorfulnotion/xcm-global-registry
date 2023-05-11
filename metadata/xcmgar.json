@@ -6133,7 +6133,7 @@
                 "relayChain": "kusama",
                 "paraID": 2088,
                 "id": "altair",
-                "assetCnt": "3",
+                "assetCnt": "5",
                 "data": [
                     {
                         "asset": {
@@ -6146,6 +6146,30 @@
                             "ForeignAsset": "1"
                         },
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]"
+                    },
+                    {
+                        "asset": {
+                            "ForeignAsset": "2"
+                        },
+                        "name": "Acala Dollar",
+                        "symbol": "aUSD",
+                        "decimals": 12,
+                        "currencyID": {
+                            "ForeignAsset": "2"
+                        },
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0081\"}]"
+                    },
+                    {
+                        "asset": {
+                            "ForeignAsset": "3"
+                        },
+                        "name": "Kusama",
+                        "symbol": "KSM",
+                        "decimals": 12,
+                        "currencyID": {
+                            "ForeignAsset": "3"
+                        },
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},\"here\"]"
                     },
                     {
                         "asset": {
@@ -15777,8 +15801,37 @@
                 "relayChain": "kusama",
                 "paraID": 2088,
                 "id": "altair",
-                "xcAssetCnt": "2",
+                "xcAssetCnt": "4",
                 "data": [
+                    {
+                        "paraID": 0,
+                        "relayChain": "kusama",
+                        "nativeChainID": "kusama",
+                        "symbol": "KSM",
+                        "decimals": 12,
+                        "interiorType": "here",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            "here"
+                        ],
+                        "xcmV1MultiLocationByte": "0x0100",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "here": null
+                                }
+                            }
+                        },
+                        "asset": {
+                            "ForeignAsset": "3"
+                        },
+                        "source": [
+                            "2088"
+                        ]
+                    },
                     {
                         "paraID": 1000,
                         "relayChain": "kusama",
@@ -15821,6 +15874,47 @@
                         },
                         "asset": {
                             "ForeignAsset": "1"
+                        },
+                        "source": [
+                            "2088"
+                        ]
+                    },
+                    {
+                        "paraID": 2000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "karura",
+                        "symbol": "aUSD",
+                        "decimals": 12,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0x0081"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200411f06080081",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0x0081"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": {
+                            "ForeignAsset": "2"
                         },
                         "source": [
                             "2088"
@@ -17244,10 +17338,13 @@
                         "2023": "42259045809535163221576417993425387648",
                         "2084": "12",
                         "2085": "100",
+                        "2088": {
+                            "ForeignAsset": "3"
+                        },
                         "2090": "1",
                         "2114": "1"
                     },
-                    "confidence": 8,
+                    "confidence": 9,
                     "source": [
                         2001,
                         2004,
@@ -17255,6 +17352,7 @@
                         2023,
                         2084,
                         2085,
+                        2088,
                         2090,
                         2114
                     ]
@@ -17496,13 +17594,16 @@
                         "2012": "214920334981412447805621250067209749032",
                         "2023": "214920334981412447805621250067209749032",
                         "2084": "9",
+                        "2088": {
+                            "ForeignAsset": "2"
+                        },
                         "2090": "2",
                         "2092": {
                             "ForeignAsset": "1"
                         },
                         "2114": "2"
                     },
-                    "confidence": 9,
+                    "confidence": 10,
                     "source": [
                         2001,
                         2004,
@@ -17510,6 +17611,7 @@
                         2012,
                         2023,
                         2084,
+                        2088,
                         2090,
                         2092,
                         2114
@@ -21650,15 +21752,14 @@
                             }
                         }
                     },
-                    "asset": "1",
-                    "source": [
-                        2043
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2043": "1"
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2043
+                    ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]": {
                     "paraID": 2046,

@@ -13,6 +13,30 @@
     },
     {
         "asset": {
+            "ForeignAsset": "2"
+        },
+        "name": "Acala Dollar",
+        "symbol": "aUSD",
+        "decimals": 12,
+        "currencyID": {
+            "ForeignAsset": "2"
+        },
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0081\"}]"
+    },
+    {
+        "asset": {
+            "ForeignAsset": "3"
+        },
+        "name": "Kusama",
+        "symbol": "KSM",
+        "decimals": 12,
+        "currencyID": {
+            "ForeignAsset": "3"
+        },
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},\"here\"]"
+    },
+    {
+        "asset": {
             "Token": "AIR"
         },
         "name": "AIR",

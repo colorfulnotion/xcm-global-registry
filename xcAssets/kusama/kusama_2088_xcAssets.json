@@ -1,5 +1,34 @@
 [
     {
+        "paraID": 0,
+        "relayChain": "kusama",
+        "nativeChainID": "kusama",
+        "symbol": "KSM",
+        "decimals": 12,
+        "interiorType": "here",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            "here"
+        ],
+        "xcmV1MultiLocationByte": "0x0100",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "here": null
+                }
+            }
+        },
+        "asset": {
+            "ForeignAsset": "3"
+        },
+        "source": [
+            "2088"
+        ]
+    },
+    {
         "paraID": 1000,
         "relayChain": "kusama",
         "nativeChainID": "statemine",
@@ -41,6 +70,47 @@
         },
         "asset": {
             "ForeignAsset": "1"
+        },
+        "source": [
+            "2088"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
+        "symbol": "aUSD",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x0081"
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200411f06080081",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0081"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "ForeignAsset": "2"
         },
         "source": [
             "2088"
