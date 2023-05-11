@@ -4982,7 +4982,9 @@
                         "name": "PHA",
                         "symbol": "PHA",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2004}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2004}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -7127,7 +7129,9 @@
                         "name": "IMBU",
                         "symbol": "IMBU",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2121},{\"generalKey\":\"0x0096\"}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2121},{\"generalKey\":\"0x0096\"}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -19194,15 +19198,14 @@
                             }
                         }
                     },
-                    "asset": "5",
-                    "source": [
-                        2004
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2004": "5"
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2004
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2090},{\"generalIndex\":0}]": {
                     "paraID": 2090,
@@ -19430,15 +19433,14 @@
                             }
                         }
                     },
-                    "asset": "14",
-                    "source": [
-                        2004
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2004": "14"
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2004
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2096},{\"generalKey\":\"0x000000000000000000\"}]": {
                     "paraID": 2096,
@@ -21648,14 +21650,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "1",
+                    "source": [
+                        2043
+                    ],
                     "xcCurrencyID": {
                         "2043": "1"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2043
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]": {
                     "paraID": 2046,
