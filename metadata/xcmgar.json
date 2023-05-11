@@ -4982,9 +4982,7 @@
                         "name": "PHA",
                         "symbol": "PHA",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2004}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2004}]"
                     }
                 ]
             },
@@ -6526,7 +6524,7 @@
                 "relayChain": "kusama",
                 "paraID": 2110,
                 "id": "mangata",
-                "assetCnt": "34",
+                "assetCnt": "35",
                 "data": [
                     {
                         "asset": {
@@ -6781,6 +6779,15 @@
                         "symbol": "TKN0x00000000-TKN0x0000001F",
                         "decimals": 18,
                         "currencyID": "33"
+                    },
+                    {
+                        "asset": {
+                            "Token": "34"
+                        },
+                        "name": "LiquidityPoolToken0x00000022",
+                        "symbol": "TKN0x00000004-TKN0x0000001F",
+                        "decimals": 18,
+                        "currencyID": "34"
                     },
                     {
                         "asset": {
@@ -19187,14 +19194,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "5",
+                    "source": [
+                        2004
+                    ],
                     "xcCurrencyID": {
                         "2004": "5"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2004
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2090},{\"generalIndex\":0}]": {
                     "paraID": 2090,
@@ -19422,14 +19430,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "14",
+                    "source": [
+                        2004
+                    ],
                     "xcCurrencyID": {
                         "2004": "14"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2004
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2096},{\"generalKey\":\"0x000000000000000000\"}]": {
                     "paraID": 2096,
