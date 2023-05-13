@@ -6550,7 +6550,7 @@
                 "relayChain": "kusama",
                 "paraID": 2110,
                 "id": "mangata",
-                "assetCnt": "35",
+                "assetCnt": "36",
                 "data": [
                     {
                         "asset": {
@@ -6814,6 +6814,15 @@
                         "symbol": "TKN0x00000004-TKN0x0000001F",
                         "decimals": 18,
                         "currencyID": "34"
+                    },
+                    {
+                        "asset": {
+                            "Token": "35"
+                        },
+                        "name": "LiquidityPoolToken0x00000023",
+                        "symbol": "TKN0x0000000E-TKN0x0000001F",
+                        "decimals": 18,
+                        "currencyID": "35"
                     },
                     {
                         "asset": {
@@ -7153,9 +7162,7 @@
                         "name": "IMBU",
                         "symbol": "IMBU",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2121},{\"generalKey\":\"0x0096\"}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2121},{\"generalKey\":\"0x0096\"}]"
                     }
                 ]
             },
