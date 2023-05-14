@@ -273,6 +273,24 @@
     },
     {
         "asset": {
+            "Token": "36"
+        },
+        "name": "LiquidityPoolToken0x00000024",
+        "symbol": "TKN0x00000000-TKN0x0000001E",
+        "decimals": 18,
+        "currencyID": "36"
+    },
+    {
+        "asset": {
+            "Token": "37"
+        },
+        "name": "LiquidityPoolToken0x00000025",
+        "symbol": "TKN0x0000001F-TKN0x0000001E",
+        "decimals": 18,
+        "currencyID": "37"
+    },
+    {
+        "asset": {
             "Token": "4"
         },
         "name": "Kusama Native",

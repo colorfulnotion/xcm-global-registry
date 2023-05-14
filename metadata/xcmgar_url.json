@@ -322,7 +322,7 @@
                 "relayChain": "kusama",
                 "paraID": 2110,
                 "id": "mangata",
-                "assetCnt": "36",
+                "assetCnt": "38",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2110_assets.json"
             },
             {
