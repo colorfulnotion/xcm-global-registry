@@ -7180,9 +7180,7 @@
                         "name": "IMBU",
                         "symbol": "IMBU",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2121},{\"generalKey\":\"0x0096\"}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2121},{\"generalKey\":\"0x0096\"}]"
                     }
                 ]
             },
@@ -17740,14 +17738,9 @@
                             }
                         }
                     },
-                    "asset": "18446744073709551619",
-                    "source": [
-                        2007,
-                        2084,
-                        2085,
-                        2092,
-                        2114
-                    ],
+                    "xcContractAddress": {
+                        "2007": "0xffffffff00000000000000010000000000000003"
+                    },
                     "xcCurrencyID": {
                         "2007": "18446744073709551619",
                         "2084": "10",
@@ -17757,10 +17750,14 @@
                         },
                         "2114": "4"
                     },
-                    "xcContractAddress": {
-                        "2007": "0xffffffff00000000000000010000000000000003"
-                    },
-                    "confidence": 5
+                    "confidence": 5,
+                    "source": [
+                        2007,
+                        2084,
+                        2085,
+                        2092,
+                        2114
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27\"}]": {
                     "paraID": 2000,
@@ -18848,17 +18845,16 @@
                             }
                         }
                     },
-                    "asset": "18446744073709551626",
-                    "source": [
-                        2007
-                    ],
-                    "xcCurrencyID": {
-                        "2007": "18446744073709551626"
-                    },
                     "xcContractAddress": {
                         "2007": "0xffffffff0000000000000001000000000000000a"
                     },
-                    "confidence": 1
+                    "xcCurrencyID": {
+                        "2007": "18446744073709551626"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2007
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2023},{\"palletInstance\":10}]": {
                     "paraID": 2023,
