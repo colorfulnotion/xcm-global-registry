@@ -1691,15 +1691,19 @@
                 }
             }
         },
-        "xcContractAddress": {},
+        "xcContractAddress": {
+            "2006": "0xffffffff0000000000000001000000000000000f"
+        },
         "xcCurrencyID": {
             "2000": {
                 "ForeignAsset": "10"
-            }
+            },
+            "2006": "18446744073709551631"
         },
-        "confidence": 1,
+        "confidence": 2,
         "source": [
-            2000
+            2000,
+            2006
         ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2043},{\"generalIndex\":1}]": {

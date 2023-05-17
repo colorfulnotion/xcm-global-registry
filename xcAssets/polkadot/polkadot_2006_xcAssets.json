@@ -610,6 +610,38 @@
         ]
     },
     {
+        "paraID": 2037,
+        "relayChain": "polkadot",
+        "nativeChainID": "unique",
+        "symbol": "UNQ",
+        "decimals": 18,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2037
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010100d51f",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2037
+                    }
+                }
+            }
+        },
+        "asset": "18446744073709551631",
+        "contractAddress": "0xffffffff0000000000000001000000000000000f",
+        "source": [
+            "2006"
+        ]
+    },
+    {
         "paraID": 2046,
         "relayChain": "polkadot",
         "nativeChainID": "darwinia",

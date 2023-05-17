@@ -313,6 +313,16 @@
     },
     {
         "asset": {
+            "Token": "18446744073709551631"
+        },
+        "name": "Unique Network",
+        "symbol": "UNQ",
+        "decimals": 18,
+        "currencyID": "18446744073709551631",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2037}]"
+    },
+    {
+        "asset": {
             "Token": "340282366920938463463374607431768211455"
         },
         "name": "Polkadot",
