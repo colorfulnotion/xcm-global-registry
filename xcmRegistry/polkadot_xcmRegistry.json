@@ -1588,7 +1588,7 @@
                 "generalIndex": 0
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200c91f0500",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -1605,14 +1605,17 @@
             }
         },
         "xcContractAddress": {
+            "2004": "0xffffffff345dc44ddae98df024eb494321e73fcc",
             "2006": "0xffffffff0000000000000001000000000000000e"
         },
         "xcCurrencyID": {
+            "2004": "69606720909260275826784788104880799692",
             "2006": "18446744073709551630",
             "2035": "11"
         },
-        "confidence": 2,
+        "confidence": 3,
         "source": [
+            2004,
             2006,
             2035
         ]

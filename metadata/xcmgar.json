@@ -533,7 +533,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "assetCnt": "18",
+                "assetCnt": "19",
                 "data": [
                     {
                         "asset": {
@@ -704,6 +704,16 @@
                         "decimals": 10,
                         "currencyID": "42259045809535163221576417993425387648",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},\"here\"]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "69606720909260275826784788104880799692"
+                        },
+                        "name": "HydraDX",
+                        "symbol": "xcHDX",
+                        "decimals": 12,
+                        "currencyID": "69606720909260275826784788104880799692",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2034},{\"generalIndex\":0}]"
                     },
                     {
                         "asset": {
@@ -7782,7 +7792,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "xcAssetCnt": "13",
+                "xcAssetCnt": "14",
                 "data": [
                     {
                         "paraID": 0,
@@ -8198,6 +8208,46 @@
                         },
                         "asset": "101170542313601871197860408087030232491",
                         "contractAddress": "0xffffffff4c1cbcd97597339702436d4f18a375ab",
+                        "source": [
+                            "2004"
+                        ]
+                    },
+                    {
+                        "paraID": 2034,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "hydra",
+                        "symbol": "HDX",
+                        "decimals": 12,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2034
+                            },
+                            {
+                                "generalIndex": 0
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": false,
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2034
+                                        },
+                                        {
+                                            "generalIndex": 0
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "69606720909260275826784788104880799692",
+                        "contractAddress": "0xffffffff345dc44ddae98df024eb494321e73fcc",
                         "source": [
                             "2004"
                         ]
@@ -21685,7 +21735,7 @@
                             "generalIndex": 0
                         }
                     ],
-                    "xcmV1MultiLocationByte": "0x010200c91f0500",
+                    "xcmV1MultiLocationByte": false,
                     "xcmV1MultiLocation": {
                         "v1": {
                             "parents": 1,
@@ -21702,14 +21752,17 @@
                         }
                     },
                     "xcContractAddress": {
+                        "2004": "0xffffffff345dc44ddae98df024eb494321e73fcc",
                         "2006": "0xffffffff0000000000000001000000000000000e"
                     },
                     "xcCurrencyID": {
+                        "2004": "69606720909260275826784788104880799692",
                         "2006": "18446744073709551630",
                         "2035": "11"
                     },
-                    "confidence": 2,
+                    "confidence": 3,
                     "source": [
+                        2004,
                         2006,
                         2035
                     ]

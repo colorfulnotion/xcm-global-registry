@@ -171,6 +171,16 @@
     },
     {
         "asset": {
+            "Token": "69606720909260275826784788104880799692"
+        },
+        "name": "HydraDX",
+        "symbol": "xcHDX",
+        "decimals": 12,
+        "currencyID": "69606720909260275826784788104880799692",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2034},{\"generalIndex\":0}]"
+    },
+    {
+        "asset": {
             "Token": "GLMR"
         },
         "name": "GLMR",
