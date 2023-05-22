@@ -161,6 +161,16 @@
     },
     {
         "asset": {
+            "Token": "18446744073709551633"
+        },
+        "name": "Quartz",
+        "symbol": "QTZ",
+        "decimals": 18,
+        "currencyID": "18446744073709551633",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2095}]"
+    },
+    {
+        "asset": {
             "Token": "311"
         },
         "name": "Sygma",

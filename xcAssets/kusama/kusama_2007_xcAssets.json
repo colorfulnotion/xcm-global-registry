@@ -602,6 +602,38 @@
         ]
     },
     {
+        "paraID": 2095,
+        "relayChain": "kusama",
+        "nativeChainID": "quartz",
+        "symbol": "QTZ",
+        "decimals": 18,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2095
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2095
+                    }
+                }
+            }
+        },
+        "asset": "18446744073709551633",
+        "contractAddress": "0xffffffff00000000000000010000000000000011",
+        "source": [
+            "2007"
+        ]
+    },
+    {
         "paraID": 2096,
         "relayChain": "kusama",
         "nativeChainID": "bitcountryPioneer",

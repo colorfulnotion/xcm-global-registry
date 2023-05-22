@@ -2186,15 +2186,19 @@
                 }
             }
         },
-        "xcContractAddress": {},
+        "xcContractAddress": {
+            "2007": "0xffffffff00000000000000010000000000000011"
+        },
         "xcCurrencyID": {
             "2000": {
                 "ForeignAsset": "2"
-            }
+            },
+            "2007": "18446744073709551633"
         },
-        "confidence": 1,
+        "confidence": 2,
         "source": [
-            2000
+            2000,
+            2007
         ]
     },
     "[{\"network\":\"kusama\"},{\"parachain\":2096},{\"generalKey\":\"0x020000000000000000\"}]": {
