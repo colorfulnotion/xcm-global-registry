@@ -2504,7 +2504,7 @@
                 "relayChain": "kusama",
                 "paraID": 1000,
                 "id": "statemine",
-                "assetCnt": "150",
+                "assetCnt": "152",
                 "data": [
                     {
                         "asset": {
@@ -3703,6 +3703,15 @@
                     },
                     {
                         "asset": {
+                            "Token": "813"
+                        },
+                        "name": "Teddy Bucks",
+                        "symbol": "TBUX",
+                        "decimals": 0,
+                        "currencyID": "813"
+                    },
+                    {
+                        "asset": {
                             "Token": "841"
                         },
                         "name": "YAYOI",
@@ -3826,6 +3835,15 @@
                         "symbol": "LUL",
                         "decimals": 12,
                         "currencyID": "95834"
+                    },
+                    {
+                        "asset": {
+                            "Token": "969"
+                        },
+                        "name": "WagTool",
+                        "symbol": "WGTL",
+                        "decimals": 2,
+                        "currencyID": "969"
                     },
                     {
                         "asset": {
