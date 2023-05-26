@@ -739,7 +739,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2006,
                 "id": "astar",
-                "assetCnt": "39",
+                "assetCnt": "40",
                 "data": [
                     {
                         "asset": {
@@ -1100,6 +1100,15 @@
                         "symbol": "VSC",
                         "decimals": 9,
                         "currencyID": "868367"
+                    },
+                    {
+                        "asset": {
+                            "Token": "9999"
+                        },
+                        "name": "Mario",
+                        "symbol": "MAR",
+                        "decimals": 18,
+                        "currencyID": "9999"
                     },
                     {
                         "asset": {

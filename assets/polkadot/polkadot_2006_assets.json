@@ -361,6 +361,15 @@
     },
     {
         "asset": {
+            "Token": "9999"
+        },
+        "name": "Mario",
+        "symbol": "MAR",
+        "decimals": 18,
+        "currencyID": "9999"
+    },
+    {
+        "asset": {
             "Token": "ASTR"
         },
         "name": "ASTR",
