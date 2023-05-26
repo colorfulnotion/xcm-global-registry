@@ -66,7 +66,7 @@
                 "generalIndex": 1984
             }
         ],
-        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocationByte": "0x010300a10f043205011f",
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -90,6 +90,9 @@
             "2006": "0xffffffff000000000000000000000001000007c0"
         },
         "xcCurrencyID": {
+            "2000": {
+                "ForeignAsset": "12"
+            },
             "2004": "311091173110107856861649819128533077277",
             "2006": "4294969280",
             "2012": "102",
@@ -104,8 +107,9 @@
             },
             "2034": "10"
         },
-        "confidence": 7,
+        "confidence": 8,
         "source": [
+            2000,
             2004,
             2006,
             2012,

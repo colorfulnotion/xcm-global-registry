@@ -82,6 +82,15 @@
     },
     {
         "asset": {
+            "ForeignAsset": "12"
+        },
+        "name": "Tether USD",
+        "symbol": "USDT",
+        "decimals": 6,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]"
+    },
+    {
+        "asset": {
             "ForeignAsset": "2"
         },
         "name": "Astar Native Token",
