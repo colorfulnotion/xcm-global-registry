@@ -19,6 +19,15 @@
     },
     {
         "asset": {
+            "Token": "1323"
+        },
+        "name": "Algem",
+        "symbol": "ALGM",
+        "decimals": 18,
+        "currencyID": "1323"
+    },
+    {
+        "asset": {
             "Token": "1324"
         },
         "name": "love",
