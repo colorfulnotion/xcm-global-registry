@@ -189,7 +189,7 @@
                 "relayChain": "kusama",
                 "paraID": 2004,
                 "id": "khala",
-                "assetCnt": "17",
+                "assetCnt": "18",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2004_assets.json"
             },
             {
@@ -475,7 +475,7 @@
                 "relayChain": "kusama",
                 "paraID": 2004,
                 "id": "khala",
-                "xcAssetCnt": "15",
+                "xcAssetCnt": "16",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/kusama/kusama_2004_xcAssets.json"
             },
             {
@@ -553,7 +553,7 @@
     "xcmRegistry": [
         {
             "relayChain": "kusama",
-            "registryCnt": "56",
+            "registryCnt": "57",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/kusama_xcmRegistry.json"
         },
         {

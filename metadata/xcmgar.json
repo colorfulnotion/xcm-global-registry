@@ -4882,7 +4882,7 @@
                 "relayChain": "kusama",
                 "paraID": 2004,
                 "id": "khala",
-                "assetCnt": "17",
+                "assetCnt": "18",
                 "data": [
                     {
                         "asset": {
@@ -4962,6 +4962,16 @@
                         "decimals": 18,
                         "currencyID": "14",
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2096},{\"generalKey\":\"0x020000000000000000\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "15"
+                        },
+                        "name": "Picasso",
+                        "symbol": "PICA",
+                        "decimals": 12,
+                        "currencyID": "15",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2087}]"
                     },
                     {
                         "asset": {
@@ -6203,7 +6213,10 @@
                         },
                         "name": "PICA",
                         "symbol": "PICA",
-                        "decimals": 12
+                        "decimals": 12,
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2087}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -12749,7 +12762,7 @@
                 "relayChain": "kusama",
                 "paraID": 2004,
                 "id": "khala",
-                "xcAssetCnt": "15",
+                "xcAssetCnt": "16",
                 "data": [
                     {
                         "paraID": 0,
@@ -13070,6 +13083,37 @@
                             }
                         },
                         "asset": "7",
+                        "source": [
+                            "2004"
+                        ]
+                    },
+                    {
+                        "paraID": 2087,
+                        "relayChain": "kusama",
+                        "nativeChainID": "picasso",
+                        "symbol": "PICA",
+                        "decimals": 12,
+                        "interiorType": "x1",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2087
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": false,
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x1": {
+                                        "parachain": 2087
+                                    }
+                                }
+                            }
+                        },
+                        "asset": "15",
                         "source": [
                             "2004"
                         ]
@@ -17566,7 +17610,7 @@
     "xcmRegistry": [
         {
             "relayChain": "kusama",
-            "registryCnt": "56",
+            "registryCnt": "57",
             "data": {
                 "[{\"network\":\"kusama\"},\"here\"]": {
                     "paraID": 0,
@@ -19482,6 +19526,41 @@
                     "source": [
                         2085,
                         2092
+                    ]
+                },
+                "[{\"network\":\"kusama\"},{\"parachain\":2087}]": {
+                    "paraID": 2087,
+                    "relayChain": "kusama",
+                    "nativeChainID": "picasso",
+                    "symbol": "PICA",
+                    "decimals": 12,
+                    "interiorType": "x1",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "kusama"
+                        },
+                        {
+                            "parachain": 2087
+                        }
+                    ],
+                    "xcmV1MultiLocationByte": false,
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x1": {
+                                    "parachain": 2087
+                                }
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2004": "15"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2004
                     ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2088},{\"generalKey\":\"0x0001\"}]": {

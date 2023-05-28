@@ -80,6 +80,16 @@
     },
     {
         "asset": {
+            "Token": "15"
+        },
+        "name": "Picasso",
+        "symbol": "PICA",
+        "decimals": 12,
+        "currencyID": "15",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2087}]"
+    },
+    {
+        "asset": {
             "Token": "2"
         },
         "name": "Bifrost",

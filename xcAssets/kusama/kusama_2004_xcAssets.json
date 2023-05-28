@@ -323,6 +323,37 @@
         ]
     },
     {
+        "paraID": 2087,
+        "relayChain": "kusama",
+        "nativeChainID": "picasso",
+        "symbol": "PICA",
+        "decimals": 12,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2087
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2087
+                    }
+                }
+            }
+        },
+        "asset": "15",
+        "source": [
+            "2004"
+        ]
+    },
+    {
         "paraID": 2090,
         "relayChain": "kusama",
         "nativeChainID": "basilisk",

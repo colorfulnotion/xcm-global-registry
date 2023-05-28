@@ -1915,6 +1915,41 @@
             2092
         ]
     },
+    "[{\"network\":\"kusama\"},{\"parachain\":2087}]": {
+        "paraID": 2087,
+        "relayChain": "kusama",
+        "nativeChainID": "picasso",
+        "symbol": "PICA",
+        "decimals": 12,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2087
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2087
+                    }
+                }
+            }
+        },
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2004": "15"
+        },
+        "confidence": 1,
+        "source": [
+            2004
+        ]
+    },
     "[{\"network\":\"kusama\"},{\"parachain\":2088},{\"generalKey\":\"0x0001\"}]": {
         "paraID": 2088,
         "relayChain": "kusama",
