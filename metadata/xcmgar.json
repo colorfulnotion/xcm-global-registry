@@ -1576,7 +1576,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "assetCnt": "41",
+                "assetCnt": "43",
                 "data": [
                     {
                         "asset": {
@@ -1874,10 +1874,26 @@
                     },
                     {
                         "asset": {
+                            "VSBond2": "033381320"
+                        },
+                        "name": "vsBOND-DOT-3338-13-20",
+                        "symbol": "vsBOND-DOT-3338-13-20",
+                        "decimals": 10
+                    },
+                    {
+                        "asset": {
                             "VSBond2": "033401219"
                         },
                         "name": "vsBOND-DOT-3340-12-19",
                         "symbol": "vsBOND-DOT-3340-12-19",
+                        "decimals": 10
+                    },
+                    {
+                        "asset": {
+                            "VSBond2": "033401320"
+                        },
+                        "name": "vsBOND-DOT-3340-13-20",
+                        "symbol": "vsBOND-DOT-3340-13-20",
                         "decimals": 10
                     },
                     {
@@ -6223,7 +6239,9 @@
                         "name": "PICA",
                         "symbol": "PICA",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2087}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2087}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -6658,9 +6676,7 @@
                         "symbol": "MGX",
                         "decimals": 18,
                         "currencyID": "0",
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2110},{\"generalKey\":\"0x00000000\"}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2110},{\"generalKey\":\"0x00000000\"}]"
                     },
                     {
                         "asset": {
@@ -7011,9 +7027,7 @@
                         "name": "MGX",
                         "symbol": "MGX",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2110},{\"generalKey\":\"0x00000000\"}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2110},{\"generalKey\":\"0x00000000\"}]"
                     }
                 ]
             },
@@ -7287,7 +7301,9 @@
                         "name": "IMBU",
                         "symbol": "IMBU",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2121},{\"generalKey\":\"0x0096\"}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2121},{\"generalKey\":\"0x0096\"}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -18905,14 +18921,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "23",
+                    "source": [
+                        2110
+                    ],
                     "xcCurrencyID": {
                         "2110": "23"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2110
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2004}]": {
                     "paraID": 2004,
@@ -20310,14 +20327,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "11",
+                    "source": [
+                        2110
+                    ],
                     "xcCurrencyID": {
                         "2110": "11"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2110
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2125},{\"generalIndex\":0}]": {
                     "paraID": 2125,

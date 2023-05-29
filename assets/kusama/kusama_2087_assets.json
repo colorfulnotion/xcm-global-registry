@@ -6,6 +6,8 @@
         "name": "PICA",
         "symbol": "PICA",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2087}]"
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2087}]",
+        "inferred": true,
+        "confidence": 0
     }
 ]
