@@ -82,6 +82,16 @@
     },
     {
         "asset": {
+            "Token": "16"
+        },
+        "name": "GLMR",
+        "symbol": "GLMR",
+        "decimals": 18,
+        "currencyID": "16",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":10}]"
+    },
+    {
+        "asset": {
             "Token": "2"
         },
         "name": "DAI",

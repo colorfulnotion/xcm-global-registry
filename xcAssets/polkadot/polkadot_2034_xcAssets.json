@@ -267,6 +267,45 @@
         ]
     },
     {
+        "paraID": 2004,
+        "relayChain": "polkadot",
+        "nativeChainID": "moonbeam",
+        "symbol": "GLMR",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2004
+            },
+            {
+                "palletInstance": 10
+            }
+        ],
+        "xcmV1MultiLocationByte": "0x010200511f040a",
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2004
+                        },
+                        {
+                            "palletInstance": 10
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "16",
+        "source": [
+            "2034"
+        ]
+    },
+    {
         "paraID": 2006,
         "relayChain": "polkadot",
         "nativeChainID": "astar",

@@ -2102,7 +2102,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "17",
+                "assetCnt": "18",
                 "data": [
                     {
                         "asset": {
@@ -2184,6 +2184,16 @@
                         "decimals": 10,
                         "currencyID": "15",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0900\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "16"
+                        },
+                        "name": "GLMR",
+                        "symbol": "GLMR",
+                        "decimals": 18,
+                        "currencyID": "16",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":10}]"
                     },
                     {
                         "asset": {
@@ -10306,7 +10316,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "14",
+                "xcAssetCnt": "15",
                 "data": [
                     {
                         "paraID": 0,
@@ -10571,6 +10581,45 @@
                             }
                         },
                         "asset": "6",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 2004,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "moonbeam",
+                        "symbol": "GLMR",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2004
+                            },
+                            {
+                                "palletInstance": 10
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010200511f040a",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2004
+                                        },
+                                        {
+                                            "palletInstance": 10
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "16",
                         "source": [
                             "2034"
                         ]
@@ -21111,15 +21160,17 @@
                         "2031": {
                             "ForeignAsset": "4"
                         },
+                        "2034": "16",
                         "2035": "1"
                     },
-                    "confidence": 6,
+                    "confidence": 7,
                     "source": [
                         2000,
                         2006,
                         2012,
                         2030,
                         2031,
+                        2034,
                         2035
                     ]
                 },
