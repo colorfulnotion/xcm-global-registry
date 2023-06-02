@@ -61,6 +61,16 @@
     },
     {
         "asset": {
+            "Token": "166446646689194205559791995948102903873"
+        },
+        "name": "Manta",
+        "symbol": "xcMANTA",
+        "decimals": 18,
+        "currencyID": "166446646689194205559791995948102903873",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2104}]"
+    },
+    {
+        "asset": {
             "Token": "187224307232923873519830480073807488153"
         },
         "name": "Equilibrium Dollar",

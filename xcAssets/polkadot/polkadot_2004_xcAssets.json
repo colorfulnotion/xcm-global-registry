@@ -528,5 +528,37 @@
         "source": [
             "2004"
         ]
+    },
+    {
+        "paraID": 2104,
+        "relayChain": "polkadot",
+        "nativeChainID": null,
+        "symbol": "MANTA",
+        "decimals": 18,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2104
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2104
+                    }
+                }
+            }
+        },
+        "asset": "166446646689194205559791995948102903873",
+        "contractAddress": "0xffffffff7d3875460d4509eb8d0362c611b4e841",
+        "source": [
+            "2004"
+        ]
     }
 ]

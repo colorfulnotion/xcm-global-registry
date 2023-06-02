@@ -542,7 +542,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "assetCnt": "19",
+                "assetCnt": "20",
                 "data": [
                     {
                         "asset": {
@@ -603,6 +603,16 @@
                         "decimals": 12,
                         "currencyID": "165823357460190568952172802245839421906",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "166446646689194205559791995948102903873"
+                        },
+                        "name": "Manta",
+                        "symbol": "xcMANTA",
+                        "decimals": 18,
+                        "currencyID": "166446646689194205559791995948102903873",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2104}]"
                     },
                     {
                         "asset": {
@@ -7320,9 +7330,7 @@
                         "name": "IMBU",
                         "symbol": "IMBU",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2121},{\"generalKey\":\"0x0096\"}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2121},{\"generalKey\":\"0x0096\"}]"
                     }
                 ]
             },
@@ -7947,7 +7955,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "xcAssetCnt": "14",
+                "xcAssetCnt": "15",
                 "data": [
                     {
                         "paraID": 0,
@@ -8475,6 +8483,38 @@
                         },
                         "asset": "125699734534028342599692732320197985871",
                         "contractAddress": "0xffffffff5e90e365edca87fb4c8306df1e91464f",
+                        "source": [
+                            "2004"
+                        ]
+                    },
+                    {
+                        "paraID": 2104,
+                        "relayChain": "polkadot",
+                        "nativeChainID": null,
+                        "symbol": "MANTA",
+                        "decimals": 18,
+                        "interiorType": "x1",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2104
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": false,
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x1": {
+                                        "parachain": 2104
+                                    }
+                                }
+                            }
+                        },
+                        "asset": "166446646689194205559791995948102903873",
+                        "contractAddress": "0xffffffff7d3875460d4509eb8d0362c611b4e841",
                         "source": [
                             "2004"
                         ]
@@ -20442,7 +20482,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "38",
+            "registryCnt": "39",
             "data": {
                 "[{\"network\":\"polkadot\"},\"here\"]": {
                     "paraID": 0,
@@ -22294,6 +22334,43 @@
                     "confidence": 1,
                     "source": [
                         2034
+                    ]
+                },
+                "[{\"network\":\"polkadot\"},{\"parachain\":2104}]": {
+                    "paraID": 2104,
+                    "relayChain": "polkadot",
+                    "nativeChainID": null,
+                    "symbol": "MANTA",
+                    "decimals": 18,
+                    "interiorType": "x1",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 2104
+                        }
+                    ],
+                    "xcmV1MultiLocationByte": false,
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x1": {
+                                    "parachain": 2104
+                                }
+                            }
+                        }
+                    },
+                    "xcContractAddress": {
+                        "2004": "0xffffffff7d3875460d4509eb8d0362c611b4e841"
+                    },
+                    "xcCurrencyID": {
+                        "2004": "166446646689194205559791995948102903873"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2004
                     ]
                 }
             }
