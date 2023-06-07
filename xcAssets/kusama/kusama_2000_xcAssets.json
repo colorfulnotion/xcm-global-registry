@@ -3,53 +3,6 @@
         "paraID": 1000,
         "relayChain": "kusama",
         "nativeChainID": "statemine",
-        "symbol": "USDT",
-        "decimals": 6,
-        "interiorType": "x3",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 1000
-            },
-            {
-                "palletInstance": 50
-            },
-            {
-                "generalIndex": 1984
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010300a10f043205011f",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x3": [
-                        {
-                            "parachain": 1000
-                        },
-                        {
-                            "palletInstance": 50
-                        },
-                        {
-                            "generalIndex": 1984
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": {
-            "ForeignAsset": "7"
-        },
-        "source": [
-            "2000"
-        ]
-    },
-    {
-        "paraID": 1000,
-        "relayChain": "kusama",
-        "nativeChainID": "statemine",
         "symbol": "RMRK",
         "decimals": 10,
         "interiorType": "x3",
@@ -67,7 +20,7 @@
                 "generalIndex": 8
             }
         ],
-        "xcmV1MultiLocationByte": "0x010300a10f04320520",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -97,6 +50,53 @@
         "paraID": 1000,
         "relayChain": "kusama",
         "nativeChainID": "statemine",
+        "symbol": "USDT",
+        "decimals": 6,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 50
+            },
+            {
+                "generalIndex": 1984
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 1984
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "ForeignAsset": "7"
+        },
+        "source": [
+            "2000"
+        ]
+    },
+    {
+        "paraID": 1000,
+        "relayChain": "kusama",
+        "nativeChainID": "statemine",
         "symbol": "ARIS",
         "decimals": 8,
         "interiorType": "x3",
@@ -114,7 +114,7 @@
                 "generalIndex": 16
             }
         ],
-        "xcmV1MultiLocationByte": "0x010300a10f04320540",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -155,7 +155,7 @@
                 "parachain": 2007
             }
         ],
-        "xcmV1MultiLocationByte": "0x0101005d1f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -188,7 +188,7 @@
                 "parachain": 2012
             }
         ],
-        "xcmV1MultiLocationByte": "0x010100711f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -224,7 +224,7 @@
                 "generalKey": "0x54454552"
             }
         ],
-        "xcmV1MultiLocationByte": "0x0102007d1f061054454552",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -265,7 +265,7 @@
                 "palletInstance": 10
             }
         ],
-        "xcmV1MultiLocationByte": "0x0102009d1f040a",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -303,7 +303,7 @@
                 "parachain": 2024
             }
         ],
-        "xcmV1MultiLocationByte": "0x010100a11f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -339,7 +339,7 @@
                 "generalKey": "0x657164"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200a11f060c657164",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -377,7 +377,7 @@
                 "parachain": 2084
             }
         ],
-        "xcmV1MultiLocationByte": "0x0101009120",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -413,7 +413,7 @@
                 "generalKey": "0x484b4f"
             }
         ],
-        "xcmV1MultiLocationByte": "0x0102009520060c484b4f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -454,7 +454,7 @@
                 "generalKey": "0x0001"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200a12006080001",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -495,7 +495,7 @@
                 "generalIndex": 0
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200a9200500",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -533,7 +533,7 @@
                 "parachain": 2095
             }
         ],
-        "xcmV1MultiLocationByte": "0x010100bd20",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -569,7 +569,7 @@
                 "generalKey": "0x000000000000000000"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200c1200624000000000000000000",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -610,7 +610,7 @@
                 "generalKey": "0x50434855"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200d920061050434855",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -651,7 +651,7 @@
                 "palletInstance": 5
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200e5200405",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -692,7 +692,7 @@
                 "palletInstance": 10
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200e920040a",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -733,7 +733,7 @@
                 "generalKey": "0x4b49434f"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200ed2006104b49434f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -771,7 +771,7 @@
                 "parachain": 2114
             }
         ],
-        "xcmV1MultiLocationByte": "0x0101000921",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -807,7 +807,7 @@
                 "generalKey": "0x4c54"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200192106084c54",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
