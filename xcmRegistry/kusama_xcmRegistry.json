@@ -1838,7 +1838,7 @@
                 "generalKey": "0x734b534d"
             }
         ],
-        "xcmV1MultiLocationByte": "0x01020095200610734b534d",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,

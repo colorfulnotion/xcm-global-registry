@@ -12,7 +12,7 @@
             },
             "here"
         ],
-        "xcmV1MultiLocationByte": "0x0100",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -22,75 +22,6 @@
             }
         },
         "asset": "1",
-        "source": [
-            "2114"
-        ]
-    },
-    {
-        "relayChain": "kusama",
-        "nativeChainID": null,
-        "symbol": "TUR",
-        "decimals": 10,
-        "interiorType": "x1",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2114
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x0101000921",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x1": {
-                        "parachain": 2114
-                    }
-                }
-            }
-        },
-        "asset": "0",
-        "source": [
-            "2114"
-        ]
-    },
-    {
-        "paraID": 2000,
-        "relayChain": "kusama",
-        "nativeChainID": "karura",
-        "symbol": "KAR",
-        "decimals": 12,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2000
-            },
-            {
-                "generalKey": "0x0080"
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010200411f06080080",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 2000
-                        },
-                        {
-                            "generalKey": "0x0080"
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": "3",
         "source": [
             "2114"
         ]
@@ -113,7 +44,7 @@
                 "generalKey": "0x0081"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200411f06080081",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -138,6 +69,45 @@
         "paraID": 2000,
         "relayChain": "kusama",
         "nativeChainID": "karura",
+        "symbol": "KAR",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x0080"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0080"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "3",
+        "source": [
+            "2114"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
         "symbol": "LKSM",
         "decimals": 12,
         "interiorType": "x2",
@@ -152,7 +122,7 @@
                 "generalKey": "0x0083"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200411f06080083",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -188,7 +158,7 @@
                 "parachain": 2004
             }
         ],
-        "xcmV1MultiLocationByte": "0x010100511f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -219,7 +189,7 @@
                 "parachain": 2007
             }
         ],
-        "xcmV1MultiLocationByte": "0x0101005d1f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -253,7 +223,7 @@
                 "generalKey": "0x484b4f"
             }
         ],
-        "xcmV1MultiLocationByte": "0x0102009520060c484b4f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -270,6 +240,36 @@
             }
         },
         "asset": "5",
+        "source": [
+            "2114"
+        ]
+    },
+    {
+        "relayChain": "kusama",
+        "nativeChainID": null,
+        "symbol": "TUR",
+        "decimals": 10,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2114
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2114
+                    }
+                }
+            }
+        },
+        "asset": "0",
         "source": [
             "2114"
         ]
@@ -292,7 +292,7 @@
                 "generalKey": "0x734b534d"
             }
         ],
-        "xcmV1MultiLocationByte": "0x01020095200610734b534d",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
