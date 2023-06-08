@@ -2560,15 +2560,19 @@
                 }
             }
         },
-        "xcContractAddress": {},
+        "xcContractAddress": {
+            "2023": "0xffffffff58d867eea1ce5126a4769542116324e9"
+        },
         "xcCurrencyID": {
             "2001": {
                 "Token2": "4"
-            }
+            },
+            "2023": "118095707745084482624853002839493125353"
         },
-        "confidence": 1,
+        "confidence": 2,
         "source": [
-            2001
+            2001,
+            2023
         ]
     },
     "[{\"network\":\"kusama\"},{\"parachain\":2114}]": {

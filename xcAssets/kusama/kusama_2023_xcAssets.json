@@ -638,5 +638,45 @@
         "source": [
             "2023"
         ]
+    },
+    {
+        "paraID": 2110,
+        "relayChain": "kusama",
+        "nativeChainID": "mangata",
+        "symbol": "MGX",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2110
+            },
+            {
+                "generalKey": "0x00000000"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2110
+                        },
+                        {
+                            "generalKey": "0x00000000"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "118095707745084482624853002839493125353",
+        "contractAddress": "0xffffffff58d867eea1ce5126a4769542116324e9",
+        "source": [
+            "2023"
+        ]
     }
 ]

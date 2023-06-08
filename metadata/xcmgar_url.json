@@ -217,7 +217,7 @@
                 "relayChain": "kusama",
                 "paraID": 2023,
                 "id": "moonriver",
-                "assetCnt": "18",
+                "assetCnt": "19",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2023_assets.json"
             },
             {
@@ -496,7 +496,7 @@
                 "relayChain": "kusama",
                 "paraID": 2023,
                 "id": "moonriver",
-                "xcAssetCnt": "17",
+                "xcAssetCnt": "18",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/kusama/kusama_2023_xcAssets.json"
             },
             {

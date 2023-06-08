@@ -5484,7 +5484,7 @@
                 "relayChain": "kusama",
                 "paraID": 2023,
                 "id": "moonriver",
-                "assetCnt": "18",
+                "assetCnt": "19",
                 "data": [
                     {
                         "asset": {
@@ -5525,6 +5525,16 @@
                         "decimals": 12,
                         "currencyID": "108457044225666871745333730479173774551",
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2012}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "118095707745084482624853002839493125353"
+                        },
+                        "name": "Mangata X Native Token",
+                        "symbol": "xcMGX",
+                        "decimals": 18,
+                        "currencyID": "118095707745084482624853002839493125353",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2110},{\"generalKey\":\"0x00000000\"}]"
                     },
                     {
                         "asset": {
@@ -7330,7 +7340,9 @@
                         "name": "IMBU",
                         "symbol": "IMBU",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2121},{\"generalKey\":\"0x0096\"}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2121},{\"generalKey\":\"0x0096\"}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -14456,7 +14468,7 @@
                 "relayChain": "kusama",
                 "paraID": 2023,
                 "id": "moonriver",
-                "xcAssetCnt": "17",
+                "xcAssetCnt": "18",
                 "data": [
                     {
                         "paraID": 0,
@@ -15094,6 +15106,46 @@
                         },
                         "asset": "65216491554813189869575508812319036608",
                         "contractAddress": "0xffffffff31103d490325bb0a8e40ef62e2f614c0",
+                        "source": [
+                            "2023"
+                        ]
+                    },
+                    {
+                        "paraID": 2110,
+                        "relayChain": "kusama",
+                        "nativeChainID": "mangata",
+                        "symbol": "MGX",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2110
+                            },
+                            {
+                                "generalKey": "0x00000000"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": false,
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2110
+                                        },
+                                        {
+                                            "generalKey": "0x00000000"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "118095707745084482624853002839493125353",
+                        "contractAddress": "0xffffffff58d867eea1ce5126a4769542116324e9",
                         "source": [
                             "2023"
                         ]
@@ -20292,15 +20344,19 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "xcContractAddress": {
+                        "2023": "0xffffffff58d867eea1ce5126a4769542116324e9"
+                    },
                     "xcCurrencyID": {
                         "2001": {
                             "Token2": "4"
-                        }
+                        },
+                        "2023": "118095707745084482624853002839493125353"
                     },
-                    "confidence": 1,
+                    "confidence": 2,
                     "source": [
-                        2001
+                        2001,
+                        2023
                     ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2114}]": {

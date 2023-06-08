@@ -41,6 +41,16 @@
     },
     {
         "asset": {
+            "Token": "118095707745084482624853002839493125353"
+        },
+        "name": "Mangata X Native Token",
+        "symbol": "xcMGX",
+        "decimals": 18,
+        "currencyID": "118095707745084482624853002839493125353",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2110},{\"generalKey\":\"0x00000000\"}]"
+    },
+    {
+        "asset": {
             "Token": "16797826370226091782818345603793389938"
         },
         "name": "Shiden",
