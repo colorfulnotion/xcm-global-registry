@@ -1480,6 +1480,43 @@
             1000
         ]
     },
+    "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2100}]": {
+        "paraID": 2100,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "SUB",
+        "decimals": 10,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2100
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2100
+                    }
+                }
+            }
+        },
+        "xcContractAddress": {
+            "1000": "0xffffffff9a570ffbfeca81a6c6f89c6a223667b8"
+        },
+        "xcCurrencyID": {
+            "1000": "205153165378836428058230526014907639736"
+        },
+        "confidence": 1,
+        "source": [
+            1000
+        ]
+    },
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2101},{\"generalKey\":\"0x0001\"}]": {
         "paraID": 2101,
         "relayChain": "moonbase",
