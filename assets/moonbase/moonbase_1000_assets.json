@@ -71,6 +71,16 @@
     },
     {
         "asset": {
+            "Token": "12009972993464827654650227422635011273"
+        },
+        "name": "Interlay",
+        "symbol": "xcINTR",
+        "decimals": 10,
+        "currencyID": "12009972993464827654650227422635011273",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2032},{\"generalKey\":\"0x0002\"}]"
+    },
+    {
+        "asset": {
             "Token": "122531866982275221270783173426160033062"
         },
         "name": "Kintsugi Wrapped BTC",
