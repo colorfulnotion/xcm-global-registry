@@ -92,6 +92,16 @@
     },
     {
         "asset": {
+            "Token": "17"
+        },
+        "name": "INTR",
+        "symbol": "INTR",
+        "decimals": 10,
+        "currencyID": "17",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0002\"}]"
+    },
+    {
+        "asset": {
             "Token": "2"
         },
         "name": "DAI",
