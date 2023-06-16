@@ -9900,7 +9900,7 @@
                                 "generalIndex": 1984
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010300a10f043205011f",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -9944,7 +9944,7 @@
                                 "palletInstance": 10
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010200511f040a",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -9982,7 +9982,7 @@
                                 "parachain": 2006
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010100591f",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -9995,47 +9995,6 @@
                         },
                         "asset": {
                             "Token2": "3"
-                        },
-                        "source": [
-                            "2030"
-                        ]
-                    },
-                    {
-                        "paraID": 2030,
-                        "relayChain": "polkadot",
-                        "nativeChainID": "bifrost",
-                        "symbol": "vsDOT",
-                        "decimals": 10,
-                        "interiorType": "x2",
-                        "xcmV1Standardized": [
-                            {
-                                "network": "polkadot"
-                            },
-                            {
-                                "parachain": 2030
-                            },
-                            {
-                                "generalKey": "0x0403"
-                            }
-                        ],
-                        "xcmV1MultiLocationByte": "0x010200b91f06080403",
-                        "xcmV1MultiLocation": {
-                            "v1": {
-                                "parents": 1,
-                                "interior": {
-                                    "x2": [
-                                        {
-                                            "parachain": 2030
-                                        },
-                                        {
-                                            "generalKey": "0x0403"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        "asset": {
-                            "VSToken2": "0"
                         },
                         "source": [
                             "2030"
@@ -10059,7 +10018,7 @@
                                 "generalKey": "0x0900"
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010200b91f06080900",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -10077,6 +10036,47 @@
                         },
                         "asset": {
                             "VToken2": "0"
+                        },
+                        "source": [
+                            "2030"
+                        ]
+                    },
+                    {
+                        "paraID": 2030,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "bifrost",
+                        "symbol": "vsDOT",
+                        "decimals": 10,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2030
+                            },
+                            {
+                                "generalKey": "0x0403"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": false,
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2030
+                                        },
+                                        {
+                                            "generalKey": "0x0403"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": {
+                            "VSToken2": "0"
                         },
                         "source": [
                             "2030"
