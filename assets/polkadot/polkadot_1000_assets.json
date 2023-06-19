@@ -224,6 +224,15 @@
     },
     {
         "asset": {
+            "Token": "99"
+        },
+        "name": "Cypress Capital",
+        "symbol": "Cypress",
+        "decimals": 0,
+        "currencyID": "99"
+    },
+    {
+        "asset": {
             "Token": "999"
         },
         "name": "gold",
