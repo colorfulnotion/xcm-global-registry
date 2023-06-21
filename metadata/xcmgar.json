@@ -3523,7 +3523,7 @@
                         "asset": {
                             "Token": "555"
                         },
-                        "name": "GAME",
+                        "name": "gamedao.co",
                         "symbol": "GAME",
                         "decimals": 10,
                         "currencyID": "555"
