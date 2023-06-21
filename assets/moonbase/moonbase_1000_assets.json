@@ -213,8 +213,8 @@
         "asset": {
             "Token": "205153165378836428058230526014907639736"
         },
-        "name": "Subsocial Cross-chain token",
-        "symbol": "xcSUB",
+        "name": "Subsocial Cross-chain Token",
+        "symbol": "xcSOON",
         "decimals": 10,
         "currencyID": "205153165378836428058230526014907639736",
         "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2100}]"

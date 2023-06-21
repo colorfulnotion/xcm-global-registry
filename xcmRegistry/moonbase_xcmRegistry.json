@@ -1529,7 +1529,7 @@
         "paraID": 2100,
         "relayChain": "moonbase",
         "nativeChainID": null,
-        "symbol": "SUB",
+        "symbol": "SOON",
         "decimals": 10,
         "interiorType": "x1",
         "xcmV1Standardized": [
