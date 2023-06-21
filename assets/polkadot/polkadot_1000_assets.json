@@ -76,6 +76,15 @@
     },
     {
         "asset": {
+            "Token": "15"
+        },
+        "name": "Cypress Meme",
+        "symbol": "Meme",
+        "decimals": 10,
+        "currencyID": "15"
+    },
+    {
+        "asset": {
             "Token": "1984"
         },
         "name": "Tether USD",
