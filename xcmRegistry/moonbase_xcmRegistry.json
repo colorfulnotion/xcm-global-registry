@@ -77,6 +77,120 @@
             1000
         ]
     },
+    "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":null,\"key\":\"0xe5de10c4b744bac6b783faf8d9b9fdff14acc3c9\"}}]": {
+        "paraID": 1000,
+        "relayChain": "moonbase",
+        "nativeChainID": "moonbase-alpha",
+        "symbol": "USDC.wh",
+        "decimals": 6,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 48
+            },
+            {
+                "accountKey20": {
+                    "network": null,
+                    "key": "0xe5de10c4b744bac6b783faf8d9b9fdff14acc3c9"
+                }
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 48
+                        },
+                        {
+                            "accountKey20": {
+                                "network": null,
+                                "key": "0xe5de10c4b744bac6b783faf8d9b9fdff14acc3c9"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "888": "0xfffffffff0963fd9b1d84d5740e911aa5d99a08d"
+        },
+        "xcCurrencyID": {
+            "888": "319794858556516669238969276945382613133"
+        },
+        "confidence": 1,
+        "source": [
+            888
+        ]
+    },
+    "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":null,\"key\":\"0x9133c5a22024118804089f1fb752b7b2ce2a6351\"}}]": {
+        "paraID": 1000,
+        "relayChain": "moonbase",
+        "nativeChainID": "moonbase-alpha",
+        "symbol": "ALAN",
+        "decimals": 18,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 48
+            },
+            {
+                "accountKey20": {
+                    "network": null,
+                    "key": "0x9133c5a22024118804089f1fb752b7b2ce2a6351"
+                }
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 48
+                        },
+                        {
+                            "accountKey20": {
+                                "network": null,
+                                "key": "0x9133c5a22024118804089f1fb752b7b2ce2a6351"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "888": "0xffffffff405953b645c61b0f5ffb28df2b39b78d"
+        },
+        "xcCurrencyID": {
+            "888": "85534404031760856987006367174489651085"
+        },
+        "confidence": 1,
+        "source": [
+            888
+        ]
+    },
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":3}]": {
         "paraID": 1000,
         "relayChain": "moonbase",
@@ -95,7 +209,7 @@
                 "palletInstance": 3
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200a10f0403",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -143,7 +257,7 @@
                 "generalIndex": "0xfd9d0bf45a2947a519a741c4b9e99eb6"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010300a10f04240533b69ee9b9c441a719a547295af40b9dfd",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -173,7 +287,7 @@
             888
         ]
     },
-    "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":{\"any\":null},\"key\":\"0x566c1cebc6a4afa1c122e039c4bebe77043148ee\"}}]": {
+    "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":null,\"key\":\"0x566c1cebc6a4afa1c122e039c4bebe77043148ee\"}}]": {
         "paraID": 1000,
         "relayChain": "moonbase",
         "nativeChainID": "moonbase-alpha",
@@ -192,14 +306,12 @@
             },
             {
                 "accountKey20": {
-                    "network": {
-                        "any": null
-                    },
+                    "network": null,
                     "key": "0x566c1cebc6a4afa1c122e039c4bebe77043148ee"
                 }
             }
         ],
-        "xcmV1MultiLocationByte": "0x010300a10f04300300566c1cebc6a4afa1c122e039c4bebe77043148ee",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -213,9 +325,7 @@
                         },
                         {
                             "accountKey20": {
-                                "network": {
-                                    "any": null
-                                },
+                                "network": null,
                                 "key": "0x566c1cebc6a4afa1c122e039c4bebe77043148ee"
                             }
                         }
@@ -228,128 +338,6 @@
         },
         "xcCurrencyID": {
             "888": "198801030527939140930753142903035039136"
-        },
-        "confidence": 1,
-        "source": [
-            888
-        ]
-    },
-    "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":{\"any\":null},\"key\":\"0x9133c5a22024118804089f1fb752b7b2ce2a6351\"}}]": {
-        "paraID": 1000,
-        "relayChain": "moonbase",
-        "nativeChainID": "moonbase-alpha",
-        "symbol": "ALAN",
-        "decimals": 18,
-        "interiorType": "x3",
-        "xcmV1Standardized": [
-            {
-                "named": "0x6d6f6f6e62617365"
-            },
-            {
-                "parachain": 1000
-            },
-            {
-                "palletInstance": 48
-            },
-            {
-                "accountKey20": {
-                    "network": {
-                        "any": null
-                    },
-                    "key": "0x9133c5a22024118804089f1fb752b7b2ce2a6351"
-                }
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010300a10f043003009133c5a22024118804089f1fb752b7b2ce2a6351",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x3": [
-                        {
-                            "parachain": 1000
-                        },
-                        {
-                            "palletInstance": 48
-                        },
-                        {
-                            "accountKey20": {
-                                "network": {
-                                    "any": null
-                                },
-                                "key": "0x9133c5a22024118804089f1fb752b7b2ce2a6351"
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {
-            "888": "0xffffffff405953b645c61b0f5ffb28df2b39b78d"
-        },
-        "xcCurrencyID": {
-            "888": "85534404031760856987006367174489651085"
-        },
-        "confidence": 1,
-        "source": [
-            888
-        ]
-    },
-    "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":{\"any\":null},\"key\":\"0xe5de10c4b744bac6b783faf8d9b9fdff14acc3c9\"}}]": {
-        "paraID": 1000,
-        "relayChain": "moonbase",
-        "nativeChainID": "moonbase-alpha",
-        "symbol": "USDC.wh",
-        "decimals": 6,
-        "interiorType": "x3",
-        "xcmV1Standardized": [
-            {
-                "named": "0x6d6f6f6e62617365"
-            },
-            {
-                "parachain": 1000
-            },
-            {
-                "palletInstance": 48
-            },
-            {
-                "accountKey20": {
-                    "network": {
-                        "any": null
-                    },
-                    "key": "0xe5de10c4b744bac6b783faf8d9b9fdff14acc3c9"
-                }
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010300a10f04300300e5de10c4b744bac6b783faf8d9b9fdff14acc3c9",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x3": [
-                        {
-                            "parachain": 1000
-                        },
-                        {
-                            "palletInstance": 48
-                        },
-                        {
-                            "accountKey20": {
-                                "network": {
-                                    "any": null
-                                },
-                                "key": "0xe5de10c4b744bac6b783faf8d9b9fdff14acc3c9"
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {
-            "888": "0xfffffffff0963fd9b1d84d5740e911aa5d99a08d"
-        },
-        "xcCurrencyID": {
-            "888": "319794858556516669238969276945382613133"
         },
         "confidence": 1,
         "source": [

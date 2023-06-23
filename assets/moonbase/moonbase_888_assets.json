@@ -17,7 +17,7 @@
         "symbol": "xcFTM.wh",
         "decimals": 18,
         "currencyID": "198801030527939140930753142903035039136",
-        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":{\"any\":null},\"key\":\"0x566c1cebc6a4afa1c122e039c4bebe77043148ee\"}}]"
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":null,\"key\":\"0x566c1cebc6a4afa1c122e039c4bebe77043148ee\"}}]"
     },
     {
         "asset": {
@@ -37,7 +37,7 @@
         "symbol": "xcUSDC.wh",
         "decimals": 6,
         "currencyID": "319794858556516669238969276945382613133",
-        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":{\"any\":null},\"key\":\"0xe5de10c4b744bac6b783faf8d9b9fdff14acc3c9\"}}]"
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":null,\"key\":\"0xe5de10c4b744bac6b783faf8d9b9fdff14acc3c9\"}}]"
     },
     {
         "asset": {
@@ -47,7 +47,7 @@
         "symbol": "ALAN",
         "decimals": 18,
         "currencyID": "85534404031760856987006367174489651085",
-        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":{\"any\":null},\"key\":\"0x9133c5a22024118804089f1fb752b7b2ce2a6351\"}}]"
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":null,\"key\":\"0x9133c5a22024118804089f1fb752b7b2ce2a6351\"}}]"
     },
     {
         "asset": {
