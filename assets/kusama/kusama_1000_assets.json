@@ -244,6 +244,15 @@
     },
     {
         "asset": {
+            "Token": "1526"
+        },
+        "name": "bcd",
+        "symbol": "bcd",
+        "decimals": 18,
+        "currencyID": "1526"
+    },
+    {
+        "asset": {
             "Token": "16"
         },
         "name": "PolarisDAO",

@@ -191,6 +191,16 @@
     },
     {
         "asset": {
+            "Token": "91372035960551235635465443179559840483"
+        },
+        "name": "Centrifuge",
+        "symbol": "xcCFG",
+        "decimals": 18,
+        "currencyID": "91372035960551235635465443179559840483",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]"
+    },
+    {
+        "asset": {
             "Token": "GLMR"
         },
         "name": "GLMR",

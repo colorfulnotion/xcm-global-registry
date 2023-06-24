@@ -1439,7 +1439,7 @@
                 "generalKey": "0x0001"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200bd1f06080001",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -1455,13 +1455,17 @@
                 }
             }
         },
-        "xcContractAddress": {},
+        "xcContractAddress": {
+            "2004": "0xffffffff44bd9d2ffee20b25d1cf9e78edb6eae3"
+        },
         "xcCurrencyID": {
+            "2004": "91372035960551235635465443179559840483",
             "2031": "Native",
             "2034": "13"
         },
-        "confidence": 2,
+        "confidence": 3,
         "source": [
+            2004,
             2031,
             2034
         ]

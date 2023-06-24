@@ -569,7 +569,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "assetCnt": "20",
+                "assetCnt": "21",
                 "data": [
                     {
                         "asset": {
@@ -760,6 +760,16 @@
                         "decimals": 12,
                         "currencyID": "69606720909260275826784788104880799692",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2034},{\"generalIndex\":0}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "91372035960551235635465443179559840483"
+                        },
+                        "name": "Centrifuge",
+                        "symbol": "xcCFG",
+                        "decimals": 18,
+                        "currencyID": "91372035960551235635465443179559840483",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]"
                     },
                     {
                         "asset": {
@@ -2604,7 +2614,7 @@
                 "relayChain": "kusama",
                 "paraID": 1000,
                 "id": "statemine",
-                "assetCnt": "153",
+                "assetCnt": "154",
                 "data": [
                     {
                         "asset": {
@@ -2848,6 +2858,15 @@
                         "symbol": "Web3",
                         "decimals": 20,
                         "currencyID": "15"
+                    },
+                    {
+                        "asset": {
+                            "Token": "1526"
+                        },
+                        "name": "bcd",
+                        "symbol": "bcd",
+                        "decimals": 18,
+                        "currencyID": "1526"
                     },
                     {
                         "asset": {
@@ -8004,7 +8023,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "xcAssetCnt": "15",
+                "xcAssetCnt": "16",
                 "data": [
                     {
                         "paraID": 0,
@@ -8340,6 +8359,46 @@
                         },
                         "asset": "165823357460190568952172802245839421906",
                         "contractAddress": "0xffffffff7cc06abdf7201b350a1265c62c8601d2",
+                        "source": [
+                            "2004"
+                        ]
+                    },
+                    {
+                        "paraID": 2031,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "centrifuge",
+                        "symbol": "CFG",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2031
+                            },
+                            {
+                                "generalKey": "0x0001"
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": false,
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2031
+                                        },
+                                        {
+                                            "generalKey": "0x0001"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "91372035960551235635465443179559840483",
+                        "contractAddress": "0xffffffff44bd9d2ffee20b25d1cf9e78edb6eae3",
                         "source": [
                             "2004"
                         ]
@@ -22056,7 +22115,7 @@
                             "generalKey": "0x0001"
                         }
                     ],
-                    "xcmV1MultiLocationByte": "0x010200bd1f06080001",
+                    "xcmV1MultiLocationByte": false,
                     "xcmV1MultiLocation": {
                         "v1": {
                             "parents": 1,
@@ -22072,13 +22131,17 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "xcContractAddress": {
+                        "2004": "0xffffffff44bd9d2ffee20b25d1cf9e78edb6eae3"
+                    },
                     "xcCurrencyID": {
+                        "2004": "91372035960551235635465443179559840483",
                         "2031": "Native",
                         "2034": "13"
                     },
-                    "confidence": 2,
+                    "confidence": 3,
                     "source": [
+                        2004,
                         2031,
                         2034
                     ]
