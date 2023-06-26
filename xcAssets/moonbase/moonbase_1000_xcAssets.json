@@ -766,6 +766,86 @@
         ]
     },
     {
+        "paraID": 2030,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "vDOT",
+        "decimals": 10,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0900"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0900"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "29085784439601774464560083082574142143",
+        "contractAddress": "0xffffffff15e1b7e3df971dd813bc394deb899abf",
+        "source": [
+            "1000"
+        ]
+    },
+    {
+        "paraID": 2030,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "BNC",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0001"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0001"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "131139301019163526510593524852905318253",
+        "contractAddress": "0xffffffff62a882bb647792832b9c360a67c1976d",
+        "source": [
+            "1000"
+        ]
+    },
+    {
         "paraID": 2032,
         "relayChain": "moonbase",
         "nativeChainID": null,

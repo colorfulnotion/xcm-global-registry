@@ -101,6 +101,16 @@
     },
     {
         "asset": {
+            "Token": "131139301019163526510593524852905318253"
+        },
+        "name": "Bifrost Polkadot",
+        "symbol": "xcBNC",
+        "decimals": 12,
+        "currencyID": "131139301019163526510593524852905318253",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]"
+    },
+    {
+        "asset": {
             "Token": "133300872918374599700079037156071917454"
         },
         "name": "Turing Network",
@@ -288,6 +298,16 @@
         "decimals": 18,
         "currencyID": "282223684955665977914983262584256755878",
         "xcmInteriorKey": "[{\"network\":\"moonbase\"},{\"parachain\":1000},{\"palletInstance\":108},{\"generalIndex\":\"0xd4524df96c487c197dc9a964543678a6\"}]"
+    },
+    {
+        "asset": {
+            "Token": "29085784439601774464560083082574142143"
+        },
+        "name": "Bifrost Voucher DOT",
+        "symbol": "xcvDOT",
+        "decimals": 10,
+        "currencyID": "29085784439601774464560083082574142143",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0900\"}]"
     },
     {
         "asset": {
