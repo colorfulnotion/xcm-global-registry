@@ -345,6 +345,14 @@
     },
     {
         "asset": {
+            "VToken2": "3"
+        },
+        "name": "Voucher ASTR",
+        "symbol": "vASTR",
+        "decimals": 18
+    },
+    {
+        "asset": {
             "VToken2": "4"
         },
         "name": "Voucher FIL",

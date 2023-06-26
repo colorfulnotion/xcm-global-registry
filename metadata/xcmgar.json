@@ -1623,7 +1623,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "assetCnt": "43",
+                "assetCnt": "44",
                 "data": [
                     {
                         "asset": {
@@ -1967,6 +1967,14 @@
                         },
                         "name": "Voucher GLMR",
                         "symbol": "vGLMR",
+                        "decimals": 18
+                    },
+                    {
+                        "asset": {
+                            "VToken2": "3"
+                        },
+                        "name": "Voucher ASTR",
+                        "symbol": "vASTR",
                         "decimals": 18
                     },
                     {
