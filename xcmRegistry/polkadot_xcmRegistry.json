@@ -327,6 +327,59 @@
             2035
         ]
     },
+    "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0003\"}]": {
+        "paraID": 2000,
+        "relayChain": "polkadot",
+        "nativeChainID": "acala",
+        "symbol": "LDOT",
+        "decimals": 10,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x0003"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0003"
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "2006": "0xffffffff00000000000000010000000000000002"
+        },
+        "xcCurrencyID": {
+            "2006": "18446744073709551618",
+            "2012": "110",
+            "2032": {
+                "ForeignAsset": "1"
+            },
+            "2035": "4"
+        },
+        "confidence": 4,
+        "source": [
+            2006,
+            2012,
+            2032,
+            2035
+        ]
+    },
     "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0207df96d1341a7d16ba1ad431e2c847d978bc2bce\"}]": {
         "paraID": 2000,
         "relayChain": "polkadot",
@@ -542,59 +595,6 @@
             2034
         ]
     },
-    "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0003\"}]": {
-        "paraID": 2000,
-        "relayChain": "polkadot",
-        "nativeChainID": "acala",
-        "symbol": "LDOT",
-        "decimals": 10,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 2000
-            },
-            {
-                "generalKey": "0x0003"
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010200411f06080003",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 2000
-                        },
-                        {
-                            "generalKey": "0x0003"
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {
-            "2006": "0xffffffff00000000000000010000000000000002"
-        },
-        "xcCurrencyID": {
-            "2006": "18446744073709551618",
-            "2012": "110",
-            "2032": {
-                "ForeignAsset": "1"
-            },
-            "2035": "4"
-        },
-        "confidence": 4,
-        "source": [
-            2006,
-            2012,
-            2032,
-            2035
-        ]
-    },
     "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x040d000000\"}]": {
         "paraID": 2000,
         "relayChain": "polkadot",
@@ -653,7 +653,7 @@
                 "parachain": 2002
             }
         ],
-        "xcmV1MultiLocationByte": "0x010100491f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -1339,7 +1339,7 @@
                 "generalKey": "0x0403"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200b91f06080403",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -1388,7 +1388,7 @@
                 "generalKey": "0x0900"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200b91f06080900",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,

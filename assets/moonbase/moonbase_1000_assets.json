@@ -131,6 +131,16 @@
     },
     {
         "asset": {
+            "Token": "144012926827374458669278577633504620722"
+        },
+        "name": "Bifrost Filecoin Network Token",
+        "symbol": "xcFIL",
+        "decimals": 18,
+        "currencyID": "144012926827374458669278577633504620722",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0804\"}]"
+    },
+    {
+        "asset": {
             "Token": "144992676743556815849525085098140609495"
         },
         "name": "TestLocalAsset",
@@ -221,6 +231,16 @@
     },
     {
         "asset": {
+            "Token": "204507659831918931608354793288110796652"
+        },
+        "name": "Bifrost Voucher Glimmer",
+        "symbol": "xcvGLMR",
+        "decimals": 18,
+        "currencyID": "204507659831918931608354793288110796652",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0901\"}]"
+    },
+    {
+        "asset": {
             "Token": "205153165378836428058230526014907639736"
         },
         "name": "Subsocial Cross-chain Token",
@@ -278,6 +298,16 @@
         "decimals": 12,
         "currencyID": "264344629840762281112027368930249420542",
         "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2001},{\"generalKey\":\"0x0104\"}]"
+    },
+    {
+        "asset": {
+            "Token": "272547899416482196831721420898811311297"
+        },
+        "name": "Bifrost Voucher Filecoin",
+        "symbol": "xcvFIL",
+        "decimals": 18,
+        "currencyID": "272547899416482196831721420898811311297",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0904\"}]"
     },
     {
         "asset": {
