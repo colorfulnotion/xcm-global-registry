@@ -11561,7 +11561,7 @@
                                 "generalIndex": 1
                             }
                         ],
-                        "xcmV1MultiLocationByte": "0x010200ed1f0504",
+                        "xcmV1MultiLocationByte": false,
                         "xcmV1MultiLocation": {
                             "v1": {
                                 "parents": 1,
@@ -22423,7 +22423,7 @@
                             "generalIndex": 1
                         }
                     ],
-                    "xcmV1MultiLocationByte": "0x010200ed1f0504",
+                    "xcmV1MultiLocationByte": false,
                     "xcmV1MultiLocation": {
                         "v1": {
                             "parents": 1,
