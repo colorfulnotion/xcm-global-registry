@@ -2601,19 +2601,23 @@
                 }
             }
         },
-        "xcContractAddress": {},
+        "xcContractAddress": {
+            "2023": "0xffffffff6448d0746f2a66342b67ef9caf89478e"
+        },
         "xcCurrencyID": {
             "2000": {
                 "ForeignAsset": "16"
             },
             "2004": "10",
+            "2023": "133300872918374599700079037156071917454",
             "2110": "7",
             "2114": "0"
         },
-        "confidence": 4,
+        "confidence": 5,
         "source": [
             2000,
             2004,
+            2023,
             2110,
             2114
         ]

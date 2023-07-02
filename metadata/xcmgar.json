@@ -5548,7 +5548,7 @@
                 "relayChain": "kusama",
                 "paraID": 2023,
                 "id": "moonriver",
-                "assetCnt": "19",
+                "assetCnt": "20",
                 "data": [
                     {
                         "asset": {
@@ -5599,6 +5599,16 @@
                         "decimals": 18,
                         "currencyID": "118095707745084482624853002839493125353",
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2110},{\"generalKey\":\"0x00000000\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "133300872918374599700079037156071917454"
+                        },
+                        "name": "Turing Network",
+                        "symbol": "xcTUR",
+                        "decimals": 10,
+                        "currencyID": "133300872918374599700079037156071917454",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2114}]"
                     },
                     {
                         "asset": {
@@ -14611,7 +14621,7 @@
                 "relayChain": "kusama",
                 "paraID": 2023,
                 "id": "moonriver",
-                "xcAssetCnt": "18",
+                "xcAssetCnt": "19",
                 "data": [
                     {
                         "paraID": 0,
@@ -15289,6 +15299,38 @@
                         },
                         "asset": "118095707745084482624853002839493125353",
                         "contractAddress": "0xffffffff58d867eea1ce5126a4769542116324e9",
+                        "source": [
+                            "2023"
+                        ]
+                    },
+                    {
+                        "paraID": 2114,
+                        "relayChain": "kusama",
+                        "nativeChainID": "turing",
+                        "symbol": "TUR",
+                        "decimals": 10,
+                        "interiorType": "x1",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2114
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": false,
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x1": {
+                                        "parachain": 2114
+                                    }
+                                }
+                            }
+                        },
+                        "asset": "133300872918374599700079037156071917454",
+                        "contractAddress": "0xffffffff6448d0746f2a66342b67ef9caf89478e",
                         "source": [
                             "2023"
                         ]
@@ -20528,19 +20570,23 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "xcContractAddress": {
+                        "2023": "0xffffffff6448d0746f2a66342b67ef9caf89478e"
+                    },
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "16"
                         },
                         "2004": "10",
+                        "2023": "133300872918374599700079037156071917454",
                         "2110": "7",
                         "2114": "0"
                     },
-                    "confidence": 4,
+                    "confidence": 5,
                     "source": [
                         2000,
                         2004,
+                        2023,
                         2110,
                         2114
                     ]
@@ -20786,9 +20832,12 @@
                         "2031": {
                             "ForeignAsset": "1"
                         },
+                        "2032": {
+                            "ForeignAsset": "2"
+                        },
                         "2034": "10"
                     },
-                    "confidence": 7,
+                    "confidence": 8,
                     "source": [
                         2000,
                         2004,
@@ -20796,6 +20845,7 @@
                         2012,
                         2030,
                         2031,
+                        2032,
                         2034
                     ]
                 },
@@ -21047,12 +21097,16 @@
                     "xcCurrencyID": {
                         "2006": "18446744073709551618",
                         "2012": "110",
+                        "2032": {
+                            "ForeignAsset": "1"
+                        },
                         "2035": "4"
                     },
-                    "confidence": 3,
+                    "confidence": 4,
                     "source": [
                         2006,
                         2012,
+                        2032,
                         2035
                     ]
                 },

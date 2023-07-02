@@ -678,5 +678,37 @@
         "source": [
             "2023"
         ]
+    },
+    {
+        "paraID": 2114,
+        "relayChain": "kusama",
+        "nativeChainID": "turing",
+        "symbol": "TUR",
+        "decimals": 10,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2114
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2114
+                    }
+                }
+            }
+        },
+        "asset": "133300872918374599700079037156071917454",
+        "contractAddress": "0xffffffff6448d0746f2a66342b67ef9caf89478e",
+        "source": [
+            "2023"
+        ]
     }
 ]
