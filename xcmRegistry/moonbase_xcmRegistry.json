@@ -22,14 +22,17 @@
             }
         },
         "xcContractAddress": {
+            "888": "0xffffffff1fcacbd218edc0eba20fc2308c778080",
             "1000": "0xffffffff1fcacbd218edc0eba20fc2308c778080"
         },
         "xcCurrencyID": {
+            "888": "42259045809535163221576417993425387648",
             "1000": "42259045809535163221576417993425387648"
         },
-        "confidence": 1,
+        "confidence": 2,
         "source": [
-            1000
+            1000,
+            888
         ]
     },
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":888},{\"palletInstance\":3}]": {

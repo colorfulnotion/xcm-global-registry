@@ -1,5 +1,33 @@
 [
     {
+        "paraID": 0,
+        "relayChain": "moonbase",
+        "nativeChainID": "moonbase-relay",
+        "symbol": "UNIT",
+        "decimals": 12,
+        "interiorType": "here",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            "here"
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "here": null
+                }
+            }
+        },
+        "asset": "42259045809535163221576417993425387648",
+        "contractAddress": "0xffffffff1fcacbd218edc0eba20fc2308c778080",
+        "source": [
+            "888"
+        ]
+    },
+    {
         "paraID": 1000,
         "relayChain": "moonbase",
         "nativeChainID": "moonbase-alpha",
