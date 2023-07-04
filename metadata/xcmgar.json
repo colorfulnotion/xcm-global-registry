@@ -24,7 +24,7 @@
                 "relayChain": "polkadot",
                 "paraID": 1000,
                 "id": "statemint",
-                "assetCnt": "29",
+                "assetCnt": "28",
                 "data": [
                     {
                         "asset": {
@@ -158,15 +158,6 @@
                         "symbol": "DOT",
                         "decimals": 20,
                         "currencyID": "3"
-                    },
-                    {
-                        "asset": {
-                            "Token": "31"
-                        },
-                        "name": "DOT",
-                        "symbol": "DOT",
-                        "decimals": 10,
-                        "currencyID": "31"
                     },
                     {
                         "asset": {

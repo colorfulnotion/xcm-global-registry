@@ -134,15 +134,6 @@
     },
     {
         "asset": {
-            "Token": "31"
-        },
-        "name": "DOT",
-        "symbol": "DOT",
-        "decimals": 10,
-        "currencyID": "31"
-    },
-    {
-        "asset": {
             "Token": "4"
         },
         "name": "Efinity Token",
