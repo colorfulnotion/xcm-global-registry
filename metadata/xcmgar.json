@@ -7164,7 +7164,7 @@
                 "relayChain": "kusama",
                 "paraID": 2114,
                 "id": "turing",
-                "assetCnt": "10",
+                "assetCnt": "11",
                 "data": [
                     {
                         "asset": {
@@ -7255,6 +7255,16 @@
                         "decimals": 18,
                         "currencyID": "8",
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2007}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "9"
+                        },
+                        "name": "Moonriver",
+                        "symbol": "MOVR",
+                        "decimals": 18,
+                        "currencyID": "9",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2023},{\"palletInstance\":10}]"
                     },
                     {
                         "asset": {
@@ -17643,7 +17653,7 @@
                 "relayChain": "kusama",
                 "paraID": 2114,
                 "id": "turing",
-                "xcAssetCnt": "9",
+                "xcAssetCnt": "10",
                 "data": [
                     {
                         "paraID": 0,
@@ -17847,6 +17857,45 @@
                             }
                         },
                         "asset": "8",
+                        "source": [
+                            "2114"
+                        ]
+                    },
+                    {
+                        "paraID": 2023,
+                        "relayChain": "kusama",
+                        "nativeChainID": "moonriver",
+                        "symbol": "MOVR",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2023
+                            },
+                            {
+                                "palletInstance": 10
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": false,
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2023
+                                        },
+                                        {
+                                            "palletInstance": 10
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "9",
                         "source": [
                             "2114"
                         ]
@@ -19548,9 +19597,10 @@
                         "2085": "113",
                         "2092": {
                             "ForeignAsset": "4"
-                        }
+                        },
+                        "2114": "9"
                     },
-                    "confidence": 8,
+                    "confidence": 9,
                     "source": [
                         2000,
                         2001,
@@ -19559,7 +19609,8 @@
                         2012,
                         2084,
                         2085,
-                        2092
+                        2092,
+                        2114
                     ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2024}]": {

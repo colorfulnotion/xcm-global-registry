@@ -91,6 +91,16 @@
     },
     {
         "asset": {
+            "Token": "9"
+        },
+        "name": "Moonriver",
+        "symbol": "MOVR",
+        "decimals": 18,
+        "currencyID": "9",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2023},{\"palletInstance\":10}]"
+    },
+    {
+        "asset": {
             "Token": "TUR"
         },
         "name": "TUR",

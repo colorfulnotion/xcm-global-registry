@@ -336,7 +336,7 @@
                 "relayChain": "kusama",
                 "paraID": 2114,
                 "id": "turing",
-                "assetCnt": "10",
+                "assetCnt": "11",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2114_assets.json"
             },
             {
@@ -545,7 +545,7 @@
                 "relayChain": "kusama",
                 "paraID": 2114,
                 "id": "turing",
-                "xcAssetCnt": "9",
+                "xcAssetCnt": "10",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/kusama/kusama_2114_xcAssets.json"
             }
         ]
