@@ -4013,8 +4013,17 @@
                 "relayChain": "kusama",
                 "paraID": 2000,
                 "id": "karura",
-                "assetCnt": "47",
+                "assetCnt": "52",
                 "data": [
+                    {
+                        "asset": {
+                            "Erc20": "0x1516d2d4436d7f2eb0eadeb9be597b8cdbfb5724"
+                        },
+                        "name": "Binance USD (Portal from BSC)",
+                        "symbol": "BUSDbs",
+                        "decimals": 18,
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x021516d2d4436d7f2eb0eadeb9be597b8cdbfb5724\"}]"
+                    },
                     {
                         "asset": {
                             "Erc20": "0x1f3a10587a20114ea25ba1b388ee2dd4a337ce27"
@@ -4026,9 +4035,18 @@
                     },
                     {
                         "asset": {
+                            "Erc20": "0x21a3e77e77f1a73f303b0e050bdfa33c439e57d3"
+                        },
+                        "name": "Arbitrum (Portal from Arbitrum)",
+                        "symbol": "ARB",
+                        "decimals": 18,
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0221a3e77e77f1a73f303b0e050bdfa33c439e57d3\"}]"
+                    },
+                    {
+                        "asset": {
                             "Erc20": "0x2c7de70b32cf5f20e02329a88d2e3b00ef85eb90"
                         },
-                        "name": "ChainLink Token",
+                        "name": "Chainlink (Portal from Ethereum)",
                         "symbol": "LINK",
                         "decimals": 18,
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x022c7de70b32cf5f20e02329a88d2e3b00ef85eb90\"}]"
@@ -4037,7 +4055,7 @@
                         "asset": {
                             "Erc20": "0x30b1f4ba0b07789be9986fa090a57e0fe5631ebb"
                         },
-                        "name": "ApeCoin",
+                        "name": "ApeCoin (Portal from Ethereum)",
                         "symbol": "APE",
                         "decimals": 18,
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0230b1f4ba0b07789be9986fa090a57e0fe5631ebb\"}]"
@@ -4053,10 +4071,19 @@
                     },
                     {
                         "asset": {
+                            "Erc20": "0x54e183e533fd3c6e72debb2d1cab451d017faf72"
+                        },
+                        "name": "Tether USD (Portal from Ethereum)",
+                        "symbol": "USDTet",
+                        "decimals": 6,
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0254e183e533fd3c6e72debb2d1cab451d017faf72\"}]"
+                    },
+                    {
+                        "asset": {
                             "Erc20": "0x577f6a0718a468e8a995f6075f2325f86a07c83b"
                         },
-                        "name": "Binance USD",
-                        "symbol": "BUSD",
+                        "name": "Binance USD (Portal from Ethereum)",
+                        "symbol": "BUSDet",
                         "decimals": 18,
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02577f6a0718a468e8a995f6075f2325f86a07c83b\"}]"
                     },
@@ -4064,7 +4091,7 @@
                         "asset": {
                             "Erc20": "0x66291c7d88d2ed9a708147bae4e0814a76705e2f"
                         },
-                        "name": "Wrapped BTC",
+                        "name": "Wrapped BTC (Portal from Ethereum)",
                         "symbol": "WBTC",
                         "decimals": 8,
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0266291c7d88d2ed9a708147bae4e0814a76705e2f\"}]"
@@ -4073,16 +4100,25 @@
                         "asset": {
                             "Erc20": "0x77cf14f938cb97308d752647d554439d99b39a3f"
                         },
-                        "name": "Uniswap",
+                        "name": "Uniswap (Portal from Ethereum)",
                         "symbol": "UNI",
                         "decimals": 18,
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0277cf14f938cb97308d752647d554439d99b39a3f\"}]"
                     },
                     {
                         "asset": {
+                            "Erc20": "0x8cc494086db58859bddc5df0f33679dfe3729a03"
+                        },
+                        "name": "Binance Coin (Portal from BSC)",
+                        "symbol": "BNB",
+                        "decimals": 18,
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x028cc494086db58859bddc5df0f33679dfe3729a03\"}]"
+                    },
+                    {
+                        "asset": {
                             "Erc20": "0x9759ca009cbcd75a84786ac19bb5d02f8e68bcd9"
                         },
-                        "name": "SHIBA INU",
+                        "name": "Shiba Inu (Portal from Ethereum)",
                         "symbol": "SHIB",
                         "decimals": 18,
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x029759ca009cbcd75a84786ac19bb5d02f8e68bcd9\"}]"
@@ -4091,8 +4127,8 @@
                         "asset": {
                             "Erc20": "0xa2a37aaf4730aeedada5aa8ee20a4451cb8b1c4e"
                         },
-                        "name": "Matic Token",
-                        "symbol": "MATIC",
+                        "name": "MATIC (Portal from Ethereum)",
+                        "symbol": "MATICet",
                         "decimals": 18,
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02a2a37aaf4730aeedada5aa8ee20a4451cb8b1c4e\"}]"
                     },
@@ -4100,17 +4136,26 @@
                         "asset": {
                             "Erc20": "0xb4ce1f6109854243d1af13b8ea34ed28542f31e0"
                         },
-                        "name": "Lido DAO Token",
+                        "name": "Lido DAO (Portal from Ethereum)",
                         "symbol": "LDO",
                         "decimals": 18,
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02b4ce1f6109854243d1af13b8ea34ed28542f31e0\"}]"
                     },
                     {
                         "asset": {
+                            "Erc20": "0xc5033741ca1ce8f4f956eca6c2ff7360cabfa08d"
+                        },
+                        "name": "MATIC (Portal from Polygon)",
+                        "symbol": "MATICpo",
+                        "decimals": 18,
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02c5033741ca1ce8f4f956eca6c2ff7360cabfa08d\"}]"
+                    },
+                    {
+                        "asset": {
                             "Erc20": "0xc621abc3afa3f24886ea278fffa7e10e8969d755"
                         },
-                        "name": "Arbitrum",
-                        "symbol": "ARB",
+                        "name": "Arbitrum (Portal from Ethereum)",
+                        "symbol": "ARBet",
                         "decimals": 18,
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02c621abc3afa3f24886ea278fffa7e10e8969d755\"}]"
                     },
@@ -4127,8 +4172,8 @@
                         "asset": {
                             "Erc20": "0xe278651e8ff8e2efa83d7f84205084ebc90688be"
                         },
-                        "name": "BNB",
-                        "symbol": "BNB",
+                        "name": "Binance Coin (Portal from Ethereum)",
+                        "symbol": "BNBet",
                         "decimals": 18,
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02e278651e8ff8e2efa83d7f84205084ebc90688be\"}]"
                     },
@@ -4136,7 +4181,7 @@
                         "asset": {
                             "Erc20": "0xece0cc38021e734bef1d5da071b027ac2f71181f"
                         },
-                        "name": "Wrapped Ether",
+                        "name": "Wrapped Ether (Portal from Ethereum)",
                         "symbol": "WETH",
                         "decimals": 18,
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02ece0cc38021e734bef1d5da071b027ac2f71181f\"}]"
