@@ -331,16 +331,6 @@
     },
     {
         "asset": {
-            "Token": "29085784439601774464560083082574142143"
-        },
-        "name": "Bifrost Voucher DOT",
-        "symbol": "xcvDOT",
-        "decimals": 10,
-        "currencyID": "29085784439601774464560083082574142143",
-        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0900\"}]"
-    },
-    {
-        "asset": {
             "Token": "306639095083798603270835754515874921389"
         },
         "name": "BIT",
