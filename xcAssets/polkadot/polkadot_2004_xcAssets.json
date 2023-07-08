@@ -298,6 +298,46 @@
         ]
     },
     {
+        "paraID": 2026,
+        "relayChain": "polkadot",
+        "nativeChainID": "nodle",
+        "symbol": "NODL",
+        "decimals": 11,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2026
+            },
+            {
+                "palletInstance": 2
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2026
+                        },
+                        {
+                            "palletInstance": 2
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "309163521958167876851250718453738106865",
+        "contractAddress": "0xffffffffe896ba7cb118b9fa571c6dc0a99deff1",
+        "source": [
+            "2004"
+        ]
+    },
+    {
         "paraID": 2030,
         "relayChain": "polkadot",
         "nativeChainID": "bifrost",

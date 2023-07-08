@@ -141,6 +141,16 @@
     },
     {
         "asset": {
+            "Token": "309163521958167876851250718453738106865"
+        },
+        "name": "Nodle",
+        "symbol": "xcNODL",
+        "decimals": 11,
+        "currencyID": "309163521958167876851250718453738106865",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2026},{\"palletInstance\":2}]"
+    },
+    {
+        "asset": {
             "Token": "311091173110107856861649819128533077277"
         },
         "name": "Tether USD",
