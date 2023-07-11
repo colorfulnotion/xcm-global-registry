@@ -58,6 +58,15 @@
     },
     {
         "asset": {
+            "Token": "12"
+        },
+        "name": "Cypress Dollar",
+        "symbol": "USDcp",
+        "decimals": 0,
+        "currencyID": "12"
+    },
+    {
+        "asset": {
             "Token": "123"
         },
         "name": "123",
