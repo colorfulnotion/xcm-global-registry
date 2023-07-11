@@ -20,7 +20,7 @@
                 "generalIndex": 1984
             }
         ],
-        "xcmV1MultiLocationByte": "0x010300a10f043205011f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -50,53 +50,6 @@
         "paraID": 1000,
         "relayChain": "polkadot",
         "nativeChainID": "statemint",
-        "symbol": "WBTC",
-        "decimals": 8,
-        "interiorType": "x3",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 1000
-            },
-            {
-                "palletInstance": 50
-            },
-            {
-                "generalIndex": 21
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010300a10f04320554",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x3": [
-                        {
-                            "parachain": 1000
-                        },
-                        {
-                            "palletInstance": 50
-                        },
-                        {
-                            "generalIndex": 21
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": {
-            "ForeignAsset": "5"
-        },
-        "source": [
-            "2000"
-        ]
-    },
-    {
-        "paraID": 1000,
-        "relayChain": "polkadot",
-        "nativeChainID": "statemint",
         "symbol": "WETH",
         "decimals": 18,
         "interiorType": "x3",
@@ -114,7 +67,7 @@
                 "generalIndex": 100
             }
         ],
-        "xcmV1MultiLocationByte": "0x010300a10f0432059101",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -141,6 +94,53 @@
         ]
     },
     {
+        "paraID": 1000,
+        "relayChain": "polkadot",
+        "nativeChainID": "statemint",
+        "symbol": "WBTC",
+        "decimals": 8,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 50
+            },
+            {
+                "generalIndex": 21
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 21
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "ForeignAsset": "5"
+        },
+        "source": [
+            "2000"
+        ]
+    },
+    {
         "paraID": 2004,
         "relayChain": "polkadot",
         "nativeChainID": "moonbeam",
@@ -158,7 +158,7 @@
                 "palletInstance": 10
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200511f040a",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -196,7 +196,7 @@
                 "parachain": 2006
             }
         ],
-        "xcmV1MultiLocationByte": "0x010100591f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -229,7 +229,7 @@
                 "parachain": 2008
             }
         ],
-        "xcmV1MultiLocationByte": "0x010100611f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -242,39 +242,6 @@
         },
         "asset": {
             "ForeignAsset": "11"
-        },
-        "source": [
-            "2000"
-        ]
-    },
-    {
-        "paraID": 2011,
-        "relayChain": "polkadot",
-        "nativeChainID": "equilibrium",
-        "symbol": "EQ",
-        "decimals": 9,
-        "interiorType": "x1",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 2011
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x0101006d1f",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x1": {
-                        "parachain": 2011
-                    }
-                }
-            }
-        },
-        "asset": {
-            "ForeignAsset": "7"
         },
         "source": [
             "2000"
@@ -298,7 +265,7 @@
                 "generalKey": "0x657164"
             }
         ],
-        "xcmV1MultiLocationByte": "0x0102006d1f060c657164",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -322,6 +289,39 @@
         ]
     },
     {
+        "paraID": 2011,
+        "relayChain": "polkadot",
+        "nativeChainID": "equilibrium",
+        "symbol": "EQ",
+        "decimals": 9,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2011
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2011
+                    }
+                }
+            }
+        },
+        "asset": {
+            "ForeignAsset": "7"
+        },
+        "source": [
+            "2000"
+        ]
+    },
+    {
         "paraID": 2012,
         "relayChain": "polkadot",
         "nativeChainID": "parallel",
@@ -339,7 +339,7 @@
                 "generalKey": "0x50415241"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200711f061050415241",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -380,7 +380,7 @@
                 "generalKey": "0x0001"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200c11f06080001",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -421,7 +421,7 @@
                 "generalKey": "0x0002"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200c11f06080002",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -459,7 +459,7 @@
                 "parachain": 2035
             }
         ],
-        "xcmV1MultiLocationByte": "0x010100cd1f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -492,7 +492,7 @@
                 "parachain": 2037
             }
         ],
-        "xcmV1MultiLocationByte": "0x010100d51f",
+        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
