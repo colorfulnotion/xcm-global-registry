@@ -1180,6 +1180,51 @@
             1000
         ]
     },
+    "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0101\"}]": {
+        "paraID": 2030,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "vBNC",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0101"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0101"
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "1000": "0xffffffff31d724194b6a76e1d639c8787e16796b"
+        },
+        "xcCurrencyID": {
+            "1000": "66249247788835743307843320271452141931"
+        },
+        "confidence": 1,
+        "source": [
+            1000
+        ]
+    },
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]": {
         "paraID": 2030,
         "relayChain": "moonbase",
@@ -1989,6 +2034,43 @@
         },
         "xcCurrencyID": {
             "1000": "138512078356357941985706694377215053953"
+        },
+        "confidence": 1,
+        "source": [
+            1000
+        ]
+    },
+    "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2140}]": {
+        "paraID": 2140,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "PDEX",
+        "decimals": 12,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2140
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2140
+                    }
+                }
+            }
+        },
+        "xcContractAddress": {
+            "1000": "0xffffffffc0732d1cecb563c9e4effc7fd9c21959"
+        },
+        "xcCurrencyID": {
+            "1000": "255809804329513816629144221493516966233"
         },
         "confidence": 1,
         "source": [

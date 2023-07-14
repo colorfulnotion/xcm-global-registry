@@ -291,6 +291,16 @@
     },
     {
         "asset": {
+            "Token": "255809804329513816629144221493516966233"
+        },
+        "name": "Polkadex Token",
+        "symbol": "xcPDEX",
+        "decimals": 12,
+        "currencyID": "255809804329513816629144221493516966233",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2140}]"
+    },
+    {
+        "asset": {
             "Token": "264344629840762281112027368930249420542"
         },
         "name": "Voucher KSM",
@@ -478,6 +488,16 @@
         "decimals": 12,
         "currencyID": "65216491554813189869575508812319036608",
         "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2106},{\"palletInstance\":10}]"
+    },
+    {
+        "asset": {
+            "Token": "66249247788835743307843320271452141931"
+        },
+        "name": "Bifrost Voucher BNC",
+        "symbol": "xcvBNC",
+        "decimals": 12,
+        "currencyID": "66249247788835743307843320271452141931",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0101\"}]"
     },
     {
         "asset": {
