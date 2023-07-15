@@ -1094,15 +1094,6 @@
     },
     {
         "asset": {
-            "Token": "7373"
-        },
-        "name": "Pepe",
-        "symbol": "PEPE",
-        "decimals": 18,
-        "currencyID": "7373"
-    },
-    {
-        "asset": {
             "Token": "75"
         },
         "name": "ohzomdmrkyc.gybvn",

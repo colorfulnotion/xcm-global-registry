@@ -2635,7 +2635,7 @@
                 "relayChain": "kusama",
                 "paraID": 1000,
                 "id": "statemine",
-                "assetCnt": "154",
+                "assetCnt": "153",
                 "data": [
                     {
                         "asset": {
@@ -3729,15 +3729,6 @@
                         "symbol": "OAK",
                         "decimals": 10,
                         "currencyID": "71"
-                    },
-                    {
-                        "asset": {
-                            "Token": "7373"
-                        },
-                        "name": "Pepe",
-                        "symbol": "PEPE",
-                        "decimals": 18,
-                        "currencyID": "7373"
                     },
                     {
                         "asset": {
