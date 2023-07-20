@@ -136,8 +136,7 @@
         "name": "Bifrost Filecoin Network Token",
         "symbol": "xcFIL",
         "decimals": 18,
-        "currencyID": "144012926827374458669278577633504620722",
-        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0804\"}]"
+        "currencyID": "144012926827374458669278577633504620722"
     },
     {
         "asset": {
@@ -246,8 +245,7 @@
         "name": "Bifrost Voucher Glimmer",
         "symbol": "xcvGLMR",
         "decimals": 18,
-        "currencyID": "204507659831918931608354793288110796652",
-        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0901\"}]"
+        "currencyID": "204507659831918931608354793288110796652"
     },
     {
         "asset": {
@@ -326,8 +324,7 @@
         "name": "Bifrost Voucher Filecoin",
         "symbol": "xcvFIL",
         "decimals": 18,
-        "currencyID": "272547899416482196831721420898811311297",
-        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0904\"}]"
+        "currencyID": "272547899416482196831721420898811311297"
     },
     {
         "asset": {
@@ -506,8 +503,7 @@
         "name": "Bifrost Voucher BNC",
         "symbol": "xcvBNC",
         "decimals": 12,
-        "currencyID": "66249247788835743307843320271452141931",
-        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0101\"}]"
+        "currencyID": "66249247788835743307843320271452141931"
     },
     {
         "asset": {
