@@ -206,6 +206,8 @@
         "name": "KMA",
         "symbol": "KMA",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2084}]"
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2084}]",
+        "inferred": true,
+        "confidence": 0
     }
 ]
