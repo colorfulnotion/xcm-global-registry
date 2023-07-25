@@ -541,6 +541,16 @@
     },
     {
         "asset": {
+            "Token": "91372035960551235635465443179559840483"
+        },
+        "name": "Centrifuge",
+        "symbol": "xcCFG",
+        "decimals": 18,
+        "currencyID": "91372035960551235635465443179559840483",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]"
+    },
+    {
+        "asset": {
             "Token": "95328064580428769161981851380106820590"
         },
         "name": "Circle USD",
