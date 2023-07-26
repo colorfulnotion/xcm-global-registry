@@ -16,7 +16,8 @@
         },
         "name": "Polkadot DOT",
         "symbol": "DOT",
-        "decimals": 10
+        "decimals": 10,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},\"here\"]"
     },
     {
         "asset": {
@@ -51,7 +52,8 @@
         },
         "name": "Filecoin Network Token",
         "symbol": "FIL",
-        "decimals": 18
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0804\"}]"
     },
     {
         "asset": {
@@ -349,7 +351,8 @@
         },
         "name": "Voucher GLMR",
         "symbol": "vGLMR",
-        "decimals": 18
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0901\"}]"
     },
     {
         "asset": {
@@ -365,6 +368,7 @@
         },
         "name": "Voucher FIL",
         "symbol": "vFIL",
-        "decimals": 18
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0904\"}]"
     }
 ]

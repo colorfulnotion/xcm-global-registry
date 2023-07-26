@@ -417,7 +417,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "xcAssetCnt": "5",
+                "xcAssetCnt": "9",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2030_xcAssets.json"
             },
             {
@@ -468,7 +468,7 @@
                 "relayChain": "kusama",
                 "paraID": 2001,
                 "id": "bifrost",
-                "xcAssetCnt": "15",
+                "xcAssetCnt": "17",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/kusama/kusama_2001_xcAssets.json"
             },
             {
@@ -553,12 +553,12 @@
     "xcmRegistry": [
         {
             "relayChain": "kusama",
-            "registryCnt": "57",
+            "registryCnt": "58",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/kusama_xcmRegistry.json"
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "40",
+            "registryCnt": "43",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/polkadot_xcmRegistry.json"
         }
     ]

@@ -29,17 +29,21 @@
             "2004": "42259045809535163221576417993425387648",
             "2006": "340282366920938463463374607431768211455",
             "2012": "101",
+            "2030": {
+                "Token2": "0"
+            },
             "2031": {
                 "ForeignAsset": "5"
             },
             "2034": "5",
             "2035": "0"
         },
-        "confidence": 6,
+        "confidence": 7,
         "source": [
             2004,
             2006,
             2012,
+            2030,
             2031,
             2034,
             2035
@@ -1464,6 +1468,141 @@
             2006,
             2030,
             2034
+        ]
+    },
+    "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0901\"}]": {
+        "paraID": 2030,
+        "relayChain": "polkadot",
+        "nativeChainID": "bifrost",
+        "symbol": "vGLMR",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0901"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0901"
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2030": {
+                "VToken2": "1"
+            }
+        },
+        "confidence": 1,
+        "source": [
+            2030
+        ]
+    },
+    "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0904\"}]": {
+        "paraID": 2030,
+        "relayChain": "polkadot",
+        "nativeChainID": "bifrost",
+        "symbol": "vFIL",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0904"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0904"
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2030": {
+                "VToken2": "4"
+            }
+        },
+        "confidence": 1,
+        "source": [
+            2030
+        ]
+    },
+    "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0804\"}]": {
+        "paraID": 2030,
+        "relayChain": "polkadot",
+        "nativeChainID": "bifrost",
+        "symbol": "FIL",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0804"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0804"
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2030": {
+                "Token2": "4"
+            }
+        },
+        "confidence": 1,
+        "source": [
+            2030
         ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]": {
