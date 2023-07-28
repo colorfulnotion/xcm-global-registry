@@ -558,7 +558,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "40",
+            "registryCnt": "43",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/polkadot_xcmRegistry.json"
         }
     ]
