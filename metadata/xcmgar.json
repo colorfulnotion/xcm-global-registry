@@ -983,8 +983,8 @@
                         "asset": {
                             "Token": "18446744073709551617"
                         },
-                        "name": "Acala Dollar",
-                        "symbol": "aUSD",
+                        "name": "aUSD SEED",
+                        "symbol": "aSEED",
                         "decimals": 12,
                         "currencyID": "18446744073709551617",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0001\"}]"
@@ -8921,7 +8921,7 @@
                         "paraID": 2000,
                         "relayChain": "polkadot",
                         "nativeChainID": "acala",
-                        "symbol": "aUSD",
+                        "symbol": "aSEED",
                         "decimals": 12,
                         "interiorType": "x2",
                         "xcmV1Standardized": [
