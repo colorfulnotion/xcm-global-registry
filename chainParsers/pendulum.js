@@ -48,7 +48,20 @@ module.exports = class PendulumParser extends ChainParser {
     }
     */
     augment = {}
-    manualRegistry = {}
+    manualRegistry = {
+        "polkadot-2094": [{
+            asset: {
+                "Token": "PEN"
+            },
+            xcmInteriorKey: '[{"network":"polkadot"},{"parachain":2094},{"palletInstance":10}]'
+        }],
+        'kusama-2124': [{
+            asset: {
+                "Token": "AMPE"
+            },
+            xcmInteriorKey: '[{"network":"kusama"},{"parachain":2124},{"palletInstance":10}]'
+        }]
+    }
 
     isXcRegistryAvailable = true
 
@@ -88,6 +101,7 @@ module.exports = class PendulumParser extends ChainParser {
             // step 2: load up results
             for (const assetChainkey of Object.keys(assetList)) {
                 let assetInfo = assetList[assetChainkey]
+                // Some parsers pad the currency ID here. Should we do too?
                 this.manager.setChainAsset(chainkey, assetChainkey, assetInfo)
             }
         }
