@@ -572,6 +572,24 @@
     },
     {
         "asset": {
+            "Token": "3000"
+        },
+        "name": "GRAIN Token",
+        "symbol": "GRAIN",
+        "decimals": 8,
+        "currencyID": "3000"
+    },
+    {
+        "asset": {
+            "Token": "3001"
+        },
+        "name": "DUCK Currency",
+        "symbol": "DUCK",
+        "decimals": 6,
+        "currencyID": "3001"
+    },
+    {
+        "asset": {
             "Token": "3077"
         },
         "name": "AutomatedCoffeeToken",

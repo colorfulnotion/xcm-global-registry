@@ -2687,7 +2687,7 @@
                 "relayChain": "kusama",
                 "paraID": 1000,
                 "id": "statemine",
-                "assetCnt": "153",
+                "assetCnt": "155",
                 "data": [
                     {
                         "asset": {
@@ -3259,6 +3259,24 @@
                         "symbol": "PWS",
                         "decimals": 18,
                         "currencyID": "300"
+                    },
+                    {
+                        "asset": {
+                            "Token": "3000"
+                        },
+                        "name": "GRAIN Token",
+                        "symbol": "GRAIN",
+                        "decimals": 8,
+                        "currencyID": "3000"
+                    },
+                    {
+                        "asset": {
+                            "Token": "3001"
+                        },
+                        "name": "DUCK Currency",
+                        "symbol": "DUCK",
+                        "decimals": 6,
+                        "currencyID": "3001"
                     },
                     {
                         "asset": {
