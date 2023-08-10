@@ -154,6 +154,13 @@
                 "id": "kylin",
                 "assetCnt": "1",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2052_assets.json"
+            },
+            {
+                "relayChain": "polkadot",
+                "paraID": 2094,
+                "id": "pendulum",
+                "assetCnt": "1",
+                "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2094_assets.json"
             }
         ],
         "kusama": [
@@ -369,6 +376,13 @@
             },
             {
                 "relayChain": "kusama",
+                "paraID": 2124,
+                "id": "amplitude",
+                "assetCnt": "1",
+                "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2124_assets.json"
+            },
+            {
+                "relayChain": "kusama",
                 "paraID": 2222,
                 "id": "ipci",
                 "assetCnt": "1",
@@ -558,7 +572,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "44",
+            "registryCnt": "47",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/polkadot_xcmRegistry.json"
         }
     ]
