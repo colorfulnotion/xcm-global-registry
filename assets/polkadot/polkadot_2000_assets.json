@@ -10,6 +10,24 @@
     },
     {
         "asset": {
+            "Erc20": "0x13fe490489204abde3265bfd81179e6ddd2020c3"
+        },
+        "name": "Uniswap (Portal)",
+        "symbol": "UNI",
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0213fe490489204abde3265bfd81179e6ddd2020c3\"}]"
+    },
+    {
+        "asset": {
+            "Erc20": "0x19eba3efa7d0e02956678c5f3c63c46beda2d7d8"
+        },
+        "name": "MATIC (Portal from Polygon)",
+        "symbol": "MATICpo",
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0219eba3efa7d0e02956678c5f3c63c46beda2d7d8\"}]"
+    },
+    {
+        "asset": {
             "Erc20": "0x54a37a01cd75b616d63e0ab665bffdb0143c52ae"
         },
         "name": "DAI Stablecoin (Portal)",
@@ -28,12 +46,66 @@
     },
     {
         "asset": {
+            "Erc20": "0x604cae74cdc395a8824557d422fccf8db6809a2f"
+        },
+        "name": "Chainlink (Portal)",
+        "symbol": "LINK",
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x02604cae74cdc395a8824557d422fccf8db6809a2f\"}]"
+    },
+    {
+        "asset": {
+            "Erc20": "0x7d52316b1132c26626670fbf52aa7f5ce6f9b388"
+        },
+        "name": "Binance USD (Portal from BSC)",
+        "symbol": "BUSDbs",
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x027d52316b1132c26626670fbf52aa7f5ce6f9b388\"}]"
+    },
+    {
+        "asset": {
+            "Erc20": "0xa72206fdf839c785b3073870013f2fd57ba10b63"
+        },
+        "name": "Crust Network (Portal from Ethereum)",
+        "symbol": "CRUet",
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x02a72206fdf839c785b3073870013f2fd57ba10b63\"}]"
+    },
+    {
+        "asset": {
+            "Erc20": "0xaf6997a70feb868df863d5380c3ab93da4297edc"
+        },
+        "name": "Shiba Inu (Portal)",
+        "symbol": "SHIB",
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x02af6997a70feb868df863d5380c3ab93da4297edc\"}]"
+    },
+    {
+        "asset": {
             "Erc20": "0xc80084af223c8b598536178d9361dc55bfda6818"
         },
         "name": "Wrapped Bitcoin (Portal)",
         "symbol": "WBTC",
         "decimals": 8,
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x02c80084af223c8b598536178d9361dc55bfda6818\"}]"
+    },
+    {
+        "asset": {
+            "Erc20": "0xd1729649ee6d5e3740ee2f9254c4226aabd0dc5b"
+        },
+        "name": "Lido DAO (Portal)",
+        "symbol": "LDO",
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x02d1729649ee6d5e3740ee2f9254c4226aabd0dc5b\"}]"
+    },
+    {
+        "asset": {
+            "Erc20": "0xd53e4ba478cca5080c47435769ff82f41e5e4cd0"
+        },
+        "name": "Arbitrum (Portal)",
+        "symbol": "ARB",
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x02d53e4ba478cca5080c47435769ff82f41e5e4cd0\"}]"
     },
     {
         "asset": {
