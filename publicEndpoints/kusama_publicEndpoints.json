@@ -336,6 +336,16 @@
         ],
         "relaychain": "kusama"
     },
+    "kusama-2124": {
+        "chainkey": "kusama-2124",
+        "name": "Amplitude",
+        "id": "amplitude",
+        "paraID": 2124,
+        "WSEndpoints": [
+            "wss://rpc-amplitude.pendulumchain.tech"
+        ],
+        "relaychain": "kusama"
+    },
     "kusama-2222": {
         "chainkey": "kusama-2222",
         "name": "DAO IPCI",

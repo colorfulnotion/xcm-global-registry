@@ -261,5 +261,15 @@
       "wss://polkadot.kylin-node.co.uk"
     ],
     "relaychain": "polkadot"
+  },
+  "polkadot-2094": {
+    "chainkey": "polkadot-2094",
+    "name": "Pendulum",
+    "id": "pendulum",
+    "paraID": 2094,
+    "WSEndpoints": [
+      "wss://rpc-pendulum.prd.pendulumchain.tech"
+    ],
+    "relaychain": "polkadot"
   }
 }
