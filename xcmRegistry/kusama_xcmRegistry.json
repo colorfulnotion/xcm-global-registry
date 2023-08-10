@@ -1074,16 +1074,20 @@
                 }
             }
         },
-        "xcContractAddress": {},
+        "xcContractAddress": {
+            "2023": "0xffffffff3646a00f78cadf8883c5a2791bfcddc4"
+        },
         "xcCurrencyID": {
             "2001": {
                 "VToken": "BNC"
             },
+            "2023": "72145018963825376852137222787619937732",
             "2110": "23"
         },
-        "confidence": 2,
+        "confidence": 3,
         "source": [
             2001,
+            2023,
             2110
         ]
     },
@@ -1121,15 +1125,19 @@
                 }
             }
         },
-        "xcContractAddress": {},
+        "xcContractAddress": {
+            "2023": "0xffffffff98e37bf6a393504b5adc5b53b4d0ba11"
+        },
         "xcCurrencyID": {
             "2001": {
                 "VToken": "MOVR"
-            }
+            },
+            "2023": "203223821023327994093278529517083736593"
         },
-        "confidence": 1,
+        "confidence": 2,
         "source": [
-            2001
+            2001,
+            2023
         ]
     },
     "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0104\"}]": {
@@ -1167,22 +1175,25 @@
             }
         },
         "xcContractAddress": {
-            "2007": "0xffffffff0000000000000001000000000000000c"
+            "2007": "0xffffffff0000000000000001000000000000000c",
+            "2023": "0xffffffffc6deec7fc8b11a2c8dde9a59f8c62efe"
         },
         "xcCurrencyID": {
             "2001": {
                 "VToken": "KSM"
             },
             "2007": "18446744073709551628",
+            "2023": "264344629840762281112027368930249420542",
             "2092": {
                 "ForeignAsset": "5"
             },
             "2110": "15"
         },
-        "confidence": 4,
+        "confidence": 5,
         "source": [
             2001,
             2007,
+            2023,
             2092,
             2110
         ]
