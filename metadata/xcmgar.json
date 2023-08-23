@@ -2775,7 +2775,7 @@
                 "relayChain": "kusama",
                 "paraID": 1000,
                 "id": "statemine",
-                "assetCnt": "155",
+                "assetCnt": "156",
                 "data": [
                     {
                         "asset": {
@@ -3743,6 +3743,15 @@
                         "symbol": "CHRWNA",
                         "decimals": 10,
                         "currencyID": "567"
+                    },
+                    {
+                        "asset": {
+                            "Token": "569"
+                        },
+                        "name": "KUS",
+                        "symbol": "KUSA",
+                        "decimals": 2,
+                        "currencyID": "569"
                     },
                     {
                         "asset": {

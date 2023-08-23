@@ -968,6 +968,15 @@
     },
     {
         "asset": {
+            "Token": "569"
+        },
+        "name": "KUS",
+        "symbol": "KUSA",
+        "decimals": 2,
+        "currencyID": "569"
+    },
+    {
+        "asset": {
             "Token": "598"
         },
         "name": "Eren Yilmaz",
