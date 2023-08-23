@@ -5899,8 +5899,8 @@
                         "asset": {
                             "Token": "214920334981412447805621250067209749032"
                         },
-                        "name": "Acala Dollar",
-                        "symbol": "xcAUSD",
+                        "name": "aSEED",
+                        "symbol": "xcaSeed",
                         "decimals": 12,
                         "currencyID": "214920334981412447805621250067209749032",
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0081\"}]"
@@ -15496,7 +15496,7 @@
                         "paraID": 2000,
                         "relayChain": "kusama",
                         "nativeChainID": "karura",
-                        "symbol": "AUSD",
+                        "symbol": "aSeed",
                         "decimals": 12,
                         "interiorType": "x2",
                         "xcmV1Standardized": [
