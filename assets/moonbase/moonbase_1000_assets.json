@@ -281,6 +281,16 @@
     },
     {
         "asset": {
+            "Token": "238111524681612888331172110363070489924"
+        },
+        "name": "OriginTrail Parachain Token",
+        "symbol": "xcOTP",
+        "decimals": 12,
+        "currencyID": "238111524681612888331172110363070489924",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2043},{\"palletInstance\":10}]"
+    },
+    {
+        "asset": {
             "Token": "246731721631919099516624243100078522143"
         },
         "name": "ICZ",

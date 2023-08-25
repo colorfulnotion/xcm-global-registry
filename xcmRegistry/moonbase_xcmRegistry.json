@@ -1532,6 +1532,51 @@
             1000
         ]
     },
+    "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2043},{\"palletInstance\":10}]": {
+        "paraID": 2043,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "OTP",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2043
+            },
+            {
+                "palletInstance": 10
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2043
+                        },
+                        {
+                            "palletInstance": 10
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "1000": "0xffffffffb3229c8e7657eabea704d5e75246e544"
+        },
+        "xcCurrencyID": {
+            "1000": "238111524681612888331172110363070489924"
+        },
+        "confidence": 1,
+        "source": [
+            1000
+        ]
+    },
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2048}]": {
         "paraID": 2048,
         "relayChain": "moonbase",
