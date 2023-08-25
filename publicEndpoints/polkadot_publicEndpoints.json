@@ -262,6 +262,17 @@
     ],
     "relaychain": "polkadot"
   },
+  "polkadot-2092": {
+      "chainkey": "polkadot-2092",
+      "name": "Zeitgeist",
+      "id": "zeitgeist",
+      "paraID": 2092,
+      "WSEndpoints": [
+          "wss://zeitgeist-rpc.dwellir.com",
+          "wss://zeitgeist.api.onfinality.io/public-ws"
+      ],
+      "relaychain": "polkadot"
+  },
   "polkadot-2094": {
     "chainkey": "polkadot-2094",
     "name": "Pendulum",
