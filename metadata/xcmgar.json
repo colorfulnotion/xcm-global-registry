@@ -1748,7 +1748,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "assetCnt": "45",
+                "assetCnt": "46",
                 "data": [
                     {
                         "asset": {
@@ -1916,6 +1916,14 @@
                         },
                         "name": "vsBOND-DOT-2021-7-14",
                         "symbol": "vsBOND-DOT-2021-7-14",
+                        "decimals": 10
+                    },
+                    {
+                        "asset": {
+                            "VSBond2": "020251421"
+                        },
+                        "name": "vsBOND-DOT-2025-14-21",
+                        "symbol": "vsBOND-DOT-2025-14-21",
                         "decimals": 10
                     },
                     {
