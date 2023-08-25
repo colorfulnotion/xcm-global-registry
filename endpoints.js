@@ -150,6 +150,12 @@ const polkaholicKnownPublicEndpoints = {
         "paraID": 2052,
         "relaychain": "polkadot"
     },
+    "polkadot-2092": {
+        "id": "zeitgeist",
+        "chainID": 2092,
+        "paraID": 2092,
+        "relaychain": "polkadot"
+    },
     "kusama-1000": {
         "id": "statemine",
         "chainID": 21000,
@@ -268,12 +274,6 @@ const polkaholicKnownPublicEndpoints = {
         "id": "bitcountrypioneer",
         "chainID": 22096,
         "paraID": 22096,
-        "relaychain": "kusama"
-    },
-    "kusama-2101": {
-        "id": "zeitgeist",
-        "chainID": 22101,
-        "paraID": 22101,
         "relaychain": "kusama"
     },
     "kusama-2102": {

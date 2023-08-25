@@ -231,17 +231,6 @@
         ],
         "relaychain": "kusama"
     },
-    "kusama-2101": {
-        "chainkey": "kusama-2101",
-        "name": "Zeitgeist",
-        "id": "zeitgeist",
-        "paraID": 2101,
-        "WSEndpoints": [
-            "wss://zeitgeist-rpc.dwellir.com",
-            "wss://zeitgeist.api.onfinality.io/public-ws"
-        ],
-        "relaychain": "kusama"
-    },
     "kusama-2102": {
         "chainkey": "kusama-2102",
         "name": "Pichiu",
