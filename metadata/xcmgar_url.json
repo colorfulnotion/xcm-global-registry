@@ -157,6 +157,13 @@
             },
             {
                 "relayChain": "polkadot",
+                "paraID": 2092,
+                "id": "zeitgeist",
+                "assetCnt": "1",
+                "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2092_assets.json"
+            },
+            {
+                "relayChain": "polkadot",
                 "paraID": 2094,
                 "id": "pendulum",
                 "assetCnt": "1",
@@ -300,7 +307,7 @@
             {
                 "relayChain": "kusama",
                 "paraID": 2101,
-                "id": "zeitgeist",
+                "id": null,
                 "assetCnt": "1",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2101_assets.json"
             },

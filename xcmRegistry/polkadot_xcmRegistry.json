@@ -2236,7 +2236,7 @@
     "[{\"network\":\"polkadot\"},{\"parachain\":2092},{\"generalKey\":\"0x0001\"}]": {
         "paraID": 2092,
         "relayChain": "polkadot",
-        "nativeChainID": null,
+        "nativeChainID": "zeitgeist",
         "symbol": "ZTG",
         "decimals": 10,
         "interiorType": "x2",

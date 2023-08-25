@@ -2784,6 +2784,25 @@
             },
             {
                 "relayChain": "polkadot",
+                "paraID": 2092,
+                "id": "zeitgeist",
+                "assetCnt": "1",
+                "data": [
+                    {
+                        "asset": {
+                            "Token": "ZTG"
+                        },
+                        "name": "ZTG",
+                        "symbol": "ZTG",
+                        "decimals": 10,
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2092},{\"generalKey\":\"0x0001\"}]",
+                        "inferred": true,
+                        "confidence": 0
+                    }
+                ]
+            },
+            {
+                "relayChain": "polkadot",
                 "paraID": 2094,
                 "id": "pendulum",
                 "assetCnt": "1",
@@ -7000,7 +7019,7 @@
             {
                 "relayChain": "kusama",
                 "paraID": 2101,
-                "id": "zeitgeist",
+                "id": null,
                 "assetCnt": "1",
                 "data": [
                     {
@@ -11936,7 +11955,7 @@
                     {
                         "paraID": 2092,
                         "relayChain": "polkadot",
-                        "nativeChainID": null,
+                        "nativeChainID": "zeitgeist",
                         "symbol": "ZTG",
                         "decimals": 10,
                         "interiorType": "x2",
@@ -24143,7 +24162,7 @@
                 "[{\"network\":\"polkadot\"},{\"parachain\":2092},{\"generalKey\":\"0x0001\"}]": {
                     "paraID": 2092,
                     "relayChain": "polkadot",
-                    "nativeChainID": null,
+                    "nativeChainID": "zeitgeist",
                     "symbol": "ZTG",
                     "decimals": 10,
                     "interiorType": "x2",
