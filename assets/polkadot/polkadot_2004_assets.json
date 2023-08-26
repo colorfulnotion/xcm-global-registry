@@ -241,6 +241,16 @@
     },
     {
         "asset": {
+            "Token": "89994634370519791027168048838578580624"
+        },
+        "name": "Subsocial",
+        "symbol": "xcSUB",
+        "decimals": 10,
+        "currencyID": "89994634370519791027168048838578580624",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2101}]"
+    },
+    {
+        "asset": {
             "Token": "91372035960551235635465443179559840483"
         },
         "name": "Centrifuge",

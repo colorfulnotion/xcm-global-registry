@@ -2276,6 +2276,43 @@
             2034
         ]
     },
+    "[{\"network\":\"polkadot\"},{\"parachain\":2101}]": {
+        "paraID": 2101,
+        "relayChain": "polkadot",
+        "nativeChainID": null,
+        "symbol": "SUB",
+        "decimals": 10,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2101
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2101
+                    }
+                }
+            }
+        },
+        "xcContractAddress": {
+            "2004": "0xffffffff43b4560bc0c451a3386e082bff50ac90"
+        },
+        "xcCurrencyID": {
+            "2004": "89994634370519791027168048838578580624"
+        },
+        "confidence": 1,
+        "source": [
+            2004
+        ]
+    },
     "[{\"network\":\"polkadot\"},{\"parachain\":2104}]": {
         "paraID": 2104,
         "relayChain": "polkadot",
