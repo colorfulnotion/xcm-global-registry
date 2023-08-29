@@ -464,15 +464,14 @@
                 }
             }
         },
-        "asset": "12",
-        "source": [
-            2090
-        ],
+        "xcContractAddress": {},
         "xcCurrencyID": {
             "2090": "12"
         },
-        "xcContractAddress": {},
-        "confidence": 1
+        "confidence": 1,
+        "source": [
+            2090
+        ]
     },
     "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27\"}]": {
         "paraID": 2000,
@@ -2807,14 +2806,13 @@
                 }
             }
         },
-        "asset": "6",
-        "source": [
-            2090
-        ],
+        "xcContractAddress": {},
         "xcCurrencyID": {
             "2090": "6"
         },
-        "xcContractAddress": {},
-        "confidence": 1
+        "confidence": 1,
+        "source": [
+            2090
+        ]
     }
 }
