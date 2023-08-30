@@ -2690,9 +2690,7 @@
                         "name": "PHA",
                         "symbol": "PHA",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2035}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2035}]"
                     }
                 ]
             },
@@ -2852,7 +2850,7 @@
                 "relayChain": "kusama",
                 "paraID": 1000,
                 "id": "statemine",
-                "assetCnt": "156",
+                "assetCnt": "157",
                 "data": [
                     {
                         "asset": {
@@ -3226,6 +3224,15 @@
                         "symbol": "BFKK",
                         "decimals": 20,
                         "currencyID": "20"
+                    },
+                    {
+                        "asset": {
+                            "Token": "200"
+                        },
+                        "name": "HEINEKEN",
+                        "symbol": "SIX",
+                        "decimals": 5,
+                        "currencyID": "200"
                     },
                     {
                         "asset": {
@@ -4740,8 +4747,40 @@
                 "relayChain": "kusama",
                 "paraID": 2001,
                 "id": "bifrost",
-                "assetCnt": "48",
+                "assetCnt": "52",
                 "data": [
+                    {
+                        "asset": {
+                            "BLP": "0"
+                        },
+                        "name": "0x426966726f737420537461626c6520506f6f6c20546f6b656e2000000000",
+                        "symbol": "0x424c5000000000",
+                        "decimals": 12
+                    },
+                    {
+                        "asset": {
+                            "BLP": "1"
+                        },
+                        "name": "0x426966726f737420537461626c6520506f6f6c20546f6b656e2000000001",
+                        "symbol": "0x424c5000000001",
+                        "decimals": 12
+                    },
+                    {
+                        "asset": {
+                            "BLP": "2"
+                        },
+                        "name": "0x426966726f737420537461626c6520506f6f6c20546f6b656e2000000002",
+                        "symbol": "0x424c5000000002",
+                        "decimals": 12
+                    },
+                    {
+                        "asset": {
+                            "BLP": "3"
+                        },
+                        "name": "0x426966726f737420537461626c6520506f6f6c20546f6b656e2000000003",
+                        "symbol": "0x424c5000000003",
+                        "decimals": 12
+                    },
                     {
                         "asset": {
                             "Native": "BNC"

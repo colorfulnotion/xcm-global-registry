@@ -182,7 +182,7 @@
                 "relayChain": "kusama",
                 "paraID": 1000,
                 "id": "statemine",
-                "assetCnt": "156",
+                "assetCnt": "157",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_1000_assets.json"
             },
             {
@@ -196,7 +196,7 @@
                 "relayChain": "kusama",
                 "paraID": 2001,
                 "id": "bifrost",
-                "assetCnt": "48",
+                "assetCnt": "52",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2001_assets.json"
             },
             {

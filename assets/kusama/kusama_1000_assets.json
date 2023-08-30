@@ -374,6 +374,15 @@
     },
     {
         "asset": {
+            "Token": "200"
+        },
+        "name": "HEINEKEN",
+        "symbol": "SIX",
+        "decimals": 5,
+        "currencyID": "200"
+    },
+    {
+        "asset": {
             "Token": "2021"
         },
         "name": "wave network",
