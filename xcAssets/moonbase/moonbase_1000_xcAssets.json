@@ -1046,6 +1046,46 @@
         ]
     },
     {
+        "paraID": 2034,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "HDX",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2034
+            },
+            {
+                "generalIndex": 0
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2034
+                        },
+                        {
+                            "generalIndex": 0
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "69606720909260275826784788104880799692",
+        "contractAddress": "0xffffffff345dc44ddae98df024eb494321e73fcc",
+        "source": [
+            "1000"
+        ]
+    },
+    {
         "paraID": 2036,
         "relayChain": "moonbase",
         "nativeChainID": null,

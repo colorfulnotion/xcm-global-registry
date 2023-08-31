@@ -5852,9 +5852,7 @@
                         "name": "CSM",
                         "symbol": "CSM",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2012}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2012}]"
                     }
                 ]
             },
@@ -20957,20 +20955,21 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2023": "0xffffffff51470dca3dbe535bd2880a9ccdbc6bd9"
-                    },
+                    "asset": "108036400430056508975016746969135344601",
+                    "source": [
+                        2012,
+                        2023,
+                        2090
+                    ],
                     "xcCurrencyID": {
                         "2012": "108036400430056508975016746969135344601",
                         "2023": "108036400430056508975016746969135344601",
                         "2090": "16"
                     },
-                    "confidence": 3,
-                    "source": [
-                        2012,
-                        2023,
-                        2090
-                    ]
+                    "xcContractAddress": {
+                        "2023": "0xffffffff51470dca3dbe535bd2880a9ccdbc6bd9"
+                    },
+                    "confidence": 3
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2084}]": {
                     "paraID": 2084,

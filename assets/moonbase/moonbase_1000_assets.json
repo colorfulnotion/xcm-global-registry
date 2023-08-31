@@ -531,6 +531,16 @@
     },
     {
         "asset": {
+            "Token": "69606720909260275826784788104880799692"
+        },
+        "name": "HydraDX",
+        "symbol": "xcHDX",
+        "decimals": 12,
+        "currencyID": "69606720909260275826784788104880799692",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2034},{\"generalIndex\":0}]"
+    },
+    {
+        "asset": {
             "Token": "76100021443485661246318545281171740067"
         },
         "name": "HKO",
