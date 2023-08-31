@@ -134,6 +134,15 @@
     },
     {
         "asset": {
+            "Token": "256"
+        },
+        "name": "IceCreamToken",
+        "symbol": "ICE",
+        "decimals": 20,
+        "currencyID": "256"
+    },
+    {
+        "asset": {
             "Token": "3"
         },
         "name": "DOT",
