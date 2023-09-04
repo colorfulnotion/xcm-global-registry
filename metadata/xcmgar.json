@@ -1776,7 +1776,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "assetCnt": "46",
+                "assetCnt": "47",
                 "data": [
                     {
                         "asset": {
@@ -2112,6 +2112,14 @@
                         },
                         "name": "vsBOND-DOT-3340-14-21",
                         "symbol": "vsBOND-DOT-3340-14-21",
+                        "decimals": 10
+                    },
+                    {
+                        "asset": {
+                            "VSBond2": "033451421"
+                        },
+                        "name": "vsBOND-DOT-3345-14-21",
+                        "symbol": "vsBOND-DOT-3345-14-21",
                         "decimals": 10
                     },
                     {
@@ -7131,9 +7139,7 @@
                         "name": "CRAB",
                         "symbol": "CRAB",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2105},{\"palletInstance\":5}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2105},{\"palletInstance\":5}]"
                     }
                 ]
             },
