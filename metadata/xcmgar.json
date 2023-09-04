@@ -24,7 +24,7 @@
                 "relayChain": "polkadot",
                 "paraID": 1000,
                 "id": "statemint",
-                "assetCnt": "31",
+                "assetCnt": "30",
                 "data": [
                     {
                         "asset": {
@@ -82,15 +82,6 @@
                         "symbol": "web3",
                         "decimals": 18,
                         "currencyID": "11"
-                    },
-                    {
-                        "asset": {
-                            "Token": "11984"
-                        },
-                        "name": "Tether USD",
-                        "symbol": "USDt",
-                        "decimals": 6,
-                        "currencyID": "11984"
                     },
                     {
                         "asset": {
@@ -7139,7 +7130,9 @@
                         "name": "CRAB",
                         "symbol": "CRAB",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2105},{\"palletInstance\":5}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2105},{\"palletInstance\":5}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },

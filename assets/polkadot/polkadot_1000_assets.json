@@ -58,15 +58,6 @@
     },
     {
         "asset": {
-            "Token": "11984"
-        },
-        "name": "Tether USD",
-        "symbol": "USDt",
-        "decimals": 6,
-        "currencyID": "11984"
-    },
-    {
-        "asset": {
             "Token": "12"
         },
         "name": "Cypress Dollar",
