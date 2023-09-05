@@ -108,7 +108,10 @@
                         "name": "USD Coin",
                         "symbol": "USDC",
                         "decimals": 6,
-                        "currencyID": "1337"
+                        "currencyID": "1337",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]",
+                        "inferred": true,
+                        "confidence": 0
                     },
                     {
                         "asset": {
@@ -2163,7 +2166,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2031,
                 "id": "centrifuge",
-                "assetCnt": "7",
+                "assetCnt": "9",
                 "data": [
                     {
                         "asset": {
@@ -2176,6 +2179,17 @@
                             "ForeignAsset": "1"
                         },
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]"
+                    },
+                    {
+                        "asset": {
+                            "ForeignAsset": "100,001"
+                        },
+                        "name": "LP Ethereum Wrapped USDC",
+                        "symbol": "LpEthUSDC",
+                        "decimals": 6,
+                        "currencyID": {
+                            "ForeignAsset": "100,001"
+                        }
                     },
                     {
                         "asset": {
@@ -2223,6 +2237,18 @@
                             "ForeignAsset": "5"
                         },
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},\"here\"]"
+                    },
+                    {
+                        "asset": {
+                            "ForeignAsset": "6"
+                        },
+                        "name": "USD Coin",
+                        "symbol": "USDC",
+                        "decimals": 6,
+                        "currencyID": {
+                            "ForeignAsset": "6"
+                        },
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]"
                     },
                     {
                         "asset": {
@@ -10982,7 +11008,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2031,
                 "id": "centrifuge",
-                "xcAssetCnt": "5",
+                "xcAssetCnt": "6",
                 "data": [
                     {
                         "paraID": 0,
@@ -11055,6 +11081,53 @@
                         },
                         "asset": {
                             "ForeignAsset": "1"
+                        },
+                        "source": [
+                            "2031"
+                        ]
+                    },
+                    {
+                        "paraID": 1000,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "statemint",
+                        "symbol": "USDC",
+                        "decimals": 6,
+                        "interiorType": "x3",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 1000
+                            },
+                            {
+                                "palletInstance": 50
+                            },
+                            {
+                                "generalIndex": 1337
+                            }
+                        ],
+                        "xcmV1MultiLocationByte": "0x010300a10f043205e514",
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x3": [
+                                        {
+                                            "parachain": 1000
+                                        },
+                                        {
+                                            "palletInstance": 50
+                                        },
+                                        {
+                                            "generalIndex": 1337
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": {
+                            "ForeignAsset": "6"
                         },
                         "source": [
                             "2031"
@@ -22023,7 +22096,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "48",
+            "registryCnt": "49",
             "data": {
                 "[{\"network\":\"polkadot\"},\"here\"]": {
                     "paraID": 0,
@@ -22249,6 +22322,57 @@
                     "confidence": 1,
                     "source": [
                         2000
+                    ]
+                },
+                "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]": {
+                    "paraID": 1000,
+                    "relayChain": "polkadot",
+                    "nativeChainID": "statemint",
+                    "symbol": "USDC",
+                    "decimals": 6,
+                    "interiorType": "x3",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 1337
+                        }
+                    ],
+                    "xcmV1MultiLocationByte": "0x010300a10f043205e514",
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x3": [
+                                    {
+                                        "parachain": 1000
+                                    },
+                                    {
+                                        "palletInstance": 50
+                                    },
+                                    {
+                                        "generalIndex": 1337
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2031": {
+                            "ForeignAsset": "6"
+                        }
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2031
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0001\"}]": {

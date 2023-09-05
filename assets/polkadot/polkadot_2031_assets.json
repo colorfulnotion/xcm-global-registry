@@ -13,6 +13,17 @@
     },
     {
         "asset": {
+            "ForeignAsset": "100,001"
+        },
+        "name": "LP Ethereum Wrapped USDC",
+        "symbol": "LpEthUSDC",
+        "decimals": 6,
+        "currencyID": {
+            "ForeignAsset": "100,001"
+        }
+    },
+    {
+        "asset": {
             "ForeignAsset": "2"
         },
         "name": "Axelar USDC",
@@ -57,6 +68,18 @@
             "ForeignAsset": "5"
         },
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},\"here\"]"
+    },
+    {
+        "asset": {
+            "ForeignAsset": "6"
+        },
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "decimals": 6,
+        "currencyID": {
+            "ForeignAsset": "6"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]"
     },
     {
         "asset": {

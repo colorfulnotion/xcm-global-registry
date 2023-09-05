@@ -96,7 +96,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2031,
                 "id": "centrifuge",
-                "assetCnt": "7",
+                "assetCnt": "9",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2031_assets.json"
             },
             {
@@ -445,7 +445,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2031,
                 "id": "centrifuge",
-                "xcAssetCnt": "5",
+                "xcAssetCnt": "6",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2031_xcAssets.json"
             },
             {
@@ -579,7 +579,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "48",
+            "registryCnt": "49",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/polkadot_xcmRegistry.json"
         }
     ]
