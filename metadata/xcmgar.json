@@ -2895,7 +2895,7 @@
                 "relayChain": "kusama",
                 "paraID": 1000,
                 "id": "statemine",
-                "assetCnt": "157",
+                "assetCnt": "156",
                 "data": [
                     {
                         "asset": {
@@ -4100,15 +4100,6 @@
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":8}]",
                         "inferred": true,
                         "confidence": 0
-                    },
-                    {
-                        "asset": {
-                            "Token": "80"
-                        },
-                        "name": "Basically Indivisible Token",
-                        "symbol": "BIT",
-                        "decimals": 0,
-                        "currencyID": "80"
                     },
                     {
                         "asset": {
@@ -19741,15 +19732,14 @@
                             }
                         }
                     },
-                    "asset": "12",
-                    "source": [
-                        2090
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2090": "12"
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2090
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27\"}]": {
                     "paraID": 2000,
@@ -22084,15 +22074,14 @@
                             }
                         }
                     },
-                    "asset": "6",
-                    "source": [
-                        2090
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2090": "6"
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2090
+                    ]
                 }
             }
         },

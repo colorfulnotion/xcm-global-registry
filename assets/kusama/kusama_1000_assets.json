@@ -1205,15 +1205,6 @@
     },
     {
         "asset": {
-            "Token": "80"
-        },
-        "name": "Basically Indivisible Token",
-        "symbol": "BIT",
-        "decimals": 0,
-        "currencyID": "80"
-    },
-    {
-        "asset": {
             "Token": "80815"
         },
         "name": "Kusama File Coin",
