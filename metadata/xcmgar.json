@@ -7156,7 +7156,9 @@
                         "name": "CRAB",
                         "symbol": "CRAB",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2105},{\"palletInstance\":5}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2105},{\"palletInstance\":5}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -19739,14 +19741,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "12",
+                    "source": [
+                        2090
+                    ],
                     "xcCurrencyID": {
                         "2090": "12"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2090
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x021f3a10587a20114ea25ba1b388ee2dd4a337ce27\"}]": {
                     "paraID": 2000,
@@ -22081,14 +22084,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "6",
+                    "source": [
+                        2090
+                    ],
                     "xcCurrencyID": {
                         "2090": "6"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2090
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 }
             }
         },
