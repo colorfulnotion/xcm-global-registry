@@ -452,8 +452,8 @@ module.exports = {
         return convert_xcmInteriorKey_to_xcmV1MultiLocation(xcmInteriorKey, isUppercase)
     },
     convertXcmV1MultiLocationToByte: function(xcmV1MultiLocation, api = false) {
-        //return false
-        return convert_xcmV1MultiLocation_to_byte(xcmV1MultiLocation, api)
+        return false
+        //return convert_xcmV1MultiLocation_to_byte(xcmV1MultiLocation, api)
     },
     encodeNetwork: function(relayChain = 'polkadot') {
         return encodeNetwork(relayChain)

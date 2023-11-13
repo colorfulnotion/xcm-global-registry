@@ -349,7 +349,7 @@ module.exports = class ChainParser {
                     interiorType: standardizedInteriorK,
                     //xcmInteriorKey: xcmInteriorKey,
                     xcmV1Standardized: xcmV1Standardized,
-                    xcmV1MultiLocationByte: xcmV1MultiLocationByte,
+                    //xcmV1MultiLocationByte: xcmV1MultiLocationByte,
                     xcmV1MultiLocation: xcmV1MultiLocation,
                     xcContractAddress: {},
                     xcCurrencyID: {},
@@ -483,7 +483,7 @@ module.exports = class ChainParser {
                     interiorType: standardizedInteriorK,
                     //xcmInteriorKey: xcmInteriorKey,
                     xcmV1Standardized: xcmV1Standardized,
-                    xcmV1MultiLocationByte: xcmV1MultiLocationByte,
+                    //xcmV1MultiLocationByte: xcmV1MultiLocationByte,
                     xcmV1MultiLocation: xcmV1MultiLocation,
                     xcContractAddress: {},
                     xcCurrencyID: {},
@@ -523,7 +523,9 @@ module.exports = class ChainParser {
                 new_interiorV.push(interiorV)
                 new_interiork = 'x2'
             } else if (Array.isArray(interiorV)) {
-                let xTypeInt = xcmgarTool.dechexToInt(z.substr(1)) + 1
+                console.log(`interiorV`, JSON.stringify(interiorV))
+                let xTypeInt = interiorV.length + 1
+                //let xTypeInt = xcmgarTool.dechexToInt(z.substr(1)) + 1
                 new_interiork = `x${xTypeInt}`
                 //x2/x3...
                 for (const v of interiorV) {
@@ -666,7 +668,7 @@ module.exports = class ChainParser {
                         interiorType: standardizedInteriorK,
                         //xcmInteriorKey: xcmInteriorKey,
                         xcmV1Standardized: xcmV1Standardized,
-                        xcmV1MultiLocationByte: xcmV1MultiLocationByte,
+                        //xcmV1MultiLocationByte: xcmV1MultiLocationByte,
                         xcmV1MultiLocation: xcmV1MultiLocation,
                         xcContractAddress: {},
                         xcCurrencyID: {},
@@ -792,7 +794,7 @@ module.exports = class ChainParser {
                     interiorType: standardizedInteriorK,
                     //xcmInteriorKey: xcmInteriorKey,
                     xcmV1Standardized: xcmV1Standardized,
-                    xcmV1MultiLocationByte: xcmV1MultiLocationByte,
+                    //xcmV1MultiLocationByte: xcmV1MultiLocationByte,
                     xcmV1MultiLocation: xcmV1MultiLocation,
                     xcContractAddress: {},
                     xcCurrencyID: {},
