@@ -3,7 +3,7 @@ name: XCM Global Asset Registry Generation
 on:
   push:
     branches:
-      - main
+      - action
     paths:
       - .github/workflows/deploy.yml
       - publicEndpoints/*.json
@@ -37,7 +37,7 @@ jobs:
       - name: Moonbase XCM Global Asset Registry Generation
         run: node xcmgar registry -r moonbase
       - name: XCM GAR metadata Generation
-        run: node xcmgar generate -m -u 
+        run: node xcmgar generate -m -u
       - name: Show diff
         run:  |
             git diff assets
