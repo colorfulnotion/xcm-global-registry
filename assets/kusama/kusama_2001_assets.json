@@ -3,32 +3,32 @@
         "asset": {
             "BLP": "0"
         },
-        "name": "0x426966726f737420537461626c6520506f6f6c20546f6b656e2000000000",
-        "symbol": "0x424c5000000000",
+        "name": "Bifrost Stable Pool Token 0",
+        "symbol": "BLP0",
         "decimals": 12
     },
     {
         "asset": {
             "BLP": "1"
         },
-        "name": "0x426966726f737420537461626c6520506f6f6c20546f6b656e2000000001",
-        "symbol": "0x424c5000000001",
+        "name": "Bifrost Stable Pool Token 1",
+        "symbol": "BLP1",
         "decimals": 12
     },
     {
         "asset": {
             "BLP": "2"
         },
-        "name": "0x426966726f737420537461626c6520506f6f6c20546f6b656e2000000002",
-        "symbol": "0x424c5000000002",
+        "name": "Bifrost Stable Pool Token 2",
+        "symbol": "BLP2",
         "decimals": 12
     },
     {
         "asset": {
             "BLP": "3"
         },
-        "name": "0x426966726f737420537461626c6520506f6f6c20546f6b656e2000000003",
-        "symbol": "0x424c5000000003",
+        "name": "Bifrost Stable Pool Token 3",
+        "symbol": "BLP3",
         "decimals": 12
     },
     {
