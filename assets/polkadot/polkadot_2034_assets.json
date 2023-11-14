@@ -32,6 +32,15 @@
     },
     {
         "asset": {
+            "Token": "100"
+        },
+        "name": "4-Pool",
+        "symbol": "4-Pool",
+        "decimals": 18,
+        "currencyID": "100"
+    },
+    {
+        "asset": {
             "Token": "11"
         },
         "name": "iBTC",
@@ -149,6 +158,26 @@
         "decimals": 6,
         "currencyID": "21",
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0x931715fee2d06333043d11f658c8ce934ac61d0c\"}}]"
+    },
+    {
+        "asset": {
+            "Token": "22"
+        },
+        "name": "USDC",
+        "symbol": "USDC",
+        "decimals": 6,
+        "currencyID": "22",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]"
+    },
+    {
+        "asset": {
+            "Token": "23"
+        },
+        "name": "USDT",
+        "symbol": "USDT",
+        "decimals": 6,
+        "currencyID": "23",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0xc30e9ca94cf52f3bf5692aacf81353a27052c46f\"}}]"
     },
     {
         "asset": {

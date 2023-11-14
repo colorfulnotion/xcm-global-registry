@@ -332,6 +332,16 @@
     },
     {
         "asset": {
+            "Token": "18446744073709551632"
+        },
+        "name": "Voucher ASTR",
+        "symbol": "vASTR",
+        "decimals": 18,
+        "currencyID": "18446744073709551632",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0903\"}]"
+    },
+    {
+        "asset": {
             "Token": "340282366920938463463374607431768211455"
         },
         "name": "Polkadot",
@@ -349,6 +359,16 @@
         "decimals": 6,
         "currencyID": "4294969280",
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]"
+    },
+    {
+        "asset": {
+            "Token": "4294969281"
+        },
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "decimals": 6,
+        "currencyID": "4294969281",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]"
     },
     {
         "asset": {

@@ -12,7 +12,6 @@
             },
             "here"
         ],
-        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -44,7 +43,6 @@
                 "generalKey": "0x0000"
             }
         ],
-        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -83,7 +81,6 @@
                 "generalKey": "0x0001"
             }
         ],
-        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -122,7 +119,6 @@
                 "generalKey": "0x0003"
             }
         ],
-        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -161,7 +157,6 @@
                 "palletInstance": 10
             }
         ],
-        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -197,7 +192,6 @@
                 "parachain": 2006
             }
         ],
-        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -228,7 +222,6 @@
                 "parachain": 2011
             }
         ],
-        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -262,7 +255,6 @@
                 "generalKey": "0x657164"
             }
         ],
-        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -301,7 +293,6 @@
                 "generalKey": "0x50415241"
             }
         ],
-        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -340,7 +331,6 @@
                 "generalKey": "0x0001"
             }
         ],
-        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -379,7 +369,6 @@
                 "generalIndex": 0
             }
         ],
-        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -418,7 +407,6 @@
                 "palletInstance": 5
             }
         ],
-        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,

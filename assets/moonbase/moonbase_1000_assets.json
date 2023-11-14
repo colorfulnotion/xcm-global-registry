@@ -271,6 +271,16 @@
     },
     {
         "asset": {
+            "Token": "22417088946346045371238623691600461855"
+        },
+        "name": "Picasso",
+        "symbol": "xcPICA",
+        "decimals": 12,
+        "currencyID": "22417088946346045371238623691600461855",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2019}]"
+    },
+    {
+        "asset": {
             "Token": "236426850287284823323011839750645103615"
         },
         "name": "matic",
@@ -291,6 +301,16 @@
     },
     {
         "asset": {
+            "Token": "244316754493307480955066032215622931381"
+        },
+        "name": "Picasso Cosmos Hub",
+        "symbol": "xcPicaATOM",
+        "decimals": 6,
+        "currencyID": "244316754493307480955066032215622931381",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2019},{\"palletInstance\":58},{\"generalIndex\":7}]"
+    },
+    {
+        "asset": {
             "Token": "246731721631919099516624243100078522143"
         },
         "name": "ICZ",
@@ -298,6 +318,16 @@
         "decimals": 18,
         "currencyID": "246731721631919099516624243100078522143",
         "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2006},{\"generalKey\":\"0x0000\"}]"
+    },
+    {
+        "asset": {
+            "Token": "247904392428752551837302928375648826728"
+        },
+        "name": "Agung",
+        "symbol": "xcAGNG",
+        "decimals": 18,
+        "currencyID": "247904392428752551837302928375648826728",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":3013},{\"generalKey\":\"0x0000\"}]"
     },
     {
         "asset": {
@@ -498,6 +528,16 @@
         "decimals": 10,
         "currencyID": "56557508561302779576079054873115361688",
         "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2101},{\"generalKey\":\"0x0001\"}]"
+    },
+    {
+        "asset": {
+            "Token": "62171815555800780292345782481836202130"
+        },
+        "name": "Polkadex Test Token",
+        "symbol": "xcPDEX",
+        "decimals": 12,
+        "currencyID": "62171815555800780292345782481836202130",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2142}]"
     },
     {
         "asset": {

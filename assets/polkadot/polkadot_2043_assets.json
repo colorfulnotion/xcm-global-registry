@@ -15,6 +15,9 @@
         },
         "name": "OTP",
         "symbol": "OTP",
-        "decimals": 12
+        "decimals": 12,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2043},{\"palletInstance\":10}]",
+        "inferred": true,
+        "confidence": 0
     }
 ]

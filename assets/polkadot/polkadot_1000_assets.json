@@ -116,6 +116,15 @@
     },
     {
         "asset": {
+            "Token": "20"
+        },
+        "name": "Cypress Stable Coin",
+        "symbol": "StabCP",
+        "decimals": 10,
+        "currencyID": "20"
+    },
+    {
+        "asset": {
             "Token": "20090103"
         },
         "name": "BTC",
@@ -215,6 +224,15 @@
         "symbol": "777",
         "decimals": 20,
         "currencyID": "777"
+    },
+    {
+        "asset": {
+            "Token": "79"
+        },
+        "name": "Polkagold",
+        "symbol": "PGOLD",
+        "decimals": 7,
+        "currencyID": "79"
     },
     {
         "asset": {

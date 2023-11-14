@@ -12,7 +12,6 @@
             },
             "here"
         ],
-        "xcmV1MultiLocationByte": "0x0100",
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -23,53 +22,6 @@
         },
         "asset": {
             "ForeignAsset": "5"
-        },
-        "source": [
-            "2031"
-        ]
-    },
-    {
-        "paraID": 1000,
-        "relayChain": "polkadot",
-        "nativeChainID": "statemint",
-        "symbol": "USDT",
-        "decimals": 6,
-        "interiorType": "x3",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 1000
-            },
-            {
-                "palletInstance": 50
-            },
-            {
-                "generalIndex": 1984
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010300a10f043205011f",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x3": [
-                        {
-                            "parachain": 1000
-                        },
-                        {
-                            "palletInstance": 50
-                        },
-                        {
-                            "generalIndex": 1984
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": {
-            "ForeignAsset": "1"
         },
         "source": [
             "2031"
@@ -96,7 +48,6 @@
                 "generalIndex": 1337
             }
         ],
-        "xcmV1MultiLocationByte": "0x010300a10f043205e514",
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -123,6 +74,52 @@
         ]
     },
     {
+        "paraID": 1000,
+        "relayChain": "polkadot",
+        "nativeChainID": "statemint",
+        "symbol": "USDT",
+        "decimals": 6,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 50
+            },
+            {
+                "generalIndex": 1984
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 1984
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "ForeignAsset": "1"
+        },
+        "source": [
+            "2031"
+        ]
+    },
+    {
         "paraID": 2000,
         "relayChain": "polkadot",
         "nativeChainID": "acala",
@@ -140,7 +137,6 @@
                 "generalKey": "0x0001"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200411f06080001",
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -181,7 +177,6 @@
                 "palletInstance": 10
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200511f040a",
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -208,6 +203,72 @@
         "paraID": 2031,
         "relayChain": "polkadot",
         "nativeChainID": "centrifuge",
+        "symbol": "LpArbUSDC",
+        "decimals": 6,
+        "interiorType": "x4",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2031
+            },
+            {
+                "palletInstance": 103
+            },
+            {
+                "globalConsensus": {
+                    "ethereum": {
+                        "chainId": 42161
+                    }
+                }
+            },
+            {
+                "accountKey20": {
+                    "network": null,
+                    "key": "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+                }
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x4": [
+                        {
+                            "parachain": 2031
+                        },
+                        {
+                            "palletInstance": 103
+                        },
+                        {
+                            "globalConsensus": {
+                                "ethereum": {
+                                    "chainId": 42161
+                                }
+                            }
+                        },
+                        {
+                            "accountKey20": {
+                                "network": null,
+                                "key": "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "ForeignAsset": "100,003"
+        },
+        "source": [
+            "2031"
+        ]
+    },
+    {
+        "paraID": 2031,
+        "relayChain": "polkadot",
+        "nativeChainID": "centrifuge",
         "symbol": "CFG",
         "decimals": 18,
         "interiorType": "x2",
@@ -222,7 +283,6 @@
                 "generalKey": "0x0001"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200bd1f06080001",
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -239,6 +299,204 @@
             }
         },
         "asset": "Native",
+        "source": [
+            "2031"
+        ]
+    },
+    {
+        "paraID": 2031,
+        "relayChain": "polkadot",
+        "nativeChainID": "centrifuge",
+        "symbol": "LpBaseUSDC",
+        "decimals": 6,
+        "interiorType": "x4",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2031
+            },
+            {
+                "palletInstance": 103
+            },
+            {
+                "globalConsensus": {
+                    "ethereum": {
+                        "chainId": 8453
+                    }
+                }
+            },
+            {
+                "accountKey20": {
+                    "network": null,
+                    "key": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+                }
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x4": [
+                        {
+                            "parachain": 2031
+                        },
+                        {
+                            "palletInstance": 103
+                        },
+                        {
+                            "globalConsensus": {
+                                "ethereum": {
+                                    "chainId": 8453
+                                }
+                            }
+                        },
+                        {
+                            "accountKey20": {
+                                "network": null,
+                                "key": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "ForeignAsset": "100,002"
+        },
+        "source": [
+            "2031"
+        ]
+    },
+    {
+        "paraID": 2031,
+        "relayChain": "polkadot",
+        "nativeChainID": "centrifuge",
+        "symbol": "LpEthUSDC",
+        "decimals": 6,
+        "interiorType": "x4",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2031
+            },
+            {
+                "palletInstance": 103
+            },
+            {
+                "globalConsensus": {
+                    "ethereum": {
+                        "chainId": 1
+                    }
+                }
+            },
+            {
+                "accountKey20": {
+                    "network": null,
+                    "key": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+                }
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x4": [
+                        {
+                            "parachain": 2031
+                        },
+                        {
+                            "palletInstance": 103
+                        },
+                        {
+                            "globalConsensus": {
+                                "ethereum": {
+                                    "chainId": 1
+                                }
+                            }
+                        },
+                        {
+                            "accountKey20": {
+                                "network": null,
+                                "key": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "ForeignAsset": "100,001"
+        },
+        "source": [
+            "2031"
+        ]
+    },
+    {
+        "paraID": 2031,
+        "relayChain": "polkadot",
+        "nativeChainID": "centrifuge",
+        "symbol": "LpCeloUSDC",
+        "decimals": 6,
+        "interiorType": "x4",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2031
+            },
+            {
+                "palletInstance": 103
+            },
+            {
+                "globalConsensus": {
+                    "ethereum": {
+                        "chainId": 42220
+                    }
+                }
+            },
+            {
+                "accountKey20": {
+                    "network": null,
+                    "key": "0x37f750b7cc259a2f741af45294f6a16572cf5cad"
+                }
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x4": [
+                        {
+                            "parachain": 2031
+                        },
+                        {
+                            "palletInstance": 103
+                        },
+                        {
+                            "globalConsensus": {
+                                "ethereum": {
+                                    "chainId": 42220
+                                }
+                            }
+                        },
+                        {
+                            "accountKey20": {
+                                "network": null,
+                                "key": "0x37f750b7cc259a2f741af45294f6a16572cf5cad"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "ForeignAsset": "100,004"
+        },
         "source": [
             "2031"
         ]

@@ -986,6 +986,15 @@
     },
     {
         "asset": {
+            "Token": "5797867"
+        },
+        "name": "Dot Take Tokens",
+        "symbol": "TAKE",
+        "decimals": 0,
+        "currencyID": "5797867"
+    },
+    {
+        "asset": {
             "Token": "598"
         },
         "name": "Eren Yilmaz",

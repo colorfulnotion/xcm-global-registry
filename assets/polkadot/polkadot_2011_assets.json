@@ -1,13 +1,10 @@
 [
     {
         "asset": {
-            "Token": "EQ"
+            "Token": "TOKEN"
         },
-        "name": "EQ",
-        "symbol": "EQ",
-        "decimals": 9,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2011}]",
-        "inferred": true,
-        "confidence": 0
+        "name": "TOKEN",
+        "symbol": "TOKEN",
+        "decimals": 9
     }
 ]

@@ -3,45 +3,6 @@
         "paraID": 2000,
         "relayChain": "kusama",
         "nativeChainID": "karura",
-        "symbol": "KAR",
-        "decimals": 12,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2000
-            },
-            {
-                "generalKey": "0x0080"
-            }
-        ],
-        "xcmV1MultiLocationByte": "0x010200411f06080080",
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 2000
-                        },
-                        {
-                            "generalKey": "0x0080"
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": "10810581592933651521121702237638664357",
-        "source": [
-            "2012"
-        ]
-    },
-    {
-        "paraID": 2000,
-        "relayChain": "kusama",
-        "nativeChainID": "karura",
         "symbol": "AUSD",
         "decimals": 12,
         "interiorType": "x2",
@@ -56,7 +17,6 @@
                 "generalKey": "0x0081"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200411f06080081",
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -73,6 +33,44 @@
             }
         },
         "asset": "214920334981412447805621250067209749032",
+        "source": [
+            "2012"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "kusama",
+        "nativeChainID": "karura",
+        "symbol": "KAR",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x0080"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0080"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "10810581592933651521121702237638664357",
         "source": [
             "2012"
         ]
@@ -95,7 +93,6 @@
                 "generalKey": "0x0001"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200451f06080001",
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -131,7 +128,6 @@
                 "parachain": 2007
             }
         ],
-        "xcmV1MultiLocationByte": "0x0101005d1f",
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -165,7 +161,6 @@
                 "palletInstance": 10
             }
         ],
-        "xcmV1MultiLocationByte": "0x0102009d1f040a",
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -201,7 +196,6 @@
                 "parachain": 2048
             }
         ],
-        "xcmV1MultiLocationByte": "0x0101000120",
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -235,7 +229,6 @@
                 "palletInstance": 5
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200e5200405",
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,

@@ -64,6 +64,15 @@
     },
     {
         "asset": {
+            "Erc20": "0x892ddd9387dbdecedaef878bd7acf8603109227f"
+        },
+        "name": "Taiga",
+        "symbol": "TAI",
+        "decimals": 12,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x02892ddd9387dbdecedaef878bd7acf8603109227f\"}]"
+    },
+    {
+        "asset": {
             "Erc20": "0xa72206fdf839c785b3073870013f2fd57ba10b63"
         },
         "name": "Crust Network (Portal from Ethereum)",

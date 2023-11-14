@@ -20,7 +20,44 @@
         "decimals": 6,
         "currencyID": {
             "ForeignAsset": "100,001"
-        }
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\"}}]"
+    },
+    {
+        "asset": {
+            "ForeignAsset": "100,002"
+        },
+        "name": "LP Base Wrapped USDC",
+        "symbol": "LpBaseUSDC",
+        "decimals": 6,
+        "currencyID": {
+            "ForeignAsset": "100,002"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":8453}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x833589fcd6edb6e08f4c7c32d4f71b54bda02913\"}}]"
+    },
+    {
+        "asset": {
+            "ForeignAsset": "100,003"
+        },
+        "name": "LP Arbitrum Wrapped USDC",
+        "symbol": "LpArbUSDC",
+        "decimals": 6,
+        "currencyID": {
+            "ForeignAsset": "100,003"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":42161}}},{\"accountKey20\":{\"network\":null,\"key\":\"0xaf88d065e77c8cc2239327c5edb3a432268e5831\"}}]"
+    },
+    {
+        "asset": {
+            "ForeignAsset": "100,004"
+        },
+        "name": "LP Celo Wrapped USDC",
+        "symbol": "LpCeloUSDC",
+        "decimals": 6,
+        "currencyID": {
+            "ForeignAsset": "100,004"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":42220}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x37f750b7cc259a2f741af45294f6a16572cf5cad\"}}]"
     },
     {
         "asset": {
@@ -101,5 +138,24 @@
         "decimals": 18,
         "currencyID": "Native",
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]"
+    },
+    {
+        "asset": {
+            "Token": {
+                "Tranche": [
+                    "4,139,607,887",
+                    "0x97aa65f23e7be09fcd62d0554d2e9273"
+                ]
+            }
+        },
+        "name": "Anemoy Liquid Treasury Fund 1 Token",
+        "symbol": "ALTF1",
+        "decimals": 6,
+        "currencyID": {
+            "Tranche": [
+                "4,139,607,887",
+                "0x97aa65f23e7be09fcd62d0554d2e9273"
+            ]
+        }
     }
 ]

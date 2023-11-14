@@ -11,6 +11,26 @@
     },
     {
         "asset": {
+            "ForeignAsset": "10"
+        },
+        "name": "Glimmer",
+        "symbol": "GLMR",
+        "decimals": 18,
+        "currencyID": "10",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":10}]"
+    },
+    {
+        "asset": {
+            "ForeignAsset": "11"
+        },
+        "name": "Bifrost Native Coin",
+        "symbol": "BNC",
+        "decimals": 12,
+        "currencyID": "11",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]"
+    },
+    {
+        "asset": {
             "ForeignAsset": "2"
         },
         "name": "Tether USD",
@@ -18,6 +38,76 @@
         "decimals": 6,
         "currencyID": "2",
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]"
+    },
+    {
+        "asset": {
+            "ForeignAsset": "3"
+        },
+        "name": "Voucher DOT",
+        "symbol": "VDOT",
+        "decimals": 10,
+        "currencyID": "3",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0900\"}]"
+    },
+    {
+        "asset": {
+            "ForeignAsset": "4"
+        },
+        "name": "Dai Stablecoin",
+        "symbol": "DAI.wh",
+        "decimals": 18,
+        "currencyID": "4",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0x06e605775296e851ff43b4daa541bb0984e9d6fd\"}}]"
+    },
+    {
+        "asset": {
+            "ForeignAsset": "5"
+        },
+        "name": "tBTC v2",
+        "symbol": "TBTC.wh",
+        "decimals": 18,
+        "currencyID": "5",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0xecd65e4b89495ae63b4f11ca872a23680a7c419c\"}}]"
+    },
+    {
+        "asset": {
+            "ForeignAsset": "6"
+        },
+        "name": "Wrapped Ether",
+        "symbol": "WETH.wh",
+        "decimals": 18,
+        "currencyID": "6",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0xab3f0245b83feb11d15aaffefd7ad465a59817ed\"}}]"
+    },
+    {
+        "asset": {
+            "ForeignAsset": "7"
+        },
+        "name": "Wrapped BNB",
+        "symbol": "WBNB.wh",
+        "decimals": 18,
+        "currencyID": "7",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0xe3b841c3f96e647e6dc01b468d6d0ad3562a9eeb\"}}]"
+    },
+    {
+        "asset": {
+            "ForeignAsset": "8"
+        },
+        "name": "USD Coin",
+        "symbol": "USDC.wh",
+        "decimals": 6,
+        "currencyID": "8",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0x931715fee2d06333043d11f658c8ce934ac61d0c\"}}]"
+    },
+    {
+        "asset": {
+            "ForeignAsset": "9"
+        },
+        "name": "Wrapped BTC",
+        "symbol": "WBTC.wh",
+        "decimals": 8,
+        "currencyID": "9",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0xe57ebd2d67b462e9926e04a8e33f01cd0d64346d\"}}]"
     },
     {
         "asset": {

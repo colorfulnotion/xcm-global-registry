@@ -1,6 +1,46 @@
 [
     {
         "asset": {
+            "BLP": "0"
+        },
+        "name": "Bifrost Stable Pool Token 0",
+        "symbol": "BLP0",
+        "decimals": 10
+    },
+    {
+        "asset": {
+            "BLP": "1"
+        },
+        "name": "Bifrost Stable Pool Token 1",
+        "symbol": "BLP1",
+        "decimals": 18
+    },
+    {
+        "asset": {
+            "BLP": "2"
+        },
+        "name": "Bifrost Stable Pool Token 2",
+        "symbol": "BLP2",
+        "decimals": 18
+    },
+    {
+        "asset": {
+            "BLP": "3"
+        },
+        "name": "Bifrost Stable Pool Token 3",
+        "symbol": "BLP3",
+        "decimals": 18
+    },
+    {
+        "asset": {
+            "BLP": "4"
+        },
+        "name": "Bifrost Stable Pool Token 4",
+        "symbol": "BLP4",
+        "decimals": 10
+    },
+    {
+        "asset": {
             "Token": "BNC"
         },
         "name": "BNC",
@@ -54,6 +94,42 @@
         "symbol": "FIL",
         "decimals": 18,
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0804\"}]"
+    },
+    {
+        "asset": {
+            "Token2": "5"
+        },
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "decimals": 6,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]"
+    },
+    {
+        "asset": {
+            "Token2": "6"
+        },
+        "name": "interBTC",
+        "symbol": "IBTC",
+        "decimals": 8,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0001\"}]"
+    },
+    {
+        "asset": {
+            "Token2": "7"
+        },
+        "name": "Interlay",
+        "symbol": "INTR",
+        "decimals": 10,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0002\"}]"
+    },
+    {
+        "asset": {
+            "Token2": "8"
+        },
+        "name": "Manta Network",
+        "symbol": "MANTA",
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2104}]"
     },
     {
         "asset": {
@@ -337,10 +413,26 @@
     },
     {
         "asset": {
+            "VSBond2": "033411421"
+        },
+        "name": "vsBOND-DOT-3341-14-21",
+        "symbol": "vsBOND-DOT-3341-14-21",
+        "decimals": 10
+    },
+    {
+        "asset": {
             "VSBond2": "033451421"
         },
         "name": "vsBOND-DOT-3345-14-21",
         "symbol": "vsBOND-DOT-3345-14-21",
+        "decimals": 10
+    },
+    {
+        "asset": {
+            "VSBond2": "033541522"
+        },
+        "name": "vsBOND-DOT-3354-15-22",
+        "symbol": "vsBOND-DOT-3354-15-22",
         "decimals": 10
     },
     {
@@ -376,7 +468,8 @@
         },
         "name": "Voucher ASTR",
         "symbol": "vASTR",
-        "decimals": 18
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0903\"}]"
     },
     {
         "asset": {

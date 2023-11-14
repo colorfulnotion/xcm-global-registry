@@ -61,6 +61,16 @@
     },
     {
         "asset": {
+            "Token": "167283995827706324502761431814209211090"
+        },
+        "name": "Picasso",
+        "symbol": "xcPICA",
+        "decimals": 12,
+        "currencyID": "167283995827706324502761431814209211090",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2087}]"
+    },
+    {
+        "asset": {
             "Token": "16797826370226091782818345603793389938"
         },
         "name": "Shiden",

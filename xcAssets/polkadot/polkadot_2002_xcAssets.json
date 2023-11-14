@@ -14,7 +14,6 @@
                 "parachain": 2006
             }
         ],
-        "xcmV1MultiLocationByte": "0x010100591f",
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
@@ -48,7 +47,6 @@
                 "generalKey": "0x50415241"
             }
         ],
-        "xcmV1MultiLocationByte": "0x010200711f061050415241",
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,

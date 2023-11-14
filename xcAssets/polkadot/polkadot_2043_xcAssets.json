@@ -17,7 +17,6 @@
                 "generalIndex": 1
             }
         ],
-        "xcmV1MultiLocationByte": false,
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
