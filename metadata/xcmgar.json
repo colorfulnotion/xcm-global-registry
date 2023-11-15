@@ -2648,7 +2648,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "26",
+                "assetCnt": "27",
                 "data": [
                     {
                         "asset": {
@@ -2829,6 +2829,16 @@
                         "decimals": 6,
                         "currencyID": "23",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0xc30e9ca94cf52f3bf5692aacf81353a27052c46f\"}}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "24"
+                        },
+                        "name": "SUB",
+                        "symbol": "SUB",
+                        "decimals": 10,
+                        "currencyID": "24",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2101}]"
                     },
                     {
                         "asset": {
@@ -12739,7 +12749,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "22",
+                "xcAssetCnt": "23",
                 "data": [
                     {
                         "paraID": 0,
@@ -13617,6 +13627,36 @@
                             }
                         },
                         "asset": "12",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 2101,
+                        "relayChain": "polkadot",
+                        "nativeChainID": null,
+                        "symbol": "SUB",
+                        "decimals": 10,
+                        "interiorType": "x1",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2101
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x1": {
+                                        "parachain": 2101
+                                    }
+                                }
+                            }
+                        },
+                        "asset": "24",
                         "source": [
                             "2034"
                         ]
@@ -26303,11 +26343,13 @@
                         "2004": "0xffffffff43b4560bc0c451a3386e082bff50ac90"
                     },
                     "xcCurrencyID": {
-                        "2004": "89994634370519791027168048838578580624"
+                        "2004": "89994634370519791027168048838578580624",
+                        "2034": "24"
                     },
-                    "confidence": 1,
+                    "confidence": 2,
                     "source": [
-                        2004
+                        2004,
+                        2034
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2104}]": {

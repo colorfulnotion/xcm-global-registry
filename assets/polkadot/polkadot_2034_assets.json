@@ -181,6 +181,16 @@
     },
     {
         "asset": {
+            "Token": "24"
+        },
+        "name": "SUB",
+        "symbol": "SUB",
+        "decimals": 10,
+        "currencyID": "24",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2101}]"
+    },
+    {
+        "asset": {
             "Token": "3"
         },
         "name": "WBTC",
