@@ -190,6 +190,15 @@
     },
     {
         "asset": {
+            "Token": "1313"
+        },
+        "name": "TestACP",
+        "symbol": "TACP",
+        "decimals": 2,
+        "currencyID": "1313"
+    },
+    {
+        "asset": {
             "Token": "1337"
         },
         "name": "Test In Prod",

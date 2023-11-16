@@ -3230,7 +3230,7 @@
                 "relayChain": "kusama",
                 "paraID": 1000,
                 "id": "statemine",
-                "assetCnt": "157",
+                "assetCnt": "158",
                 "data": [
                     {
                         "asset": {
@@ -3420,6 +3420,15 @@
                         "symbol": "LN",
                         "decimals": 13,
                         "currencyID": "13"
+                    },
+                    {
+                        "asset": {
+                            "Token": "1313"
+                        },
+                        "name": "TestACP",
+                        "symbol": "TACP",
+                        "decimals": 2,
+                        "currencyID": "1313"
                     },
                     {
                         "asset": {
@@ -7499,9 +7508,7 @@
                         "name": "CRAB",
                         "symbol": "CRAB",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2105},{\"palletInstance\":5}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2105},{\"palletInstance\":5}]"
                     }
                 ]
             },
@@ -21641,14 +21648,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "12",
+                    "source": [
+                        2090
+                    ],
                     "xcCurrencyID": {
                         "2090": "12"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2090
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0101\"}]": {
                     "paraID": 2001,
@@ -23384,14 +23392,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "6",
+                    "source": [
+                        2090
+                    ],
                     "xcCurrencyID": {
                         "2090": "6"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2090
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 }
             }
         },
