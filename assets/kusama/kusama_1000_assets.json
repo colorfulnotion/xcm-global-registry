@@ -199,6 +199,15 @@
     },
     {
         "asset": {
+            "Token": "131313"
+        },
+        "name": "Demo",
+        "symbol": "DMO",
+        "decimals": 3,
+        "currencyID": "131313"
+    },
+    {
+        "asset": {
             "Token": "1337"
         },
         "name": "Test In Prod",
@@ -650,6 +659,24 @@
         "symbol": "BUSSY",
         "decimals": 10,
         "currencyID": "33"
+    },
+    {
+        "asset": {
+            "Token": "3327"
+        },
+        "name": "MVP Workshop",
+        "symbol": "MVPW",
+        "decimals": 9,
+        "currencyID": "3327"
+    },
+    {
+        "asset": {
+            "Token": "3328"
+        },
+        "name": "Attic42",
+        "symbol": "A42",
+        "decimals": 6,
+        "currencyID": "3328"
     },
     {
         "asset": {

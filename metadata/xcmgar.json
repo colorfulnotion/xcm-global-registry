@@ -3239,7 +3239,7 @@
                 "relayChain": "kusama",
                 "paraID": 1000,
                 "id": "statemine",
-                "assetCnt": "158",
+                "assetCnt": "161",
                 "data": [
                     {
                         "asset": {
@@ -3438,6 +3438,15 @@
                         "symbol": "TACP",
                         "decimals": 2,
                         "currencyID": "1313"
+                    },
+                    {
+                        "asset": {
+                            "Token": "131313"
+                        },
+                        "name": "Demo",
+                        "symbol": "DMO",
+                        "decimals": 3,
+                        "currencyID": "131313"
                     },
                     {
                         "asset": {
@@ -3892,6 +3901,24 @@
                         "symbol": "BUSSY",
                         "decimals": 10,
                         "currencyID": "33"
+                    },
+                    {
+                        "asset": {
+                            "Token": "3327"
+                        },
+                        "name": "MVP Workshop",
+                        "symbol": "MVPW",
+                        "decimals": 9,
+                        "currencyID": "3327"
+                    },
+                    {
+                        "asset": {
+                            "Token": "3328"
+                        },
+                        "name": "Attic42",
+                        "symbol": "A42",
+                        "decimals": 6,
+                        "currencyID": "3328"
                     },
                     {
                         "asset": {
