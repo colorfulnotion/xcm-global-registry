@@ -24,7 +24,7 @@
                 "relayChain": "polkadot",
                 "paraID": 1000,
                 "id": "statemint",
-                "assetCnt": "32",
+                "assetCnt": "33",
                 "data": [
                     {
                         "asset": {
@@ -170,6 +170,15 @@
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":21}]",
                         "inferred": true,
                         "confidence": 0
+                    },
+                    {
+                        "asset": {
+                            "Token": "23"
+                        },
+                        "name": "PINK",
+                        "symbol": "PINK",
+                        "decimals": 10,
+                        "currencyID": "23"
                     },
                     {
                         "asset": {
@@ -7508,7 +7517,9 @@
                         "name": "CRAB",
                         "symbol": "CRAB",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2105},{\"palletInstance\":5}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2105},{\"palletInstance\":5}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -21648,15 +21659,14 @@
                             }
                         }
                     },
-                    "asset": "12",
-                    "source": [
-                        2090
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2090": "12"
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2090
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0101\"}]": {
                     "paraID": 2001,
@@ -23392,15 +23402,14 @@
                             }
                         }
                     },
-                    "asset": "6",
-                    "source": [
-                        2090
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2090": "6"
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2090
+                    ]
                 }
             }
         },

@@ -146,6 +146,15 @@
     },
     {
         "asset": {
+            "Token": "23"
+        },
+        "name": "PINK",
+        "symbol": "PINK",
+        "decimals": 10,
+        "currencyID": "23"
+    },
+    {
+        "asset": {
             "Token": "256"
         },
         "name": "IceCreamToken",
