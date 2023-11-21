@@ -6621,9 +6621,7 @@
                         "name": "XRT",
                         "symbol": "XRT",
                         "decimals": 9,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2048}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2048}]"
                     }
                 ]
             },
