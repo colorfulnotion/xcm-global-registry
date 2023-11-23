@@ -277,9 +277,7 @@
         "symbol": "ARIS",
         "decimals": 8,
         "currencyID": "16",
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":16}]",
-        "inferred": true,
-        "confidence": 0
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":16}]"
     },
     {
         "asset": {
@@ -1244,9 +1242,7 @@
         "symbol": "RMRK",
         "decimals": 10,
         "currencyID": "8",
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":8}]",
-        "inferred": true,
-        "confidence": 0
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":8}]"
     },
     {
         "asset": {

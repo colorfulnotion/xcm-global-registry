@@ -3157,7 +3157,9 @@
                         "name": "RING",
                         "symbol": "RING",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -3517,9 +3519,7 @@
                         "symbol": "ARIS",
                         "decimals": 8,
                         "currencyID": "16",
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":16}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":16}]"
                     },
                     {
                         "asset": {
@@ -4484,9 +4484,7 @@
                         "symbol": "RMRK",
                         "decimals": 10,
                         "currencyID": "8",
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":8}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":8}]"
                     },
                     {
                         "asset": {
@@ -6619,9 +6617,7 @@
                         "name": "XRT",
                         "symbol": "XRT",
                         "decimals": 9,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2048}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2048}]"
                     }
                 ]
             },
@@ -21684,15 +21680,14 @@
                             }
                         }
                     },
-                    "asset": "12",
-                    "source": [
-                        2090
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2090": "12"
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2090
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0101\"}]": {
                     "paraID": 2001,
@@ -23428,15 +23423,14 @@
                             }
                         }
                     },
-                    "asset": "6",
-                    "source": [
-                        2090
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2090": "6"
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2090
+                    ]
                 }
             }
         },
