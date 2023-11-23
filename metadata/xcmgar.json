@@ -52,9 +52,7 @@
                         "symbol": "WETH",
                         "decimals": 18,
                         "currencyID": "100",
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":100}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":100}]"
                     },
                     {
                         "asset": {
@@ -109,9 +107,7 @@
                         "symbol": "USDC",
                         "decimals": 6,
                         "currencyID": "1337",
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]"
                     },
                     {
                         "asset": {
@@ -167,9 +163,7 @@
                         "symbol": "WBTC",
                         "decimals": 8,
                         "currencyID": "21",
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":21}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":21}]"
                     },
                     {
                         "asset": {
@@ -3157,9 +3151,7 @@
                         "name": "RING",
                         "symbol": "RING",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
                     }
                 ]
             },
@@ -6617,7 +6609,9 @@
                         "name": "XRT",
                         "symbol": "XRT",
                         "decimals": 9,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2048}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2048}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
