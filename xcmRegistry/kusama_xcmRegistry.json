@@ -1928,15 +1928,14 @@
                 }
             }
         },
-        "asset": "6",
-        "source": [
-            2114
-        ],
+        "xcContractAddress": {},
         "xcCurrencyID": {
             "2114": "6"
         },
-        "xcContractAddress": {},
-        "confidence": 1
+        "confidence": 1,
+        "source": [
+            2114
+        ]
     },
     "[{\"network\":\"kusama\"},{\"parachain\":2087}]": {
         "paraID": 2087,

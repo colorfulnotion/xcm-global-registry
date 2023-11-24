@@ -437,6 +437,14 @@
     },
     {
         "asset": {
+            "VSBond2": "033561522"
+        },
+        "name": "vsBOND-DOT-3356-15-22",
+        "symbol": "vsBOND-DOT-3356-15-22",
+        "decimals": 10
+    },
+    {
+        "asset": {
             "VSToken2": "0"
         },
         "name": "Voucher Slot DOT",

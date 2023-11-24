@@ -764,19 +764,18 @@
                 }
             }
         },
-        "asset": "18446744073709551625",
-        "source": [
-            2006,
-            2012
-        ],
+        "xcContractAddress": {
+            "2006": "0xffffffff00000000000000010000000000000009"
+        },
         "xcCurrencyID": {
             "2006": "18446744073709551625",
             "2012": "130"
         },
-        "xcContractAddress": {
-            "2006": "0xffffffff00000000000000010000000000000009"
-        },
-        "confidence": 2
+        "confidence": 2,
+        "source": [
+            2006,
+            2012
+        ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":10}]": {
         "paraID": 2004,
@@ -2089,21 +2088,20 @@
                 }
             }
         },
-        "asset": "18446744073709551626",
-        "source": [
-            2006,
-            2030
-        ],
+        "xcContractAddress": {
+            "2006": "0xffffffff0000000000000001000000000000000a"
+        },
         "xcCurrencyID": {
             "2006": "18446744073709551626",
             "2030": {
                 "VSToken2": "0"
             }
         },
-        "xcContractAddress": {
-            "2006": "0xffffffff0000000000000001000000000000000a"
-        },
-        "confidence": 2
+        "confidence": 2,
+        "source": [
+            2006,
+            2030
+        ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0903\"}]": {
         "paraID": 2030,
@@ -2138,21 +2136,20 @@
                 }
             }
         },
-        "asset": "18446744073709551632",
-        "source": [
-            2006,
-            2030
-        ],
+        "xcContractAddress": {
+            "2006": "0xffffffff00000000000000010000000000000010"
+        },
         "xcCurrencyID": {
             "2006": "18446744073709551632",
             "2030": {
                 "VToken2": "3"
             }
         },
-        "xcContractAddress": {
-            "2006": "0xffffffff00000000000000010000000000000010"
-        },
-        "confidence": 2
+        "confidence": 2,
+        "source": [
+            2006,
+            2030
+        ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]": {
         "paraID": 2031,
