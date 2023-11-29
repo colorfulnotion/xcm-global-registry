@@ -2733,6 +2733,42 @@
             2006
         ]
     },
+    "[{\"network\":\"polkadot\"},{\"parachain\":2040}]": {
+        "paraID": 2040,
+        "relayChain": "polkadot",
+        "nativeChainID": null,
+        "symbol": "PDEX",
+        "decimals": 12,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2040
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2040
+                    }
+                }
+            }
+        },
+        "xcContractAddress": {
+            "2004": "0xffffffff43e0d9b84010b1b67ba501bc81e33c7a"
+        },
+        "xcCurrencyID": {
+            "2004": "90225766094594282577230355136633846906"
+        },
+        "confidence": 1,
+        "source": [
+            2004
+        ]
+    },
     "[{\"network\":\"polkadot\"},{\"parachain\":2043},{\"palletInstance\":10}]": {
         "paraID": 2043,
         "relayChain": "polkadot",

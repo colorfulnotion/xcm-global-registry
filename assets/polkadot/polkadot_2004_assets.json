@@ -261,6 +261,16 @@
     },
     {
         "asset": {
+            "Token": "90225766094594282577230355136633846906"
+        },
+        "name": "Polkadex",
+        "symbol": "xcPDEX",
+        "decimals": 12,
+        "currencyID": "90225766094594282577230355136633846906",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2040}]"
+    },
+    {
+        "asset": {
             "Token": "91372035960551235635465443179559840483"
         },
         "name": "Centrifuge",
