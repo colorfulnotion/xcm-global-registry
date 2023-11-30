@@ -1837,7 +1837,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "assetCnt": "59",
+                "assetCnt": "60",
                 "data": [
                     {
                         "asset": {
@@ -2089,6 +2089,14 @@
                         },
                         "name": "vsBOND-DOT-2025-14-21",
                         "symbol": "vsBOND-DOT-2025-14-21",
+                        "decimals": 10
+                    },
+                    {
+                        "asset": {
+                            "VSBond2": "020251522"
+                        },
+                        "name": "vsBOND-DOT-2025-15-22",
+                        "symbol": "vsBOND-DOT-2025-15-22",
                         "decimals": 10
                     },
                     {
@@ -6629,9 +6637,7 @@
                         "name": "XRT",
                         "symbol": "XRT",
                         "decimals": 9,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2048}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2048}]"
                     }
                 ]
             },
@@ -21725,14 +21731,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "12",
+                    "source": [
+                        2090
+                    ],
                     "xcCurrencyID": {
                         "2090": "12"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2090
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0101\"}]": {
                     "paraID": 2001,
@@ -23468,14 +23475,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "6",
+                    "source": [
+                        2090
+                    ],
                     "xcCurrencyID": {
                         "2090": "6"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2090
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 }
             }
         },
