@@ -1,0 +1,10 @@
+[
+    {
+        "asset": {
+            "Token": "XOR"
+        },
+        "name": "XOR",
+        "symbol": "XOR",
+        "decimals": 18
+    }
+]

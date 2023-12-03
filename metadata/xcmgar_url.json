@@ -215,6 +215,13 @@
             },
             {
                 "relayChain": "kusama",
+                "paraID": 2011,
+                "id": "sora_ksm",
+                "assetCnt": "1",
+                "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2011_assets.json"
+            },
+            {
+                "relayChain": "kusama",
                 "paraID": 2012,
                 "id": "shadow",
                 "assetCnt": "8",
