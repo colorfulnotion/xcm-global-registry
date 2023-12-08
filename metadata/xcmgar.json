@@ -21749,14 +21749,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "12",
+                    "source": [
+                        2090
+                    ],
                     "xcCurrencyID": {
                         "2090": "12"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2090
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0101\"}]": {
                     "paraID": 2001,
@@ -23492,14 +23493,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "6",
+                    "source": [
+                        2090
+                    ],
                     "xcCurrencyID": {
                         "2090": "6"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2090
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 }
             }
         },
