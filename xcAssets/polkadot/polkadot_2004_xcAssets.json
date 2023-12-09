@@ -943,6 +943,45 @@
         ]
     },
     {
+        "paraID": 2094,
+        "relayChain": "polkadot",
+        "nativeChainID": "pendulum",
+        "symbol": "PEN",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2094
+            },
+            {
+                "palletInstance": 10
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2094
+                        },
+                        {
+                            "palletInstance": 10
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "45647473099451451833602657905356404688",
+        "contractAddress": "0xffffffff2257622f345e1acde0d4f46d7d1d77d0",
+        "source": [
+            "2004"
+        ]
+    },
+    {
         "paraID": 2101,
         "relayChain": "polkadot",
         "nativeChainID": null,

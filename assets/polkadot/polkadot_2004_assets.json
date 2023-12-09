@@ -241,6 +241,16 @@
     },
     {
         "asset": {
+            "Token": "45647473099451451833602657905356404688"
+        },
+        "name": "Pendulum",
+        "symbol": "xcPEN",
+        "decimals": 12,
+        "currencyID": "45647473099451451833602657905356404688",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]"
+    },
+    {
+        "asset": {
             "Token": "69606720909260275826784788104880799692"
         },
         "name": "HydraDX",
