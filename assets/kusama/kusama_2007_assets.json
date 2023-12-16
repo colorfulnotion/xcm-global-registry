@@ -131,36 +131,6 @@
     },
     {
         "asset": {
-            "Token": "18446744073709551630"
-        },
-        "name": "Genshiro Native Token",
-        "symbol": "GENS",
-        "decimals": 9,
-        "currencyID": "18446744073709551630",
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2024}]"
-    },
-    {
-        "asset": {
-            "Token": "18446744073709551631"
-        },
-        "name": "Equilibrium USD",
-        "symbol": "EQD",
-        "decimals": 9,
-        "currencyID": "18446744073709551631",
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2024},{\"generalKey\":\"0x657164\"}]"
-    },
-    {
-        "asset": {
-            "Token": "18446744073709551632"
-        },
-        "name": " Metaverse.Network Pioneer",
-        "symbol": "NEER",
-        "decimals": 18,
-        "currencyID": "18446744073709551632",
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2096},{\"generalKey\":\"0x000000000000000000\"}]"
-    },
-    {
-        "asset": {
             "Token": "18446744073709551633"
         },
         "name": "Quartz",

@@ -438,76 +438,6 @@
         ]
     },
     {
-        "paraID": 2024,
-        "relayChain": "kusama",
-        "nativeChainID": null,
-        "symbol": "GENS",
-        "decimals": 9,
-        "interiorType": "x1",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2024
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x1": {
-                        "parachain": 2024
-                    }
-                }
-            }
-        },
-        "asset": "18446744073709551630",
-        "contractAddress": "0xffffffff0000000000000001000000000000000e",
-        "source": [
-            "2007"
-        ]
-    },
-    {
-        "paraID": 2024,
-        "relayChain": "kusama",
-        "nativeChainID": null,
-        "symbol": "EQD",
-        "decimals": 9,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2024
-            },
-            {
-                "generalKey": "0x657164"
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 2024
-                        },
-                        {
-                            "generalKey": "0x657164"
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": "18446744073709551631",
-        "contractAddress": "0xffffffff0000000000000001000000000000000f",
-        "source": [
-            "2007"
-        ]
-    },
-    {
         "paraID": 2092,
         "relayChain": "kusama",
         "nativeChainID": "kintsugi",
@@ -612,45 +542,6 @@
         },
         "asset": "18446744073709551633",
         "contractAddress": "0xffffffff00000000000000010000000000000011",
-        "source": [
-            "2007"
-        ]
-    },
-    {
-        "paraID": 2096,
-        "relayChain": "kusama",
-        "nativeChainID": "bitcountryPioneer",
-        "symbol": "NEER",
-        "decimals": 18,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2096
-            },
-            {
-                "generalKey": "0x000000000000000000"
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 2096
-                        },
-                        {
-                            "generalKey": "0x000000000000000000"
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": "18446744073709551632",
-        "contractAddress": "0xffffffff00000000000000010000000000000010",
         "source": [
             "2007"
         ]
