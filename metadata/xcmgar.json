@@ -3168,9 +3168,7 @@
                         "name": "OTP",
                         "symbol": "OTP",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2043},{\"palletInstance\":10}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2043},{\"palletInstance\":10}]"
                     }
                 ]
             },
@@ -26255,14 +26253,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "1",
+                    "source": [
+                        2043
+                    ],
                     "xcCurrencyID": {
                         "2043": "1"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2043
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]": {
                     "paraID": 2046,
