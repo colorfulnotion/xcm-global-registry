@@ -148,8 +148,8 @@
                 ]
             }
         },
-        "name": "Anemoy Liquid Treasury Fund 1 Token",
-        "symbol": "ALTF1",
+        "name": "Anemoy Liquid Treasury Fund 1",
+        "symbol": "LTF",
         "decimals": 6,
         "currencyID": {
             "Tranche": [
