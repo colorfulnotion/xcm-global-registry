@@ -842,6 +842,36 @@
         ]
     },
     {
+        "paraID": 2037,
+        "relayChain": "polkadot",
+        "nativeChainID": "unique",
+        "symbol": "UNQ",
+        "decimals": 18,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2037
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2037
+                    }
+                }
+            }
+        },
+        "asset": "25",
+        "source": [
+            "2034"
+        ]
+    },
+    {
         "paraID": 2092,
         "relayChain": "polkadot",
         "nativeChainID": "zeitgeist",

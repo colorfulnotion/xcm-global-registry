@@ -2725,12 +2725,14 @@
             "2000": {
                 "ForeignAsset": "10"
             },
-            "2006": "18446744073709551631"
+            "2006": "18446744073709551631",
+            "2034": "25"
         },
-        "confidence": 2,
+        "confidence": 3,
         "source": [
             2000,
-            2006
+            2006,
+            2034
         ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2040}]": {
@@ -2846,15 +2848,14 @@
                 }
             }
         },
-        "asset": "1",
-        "source": [
-            2043
-        ],
+        "xcContractAddress": {},
         "xcCurrencyID": {
             "2043": "1"
         },
-        "xcContractAddress": {},
-        "confidence": 1
+        "confidence": 1,
+        "source": [
+            2043
+        ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]": {
         "paraID": 2046,

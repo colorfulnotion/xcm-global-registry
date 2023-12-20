@@ -2687,7 +2687,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "27",
+                "assetCnt": "28",
                 "data": [
                     {
                         "asset": {
@@ -2878,6 +2878,16 @@
                         "decimals": 10,
                         "currencyID": "24",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2101}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "25"
+                        },
+                        "name": "UNQ",
+                        "symbol": "UNQ",
+                        "decimals": 18,
+                        "currencyID": "25",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2037}]"
                     },
                     {
                         "asset": {
@@ -3168,7 +3178,9 @@
                         "name": "OTP",
                         "symbol": "OTP",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2043},{\"palletInstance\":10}]"
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2043},{\"palletInstance\":10}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -7576,7 +7588,9 @@
                         "name": "LIT",
                         "symbol": "LIT",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2106},{\"palletInstance\":10}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2106},{\"palletInstance\":10}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -12875,7 +12889,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "23",
+                "xcAssetCnt": "24",
                 "data": [
                     {
                         "paraID": 0,
@@ -13715,6 +13729,36 @@
                             }
                         },
                         "asset": "8",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 2037,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "unique",
+                        "symbol": "UNQ",
+                        "decimals": 18,
+                        "interiorType": "x1",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2037
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x1": {
+                                        "parachain": 2037
+                                    }
+                                }
+                            }
+                        },
+                        "asset": "25",
                         "source": [
                             "2034"
                         ]
@@ -26130,12 +26174,14 @@
                         "2000": {
                             "ForeignAsset": "10"
                         },
-                        "2006": "18446744073709551631"
+                        "2006": "18446744073709551631",
+                        "2034": "25"
                     },
-                    "confidence": 2,
+                    "confidence": 3,
                     "source": [
                         2000,
-                        2006
+                        2006,
+                        2034
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2040}]": {
@@ -26251,15 +26297,14 @@
                             }
                         }
                     },
-                    "asset": "1",
-                    "source": [
-                        2043
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2043": "1"
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2043
+                    ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]": {
                     "paraID": 2046,

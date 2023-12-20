@@ -191,6 +191,16 @@
     },
     {
         "asset": {
+            "Token": "25"
+        },
+        "name": "UNQ",
+        "symbol": "UNQ",
+        "decimals": 18,
+        "currencyID": "25",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2037}]"
+    },
+    {
+        "asset": {
             "Token": "3"
         },
         "name": "WBTC",
