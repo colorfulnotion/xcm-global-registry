@@ -191,6 +191,16 @@
     },
     {
         "asset": {
+            "Token": "170050401128744171791743427490841452054"
+        },
+        "name": "Amplitude",
+        "symbol": "xcAMPE",
+        "decimals": 12,
+        "currencyID": "170050401128744171791743427490841452054",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2124},{\"palletInstance\":10}]"
+    },
+    {
+        "asset": {
             "Token": "173481220575862801646329923366065693029"
         },
         "name": "Pangolin Alpha Network Native Token",

@@ -1710,6 +1710,45 @@
         ]
     },
     {
+        "paraID": 2124,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "AMPE",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2124
+            },
+            {
+                "palletInstance": 10
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2124
+                        },
+                        {
+                            "palletInstance": 10
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "170050401128744171791743427490841452054",
+        "contractAddress": "0xffffffff7fee8415e1c2ac3a15c48d3546b95e16",
+        "source": [
+            "1000"
+        ]
+    },
+    {
         "paraID": 2125,
         "relayChain": "moonbase",
         "nativeChainID": null,
