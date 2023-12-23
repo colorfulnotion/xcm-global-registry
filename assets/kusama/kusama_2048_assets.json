@@ -10,33 +10,6 @@
     },
     {
         "asset": {
-            "Token": "4294967292"
-        },
-        "name": "Karura Native Token",
-        "symbol": "KAR",
-        "decimals": 12,
-        "currencyID": "4294967292"
-    },
-    {
-        "asset": {
-            "Token": "4294967293"
-        },
-        "name": "Liquid KSM",
-        "symbol": "LKSM",
-        "decimals": 12,
-        "currencyID": "4294967293"
-    },
-    {
-        "asset": {
-            "Token": "4294967294"
-        },
-        "name": "Acala Dollar",
-        "symbol": "AUSD",
-        "decimals": 12,
-        "currencyID": "4294967294"
-    },
-    {
-        "asset": {
             "Token": "4294967295"
         },
         "name": "Kusama",

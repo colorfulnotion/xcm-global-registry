@@ -252,7 +252,7 @@
                 "relayChain": "kusama",
                 "paraID": 2048,
                 "id": "robonomics",
-                "assetCnt": "6",
+                "assetCnt": "3",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2048_assets.json"
             },
             {

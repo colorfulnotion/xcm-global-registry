@@ -3178,7 +3178,9 @@
                         "name": "OTP",
                         "symbol": "OTP",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2043},{\"palletInstance\":10}]"
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2043},{\"palletInstance\":10}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -3195,7 +3197,9 @@
                         "name": "RING",
                         "symbol": "RING",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -6588,7 +6592,7 @@
                 "relayChain": "kusama",
                 "paraID": 2048,
                 "id": "robonomics",
-                "assetCnt": "6",
+                "assetCnt": "3",
                 "data": [
                     {
                         "asset": {
@@ -6598,33 +6602,6 @@
                         "symbol": "CSM",
                         "decimals": 12,
                         "currencyID": "4294967291"
-                    },
-                    {
-                        "asset": {
-                            "Token": "4294967292"
-                        },
-                        "name": "Karura Native Token",
-                        "symbol": "KAR",
-                        "decimals": 12,
-                        "currencyID": "4294967292"
-                    },
-                    {
-                        "asset": {
-                            "Token": "4294967293"
-                        },
-                        "name": "Liquid KSM",
-                        "symbol": "LKSM",
-                        "decimals": 12,
-                        "currencyID": "4294967293"
-                    },
-                    {
-                        "asset": {
-                            "Token": "4294967294"
-                        },
-                        "name": "Acala Dollar",
-                        "symbol": "AUSD",
-                        "decimals": 12,
-                        "currencyID": "4294967294"
                     },
                     {
                         "asset": {
@@ -26293,15 +26270,14 @@
                             }
                         }
                     },
-                    "asset": "1",
-                    "source": [
-                        2043
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2043": "1"
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2043
+                    ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]": {
                     "paraID": 2046,
