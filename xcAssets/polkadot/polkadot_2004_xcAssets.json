@@ -374,6 +374,276 @@
         ]
     },
     {
+        "paraID": 2019,
+        "relayChain": "polkadot",
+        "nativeChainID": "composableFinance",
+        "symbol": "ibcMOVR",
+        "decimals": 18,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2019
+            },
+            {
+                "palletInstance": 59
+            },
+            {
+                "generalIndex": "0x00000001000000000000000000000017"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 2019
+                        },
+                        {
+                            "palletInstance": 59
+                        },
+                        {
+                            "generalIndex": "0x00000001000000000000000000000017"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "78407957940239408223554844611219482002",
+        "contractAddress": "0xffffffff3afcd2cad6174387df17180a0362e592",
+        "source": [
+            "2004"
+        ]
+    },
+    {
+        "paraID": 2019,
+        "relayChain": "polkadot",
+        "nativeChainID": "composableFinance",
+        "symbol": "ibcTIA",
+        "decimals": 6,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2019
+            },
+            {
+                "palletInstance": 59
+            },
+            {
+                "generalIndex": "0x00000001000000000000000000000013"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 2019
+                        },
+                        {
+                            "palletInstance": 59
+                        },
+                        {
+                            "generalIndex": "0x00000001000000000000000000000013"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "133307414193833606001516599592873928539",
+        "contractAddress": "0xffffffff644a12f6f01b754987d175f5a780a75b",
+        "source": [
+            "2004"
+        ]
+    },
+    {
+        "paraID": 2019,
+        "relayChain": "polkadot",
+        "nativeChainID": "composableFinance",
+        "symbol": "ibcIST",
+        "decimals": 6,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2019
+            },
+            {
+                "palletInstance": 59
+            },
+            {
+                "generalIndex": "0x00000001000000000000000000000019"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 2019
+                        },
+                        {
+                            "palletInstance": 59
+                        },
+                        {
+                            "generalIndex": "0x00000001000000000000000000000019"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "141196559012917796508928734717797136690",
+        "contractAddress": "0xffffffff6a3977d5b65d1044fd744b14d9cef932",
+        "source": [
+            "2004"
+        ]
+    },
+    {
+        "paraID": 2019,
+        "relayChain": "polkadot",
+        "nativeChainID": "composableFinance",
+        "symbol": "ibcBLD",
+        "decimals": 6,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2019
+            },
+            {
+                "palletInstance": 59
+            },
+            {
+                "generalIndex": "0x00000001000000000000000000000012"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 2019
+                        },
+                        {
+                            "palletInstance": 59
+                        },
+                        {
+                            "generalIndex": "0x00000001000000000000000000000012"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "199907282886248358976504623107230837230",
+        "contractAddress": "0xffffffff9664be0234ea4dc64558f695c4f2a9ee",
+        "source": [
+            "2004"
+        ]
+    },
+    {
+        "paraID": 2019,
+        "relayChain": "polkadot",
+        "nativeChainID": "composableFinance",
+        "symbol": "ibcATOM",
+        "decimals": 6,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2019
+            },
+            {
+                "palletInstance": 59
+            },
+            {
+                "generalIndex": "0x00000001000000000000000000000007"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 2019
+                        },
+                        {
+                            "palletInstance": 59
+                        },
+                        {
+                            "generalIndex": "0x00000001000000000000000000000007"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "138280378441551394289980644963240827219",
+        "contractAddress": "0xffffffff6807d5082ff2f6f86bde409245e2d953",
+        "source": [
+            "2004"
+        ]
+    },
+    {
+        "paraID": 2019,
+        "relayChain": "polkadot",
+        "nativeChainID": "composableFinance",
+        "symbol": "ibcPICA",
+        "decimals": 12,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2019
+            },
+            {
+                "palletInstance": 59
+            },
+            {
+                "generalIndex": "0x00000001000000000000000000000001"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 2019
+                        },
+                        {
+                            "palletInstance": 59
+                        },
+                        {
+                            "generalIndex": "0x00000001000000000000000000000001"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "228510780171552721666262089780561563481",
+        "contractAddress": "0xffffffffabe9934e61db3b11be4251e6e869cf59",
+        "source": [
+            "2004"
+        ]
+    },
+    {
         "paraID": 2026,
         "relayChain": "polkadot",
         "nativeChainID": "nodle",

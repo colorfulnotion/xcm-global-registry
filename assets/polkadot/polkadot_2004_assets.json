@@ -51,6 +51,36 @@
     },
     {
         "asset": {
+            "Token": "133307414193833606001516599592873928539"
+        },
+        "name": "Celestia",
+        "symbol": "xcibcTIA",
+        "decimals": 6,
+        "currencyID": "133307414193833606001516599592873928539",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2019},{\"palletInstance\":59},{\"generalIndex\":\"0x00000001000000000000000000000013\"}]"
+    },
+    {
+        "asset": {
+            "Token": "138280378441551394289980644963240827219"
+        },
+        "name": "Cosmos Hub",
+        "symbol": "xcibcATOM",
+        "decimals": 6,
+        "currencyID": "138280378441551394289980644963240827219",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2019},{\"palletInstance\":59},{\"generalIndex\":\"0x00000001000000000000000000000007\"}]"
+    },
+    {
+        "asset": {
+            "Token": "141196559012917796508928734717797136690"
+        },
+        "name": "Inter Stable Token",
+        "symbol": "xcibcIST",
+        "decimals": 6,
+        "currencyID": "141196559012917796508928734717797136690",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2019},{\"palletInstance\":59},{\"generalIndex\":\"0x00000001000000000000000000000019\"}]"
+    },
+    {
+        "asset": {
             "Token": "144012926827374458669278577633504620722"
         },
         "name": "Bifrost Filecoin Native Token",
@@ -121,6 +151,16 @@
     },
     {
         "asset": {
+            "Token": "199907282886248358976504623107230837230"
+        },
+        "name": "Agoric",
+        "symbol": "xcibcBLD",
+        "decimals": 6,
+        "currencyID": "199907282886248358976504623107230837230",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2019},{\"palletInstance\":59},{\"generalIndex\":\"0x00000001000000000000000000000012\"}]"
+    },
+    {
+        "asset": {
             "Token": "204507659831918931608354793288110796652"
         },
         "name": "Bifrost Voucher GLMR",
@@ -158,6 +198,16 @@
         "decimals": 10,
         "currencyID": "225719522181998468294117309041779353812",
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0003\"}]"
+    },
+    {
+        "asset": {
+            "Token": "228510780171552721666262089780561563481"
+        },
+        "name": "Picasso",
+        "symbol": "xcibcPICA",
+        "decimals": 12,
+        "currencyID": "228510780171552721666262089780561563481",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2019},{\"palletInstance\":59},{\"generalIndex\":\"0x00000001000000000000000000000001\"}]"
     },
     {
         "asset": {
@@ -258,6 +308,16 @@
         "decimals": 12,
         "currencyID": "69606720909260275826784788104880799692",
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2034},{\"generalIndex\":0}]"
+    },
+    {
+        "asset": {
+            "Token": "78407957940239408223554844611219482002"
+        },
+        "name": "Moonriver",
+        "symbol": "xcibcMOVR",
+        "decimals": 18,
+        "currencyID": "78407957940239408223554844611219482002",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2019},{\"palletInstance\":59},{\"generalIndex\":\"0x00000001000000000000000000000017\"}]"
     },
     {
         "asset": {

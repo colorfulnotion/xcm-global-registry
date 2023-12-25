@@ -33,7 +33,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "assetCnt": "30",
+                "assetCnt": "36",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2004_assets.json"
             },
             {
@@ -424,7 +424,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "xcAssetCnt": "28",
+                "xcAssetCnt": "34",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2004_xcAssets.json"
             },
             {
@@ -586,7 +586,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "61",
+            "registryCnt": "67",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/polkadot_xcmRegistry.json"
         }
     ]
