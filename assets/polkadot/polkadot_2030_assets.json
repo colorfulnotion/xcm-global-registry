@@ -46,9 +46,7 @@
         "name": "BNC",
         "symbol": "BNC",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]",
-        "inferred": true,
-        "confidence": 0
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]"
     },
     {
         "asset": {
