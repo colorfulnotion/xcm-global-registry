@@ -6033,7 +6033,9 @@
                         "name": "PHA",
                         "symbol": "PHA",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2004}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2004}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -21013,18 +21015,14 @@
                             }
                         }
                     },
-                    "asset": "0",
-                    "source": [
-                        2004,
-                        2007,
-                        2023,
-                        2084,
-                        2085,
-                        2088,
-                        2090,
-                        2114
-                    ],
+                    "xcContractAddress": {
+                        "2007": "0xffffffffffffffffffffffffffffffffffffffff",
+                        "2023": "0xffffffff1fcacbd218edc0eba20fc2308c778080"
+                    },
                     "xcCurrencyID": {
+                        "2001": {
+                            "Token": "KSM"
+                        },
                         "2004": "0",
                         "2007": "340282366920938463463374607431768211455",
                         "2023": "42259045809535163221576417993425387648",
@@ -21036,11 +21034,18 @@
                         "2090": "1",
                         "2114": "1"
                     },
-                    "xcContractAddress": {
-                        "2007": "0xffffffffffffffffffffffffffffffffffffffff",
-                        "2023": "0xffffffff1fcacbd218edc0eba20fc2308c778080"
-                    },
-                    "confidence": 8
+                    "confidence": 9,
+                    "source": [
+                        2001,
+                        2004,
+                        2007,
+                        2023,
+                        2084,
+                        2085,
+                        2088,
+                        2090,
+                        2114
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":8}]": {
                     "paraID": 1000,
@@ -21081,22 +21086,29 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2023": "0xffffffff893264794d9d57e1e0e21e0042af5a0a"
+                    "asset": {
+                        "ForeignAsset": "0"
                     },
+                    "source": [
+                        2000,
+                        2001,
+                        2023,
+                        2110
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "0"
                         },
+                        "2001": {
+                            "Token": "RMRK"
+                        },
                         "2023": "182365888117048807484804376330534607370",
                         "2110": "31"
                     },
-                    "confidence": 3,
-                    "source": [
-                        2000,
-                        2023,
-                        2110
-                    ]
+                    "xcContractAddress": {
+                        "2023": "0xffffffff893264794d9d57e1e0e21e0042af5a0a"
+                    },
+                    "confidence": 4
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]": {
                     "paraID": 1000,
@@ -21137,13 +21149,27 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2007": "0xffffffff000000000000000000000001000007c0",
-                        "2023": "0xffffffffea09fb06d082fd1275cd48b191cbcd1d"
+                    "asset": {
+                        "ForeignAsset": "7"
                     },
+                    "source": [
+                        2000,
+                        2001,
+                        2007,
+                        2023,
+                        2084,
+                        2085,
+                        2088,
+                        2090,
+                        2092,
+                        2110
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "7"
+                        },
+                        "2001": {
+                            "Token2": "0"
                         },
                         "2007": "4294969280",
                         "2023": "311091173110107856861649819128533077277",
@@ -21158,18 +21184,11 @@
                         },
                         "2110": "30"
                     },
-                    "confidence": 9,
-                    "source": [
-                        2000,
-                        2007,
-                        2023,
-                        2084,
-                        2085,
-                        2088,
-                        2090,
-                        2092,
-                        2110
-                    ]
+                    "xcContractAddress": {
+                        "2007": "0xffffffff000000000000000000000001000007c0",
+                        "2023": "0xffffffffea09fb06d082fd1275cd48b191cbcd1d"
+                    },
+                    "confidence": 10
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":16}]": {
                     "paraID": 1000,
@@ -21210,15 +21229,87 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": {
+                        "ForeignAsset": "1"
+                    },
+                    "source": [
+                        2000
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "1"
                         }
                     },
-                    "confidence": 1,
+                    "xcContractAddress": {},
+                    "confidence": 1
+                },
+                "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0081\"}]": {
+                    "paraID": 2000,
+                    "relayChain": "kusama",
+                    "nativeChainID": "karura",
+                    "symbol": "KUSD",
+                    "decimals": 12,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "kusama"
+                        },
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0081"
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2000
+                                    },
+                                    {
+                                        "generalKey": "0x0081"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {
+                        "2007": "0xffffffff00000000000000010000000000000000",
+                        "2023": "0xffffffffa1b026a00fbaa67c86d5d1d5bf8d8228"
+                    },
+                    "xcCurrencyID": {
+                        "2001": {
+                            "Stable": "KUSD"
+                        },
+                        "2004": "4",
+                        "2007": "18446744073709551616",
+                        "2012": "214920334981412447805621250067209749032",
+                        "2023": "214920334981412447805621250067209749032",
+                        "2084": "9",
+                        "2088": {
+                            "ForeignAsset": "2"
+                        },
+                        "2090": "2",
+                        "2092": {
+                            "ForeignAsset": "1"
+                        },
+                        "2114": "2"
+                    },
+                    "confidence": 10,
                     "source": [
-                        2000
+                        2001,
+                        2004,
+                        2007,
+                        2012,
+                        2023,
+                        2084,
+                        2088,
+                        2090,
+                        2092,
+                        2114
                     ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0080\"}]": {
@@ -21254,17 +21345,14 @@
                             }
                         }
                     },
-                    "asset": "1",
-                    "source": [
-                        2004,
-                        2007,
-                        2012,
-                        2023,
-                        2084,
-                        2085,
-                        2114
-                    ],
+                    "xcContractAddress": {
+                        "2007": "0xffffffff00000000000000010000000000000002",
+                        "2023": "0xffffffff08220ad2e6e157f26ed8bd22a336a0a5"
+                    },
                     "xcCurrencyID": {
+                        "2001": {
+                            "Token": "KAR"
+                        },
                         "2004": "1",
                         "2007": "18446744073709551618",
                         "2012": "10810581592933651521121702237638664357",
@@ -21273,77 +21361,17 @@
                         "2085": "107",
                         "2114": "3"
                     },
-                    "xcContractAddress": {
-                        "2007": "0xffffffff00000000000000010000000000000002",
-                        "2023": "0xffffffff08220ad2e6e157f26ed8bd22a336a0a5"
-                    },
-                    "confidence": 7
-                },
-                "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0081\"}]": {
-                    "paraID": 2000,
-                    "relayChain": "kusama",
-                    "nativeChainID": "karura",
-                    "symbol": "aUSD",
-                    "decimals": 12,
-                    "interiorType": "x2",
-                    "xcmV1Standardized": [
-                        {
-                            "network": "kusama"
-                        },
-                        {
-                            "parachain": 2000
-                        },
-                        {
-                            "generalKey": "0x0081"
-                        }
-                    ],
-                    "xcmV1MultiLocation": {
-                        "v1": {
-                            "parents": 1,
-                            "interior": {
-                                "x2": [
-                                    {
-                                        "parachain": 2000
-                                    },
-                                    {
-                                        "generalKey": "0x0081"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "asset": "4",
+                    "confidence": 8,
                     "source": [
+                        2001,
                         2004,
                         2007,
                         2012,
                         2023,
                         2084,
-                        2088,
-                        2090,
-                        2092,
+                        2085,
                         2114
-                    ],
-                    "xcCurrencyID": {
-                        "2004": "4",
-                        "2007": "18446744073709551616",
-                        "2012": "214920334981412447805621250067209749032",
-                        "2023": "214920334981412447805621250067209749032",
-                        "2084": "9",
-                        "2088": {
-                            "ForeignAsset": "2"
-                        },
-                        "2090": "2",
-                        "2092": {
-                            "ForeignAsset": "1"
-                        },
-                        "2114": "2"
-                    },
-                    "xcContractAddress": {
-                        "2007": "0xffffffff00000000000000010000000000000000",
-                        "2023": "0xffffffffa1b026a00fbaa67c86d5d1d5bf8d8228"
-                    },
-                    "confidence": 9
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0083\"}]": {
                     "paraID": 2000,
@@ -21995,204 +22023,6 @@
                         2090
                     ]
                 },
-                "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]": {
-                    "paraID": 2001,
-                    "relayChain": "kusama",
-                    "nativeChainID": "bifrost",
-                    "symbol": "BNC",
-                    "decimals": 12,
-                    "interiorType": "x2",
-                    "xcmV1Standardized": [
-                        {
-                            "network": "kusama"
-                        },
-                        {
-                            "parachain": 2001
-                        },
-                        {
-                            "generalKey": "0x0001"
-                        }
-                    ],
-                    "xcmV1MultiLocation": {
-                        "v1": {
-                            "parents": 1,
-                            "interior": {
-                                "x2": [
-                                    {
-                                        "parachain": 2001
-                                    },
-                                    {
-                                        "generalKey": "0x0001"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "asset": "2",
-                    "source": [
-                        2004,
-                        2007,
-                        2012,
-                        2023,
-                        2110
-                    ],
-                    "xcCurrencyID": {
-                        "2004": "2",
-                        "2007": "18446744073709551627",
-                        "2012": "319623561105283008236062145480775032445",
-                        "2023": "319623561105283008236062145480775032445",
-                        "2110": "14"
-                    },
-                    "xcContractAddress": {
-                        "2007": "0xffffffff0000000000000001000000000000000b",
-                        "2023": "0xfffffffff075423be54811ecb478e911f22dde7d"
-                    },
-                    "confidence": 5
-                },
-                "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0207\"}]": {
-                    "paraID": 2001,
-                    "relayChain": "kusama",
-                    "nativeChainID": "bifrost",
-                    "symbol": "ZLK",
-                    "decimals": 18,
-                    "interiorType": "x2",
-                    "xcmV1Standardized": [
-                        {
-                            "network": "kusama"
-                        },
-                        {
-                            "parachain": 2001
-                        },
-                        {
-                            "generalKey": "0x0207"
-                        }
-                    ],
-                    "xcmV1MultiLocation": {
-                        "v1": {
-                            "parents": 1,
-                            "interior": {
-                                "x2": [
-                                    {
-                                        "parachain": 2001
-                                    },
-                                    {
-                                        "generalKey": "0x0207"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "asset": "3",
-                    "source": [
-                        2004,
-                        2110
-                    ],
-                    "xcCurrencyID": {
-                        "2004": "3",
-                        "2110": "26"
-                    },
-                    "xcContractAddress": {},
-                    "confidence": 2
-                },
-                "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0404\"}]": {
-                    "paraID": 2001,
-                    "relayChain": "kusama",
-                    "nativeChainID": "bifrost",
-                    "symbol": "vsKSM",
-                    "decimals": 12,
-                    "interiorType": "x2",
-                    "xcmV1Standardized": [
-                        {
-                            "network": "kusama"
-                        },
-                        {
-                            "parachain": 2001
-                        },
-                        {
-                            "generalKey": "0x0404"
-                        }
-                    ],
-                    "xcmV1MultiLocation": {
-                        "v1": {
-                            "parents": 1,
-                            "interior": {
-                                "x2": [
-                                    {
-                                        "parachain": 2001
-                                    },
-                                    {
-                                        "generalKey": "0x0404"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "xcContractAddress": {
-                        "2007": "0xffffffff0000000000000001000000000000000d"
-                    },
-                    "xcCurrencyID": {
-                        "2007": "18446744073709551629",
-                        "2110": "16"
-                    },
-                    "confidence": 2,
-                    "source": [
-                        2007,
-                        2110
-                    ]
-                },
-                "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0104\"}]": {
-                    "paraID": 2001,
-                    "relayChain": "kusama",
-                    "nativeChainID": "bifrost",
-                    "symbol": "vKSM",
-                    "decimals": 12,
-                    "interiorType": "x2",
-                    "xcmV1Standardized": [
-                        {
-                            "network": "kusama"
-                        },
-                        {
-                            "parachain": 2001
-                        },
-                        {
-                            "generalKey": "0x0104"
-                        }
-                    ],
-                    "xcmV1MultiLocation": {
-                        "v1": {
-                            "parents": 1,
-                            "interior": {
-                                "x2": [
-                                    {
-                                        "parachain": 2001
-                                    },
-                                    {
-                                        "generalKey": "0x0104"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "xcContractAddress": {
-                        "2007": "0xffffffff0000000000000001000000000000000c",
-                        "2023": "0xffffffffc6deec7fc8b11a2c8dde9a59f8c62efe"
-                    },
-                    "xcCurrencyID": {
-                        "2007": "18446744073709551628",
-                        "2023": "264344629840762281112027368930249420542",
-                        "2092": {
-                            "ForeignAsset": "5"
-                        },
-                        "2110": "15"
-                    },
-                    "confidence": 4,
-                    "source": [
-                        2007,
-                        2023,
-                        2092,
-                        2110
-                    ]
-                },
                 "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0101\"}]": {
                     "paraID": 2001,
                     "relayChain": "kusama",
@@ -22230,11 +22060,15 @@
                         "2023": "0xffffffff3646a00f78cadf8883c5a2791bfcddc4"
                     },
                     "xcCurrencyID": {
+                        "2001": {
+                            "VToken": "BNC"
+                        },
                         "2023": "72145018963825376852137222787619937732",
                         "2110": "23"
                     },
-                    "confidence": 2,
+                    "confidence": 3,
                     "source": [
+                        2001,
                         2023,
                         2110
                     ]
@@ -22276,11 +22110,227 @@
                         "2023": "0xffffffff98e37bf6a393504b5adc5b53b4d0ba11"
                     },
                     "xcCurrencyID": {
+                        "2001": {
+                            "VToken": "MOVR"
+                        },
                         "2023": "203223821023327994093278529517083736593"
                     },
-                    "confidence": 1,
+                    "confidence": 2,
                     "source": [
+                        2001,
                         2023
+                    ]
+                },
+                "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0104\"}]": {
+                    "paraID": 2001,
+                    "relayChain": "kusama",
+                    "nativeChainID": "bifrost",
+                    "symbol": "vKSM",
+                    "decimals": 12,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "kusama"
+                        },
+                        {
+                            "parachain": 2001
+                        },
+                        {
+                            "generalKey": "0x0104"
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2001
+                                    },
+                                    {
+                                        "generalKey": "0x0104"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {
+                        "2007": "0xffffffff0000000000000001000000000000000c",
+                        "2023": "0xffffffffc6deec7fc8b11a2c8dde9a59f8c62efe"
+                    },
+                    "xcCurrencyID": {
+                        "2001": {
+                            "VToken": "KSM"
+                        },
+                        "2007": "18446744073709551628",
+                        "2023": "264344629840762281112027368930249420542",
+                        "2092": {
+                            "ForeignAsset": "5"
+                        },
+                        "2110": "15"
+                    },
+                    "confidence": 5,
+                    "source": [
+                        2001,
+                        2007,
+                        2023,
+                        2092,
+                        2110
+                    ]
+                },
+                "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0207\"}]": {
+                    "paraID": 2001,
+                    "relayChain": "kusama",
+                    "nativeChainID": "bifrost",
+                    "symbol": "ZLK",
+                    "decimals": 18,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "kusama"
+                        },
+                        {
+                            "parachain": 2001
+                        },
+                        {
+                            "generalKey": "0x0207"
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2001
+                                    },
+                                    {
+                                        "generalKey": "0x0207"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2001": {
+                            "Token": "ZLK"
+                        },
+                        "2004": "3",
+                        "2110": "26"
+                    },
+                    "confidence": 3,
+                    "source": [
+                        2001,
+                        2004,
+                        2110
+                    ]
+                },
+                "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0404\"}]": {
+                    "paraID": 2001,
+                    "relayChain": "kusama",
+                    "nativeChainID": "bifrost",
+                    "symbol": "VSvsKSM",
+                    "decimals": 12,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "kusama"
+                        },
+                        {
+                            "parachain": 2001
+                        },
+                        {
+                            "generalKey": "0x0404"
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2001
+                                    },
+                                    {
+                                        "generalKey": "0x0404"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {
+                        "2007": "0xffffffff0000000000000001000000000000000d"
+                    },
+                    "xcCurrencyID": {
+                        "2001": {
+                            "VSToken": "KSM"
+                        },
+                        "2007": "18446744073709551629",
+                        "2110": "16"
+                    },
+                    "confidence": 3,
+                    "source": [
+                        2001,
+                        2007,
+                        2110
+                    ]
+                },
+                "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]": {
+                    "paraID": 2001,
+                    "relayChain": "kusama",
+                    "nativeChainID": "bifrost",
+                    "symbol": "BNC",
+                    "decimals": 12,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "kusama"
+                        },
+                        {
+                            "parachain": 2001
+                        },
+                        {
+                            "generalKey": "0x0001"
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2001
+                                    },
+                                    {
+                                        "generalKey": "0x0001"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {
+                        "2007": "0xffffffff0000000000000001000000000000000b",
+                        "2023": "0xfffffffff075423be54811ecb478e911f22dde7d"
+                    },
+                    "xcCurrencyID": {
+                        "2001": {
+                            "Native": "BNC"
+                        },
+                        "2004": "2",
+                        "2007": "18446744073709551627",
+                        "2012": "319623561105283008236062145480775032445",
+                        "2023": "319623561105283008236062145480775032445",
+                        "2110": "14"
+                    },
+                    "confidence": 6,
+                    "source": [
+                        2001,
+                        2004,
+                        2007,
+                        2012,
+                        2023,
+                        2110
                     ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2004}]": {
@@ -22313,14 +22363,18 @@
                         "2023": "0xffffffff8e6b63d9e447b6d4c45bda8af9dc9603"
                     },
                     "xcCurrencyID": {
+                        "2001": {
+                            "Token": "PHA"
+                        },
                         "2007": "18446744073709551623",
                         "2023": "189307976387032586987344677431204943363",
                         "2084": "13",
                         "2085": "115",
                         "2114": "7"
                     },
-                    "confidence": 5,
+                    "confidence": 6,
                     "source": [
+                        2001,
                         2007,
                         2023,
                         2084,
@@ -22353,26 +22407,33 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2023": "0xffffffff0ca324c842330521525e7de111f38972"
+                    "asset": {
+                        "ForeignAsset": "18"
                     },
+                    "source": [
+                        2000,
+                        2001,
+                        2004,
+                        2012,
+                        2023,
+                        2114
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "18"
+                        },
+                        "2001": {
+                            "Token2": "3"
                         },
                         "2004": "12",
                         "2012": "16797826370226091782818345603793389938",
                         "2023": "16797826370226091782818345603793389938",
                         "2114": "8"
                     },
-                    "confidence": 5,
-                    "source": [
-                        2000,
-                        2004,
-                        2012,
-                        2023,
-                        2114
-                    ]
+                    "xcContractAddress": {
+                        "2023": "0xffffffff0ca324c842330521525e7de111f38972"
+                    },
+                    "confidence": 6
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2012}]": {
                     "paraID": 2012,
@@ -22399,10 +22460,14 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2007": "0xffffffff00000000000000010000000000000008",
-                        "2023": "0xffffffff519811215e05efa24830eebe9c43acd7"
+                    "asset": {
+                        "ForeignAsset": "5"
                     },
+                    "source": [
+                        2000,
+                        2007,
+                        2023
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "5"
@@ -22410,12 +22475,11 @@
                         "2007": "18446744073709551624",
                         "2023": "108457044225666871745333730479173774551"
                     },
-                    "confidence": 3,
-                    "source": [
-                        2000,
-                        2007,
-                        2023
-                    ]
+                    "xcContractAddress": {
+                        "2007": "0xffffffff00000000000000010000000000000008",
+                        "2023": "0xffffffff519811215e05efa24830eebe9c43acd7"
+                    },
+                    "confidence": 3
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2015},{\"generalKey\":\"0x54454552\"}]": {
                     "paraID": 2015,
@@ -22450,20 +22514,23 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2023": "0xffffffff4f0cd46769550e5938f6bee2f5d4ef1e"
+                    "asset": {
+                        "ForeignAsset": "8"
                     },
+                    "source": [
+                        2000,
+                        2023
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "8"
                         },
                         "2023": "105075627293246237499203909093923548958"
                     },
-                    "confidence": 2,
-                    "source": [
-                        2000,
-                        2023
-                    ]
+                    "xcContractAddress": {
+                        "2023": "0xffffffff4f0cd46769550e5938f6bee2f5d4ef1e"
+                    },
+                    "confidence": 2
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2016}]": {
                     "paraID": 2016,
@@ -22534,12 +22601,26 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2007": "0xffffffff00000000000000010000000000000004"
+                    "asset": {
+                        "ForeignAsset": "3"
                     },
+                    "source": [
+                        2000,
+                        2001,
+                        2004,
+                        2007,
+                        2012,
+                        2084,
+                        2085,
+                        2092,
+                        2114
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "3"
+                        },
+                        "2001": {
+                            "Token": "MOVR"
                         },
                         "2004": "6",
                         "2007": "18446744073709551620",
@@ -22551,17 +22632,10 @@
                         },
                         "2114": "9"
                     },
-                    "confidence": 8,
-                    "source": [
-                        2000,
-                        2004,
-                        2007,
-                        2012,
-                        2084,
-                        2085,
-                        2092,
-                        2114
-                    ]
+                    "xcContractAddress": {
+                        "2007": "0xffffffff00000000000000010000000000000004"
+                    },
+                    "confidence": 9
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2024}]": {
                     "paraID": 2024,
@@ -22588,16 +22662,19 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": {
+                        "ForeignAsset": "14"
+                    },
+                    "source": [
+                        2000
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "14"
                         }
                     },
-                    "confidence": 1,
-                    "source": [
-                        2000
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2024},{\"generalKey\":\"0x657164\"}]": {
                     "paraID": 2024,
@@ -22632,16 +22709,19 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": {
+                        "ForeignAsset": "15"
+                    },
+                    "source": [
+                        2000
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "15"
                         }
                     },
-                    "confidence": 1,
-                    "source": [
-                        2000
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2048}]": {
                     "paraID": 2048,
@@ -22708,9 +22788,14 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2023": "0xffffffffa083189f870640b141ae1e882c2b5bad"
+                    "asset": {
+                        "ForeignAsset": "10"
                     },
+                    "source": [
+                        2000,
+                        2004,
+                        2023
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "10"
@@ -22718,12 +22803,10 @@
                         "2004": "8",
                         "2023": "213357169630950964874127107356898319277"
                     },
-                    "confidence": 3,
-                    "source": [
-                        2000,
-                        2004,
-                        2023
-                    ]
+                    "xcContractAddress": {
+                        "2023": "0xffffffffa083189f870640b141ae1e882c2b5bad"
+                    },
+                    "confidence": 3
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2085},{\"generalKey\":\"0x484b4f\"}]": {
                     "paraID": 2085,
@@ -22758,9 +22841,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2023": "0xffffffff394054bcda1902b6a6436840435655a3"
+                    "asset": {
+                        "ForeignAsset": "4"
                     },
+                    "source": [
+                        2000,
+                        2004,
+                        2023,
+                        2114
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "4"
@@ -22769,13 +22858,10 @@
                         "2023": "76100021443485661246318545281171740067",
                         "2114": "5"
                     },
-                    "confidence": 4,
-                    "source": [
-                        2000,
-                        2004,
-                        2023,
-                        2114
-                    ]
+                    "xcContractAddress": {
+                        "2023": "0xffffffff394054bcda1902b6a6436840435655a3"
+                    },
+                    "confidence": 4
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2085},{\"palletInstance\":6},{\"generalIndex\":1000}]": {
                     "paraID": 2085,
@@ -22896,19 +22982,18 @@
                             }
                         }
                     },
-                    "asset": "15",
-                    "source": [
-                        2004,
-                        2023
-                    ],
+                    "xcContractAddress": {
+                        "2023": "0xffffffff7dd9b9c60ac83e49d7e3e1f7a1370ad2"
+                    },
                     "xcCurrencyID": {
                         "2004": "15",
                         "2023": "167283995827706324502761431814209211090"
                     },
-                    "xcContractAddress": {
-                        "2023": "0xffffffff7dd9b9c60ac83e49d7e3e1f7a1370ad2"
-                    },
-                    "confidence": 2
+                    "confidence": 2,
+                    "source": [
+                        2004,
+                        2023
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2088},{\"generalKey\":\"0x0001\"}]": {
                     "paraID": 2088,
@@ -22943,18 +23028,21 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": {
+                        "ForeignAsset": "12"
+                    },
+                    "source": [
+                        2000,
+                        2088
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "12"
                         },
                         "2088": "Native"
                     },
-                    "confidence": 2,
-                    "source": [
-                        2000,
-                        2088
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 2
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2090},{\"generalIndex\":0}]": {
                     "paraID": 2090,
@@ -22989,18 +23077,21 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": {
+                        "ForeignAsset": "11"
+                    },
+                    "source": [
+                        2000,
+                        2004
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "11"
                         },
                         "2004": "9"
                     },
-                    "confidence": 2,
-                    "source": [
-                        2000,
-                        2004
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 2
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2090},{\"generalKey\":\"0x00000000\"}]": {
                     "paraID": 2090,
@@ -23035,15 +23126,14 @@
                             }
                         }
                     },
-                    "asset": "5",
-                    "source": [
-                        2004
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2004": "5"
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2004
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2092},{\"generalKey\":\"0x000b\"}]": {
                     "paraID": 2092,
@@ -23083,12 +23173,16 @@
                         "2023": "0xfffffffff6e528ad57184579beee00c5d5e646f0"
                     },
                     "xcCurrencyID": {
+                        "2001": {
+                            "Token2": "2"
+                        },
                         "2007": "18446744073709551621",
                         "2023": "328179947973504579459046439826496046832",
                         "2085": "121"
                     },
-                    "confidence": 3,
+                    "confidence": 4,
                     "source": [
+                        2001,
                         2007,
                         2023,
                         2085
@@ -23132,12 +23226,16 @@
                         "2023": "0xffffffff83f4f317d3cbf6ec6250aec3697b3ff2"
                     },
                     "xcCurrencyID": {
+                        "2001": {
+                            "Token2": "1"
+                        },
                         "2007": "18446744073709551622",
                         "2023": "175400718394635817552109270754364440562",
                         "2085": "119"
                     },
-                    "confidence": 3,
+                    "confidence": 4,
                     "source": [
+                        2001,
                         2007,
                         2023,
                         2085
@@ -23168,20 +23266,23 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2007": "0xffffffff00000000000000010000000000000011"
+                    "asset": {
+                        "ForeignAsset": "2"
                     },
+                    "source": [
+                        2000,
+                        2007
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "2"
                         },
                         "2007": "18446744073709551633"
                     },
-                    "confidence": 2,
-                    "source": [
-                        2000,
-                        2007
-                    ]
+                    "xcContractAddress": {
+                        "2007": "0xffffffff00000000000000010000000000000011"
+                    },
+                    "confidence": 2
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2096},{\"generalKey\":\"0x000000000000000000\"}]": {
                     "paraID": 2096,
@@ -23216,18 +23317,21 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": {
+                        "ForeignAsset": "9"
+                    },
+                    "source": [
+                        2000,
+                        2004
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "9"
                         },
                         "2004": "13"
                     },
-                    "confidence": 2,
-                    "source": [
-                        2000,
-                        2004
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 2
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2096},{\"generalKey\":\"0x020000000000000000\"}]": {
                     "paraID": 2096,
@@ -23262,15 +23366,14 @@
                             }
                         }
                     },
-                    "asset": "14",
-                    "source": [
-                        2004
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2004": "14"
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2004
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2102},{\"generalKey\":\"0x50434855\"}]": {
                     "paraID": 2102,
@@ -23305,16 +23408,19 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": {
+                        "ForeignAsset": "17"
+                    },
+                    "source": [
+                        2000
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "17"
                         }
                     },
-                    "confidence": 1,
-                    "source": [
-                        2000
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2105},{\"palletInstance\":5}]": {
                     "paraID": 2105,
@@ -23349,10 +23455,16 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2007": "0xffffffff00000000000000010000000000000009",
-                        "2023": "0xffffffff8283448b3cb519ca4732f2dddc6a6165"
+                    "asset": {
+                        "ForeignAsset": "13"
                     },
+                    "source": [
+                        2000,
+                        2004,
+                        2007,
+                        2012,
+                        2023
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "13"
@@ -23362,14 +23474,11 @@
                         "2012": "173481220575862801646329923366065693029",
                         "2023": "173481220575862801646329923366065693029"
                     },
-                    "confidence": 5,
-                    "source": [
-                        2000,
-                        2004,
-                        2007,
-                        2012,
-                        2023
-                    ]
+                    "xcContractAddress": {
+                        "2007": "0xffffffff00000000000000010000000000000009",
+                        "2023": "0xffffffff8283448b3cb519ca4732f2dddc6a6165"
+                    },
+                    "confidence": 5
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2106},{\"palletInstance\":10}]": {
                     "paraID": 2106,
@@ -23404,20 +23513,23 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2023": "0xffffffff31103d490325bb0a8e40ef62e2f614c0"
+                    "asset": {
+                        "ForeignAsset": "20"
                     },
+                    "source": [
+                        2000,
+                        2023
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "20"
                         },
                         "2023": "65216491554813189869575508812319036608"
                     },
-                    "confidence": 2,
-                    "source": [
-                        2000,
-                        2023
-                    ]
+                    "xcContractAddress": {
+                        "2023": "0xffffffff31103d490325bb0a8e40ef62e2f614c0"
+                    },
+                    "confidence": 2
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2107},{\"generalKey\":\"0x4b49434f\"}]": {
                     "paraID": 2107,
@@ -23452,16 +23564,19 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": {
+                        "ForeignAsset": "6"
+                    },
+                    "source": [
+                        2000
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "6"
                         }
                     },
-                    "confidence": 1,
-                    "source": [
-                        2000
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2110},{\"generalKey\":\"0x00000000\"}]": {
                     "paraID": 2110,
@@ -23500,10 +23615,14 @@
                         "2023": "0xffffffff58d867eea1ce5126a4769542116324e9"
                     },
                     "xcCurrencyID": {
+                        "2001": {
+                            "Token2": "4"
+                        },
                         "2023": "118095707745084482624853002839493125353"
                     },
-                    "confidence": 1,
+                    "confidence": 2,
                     "source": [
+                        2001,
                         2023
                     ]
                 },
@@ -23532,9 +23651,16 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2023": "0xffffffff6448d0746f2a66342b67ef9caf89478e"
+                    "asset": {
+                        "ForeignAsset": "16"
                     },
+                    "source": [
+                        2000,
+                        2004,
+                        2023,
+                        2110,
+                        2114
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "16"
@@ -23544,14 +23670,10 @@
                         "2110": "7",
                         "2114": "0"
                     },
-                    "confidence": 5,
-                    "source": [
-                        2000,
-                        2004,
-                        2023,
-                        2110,
-                        2114
-                    ]
+                    "xcContractAddress": {
+                        "2023": "0xffffffff6448d0746f2a66342b67ef9caf89478e"
+                    },
+                    "confidence": 5
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2118},{\"generalKey\":\"0x4c54\"}]": {
                     "paraID": 2118,
@@ -23586,16 +23708,19 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": {
+                        "ForeignAsset": "19"
+                    },
+                    "source": [
+                        2000
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "19"
                         }
                     },
-                    "confidence": 1,
-                    "source": [
-                        2000
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2121},{\"generalKey\":\"0x0096\"}]": {
                     "paraID": 2121,
@@ -23777,10 +23902,19 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2004": "0xffffffffea09fb06d082fd1275cd48b191cbcd1d",
-                        "2006": "0xffffffff000000000000000000000001000007c0"
+                    "asset": {
+                        "ForeignAsset": "12"
                     },
+                    "source": [
+                        2000,
+                        2004,
+                        2006,
+                        2012,
+                        2030,
+                        2031,
+                        2032,
+                        2034
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "12"
@@ -23799,17 +23933,11 @@
                         },
                         "2034": "10"
                     },
-                    "confidence": 8,
-                    "source": [
-                        2000,
-                        2004,
-                        2006,
-                        2012,
-                        2030,
-                        2031,
-                        2032,
-                        2034
-                    ]
+                    "xcContractAddress": {
+                        "2004": "0xffffffffea09fb06d082fd1275cd48b191cbcd1d",
+                        "2006": "0xffffffff000000000000000000000001000007c0"
+                    },
+                    "confidence": 8
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":100}]": {
                     "paraID": 1000,
@@ -23850,16 +23978,19 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": {
+                        "ForeignAsset": "6"
+                    },
+                    "source": [
+                        2000
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "6"
                         }
                     },
-                    "confidence": 1,
-                    "source": [
-                        2000
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":21}]": {
                     "paraID": 1000,
@@ -23900,16 +24031,19 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": {
+                        "ForeignAsset": "5"
+                    },
+                    "source": [
+                        2000
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "5"
                         }
                     },
-                    "confidence": 1,
-                    "source": [
-                        2000
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]": {
                     "paraID": 1000,
@@ -24500,9 +24634,19 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2006": "0xffffffff00000000000000010000000000000003"
+                    "asset": {
+                        "ForeignAsset": "0"
                     },
+                    "source": [
+                        2000,
+                        2006,
+                        2012,
+                        2030,
+                        2031,
+                        2032,
+                        2034,
+                        2035
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "0"
@@ -24521,17 +24665,10 @@
                         "2034": "16",
                         "2035": "1"
                     },
-                    "confidence": 8,
-                    "source": [
-                        2000,
-                        2006,
-                        2012,
-                        2030,
-                        2031,
-                        2032,
-                        2034,
-                        2035
-                    ]
+                    "xcContractAddress": {
+                        "2006": "0xffffffff00000000000000010000000000000003"
+                    },
+                    "confidence": 8
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0xe3b841c3f96e647e6dc01b468d6d0ad3562a9eeb\"}}]": {
                     "paraID": 2004,
@@ -24956,9 +25093,17 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2004": "0xffffffffa893ad19e540e172c10d78d4d479b5cf"
+                    "asset": {
+                        "ForeignAsset": "2"
                     },
+                    "source": [
+                        2000,
+                        2002,
+                        2004,
+                        2030,
+                        2034,
+                        2035
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "2"
@@ -24971,15 +25116,10 @@
                         "2034": "9",
                         "2035": "6"
                     },
-                    "confidence": 6,
-                    "source": [
-                        2000,
-                        2002,
-                        2004,
-                        2030,
-                        2034,
-                        2035
-                    ]
+                    "xcContractAddress": {
+                        "2004": "0xffffffffa893ad19e540e172c10d78d4d479b5cf"
+                    },
+                    "confidence": 6
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2008}]": {
                     "paraID": 2008,
@@ -25006,16 +25146,19 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": {
+                        "ForeignAsset": "11"
+                    },
+                    "source": [
+                        2000
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "11"
                         }
                     },
-                    "confidence": 1,
-                    "source": [
-                        2000
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2011},{\"generalKey\":\"0x657164\"}]": {
                     "paraID": 2011,
@@ -25050,10 +25193,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2004": "0xffffffff8cda1707baf23834d211b08726b1e499",
-                        "2006": "0xffffffff0000000000000001000000000000000d"
+                    "asset": {
+                        "ForeignAsset": "8"
                     },
+                    "source": [
+                        2000,
+                        2004,
+                        2006,
+                        2035
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "8"
@@ -25062,13 +25210,11 @@
                         "2006": "18446744073709551629",
                         "2035": "10"
                     },
-                    "confidence": 4,
-                    "source": [
-                        2000,
-                        2004,
-                        2006,
-                        2035
-                    ]
+                    "xcContractAddress": {
+                        "2004": "0xffffffff8cda1707baf23834d211b08726b1e499",
+                        "2006": "0xffffffff0000000000000001000000000000000d"
+                    },
+                    "confidence": 4
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2011}]": {
                     "paraID": 2011,
@@ -25095,10 +25241,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2004": "0xffffffff8f6267e040d8a0638c576dfba4f0f6d6",
-                        "2006": "0xffffffff0000000000000001000000000000000c"
+                    "asset": {
+                        "ForeignAsset": "7"
                     },
+                    "source": [
+                        2000,
+                        2004,
+                        2006,
+                        2035
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "7"
@@ -25107,13 +25258,11 @@
                         "2006": "18446744073709551628",
                         "2035": "9"
                     },
-                    "confidence": 4,
-                    "source": [
-                        2000,
-                        2004,
-                        2006,
-                        2035
-                    ]
+                    "xcContractAddress": {
+                        "2004": "0xffffffff8f6267e040d8a0638c576dfba4f0f6d6",
+                        "2006": "0xffffffff0000000000000001000000000000000c"
+                    },
+                    "confidence": 4
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2012},{\"generalKey\":\"0x50415241\"}]": {
                     "paraID": 2012,
@@ -25148,9 +25297,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2004": "0xffffffff18898cb5fe1e88e668152b4f4052a947"
+                    "asset": {
+                        "ForeignAsset": "1"
                     },
+                    "source": [
+                        2000,
+                        2002,
+                        2004,
+                        2035
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "1"
@@ -25159,13 +25314,10 @@
                         "2004": "32615670524745285411807346420584982855",
                         "2035": "2"
                     },
-                    "confidence": 4,
-                    "source": [
-                        2000,
-                        2002,
-                        2004,
-                        2035
-                    ]
+                    "xcContractAddress": {
+                        "2004": "0xffffffff18898cb5fe1e88e668152b4f4052a947"
+                    },
+                    "confidence": 4
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2012},{\"generalKey\":\"0x73444f54\"}]": {
                     "paraID": 2012,
@@ -26502,10 +26654,17 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2004": "0xffffffff5ac1f9a51a93f5c527385edf7fe98a52",
-                        "2006": "0xffffffff00000000000000010000000000000004"
+                    "asset": {
+                        "ForeignAsset": "3"
                     },
+                    "source": [
+                        2000,
+                        2004,
+                        2006,
+                        2012,
+                        2030,
+                        2034
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "3"
@@ -26518,15 +26677,11 @@
                         },
                         "2034": "11"
                     },
-                    "confidence": 6,
-                    "source": [
-                        2000,
-                        2004,
-                        2006,
-                        2012,
-                        2030,
-                        2034
-                    ]
+                    "xcContractAddress": {
+                        "2004": "0xffffffff5ac1f9a51a93f5c527385edf7fe98a52",
+                        "2006": "0xffffffff00000000000000010000000000000004"
+                    },
+                    "confidence": 6
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0002\"}]": {
                     "paraID": 2032,
@@ -26561,10 +26716,17 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2004": "0xffffffff4c1cbcd97597339702436d4f18a375ab",
-                        "2006": "0xffffffff00000000000000010000000000000005"
+                    "asset": {
+                        "ForeignAsset": "4"
                     },
+                    "source": [
+                        2000,
+                        2004,
+                        2006,
+                        2012,
+                        2030,
+                        2034
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "4"
@@ -26577,15 +26739,11 @@
                         },
                         "2034": "17"
                     },
-                    "confidence": 6,
-                    "source": [
-                        2000,
-                        2004,
-                        2006,
-                        2012,
-                        2030,
-                        2034
-                    ]
+                    "xcContractAddress": {
+                        "2004": "0xffffffff4c1cbcd97597339702436d4f18a375ab",
+                        "2006": "0xffffffff00000000000000010000000000000005"
+                    },
+                    "confidence": 6
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2034},{\"generalIndex\":0}]": {
                     "paraID": 2034,
@@ -26661,10 +26819,16 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2004": "0xffffffff63d24ecc8eb8a7b5d0803e900f7b6ced",
-                        "2006": "0xffffffff00000000000000010000000000000006"
+                    "asset": {
+                        "ForeignAsset": "9"
                     },
+                    "source": [
+                        2000,
+                        2004,
+                        2006,
+                        2012,
+                        2034
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "9"
@@ -26674,14 +26838,11 @@
                         "2012": "115",
                         "2034": "8"
                     },
-                    "confidence": 5,
-                    "source": [
-                        2000,
-                        2004,
-                        2006,
-                        2012,
-                        2034
-                    ]
+                    "xcContractAddress": {
+                        "2004": "0xffffffff63d24ecc8eb8a7b5d0803e900f7b6ced",
+                        "2006": "0xffffffff00000000000000010000000000000006"
+                    },
+                    "confidence": 5
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2037}]": {
                     "paraID": 2037,
@@ -26708,9 +26869,14 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2006": "0xffffffff0000000000000001000000000000000f"
+                    "asset": {
+                        "ForeignAsset": "10"
                     },
+                    "source": [
+                        2000,
+                        2006,
+                        2034
+                    ],
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "10"
@@ -26718,12 +26884,10 @@
                         "2006": "18446744073709551631",
                         "2034": "25"
                     },
-                    "confidence": 3,
-                    "source": [
-                        2000,
-                        2006,
-                        2034
-                    ]
+                    "xcContractAddress": {
+                        "2006": "0xffffffff0000000000000001000000000000000f"
+                    },
+                    "confidence": 3
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2040}]": {
                     "paraID": 2040,
