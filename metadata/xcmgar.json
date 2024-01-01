@@ -1907,7 +1907,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "assetCnt": "60",
+                "assetCnt": "61",
                 "data": [
                     {
                         "asset": {
@@ -2040,6 +2040,14 @@
                         "symbol": "MANTA",
                         "decimals": 18,
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2104}]"
+                    },
+                    {
+                        "asset": {
+                            "Token2": "9"
+                        },
+                        "name": "bncs-20 inscription token BNCS",
+                        "symbol": "BNCS",
+                        "decimals": 12
                     },
                     {
                         "asset": {

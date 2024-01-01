@@ -133,6 +133,14 @@
     },
     {
         "asset": {
+            "Token2": "9"
+        },
+        "name": "bncs-20 inscription token BNCS",
+        "symbol": "BNCS",
+        "decimals": 12
+    },
+    {
+        "asset": {
             "VSBond2": "02000613"
         },
         "name": "vsBOND-DOT-2000-6-13",
