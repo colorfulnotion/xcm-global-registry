@@ -2569,6 +2569,76 @@
             2031
         ]
     },
+    "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x853d955acef822db058eb8505911ed77f175b99e\"}}]": {
+        "paraID": 2031,
+        "relayChain": "polkadot",
+        "nativeChainID": "centrifuge",
+        "symbol": "LpFRAX",
+        "decimals": 18,
+        "interiorType": "x4",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2031
+            },
+            {
+                "palletInstance": 103
+            },
+            {
+                "globalConsensus": {
+                    "ethereum": {
+                        "chainId": 1
+                    }
+                }
+            },
+            {
+                "accountKey20": {
+                    "network": null,
+                    "key": "0x853d955acef822db058eb8505911ed77f175b99e"
+                }
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x4": [
+                        {
+                            "parachain": 2031
+                        },
+                        {
+                            "palletInstance": 103
+                        },
+                        {
+                            "globalConsensus": {
+                                "ethereum": {
+                                    "chainId": 1
+                                }
+                            }
+                        },
+                        {
+                            "accountKey20": {
+                                "network": null,
+                                "key": "0x853d955acef822db058eb8505911ed77f175b99e"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2031": {
+                "ForeignAsset": "100,005"
+            }
+        },
+        "confidence": 1,
+        "source": [
+            2031
+        ]
+    },
     "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":8453}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x833589fcd6edb6e08f4c7c32d4f71b54bda02913\"}}]": {
         "paraID": 2031,
         "relayChain": "polkadot",

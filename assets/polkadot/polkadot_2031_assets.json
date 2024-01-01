@@ -61,6 +61,18 @@
     },
     {
         "asset": {
+            "ForeignAsset": "100,005"
+        },
+        "name": "LP Wrapped FRAX",
+        "symbol": "LpFRAX",
+        "decimals": 18,
+        "currencyID": {
+            "ForeignAsset": "100,005"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x853d955acef822db058eb8505911ed77f175b99e\"}}]"
+    },
+    {
+        "asset": {
             "ForeignAsset": "2"
         },
         "name": "Axelar USDC",
