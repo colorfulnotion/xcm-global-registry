@@ -645,6 +645,45 @@
         ]
     },
     {
+        "paraID": 2011,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "XOR",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2011
+            },
+            {
+                "generalKey": "0x0200000000000000000000000000000000000000000000000000000000000000"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2011
+                        },
+                        {
+                            "generalKey": "0x0200000000000000000000000000000000000000000000000000000000000000"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "311268264572112097121297553553681143695",
+        "contractAddress": "0xffffffffea2c164f4f95913718f966cbb5b5d78f",
+        "source": [
+            "1000"
+        ]
+    },
+    {
         "paraID": 2012,
         "relayChain": "moonbase",
         "nativeChainID": null,
