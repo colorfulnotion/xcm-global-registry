@@ -201,6 +201,16 @@
     },
     {
         "asset": {
+            "Token": "26"
+        },
+        "name": "NODL",
+        "symbol": "NODL",
+        "decimals": 11,
+        "currencyID": "26",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2026},{\"palletInstance\":2}]"
+    },
+    {
+        "asset": {
             "Token": "3"
         },
         "name": "WBTC",

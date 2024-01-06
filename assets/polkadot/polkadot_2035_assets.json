@@ -50,6 +50,16 @@
     },
     {
         "asset": {
+            "Token": "12"
+        },
+        "name": "PINK",
+        "symbol": "PINK",
+        "decimals": 10,
+        "currencyID": "12",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":23}]"
+    },
+    {
+        "asset": {
             "Token": "2"
         },
         "name": "PARA",

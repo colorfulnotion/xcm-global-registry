@@ -145,7 +145,10 @@
         "name": "PINK",
         "symbol": "PINK",
         "decimals": 10,
-        "currencyID": "23"
+        "currencyID": "23",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":23}]",
+        "inferred": true,
+        "confidence": 0
     },
     {
         "asset": {
