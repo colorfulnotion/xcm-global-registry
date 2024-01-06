@@ -19,7 +19,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2000,
                 "id": "acala",
-                "assetCnt": "34",
+                "assetCnt": "35",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2000_assets.json"
             },
             {
@@ -410,7 +410,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2000,
                 "id": "acala",
-                "xcAssetCnt": "13",
+                "xcAssetCnt": "14",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2000_xcAssets.json"
             },
             {
