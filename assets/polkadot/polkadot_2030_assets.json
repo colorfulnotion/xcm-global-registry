@@ -41,6 +41,15 @@
     },
     {
         "asset": {
+            "Native": "BNC"
+        },
+        "name": "Bifrost Native Token",
+        "symbol": "BNC",
+        "decimals": 12,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]"
+    },
+    {
+        "asset": {
             "Token": "BNC"
         },
         "name": "BNC",
@@ -67,6 +76,15 @@
         "symbol": "GLMR",
         "decimals": 18,
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":10}]"
+    },
+    {
+        "asset": {
+            "Token2": "10"
+        },
+        "name": "PINK",
+        "symbol": "PINK",
+        "decimals": 10,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":23}]"
     },
     {
         "asset": {
