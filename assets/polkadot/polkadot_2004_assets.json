@@ -301,6 +301,16 @@
     },
     {
         "asset": {
+            "Token": "64174511183114006009298114091987195453"
+        },
+        "name": "PINK",
+        "symbol": "xcPINK",
+        "decimals": 10,
+        "currencyID": "64174511183114006009298114091987195453",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":23}]"
+    },
+    {
+        "asset": {
             "Token": "69606720909260275826784788104880799692"
         },
         "name": "HydraDX",
