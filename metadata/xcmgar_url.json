@@ -40,7 +40,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2006,
                 "id": "astar",
-                "assetCnt": "43",
+                "assetCnt": "44",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2006_assets.json"
             },
             {
@@ -431,7 +431,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2006,
                 "id": "astar",
-                "xcAssetCnt": "20",
+                "xcAssetCnt": "21",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2006_xcAssets.json"
             },
             {
