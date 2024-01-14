@@ -3343,7 +3343,9 @@
                         "name": "RING",
                         "symbol": "RING",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -7705,7 +7707,9 @@
                         "name": "LIT",
                         "symbol": "LIT",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2106},{\"palletInstance\":10}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2106},{\"palletInstance\":10}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
