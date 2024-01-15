@@ -26,6 +26,8 @@
         "name": "CLV",
         "symbol": "CLV",
         "decimals": 18,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2002}]"
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2002}]",
+        "inferred": true,
+        "confidence": 0
     }
 ]

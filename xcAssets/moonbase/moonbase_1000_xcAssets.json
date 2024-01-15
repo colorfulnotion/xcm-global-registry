@@ -1020,6 +1020,45 @@
         "paraID": 2030,
         "relayChain": "moonbase",
         "nativeChainID": null,
+        "symbol": "vMANTA",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0908"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0908"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "289989900872525819559124583375550296953",
+        "contractAddress": "0xffffffffda2a05fb50e7ae99275f4341aed43379",
+        "source": [
+            "1000"
+        ]
+    },
+    {
+        "paraID": 2030,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "vFIL",
         "decimals": 18,
         "interiorType": "x2",
@@ -1051,6 +1090,45 @@
         },
         "asset": "272547899416482196831721420898811311297",
         "contractAddress": "0xffffffffcd0ad0ea6576b7b285295c85e94cf4c1",
+        "source": [
+            "1000"
+        ]
+    },
+    {
+        "paraID": 2030,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "vASTR",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0903"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0903"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "114018676402354620972806895487280206446",
+        "contractAddress": "0xffffffff55c732c47639231a4c4373245763d26e",
         "source": [
             "1000"
         ]

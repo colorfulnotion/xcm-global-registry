@@ -1416,6 +1416,50 @@
             1000
         ]
     },
+    "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0908\"}]": {
+        "paraID": 2030,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "vMANTA",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0908"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0908"
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "1000": "0xffffffffda2a05fb50e7ae99275f4341aed43379"
+        },
+        "xcCurrencyID": {
+            "1000": "289989900872525819559124583375550296953"
+        },
+        "confidence": 1,
+        "source": [
+            1000
+        ]
+    },
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0904\"}]": {
         "paraID": 2030,
         "relayChain": "moonbase",
@@ -1454,6 +1498,50 @@
         },
         "xcCurrencyID": {
             "1000": "272547899416482196831721420898811311297"
+        },
+        "confidence": 1,
+        "source": [
+            1000
+        ]
+    },
+    "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0903\"}]": {
+        "paraID": 2030,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "vASTR",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0903"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0903"
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "1000": "0xffffffff55c732c47639231a4c4373245763d26e"
+        },
+        "xcCurrencyID": {
+            "1000": "114018676402354620972806895487280206446"
         },
         "confidence": 1,
         "source": [
