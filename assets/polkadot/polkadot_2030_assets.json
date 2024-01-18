@@ -41,6 +41,14 @@
     },
     {
         "asset": {
+            "BLP": "5"
+        },
+        "name": "Bifrost Stable Pool Token 5",
+        "symbol": "BLP5",
+        "decimals": 18
+    },
+    {
+        "asset": {
             "Native": "BNC"
         },
         "name": "Bifrost Native Token",
@@ -529,5 +537,13 @@
         "symbol": "vFIL",
         "decimals": 18,
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0904\"}]"
+    },
+    {
+        "asset": {
+            "VToken2": "8"
+        },
+        "name": "Voucher MANTA",
+        "symbol": "vMANTA",
+        "decimals": 18
     }
 ]
