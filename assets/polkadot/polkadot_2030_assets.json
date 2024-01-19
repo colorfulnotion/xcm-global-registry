@@ -215,6 +215,14 @@
     },
     {
         "asset": {
+            "VSBond2": "020111623"
+        },
+        "name": "vsBOND-DOT-2011-16-23",
+        "symbol": "vsBOND-DOT-2011-16-23",
+        "decimals": 10
+    },
+    {
+        "asset": {
             "VSBond2": "02013613"
         },
         "name": "vsBOND-DOT-2013-6-13",
