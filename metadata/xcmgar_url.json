@@ -210,7 +210,7 @@
                 "relayChain": "kusama",
                 "paraID": 2007,
                 "id": "shiden",
-                "assetCnt": "22",
+                "assetCnt": "23",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2007_assets.json"
             },
             {

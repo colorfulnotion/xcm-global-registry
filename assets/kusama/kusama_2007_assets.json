@@ -206,6 +206,15 @@
     },
     {
         "asset": {
+            "Token": "99"
+        },
+        "name": "DummyXC",
+        "symbol": "DXC",
+        "decimals": 18,
+        "currencyID": "99"
+    },
+    {
+        "asset": {
             "Token": "SDN"
         },
         "name": "SDN",

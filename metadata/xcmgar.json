@@ -6163,7 +6163,7 @@
                 "relayChain": "kusama",
                 "paraID": 2007,
                 "id": "shiden",
-                "assetCnt": "22",
+                "assetCnt": "23",
                 "data": [
                     {
                         "asset": {
@@ -6369,6 +6369,15 @@
                         "decimals": 6,
                         "currencyID": "4294969280",
                         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "99"
+                        },
+                        "name": "DummyXC",
+                        "symbol": "DXC",
+                        "decimals": 18,
+                        "currencyID": "99"
                     },
                     {
                         "asset": {
