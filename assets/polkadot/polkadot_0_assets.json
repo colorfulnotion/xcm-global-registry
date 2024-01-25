@@ -6,6 +6,8 @@
         "name": "DOT",
         "symbol": "DOT",
         "decimals": 10,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},\"here\"]"
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},\"here\"]",
+        "inferred": true,
+        "confidence": 0
     }
 ]
