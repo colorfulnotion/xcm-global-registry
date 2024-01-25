@@ -163,7 +163,8 @@
         },
         "name": "bncs-20 inscription token BNCS",
         "symbol": "BNCS",
-        "decimals": 12
+        "decimals": 12,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0809\"}]"
     },
     {
         "asset": {

@@ -141,6 +141,16 @@
     },
     {
         "asset": {
+            "Token": "142155548796783636521833385094843759961"
+        },
+        "name": "bncs-20 inscription token BNCS",
+        "symbol": "xcBNCS",
+        "decimals": 12,
+        "currencyID": "142155548796783636521833385094843759961",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0809\"}]"
+    },
+    {
+        "asset": {
             "Token": "144012926827374458669278577633504620722"
         },
         "name": "Bifrost Filecoin Network Token",
