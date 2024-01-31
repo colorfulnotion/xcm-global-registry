@@ -1329,11 +1329,13 @@
         "xcCurrencyID": {
             "2000": {
                 "ForeignAsset": "11"
-            }
+            },
+            "2034": "27"
         },
-        "confidence": 1,
+        "confidence": 2,
         "source": [
-            2000
+            2000,
+            2034
         ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2011},{\"generalKey\":\"0x657164\"}]": {

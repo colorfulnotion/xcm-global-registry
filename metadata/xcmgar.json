@@ -2848,7 +2848,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "30",
+                "assetCnt": "31",
                 "data": [
                     {
                         "asset": {
@@ -3068,6 +3068,16 @@
                         "decimals": 11,
                         "currencyID": "26",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2026},{\"palletInstance\":2}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "27"
+                        },
+                        "name": "CRU",
+                        "symbol": "CRU",
+                        "decimals": 12,
+                        "currencyID": "27",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2008}]"
                     },
                     {
                         "asset": {
@@ -3387,7 +3397,9 @@
                         "name": "RING",
                         "symbol": "RING",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -13657,7 +13669,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "25",
+                "xcAssetCnt": "26",
                 "data": [
                     {
                         "paraID": 0,
@@ -14277,6 +14289,36 @@
                             }
                         },
                         "asset": "9",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 2008,
+                        "relayChain": "polkadot",
+                        "nativeChainID": null,
+                        "symbol": "CRU",
+                        "decimals": 12,
+                        "interiorType": "x1",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2008
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x1": {
+                                        "parachain": 2008
+                                    }
+                                }
+                            }
+                        },
+                        "asset": "27",
                         "source": [
                             "2034"
                         ]
@@ -25628,11 +25670,13 @@
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "11"
-                        }
+                        },
+                        "2034": "27"
                     },
-                    "confidence": 1,
+                    "confidence": 2,
                     "source": [
-                        2000
+                        2000,
+                        2034
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2011},{\"generalKey\":\"0x657164\"}]": {

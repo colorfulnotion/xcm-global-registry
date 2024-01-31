@@ -220,6 +220,16 @@
     },
     {
         "asset": {
+            "Token": "27"
+        },
+        "name": "CRU",
+        "symbol": "CRU",
+        "decimals": 12,
+        "currencyID": "27",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2008}]"
+    },
+    {
+        "asset": {
             "Token": "3"
         },
         "name": "WBTC",
