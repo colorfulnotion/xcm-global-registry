@@ -3451,9 +3451,7 @@
                         "name": "PEN",
                         "symbol": "PEN",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]"
                     }
                 ]
             }
