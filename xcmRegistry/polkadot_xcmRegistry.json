@@ -46,6 +46,73 @@
             2035
         ]
     },
+    "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]": {
+        "paraID": 1000,
+        "relayChain": "polkadot",
+        "nativeChainID": "statemint",
+        "symbol": "USDC",
+        "decimals": 6,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 50
+            },
+            {
+                "generalIndex": 1337
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 1337
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "2004": "0xffffffff7d2b0b761af01ca8e25242976ac0ad7d",
+            "2006": "0xffffffff000000000000000000000001000007c1"
+        },
+        "xcCurrencyID": {
+            "2000": {
+                "ForeignAsset": "14"
+            },
+            "2004": "166377000701797186346254371275954761085",
+            "2006": "4294969281",
+            "2030": {
+                "Token2": "5"
+            },
+            "2031": {
+                "ForeignAsset": "6"
+            },
+            "2034": "22"
+        },
+        "confidence": 6,
+        "source": [
+            2000,
+            2004,
+            2006,
+            2030,
+            2031,
+            2034
+        ]
+    },
     "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]": {
         "paraID": 1000,
         "relayChain": "polkadot",
@@ -278,69 +345,6 @@
         "confidence": 1,
         "source": [
             2000
-        ]
-    },
-    "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]": {
-        "paraID": 1000,
-        "relayChain": "polkadot",
-        "nativeChainID": "statemint",
-        "symbol": "USDC",
-        "decimals": 6,
-        "interiorType": "x3",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 1000
-            },
-            {
-                "palletInstance": 50
-            },
-            {
-                "generalIndex": 1337
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x3": [
-                        {
-                            "parachain": 1000
-                        },
-                        {
-                            "palletInstance": 50
-                        },
-                        {
-                            "generalIndex": 1337
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {
-            "2004": "0xffffffff7d2b0b761af01ca8e25242976ac0ad7d",
-            "2006": "0xffffffff000000000000000000000001000007c1"
-        },
-        "xcCurrencyID": {
-            "2004": "166377000701797186346254371275954761085",
-            "2006": "4294969281",
-            "2030": {
-                "Token2": "5"
-            },
-            "2031": {
-                "ForeignAsset": "6"
-            },
-            "2034": "22"
-        },
-        "confidence": 5,
-        "source": [
-            2004,
-            2006,
-            2030,
-            2031,
-            2034
         ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0003\"}]": {
