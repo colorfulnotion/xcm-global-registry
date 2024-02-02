@@ -50,6 +50,15 @@
     },
     {
         "asset": {
+            "Token": "102"
+        },
+        "name": "2-Pool",
+        "symbol": "2-Pool",
+        "decimals": 18,
+        "currencyID": "102"
+    },
+    {
+        "asset": {
             "Token": "11"
         },
         "name": "iBTC",
