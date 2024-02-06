@@ -445,7 +445,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "xcAssetCnt": "17",
+                "xcAssetCnt": "18",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2030_xcAssets.json"
             },
             {
@@ -586,7 +586,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "63",
+            "registryCnt": "64",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/polkadot_xcmRegistry.json"
         }
     ]

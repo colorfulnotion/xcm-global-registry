@@ -401,6 +401,46 @@
         "paraID": 2030,
         "relayChain": "polkadot",
         "nativeChainID": "bifrost",
+        "symbol": "vMANTA",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0908"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0908"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "VToken2": "8"
+        },
+        "source": [
+            "2030"
+        ]
+    },
+    {
+        "paraID": 2030,
+        "relayChain": "polkadot",
+        "nativeChainID": "bifrost",
         "symbol": "vASTR",
         "decimals": 18,
         "interiorType": "x2",

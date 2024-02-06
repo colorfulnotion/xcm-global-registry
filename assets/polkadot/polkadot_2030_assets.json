@@ -553,6 +553,7 @@
         },
         "name": "Voucher MANTA",
         "symbol": "vMANTA",
-        "decimals": 18
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0908\"}]"
     }
 ]

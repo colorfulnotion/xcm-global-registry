@@ -2502,7 +2502,8 @@
                         },
                         "name": "Voucher MANTA",
                         "symbol": "vMANTA",
-                        "decimals": 18
+                        "decimals": 18,
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0908\"}]"
                     }
                 ]
             },
@@ -3469,9 +3470,7 @@
                         "name": "PEN",
                         "symbol": "PEN",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]"
                     }
                 ]
             }
@@ -11953,7 +11952,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "xcAssetCnt": "17",
+                "xcAssetCnt": "18",
                 "data": [
                     {
                         "paraID": 0,
@@ -12348,6 +12347,46 @@
                         },
                         "asset": {
                             "Token2": "4"
+                        },
+                        "source": [
+                            "2030"
+                        ]
+                    },
+                    {
+                        "paraID": 2030,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "bifrost",
+                        "symbol": "vMANTA",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2030
+                            },
+                            {
+                                "generalKey": "0x0908"
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2030
+                                        },
+                                        {
+                                            "generalKey": "0x0908"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": {
+                            "VToken2": "8"
                         },
                         "source": [
                             "2030"
@@ -24402,7 +24441,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "63",
+            "registryCnt": "64",
             "data": {
                 "[{\"network\":\"polkadot\"},\"here\"]": {
                     "paraID": 0,
@@ -26632,6 +26671,50 @@
                     "xcCurrencyID": {
                         "2030": {
                             "Token2": "9"
+                        }
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2030
+                    ]
+                },
+                "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0908\"}]": {
+                    "paraID": 2030,
+                    "relayChain": "polkadot",
+                    "nativeChainID": "bifrost",
+                    "symbol": "vMANTA",
+                    "decimals": 18,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0908"
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2030
+                                    },
+                                    {
+                                        "generalKey": "0x0908"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2030": {
+                            "VToken2": "8"
                         }
                     },
                     "confidence": 1,
