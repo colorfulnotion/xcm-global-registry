@@ -702,7 +702,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "assetCnt": "37",
+                "assetCnt": "39",
                 "data": [
                     {
                         "asset": {
@@ -723,6 +723,16 @@
                         "decimals": 12,
                         "currencyID": "110021739665376159354538090254163045594",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0001\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "114018676402354620972806895487280206446"
+                        },
+                        "name": "Bifrost Voucher ASTR",
+                        "symbol": "xcvASTR",
+                        "decimals": 18,
+                        "currencyID": "114018676402354620972806895487280206446",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0903\"}]"
                     },
                     {
                         "asset": {
@@ -943,6 +953,16 @@
                         "decimals": 18,
                         "currencyID": "272547899416482196831721420898811311297",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0904\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "289989900872525819559124583375550296953"
+                        },
+                        "name": "Bifrost Voucher MANTA",
+                        "symbol": "xcvMANTA",
+                        "decimals": 18,
+                        "currencyID": "289989900872525819559124583375550296953",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0908\"}]"
                     },
                     {
                         "asset": {
@@ -3416,9 +3436,7 @@
                         "name": "RING",
                         "symbol": "RING",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
                     }
                 ]
             },
@@ -9162,7 +9180,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "xcAssetCnt": "35",
+                "xcAssetCnt": "37",
                 "data": [
                     {
                         "paraID": 0,
@@ -10013,6 +10031,45 @@
                         "paraID": 2030,
                         "relayChain": "polkadot",
                         "nativeChainID": "bifrost",
+                        "symbol": "vMANTA",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2030
+                            },
+                            {
+                                "generalKey": "0x0908"
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2030
+                                        },
+                                        {
+                                            "generalKey": "0x0908"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "289989900872525819559124583375550296953",
+                        "contractAddress": "0xffffffffda2a05fb50e7ae99275f4341aed43379",
+                        "source": [
+                            "2004"
+                        ]
+                    },
+                    {
+                        "paraID": 2030,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "bifrost",
                         "symbol": "BNC",
                         "decimals": 12,
                         "interiorType": "x2",
@@ -10083,6 +10140,45 @@
                         },
                         "asset": "272547899416482196831721420898811311297",
                         "contractAddress": "0xffffffffcd0ad0ea6576b7b285295c85e94cf4c1",
+                        "source": [
+                            "2004"
+                        ]
+                    },
+                    {
+                        "paraID": 2030,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "bifrost",
+                        "symbol": "vASTR",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2030
+                            },
+                            {
+                                "generalKey": "0x0903"
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2030
+                                        },
+                                        {
+                                            "generalKey": "0x0903"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "114018676402354620972806895487280206446",
+                        "contractAddress": "0xffffffff55c732c47639231a4c4373245763d26e",
                         "source": [
                             "2004"
                         ]
@@ -26437,6 +26533,54 @@
                         2030
                     ]
                 },
+                "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0908\"}]": {
+                    "paraID": 2030,
+                    "relayChain": "polkadot",
+                    "nativeChainID": "bifrost",
+                    "symbol": "vMANTA",
+                    "decimals": 18,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0908"
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2030
+                                    },
+                                    {
+                                        "generalKey": "0x0908"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {
+                        "2004": "0xffffffffda2a05fb50e7ae99275f4341aed43379"
+                    },
+                    "xcCurrencyID": {
+                        "2004": "289989900872525819559124583375550296953",
+                        "2030": {
+                            "VToken2": "8"
+                        }
+                    },
+                    "confidence": 2,
+                    "source": [
+                        2004,
+                        2030
+                    ]
+                },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]": {
                     "paraID": 2030,
                     "relayChain": "polkadot",
@@ -26540,6 +26684,57 @@
                         2030
                     ]
                 },
+                "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0903\"}]": {
+                    "paraID": 2030,
+                    "relayChain": "polkadot",
+                    "nativeChainID": "bifrost",
+                    "symbol": "vASTR",
+                    "decimals": 18,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0903"
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2030
+                                    },
+                                    {
+                                        "generalKey": "0x0903"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {
+                        "2004": "0xffffffff55c732c47639231a4c4373245763d26e",
+                        "2006": "0xffffffff00000000000000010000000000000010"
+                    },
+                    "xcCurrencyID": {
+                        "2004": "114018676402354620972806895487280206446",
+                        "2006": "18446744073709551632",
+                        "2030": {
+                            "VToken2": "3"
+                        }
+                    },
+                    "confidence": 3,
+                    "source": [
+                        2004,
+                        2006,
+                        2030
+                    ]
+                },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0403\"}]": {
                     "paraID": 2030,
                     "relayChain": "polkadot",
@@ -26588,54 +26783,6 @@
                         2030
                     ]
                 },
-                "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0903\"}]": {
-                    "paraID": 2030,
-                    "relayChain": "polkadot",
-                    "nativeChainID": "bifrost",
-                    "symbol": "vASTR",
-                    "decimals": 18,
-                    "interiorType": "x2",
-                    "xcmV1Standardized": [
-                        {
-                            "network": "polkadot"
-                        },
-                        {
-                            "parachain": 2030
-                        },
-                        {
-                            "generalKey": "0x0903"
-                        }
-                    ],
-                    "xcmV1MultiLocation": {
-                        "v1": {
-                            "parents": 1,
-                            "interior": {
-                                "x2": [
-                                    {
-                                        "parachain": 2030
-                                    },
-                                    {
-                                        "generalKey": "0x0903"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "xcContractAddress": {
-                        "2006": "0xffffffff00000000000000010000000000000010"
-                    },
-                    "xcCurrencyID": {
-                        "2006": "18446744073709551632",
-                        "2030": {
-                            "VToken2": "3"
-                        }
-                    },
-                    "confidence": 2,
-                    "source": [
-                        2006,
-                        2030
-                    ]
-                },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0809\"}]": {
                     "paraID": 2030,
                     "relayChain": "polkadot",
@@ -26673,50 +26820,6 @@
                     "xcCurrencyID": {
                         "2030": {
                             "Token2": "9"
-                        }
-                    },
-                    "confidence": 1,
-                    "source": [
-                        2030
-                    ]
-                },
-                "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0908\"}]": {
-                    "paraID": 2030,
-                    "relayChain": "polkadot",
-                    "nativeChainID": "bifrost",
-                    "symbol": "vMANTA",
-                    "decimals": 18,
-                    "interiorType": "x2",
-                    "xcmV1Standardized": [
-                        {
-                            "network": "polkadot"
-                        },
-                        {
-                            "parachain": 2030
-                        },
-                        {
-                            "generalKey": "0x0908"
-                        }
-                    ],
-                    "xcmV1MultiLocation": {
-                        "v1": {
-                            "parents": 1,
-                            "interior": {
-                                "x2": [
-                                    {
-                                        "parachain": 2030
-                                    },
-                                    {
-                                        "generalKey": "0x0908"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "xcContractAddress": {},
-                    "xcCurrencyID": {
-                        "2030": {
-                            "VToken2": "8"
                         }
                     },
                     "confidence": 1,

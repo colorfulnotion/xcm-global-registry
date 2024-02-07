@@ -21,6 +21,16 @@
     },
     {
         "asset": {
+            "Token": "114018676402354620972806895487280206446"
+        },
+        "name": "Bifrost Voucher ASTR",
+        "symbol": "xcvASTR",
+        "decimals": 18,
+        "currencyID": "114018676402354620972806895487280206446",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0903\"}]"
+    },
+    {
+        "asset": {
             "Token": "120637696315203257380661607956669368914"
         },
         "name": "interBTC",
@@ -238,6 +248,16 @@
         "decimals": 18,
         "currencyID": "272547899416482196831721420898811311297",
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0904\"}]"
+    },
+    {
+        "asset": {
+            "Token": "289989900872525819559124583375550296953"
+        },
+        "name": "Bifrost Voucher MANTA",
+        "symbol": "xcvMANTA",
+        "decimals": 18,
+        "currencyID": "289989900872525819559124583375550296953",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0908\"}]"
     },
     {
         "asset": {
