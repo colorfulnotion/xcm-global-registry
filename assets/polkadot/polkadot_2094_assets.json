@@ -1,0 +1,10 @@
+[
+    {
+        "asset": {
+            "Token": "PEN"
+        },
+        "name": "PEN",
+        "symbol": "PEN",
+        "decimals": 12
+    }
+]

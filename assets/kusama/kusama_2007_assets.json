@@ -3,8 +3,8 @@
         "asset": {
             "Token": "18446744073709551616"
         },
-        "name": "Acala Dollar",
-        "symbol": "aUSD",
+        "name": "aUSD SEED",
+        "symbol": "aSEED",
         "decimals": 12,
         "currencyID": "18446744073709551616",
         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0081\"}]"

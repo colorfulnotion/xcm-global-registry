@@ -58,6 +58,15 @@
     },
     {
         "asset": {
+            "Token": "12"
+        },
+        "name": "Cypress Dollar",
+        "symbol": "USDcp",
+        "decimals": 0,
+        "currencyID": "12"
+    },
+    {
+        "asset": {
             "Token": "123"
         },
         "name": "123",
@@ -72,7 +81,10 @@
         "name": "USD Coin",
         "symbol": "USDC",
         "decimals": 6,
-        "currencyID": "1337"
+        "currencyID": "1337",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]",
+        "inferred": true,
+        "confidence": 0
     },
     {
         "asset": {
@@ -122,6 +134,15 @@
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":21}]",
         "inferred": true,
         "confidence": 0
+    },
+    {
+        "asset": {
+            "Token": "256"
+        },
+        "name": "IceCreamToken",
+        "symbol": "ICE",
+        "decimals": 20,
+        "currencyID": "256"
     },
     {
         "asset": {

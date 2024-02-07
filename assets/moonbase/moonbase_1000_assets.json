@@ -171,6 +171,16 @@
     },
     {
         "asset": {
+            "Token": "166446646689194205559791995948102903873"
+        },
+        "name": "Manta Token",
+        "symbol": "xcMANTA",
+        "decimals": 18,
+        "currencyID": "166446646689194205559791995948102903873",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2104}]"
+    },
+    {
+        "asset": {
             "Token": "16797826370226091782818345603793389938"
         },
         "name": "Astar",
@@ -271,6 +281,16 @@
     },
     {
         "asset": {
+            "Token": "238111524681612888331172110363070489924"
+        },
+        "name": "OriginTrail Parachain Token",
+        "symbol": "xcOTP",
+        "decimals": 12,
+        "currencyID": "238111524681612888331172110363070489924",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2043},{\"palletInstance\":10}]"
+    },
+    {
+        "asset": {
             "Token": "246731721631919099516624243100078522143"
         },
         "name": "ICZ",
@@ -288,6 +308,16 @@
         "decimals": 18,
         "currencyID": "255225902946708983196362678630947296516",
         "xcmInteriorKey": "[{\"network\":\"moonbase\"},{\"parachain\":1000},{\"palletInstance\":108},{\"generalIndex\":\"0xc002b88d59aa53e9612a00fb2a2d1504\"}]"
+    },
+    {
+        "asset": {
+            "Token": "255809804329513816629144221493516966233"
+        },
+        "name": "Polkadex Token",
+        "symbol": "xcPDEX",
+        "decimals": 12,
+        "currencyID": "255809804329513816629144221493516966233",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2140}]"
     },
     {
         "asset": {
@@ -481,6 +511,16 @@
     },
     {
         "asset": {
+            "Token": "66249247788835743307843320271452141931"
+        },
+        "name": "Bifrost Voucher BNC",
+        "symbol": "xcvBNC",
+        "decimals": 12,
+        "currencyID": "66249247788835743307843320271452141931",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2030},{\"generalKey\":\"0x0101\"}]"
+    },
+    {
+        "asset": {
             "Token": "69536036667157951501899290870203586130"
         },
         "name": "xcAlphaUniqueQuartz",
@@ -488,6 +528,16 @@
         "decimals": 18,
         "currencyID": "69536036667157951501899290870203586130",
         "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2095}]"
+    },
+    {
+        "asset": {
+            "Token": "69606720909260275826784788104880799692"
+        },
+        "name": "HydraDX",
+        "symbol": "xcHDX",
+        "decimals": 12,
+        "currencyID": "69606720909260275826784788104880799692",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2034},{\"generalIndex\":0}]"
     },
     {
         "asset": {
@@ -508,6 +558,16 @@
         "decimals": 12,
         "currencyID": "90225766094594282577230355136633846906",
         "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2040}]"
+    },
+    {
+        "asset": {
+            "Token": "91372035960551235635465443179559840483"
+        },
+        "name": "Centrifuge",
+        "symbol": "xcCFG",
+        "decimals": 18,
+        "currencyID": "91372035960551235635465443179559840483",
+        "xcmInteriorKey": "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]"
     },
     {
         "asset": {

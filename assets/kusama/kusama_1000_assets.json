@@ -374,6 +374,15 @@
     },
     {
         "asset": {
+            "Token": "200"
+        },
+        "name": "HEINEKEN",
+        "symbol": "SIX",
+        "decimals": 5,
+        "currencyID": "200"
+    },
+    {
+        "asset": {
             "Token": "2021"
         },
         "name": "wave network",
@@ -569,6 +578,24 @@
         "symbol": "PWS",
         "decimals": 18,
         "currencyID": "300"
+    },
+    {
+        "asset": {
+            "Token": "3000"
+        },
+        "name": "GRAIN Token",
+        "symbol": "GRAIN",
+        "decimals": 8,
+        "currencyID": "3000"
+    },
+    {
+        "asset": {
+            "Token": "3001"
+        },
+        "name": "DUCK Currency",
+        "symbol": "DUCK",
+        "decimals": 6,
+        "currencyID": "3001"
     },
     {
         "asset": {
@@ -950,6 +977,15 @@
     },
     {
         "asset": {
+            "Token": "569"
+        },
+        "name": "KUS",
+        "symbol": "KUSA",
+        "decimals": 2,
+        "currencyID": "569"
+    },
+    {
+        "asset": {
             "Token": "598"
         },
         "name": "Eren Yilmaz",
@@ -1094,15 +1130,6 @@
     },
     {
         "asset": {
-            "Token": "7373"
-        },
-        "name": "Pepe",
-        "symbol": "PEPE",
-        "decimals": 18,
-        "currencyID": "7373"
-    },
-    {
-        "asset": {
             "Token": "75"
         },
         "name": "ohzomdmrkyc.gybvn",
@@ -1175,15 +1202,6 @@
         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":8}]",
         "inferred": true,
         "confidence": 0
-    },
-    {
-        "asset": {
-            "Token": "80"
-        },
-        "name": "Basically Indivisible Token",
-        "symbol": "BIT",
-        "decimals": 0,
-        "currencyID": "80"
     },
     {
         "asset": {

@@ -102,6 +102,26 @@
     },
     {
         "asset": {
+            "Token": "18"
+        },
+        "name": "DAI",
+        "symbol": "DAI",
+        "decimals": 18,
+        "currencyID": "18",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0x06e605775296e851ff43b4daa541bb0984e9d6fd\"}}]"
+    },
+    {
+        "asset": {
+            "Token": "19"
+        },
+        "name": "WBTC",
+        "symbol": "WBTC",
+        "decimals": 8,
+        "currencyID": "19",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0xe57ebd2d67b462e9926e04a8e33f01cd0d64346d\"}}]"
+    },
+    {
+        "asset": {
             "Token": "2"
         },
         "name": "DAI",
@@ -109,6 +129,26 @@
         "decimals": 18,
         "currencyID": "2",
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0254a37a01cd75b616d63e0ab665bffdb0143c52ae\"}]"
+    },
+    {
+        "asset": {
+            "Token": "20"
+        },
+        "name": "WETH",
+        "symbol": "WETH",
+        "decimals": 18,
+        "currencyID": "20",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0xab3f0245b83feb11d15aaffefd7ad465a59817ed\"}}]"
+    },
+    {
+        "asset": {
+            "Token": "21"
+        },
+        "name": "USDC",
+        "symbol": "USDC",
+        "decimals": 6,
+        "currencyID": "21",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0x931715fee2d06333043d11f658c8ce934ac61d0c\"}}]"
     },
     {
         "asset": {

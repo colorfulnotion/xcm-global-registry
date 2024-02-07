@@ -111,6 +111,16 @@
     },
     {
         "asset": {
+            "Token": "203223821023327994093278529517083736593"
+        },
+        "name": "Bifrost Voucher MOVR",
+        "symbol": "xcvMOVR",
+        "decimals": 18,
+        "currencyID": "203223821023327994093278529517083736593",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x010a\"}]"
+    },
+    {
+        "asset": {
             "Token": "213357169630950964874127107356898319277"
         },
         "name": "Calamari",
@@ -123,11 +133,21 @@
         "asset": {
             "Token": "214920334981412447805621250067209749032"
         },
-        "name": "Acala Dollar",
-        "symbol": "xcAUSD",
+        "name": "aSEED",
+        "symbol": "xcaSeed",
         "decimals": 12,
         "currencyID": "214920334981412447805621250067209749032",
         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0081\"}]"
+    },
+    {
+        "asset": {
+            "Token": "264344629840762281112027368930249420542"
+        },
+        "name": "Bifrost Voucher KSM",
+        "symbol": "xcvKSM",
+        "decimals": 12,
+        "currencyID": "264344629840762281112027368930249420542",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0104\"}]"
     },
     {
         "asset": {
@@ -178,6 +198,16 @@
         "decimals": 12,
         "currencyID": "65216491554813189869575508812319036608",
         "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2106},{\"palletInstance\":10}]"
+    },
+    {
+        "asset": {
+            "Token": "72145018963825376852137222787619937732"
+        },
+        "name": "Bifrost Voucher BNC",
+        "symbol": "xcvBNC",
+        "decimals": 12,
+        "currencyID": "72145018963825376852137222787619937732",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0101\"}]"
     },
     {
         "asset": {

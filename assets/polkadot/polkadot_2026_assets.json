@@ -5,6 +5,9 @@
         },
         "name": "NODL",
         "symbol": "NODL",
-        "decimals": 11
+        "decimals": 11,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2026},{\"palletInstance\":2}]",
+        "inferred": true,
+        "confidence": 0
     }
 ]

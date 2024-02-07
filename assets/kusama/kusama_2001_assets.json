@@ -1,6 +1,38 @@
 [
     {
         "asset": {
+            "BLP": "0"
+        },
+        "name": "0x426966726f737420537461626c6520506f6f6c20546f6b656e2000000000",
+        "symbol": "0x424c5000000000",
+        "decimals": 12
+    },
+    {
+        "asset": {
+            "BLP": "1"
+        },
+        "name": "0x426966726f737420537461626c6520506f6f6c20546f6b656e2000000001",
+        "symbol": "0x424c5000000001",
+        "decimals": 12
+    },
+    {
+        "asset": {
+            "BLP": "2"
+        },
+        "name": "0x426966726f737420537461626c6520506f6f6c20546f6b656e2000000002",
+        "symbol": "0x424c5000000002",
+        "decimals": 12
+    },
+    {
+        "asset": {
+            "BLP": "3"
+        },
+        "name": "0x426966726f737420537461626c6520506f6f6c20546f6b656e2000000003",
+        "symbol": "0x424c5000000003",
+        "decimals": 12
+    },
+    {
+        "asset": {
             "Native": "BNC"
         },
         "name": "Bifrost",
@@ -523,9 +555,7 @@
         "name": "Voucher BNC",
         "symbol": "vBNC",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0101\"}]",
-        "inferred": true,
-        "confidence": 0
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0101\"}]"
     },
     {
         "asset": {
@@ -542,6 +572,7 @@
         },
         "name": "Voucher MOVR",
         "symbol": "vMOVR",
-        "decimals": 18
+        "decimals": 18,
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x010a\"}]"
     }
 ]

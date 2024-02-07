@@ -51,6 +51,16 @@
     },
     {
         "asset": {
+            "Token": "144012926827374458669278577633504620722"
+        },
+        "name": "Bifrost Filecoin Native Token",
+        "symbol": "xcFIL",
+        "decimals": 18,
+        "currencyID": "144012926827374458669278577633504620722",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0804\"}]"
+    },
+    {
+        "asset": {
             "Token": "165823357460190568952172802245839421906"
         },
         "name": "BNC",
@@ -88,6 +98,16 @@
         "decimals": 9,
         "currencyID": "190590555344745888270686124937537713878",
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2011}]"
+    },
+    {
+        "asset": {
+            "Token": "204507659831918931608354793288110796652"
+        },
+        "name": "Bifrost Voucher GLMR",
+        "symbol": "xcvGLMR",
+        "decimals": 18,
+        "currencyID": "204507659831918931608354793288110796652",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0901\"}]"
     },
     {
         "asset": {
@@ -131,6 +151,16 @@
     },
     {
         "asset": {
+            "Token": "272547899416482196831721420898811311297"
+        },
+        "name": "Bifrost Voucher FIL",
+        "symbol": "xcvFIL",
+        "decimals": 18,
+        "currencyID": "272547899416482196831721420898811311297",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0904\"}]"
+    },
+    {
+        "asset": {
             "Token": "278750993613512357835566279094880339619"
         },
         "name": "Wrapped BTC",
@@ -138,6 +168,26 @@
         "decimals": 8,
         "currencyID": "278750993613512357835566279094880339619",
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":108},{\"generalIndex\":\"0xd1b57d12738e41eae0124e285e5e86a3\"}]"
+    },
+    {
+        "asset": {
+            "Token": "29085784439601774464560083082574142143"
+        },
+        "name": "Bifrost Voucher DOT",
+        "symbol": "xcvDOT",
+        "decimals": 10,
+        "currencyID": "29085784439601774464560083082574142143",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0900\"}]"
+    },
+    {
+        "asset": {
+            "Token": "309163521958167876851250718453738106865"
+        },
+        "name": "Nodle",
+        "symbol": "xcNODL",
+        "decimals": 11,
+        "currencyID": "309163521958167876851250718453738106865",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2026},{\"palletInstance\":2}]"
     },
     {
         "asset": {
@@ -188,6 +238,16 @@
         "decimals": 12,
         "currencyID": "69606720909260275826784788104880799692",
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2034},{\"generalIndex\":0}]"
+    },
+    {
+        "asset": {
+            "Token": "89994634370519791027168048838578580624"
+        },
+        "name": "Subsocial",
+        "symbol": "xcSUB",
+        "decimals": 10,
+        "currencyID": "89994634370519791027168048838578580624",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2101}]"
     },
     {
         "asset": {

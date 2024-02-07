@@ -157,7 +157,7 @@
         "paraID": 2000,
         "relayChain": "kusama",
         "nativeChainID": "karura",
-        "symbol": "aUSD",
+        "symbol": "aSEED",
         "decimals": 12,
         "interiorType": "x2",
         "xcmV1Standardized": [

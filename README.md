@@ -28,19 +28,6 @@ Target use cases: multichain dapps, chain analytics in the Substrate ecosystem
 * [x] Publishing [results](https://github.com/colorfulnotion/xcm-global-registry/tree/main/metadata) as CDN files for easier importing/exporting.
 * [x] Load public endpoints from Polkadot.js
 
-**Summer/Fall 2023**
-* [ ] Fetch public endpoints from additional sources like [polkadot_network_directory](https://github.com/paritytech/polkadot_network_directory), [subrpc](https://github.com/chevdor/subrpc)
-* [ ] Convert XcmInteriorKey to support GlobalConsensus
-* [ ] Full XCMv3 Multilocation support
-* [ ] Disclose uncovered parachains(i.e Imbue, Composable Finance which are currently not maintaining their registry on-chain)
-* [ ] Support Statemine/Statemint's ForeignAsset pallet
-* [ ] Publish results to IPFS (in addition to CDN)
-* [ ] Integration with [Substrate-etl](https://github.com/colorfulnotion/substrate-etl) repo to enable Dotsama account asset balance look up.
-* [ ] New functionality based on community feedback
-
-**Fall/Winter 2023**
-* [ ] On-Chain weight, fee, existential deposit parsing
-* [ ] XCM Transfer SDK
 
 ## Install
 To get started, clone this repo:

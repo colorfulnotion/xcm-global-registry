@@ -1,0 +1,13 @@
+[
+    {
+        "asset": {
+            "Token": "ZTG"
+        },
+        "name": "ZTG",
+        "symbol": "ZTG",
+        "decimals": 10,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2092},{\"generalKey\":\"0x0001\"}]",
+        "inferred": true,
+        "confidence": 0
+    }
+]

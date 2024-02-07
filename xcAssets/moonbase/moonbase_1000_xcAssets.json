@@ -809,6 +809,46 @@
         "paraID": 2030,
         "relayChain": "moonbase",
         "nativeChainID": null,
+        "symbol": "vBNC",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0101"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0101"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "66249247788835743307843320271452141931",
+        "contractAddress": "0xffffffff31d724194b6a76e1d639c8787e16796b",
+        "source": [
+            "1000"
+        ]
+    },
+    {
+        "paraID": 2030,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
         "symbol": "BNC",
         "decimals": 12,
         "interiorType": "x2",
@@ -926,6 +966,46 @@
         ]
     },
     {
+        "paraID": 2031,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "CFG",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2031
+            },
+            {
+                "generalKey": "0x0001"
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2031
+                        },
+                        {
+                            "generalKey": "0x0001"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "91372035960551235635465443179559840483",
+        "contractAddress": "0xffffffff44bd9d2ffee20b25d1cf9e78edb6eae3",
+        "source": [
+            "1000"
+        ]
+    },
+    {
         "paraID": 2032,
         "relayChain": "moonbase",
         "nativeChainID": null,
@@ -961,6 +1041,46 @@
         },
         "asset": "12009972993464827654650227422635011273",
         "contractAddress": "0xffffffff09090962ad478e3a78810809ddb8acc9",
+        "source": [
+            "1000"
+        ]
+    },
+    {
+        "paraID": 2034,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "HDX",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2034
+            },
+            {
+                "generalIndex": 0
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2034
+                        },
+                        {
+                            "generalIndex": 0
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "69606720909260275826784788104880799692",
+        "contractAddress": "0xffffffff345dc44ddae98df024eb494321e73fcc",
         "source": [
             "1000"
         ]
@@ -1033,6 +1153,46 @@
         },
         "asset": "90225766094594282577230355136633846906",
         "contractAddress": "0xffffffff43e0d9b84010b1b67ba501bc81e33c7a",
+        "source": [
+            "1000"
+        ]
+    },
+    {
+        "paraID": 2043,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "OTP",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2043
+            },
+            {
+                "palletInstance": 10
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2043
+                        },
+                        {
+                            "palletInstance": 10
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "238111524681612888331172110363070489924",
+        "contractAddress": "0xffffffffb3229c8e7657eabea704d5e75246e544",
         "source": [
             "1000"
         ]
@@ -1334,6 +1494,38 @@
         ]
     },
     {
+        "paraID": 2104,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "MANTA",
+        "decimals": 18,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2104
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2104
+                    }
+                }
+            }
+        },
+        "asset": "166446646689194205559791995948102903873",
+        "contractAddress": "0xffffffff7d3875460d4509eb8d0362c611b4e841",
+        "source": [
+            "1000"
+        ]
+    },
+    {
         "paraID": 2105,
         "relayChain": "moonbase",
         "nativeChainID": null,
@@ -1521,6 +1713,38 @@
         },
         "asset": "138512078356357941985706694377215053953",
         "contractAddress": "0xffffffff683474b842852111cc31d470bd8f5081",
+        "source": [
+            "1000"
+        ]
+    },
+    {
+        "paraID": 2140,
+        "relayChain": "moonbase",
+        "nativeChainID": null,
+        "symbol": "PDEX",
+        "decimals": 12,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "named": "0x6d6f6f6e62617365"
+            },
+            {
+                "parachain": 2140
+            }
+        ],
+        "xcmV1MultiLocationByte": false,
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2140
+                    }
+                }
+            }
+        },
+        "asset": "255809804329513816629144221493516966233",
+        "contractAddress": "0xffffffffc0732d1cecb563c9e4effc7fd9c21959",
         "source": [
             "1000"
         ]
