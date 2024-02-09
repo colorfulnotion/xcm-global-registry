@@ -535,15 +535,14 @@
                 }
             }
         },
-        "asset": "7",
-        "source": [
-            2034
-        ],
+        "xcContractAddress": {},
         "xcCurrencyID": {
             "2034": "7"
         },
-        "xcContractAddress": {},
-        "confidence": 1
+        "confidence": 1,
+        "source": [
+            2034
+        ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0254a37a01cd75b616d63e0ab665bffdb0143c52ae\"}]": {
         "paraID": 2000,
@@ -578,15 +577,14 @@
                 }
             }
         },
-        "asset": "2",
-        "source": [
-            2034
-        ],
+        "xcContractAddress": {},
         "xcCurrencyID": {
             "2034": "2"
         },
-        "xcContractAddress": {},
-        "confidence": 1
+        "confidence": 1,
+        "source": [
+            2034
+        ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x02f4c723e61709d90f89939c1852f516e373d418a8\"}]": {
         "paraID": 2000,
@@ -621,15 +619,14 @@
                 }
             }
         },
-        "asset": "6",
-        "source": [
-            2034
-        ],
+        "xcContractAddress": {},
         "xcCurrencyID": {
             "2034": "6"
         },
-        "xcContractAddress": {},
-        "confidence": 1
+        "confidence": 1,
+        "source": [
+            2034
+        ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x02c80084af223c8b598536178d9361dc55bfda6818\"}]": {
         "paraID": 2000,
@@ -664,15 +661,14 @@
                 }
             }
         },
-        "asset": "3",
-        "source": [
-            2034
-        ],
+        "xcContractAddress": {},
         "xcCurrencyID": {
             "2034": "3"
         },
-        "xcContractAddress": {},
-        "confidence": 1
+        "confidence": 1,
+        "source": [
+            2034
+        ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x025a4d6acdc4e3e5ab15717f407afe957f7a242578\"}]": {
         "paraID": 2000,
@@ -707,15 +703,14 @@
                 }
             }
         },
-        "asset": "4",
-        "source": [
-            2034
-        ],
+        "xcContractAddress": {},
         "xcCurrencyID": {
             "2034": "4"
         },
-        "xcContractAddress": {},
-        "confidence": 1
+        "confidence": 1,
+        "source": [
+            2034
+        ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]": {
         "paraID": 2001,
@@ -1250,15 +1245,14 @@
                 }
             }
         },
-        "asset": "23",
-        "source": [
-            2034
-        ],
+        "xcContractAddress": {},
         "xcCurrencyID": {
             "2034": "23"
         },
-        "xcContractAddress": {},
-        "confidence": 1
+        "confidence": 1,
+        "source": [
+            2034
+        ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2006}]": {
         "paraID": 2006,
