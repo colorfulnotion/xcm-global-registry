@@ -809,6 +809,45 @@
         "paraID": 2030,
         "relayChain": "polkadot",
         "nativeChainID": "bifrost",
+        "symbol": "BNCS",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0809"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0809"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "142155548796783636521833385094843759961",
+        "contractAddress": "0xffffffff6af229ae7f0f4e0188157e189a487d59",
+        "source": [
+            "2004"
+        ]
+    },
+    {
+        "paraID": 2030,
+        "relayChain": "polkadot",
+        "nativeChainID": "bifrost",
         "symbol": "vGLMR",
         "decimals": 18,
         "interiorType": "x2",

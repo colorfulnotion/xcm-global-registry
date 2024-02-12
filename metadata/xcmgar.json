@@ -702,7 +702,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "assetCnt": "39",
+                "assetCnt": "40",
                 "data": [
                     {
                         "asset": {
@@ -793,6 +793,16 @@
                         "decimals": 6,
                         "currencyID": "141196559012917796508928734717797136690",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2019},{\"palletInstance\":59},{\"generalIndex\":\"0x00000001000000000000000000000019\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "142155548796783636521833385094843759961"
+                        },
+                        "name": "bncs-20 inscription token BNCS",
+                        "symbol": "xcBNCS",
+                        "decimals": 12,
+                        "currencyID": "142155548796783636521833385094843759961",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0809\"}]"
                     },
                     {
                         "asset": {
@@ -9190,7 +9200,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "xcAssetCnt": "37",
+                "xcAssetCnt": "38",
                 "data": [
                     {
                         "paraID": 0,
@@ -9994,6 +10004,45 @@
                         },
                         "asset": "29085784439601774464560083082574142143",
                         "contractAddress": "0xffffffff15e1b7e3df971dd813bc394deb899abf",
+                        "source": [
+                            "2004"
+                        ]
+                    },
+                    {
+                        "paraID": 2030,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "bifrost",
+                        "symbol": "BNCS",
+                        "decimals": 12,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2030
+                            },
+                            {
+                                "generalKey": "0x0809"
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2030
+                                        },
+                                        {
+                                            "generalKey": "0x0809"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "142155548796783636521833385094843759961",
+                        "contractAddress": "0xffffffff6af229ae7f0f4e0188157e189a487d59",
                         "source": [
                             "2004"
                         ]
@@ -26495,6 +26544,54 @@
                         2034
                     ]
                 },
+                "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0809\"}]": {
+                    "paraID": 2030,
+                    "relayChain": "polkadot",
+                    "nativeChainID": "bifrost",
+                    "symbol": "BNCS",
+                    "decimals": 12,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0809"
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2030
+                                    },
+                                    {
+                                        "generalKey": "0x0809"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {
+                        "2004": "0xffffffff6af229ae7f0f4e0188157e189a487d59"
+                    },
+                    "xcCurrencyID": {
+                        "2004": "142155548796783636521833385094843759961",
+                        "2030": {
+                            "Token2": "9"
+                        }
+                    },
+                    "confidence": 2,
+                    "source": [
+                        2004,
+                        2030
+                    ]
+                },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0901\"}]": {
                     "paraID": 2030,
                     "relayChain": "polkadot",
@@ -26790,50 +26887,6 @@
                     "confidence": 2,
                     "source": [
                         2006,
-                        2030
-                    ]
-                },
-                "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0809\"}]": {
-                    "paraID": 2030,
-                    "relayChain": "polkadot",
-                    "nativeChainID": "bifrost",
-                    "symbol": "BNCS",
-                    "decimals": 12,
-                    "interiorType": "x2",
-                    "xcmV1Standardized": [
-                        {
-                            "network": "polkadot"
-                        },
-                        {
-                            "parachain": 2030
-                        },
-                        {
-                            "generalKey": "0x0809"
-                        }
-                    ],
-                    "xcmV1MultiLocation": {
-                        "v1": {
-                            "parents": 1,
-                            "interior": {
-                                "x2": [
-                                    {
-                                        "parachain": 2030
-                                    },
-                                    {
-                                        "generalKey": "0x0809"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "xcContractAddress": {},
-                    "xcCurrencyID": {
-                        "2030": {
-                            "Token2": "9"
-                        }
-                    },
-                    "confidence": 1,
-                    "source": [
                         2030
                     ]
                 },

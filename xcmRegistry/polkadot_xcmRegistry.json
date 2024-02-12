@@ -1943,6 +1943,54 @@
             2034
         ]
     },
+    "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0809\"}]": {
+        "paraID": 2030,
+        "relayChain": "polkadot",
+        "nativeChainID": "bifrost",
+        "symbol": "BNCS",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0809"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0809"
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "2004": "0xffffffff6af229ae7f0f4e0188157e189a487d59"
+        },
+        "xcCurrencyID": {
+            "2004": "142155548796783636521833385094843759961",
+            "2030": {
+                "Token2": "9"
+            }
+        },
+        "confidence": 2,
+        "source": [
+            2004,
+            2030
+        ]
+    },
     "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0901\"}]": {
         "paraID": 2030,
         "relayChain": "polkadot",
@@ -2238,50 +2286,6 @@
         "confidence": 2,
         "source": [
             2006,
-            2030
-        ]
-    },
-    "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0809\"}]": {
-        "paraID": 2030,
-        "relayChain": "polkadot",
-        "nativeChainID": "bifrost",
-        "symbol": "BNCS",
-        "decimals": 12,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 2030
-            },
-            {
-                "generalKey": "0x0809"
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 2030
-                        },
-                        {
-                            "generalKey": "0x0809"
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {},
-        "xcCurrencyID": {
-            "2030": {
-                "Token2": "9"
-            }
-        },
-        "confidence": 1,
-        "source": [
             2030
         ]
     },
