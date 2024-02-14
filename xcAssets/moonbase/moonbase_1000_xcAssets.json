@@ -2011,35 +2011,27 @@
         "nativeChainID": null,
         "symbol": "AGNG",
         "decimals": 18,
-        "interiorType": "x2",
+        "interiorType": "x1",
         "xcmV1Standardized": [
             {
                 "named": "0x6d6f6f6e62617365"
             },
             {
                 "parachain": 3013
-            },
-            {
-                "generalKey": "0x0000"
             }
         ],
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
                 "interior": {
-                    "x2": [
-                        {
-                            "parachain": 3013
-                        },
-                        {
-                            "generalKey": "0x0000"
-                        }
-                    ]
+                    "x1": {
+                        "parachain": 3013
+                    }
                 }
             }
         },
-        "asset": "247904392428752551837302928375648826728",
-        "contractAddress": "0xffffffffba80a636b6b9b12454db3853f3433568",
+        "asset": "75066649112131892397889252914026143264",
+        "contractAddress": "0xffffffff38794f8c53fc7325ea07463dc6965e20",
         "source": [
             "1000"
         ]
