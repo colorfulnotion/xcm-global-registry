@@ -101,10 +101,26 @@ module.exports = class PendulumParser extends ChainParser {
             // step 2: load up results
             for (const assetChainkey of Object.keys(assetList)) {
                 let assetInfo = assetList[assetChainkey]
-                // Some parsers pad the currency ID here. Should we do too?
-                this.manager.setChainAsset(chainkey, assetChainkey, assetInfo)
+                let standardizedAssetChainkey = this.unpadCurrencyID(assetChainkey)
+                this.manager.setChainAsset(chainkey, standardizedAssetChainkey, assetInfo)
             }
         }
+    }
+
+    unpadCurrencyID(assetChainkey, prefixType = 'XCM'){
+        let updatedAssetChainkey = assetChainkey
+        let [assetUnparsed, chainkey] = xcmgarTool.parseAssetChain(assetChainkey)
+        try {
+            let asset = JSON.parse(assetUnparsed)
+            let assetID = asset.Token
+            if (assetID[prefixType]!= undefined){
+                let updatedAssetID = assetID
+                updatedAssetChainkey = xcmgarTool.makeAssetChain(JSON.stringify(updatedAssetID), chainkey)
+            }
+        } catch (e){
+            console.log(`unpadCurrencyID err`, e)
+        }
+        return updatedAssetChainkey
     }
 
     // Implement Pendulum xcgar parsing function here
@@ -118,7 +134,7 @@ module.exports = class PendulumParser extends ChainParser {
         if (!a) return
         if (a) {
             // step 1: use common XcmAssetIdType parser func available at generic chainparser.
-            let [xcAssetList, assetIDList, updatedAssetList, unknownAsset] = await this.processXcmAssetsRegistryAssetMetadata(chainkey, a, "Token")
+            let [xcAssetList, assetIDList, updatedAssetList, unknownAsset] = await this.processXcmAssetsRegistryAssetMetadata(chainkey, a)
             console.log(`custom xcAssetList=[${Object.keys(xcAssetList)}], updatedAssetList=[${Object.keys(updatedAssetList)}], unknownAsset=[${Object.keys(unknownAsset)}], assetIDList=[${Object.keys(assetIDList)}]`, xcAssetList)
             // step 2: load up results
             for (const xcmInteriorKey of Object.keys(xcAssetList)) {
