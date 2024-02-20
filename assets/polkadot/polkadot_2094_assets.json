@@ -1,13 +1,256 @@
 [
     {
         "asset": {
+            "Token": "Native"
+        },
+        "name": "Pendulum",
+        "symbol": "PEN",
+        "decimals": 12,
+        "currencyID": "Native",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]"
+    },
+    {
+        "asset": {
             "Token": "PEN"
         },
         "name": "PEN",
         "symbol": "PEN",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]",
-        "inferred": true,
-        "confidence": 0
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]"
+    },
+    {
+        "asset": {
+            "Token": {
+                "Stellar": "StellarNative"
+            }
+        },
+        "name": "Stellar Lumen",
+        "symbol": "XLM.s",
+        "decimals": 12,
+        "currencyID": {
+            "Stellar": "StellarNative"
+        }
+    },
+    {
+        "asset": {
+            "Token": {
+                "Stellar": {
+                    "AlphaNum4": {
+                        "code": "0x42524c00",
+                        "issuer": "0xeaac68d4d0e37b4c24c2536916e830735f032d0d6b2a1c8fca3bc5a25e083e3a"
+                    }
+                }
+            }
+        },
+        "name": "Stellar BRL",
+        "symbol": "BRL.s",
+        "decimals": 12,
+        "currencyID": {
+            "Stellar": {
+                "AlphaNum4": {
+                    "code": "0x42524c00",
+                    "issuer": "0xeaac68d4d0e37b4c24c2536916e830735f032d0d6b2a1c8fca3bc5a25e083e3a"
+                }
+            }
+        }
+    },
+    {
+        "asset": {
+            "Token": {
+                "Stellar": {
+                    "AlphaNum4": {
+                        "code": "0x545a5300",
+                        "issuer": "0x34c94b2a4ba9e8b57b22547dcbb30f443c4cb02da3829a89aa1bd4780e4466ba"
+                    }
+                }
+            }
+        },
+        "name": "Stellar TZS",
+        "symbol": "TZS.s",
+        "decimals": 12,
+        "currencyID": {
+            "Stellar": {
+                "AlphaNum4": {
+                    "code": "0x545a5300",
+                    "issuer": "0x34c94b2a4ba9e8b57b22547dcbb30f443c4cb02da3829a89aa1bd4780e4466ba"
+                }
+            }
+        }
+    },
+    {
+        "asset": {
+            "Token": {
+                "Stellar": {
+                    "AlphaNum4": {
+                        "code": "AUDD",
+                        "issuer": "0xc5fbe9979e240552860221f4fe2f2219f35e40458b8b58fc32da520a154a561d"
+                    }
+                }
+            }
+        },
+        "name": "Stellar AUDD",
+        "symbol": "AUDD.s",
+        "decimals": 12,
+        "currencyID": {
+            "Stellar": {
+                "AlphaNum4": {
+                    "code": "AUDD",
+                    "issuer": "0xc5fbe9979e240552860221f4fe2f2219f35e40458b8b58fc32da520a154a561d"
+                }
+            }
+        }
+    },
+    {
+        "asset": {
+            "Token": {
+                "Stellar": {
+                    "AlphaNum4": {
+                        "code": "EURC",
+                        "issuer": "0x2112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c"
+                    }
+                }
+            }
+        },
+        "name": "Stellar EURC",
+        "symbol": "EURC.s",
+        "decimals": 12,
+        "currencyID": {
+            "Stellar": {
+                "AlphaNum4": {
+                    "code": "EURC",
+                    "issuer": "0x2112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c"
+                }
+            }
+        }
+    },
+    {
+        "asset": {
+            "Token": {
+                "Stellar": {
+                    "AlphaNum4": {
+                        "code": "NGNC",
+                        "issuer": "0x241afadf31883f79972545fc64f3b5b0c95704c6fb4917474e42b0057841606b"
+                    }
+                }
+            }
+        },
+        "name": "Stellar NGNC",
+        "symbol": "NGNC.s",
+        "decimals": 12,
+        "currencyID": {
+            "Stellar": {
+                "AlphaNum4": {
+                    "code": "NGNC",
+                    "issuer": "0x241afadf31883f79972545fc64f3b5b0c95704c6fb4917474e42b0057841606b"
+                }
+            }
+        }
+    },
+    {
+        "asset": {
+            "Token": {
+                "Stellar": {
+                    "AlphaNum4": {
+                        "code": "USDC",
+                        "issuer": "0x3b9911380efe988ba0a8900eb1cfe44f366f7dbe946bed077240f7f624df15c5"
+                    }
+                }
+            }
+        },
+        "name": "Stellar USDC",
+        "symbol": "USDC.s",
+        "decimals": 12,
+        "currencyID": {
+            "Stellar": {
+                "AlphaNum4": {
+                    "code": "USDC",
+                    "issuer": "0x3b9911380efe988ba0a8900eb1cfe44f366f7dbe946bed077240f7f624df15c5"
+                }
+            }
+        }
+    },
+    {
+        "asset": {
+            "XCM": "0"
+        },
+        "name": "Polkadot",
+        "symbol": "DOT",
+        "decimals": 10,
+        "currencyID": {
+            "XCM": "0"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},\"here\"]"
+    },
+    {
+        "asset": {
+            "XCM": "1"
+        },
+        "name": "Tether USD",
+        "symbol": "USDT",
+        "decimals": 6,
+        "currencyID": {
+            "XCM": "1"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]"
+    },
+    {
+        "asset": {
+            "XCM": "2"
+        },
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "decimals": 6,
+        "currencyID": {
+            "XCM": "2"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]"
+    },
+    {
+        "asset": {
+            "XCM": "3"
+        },
+        "name": "Equilibrium Dollar",
+        "symbol": "EQD",
+        "decimals": 9,
+        "currencyID": {
+            "XCM": "3"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2011},{\"palletInstance\":11},{\"generalIndex\":6648164}]"
+    },
+    {
+        "asset": {
+            "XCM": "4"
+        },
+        "name": "Brazilian Real",
+        "symbol": "BRZ",
+        "decimals": 18,
+        "currencyID": {
+            "XCM": "4"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":{\"any\":null},\"key\":\"0x3225edce8ad30ae282e62fa32e7418e4b9cf197b\"}}]"
+    },
+    {
+        "asset": {
+            "XCM": "5"
+        },
+        "name": "Polkadex",
+        "symbol": "PDEX",
+        "decimals": 12,
+        "currencyID": {
+            "XCM": "5"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2040}]"
+    },
+    {
+        "asset": {
+            "XCM": "6"
+        },
+        "name": "Glimmer",
+        "symbol": "GLMR",
+        "decimals": 18,
+        "currencyID": {
+            "XCM": "6"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":10}]"
     }
 ]

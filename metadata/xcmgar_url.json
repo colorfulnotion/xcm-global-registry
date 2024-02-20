@@ -166,7 +166,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2094,
                 "id": "pendulum",
-                "assetCnt": "1",
+                "assetCnt": "16",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2094_assets.json"
             }
         ],
@@ -392,7 +392,7 @@
                 "relayChain": "kusama",
                 "paraID": 2124,
                 "id": "amplitude",
-                "assetCnt": "1",
+                "assetCnt": "11",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2124_assets.json"
             },
             {
@@ -482,6 +482,13 @@
                 "id": "origintrail-parachain",
                 "xcAssetCnt": "1",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2043_xcAssets.json"
+            },
+            {
+                "relayChain": "polkadot",
+                "paraID": 2094,
+                "id": "pendulum",
+                "xcAssetCnt": "8",
+                "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2094_xcAssets.json"
             }
         ],
         "kusama": [
@@ -575,18 +582,25 @@
                 "id": "turing",
                 "xcAssetCnt": "10",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/kusama/kusama_2114_xcAssets.json"
+            },
+            {
+                "relayChain": "kusama",
+                "paraID": 2124,
+                "id": "amplitude",
+                "xcAssetCnt": "3",
+                "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/kusama/kusama_2124_xcAssets.json"
             }
         ]
     },
     "xcmRegistry": [
         {
             "relayChain": "kusama",
-            "registryCnt": "58",
+            "registryCnt": "59",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/kusama_xcmRegistry.json"
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "64",
+            "registryCnt": "66",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/polkadot_xcmRegistry.json"
         }
     ]

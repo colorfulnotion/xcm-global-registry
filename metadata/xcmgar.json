@@ -3454,9 +3454,7 @@
                         "name": "RING",
                         "symbol": "RING",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
                     }
                 ]
             },
@@ -3499,8 +3497,18 @@
                 "relayChain": "polkadot",
                 "paraID": 2094,
                 "id": "pendulum",
-                "assetCnt": "1",
+                "assetCnt": "16",
                 "data": [
+                    {
+                        "asset": {
+                            "Token": "Native"
+                        },
+                        "name": "Pendulum",
+                        "symbol": "PEN",
+                        "decimals": 12,
+                        "currencyID": "Native",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]"
+                    },
                     {
                         "asset": {
                             "Token": "PEN"
@@ -3508,9 +3516,242 @@
                         "name": "PEN",
                         "symbol": "PEN",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Stellar": "StellarNative"
+                            }
+                        },
+                        "name": "Stellar Lumen",
+                        "symbol": "XLM.s",
+                        "decimals": 12,
+                        "currencyID": {
+                            "Stellar": "StellarNative"
+                        }
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Stellar": {
+                                    "AlphaNum4": {
+                                        "code": "0x42524c00",
+                                        "issuer": "0xeaac68d4d0e37b4c24c2536916e830735f032d0d6b2a1c8fca3bc5a25e083e3a"
+                                    }
+                                }
+                            }
+                        },
+                        "name": "Stellar BRL",
+                        "symbol": "BRL.s",
+                        "decimals": 12,
+                        "currencyID": {
+                            "Stellar": {
+                                "AlphaNum4": {
+                                    "code": "0x42524c00",
+                                    "issuer": "0xeaac68d4d0e37b4c24c2536916e830735f032d0d6b2a1c8fca3bc5a25e083e3a"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Stellar": {
+                                    "AlphaNum4": {
+                                        "code": "0x545a5300",
+                                        "issuer": "0x34c94b2a4ba9e8b57b22547dcbb30f443c4cb02da3829a89aa1bd4780e4466ba"
+                                    }
+                                }
+                            }
+                        },
+                        "name": "Stellar TZS",
+                        "symbol": "TZS.s",
+                        "decimals": 12,
+                        "currencyID": {
+                            "Stellar": {
+                                "AlphaNum4": {
+                                    "code": "0x545a5300",
+                                    "issuer": "0x34c94b2a4ba9e8b57b22547dcbb30f443c4cb02da3829a89aa1bd4780e4466ba"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Stellar": {
+                                    "AlphaNum4": {
+                                        "code": "AUDD",
+                                        "issuer": "0xc5fbe9979e240552860221f4fe2f2219f35e40458b8b58fc32da520a154a561d"
+                                    }
+                                }
+                            }
+                        },
+                        "name": "Stellar AUDD",
+                        "symbol": "AUDD.s",
+                        "decimals": 12,
+                        "currencyID": {
+                            "Stellar": {
+                                "AlphaNum4": {
+                                    "code": "AUDD",
+                                    "issuer": "0xc5fbe9979e240552860221f4fe2f2219f35e40458b8b58fc32da520a154a561d"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Stellar": {
+                                    "AlphaNum4": {
+                                        "code": "EURC",
+                                        "issuer": "0x2112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c"
+                                    }
+                                }
+                            }
+                        },
+                        "name": "Stellar EURC",
+                        "symbol": "EURC.s",
+                        "decimals": 12,
+                        "currencyID": {
+                            "Stellar": {
+                                "AlphaNum4": {
+                                    "code": "EURC",
+                                    "issuer": "0x2112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Stellar": {
+                                    "AlphaNum4": {
+                                        "code": "NGNC",
+                                        "issuer": "0x241afadf31883f79972545fc64f3b5b0c95704c6fb4917474e42b0057841606b"
+                                    }
+                                }
+                            }
+                        },
+                        "name": "Stellar NGNC",
+                        "symbol": "NGNC.s",
+                        "decimals": 12,
+                        "currencyID": {
+                            "Stellar": {
+                                "AlphaNum4": {
+                                    "code": "NGNC",
+                                    "issuer": "0x241afadf31883f79972545fc64f3b5b0c95704c6fb4917474e42b0057841606b"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Stellar": {
+                                    "AlphaNum4": {
+                                        "code": "USDC",
+                                        "issuer": "0x3b9911380efe988ba0a8900eb1cfe44f366f7dbe946bed077240f7f624df15c5"
+                                    }
+                                }
+                            }
+                        },
+                        "name": "Stellar USDC",
+                        "symbol": "USDC.s",
+                        "decimals": 12,
+                        "currencyID": {
+                            "Stellar": {
+                                "AlphaNum4": {
+                                    "code": "USDC",
+                                    "issuer": "0x3b9911380efe988ba0a8900eb1cfe44f366f7dbe946bed077240f7f624df15c5"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "asset": {
+                            "XCM": "0"
+                        },
+                        "name": "Polkadot",
+                        "symbol": "DOT",
+                        "decimals": 10,
+                        "currencyID": {
+                            "XCM": "0"
+                        },
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},\"here\"]"
+                    },
+                    {
+                        "asset": {
+                            "XCM": "1"
+                        },
+                        "name": "Tether USD",
+                        "symbol": "USDT",
+                        "decimals": 6,
+                        "currencyID": {
+                            "XCM": "1"
+                        },
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]"
+                    },
+                    {
+                        "asset": {
+                            "XCM": "2"
+                        },
+                        "name": "USD Coin",
+                        "symbol": "USDC",
+                        "decimals": 6,
+                        "currencyID": {
+                            "XCM": "2"
+                        },
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]"
+                    },
+                    {
+                        "asset": {
+                            "XCM": "3"
+                        },
+                        "name": "Equilibrium Dollar",
+                        "symbol": "EQD",
+                        "decimals": 9,
+                        "currencyID": {
+                            "XCM": "3"
+                        },
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2011},{\"palletInstance\":11},{\"generalIndex\":6648164}]"
+                    },
+                    {
+                        "asset": {
+                            "XCM": "4"
+                        },
+                        "name": "Brazilian Real",
+                        "symbol": "BRZ",
+                        "decimals": 18,
+                        "currencyID": {
+                            "XCM": "4"
+                        },
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":{\"any\":null},\"key\":\"0x3225edce8ad30ae282e62fa32e7418e4b9cf197b\"}}]"
+                    },
+                    {
+                        "asset": {
+                            "XCM": "5"
+                        },
+                        "name": "Polkadex",
+                        "symbol": "PDEX",
+                        "decimals": 12,
+                        "currencyID": {
+                            "XCM": "5"
+                        },
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2040}]"
+                    },
+                    {
+                        "asset": {
+                            "XCM": "6"
+                        },
+                        "name": "Glimmer",
+                        "symbol": "GLMR",
+                        "decimals": 18,
+                        "currencyID": {
+                            "XCM": "6"
+                        },
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":10}]"
                     }
                 ]
             }
@@ -6230,9 +6471,7 @@
                         "name": "PHA",
                         "symbol": "PHA",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2004}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2004}]"
                     }
                 ]
             },
@@ -8490,7 +8729,7 @@
                 "relayChain": "kusama",
                 "paraID": 2124,
                 "id": "amplitude",
-                "assetCnt": "1",
+                "assetCnt": "11",
                 "data": [
                     {
                         "asset": {
@@ -8498,7 +8737,193 @@
                         },
                         "name": "AMPE",
                         "symbol": "AMPE",
-                        "decimals": 12
+                        "decimals": 12,
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2124},{\"palletInstance\":10}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "Native"
+                        },
+                        "name": "Amplitude",
+                        "symbol": "AMPE",
+                        "decimals": 12,
+                        "currencyID": "Native",
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2124},{\"palletInstance\":10}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Stellar": "StellarNative"
+                            }
+                        },
+                        "name": "Stellar Lumen",
+                        "symbol": "XLM.s",
+                        "decimals": 12,
+                        "currencyID": {
+                            "Stellar": "StellarNative"
+                        }
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Stellar": {
+                                    "AlphaNum4": {
+                                        "code": "0x42524c00",
+                                        "issuer": "0xeaac68d4d0e37b4c24c2536916e830735f032d0d6b2a1c8fca3bc5a25e083e3a"
+                                    }
+                                }
+                            }
+                        },
+                        "name": " Stellar BRL",
+                        "symbol": "BRL.s",
+                        "decimals": 12,
+                        "currencyID": {
+                            "Stellar": {
+                                "AlphaNum4": {
+                                    "code": "0x42524c00",
+                                    "issuer": "0xeaac68d4d0e37b4c24c2536916e830735f032d0d6b2a1c8fca3bc5a25e083e3a"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Stellar": {
+                                    "AlphaNum4": {
+                                        "code": "0x545a5300",
+                                        "issuer": "0x34c94b2a4ba9e8b57b22547dcbb30f443c4cb02da3829a89aa1bd4780e4466ba"
+                                    }
+                                }
+                            }
+                        },
+                        "name": "Stellar TZS",
+                        "symbol": "TZS.s",
+                        "decimals": 12,
+                        "currencyID": {
+                            "Stellar": {
+                                "AlphaNum4": {
+                                    "code": "0x545a5300",
+                                    "issuer": "0x34c94b2a4ba9e8b57b22547dcbb30f443c4cb02da3829a89aa1bd4780e4466ba"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Stellar": {
+                                    "AlphaNum4": {
+                                        "code": "AUDD",
+                                        "issuer": "0xc5fbe9979e240552860221f4fe2f2219f35e40458b8b58fc32da520a154a561d"
+                                    }
+                                }
+                            }
+                        },
+                        "name": "Stellar AUDD",
+                        "symbol": "AUDD.s",
+                        "decimals": 12,
+                        "currencyID": {
+                            "Stellar": {
+                                "AlphaNum4": {
+                                    "code": "AUDD",
+                                    "issuer": "0xc5fbe9979e240552860221f4fe2f2219f35e40458b8b58fc32da520a154a561d"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Stellar": {
+                                    "AlphaNum4": {
+                                        "code": "EURC",
+                                        "issuer": "0x2112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c"
+                                    }
+                                }
+                            }
+                        },
+                        "name": "Stellar EURC",
+                        "symbol": "EURC.s",
+                        "decimals": 12,
+                        "currencyID": {
+                            "Stellar": {
+                                "AlphaNum4": {
+                                    "code": "EURC",
+                                    "issuer": "0x2112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Stellar": {
+                                    "AlphaNum4": {
+                                        "code": "NGNC",
+                                        "issuer": "0x241afadf31883f79972545fc64f3b5b0c95704c6fb4917474e42b0057841606b"
+                                    }
+                                }
+                            }
+                        },
+                        "name": "Stellar NGNC",
+                        "symbol": "NGNC.s",
+                        "decimals": 12,
+                        "currencyID": {
+                            "Stellar": {
+                                "AlphaNum4": {
+                                    "code": "NGNC",
+                                    "issuer": "0x241afadf31883f79972545fc64f3b5b0c95704c6fb4917474e42b0057841606b"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Stellar": {
+                                    "AlphaNum4": {
+                                        "code": "USDC",
+                                        "issuer": "0x3b9911380efe988ba0a8900eb1cfe44f366f7dbe946bed077240f7f624df15c5"
+                                    }
+                                }
+                            }
+                        },
+                        "name": "Stellar USDC",
+                        "symbol": "USDC.s",
+                        "decimals": 12,
+                        "currencyID": {
+                            "Stellar": {
+                                "AlphaNum4": {
+                                    "code": "USDC",
+                                    "issuer": "0x3b9911380efe988ba0a8900eb1cfe44f366f7dbe946bed077240f7f624df15c5"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "asset": {
+                            "XCM": "0"
+                        },
+                        "name": "Kusama",
+                        "symbol": "KSM",
+                        "decimals": 12,
+                        "currencyID": {
+                            "XCM": "0"
+                        },
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},\"here\"]"
+                    },
+                    {
+                        "asset": {
+                            "XCM": "1"
+                        },
+                        "name": "Tether USD",
+                        "symbol": "USDT",
+                        "decimals": 6,
+                        "currencyID": {
+                            "XCM": "1"
+                        },
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]"
                     }
                 ]
             },
@@ -15466,6 +15891,346 @@
                         ]
                     }
                 ]
+            },
+            {
+                "relayChain": "polkadot",
+                "paraID": 2094,
+                "id": "pendulum",
+                "xcAssetCnt": "8",
+                "data": [
+                    {
+                        "paraID": 0,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "polkadot",
+                        "symbol": "DOT",
+                        "decimals": 10,
+                        "interiorType": "here",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            "here"
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "here": null
+                                }
+                            }
+                        },
+                        "asset": {
+                            "XCM": "0"
+                        },
+                        "source": [
+                            "2094"
+                        ]
+                    },
+                    {
+                        "paraID": 1000,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "statemint",
+                        "symbol": "USDC",
+                        "decimals": 6,
+                        "interiorType": "x3",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 1000
+                            },
+                            {
+                                "palletInstance": 50
+                            },
+                            {
+                                "generalIndex": 1337
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x3": [
+                                        {
+                                            "parachain": 1000
+                                        },
+                                        {
+                                            "palletInstance": 50
+                                        },
+                                        {
+                                            "generalIndex": 1337
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": {
+                            "XCM": "2"
+                        },
+                        "source": [
+                            "2094"
+                        ]
+                    },
+                    {
+                        "paraID": 1000,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "statemint",
+                        "symbol": "USDT",
+                        "decimals": 6,
+                        "interiorType": "x3",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 1000
+                            },
+                            {
+                                "palletInstance": 50
+                            },
+                            {
+                                "generalIndex": 1984
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x3": [
+                                        {
+                                            "parachain": 1000
+                                        },
+                                        {
+                                            "palletInstance": 50
+                                        },
+                                        {
+                                            "generalIndex": 1984
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": {
+                            "XCM": "1"
+                        },
+                        "source": [
+                            "2094"
+                        ]
+                    },
+                    {
+                        "paraID": 2004,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "moonbeam",
+                        "symbol": "GLMR",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2004
+                            },
+                            {
+                                "palletInstance": 10
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2004
+                                        },
+                                        {
+                                            "palletInstance": 10
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": {
+                            "XCM": "6"
+                        },
+                        "source": [
+                            "2094"
+                        ]
+                    },
+                    {
+                        "paraID": 2004,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "moonbeam",
+                        "symbol": "BRZ",
+                        "decimals": 18,
+                        "interiorType": "x3",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2004
+                            },
+                            {
+                                "palletInstance": 110
+                            },
+                            {
+                                "accountKey20": {
+                                    "network": {
+                                        "any": null
+                                    },
+                                    "key": "0x3225edce8ad30ae282e62fa32e7418e4b9cf197b"
+                                }
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x3": [
+                                        {
+                                            "parachain": 2004
+                                        },
+                                        {
+                                            "palletInstance": 110
+                                        },
+                                        {
+                                            "accountKey20": {
+                                                "network": {
+                                                    "any": null
+                                                },
+                                                "key": "0x3225edce8ad30ae282e62fa32e7418e4b9cf197b"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": {
+                            "XCM": "4"
+                        },
+                        "source": [
+                            "2094"
+                        ]
+                    },
+                    {
+                        "paraID": 2011,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "equilibrium",
+                        "symbol": "EQD",
+                        "decimals": 9,
+                        "interiorType": "x3",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2011
+                            },
+                            {
+                                "palletInstance": 11
+                            },
+                            {
+                                "generalIndex": 6648164
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x3": [
+                                        {
+                                            "parachain": 2011
+                                        },
+                                        {
+                                            "palletInstance": 11
+                                        },
+                                        {
+                                            "generalIndex": 6648164
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": {
+                            "XCM": "3"
+                        },
+                        "source": [
+                            "2094"
+                        ]
+                    },
+                    {
+                        "paraID": 2040,
+                        "relayChain": "polkadot",
+                        "nativeChainID": null,
+                        "symbol": "PDEX",
+                        "decimals": 12,
+                        "interiorType": "x1",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2040
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x1": {
+                                        "parachain": 2040
+                                    }
+                                }
+                            }
+                        },
+                        "asset": {
+                            "XCM": "5"
+                        },
+                        "source": [
+                            "2094"
+                        ]
+                    },
+                    {
+                        "paraID": 2094,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "pendulum",
+                        "symbol": "PEN",
+                        "decimals": 12,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2094
+                            },
+                            {
+                                "palletInstance": 10
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2094
+                                        },
+                                        {
+                                            "palletInstance": 10
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "Native",
+                        "source": [
+                            "2094"
+                        ]
+                    }
+                ]
             }
         ],
         "kusama": [
@@ -21835,13 +22600,133 @@
                         ]
                     }
                 ]
+            },
+            {
+                "relayChain": "kusama",
+                "paraID": 2124,
+                "id": "amplitude",
+                "xcAssetCnt": "3",
+                "data": [
+                    {
+                        "paraID": 0,
+                        "relayChain": "kusama",
+                        "nativeChainID": "kusama",
+                        "symbol": "KSM",
+                        "decimals": 12,
+                        "interiorType": "here",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            "here"
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "here": null
+                                }
+                            }
+                        },
+                        "asset": {
+                            "XCM": "0"
+                        },
+                        "source": [
+                            "2124"
+                        ]
+                    },
+                    {
+                        "paraID": 1000,
+                        "relayChain": "kusama",
+                        "nativeChainID": "statemine",
+                        "symbol": "USDT",
+                        "decimals": 6,
+                        "interiorType": "x3",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 1000
+                            },
+                            {
+                                "palletInstance": 50
+                            },
+                            {
+                                "generalIndex": 1984
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x3": [
+                                        {
+                                            "parachain": 1000
+                                        },
+                                        {
+                                            "palletInstance": 50
+                                        },
+                                        {
+                                            "generalIndex": 1984
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": {
+                            "XCM": "1"
+                        },
+                        "source": [
+                            "2124"
+                        ]
+                    },
+                    {
+                        "paraID": 2124,
+                        "relayChain": "kusama",
+                        "nativeChainID": "amplitude",
+                        "symbol": "AMPE",
+                        "decimals": 12,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "kusama"
+                            },
+                            {
+                                "parachain": 2124
+                            },
+                            {
+                                "palletInstance": 10
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2124
+                                        },
+                                        {
+                                            "palletInstance": 10
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "Native",
+                        "source": [
+                            "2124"
+                        ]
+                    }
+                ]
             }
         ]
     },
     "xcmRegistry": [
         {
             "relayChain": "kusama",
-            "registryCnt": "58",
+            "registryCnt": "59",
             "data": {
                 "[{\"network\":\"kusama\"},\"here\"]": {
                     "paraID": 0,
@@ -21881,9 +22766,12 @@
                             "ForeignAsset": "3"
                         },
                         "2090": "1",
-                        "2114": "1"
+                        "2114": "1",
+                        "2124": {
+                            "XCM": "0"
+                        }
                     },
-                    "confidence": 9,
+                    "confidence": 10,
                     "source": [
                         2001,
                         2004,
@@ -21893,7 +22781,8 @@
                         2085,
                         2088,
                         2090,
-                        2114
+                        2114,
+                        2124
                     ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":8}]": {
@@ -22017,9 +22906,12 @@
                         "2092": {
                             "ForeignAsset": "3"
                         },
-                        "2110": "30"
+                        "2110": "30",
+                        "2124": {
+                            "XCM": "1"
+                        }
                     },
-                    "confidence": 10,
+                    "confidence": 11,
                     "source": [
                         2000,
                         2001,
@@ -22030,7 +22922,8 @@
                         2088,
                         2090,
                         2092,
-                        2110
+                        2110,
+                        2124
                     ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":16}]": {
@@ -23798,18 +24691,19 @@
                             }
                         }
                     },
-                    "xcContractAddress": {
-                        "2023": "0xffffffff7dd9b9c60ac83e49d7e3e1f7a1370ad2"
-                    },
+                    "asset": "15",
+                    "source": [
+                        2004,
+                        2023
+                    ],
                     "xcCurrencyID": {
                         "2004": "15",
                         "2023": "167283995827706324502761431814209211090"
                     },
-                    "confidence": 2,
-                    "source": [
-                        2004,
-                        2023
-                    ]
+                    "xcContractAddress": {
+                        "2023": "0xffffffff7dd9b9c60ac83e49d7e3e1f7a1370ad2"
+                    },
+                    "confidence": 2
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2088},{\"generalKey\":\"0x0001\"}]": {
                     "paraID": 2088,
@@ -23936,14 +24830,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "5",
+                    "source": [
+                        2004
+                    ],
                     "xcCurrencyID": {
                         "2004": "5"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2004
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2092},{\"generalKey\":\"0x000b\"}]": {
                     "paraID": 2092,
@@ -24170,14 +25065,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "14",
+                    "source": [
+                        2004
+                    ],
                     "xcCurrencyID": {
                         "2004": "14"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2004
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2102},{\"generalKey\":\"0x50434855\"}]": {
                     "paraID": 2102,
@@ -24552,6 +25448,48 @@
                     "xcContractAddress": {},
                     "confidence": 1
                 },
+                "[{\"network\":\"kusama\"},{\"parachain\":2124},{\"palletInstance\":10}]": {
+                    "paraID": 2124,
+                    "relayChain": "kusama",
+                    "nativeChainID": "amplitude",
+                    "symbol": "AMPE",
+                    "decimals": 12,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "kusama"
+                        },
+                        {
+                            "parachain": 2124
+                        },
+                        {
+                            "palletInstance": 10
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2124
+                                    },
+                                    {
+                                        "palletInstance": 10
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2124": "Native"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2124
+                    ]
+                },
                 "[{\"network\":\"kusama\"},{\"parachain\":2125},{\"generalIndex\":0}]": {
                     "paraID": 2125,
                     "relayChain": "kusama",
@@ -24598,7 +25536,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "64",
+            "registryCnt": "66",
             "data": {
                 "[{\"network\":\"polkadot\"},\"here\"]": {
                     "paraID": 0,
@@ -24635,16 +25573,20 @@
                             "ForeignAsset": "5"
                         },
                         "2034": "5",
-                        "2035": "0"
+                        "2035": "0",
+                        "2094": {
+                            "XCM": "0"
+                        }
                     },
-                    "confidence": 6,
+                    "confidence": 7,
                     "source": [
                         2004,
                         2006,
                         2030,
                         2031,
                         2034,
-                        2035
+                        2035,
+                        2094
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]": {
@@ -24702,16 +25644,20 @@
                         "2031": {
                             "ForeignAsset": "6"
                         },
-                        "2034": "22"
+                        "2034": "22",
+                        "2094": {
+                            "XCM": "2"
+                        }
                     },
-                    "confidence": 6,
+                    "confidence": 7,
                     "source": [
                         2000,
                         2004,
                         2006,
                         2030,
                         2031,
-                        2034
+                        2034,
+                        2094
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1984}]": {
@@ -24772,9 +25718,12 @@
                         "2032": {
                             "ForeignAsset": "2"
                         },
-                        "2034": "10"
+                        "2034": "10",
+                        "2094": {
+                            "XCM": "1"
+                        }
                     },
-                    "confidence": 7,
+                    "confidence": 8,
                     "source": [
                         2000,
                         2004,
@@ -24782,7 +25731,8 @@
                         2030,
                         2031,
                         2032,
-                        2034
+                        2034,
+                        2094
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":23}]": {
@@ -25444,9 +26394,12 @@
                             "ForeignAsset": "10"
                         },
                         "2034": "16",
-                        "2035": "1"
+                        "2035": "1",
+                        "2094": {
+                            "XCM": "6"
+                        }
                     },
-                    "confidence": 7,
+                    "confidence": 8,
                     "source": [
                         2000,
                         2006,
@@ -25454,7 +26407,8 @@
                         2031,
                         2032,
                         2034,
-                        2035
+                        2035,
+                        2094
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0xe3b841c3f96e647e6dc01b468d6d0ad3562a9eeb\"}}]": {
@@ -25855,6 +26809,66 @@
                         2034
                     ]
                 },
+                "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":{\"any\":null},\"key\":\"0x3225edce8ad30ae282e62fa32e7418e4b9cf197b\"}}]": {
+                    "paraID": 2004,
+                    "relayChain": "polkadot",
+                    "nativeChainID": "moonbeam",
+                    "symbol": "BRZ",
+                    "decimals": 18,
+                    "interiorType": "x3",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 2004
+                        },
+                        {
+                            "palletInstance": 110
+                        },
+                        {
+                            "accountKey20": {
+                                "network": {
+                                    "any": null
+                                },
+                                "key": "0x3225edce8ad30ae282e62fa32e7418e4b9cf197b"
+                            }
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x3": [
+                                    {
+                                        "parachain": 2004
+                                    },
+                                    {
+                                        "palletInstance": 110
+                                    },
+                                    {
+                                        "accountKey20": {
+                                            "network": {
+                                                "any": null
+                                            },
+                                            "key": "0x3225edce8ad30ae282e62fa32e7418e4b9cf197b"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2094": {
+                            "XCM": "4"
+                        }
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2094
+                    ]
+                },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2006}]": {
                     "paraID": 2006,
                     "relayChain": "polkadot",
@@ -26039,6 +27053,56 @@
                         2004,
                         2006,
                         2035
+                    ]
+                },
+                "[{\"network\":\"polkadot\"},{\"parachain\":2011},{\"palletInstance\":11},{\"generalIndex\":6648164}]": {
+                    "paraID": 2011,
+                    "relayChain": "polkadot",
+                    "nativeChainID": "equilibrium",
+                    "symbol": "EQD",
+                    "decimals": 9,
+                    "interiorType": "x3",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 2011
+                        },
+                        {
+                            "palletInstance": 11
+                        },
+                        {
+                            "generalIndex": 6648164
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x3": [
+                                    {
+                                        "parachain": 2011
+                                    },
+                                    {
+                                        "palletInstance": 11
+                                    },
+                                    {
+                                        "generalIndex": 6648164
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2094": {
+                            "XCM": "3"
+                        }
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2094
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2012},{\"generalKey\":\"0x50415241\"}]": {
@@ -27567,11 +28631,15 @@
                         "2004": "0xffffffff43e0d9b84010b1b67ba501bc81e33c7a"
                     },
                     "xcCurrencyID": {
-                        "2004": "90225766094594282577230355136633846906"
+                        "2004": "90225766094594282577230355136633846906",
+                        "2094": {
+                            "XCM": "5"
+                        }
                     },
-                    "confidence": 1,
+                    "confidence": 2,
                     "source": [
-                        2004
+                        2004,
+                        2094
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2043},{\"palletInstance\":10}]": {
@@ -27792,11 +28860,13 @@
                         "2004": "0xffffffff2257622f345e1acde0d4f46d7d1d77d0"
                     },
                     "xcCurrencyID": {
-                        "2004": "45647473099451451833602657905356404688"
+                        "2004": "45647473099451451833602657905356404688",
+                        "2094": "Native"
                     },
-                    "confidence": 1,
+                    "confidence": 2,
                     "source": [
-                        2004
+                        2004,
+                        2094
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2101}]": {

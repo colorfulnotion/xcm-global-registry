@@ -1,0 +1,334 @@
+[
+    {
+        "paraID": 0,
+        "relayChain": "polkadot",
+        "nativeChainID": "polkadot",
+        "symbol": "DOT",
+        "decimals": 10,
+        "interiorType": "here",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            "here"
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "here": null
+                }
+            }
+        },
+        "asset": {
+            "XCM": "0"
+        },
+        "source": [
+            "2094"
+        ]
+    },
+    {
+        "paraID": 1000,
+        "relayChain": "polkadot",
+        "nativeChainID": "statemint",
+        "symbol": "USDC",
+        "decimals": 6,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 50
+            },
+            {
+                "generalIndex": 1337
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 1337
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "XCM": "2"
+        },
+        "source": [
+            "2094"
+        ]
+    },
+    {
+        "paraID": 1000,
+        "relayChain": "polkadot",
+        "nativeChainID": "statemint",
+        "symbol": "USDT",
+        "decimals": 6,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 50
+            },
+            {
+                "generalIndex": 1984
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 1984
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "XCM": "1"
+        },
+        "source": [
+            "2094"
+        ]
+    },
+    {
+        "paraID": 2004,
+        "relayChain": "polkadot",
+        "nativeChainID": "moonbeam",
+        "symbol": "GLMR",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2004
+            },
+            {
+                "palletInstance": 10
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2004
+                        },
+                        {
+                            "palletInstance": 10
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "XCM": "6"
+        },
+        "source": [
+            "2094"
+        ]
+    },
+    {
+        "paraID": 2004,
+        "relayChain": "polkadot",
+        "nativeChainID": "moonbeam",
+        "symbol": "BRZ",
+        "decimals": 18,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2004
+            },
+            {
+                "palletInstance": 110
+            },
+            {
+                "accountKey20": {
+                    "network": {
+                        "any": null
+                    },
+                    "key": "0x3225edce8ad30ae282e62fa32e7418e4b9cf197b"
+                }
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 2004
+                        },
+                        {
+                            "palletInstance": 110
+                        },
+                        {
+                            "accountKey20": {
+                                "network": {
+                                    "any": null
+                                },
+                                "key": "0x3225edce8ad30ae282e62fa32e7418e4b9cf197b"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "XCM": "4"
+        },
+        "source": [
+            "2094"
+        ]
+    },
+    {
+        "paraID": 2011,
+        "relayChain": "polkadot",
+        "nativeChainID": "equilibrium",
+        "symbol": "EQD",
+        "decimals": 9,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2011
+            },
+            {
+                "palletInstance": 11
+            },
+            {
+                "generalIndex": 6648164
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 2011
+                        },
+                        {
+                            "palletInstance": 11
+                        },
+                        {
+                            "generalIndex": 6648164
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "XCM": "3"
+        },
+        "source": [
+            "2094"
+        ]
+    },
+    {
+        "paraID": 2040,
+        "relayChain": "polkadot",
+        "nativeChainID": null,
+        "symbol": "PDEX",
+        "decimals": 12,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2040
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2040
+                    }
+                }
+            }
+        },
+        "asset": {
+            "XCM": "5"
+        },
+        "source": [
+            "2094"
+        ]
+    },
+    {
+        "paraID": 2094,
+        "relayChain": "polkadot",
+        "nativeChainID": "pendulum",
+        "symbol": "PEN",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2094
+            },
+            {
+                "palletInstance": 10
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2094
+                        },
+                        {
+                            "palletInstance": 10
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "Native",
+        "source": [
+            "2094"
+        ]
+    }
+]
