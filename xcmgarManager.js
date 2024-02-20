@@ -23,6 +23,7 @@ const RobonomicsParser = require("./chainParsers/robonomics")
 const CentrifugeParser = require("./chainParsers/centrifuge")
 const CloverParser = require("./chainParsers/clover")
 const OriginTrailParser = require("./chainParsers/origintrail")
+const PendulumParser = require("./chainParsers/pendulum")
 
 const {
     ApiPromise,
@@ -464,6 +465,8 @@ module.exports = class XCMGlobalAssetRegistryManager {
             chainParser = new CloverParser(api, manager)
         } else if (this.isMatched(chainkey, ['polkadot-2043|origintrail'])) {
             chainParser = new OriginTrailParser(api, manager)
+        } else if (this.isMatched(chainkey, ['polkadot-2094|pendulum', 'kusama-2124|amplitude'])) {
+            chainParser = new PendulumParser(api, manager)
         } else {
             chainParser = new CommonChainParser(api, manager, false) // set isCustomParser to false
         }
