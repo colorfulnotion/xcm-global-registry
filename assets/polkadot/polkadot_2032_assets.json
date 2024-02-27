@@ -31,6 +31,16 @@
     },
     {
         "asset": {
+            "ForeignAsset": "12"
+        },
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "decimals": 6,
+        "currencyID": "12",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]"
+    },
+    {
+        "asset": {
             "ForeignAsset": "2"
         },
         "name": "Tether USD",

@@ -2736,7 +2736,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2032,
                 "id": "interlay",
-                "assetCnt": "17",
+                "assetCnt": "18",
                 "data": [
                     {
                         "asset": {
@@ -2767,6 +2767,16 @@
                         "decimals": 12,
                         "currencyID": "11",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]"
+                    },
+                    {
+                        "asset": {
+                            "ForeignAsset": "12"
+                        },
+                        "name": "USD Coin",
+                        "symbol": "USDC",
+                        "decimals": 6,
+                        "currencyID": "12",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]"
                     },
                     {
                         "asset": {
@@ -3438,14 +3448,11 @@
                     },
                     {
                         "asset": {
-                            "Token": "OTP"
+                            "Token": "NEURO"
                         },
-                        "name": "OTP",
-                        "symbol": "OTP",
-                        "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2043},{\"palletInstance\":10}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "name": "NEURO",
+                        "symbol": "NEURO",
+                        "decimals": 12
                     }
                 ]
             },
@@ -3462,9 +3469,7 @@
                         "name": "RING",
                         "symbol": "RING",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
                     }
                 ]
             },
@@ -13840,7 +13845,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2032,
                 "id": "interlay",
-                "xcAssetCnt": "11",
+                "xcAssetCnt": "12",
                 "data": [
                     {
                         "paraID": 1000,
@@ -13883,6 +13888,52 @@
                         },
                         "asset": {
                             "ForeignAsset": "2"
+                        },
+                        "source": [
+                            "2032"
+                        ]
+                    },
+                    {
+                        "paraID": 1000,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "statemint",
+                        "symbol": "USDC",
+                        "decimals": 6,
+                        "interiorType": "x3",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 1000
+                            },
+                            {
+                                "palletInstance": 50
+                            },
+                            {
+                                "generalIndex": 1337
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x3": [
+                                        {
+                                            "parachain": 1000
+                                        },
+                                        {
+                                            "palletInstance": 50
+                                        },
+                                        {
+                                            "generalIndex": 1337
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": {
+                            "ForeignAsset": "12"
                         },
                         "source": [
                             "2032"
@@ -25653,18 +25704,22 @@
                         "2031": {
                             "ForeignAsset": "6"
                         },
+                        "2032": {
+                            "ForeignAsset": "12"
+                        },
                         "2034": "22",
                         "2094": {
                             "XCM": "2"
                         }
                     },
-                    "confidence": 7,
+                    "confidence": 8,
                     "source": [
                         2000,
                         2004,
                         2006,
                         2030,
                         2031,
+                        2032,
                         2034,
                         2094
                     ]

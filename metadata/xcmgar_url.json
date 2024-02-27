@@ -103,7 +103,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2032,
                 "id": "interlay",
-                "assetCnt": "17",
+                "assetCnt": "18",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2032_assets.json"
             },
             {
@@ -459,7 +459,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2032,
                 "id": "interlay",
-                "xcAssetCnt": "11",
+                "xcAssetCnt": "12",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2032_xcAssets.json"
             },
             {
