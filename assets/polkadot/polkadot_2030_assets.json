@@ -512,6 +512,14 @@
     },
     {
         "asset": {
+            "VSBond2": "033631623"
+        },
+        "name": "vsBOND-DOT-3363-16-23",
+        "symbol": "vsBOND-DOT-3363-16-23",
+        "decimals": 10
+    },
+    {
+        "asset": {
             "VSBond2": "033661623"
         },
         "name": "vsBOND-DOT-3366-16-23",
