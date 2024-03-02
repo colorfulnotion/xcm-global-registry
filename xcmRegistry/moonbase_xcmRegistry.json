@@ -123,16 +123,17 @@
                 }
             }
         },
-        "xcContractAddress": {
-            "888": "0xfffffffff0963fd9b1d84d5740e911aa5d99a08d"
-        },
+        "asset": "319794858556516669238969276945382613133",
+        "source": [
+            888
+        ],
         "xcCurrencyID": {
             "888": "319794858556516669238969276945382613133"
         },
-        "confidence": 1,
-        "source": [
-            888
-        ]
+        "xcContractAddress": {
+            "888": "0xfffffffff0963fd9b1d84d5740e911aa5d99a08d"
+        },
+        "confidence": 1
     },
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":null,\"key\":\"0x9133c5a22024118804089f1fb752b7b2ce2a6351\"}}]": {
         "paraID": 1000,
@@ -179,16 +180,17 @@
                 }
             }
         },
-        "xcContractAddress": {
-            "888": "0xffffffff405953b645c61b0f5ffb28df2b39b78d"
-        },
+        "asset": "85534404031760856987006367174489651085",
+        "source": [
+            888
+        ],
         "xcCurrencyID": {
             "888": "85534404031760856987006367174489651085"
         },
-        "confidence": 1,
-        "source": [
-            888
-        ]
+        "xcContractAddress": {
+            "888": "0xffffffff405953b645c61b0f5ffb28df2b39b78d"
+        },
+        "confidence": 1
     },
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":3}]": {
         "paraID": 1000,
@@ -223,16 +225,17 @@
                 }
             }
         },
-        "xcContractAddress": {
-            "888": "0xffffffffa7b17e706a2391f346d8c82b6788db41"
-        },
+        "asset": "222902676330054289648817870329963141953",
+        "source": [
+            888
+        ],
         "xcCurrencyID": {
             "888": "222902676330054289648817870329963141953"
         },
-        "confidence": 1,
-        "source": [
-            888
-        ]
+        "xcContractAddress": {
+            "888": "0xffffffffa7b17e706a2391f346d8c82b6788db41"
+        },
+        "confidence": 1
     },
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":36},{\"generalIndex\":\"0xfd9d0bf45a2947a519a741c4b9e99eb6\"}]": {
         "paraID": 1000,
@@ -273,16 +276,17 @@
                 }
             }
         },
-        "xcContractAddress": {
-            "888": "0xffffffff74e08d29fa23c31ee62e038cd8e583bf"
-        },
+        "asset": "155356385152885306906475527443533104063",
+        "source": [
+            888
+        ],
         "xcCurrencyID": {
             "888": "155356385152885306906475527443533104063"
         },
-        "confidence": 1,
-        "source": [
-            888
-        ]
+        "xcContractAddress": {
+            "888": "0xffffffff74e08d29fa23c31ee62e038cd8e583bf"
+        },
+        "confidence": 1
     },
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1000},{\"palletInstance\":48},{\"accountKey20\":{\"network\":null,\"key\":\"0x566c1cebc6a4afa1c122e039c4bebe77043148ee\"}}]": {
         "paraID": 1000,
@@ -329,16 +333,17 @@
                 }
             }
         },
-        "xcContractAddress": {
-            "888": "0xffffffff958faf8e6b11da766006df735c4a8da0"
-        },
+        "asset": "198801030527939140930753142903035039136",
+        "source": [
+            888
+        ],
         "xcCurrencyID": {
             "888": "198801030527939140930753142903035039136"
         },
-        "confidence": 1,
-        "source": [
-            888
-        ]
+        "xcContractAddress": {
+            "888": "0xffffffff958faf8e6b11da766006df735c4a8da0"
+        },
+        "confidence": 1
     },
     "[{\"named\":\"0x6d6f6f6e62617365\"},{\"parachain\":1001},{\"palletInstance\":50},{\"generalIndex\":1}]": {
         "paraID": 1001,
