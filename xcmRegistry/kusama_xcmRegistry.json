@@ -1962,18 +1962,19 @@
                 }
             }
         },
-        "xcContractAddress": {
-            "2023": "0xffffffff7dd9b9c60ac83e49d7e3e1f7a1370ad2"
-        },
+        "asset": "15",
+        "source": [
+            2004,
+            2023
+        ],
         "xcCurrencyID": {
             "2004": "15",
             "2023": "167283995827706324502761431814209211090"
         },
-        "confidence": 2,
-        "source": [
-            2004,
-            2023
-        ]
+        "xcContractAddress": {
+            "2023": "0xffffffff7dd9b9c60ac83e49d7e3e1f7a1370ad2"
+        },
+        "confidence": 2
     },
     "[{\"network\":\"kusama\"},{\"parachain\":2088},{\"generalKey\":\"0x0001\"}]": {
         "paraID": 2088,
@@ -2100,14 +2101,15 @@
                 }
             }
         },
-        "xcContractAddress": {},
+        "asset": "5",
+        "source": [
+            2004
+        ],
         "xcCurrencyID": {
             "2004": "5"
         },
-        "confidence": 1,
-        "source": [
-            2004
-        ]
+        "xcContractAddress": {},
+        "confidence": 1
     },
     "[{\"network\":\"kusama\"},{\"parachain\":2092},{\"generalKey\":\"0x000b\"}]": {
         "paraID": 2092,
@@ -2334,14 +2336,15 @@
                 }
             }
         },
-        "xcContractAddress": {},
+        "asset": "14",
+        "source": [
+            2004
+        ],
         "xcCurrencyID": {
             "2004": "14"
         },
-        "confidence": 1,
-        "source": [
-            2004
-        ]
+        "xcContractAddress": {},
+        "confidence": 1
     },
     "[{\"network\":\"kusama\"},{\"parachain\":2102},{\"generalKey\":\"0x50434855\"}]": {
         "paraID": 2102,
@@ -2574,12 +2577,14 @@
             "2001": {
                 "Token2": "4"
             },
-            "2023": "118095707745084482624853002839493125353"
+            "2023": "118095707745084482624853002839493125353",
+            "2114": "10"
         },
-        "confidence": 2,
+        "confidence": 3,
         "source": [
             2001,
-            2023
+            2023,
+            2114
         ]
     },
     "[{\"network\":\"kusama\"},{\"parachain\":2114}]": {

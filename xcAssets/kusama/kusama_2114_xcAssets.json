@@ -276,35 +276,6 @@
         ]
     },
     {
-        "relayChain": "kusama",
-        "nativeChainID": null,
-        "symbol": "TUR",
-        "decimals": 10,
-        "interiorType": "x1",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2114
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x1": {
-                        "parachain": 2114
-                    }
-                }
-            }
-        },
-        "asset": "0",
-        "source": [
-            "2114"
-        ]
-    },
-    {
         "paraID": 2085,
         "relayChain": "kusama",
         "nativeChainID": "heiko",
@@ -338,6 +309,73 @@
             }
         },
         "asset": "6",
+        "source": [
+            "2114"
+        ]
+    },
+    {
+        "paraID": 2110,
+        "relayChain": "kusama",
+        "nativeChainID": "mangata",
+        "symbol": "MGX",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2110
+            },
+            {
+                "generalKey": "0x00000000"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2110
+                        },
+                        {
+                            "generalKey": "0x00000000"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "10",
+        "source": [
+            "2114"
+        ]
+    },
+    {
+        "relayChain": "kusama",
+        "nativeChainID": null,
+        "symbol": "TUR",
+        "decimals": 10,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2114
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2114
+                    }
+                }
+            }
+        },
+        "asset": "0",
         "source": [
             "2114"
         ]

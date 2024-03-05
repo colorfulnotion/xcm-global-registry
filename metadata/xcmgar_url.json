@@ -89,7 +89,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "assetCnt": "70",
+                "assetCnt": "71",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2030_assets.json"
             },
             {
@@ -357,7 +357,7 @@
                 "relayChain": "kusama",
                 "paraID": 2114,
                 "id": "turing",
-                "assetCnt": "11",
+                "assetCnt": "12",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2114_assets.json"
             },
             {
@@ -580,7 +580,7 @@
                 "relayChain": "kusama",
                 "paraID": 2114,
                 "id": "turing",
-                "xcAssetCnt": "10",
+                "xcAssetCnt": "11",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/kusama/kusama_2114_xcAssets.json"
             },
             {

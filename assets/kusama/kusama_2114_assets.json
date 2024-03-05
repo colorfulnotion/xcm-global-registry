@@ -21,6 +21,16 @@
     },
     {
         "asset": {
+            "Token": "10"
+        },
+        "name": "Mangata X",
+        "symbol": "MGX",
+        "decimals": 18,
+        "currencyID": "10",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2110},{\"generalKey\":\"0x00000000\"}]"
+    },
+    {
+        "asset": {
             "Token": "2"
         },
         "name": "AUSD",
