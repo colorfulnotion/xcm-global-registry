@@ -29,50 +29,6 @@
         "paraID": 1000,
         "relayChain": "polkadot",
         "nativeChainID": "statemint",
-        "symbol": "USDC",
-        "decimals": 6,
-        "interiorType": "x3",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 1000
-            },
-            {
-                "palletInstance": 50
-            },
-            {
-                "generalIndex": 1337
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x3": [
-                        {
-                            "parachain": 1000
-                        },
-                        {
-                            "palletInstance": 50
-                        },
-                        {
-                            "generalIndex": 1337
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": "22",
-        "source": [
-            "2034"
-        ]
-    },
-    {
-        "paraID": 1000,
-        "relayChain": "polkadot",
-        "nativeChainID": "statemint",
         "symbol": "USDT",
         "decimals": 6,
         "interiorType": "x3",
@@ -114,39 +70,45 @@
         ]
     },
     {
-        "paraID": 2000,
+        "paraID": 1000,
         "relayChain": "polkadot",
-        "nativeChainID": "acala",
+        "nativeChainID": "statemint",
         "symbol": "USDC",
         "decimals": 6,
-        "interiorType": "x2",
+        "interiorType": "x3",
         "xcmV1Standardized": [
             {
                 "network": "polkadot"
             },
             {
-                "parachain": 2000
+                "parachain": 1000
             },
             {
-                "generalKey": "0x0207df96d1341a7d16ba1ad431e2c847d978bc2bce"
+                "palletInstance": 50
+            },
+            {
+                "generalIndex": 1337
             }
         ],
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
                 "interior": {
-                    "x2": [
+                    "x3": [
                         {
-                            "parachain": 2000
+                            "parachain": 1000
                         },
                         {
-                            "generalKey": "0x0207df96d1341a7d16ba1ad431e2c847d978bc2bce"
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 1337
                         }
                     ]
                 }
             }
         },
-        "asset": "7",
+        "asset": "22",
         "source": [
             "2034"
         ]
@@ -155,7 +117,7 @@
         "paraID": 2000,
         "relayChain": "polkadot",
         "nativeChainID": "acala",
-        "symbol": "DAI",
+        "symbol": "WETH",
         "decimals": 18,
         "interiorType": "x2",
         "xcmV1Standardized": [
@@ -166,7 +128,7 @@
                 "parachain": 2000
             },
             {
-                "generalKey": "0x0254a37a01cd75b616d63e0ab665bffdb0143c52ae"
+                "generalKey": "0x025a4d6acdc4e3e5ab15717f407afe957f7a242578"
             }
         ],
         "xcmV1MultiLocation": {
@@ -178,13 +140,13 @@
                             "parachain": 2000
                         },
                         {
-                            "generalKey": "0x0254a37a01cd75b616d63e0ab665bffdb0143c52ae"
+                            "generalKey": "0x025a4d6acdc4e3e5ab15717f407afe957f7a242578"
                         }
                     ]
                 }
             }
         },
-        "asset": "2",
+        "asset": "4",
         "source": [
             "2034"
         ]
@@ -231,6 +193,82 @@
         "paraID": 2000,
         "relayChain": "polkadot",
         "nativeChainID": "acala",
+        "symbol": "DAI",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x0254a37a01cd75b616d63e0ab665bffdb0143c52ae"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0254a37a01cd75b616d63e0ab665bffdb0143c52ae"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "2",
+        "source": [
+            "2034"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "polkadot",
+        "nativeChainID": "acala",
+        "symbol": "USDC",
+        "decimals": 6,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x0207df96d1341a7d16ba1ad431e2c847d978bc2bce"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0207df96d1341a7d16ba1ad431e2c847d978bc2bce"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "7",
+        "source": [
+            "2034"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "polkadot",
+        "nativeChainID": "acala",
         "symbol": "WBTC",
         "decimals": 8,
         "interiorType": "x2",
@@ -266,39 +304,51 @@
         ]
     },
     {
-        "paraID": 2000,
+        "paraID": 2004,
         "relayChain": "polkadot",
-        "nativeChainID": "acala",
-        "symbol": "WETH",
-        "decimals": 18,
-        "interiorType": "x2",
+        "nativeChainID": "moonbeam",
+        "symbol": "USDC",
+        "decimals": 6,
+        "interiorType": "x3",
         "xcmV1Standardized": [
             {
                 "network": "polkadot"
             },
             {
-                "parachain": 2000
+                "parachain": 2004
             },
             {
-                "generalKey": "0x025a4d6acdc4e3e5ab15717f407afe957f7a242578"
+                "palletInstance": 110
+            },
+            {
+                "accountKey20": {
+                    "network": null,
+                    "key": "0x931715fee2d06333043d11f658c8ce934ac61d0c"
+                }
             }
         ],
         "xcmV1MultiLocation": {
             "v1": {
                 "parents": 1,
                 "interior": {
-                    "x2": [
+                    "x3": [
                         {
-                            "parachain": 2000
+                            "parachain": 2004
                         },
                         {
-                            "generalKey": "0x025a4d6acdc4e3e5ab15717f407afe957f7a242578"
+                            "palletInstance": 110
+                        },
+                        {
+                            "accountKey20": {
+                                "network": null,
+                                "key": "0x931715fee2d06333043d11f658c8ce934ac61d0c"
+                            }
                         }
                     ]
                 }
             }
         },
-        "asset": "4",
+        "asset": "21",
         "source": [
             "2034"
         ]
@@ -357,6 +407,44 @@
         "paraID": 2004,
         "relayChain": "polkadot",
         "nativeChainID": "moonbeam",
+        "symbol": "GLMR",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2004
+            },
+            {
+                "palletInstance": 10
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2004
+                        },
+                        {
+                            "palletInstance": 10
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "16",
+        "source": [
+            "2034"
+        ]
+    },
+    {
+        "paraID": 2004,
+        "relayChain": "polkadot",
+        "nativeChainID": "moonbeam",
         "symbol": "WBTC",
         "decimals": 8,
         "interiorType": "x3",
@@ -399,94 +487,6 @@
             }
         },
         "asset": "19",
-        "source": [
-            "2034"
-        ]
-    },
-    {
-        "paraID": 2004,
-        "relayChain": "polkadot",
-        "nativeChainID": "moonbeam",
-        "symbol": "GLMR",
-        "decimals": 18,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 2004
-            },
-            {
-                "palletInstance": 10
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 2004
-                        },
-                        {
-                            "palletInstance": 10
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": "16",
-        "source": [
-            "2034"
-        ]
-    },
-    {
-        "paraID": 2004,
-        "relayChain": "polkadot",
-        "nativeChainID": "moonbeam",
-        "symbol": "USDC",
-        "decimals": 6,
-        "interiorType": "x3",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 2004
-            },
-            {
-                "palletInstance": 110
-            },
-            {
-                "accountKey20": {
-                    "network": null,
-                    "key": "0x931715fee2d06333043d11f658c8ce934ac61d0c"
-                }
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x3": [
-                        {
-                            "parachain": 2004
-                        },
-                        {
-                            "palletInstance": 110
-                        },
-                        {
-                            "accountKey20": {
-                                "network": null,
-                                "key": "0x931715fee2d06333043d11f658c8ce934ac61d0c"
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": "21",
         "source": [
             "2034"
         ]

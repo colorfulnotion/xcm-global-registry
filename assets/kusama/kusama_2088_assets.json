@@ -3,7 +3,7 @@
         "asset": {
             "ForeignAsset": "1"
         },
-        "name": "Tether USD",
+        "name": "Tether USDT",
         "symbol": "USDT",
         "decimals": 6,
         "currencyID": {

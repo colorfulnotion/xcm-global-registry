@@ -3,7 +3,7 @@
         "asset": {
             "Token": "0"
         },
-        "name": "HDX",
+        "name": "HydraDX",
         "symbol": "HDX",
         "decimals": 12,
         "currencyID": "0",
@@ -15,7 +15,7 @@
         "asset": {
             "Token": "1"
         },
-        "name": "LRNA",
+        "name": "Lerna",
         "symbol": "LRNA",
         "decimals": 12,
         "currencyID": "1"
@@ -24,7 +24,7 @@
         "asset": {
             "Token": "10"
         },
-        "name": "USDT",
+        "name": "USDT (Polkadot Asset Hub)",
         "symbol": "USDT",
         "decimals": 6,
         "currencyID": "10",
@@ -52,7 +52,7 @@
         "asset": {
             "Token": "102"
         },
-        "name": "2-Pool",
+        "name": "2-Pool-Stbl",
         "symbol": "2-Pool",
         "decimals": 18,
         "currencyID": "102"
@@ -61,7 +61,7 @@
         "asset": {
             "Token": "11"
         },
-        "name": "iBTC",
+        "name": "interBTC",
         "symbol": "iBTC",
         "decimals": 8,
         "currencyID": "11",
@@ -71,7 +71,7 @@
         "asset": {
             "Token": "12"
         },
-        "name": "ZTG",
+        "name": "Zeitgeist",
         "symbol": "ZTG",
         "decimals": 10,
         "currencyID": "12",
@@ -81,7 +81,7 @@
         "asset": {
             "Token": "13"
         },
-        "name": "CFG",
+        "name": "Centrifuge",
         "symbol": "CFG",
         "decimals": 18,
         "currencyID": "13",
@@ -91,7 +91,7 @@
         "asset": {
             "Token": "14"
         },
-        "name": "BNC",
+        "name": "Bifrost Native Coin",
         "symbol": "BNC",
         "decimals": 12,
         "currencyID": "14",
@@ -101,7 +101,7 @@
         "asset": {
             "Token": "15"
         },
-        "name": "vDOT",
+        "name": "Bifrost Voucher DOT",
         "symbol": "vDOT",
         "decimals": 10,
         "currencyID": "15",
@@ -111,7 +111,7 @@
         "asset": {
             "Token": "16"
         },
-        "name": "GLMR",
+        "name": "Glimmer",
         "symbol": "GLMR",
         "decimals": 18,
         "currencyID": "16",
@@ -121,7 +121,7 @@
         "asset": {
             "Token": "17"
         },
-        "name": "INTR",
+        "name": "Interlay",
         "symbol": "INTR",
         "decimals": 10,
         "currencyID": "17",
@@ -131,7 +131,7 @@
         "asset": {
             "Token": "18"
         },
-        "name": "DAI",
+        "name": "DAI (Moonbeam Wormhole)",
         "symbol": "DAI",
         "decimals": 18,
         "currencyID": "18",
@@ -141,7 +141,7 @@
         "asset": {
             "Token": "19"
         },
-        "name": "WBTC",
+        "name": "Bitcoin (Moonbeam Wormhole)",
         "symbol": "WBTC",
         "decimals": 8,
         "currencyID": "19",
@@ -151,7 +151,7 @@
         "asset": {
             "Token": "2"
         },
-        "name": "DAI",
+        "name": "DAI (Acala Wormhole)",
         "symbol": "DAI",
         "decimals": 18,
         "currencyID": "2",
@@ -161,7 +161,7 @@
         "asset": {
             "Token": "20"
         },
-        "name": "WETH",
+        "name": "Ethereum (Moonbeam Wormhole)",
         "symbol": "WETH",
         "decimals": 18,
         "currencyID": "20",
@@ -171,7 +171,7 @@
         "asset": {
             "Token": "21"
         },
-        "name": "USDC",
+        "name": "USD Coin (Moonbeam Wormhole)",
         "symbol": "USDC",
         "decimals": 6,
         "currencyID": "21",
@@ -181,7 +181,7 @@
         "asset": {
             "Token": "22"
         },
-        "name": "USDC",
+        "name": "USDC (Polkadot Asset Hub)",
         "symbol": "USDC",
         "decimals": 6,
         "currencyID": "22",
@@ -191,7 +191,7 @@
         "asset": {
             "Token": "23"
         },
-        "name": "USDT",
+        "name": "USDT (Moonbeam Wormhole)",
         "symbol": "USDT",
         "decimals": 6,
         "currencyID": "23",
@@ -201,7 +201,7 @@
         "asset": {
             "Token": "24"
         },
-        "name": "SUB",
+        "name": "Subsocial",
         "symbol": "SUB",
         "decimals": 10,
         "currencyID": "24",
@@ -211,7 +211,7 @@
         "asset": {
             "Token": "25"
         },
-        "name": "UNQ",
+        "name": "Unique network",
         "symbol": "UNQ",
         "decimals": 18,
         "currencyID": "25",
@@ -221,7 +221,7 @@
         "asset": {
             "Token": "26"
         },
-        "name": "NODL",
+        "name": "Nodle",
         "symbol": "NODL",
         "decimals": 11,
         "currencyID": "26",
@@ -231,7 +231,7 @@
         "asset": {
             "Token": "27"
         },
-        "name": "CRU",
+        "name": "Crust",
         "symbol": "CRU",
         "decimals": 12,
         "currencyID": "27",
@@ -241,7 +241,7 @@
         "asset": {
             "Token": "3"
         },
-        "name": "WBTC",
+        "name": "Bitcoin (Acala Wormhole)",
         "symbol": "WBTC",
         "decimals": 8,
         "currencyID": "3",
@@ -251,7 +251,7 @@
         "asset": {
             "Token": "4"
         },
-        "name": "WETH",
+        "name": "Ethereum (Acala Wormhole)",
         "symbol": "WETH",
         "decimals": 18,
         "currencyID": "4",
@@ -261,7 +261,7 @@
         "asset": {
             "Token": "5"
         },
-        "name": "DOT",
+        "name": "Polkadot",
         "symbol": "DOT",
         "decimals": 10,
         "currencyID": "5",
@@ -271,7 +271,7 @@
         "asset": {
             "Token": "6"
         },
-        "name": "APE",
+        "name": "ApeCoin (Acala Wormhole)",
         "symbol": "APE",
         "decimals": 18,
         "currencyID": "6",
@@ -281,7 +281,7 @@
         "asset": {
             "Token": "7"
         },
-        "name": "USDC",
+        "name": "USD Coin (Acala Wormhole)",
         "symbol": "USDC",
         "decimals": 6,
         "currencyID": "7",
@@ -291,7 +291,7 @@
         "asset": {
             "Token": "8"
         },
-        "name": "PHA",
+        "name": "Phala",
         "symbol": "PHA",
         "decimals": 12,
         "currencyID": "8",
@@ -301,7 +301,7 @@
         "asset": {
             "Token": "9"
         },
-        "name": "ASTR",
+        "name": "Astar",
         "symbol": "ASTR",
         "decimals": 18,
         "currencyID": "9",

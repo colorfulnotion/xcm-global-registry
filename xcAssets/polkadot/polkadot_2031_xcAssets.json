@@ -335,6 +335,72 @@
         "paraID": 2031,
         "relayChain": "polkadot",
         "nativeChainID": "centrifuge",
+        "symbol": "LpCeloUSDC",
+        "decimals": 6,
+        "interiorType": "x4",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2031
+            },
+            {
+                "palletInstance": 103
+            },
+            {
+                "globalConsensus": {
+                    "ethereum": {
+                        "chainId": 42220
+                    }
+                }
+            },
+            {
+                "accountKey20": {
+                    "network": null,
+                    "key": "0xceba9300f2b948710d2653dd7b07f33a8b32118c"
+                }
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x4": [
+                        {
+                            "parachain": 2031
+                        },
+                        {
+                            "palletInstance": 103
+                        },
+                        {
+                            "globalConsensus": {
+                                "ethereum": {
+                                    "chainId": 42220
+                                }
+                            }
+                        },
+                        {
+                            "accountKey20": {
+                                "network": null,
+                                "key": "0xceba9300f2b948710d2653dd7b07f33a8b32118c"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "ForeignAsset": "100,006"
+        },
+        "source": [
+            "2031"
+        ]
+    },
+    {
+        "paraID": 2031,
+        "relayChain": "polkadot",
+        "nativeChainID": "centrifuge",
         "symbol": "CFG",
         "decimals": 18,
         "interiorType": "x2",
@@ -505,7 +571,7 @@
         "paraID": 2031,
         "relayChain": "polkadot",
         "nativeChainID": "centrifuge",
-        "symbol": "LpCeloUSDC",
+        "symbol": "LpCeloWormUSDC ",
         "decimals": 6,
         "interiorType": "x4",
         "xcmV1Standardized": [

@@ -89,21 +89,21 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "assetCnt": "71",
+                "assetCnt": "72",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2030_assets.json"
             },
             {
                 "relayChain": "polkadot",
                 "paraID": 2031,
                 "id": "centrifuge",
-                "assetCnt": "14",
+                "assetCnt": "16",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2031_assets.json"
             },
             {
                 "relayChain": "polkadot",
                 "paraID": 2032,
                 "id": "interlay",
-                "assetCnt": "18",
+                "assetCnt": "19",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2032_assets.json"
             },
             {
@@ -287,7 +287,7 @@
                 "relayChain": "kusama",
                 "paraID": 2090,
                 "id": "basilisk",
-                "assetCnt": "12",
+                "assetCnt": "1",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2090_assets.json"
             },
             {
@@ -392,7 +392,7 @@
                 "relayChain": "kusama",
                 "paraID": 2124,
                 "id": "amplitude",
-                "assetCnt": "11",
+                "assetCnt": "1",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2124_assets.json"
             },
             {
@@ -445,21 +445,21 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "xcAssetCnt": "18",
+                "xcAssetCnt": "19",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2030_xcAssets.json"
             },
             {
                 "relayChain": "polkadot",
                 "paraID": 2031,
                 "id": "centrifuge",
-                "xcAssetCnt": "11",
+                "xcAssetCnt": "12",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2031_xcAssets.json"
             },
             {
                 "relayChain": "polkadot",
                 "paraID": 2032,
                 "id": "interlay",
-                "xcAssetCnt": "12",
+                "xcAssetCnt": "13",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2032_xcAssets.json"
             },
             {
@@ -595,12 +595,12 @@
     "xcmRegistry": [
         {
             "relayChain": "kusama",
-            "registryCnt": "59",
+            "registryCnt": "56",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/kusama_xcmRegistry.json"
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "66",
+            "registryCnt": "68",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/polkadot_xcmRegistry.json"
         }
     ]
