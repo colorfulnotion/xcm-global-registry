@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - action
+      - test
     paths:
       - .github/workflows/deploy.yml
       - publicEndpoints/*.json
@@ -34,8 +35,6 @@ jobs:
         run: node xcmgar registry -r polkadot
       - name: Kusama XCM Global Asset Registry Generation
         run: node xcmgar registry -r kusama
-      - name: Moonbase XCM Global Asset Registry Generation
-        run: node xcmgar registry -r moonbase
       - name: XCM GAR metadata Generation
         run: node xcmgar generate -m -u
       - name: Show diff

@@ -96,6 +96,15 @@
     },
     {
         "asset": {
+            "Token2": "11"
+        },
+        "name": "DED",
+        "symbol": "DED",
+        "decimals": 10,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":30}]"
+    },
+    {
+        "asset": {
             "Token2": "2"
         },
         "name": "Tether USD",

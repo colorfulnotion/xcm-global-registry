@@ -16,7 +16,7 @@ module.exports = class HydraParser extends ChainParser {
 
     //change [garPallet:garPallet] to the location where the asset registry is located.  ex: [assets:metadata]
     garPallet = 'assetRegistry'
-    garStorage = 'assetMetadataMap'
+    garStorage = 'assets'
 
     //change [xcGarPallet:xcGarStorage] to the location where the xc registry is located.  ex: [assetManager:assetIdType]
     xcGarPallet = 'assetRegistry'
