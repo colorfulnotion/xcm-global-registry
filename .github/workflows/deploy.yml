@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - action
+      - test
     paths:
       - .github/workflows/deploy.yml
       - publicEndpoints/*.json
