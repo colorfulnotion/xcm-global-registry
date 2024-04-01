@@ -241,16 +241,6 @@
     },
     {
         "asset": {
-            "Token": "270195117769614861929703564202131636628"
-        },
-        "name": "Raresama POOP",
-        "symbol": "POOP",
-        "decimals": 18,
-        "currencyID": "270195117769614861929703564202131636628",
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":108},{\"generalIndex\":\"0xcb45afd30a637967995394cc88c0c194\"}]"
-    },
-    {
-        "asset": {
             "Token": "272547899416482196831721420898811311297"
         },
         "name": "Bifrost Voucher FIL",

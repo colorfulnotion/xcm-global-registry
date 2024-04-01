@@ -33,7 +33,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "assetCnt": "40",
+                "assetCnt": "39",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2004_assets.json"
             },
             {

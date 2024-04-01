@@ -702,7 +702,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "assetCnt": "40",
+                "assetCnt": "39",
                 "data": [
                     {
                         "asset": {
@@ -943,16 +943,6 @@
                         "decimals": 12,
                         "currencyID": "238111524681612888331172110363070489924",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2043},{\"palletInstance\":10}]"
-                    },
-                    {
-                        "asset": {
-                            "Token": "270195117769614861929703564202131636628"
-                        },
-                        "name": "Raresama POOP",
-                        "symbol": "POOP",
-                        "decimals": 18,
-                        "currencyID": "270195117769614861929703564202131636628",
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":108},{\"generalIndex\":\"0xcb45afd30a637967995394cc88c0c194\"}]"
                     },
                     {
                         "asset": {
@@ -3449,7 +3439,9 @@
                         "name": "PHA",
                         "symbol": "PHA",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2035}]"
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2035}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -3527,7 +3519,9 @@
                         "name": "RING",
                         "symbol": "RING",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
