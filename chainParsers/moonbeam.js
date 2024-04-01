@@ -82,6 +82,7 @@ module.exports = class MoonbeamParser extends ChainParser {
                 this.manager.setChainAsset(chainkey, assetChainkey, assetInfo)
             }
         }
+        /*
         let la = await super.fetchQuery(chainkey, this.garPalletExtra, this.garStorage, 'GAR')
         if (la) {
             // step 1: use common Asset pallet parser func available at generic chainparser.
@@ -97,6 +98,7 @@ module.exports = class MoonbeamParser extends ChainParser {
                 this.manager.setChainAsset(chainkey, assetChainkey, assetInfo)
             }
         }
+        */
     }
 
     // Implement moonbeam xcGar parsing function here
