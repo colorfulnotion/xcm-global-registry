@@ -180,6 +180,44 @@
         "asset": {
             "Token": {
                 "Tranche": [
+                    "1,615,768,079",
+                    "0x6756e091ae798a8e51e12e27ee8facdf"
+                ]
+            }
+        },
+        "name": "New Silver Series 3 NS3 Junior",
+        "symbol": "NS3JR",
+        "decimals": 6,
+        "currencyID": {
+            "Tranche": [
+                "1,615,768,079",
+                "0x6756e091ae798a8e51e12e27ee8facdf"
+            ]
+        }
+    },
+    {
+        "asset": {
+            "Token": {
+                "Tranche": [
+                    "1,615,768,079",
+                    "0xda64aae939e4d3a981004619f1709d8f"
+                ]
+            }
+        },
+        "name": "New Silver Series 3 NS3 Senior",
+        "symbol": "NS3SR",
+        "decimals": 6,
+        "currencyID": {
+            "Tranche": [
+                "1,615,768,079",
+                "0xda64aae939e4d3a981004619f1709d8f"
+            ]
+        }
+    },
+    {
+        "asset": {
+            "Token": {
+                "Tranche": [
                     "4,139,607,887",
                     "0x97aa65f23e7be09fcd62d0554d2e9273"
                 ]

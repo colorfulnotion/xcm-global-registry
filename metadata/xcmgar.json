@@ -2572,7 +2572,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2031,
                 "id": "centrifuge",
-                "assetCnt": "16",
+                "assetCnt": "18",
                 "data": [
                     {
                         "asset": {
@@ -2749,6 +2749,44 @@
                         "decimals": 6,
                         "currencyID": {
                             "LocalAsset": "1"
+                        }
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Tranche": [
+                                    "1,615,768,079",
+                                    "0x6756e091ae798a8e51e12e27ee8facdf"
+                                ]
+                            }
+                        },
+                        "name": "New Silver Series 3 NS3 Junior",
+                        "symbol": "NS3JR",
+                        "decimals": 6,
+                        "currencyID": {
+                            "Tranche": [
+                                "1,615,768,079",
+                                "0x6756e091ae798a8e51e12e27ee8facdf"
+                            ]
+                        }
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Tranche": [
+                                    "1,615,768,079",
+                                    "0xda64aae939e4d3a981004619f1709d8f"
+                                ]
+                            }
+                        },
+                        "name": "New Silver Series 3 NS3 Senior",
+                        "symbol": "NS3SR",
+                        "decimals": 6,
+                        "currencyID": {
+                            "Tranche": [
+                                "1,615,768,079",
+                                "0xda64aae939e4d3a981004619f1709d8f"
+                            ]
                         }
                     },
                     {
@@ -3439,9 +3477,7 @@
                         "name": "PHA",
                         "symbol": "PHA",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2035}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2035}]"
                     }
                 ]
             },
@@ -3519,9 +3555,7 @@
                         "name": "RING",
                         "symbol": "RING",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
                     }
                 ]
             },
