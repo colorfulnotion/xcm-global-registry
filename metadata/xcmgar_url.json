@@ -238,7 +238,7 @@
                 "relayChain": "kusama",
                 "paraID": 2023,
                 "id": "moonriver",
-                "assetCnt": "24",
+                "assetCnt": "25",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2023_assets.json"
             },
             {
@@ -531,7 +531,7 @@
                 "relayChain": "kusama",
                 "paraID": 2023,
                 "id": "moonriver",
-                "xcAssetCnt": "23",
+                "xcAssetCnt": "24",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/kusama/kusama_2023_xcAssets.json"
             },
             {
@@ -595,7 +595,7 @@
     "xcmRegistry": [
         {
             "relayChain": "kusama",
-            "registryCnt": "56",
+            "registryCnt": "58",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/kusama_xcmRegistry.json"
         },
         {

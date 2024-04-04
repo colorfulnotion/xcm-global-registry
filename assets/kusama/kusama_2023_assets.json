@@ -61,6 +61,16 @@
     },
     {
         "asset": {
+            "Token": "138512078356357941985706694377215053953"
+        },
+        "name": "Tinkernet",
+        "symbol": "xcTNKR",
+        "decimals": 12,
+        "currencyID": "138512078356357941985706694377215053953",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2125},{\"generalIndex\":0}]"
+    },
+    {
+        "asset": {
             "Token": "167283995827706324502761431814209211090"
         },
         "name": "Picasso",
