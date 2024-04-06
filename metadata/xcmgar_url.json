@@ -210,7 +210,7 @@
                 "relayChain": "kusama",
                 "paraID": 2007,
                 "id": "shiden",
-                "assetCnt": "23",
+                "assetCnt": "24",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/kusama/kusama_2007_assets.json"
             },
             {
@@ -517,7 +517,7 @@
                 "relayChain": "kusama",
                 "paraID": 2007,
                 "id": "shiden",
-                "xcAssetCnt": "16",
+                "xcAssetCnt": "17",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/kusama/kusama_2007_xcAssets.json"
             },
             {
@@ -595,7 +595,7 @@
     "xcmRegistry": [
         {
             "relayChain": "kusama",
-            "registryCnt": "57",
+            "registryCnt": "58",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/kusama_xcmRegistry.json"
         },
         {

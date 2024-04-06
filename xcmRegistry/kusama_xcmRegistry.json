@@ -235,6 +235,56 @@
             2000
         ]
     },
+    "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":223}]": {
+        "paraID": 1000,
+        "relayChain": "kusama",
+        "nativeChainID": "statemine",
+        "symbol": "BILL",
+        "decimals": 8,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 50
+            },
+            {
+                "generalIndex": 223
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 223
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "2007": "0xffffffff00000000000000010000000000000012"
+        },
+        "xcCurrencyID": {
+            "2007": "18446744073709551634"
+        },
+        "confidence": 1,
+        "source": [
+            2007
+        ]
+    },
     "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0081\"}]": {
         "paraID": 2000,
         "relayChain": "kusama",
