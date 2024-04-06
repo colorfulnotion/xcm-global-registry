@@ -7,7 +7,9 @@
         "symbol": "HDX",
         "decimals": 12,
         "currencyID": "0",
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2034},{\"generalIndex\":0}]"
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2034},{\"generalIndex\":0}]",
+        "inferred": true,
+        "confidence": 0
     },
     {
         "asset": {
@@ -312,6 +314,8 @@
         "name": "HDX",
         "symbol": "HDX",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2034},{\"generalIndex\":0}]"
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2034},{\"generalIndex\":0}]",
+        "inferred": true,
+        "confidence": 0
     }
 ]
