@@ -495,9 +495,7 @@
         "symbol": "BILL",
         "decimals": 8,
         "currencyID": "223",
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":223}]",
-        "inferred": true,
-        "confidence": 0
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":223}]"
     },
     {
         "asset": {
