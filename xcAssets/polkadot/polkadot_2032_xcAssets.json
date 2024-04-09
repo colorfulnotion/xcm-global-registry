@@ -132,46 +132,6 @@
         ]
     },
     {
-        "paraID": 2001,
-        "relayChain": "polkadot",
-        "nativeChainID": null,
-        "symbol": "BNC",
-        "decimals": 12,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 2001
-            },
-            {
-                "generalKey": "0x0001"
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "parachain": 2001
-                        },
-                        {
-                            "generalKey": "0x0001"
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": {
-            "ForeignAsset": "11"
-        },
-        "source": [
-            "2032"
-        ]
-    },
-    {
         "paraID": 2004,
         "relayChain": "polkadot",
         "nativeChainID": "moonbeam",
@@ -518,6 +478,46 @@
         },
         "asset": {
             "ForeignAsset": "4"
+        },
+        "source": [
+            "2032"
+        ]
+    },
+    {
+        "paraID": 2030,
+        "relayChain": "polkadot",
+        "nativeChainID": "bifrost",
+        "symbol": "BNC",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0001"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0001"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "ForeignAsset": "11"
         },
         "source": [
             "2032"

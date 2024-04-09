@@ -2844,7 +2844,7 @@
                         "symbol": "BNC",
                         "decimals": 12,
                         "currencyID": "11",
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]"
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]"
                     },
                     {
                         "asset": {
@@ -3477,9 +3477,7 @@
                         "name": "PHA",
                         "symbol": "PHA",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2035}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2035}]"
                     }
                 ]
             },
@@ -3557,7 +3555,9 @@
                         "name": "RING",
                         "symbol": "RING",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -13916,46 +13916,6 @@
                         ]
                     },
                     {
-                        "paraID": 2001,
-                        "relayChain": "polkadot",
-                        "nativeChainID": null,
-                        "symbol": "BNC",
-                        "decimals": 12,
-                        "interiorType": "x2",
-                        "xcmV1Standardized": [
-                            {
-                                "network": "polkadot"
-                            },
-                            {
-                                "parachain": 2001
-                            },
-                            {
-                                "generalKey": "0x0001"
-                            }
-                        ],
-                        "xcmV1MultiLocation": {
-                            "v1": {
-                                "parents": 1,
-                                "interior": {
-                                    "x2": [
-                                        {
-                                            "parachain": 2001
-                                        },
-                                        {
-                                            "generalKey": "0x0001"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        "asset": {
-                            "ForeignAsset": "11"
-                        },
-                        "source": [
-                            "2032"
-                        ]
-                    },
-                    {
                         "paraID": 2004,
                         "relayChain": "polkadot",
                         "nativeChainID": "moonbeam",
@@ -14302,6 +14262,46 @@
                         },
                         "asset": {
                             "ForeignAsset": "4"
+                        },
+                        "source": [
+                            "2032"
+                        ]
+                    },
+                    {
+                        "paraID": 2030,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "bifrost",
+                        "symbol": "BNC",
+                        "decimals": 12,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2030
+                            },
+                            {
+                                "generalKey": "0x0001"
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2030
+                                        },
+                                        {
+                                            "generalKey": "0x0001"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": {
+                            "ForeignAsset": "11"
                         },
                         "source": [
                             "2032"
@@ -25640,7 +25640,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "68",
+            "registryCnt": "67",
             "data": {
                 "[{\"network\":\"polkadot\"},\"here\"]": {
                     "paraID": 0,
@@ -26419,50 +26419,6 @@
                     "confidence": 1,
                     "source": [
                         2034
-                    ]
-                },
-                "[{\"network\":\"polkadot\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]": {
-                    "paraID": 2001,
-                    "relayChain": "polkadot",
-                    "nativeChainID": null,
-                    "symbol": "BNC",
-                    "decimals": 12,
-                    "interiorType": "x2",
-                    "xcmV1Standardized": [
-                        {
-                            "network": "polkadot"
-                        },
-                        {
-                            "parachain": 2001
-                        },
-                        {
-                            "generalKey": "0x0001"
-                        }
-                    ],
-                    "xcmV1MultiLocation": {
-                        "v1": {
-                            "parents": 1,
-                            "interior": {
-                                "x2": [
-                                    {
-                                        "parachain": 2001
-                                    },
-                                    {
-                                        "generalKey": "0x0001"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "xcContractAddress": {},
-                    "xcCurrencyID": {
-                        "2032": {
-                            "ForeignAsset": "11"
-                        }
-                    },
-                    "confidence": 1,
-                    "source": [
-                        2032
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2002}]": {
@@ -27953,14 +27909,18 @@
                         "2030": {
                             "Native": "BNC"
                         },
+                        "2032": {
+                            "ForeignAsset": "11"
+                        },
                         "2034": "14",
                         "2035": "8"
                     },
-                    "confidence": 5,
+                    "confidence": 6,
                     "source": [
                         2004,
                         2006,
                         2030,
+                        2032,
                         2034,
                         2035
                     ]
