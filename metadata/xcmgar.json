@@ -3557,9 +3557,7 @@
                         "name": "RING",
                         "symbol": "RING",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
                     }
                 ]
             },
@@ -8766,10 +8764,7 @@
                         },
                         "name": "AMPE",
                         "symbol": "AMPE",
-                        "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2124},{\"palletInstance\":10}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "decimals": 12
                     }
                 ]
             },
@@ -22892,7 +22887,7 @@
     "xcmRegistry": [
         {
             "relayChain": "kusama",
-            "registryCnt": "59",
+            "registryCnt": "58",
             "data": {
                 "[{\"network\":\"kusama\"},\"here\"]": {
                     "paraID": 0,
@@ -22927,13 +22922,11 @@
                         "2007": "340282366920938463463374607431768211455",
                         "2023": "42259045809535163221576417993425387648",
                         "2084": "12",
+                        "2085": "100",
                         "2088": {
                             "ForeignAsset": "3"
                         },
-                        "2114": "1",
-                        "2124": {
-                            "XCM": "0"
-                        }
+                        "2114": "1"
                     },
                     "confidence": 8,
                     "source": [
@@ -22942,9 +22935,9 @@
                         2007,
                         2023,
                         2084,
+                        2085,
                         2088,
-                        2114,
-                        2124
+                        2114
                     ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":8}]": {
@@ -23060,16 +23053,14 @@
                         "2007": "4294969280",
                         "2023": "311091173110107856861649819128533077277",
                         "2084": "14",
+                        "2085": "102",
                         "2088": {
                             "ForeignAsset": "1"
                         },
                         "2092": {
                             "ForeignAsset": "3"
                         },
-                        "2110": "30",
-                        "2124": {
-                            "XCM": "1"
-                        }
+                        "2110": "30"
                     },
                     "confidence": 9,
                     "source": [
@@ -23078,10 +23069,10 @@
                         2007,
                         2023,
                         2084,
+                        2085,
                         2088,
                         2092,
-                        2110,
-                        2124
+                        2110
                     ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":16}]": {
@@ -23297,9 +23288,10 @@
                         "2012": "10810581592933651521121702237638664357",
                         "2023": "10810581592933651521121702237638664357",
                         "2084": "8",
+                        "2085": "107",
                         "2114": "3"
                     },
-                    "confidence": 7,
+                    "confidence": 8,
                     "source": [
                         2001,
                         2004,
@@ -23307,6 +23299,7 @@
                         2012,
                         2023,
                         2084,
+                        2085,
                         2114
                     ]
                 },
@@ -23349,15 +23342,17 @@
                     "xcCurrencyID": {
                         "2007": "18446744073709551619",
                         "2084": "10",
+                        "2085": "109",
                         "2092": {
                             "ForeignAsset": "2"
                         },
                         "2114": "4"
                     },
-                    "confidence": 4,
+                    "confidence": 5,
                     "source": [
                         2007,
                         2084,
+                        2085,
                         2092,
                         2114
                     ]
@@ -24254,14 +24249,16 @@
                         "2007": "18446744073709551623",
                         "2023": "189307976387032586987344677431204943363",
                         "2084": "13",
+                        "2085": "115",
                         "2114": "7"
                     },
-                    "confidence": 5,
+                    "confidence": 6,
                     "source": [
                         2001,
                         2007,
                         2023,
                         2084,
+                        2085,
                         2114
                     ]
                 },
@@ -24489,12 +24486,13 @@
                         "2007": "18446744073709551620",
                         "2012": "232263652204149413431520870009560565298",
                         "2084": "11",
+                        "2085": "113",
                         "2092": {
                             "ForeignAsset": "4"
                         },
                         "2114": "9"
                     },
-                    "confidence": 8,
+                    "confidence": 9,
                     "source": [
                         2000,
                         2001,
@@ -24502,6 +24500,7 @@
                         2007,
                         2012,
                         2084,
+                        2085,
                         2092,
                         2114
                     ]
@@ -24722,7 +24721,7 @@
                     "paraID": 2085,
                     "relayChain": "kusama",
                     "nativeChainID": "heiko",
-                    "symbol": "SKSM",
+                    "symbol": "sKSM",
                     "decimals": 12,
                     "interiorType": "x3",
                     "xcmV1Standardized": [
@@ -24759,12 +24758,14 @@
                     },
                     "xcContractAddress": {},
                     "xcCurrencyID": {
+                        "2085": "1000",
                         "2092": {
                             "ForeignAsset": "6"
                         }
                     },
-                    "confidence": 1,
+                    "confidence": 2,
                     "source": [
+                        2085,
                         2092
                     ]
                 },
@@ -25024,13 +25025,15 @@
                             "Token2": "2"
                         },
                         "2007": "18446744073709551621",
-                        "2023": "328179947973504579459046439826496046832"
+                        "2023": "328179947973504579459046439826496046832",
+                        "2085": "121"
                     },
-                    "confidence": 3,
+                    "confidence": 4,
                     "source": [
                         2001,
                         2007,
-                        2023
+                        2023,
+                        2085
                     ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2092},{\"generalKey\":\"0x000c\"}]": {
@@ -25075,13 +25078,15 @@
                             "Token2": "1"
                         },
                         "2007": "18446744073709551622",
-                        "2023": "175400718394635817552109270754364440562"
+                        "2023": "175400718394635817552109270754364440562",
+                        "2085": "119"
                     },
-                    "confidence": 3,
+                    "confidence": 4,
                     "source": [
                         2001,
                         2007,
-                        2023
+                        2023,
+                        2085
                     ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2095}]": {
@@ -25583,49 +25588,6 @@
                     ],
                     "xcCurrencyID": {
                         "2110": "11"
-                    },
-                    "xcContractAddress": {},
-                    "confidence": 1
-                },
-                "[{\"network\":\"kusama\"},{\"parachain\":2124},{\"palletInstance\":10}]": {
-                    "paraID": 2124,
-                    "relayChain": "kusama",
-                    "nativeChainID": "amplitude",
-                    "symbol": "AMPE",
-                    "decimals": 12,
-                    "interiorType": "x2",
-                    "xcmV1Standardized": [
-                        {
-                            "network": "kusama"
-                        },
-                        {
-                            "parachain": 2124
-                        },
-                        {
-                            "palletInstance": 10
-                        }
-                    ],
-                    "xcmV1MultiLocation": {
-                        "v1": {
-                            "parents": 1,
-                            "interior": {
-                                "x2": [
-                                    {
-                                        "parachain": 2124
-                                    },
-                                    {
-                                        "palletInstance": 10
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "asset": "Native",
-                    "source": [
-                        2124
-                    ],
-                    "xcCurrencyID": {
-                        "2124": "Native"
                     },
                     "xcContractAddress": {},
                     "confidence": 1
