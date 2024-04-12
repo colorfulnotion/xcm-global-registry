@@ -77,6 +77,52 @@
         "paraID": 1000,
         "relayChain": "polkadot",
         "nativeChainID": "statemint",
+        "symbol": "PINK",
+        "decimals": 10,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 50
+            },
+            {
+                "generalIndex": 23
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 23
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "XCM": "7"
+        },
+        "source": [
+            "2094"
+        ]
+    },
+    {
+        "paraID": 1000,
+        "relayChain": "polkadot",
+        "nativeChainID": "statemint",
         "symbol": "USDT",
         "decimals": 6,
         "interiorType": "x3",
@@ -216,6 +262,38 @@
         ]
     },
     {
+        "paraID": 2006,
+        "relayChain": "polkadot",
+        "nativeChainID": "astar",
+        "symbol": "ASTR",
+        "decimals": 18,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2006
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2006
+                    }
+                }
+            }
+        },
+        "asset": {
+            "XCM": "9"
+        },
+        "source": [
+            "2094"
+        ]
+    },
+    {
         "paraID": 2011,
         "relayChain": "polkadot",
         "nativeChainID": "equilibrium",
@@ -256,6 +334,46 @@
         },
         "asset": {
             "XCM": "3"
+        },
+        "source": [
+            "2094"
+        ]
+    },
+    {
+        "paraID": 2034,
+        "relayChain": "polkadot",
+        "nativeChainID": "hydra",
+        "symbol": "HDX",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2034
+            },
+            {
+                "generalIndex": 0
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2034
+                        },
+                        {
+                            "generalIndex": 0
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "XCM": "8"
         },
         "source": [
             "2094"

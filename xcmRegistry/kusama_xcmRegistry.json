@@ -36,9 +36,12 @@
             "2088": {
                 "ForeignAsset": "3"
             },
-            "2114": "1"
+            "2114": "1",
+            "2124": {
+                "XCM": "0"
+            }
         },
-        "confidence": 8,
+        "confidence": 9,
         "source": [
             2001,
             2004,
@@ -47,7 +50,8 @@
             2084,
             2085,
             2088,
-            2114
+            2114,
+            2124
         ]
     },
     "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":8}]": {
@@ -170,9 +174,12 @@
             "2092": {
                 "ForeignAsset": "3"
             },
-            "2110": "30"
+            "2110": "30",
+            "2124": {
+                "XCM": "1"
+            }
         },
-        "confidence": 9,
+        "confidence": 10,
         "source": [
             2000,
             2001,
@@ -182,7 +189,8 @@
             2085,
             2088,
             2092,
-            2110
+            2110,
+            2124
         ]
     },
     "[{\"network\":\"kusama\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":16}]": {
@@ -2698,6 +2706,49 @@
         ],
         "xcCurrencyID": {
             "2110": "11"
+        },
+        "xcContractAddress": {},
+        "confidence": 1
+    },
+    "[{\"network\":\"kusama\"},{\"parachain\":2124},{\"palletInstance\":10}]": {
+        "paraID": 2124,
+        "relayChain": "kusama",
+        "nativeChainID": "amplitude",
+        "symbol": "AMPE",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2124
+            },
+            {
+                "palletInstance": 10
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2124
+                        },
+                        {
+                            "palletInstance": 10
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "Native",
+        "source": [
+            2124
+        ],
+        "xcCurrencyID": {
+            "2124": "Native"
         },
         "xcContractAddress": {},
         "confidence": 1

@@ -1272,6 +1272,37 @@
         ]
     },
     {
+        "paraID": 2037,
+        "relayChain": "polkadot",
+        "nativeChainID": "unique",
+        "symbol": "UNQ",
+        "decimals": 18,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2037
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2037
+                    }
+                }
+            }
+        },
+        "asset": "283870493414747423842723289889816153538",
+        "contractAddress": "0xffffffffd58f77e6693cfb99ebe273d73c678dc2",
+        "source": [
+            "2004"
+        ]
+    },
+    {
         "paraID": 2040,
         "relayChain": "polkadot",
         "nativeChainID": null,

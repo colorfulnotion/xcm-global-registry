@@ -261,6 +261,16 @@
     },
     {
         "asset": {
+            "Token": "283870493414747423842723289889816153538"
+        },
+        "name": "Unique Network",
+        "symbol": "xcUNQ",
+        "decimals": 18,
+        "currencyID": "283870493414747423842723289889816153538",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2037}]"
+    },
+    {
+        "asset": {
             "Token": "289989900872525819559124583375550296953"
         },
         "name": "Bifrost Voucher MANTA",

@@ -252,5 +252,41 @@
             "XCM": "6"
         },
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":10}]"
+    },
+    {
+        "asset": {
+            "XCM": "7"
+        },
+        "name": "PINK",
+        "symbol": "PINK",
+        "decimals": 10,
+        "currencyID": {
+            "XCM": "7"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":23}]"
+    },
+    {
+        "asset": {
+            "XCM": "8"
+        },
+        "name": "HydraDX",
+        "symbol": "HDX",
+        "decimals": 12,
+        "currencyID": {
+            "XCM": "8"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2034},{\"generalIndex\":0}]"
+    },
+    {
+        "asset": {
+            "XCM": "9"
+        },
+        "name": "Astar",
+        "symbol": "ASTR",
+        "decimals": 18,
+        "currencyID": {
+            "XCM": "9"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2006}]"
     }
 ]
