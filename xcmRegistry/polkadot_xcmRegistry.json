@@ -402,14 +402,18 @@
                 }
             }
         },
-        "xcContractAddress": {},
+        "xcContractAddress": {
+            "2004": "0xffffffff5da2d7214d268375cf8fb1715705fdc6"
+        },
         "xcCurrencyID": {
+            "2004": "124463719055550872076363892993240202694",
             "2030": {
                 "Token2": "11"
             }
         },
-        "confidence": 1,
+        "confidence": 2,
         "source": [
+            2004,
             2030
         ]
     },

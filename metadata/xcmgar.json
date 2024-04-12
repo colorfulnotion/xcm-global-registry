@@ -702,7 +702,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "assetCnt": "39",
+                "assetCnt": "40",
                 "data": [
                     {
                         "asset": {
@@ -743,6 +743,16 @@
                         "decimals": 8,
                         "currencyID": "120637696315203257380661607956669368914",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0001\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "124463719055550872076363892993240202694"
+                        },
+                        "name": "DED",
+                        "symbol": "xcDED",
+                        "decimals": 10,
+                        "currencyID": "124463719055550872076363892993240202694",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":30}]"
                     },
                     {
                         "asset": {
@@ -9468,7 +9478,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "xcAssetCnt": "38",
+                "xcAssetCnt": "39",
                 "data": [
                     {
                         "paraID": 0,
@@ -9493,6 +9503,51 @@
                         },
                         "asset": "42259045809535163221576417993425387648",
                         "contractAddress": "0xffffffff1fcacbd218edc0eba20fc2308c778080",
+                        "source": [
+                            "2004"
+                        ]
+                    },
+                    {
+                        "paraID": 1000,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "statemint",
+                        "symbol": "DED",
+                        "decimals": 10,
+                        "interiorType": "x3",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 1000
+                            },
+                            {
+                                "palletInstance": 50
+                            },
+                            {
+                                "generalIndex": 30
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x3": [
+                                        {
+                                            "parachain": 1000
+                                        },
+                                        {
+                                            "palletInstance": 50
+                                        },
+                                        {
+                                            "generalIndex": 30
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "124463719055550872076363892993240202694",
+                        "contractAddress": "0xffffffff5da2d7214d268375cf8fb1715705fdc6",
                         "source": [
                             "2004"
                         ]
@@ -26047,14 +26102,18 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "xcContractAddress": {
+                        "2004": "0xffffffff5da2d7214d268375cf8fb1715705fdc6"
+                    },
                     "xcCurrencyID": {
+                        "2004": "124463719055550872076363892993240202694",
                         "2030": {
                             "Token2": "11"
                         }
                     },
-                    "confidence": 1,
+                    "confidence": 2,
                     "source": [
+                        2004,
                         2030
                     ]
                 },

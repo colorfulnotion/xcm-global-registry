@@ -41,6 +41,16 @@
     },
     {
         "asset": {
+            "Token": "124463719055550872076363892993240202694"
+        },
+        "name": "DED",
+        "symbol": "xcDED",
+        "decimals": 10,
+        "currencyID": "124463719055550872076363892993240202694",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":30}]"
+    },
+    {
+        "asset": {
             "Token": "125699734534028342599692732320197985871"
         },
         "name": "Darwinia Parachain Token",
