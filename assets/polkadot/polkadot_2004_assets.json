@@ -311,6 +311,16 @@
     },
     {
         "asset": {
+            "Token": "314077021455772878282433861213184736939"
+        },
+        "name": "peaq",
+        "symbol": "xcPEAQ",
+        "decimals": 18,
+        "currencyID": "314077021455772878282433861213184736939",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":3338}]"
+    },
+    {
+        "asset": {
             "Token": "32615670524745285411807346420584982855"
         },
         "name": "PARA",

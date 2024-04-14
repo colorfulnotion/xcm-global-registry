@@ -1550,5 +1550,36 @@
         "source": [
             "2004"
         ]
+    },
+    {
+        "paraID": 3338,
+        "relayChain": "polkadot",
+        "nativeChainID": null,
+        "symbol": "PEAQ",
+        "decimals": 18,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 3338
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 3338
+                    }
+                }
+            }
+        },
+        "asset": "314077021455772878282433861213184736939",
+        "contractAddress": "0xffffffffec4908b74688a01374f789b48e9a3eab",
+        "source": [
+            "2004"
+        ]
     }
 ]
