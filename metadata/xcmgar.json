@@ -3032,7 +3032,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "32",
+                "assetCnt": "33",
                 "data": [
                     {
                         "asset": {
@@ -3271,6 +3271,16 @@
                         "decimals": 12,
                         "currencyID": "27",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2008}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "28"
+                        },
+                        "name": "KILT",
+                        "symbol": "KILT",
+                        "decimals": 15,
+                        "currencyID": "28",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2086}]"
                     },
                     {
                         "asset": {
@@ -3587,9 +3597,7 @@
                         "name": "RING",
                         "symbol": "RING",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
                     }
                 ]
             },
@@ -14568,7 +14576,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "26",
+                "xcAssetCnt": "27",
                 "data": [
                     {
                         "paraID": 0,
@@ -15506,6 +15514,36 @@
                             }
                         },
                         "asset": "25",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 2086,
+                        "relayChain": "polkadot",
+                        "nativeChainID": null,
+                        "symbol": "KILT",
+                        "decimals": 15,
+                        "interiorType": "x1",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2086
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x1": {
+                                        "parachain": 2086
+                                    }
+                                }
+                            }
+                        },
+                        "asset": "28",
                         "source": [
                             "2034"
                         ]
@@ -25933,7 +25971,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "68",
+            "registryCnt": "69",
             "data": {
                 "[{\"network\":\"polkadot\"},\"here\"]": {
                     "paraID": 0,
@@ -29279,6 +29317,40 @@
                         2004,
                         2006,
                         2035
+                    ]
+                },
+                "[{\"network\":\"polkadot\"},{\"parachain\":2086}]": {
+                    "paraID": 2086,
+                    "relayChain": "polkadot",
+                    "nativeChainID": null,
+                    "symbol": "KILT",
+                    "decimals": 15,
+                    "interiorType": "x1",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 2086
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x1": {
+                                    "parachain": 2086
+                                }
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2034": "28"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2034
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2092},{\"generalKey\":\"0x0001\"}]": {

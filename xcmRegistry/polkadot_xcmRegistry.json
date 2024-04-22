@@ -3345,6 +3345,40 @@
             2035
         ]
     },
+    "[{\"network\":\"polkadot\"},{\"parachain\":2086}]": {
+        "paraID": 2086,
+        "relayChain": "polkadot",
+        "nativeChainID": null,
+        "symbol": "KILT",
+        "decimals": 15,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2086
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2086
+                    }
+                }
+            }
+        },
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2034": "28"
+        },
+        "confidence": 1,
+        "source": [
+            2034
+        ]
+    },
     "[{\"network\":\"polkadot\"},{\"parachain\":2092},{\"generalKey\":\"0x0001\"}]": {
         "paraID": 2092,
         "relayChain": "polkadot",

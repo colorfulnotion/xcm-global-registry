@@ -940,6 +940,36 @@
         ]
     },
     {
+        "paraID": 2086,
+        "relayChain": "polkadot",
+        "nativeChainID": null,
+        "symbol": "KILT",
+        "decimals": 15,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2086
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2086
+                    }
+                }
+            }
+        },
+        "asset": "28",
+        "source": [
+            "2034"
+        ]
+    },
+    {
         "paraID": 2092,
         "relayChain": "polkadot",
         "nativeChainID": "zeitgeist",

@@ -110,7 +110,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "32",
+                "assetCnt": "33",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2034_assets.json"
             },
             {
@@ -466,7 +466,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "26",
+                "xcAssetCnt": "27",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2034_xcAssets.json"
             },
             {
@@ -600,7 +600,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "68",
+            "registryCnt": "69",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/polkadot_xcmRegistry.json"
         }
     ]

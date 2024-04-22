@@ -239,6 +239,16 @@
     },
     {
         "asset": {
+            "Token": "28"
+        },
+        "name": "KILT",
+        "symbol": "KILT",
+        "decimals": 15,
+        "currencyID": "28",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2086}]"
+    },
+    {
+        "asset": {
             "Token": "3"
         },
         "name": "Bitcoin (Acala Wormhole)",
