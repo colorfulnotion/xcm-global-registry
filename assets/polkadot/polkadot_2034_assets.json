@@ -41,6 +41,16 @@
     },
     {
         "asset": {
+            "Token": "1000081"
+        },
+        "name": "Pendulum",
+        "symbol": "PEN",
+        "decimals": 12,
+        "currencyID": "1000081",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]"
+    },
+    {
+        "asset": {
             "Token": "101"
         },
         "name": "2-Pool",

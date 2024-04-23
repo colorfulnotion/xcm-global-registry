@@ -3032,7 +3032,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "33",
+                "assetCnt": "34",
                 "data": [
                     {
                         "asset": {
@@ -3073,6 +3073,16 @@
                         "symbol": "4-Pool",
                         "decimals": 18,
                         "currencyID": "100"
+                    },
+                    {
+                        "asset": {
+                            "Token": "1000081"
+                        },
+                        "name": "Pendulum",
+                        "symbol": "PEN",
+                        "decimals": 12,
+                        "currencyID": "1000081",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]"
                     },
                     {
                         "asset": {
@@ -3597,7 +3607,9 @@
                         "name": "RING",
                         "symbol": "RING",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -14576,7 +14588,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "27",
+                "xcAssetCnt": "28",
                 "data": [
                     {
                         "paraID": 0,
@@ -15582,6 +15594,44 @@
                             }
                         },
                         "asset": "12",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 2094,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "pendulum",
+                        "symbol": "PEN",
+                        "decimals": 12,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2094
+                            },
+                            {
+                                "palletInstance": 10
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2094
+                                        },
+                                        {
+                                            "palletInstance": 10
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "1000081",
                         "source": [
                             "2034"
                         ]
@@ -29437,11 +29487,13 @@
                     },
                     "xcCurrencyID": {
                         "2004": "45647473099451451833602657905356404688",
+                        "2034": "1000081",
                         "2094": "Native"
                     },
-                    "confidence": 2,
+                    "confidence": 3,
                     "source": [
                         2004,
+                        2034,
                         2094
                     ]
                 },
