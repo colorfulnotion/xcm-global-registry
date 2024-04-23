@@ -1996,7 +1996,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "assetCnt": "72",
+                "assetCnt": "73",
                 "data": [
                     {
                         "asset": {
@@ -2540,6 +2540,14 @@
                         },
                         "name": "vsBOND-DOT-3367-16-23",
                         "symbol": "vsBOND-DOT-3367-16-23",
+                        "decimals": 10
+                    },
+                    {
+                        "asset": {
+                            "VSBond2": "033701623"
+                        },
+                        "name": "vsBOND-DOT-3370-16-23",
+                        "symbol": "vsBOND-DOT-3370-16-23",
                         "decimals": 10
                     },
                     {
@@ -3527,9 +3535,7 @@
                         "name": "PHA",
                         "symbol": "PHA",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2035}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2035}]"
                     }
                 ]
             },
