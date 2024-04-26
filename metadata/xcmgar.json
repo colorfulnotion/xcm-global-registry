@@ -2062,7 +2062,9 @@
                         "name": "BNC",
                         "symbol": "BNC",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]"
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]",
+                        "inferred": true,
+                        "confidence": 0
                     },
                     {
                         "asset": {
@@ -3038,7 +3040,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "34",
+                "assetCnt": "36",
                 "data": [
                     {
                         "asset": {
@@ -3089,6 +3091,26 @@
                         "decimals": 12,
                         "currencyID": "1000081",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "1000099"
+                        },
+                        "name": "Acala",
+                        "symbol": "ACA",
+                        "decimals": 12,
+                        "currencyID": "1000099",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0000\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "1000100"
+                        },
+                        "name": "Liquid DOT",
+                        "symbol": "LDOT",
+                        "decimals": 10,
+                        "currencyID": "1000100",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0003\"}]"
                     },
                     {
                         "asset": {
@@ -3613,7 +3635,9 @@
                         "name": "RING",
                         "symbol": "RING",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -14592,7 +14616,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "28",
+                "xcAssetCnt": "30",
                 "data": [
                     {
                         "paraID": 0,
@@ -14750,6 +14774,44 @@
                         "paraID": 2000,
                         "relayChain": "polkadot",
                         "nativeChainID": "acala",
+                        "symbol": "ACA",
+                        "decimals": 12,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0x0000"
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0x0000"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "1000099",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 2000,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "acala",
                         "symbol": "APE",
                         "decimals": 18,
                         "interiorType": "x2",
@@ -14856,6 +14918,44 @@
                             }
                         },
                         "asset": "7",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 2000,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "acala",
+                        "symbol": "LDOT",
+                        "decimals": 10,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2000
+                            },
+                            {
+                                "generalKey": "0x0003"
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2000
+                                        },
+                                        {
+                                            "generalKey": "0x0003"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "1000100",
                         "source": [
                             "2034"
                         ]
@@ -26492,13 +26592,15 @@
                         "2032": {
                             "ForeignAsset": "1"
                         },
+                        "2034": "1000100",
                         "2035": "4"
                     },
-                    "confidence": 4,
+                    "confidence": 5,
                     "source": [
                         2004,
                         2006,
                         2032,
+                        2034,
                         2035
                     ]
                 },
@@ -26595,12 +26697,14 @@
                     "xcCurrencyID": {
                         "2004": "224821240862170613278369189818311486111",
                         "2006": "18446744073709551616",
+                        "2034": "1000099",
                         "2035": "5"
                     },
-                    "confidence": 3,
+                    "confidence": 4,
                     "source": [
                         2004,
                         2006,
+                        2034,
                         2035
                     ]
                 },

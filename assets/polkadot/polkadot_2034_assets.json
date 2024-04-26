@@ -51,6 +51,26 @@
     },
     {
         "asset": {
+            "Token": "1000099"
+        },
+        "name": "Acala",
+        "symbol": "ACA",
+        "decimals": 12,
+        "currencyID": "1000099",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0000\"}]"
+    },
+    {
+        "asset": {
+            "Token": "1000100"
+        },
+        "name": "Liquid DOT",
+        "symbol": "LDOT",
+        "decimals": 10,
+        "currencyID": "1000100",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0003\"}]"
+    },
+    {
+        "asset": {
             "Token": "101"
         },
         "name": "2-Pool",

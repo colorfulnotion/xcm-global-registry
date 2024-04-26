@@ -155,6 +155,44 @@
         "paraID": 2000,
         "relayChain": "polkadot",
         "nativeChainID": "acala",
+        "symbol": "ACA",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x0000"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0000"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "1000099",
+        "source": [
+            "2034"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "polkadot",
+        "nativeChainID": "acala",
         "symbol": "APE",
         "decimals": 18,
         "interiorType": "x2",
@@ -261,6 +299,44 @@
             }
         },
         "asset": "7",
+        "source": [
+            "2034"
+        ]
+    },
+    {
+        "paraID": 2000,
+        "relayChain": "polkadot",
+        "nativeChainID": "acala",
+        "symbol": "LDOT",
+        "decimals": 10,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2000
+            },
+            {
+                "generalKey": "0x0003"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2000
+                        },
+                        {
+                            "generalKey": "0x0003"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "1000100",
         "source": [
             "2034"
         ]
