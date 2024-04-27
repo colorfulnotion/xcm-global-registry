@@ -21,6 +21,16 @@
     },
     {
         "asset": {
+            "Token": "112679793397406599376365943185137098326"
+        },
+        "name": "STINK",
+        "symbol": "xcSTINK",
+        "decimals": 10,
+        "currencyID": "112679793397406599376365943185137098326",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":42069}]"
+    },
+    {
+        "asset": {
             "Token": "114018676402354620972806895487280206446"
         },
         "name": "Bifrost Voucher ASTR",

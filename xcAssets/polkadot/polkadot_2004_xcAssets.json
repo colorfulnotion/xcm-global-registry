@@ -207,6 +207,51 @@
         ]
     },
     {
+        "paraID": 1000,
+        "relayChain": "polkadot",
+        "nativeChainID": "statemint",
+        "symbol": "STINK",
+        "decimals": 10,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 50
+            },
+            {
+                "generalIndex": 42069
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 42069
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "112679793397406599376365943185137098326",
+        "contractAddress": "0xffffffff54c556bd1d0f64ec6c78f1b477525e56",
+        "source": [
+            "2004"
+        ]
+    },
+    {
         "paraID": 2000,
         "relayChain": "polkadot",
         "nativeChainID": "acala",

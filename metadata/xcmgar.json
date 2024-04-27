@@ -702,7 +702,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "assetCnt": "42",
+                "assetCnt": "43",
                 "data": [
                     {
                         "asset": {
@@ -723,6 +723,16 @@
                         "decimals": 12,
                         "currencyID": "110021739665376159354538090254163045594",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0001\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "112679793397406599376365943185137098326"
+                        },
+                        "name": "STINK",
+                        "symbol": "xcSTINK",
+                        "decimals": 10,
+                        "currencyID": "112679793397406599376365943185137098326",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":42069}]"
                     },
                     {
                         "asset": {
@@ -3635,9 +3645,7 @@
                         "name": "RING",
                         "symbol": "RING",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
                     }
                 ]
             },
@@ -9582,7 +9590,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "xcAssetCnt": "41",
+                "xcAssetCnt": "42",
                 "data": [
                     {
                         "paraID": 0,
@@ -9787,6 +9795,51 @@
                         },
                         "asset": "64174511183114006009298114091987195453",
                         "contractAddress": "0xffffffff30478fafbe935e466da114e14fb3563d",
+                        "source": [
+                            "2004"
+                        ]
+                    },
+                    {
+                        "paraID": 1000,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "statemint",
+                        "symbol": "STINK",
+                        "decimals": 10,
+                        "interiorType": "x3",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 1000
+                            },
+                            {
+                                "palletInstance": 50
+                            },
+                            {
+                                "generalIndex": 42069
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x3": [
+                                        {
+                                            "parachain": 1000
+                                        },
+                                        {
+                                            "palletInstance": 50
+                                        },
+                                        {
+                                            "generalIndex": 42069
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "112679793397406599376365943185137098326",
+                        "contractAddress": "0xffffffff54c556bd1d0f64ec6c78f1b477525e56",
                         "source": [
                             "2004"
                         ]
@@ -26125,7 +26178,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "69",
+            "registryCnt": "70",
             "data": {
                 "[{\"network\":\"polkadot\"},\"here\"]": {
                     "paraID": 0,
@@ -26547,6 +26600,56 @@
                     "source": [
                         2004,
                         2030
+                    ]
+                },
+                "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":42069}]": {
+                    "paraID": 1000,
+                    "relayChain": "polkadot",
+                    "nativeChainID": "statemint",
+                    "symbol": "STINK",
+                    "decimals": 10,
+                    "interiorType": "x3",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 42069
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x3": [
+                                    {
+                                        "parachain": 1000
+                                    },
+                                    {
+                                        "palletInstance": 50
+                                    },
+                                    {
+                                        "generalIndex": 42069
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {
+                        "2004": "0xffffffff54c556bd1d0f64ec6c78f1b477525e56"
+                    },
+                    "xcCurrencyID": {
+                        "2004": "112679793397406599376365943185137098326"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2004
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0003\"}]": {
