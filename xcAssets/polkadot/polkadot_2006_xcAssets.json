@@ -791,5 +791,44 @@
         "source": [
             "2006"
         ]
+    },
+    {
+        "paraID": 2094,
+        "relayChain": "polkadot",
+        "nativeChainID": "pendulum",
+        "symbol": "xcPEN",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2094
+            },
+            {
+                "palletInstance": 10
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2094
+                        },
+                        {
+                            "palletInstance": 10
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "18446744073709551634",
+        "contractAddress": "0xffffffff00000000000000010000000000000012",
+        "source": [
+            "2006"
+        ]
     }
 ]

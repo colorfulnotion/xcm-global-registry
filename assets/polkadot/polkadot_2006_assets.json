@@ -352,6 +352,16 @@
     },
     {
         "asset": {
+            "Token": "18446744073709551634"
+        },
+        "name": "Pendulum",
+        "symbol": "xcPEN",
+        "decimals": 12,
+        "currencyID": "18446744073709551634",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]"
+    },
+    {
+        "asset": {
             "Token": "340282366920938463463374607431768211455"
         },
         "name": "Polkadot",
