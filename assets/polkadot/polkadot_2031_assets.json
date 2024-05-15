@@ -185,7 +185,7 @@
                 ]
             }
         },
-        "name": "New Silver Series 3 NS3 Junior",
+        "name": "New Silver Series 3 Junior",
         "symbol": "NS3JR",
         "decimals": 6,
         "currencyID": {
@@ -204,7 +204,7 @@
                 ]
             }
         },
-        "name": "New Silver Series 3 NS3 Senior",
+        "name": "New Silver Series 3 Senior",
         "symbol": "NS3SR",
         "decimals": 6,
         "currencyID": {
