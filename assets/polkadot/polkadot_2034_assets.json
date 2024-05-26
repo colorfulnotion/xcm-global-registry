@@ -279,6 +279,16 @@
     },
     {
         "asset": {
+            "Token": "29"
+        },
+        "name": "Polimec",
+        "symbol": "PLMC",
+        "decimals": 10,
+        "currencyID": "29",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":3344}]"
+    },
+    {
+        "asset": {
             "Token": "3"
         },
         "name": "Bitcoin (Acala Wormhole)",

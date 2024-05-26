@@ -3643,5 +3643,39 @@
         "source": [
             2004
         ]
+    },
+    "[{\"network\":\"polkadot\"},{\"parachain\":3344}]": {
+        "paraID": 3344,
+        "relayChain": "polkadot",
+        "nativeChainID": null,
+        "symbol": "PLMC",
+        "decimals": 10,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 3344
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 3344
+                    }
+                }
+            }
+        },
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2034": "29"
+        },
+        "confidence": 1,
+        "source": [
+            2034
+        ]
     }
 }

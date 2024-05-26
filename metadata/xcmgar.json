@@ -3060,7 +3060,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "36",
+                "assetCnt": "37",
                 "data": [
                     {
                         "asset": {
@@ -3339,6 +3339,16 @@
                         "decimals": 15,
                         "currencyID": "28",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2086}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "29"
+                        },
+                        "name": "Polimec",
+                        "symbol": "PLMC",
+                        "decimals": 10,
+                        "currencyID": "29",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":3344}]"
                     },
                     {
                         "asset": {
@@ -14716,7 +14726,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "30",
+                "xcAssetCnt": "31",
                 "data": [
                     {
                         "paraID": 0,
@@ -15866,6 +15876,36 @@
                             }
                         },
                         "asset": "24",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 3344,
+                        "relayChain": "polkadot",
+                        "nativeChainID": null,
+                        "symbol": "PLMC",
+                        "decimals": 10,
+                        "interiorType": "x1",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 3344
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x1": {
+                                        "parachain": 3344
+                                    }
+                                }
+                            }
+                        },
+                        "asset": "29",
                         "source": [
                             "2034"
                         ]
@@ -26225,7 +26265,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "70",
+            "registryCnt": "71",
             "data": {
                 "[{\"network\":\"polkadot\"},\"here\"]": {
                     "paraID": 0,
@@ -29870,6 +29910,40 @@
                     "confidence": 1,
                     "source": [
                         2004
+                    ]
+                },
+                "[{\"network\":\"polkadot\"},{\"parachain\":3344}]": {
+                    "paraID": 3344,
+                    "relayChain": "polkadot",
+                    "nativeChainID": null,
+                    "symbol": "PLMC",
+                    "decimals": 10,
+                    "interiorType": "x1",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 3344
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x1": {
+                                    "parachain": 3344
+                                }
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2034": "29"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2034
                     ]
                 }
             }
