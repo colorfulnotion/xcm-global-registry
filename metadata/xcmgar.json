@@ -2630,7 +2630,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2031,
                 "id": "centrifuge",
-                "assetCnt": "18",
+                "assetCnt": "19",
                 "data": [
                     {
                         "asset": {
@@ -2851,6 +2851,25 @@
                         "asset": {
                             "Token": {
                                 "Tranche": [
+                                    "1,655,476,167",
+                                    "0x4859c6f181b1b993c35b313bedb949cf"
+                                ]
+                            }
+                        },
+                        "name": "Anemoy DeFi Yield Fund 1 SP DeFi Yield Fund Token",
+                        "symbol": "DYF",
+                        "decimals": 6,
+                        "currencyID": {
+                            "Tranche": [
+                                "1,655,476,167",
+                                "0x4859c6f181b1b993c35b313bedb949cf"
+                            ]
+                        }
+                    },
+                    {
+                        "asset": {
+                            "Token": {
+                                "Tranche": [
                                     "4,139,607,887",
                                     "0x97aa65f23e7be09fcd62d0554d2e9273"
                                 ]
@@ -3060,7 +3079,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "37",
+                "assetCnt": "38",
                 "data": [
                     {
                         "asset": {
@@ -3359,6 +3378,16 @@
                         "decimals": 8,
                         "currencyID": "3",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x02c80084af223c8b598536178d9361dc55bfda6818\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "30"
+                        },
+                        "name": "Mythos",
+                        "symbol": "MYTH",
+                        "decimals": 18,
+                        "currencyID": "30",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":3369}]"
                     },
                     {
                         "asset": {
@@ -14729,7 +14758,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "31",
+                "xcAssetCnt": "32",
                 "data": [
                     {
                         "paraID": 0,
@@ -15909,6 +15938,36 @@
                             }
                         },
                         "asset": "29",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 3369,
+                        "relayChain": "polkadot",
+                        "nativeChainID": null,
+                        "symbol": "MYTH",
+                        "decimals": 18,
+                        "interiorType": "x1",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 3369
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x1": {
+                                        "parachain": 3369
+                                    }
+                                }
+                            }
+                        },
+                        "asset": "30",
                         "source": [
                             "2034"
                         ]
@@ -26268,7 +26327,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "71",
+            "registryCnt": "72",
             "data": {
                 "[{\"network\":\"polkadot\"},\"here\"]": {
                     "paraID": 0,
@@ -29943,6 +30002,40 @@
                     "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2034": "29"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2034
+                    ]
+                },
+                "[{\"network\":\"polkadot\"},{\"parachain\":3369}]": {
+                    "paraID": 3369,
+                    "relayChain": "polkadot",
+                    "nativeChainID": null,
+                    "symbol": "MYTH",
+                    "decimals": 18,
+                    "interiorType": "x1",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 3369
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x1": {
+                                    "parachain": 3369
+                                }
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2034": "30"
                     },
                     "confidence": 1,
                     "source": [

@@ -1180,5 +1180,35 @@
         "source": [
             "2034"
         ]
+    },
+    {
+        "paraID": 3369,
+        "relayChain": "polkadot",
+        "nativeChainID": null,
+        "symbol": "MYTH",
+        "decimals": 18,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 3369
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 3369
+                    }
+                }
+            }
+        },
+        "asset": "30",
+        "source": [
+            "2034"
+        ]
     }
 ]

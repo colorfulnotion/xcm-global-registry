@@ -218,6 +218,25 @@
         "asset": {
             "Token": {
                 "Tranche": [
+                    "1,655,476,167",
+                    "0x4859c6f181b1b993c35b313bedb949cf"
+                ]
+            }
+        },
+        "name": "Anemoy DeFi Yield Fund 1 SP DeFi Yield Fund Token",
+        "symbol": "DYF",
+        "decimals": 6,
+        "currencyID": {
+            "Tranche": [
+                "1,655,476,167",
+                "0x4859c6f181b1b993c35b313bedb949cf"
+            ]
+        }
+    },
+    {
+        "asset": {
+            "Token": {
+                "Tranche": [
                     "4,139,607,887",
                     "0x97aa65f23e7be09fcd62d0554d2e9273"
                 ]

@@ -299,6 +299,16 @@
     },
     {
         "asset": {
+            "Token": "30"
+        },
+        "name": "Mythos",
+        "symbol": "MYTH",
+        "decimals": 18,
+        "currencyID": "30",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":3369}]"
+    },
+    {
+        "asset": {
             "Token": "4"
         },
         "name": "Ethereum (Acala Wormhole)",
