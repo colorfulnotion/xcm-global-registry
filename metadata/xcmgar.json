@@ -958,8 +958,8 @@
                         "asset": {
                             "Token": "238111524681612888331172110363070489924"
                         },
-                        "name": "OriginTrail Parachain Token",
-                        "symbol": "xcOTP",
+                        "name": "NeuroWeb",
+                        "symbol": "xcNEURO",
                         "decimals": 12,
                         "currencyID": "238111524681612888331172110363070489924",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2043},{\"palletInstance\":10}]"
@@ -3648,7 +3648,10 @@
                         },
                         "name": "NEURO",
                         "symbol": "NEURO",
-                        "decimals": 12
+                        "decimals": 12,
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2043},{\"palletInstance\":10}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -10993,7 +10996,7 @@
                         "paraID": 2043,
                         "relayChain": "polkadot",
                         "nativeChainID": "origintrail-parachain",
-                        "symbol": "OTP",
+                        "symbol": "NEURO",
                         "decimals": 12,
                         "interiorType": "x2",
                         "xcmV1Standardized": [
@@ -29536,7 +29539,7 @@
                     "paraID": 2043,
                     "relayChain": "polkadot",
                     "nativeChainID": "origintrail-parachain",
-                    "symbol": "OTP",
+                    "symbol": "NEURO",
                     "decimals": 12,
                     "interiorType": "x2",
                     "xcmV1Standardized": [

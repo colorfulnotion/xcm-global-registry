@@ -1382,7 +1382,7 @@
         "paraID": 2043,
         "relayChain": "polkadot",
         "nativeChainID": "origintrail-parachain",
-        "symbol": "OTP",
+        "symbol": "NEURO",
         "decimals": 12,
         "interiorType": "x2",
         "xcmV1Standardized": [

@@ -253,8 +253,8 @@
         "asset": {
             "Token": "238111524681612888331172110363070489924"
         },
-        "name": "OriginTrail Parachain Token",
-        "symbol": "xcOTP",
+        "name": "NeuroWeb",
+        "symbol": "xcNEURO",
         "decimals": 12,
         "currencyID": "238111524681612888331172110363070489924",
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2043},{\"palletInstance\":10}]"
