@@ -117,7 +117,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2035,
                 "id": "phala",
-                "assetCnt": "15",
+                "assetCnt": "17",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2035_assets.json"
             },
             {
@@ -473,7 +473,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2035,
                 "id": "phala",
-                "xcAssetCnt": "13",
+                "xcAssetCnt": "15",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2035_xcAssets.json"
             },
             {

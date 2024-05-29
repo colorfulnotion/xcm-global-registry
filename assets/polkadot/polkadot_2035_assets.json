@@ -60,6 +60,26 @@
     },
     {
         "asset": {
+            "Token": "13"
+        },
+        "name": "Interlay",
+        "symbol": "INTR",
+        "decimals": 10,
+        "currencyID": "13",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0002\"}]"
+    },
+    {
+        "asset": {
+            "Token": "14"
+        },
+        "name": "interBTC",
+        "symbol": "iBTC",
+        "decimals": 8,
+        "currencyID": "14",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0001\"}]"
+    },
+    {
+        "asset": {
             "Token": "2"
         },
         "name": "PARA",

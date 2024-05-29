@@ -396,6 +396,82 @@
         ]
     },
     {
+        "paraID": 2032,
+        "relayChain": "polkadot",
+        "nativeChainID": "interlay",
+        "symbol": "INTR",
+        "decimals": 10,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2032
+            },
+            {
+                "generalKey": "0x0002"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2032
+                        },
+                        {
+                            "generalKey": "0x0002"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "13",
+        "source": [
+            "2035"
+        ]
+    },
+    {
+        "paraID": 2032,
+        "relayChain": "polkadot",
+        "nativeChainID": "interlay",
+        "symbol": "iBTC",
+        "decimals": 8,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2032
+            },
+            {
+                "generalKey": "0x0001"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2032
+                        },
+                        {
+                            "generalKey": "0x0001"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "14",
+        "source": [
+            "2035"
+        ]
+    },
+    {
         "paraID": 2034,
         "relayChain": "polkadot",
         "nativeChainID": "hydra",

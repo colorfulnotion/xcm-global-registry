@@ -3466,7 +3466,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2035,
                 "id": "phala",
-                "assetCnt": "15",
+                "assetCnt": "17",
                 "data": [
                     {
                         "asset": {
@@ -3526,6 +3526,26 @@
                         "decimals": 10,
                         "currencyID": "12",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":23}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "13"
+                        },
+                        "name": "Interlay",
+                        "symbol": "INTR",
+                        "decimals": 10,
+                        "currencyID": "13",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0002\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "14"
+                        },
+                        "name": "interBTC",
+                        "symbol": "iBTC",
+                        "decimals": 8,
+                        "currencyID": "14",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0001\"}]"
                     },
                     {
                         "asset": {
@@ -15978,7 +15998,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2035,
                 "id": "phala",
-                "xcAssetCnt": "13",
+                "xcAssetCnt": "15",
                 "data": [
                     {
                         "paraID": 0,
@@ -16372,6 +16392,82 @@
                             }
                         },
                         "asset": "8",
+                        "source": [
+                            "2035"
+                        ]
+                    },
+                    {
+                        "paraID": 2032,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "interlay",
+                        "symbol": "INTR",
+                        "decimals": 10,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2032
+                            },
+                            {
+                                "generalKey": "0x0002"
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2032
+                                        },
+                                        {
+                                            "generalKey": "0x0002"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "13",
+                        "source": [
+                            "2035"
+                        ]
+                    },
+                    {
+                        "paraID": 2032,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "interlay",
+                        "symbol": "iBTC",
+                        "decimals": 8,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2032
+                            },
+                            {
+                                "generalKey": "0x0001"
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2032
+                                        },
+                                        {
+                                            "generalKey": "0x0001"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "14",
                         "source": [
                             "2035"
                         ]
@@ -29339,15 +29435,17 @@
                         "2030": {
                             "Token2": "6"
                         },
-                        "2034": "11"
+                        "2034": "11",
+                        "2035": "14"
                     },
-                    "confidence": 5,
+                    "confidence": 6,
                     "source": [
                         2000,
                         2004,
                         2006,
                         2030,
-                        2034
+                        2034,
+                        2035
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0002\"}]": {
@@ -29396,15 +29494,17 @@
                         "2030": {
                             "Token2": "7"
                         },
-                        "2034": "17"
+                        "2034": "17",
+                        "2035": "13"
                     },
-                    "confidence": 5,
+                    "confidence": 6,
                     "source": [
                         2000,
                         2004,
                         2006,
                         2030,
-                        2034
+                        2034,
+                        2035
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2034},{\"generalIndex\":0}]": {
