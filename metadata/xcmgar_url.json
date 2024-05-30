@@ -40,7 +40,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2006,
                 "id": "astar",
-                "assetCnt": "45",
+                "assetCnt": "47",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2006_assets.json"
             },
             {
@@ -431,7 +431,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2006,
                 "id": "astar",
-                "xcAssetCnt": "22",
+                "xcAssetCnt": "24",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2006_xcAssets.json"
             },
             {
@@ -600,7 +600,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "72",
+            "registryCnt": "74",
             "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcmRegistry/polkadot_xcmRegistry.json"
         }
     ]

@@ -3534,6 +3534,118 @@
             2094
         ]
     },
+    "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":53},{\"generalIndex\":2},{\"generalKey\":\"0x45555243\"},{\"generalKey\":\"0x2112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c\"}]": {
+        "paraID": 2094,
+        "relayChain": "polkadot",
+        "nativeChainID": "pendulum",
+        "symbol": "EURC.s",
+        "decimals": 12,
+        "interiorType": "x5",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2094
+            },
+            {
+                "palletInstance": 53
+            },
+            {
+                "generalIndex": 2
+            },
+            {
+                "generalKey": "0x45555243"
+            },
+            {
+                "generalKey": "0x2112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x5": [
+                        {
+                            "parachain": 2094
+                        },
+                        {
+                            "palletInstance": 53
+                        },
+                        {
+                            "generalIndex": 2
+                        },
+                        {
+                            "generalKey": "0x45555243"
+                        },
+                        {
+                            "generalKey": "0x2112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c"
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "2006": "0xffffffff00000000000000010000000000000014"
+        },
+        "xcCurrencyID": {
+            "2006": "18446744073709551636"
+        },
+        "confidence": 1,
+        "source": [
+            2006
+        ]
+    },
+    "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":53},{\"generalIndex\":2}]": {
+        "paraID": 2094,
+        "relayChain": "polkadot",
+        "nativeChainID": "pendulum",
+        "symbol": "XLM.s",
+        "decimals": 12,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2094
+            },
+            {
+                "palletInstance": 53
+            },
+            {
+                "generalIndex": 2
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 2094
+                        },
+                        {
+                            "palletInstance": 53
+                        },
+                        {
+                            "generalIndex": 2
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "2006": "0xffffffff00000000000000010000000000000013"
+        },
+        "xcCurrencyID": {
+            "2006": "18446744073709551635"
+        },
+        "confidence": 1,
+        "source": [
+            2006
+        ]
+    },
     "[{\"network\":\"polkadot\"},{\"parachain\":2101}]": {
         "paraID": 2101,
         "relayChain": "polkadot",

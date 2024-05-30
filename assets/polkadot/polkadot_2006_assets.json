@@ -362,6 +362,26 @@
     },
     {
         "asset": {
+            "Token": "18446744073709551635"
+        },
+        "name": "Stellar Lumen",
+        "symbol": "XLM.s",
+        "decimals": 12,
+        "currencyID": "18446744073709551635",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":53},{\"generalIndex\":2}]"
+    },
+    {
+        "asset": {
+            "Token": "18446744073709551636"
+        },
+        "name": "Stellar EURC",
+        "symbol": "EURC.s",
+        "decimals": 12,
+        "currencyID": "18446744073709551636",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":53},{\"generalIndex\":2},{\"generalKey\":\"0x45555243\"},{\"generalKey\":\"0x2112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c\"}]"
+    },
+    {
+        "asset": {
             "Token": "340282366920938463463374607431768211455"
         },
         "name": "Polkadot",
