@@ -224,9 +224,7 @@
             },
             {
                 "accountKey20": {
-                    "network": {
-                        "any": null
-                    },
+                    "network": null,
                     "key": "0x3225edce8ad30ae282e62fa32e7418e4b9cf197b"
                 }
             }
@@ -244,9 +242,7 @@
                         },
                         {
                             "accountKey20": {
-                                "network": {
-                                    "any": null
-                                },
+                                "network": null,
                                 "key": "0x3225edce8ad30ae282e62fa32e7418e4b9cf197b"
                             }
                         }
