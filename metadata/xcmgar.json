@@ -702,7 +702,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "assetCnt": "43",
+                "assetCnt": "44",
                 "data": [
                     {
                         "asset": {
@@ -1063,6 +1063,16 @@
                         "decimals": 12,
                         "currencyID": "45647473099451451833602657905356404688",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "61295607754960722617854661686514597014"
+                        },
+                        "name": "dog wif dots",
+                        "symbol": "xcWIFD",
+                        "decimals": 10,
+                        "currencyID": "61295607754960722617854661686514597014",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":17}]"
                     },
                     {
                         "asset": {
@@ -9686,7 +9696,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "xcAssetCnt": "42",
+                "xcAssetCnt": "43",
                 "data": [
                     {
                         "paraID": 0,
@@ -9711,6 +9721,51 @@
                         },
                         "asset": "42259045809535163221576417993425387648",
                         "contractAddress": "0xffffffff1fcacbd218edc0eba20fc2308c778080",
+                        "source": [
+                            "2004"
+                        ]
+                    },
+                    {
+                        "paraID": 1000,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "statemint",
+                        "symbol": "WIFD",
+                        "decimals": 10,
+                        "interiorType": "x3",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 1000
+                            },
+                            {
+                                "palletInstance": 50
+                            },
+                            {
+                                "generalIndex": 17
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x3": [
+                                        {
+                                            "parachain": 1000
+                                        },
+                                        {
+                                            "palletInstance": 50
+                                        },
+                                        {
+                                            "generalIndex": 17
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "61295607754960722617854661686514597014",
+                        "contractAddress": "0xffffffff2e1d1ac9ea1686255befe995b31abc96",
                         "source": [
                             "2004"
                         ]
@@ -26547,7 +26602,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "74",
+            "registryCnt": "75",
             "data": {
                 "[{\"network\":\"polkadot\"},\"here\"]": {
                     "paraID": 0,
@@ -26915,6 +26970,56 @@
                     "confidence": 1,
                     "source": [
                         2000
+                    ]
+                },
+                "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":17}]": {
+                    "paraID": 1000,
+                    "relayChain": "polkadot",
+                    "nativeChainID": "statemint",
+                    "symbol": "WIFD",
+                    "decimals": 10,
+                    "interiorType": "x3",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 17
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x3": [
+                                    {
+                                        "parachain": 1000
+                                    },
+                                    {
+                                        "palletInstance": 50
+                                    },
+                                    {
+                                        "generalIndex": 17
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {
+                        "2004": "0xffffffff2e1d1ac9ea1686255befe995b31abc96"
+                    },
+                    "xcCurrencyID": {
+                        "2004": "61295607754960722617854661686514597014"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2004
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":30}]": {

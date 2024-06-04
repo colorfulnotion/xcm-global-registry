@@ -361,6 +361,16 @@
     },
     {
         "asset": {
+            "Token": "61295607754960722617854661686514597014"
+        },
+        "name": "dog wif dots",
+        "symbol": "xcWIFD",
+        "decimals": 10,
+        "currencyID": "61295607754960722617854661686514597014",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":17}]"
+    },
+    {
+        "asset": {
             "Token": "64174511183114006009298114091987195453"
         },
         "name": "PINK",
