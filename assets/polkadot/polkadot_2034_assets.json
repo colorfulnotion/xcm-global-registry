@@ -3,7 +3,7 @@
         "asset": {
             "Token": "0"
         },
-        "name": "HydraDX",
+        "name": "Hydration",
         "symbol": "HDX",
         "decimals": 12,
         "currencyID": "0",
@@ -15,8 +15,8 @@
         "asset": {
             "Token": "1"
         },
-        "name": "Lerna",
-        "symbol": "LRNA",
+        "name": "H2O",
+        "symbol": "H2O",
         "decimals": 12,
         "currencyID": "1"
     },
