@@ -382,6 +382,46 @@
     },
     {
         "asset": {
+            "Token": "18446744073709551637"
+        },
+        "name": "Voucher GLMR",
+        "symbol": "vGLMR",
+        "decimals": 18,
+        "currencyID": "18446744073709551637",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0901\"}]"
+    },
+    {
+        "asset": {
+            "Token": "18446744073709551638"
+        },
+        "name": "Voucher MANTA",
+        "symbol": "vMANTA",
+        "decimals": 18,
+        "currencyID": "18446744073709551638",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0908\"}]"
+    },
+    {
+        "asset": {
+            "Token": "18446744073709551639"
+        },
+        "name": "Filecoin Network Token",
+        "symbol": "FIL",
+        "decimals": 18,
+        "currencyID": "18446744073709551639",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0804\"}]"
+    },
+    {
+        "asset": {
+            "Token": "18446744073709551640"
+        },
+        "name": "Voucher FIL",
+        "symbol": "vFIL",
+        "decimals": 18,
+        "currencyID": "18446744073709551640",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0904\"}]"
+    },
+    {
+        "asset": {
             "Token": "340282366920938463463374607431768211455"
         },
         "name": "Polkadot",
