@@ -1016,6 +1016,44 @@
         ]
     },
     {
+        "paraID": 2046,
+        "relayChain": "polkadot",
+        "nativeChainID": "darwinia",
+        "symbol": "RING",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2046
+            },
+            {
+                "palletInstance": 5
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2046
+                        },
+                        {
+                            "palletInstance": 5
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "31",
+        "source": [
+            "2034"
+        ]
+    },
+    {
         "paraID": 2086,
         "relayChain": "polkadot",
         "nativeChainID": null,

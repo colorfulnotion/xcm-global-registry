@@ -3149,7 +3149,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "38",
+                "assetCnt": "39",
                 "data": [
                     {
                         "asset": {
@@ -3458,6 +3458,16 @@
                         "decimals": 18,
                         "currencyID": "30",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":3369}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "31"
+                        },
+                        "name": "Darwinia Network RING",
+                        "symbol": "RING",
+                        "decimals": 18,
+                        "currencyID": "31",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
                     },
                     {
                         "asset": {
@@ -15157,7 +15167,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "32",
+                "xcAssetCnt": "33",
                 "data": [
                     {
                         "paraID": 0,
@@ -16171,6 +16181,44 @@
                             }
                         },
                         "asset": "25",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 2046,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "darwinia",
+                        "symbol": "RING",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2046
+                            },
+                            {
+                                "palletInstance": 5
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2046
+                                        },
+                                        {
+                                            "palletInstance": 5
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "31",
                         "source": [
                             "2034"
                         ]
@@ -24322,17 +24370,16 @@
                             }
                         }
                     },
-                    "asset": "18446744073709551634",
-                    "source": [
-                        2007
-                    ],
-                    "xcCurrencyID": {
-                        "2007": "18446744073709551634"
-                    },
                     "xcContractAddress": {
                         "2007": "0xffffffff00000000000000010000000000000012"
                     },
-                    "confidence": 1
+                    "xcCurrencyID": {
+                        "2007": "18446744073709551634"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2007
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x0081\"}]": {
                     "paraID": 2000,
@@ -24495,14 +24542,9 @@
                             }
                         }
                     },
-                    "asset": "18446744073709551619",
-                    "source": [
-                        2007,
-                        2084,
-                        2085,
-                        2092,
-                        2114
-                    ],
+                    "xcContractAddress": {
+                        "2007": "0xffffffff00000000000000010000000000000003"
+                    },
                     "xcCurrencyID": {
                         "2007": "18446744073709551619",
                         "2084": "10",
@@ -24512,10 +24554,14 @@
                         },
                         "2114": "4"
                     },
-                    "xcContractAddress": {
-                        "2007": "0xffffffff00000000000000010000000000000003"
-                    },
-                    "confidence": 5
+                    "confidence": 5,
+                    "source": [
+                        2007,
+                        2084,
+                        2085,
+                        2092,
+                        2114
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2000},{\"generalKey\":\"0x02e278651e8ff8e2efa83d7f84205084ebc90688be\"}]": {
                     "paraID": 2000,
@@ -25588,17 +25634,16 @@
                             }
                         }
                     },
-                    "asset": "18446744073709551626",
-                    "source": [
-                        2007
-                    ],
-                    "xcCurrencyID": {
-                        "2007": "18446744073709551626"
-                    },
                     "xcContractAddress": {
                         "2007": "0xffffffff0000000000000001000000000000000a"
                     },
-                    "confidence": 1
+                    "xcCurrencyID": {
+                        "2007": "18446744073709551626"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2007
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2023},{\"palletInstance\":10}]": {
                     "paraID": 2023,
@@ -30256,12 +30301,14 @@
                     "xcCurrencyID": {
                         "2004": "125699734534028342599692732320197985871",
                         "2006": "18446744073709551627",
+                        "2034": "31",
                         "2035": "7"
                     },
-                    "confidence": 3,
+                    "confidence": 4,
                     "source": [
                         2004,
                         2006,
+                        2034,
                         2035
                     ]
                 },

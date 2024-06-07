@@ -309,6 +309,16 @@
     },
     {
         "asset": {
+            "Token": "31"
+        },
+        "name": "Darwinia Network RING",
+        "symbol": "RING",
+        "decimals": 18,
+        "currencyID": "31",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]"
+    },
+    {
+        "asset": {
             "Token": "4"
         },
         "name": "Ethereum (Acala Wormhole)",
