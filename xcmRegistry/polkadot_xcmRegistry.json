@@ -2553,6 +2553,50 @@
             2030
         ]
     },
+    "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"palletInstance\":10}]": {
+        "paraID": 2030,
+        "relayChain": "polkadot",
+        "nativeChainID": "bifrost",
+        "symbol": "PEN",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "palletInstance": 10
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "palletInstance": 10
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2030": {
+                "Token2": "12"
+            }
+        },
+        "confidence": 1,
+        "source": [
+            2030
+        ]
+    },
     "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]": {
         "paraID": 2031,
         "relayChain": "polkadot",

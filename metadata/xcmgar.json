@@ -2086,7 +2086,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "assetCnt": "73",
+                "assetCnt": "74",
                 "data": [
                     {
                         "asset": {
@@ -2191,6 +2191,15 @@
                         "symbol": "DED",
                         "decimals": 10,
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":30}]"
+                    },
+                    {
+                        "asset": {
+                            "Token2": "12"
+                        },
+                        "name": "Pendulum",
+                        "symbol": "PEN",
+                        "decimals": 12,
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"palletInstance\":10}]"
                     },
                     {
                         "asset": {
@@ -13149,7 +13158,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "xcAssetCnt": "19",
+                "xcAssetCnt": "20",
                 "data": [
                     {
                         "paraID": 0,
@@ -13630,6 +13639,46 @@
                         },
                         "asset": {
                             "VToken2": "8"
+                        },
+                        "source": [
+                            "2030"
+                        ]
+                    },
+                    {
+                        "paraID": 2030,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "bifrost",
+                        "symbol": "PEN",
+                        "decimals": 12,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2030
+                            },
+                            {
+                                "palletInstance": 10
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2030
+                                        },
+                                        {
+                                            "palletInstance": 10
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": {
+                            "Token2": "12"
                         },
                         "source": [
                             "2030"
@@ -26846,7 +26895,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "75",
+            "registryCnt": "76",
             "data": {
                 "[{\"network\":\"polkadot\"},\"here\"]": {
                     "paraID": 0,
@@ -29399,6 +29448,50 @@
                     "confidence": 2,
                     "source": [
                         2006,
+                        2030
+                    ]
+                },
+                "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"palletInstance\":10}]": {
+                    "paraID": 2030,
+                    "relayChain": "polkadot",
+                    "nativeChainID": "bifrost",
+                    "symbol": "PEN",
+                    "decimals": 12,
+                    "interiorType": "x2",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "palletInstance": 10
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x2": [
+                                    {
+                                        "parachain": 2030
+                                    },
+                                    {
+                                        "palletInstance": 10
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2030": {
+                            "Token2": "12"
+                        }
+                    },
+                    "confidence": 1,
+                    "source": [
                         2030
                     ]
                 },

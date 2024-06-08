@@ -105,6 +105,15 @@
     },
     {
         "asset": {
+            "Token2": "12"
+        },
+        "name": "Pendulum",
+        "symbol": "PEN",
+        "decimals": 12,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"palletInstance\":10}]"
+    },
+    {
+        "asset": {
             "Token2": "2"
         },
         "name": "Tether USD",
