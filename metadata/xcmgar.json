@@ -27813,17 +27813,16 @@
                             }
                         }
                     },
-                    "asset": "18446744073709551625",
-                    "source": [
-                        2006
-                    ],
-                    "xcCurrencyID": {
-                        "2006": "18446744073709551625"
-                    },
                     "xcContractAddress": {
                         "2006": "0xffffffff00000000000000010000000000000009"
                     },
-                    "confidence": 1
+                    "xcCurrencyID": {
+                        "2006": "18446744073709551625"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2006
+                    ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":10}]": {
                     "paraID": 2004,
@@ -29437,21 +29436,20 @@
                             }
                         }
                     },
-                    "asset": "18446744073709551626",
-                    "source": [
-                        2006,
-                        2030
-                    ],
+                    "xcContractAddress": {
+                        "2006": "0xffffffff0000000000000001000000000000000a"
+                    },
                     "xcCurrencyID": {
                         "2006": "18446744073709551626",
                         "2030": {
                             "VSToken2": "0"
                         }
                     },
-                    "xcContractAddress": {
-                        "2006": "0xffffffff0000000000000001000000000000000a"
-                    },
-                    "confidence": 2
+                    "confidence": 2,
+                    "source": [
+                        2006,
+                        2030
+                    ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"palletInstance\":10}]": {
                     "paraID": 2030,
@@ -30589,17 +30587,16 @@
                             }
                         }
                     },
-                    "asset": "18446744073709551636",
-                    "source": [
-                        2006
-                    ],
-                    "xcCurrencyID": {
-                        "2006": "18446744073709551636"
-                    },
                     "xcContractAddress": {
                         "2006": "0xffffffff00000000000000010000000000000014"
                     },
-                    "confidence": 1
+                    "xcCurrencyID": {
+                        "2006": "18446744073709551636"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2006
+                    ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":53},{\"generalIndex\":2}]": {
                     "paraID": 2094,
@@ -30640,17 +30637,16 @@
                             }
                         }
                     },
-                    "asset": "18446744073709551635",
-                    "source": [
-                        2006
-                    ],
-                    "xcCurrencyID": {
-                        "2006": "18446744073709551635"
-                    },
                     "xcContractAddress": {
                         "2006": "0xffffffff00000000000000010000000000000013"
                     },
-                    "confidence": 1
+                    "xcCurrencyID": {
+                        "2006": "18446744073709551635"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2006
+                    ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2101}]": {
                     "paraID": 2101,
