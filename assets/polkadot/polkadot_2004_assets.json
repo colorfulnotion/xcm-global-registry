@@ -171,6 +171,16 @@
     },
     {
         "asset": {
+            "Token": "184218609779515850660274730699350567246"
+        },
+        "name": "Apillon",
+        "symbol": "xcNCTR",
+        "decimals": 18,
+        "currencyID": "184218609779515850660274730699350567246",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1024}]"
+    },
+    {
+        "asset": {
             "Token": "187224307232923873519830480073807488153"
         },
         "name": "Equilibrium Dollar",

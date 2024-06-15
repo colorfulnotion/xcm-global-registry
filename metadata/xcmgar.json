@@ -702,7 +702,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "assetCnt": "44",
+                "assetCnt": "45",
                 "data": [
                     {
                         "asset": {
@@ -873,6 +873,16 @@
                         "decimals": 18,
                         "currencyID": "166446646689194205559791995948102903873",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2104}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "184218609779515850660274730699350567246"
+                        },
+                        "name": "Apillon",
+                        "symbol": "xcNCTR",
+                        "decimals": 18,
+                        "currencyID": "184218609779515850660274730699350567246",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1024}]"
                     },
                     {
                         "asset": {
@@ -9755,7 +9765,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2004,
                 "id": "moonbeam",
-                "xcAssetCnt": "43",
+                "xcAssetCnt": "44",
                 "data": [
                     {
                         "paraID": 0,
@@ -9915,6 +9925,51 @@
                         },
                         "asset": "166377000701797186346254371275954761085",
                         "contractAddress": "0xffffffff7d2b0b761af01ca8e25242976ac0ad7d",
+                        "source": [
+                            "2004"
+                        ]
+                    },
+                    {
+                        "paraID": 1000,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "statemint",
+                        "symbol": "NCTR",
+                        "decimals": 18,
+                        "interiorType": "x3",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 1000
+                            },
+                            {
+                                "palletInstance": 50
+                            },
+                            {
+                                "generalIndex": 1024
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x3": [
+                                        {
+                                            "parachain": 1000
+                                        },
+                                        {
+                                            "palletInstance": 50
+                                        },
+                                        {
+                                            "generalIndex": 1024
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "184218609779515850660274730699350567246",
+                        "contractAddress": "0xffffffff8a9736b44ebf188972725bed67bf694e",
                         "source": [
                             "2004"
                         ]
@@ -26895,7 +26950,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "76",
+            "registryCnt": "77",
             "data": {
                 "[{\"network\":\"polkadot\"},\"here\"]": {
                     "paraID": 0,
@@ -27367,6 +27422,56 @@
                     "source": [
                         2004,
                         2030
+                    ]
+                },
+                "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1024}]": {
+                    "paraID": 1000,
+                    "relayChain": "polkadot",
+                    "nativeChainID": "statemint",
+                    "symbol": "NCTR",
+                    "decimals": 18,
+                    "interiorType": "x3",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 1024
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x3": [
+                                    {
+                                        "parachain": 1000
+                                    },
+                                    {
+                                        "palletInstance": 50
+                                    },
+                                    {
+                                        "generalIndex": 1024
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {
+                        "2004": "0xffffffff8a9736b44ebf188972725bed67bf694e"
+                    },
+                    "xcCurrencyID": {
+                        "2004": "184218609779515850660274730699350567246"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2004
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":42069}]": {

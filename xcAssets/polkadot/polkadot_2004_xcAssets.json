@@ -165,6 +165,51 @@
         "paraID": 1000,
         "relayChain": "polkadot",
         "nativeChainID": "statemint",
+        "symbol": "NCTR",
+        "decimals": 18,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 1000
+            },
+            {
+                "palletInstance": 50
+            },
+            {
+                "generalIndex": 1024
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 1024
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": "184218609779515850660274730699350567246",
+        "contractAddress": "0xffffffff8a9736b44ebf188972725bed67bf694e",
+        "source": [
+            "2004"
+        ]
+    },
+    {
+        "paraID": 1000,
+        "relayChain": "polkadot",
+        "nativeChainID": "statemint",
         "symbol": "USDT",
         "decimals": 6,
         "interiorType": "x3",
