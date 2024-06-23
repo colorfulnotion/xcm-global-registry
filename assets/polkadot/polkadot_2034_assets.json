@@ -319,6 +319,16 @@
     },
     {
         "asset": {
+            "Token": "32"
+        },
+        "name": "Ajuna Network",
+        "symbol": "AJUN",
+        "decimals": 12,
+        "currencyID": "32",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2051},{\"generalKey\":\"0x414a554e\"}]"
+    },
+    {
+        "asset": {
             "Token": "4"
         },
         "name": "Ethereum (Acala Wormhole)",

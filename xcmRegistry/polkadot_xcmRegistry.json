@@ -3557,6 +3557,48 @@
             2035
         ]
     },
+    "[{\"network\":\"polkadot\"},{\"parachain\":2051},{\"generalKey\":\"0x414a554e\"}]": {
+        "paraID": 2051,
+        "relayChain": "polkadot",
+        "nativeChainID": null,
+        "symbol": "AJUN",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2051
+            },
+            {
+                "generalKey": "0x414a554e"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2051
+                        },
+                        {
+                            "generalKey": "0x414a554e"
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2034": "32"
+        },
+        "confidence": 1,
+        "source": [
+            2034
+        ]
+    },
     "[{\"network\":\"polkadot\"},{\"parachain\":2086}]": {
         "paraID": 2086,
         "relayChain": "polkadot",
