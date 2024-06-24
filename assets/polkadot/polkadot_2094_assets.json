@@ -201,6 +201,30 @@
     },
     {
         "asset": {
+            "XCM": "10"
+        },
+        "name": "Voucher DOT",
+        "symbol": "vDOT",
+        "decimals": 10,
+        "currencyID": {
+            "XCM": "10"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0900\"}]"
+    },
+    {
+        "asset": {
+            "XCM": "11"
+        },
+        "name": "Bifrost Native Token",
+        "symbol": "BNC",
+        "decimals": 12,
+        "currencyID": {
+            "XCM": "11"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]"
+    },
+    {
+        "asset": {
             "XCM": "2"
         },
         "name": "USD Coin",

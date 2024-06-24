@@ -336,6 +336,86 @@
         ]
     },
     {
+        "paraID": 2030,
+        "relayChain": "polkadot",
+        "nativeChainID": "bifrost",
+        "symbol": "BNC",
+        "decimals": 12,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0001"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0001"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "XCM": "11"
+        },
+        "source": [
+            "2094"
+        ]
+    },
+    {
+        "paraID": 2030,
+        "relayChain": "polkadot",
+        "nativeChainID": "bifrost",
+        "symbol": "vDOT",
+        "decimals": 10,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2030
+            },
+            {
+                "generalKey": "0x0900"
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "parachain": 2030
+                        },
+                        {
+                            "generalKey": "0x0900"
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "XCM": "10"
+        },
+        "source": [
+            "2094"
+        ]
+    },
+    {
         "paraID": 2034,
         "relayChain": "polkadot",
         "nativeChainID": "hydra",

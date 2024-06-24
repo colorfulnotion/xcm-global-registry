@@ -166,7 +166,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2094,
                 "id": "pendulum",
-                "assetCnt": "19",
+                "assetCnt": "21",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//assets/polkadot/polkadot_2094_assets.json"
             }
         ],
@@ -487,7 +487,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2094,
                 "id": "pendulum",
-                "xcAssetCnt": "11",
+                "xcAssetCnt": "13",
                 "url": "https://cdn.jsdelivr.net/gh/colorfulnotion/xcm-global-registry//xcAssets/polkadot/polkadot_2094_xcAssets.json"
             }
         ],
