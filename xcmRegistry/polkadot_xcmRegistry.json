@@ -30,21 +30,17 @@
             "2030": {
                 "Token2": "0"
             },
-            "2031": {
-                "ForeignAsset": "5"
-            },
             "2034": "5",
             "2035": "0",
             "2094": {
                 "XCM": "0"
             }
         },
-        "confidence": 7,
+        "confidence": 6,
         "source": [
             2004,
             2006,
             2030,
-            2031,
             2034,
             2035,
             2094
@@ -102,9 +98,6 @@
             "2030": {
                 "Token2": "5"
             },
-            "2031": {
-                "ForeignAsset": "6"
-            },
             "2032": {
                 "ForeignAsset": "12"
             },
@@ -113,13 +106,12 @@
                 "XCM": "2"
             }
         },
-        "confidence": 8,
+        "confidence": 7,
         "source": [
             2000,
             2004,
             2006,
             2030,
-            2031,
             2032,
             2034,
             2094
@@ -177,9 +169,6 @@
             "2030": {
                 "Token2": "2"
             },
-            "2031": {
-                "ForeignAsset": "1"
-            },
             "2032": {
                 "ForeignAsset": "2"
             },
@@ -188,13 +177,12 @@
                 "XCM": "1"
             }
         },
-        "confidence": 8,
+        "confidence": 7,
         "source": [
             2000,
             2004,
             2006,
             2030,
-            2031,
             2032,
             2034,
             2094
@@ -666,16 +654,12 @@
         "xcCurrencyID": {
             "2004": "110021739665376159354538090254163045594",
             "2006": "18446744073709551617",
-            "2031": {
-                "ForeignAsset": "3"
-            },
             "2035": "3"
         },
-        "confidence": 4,
+        "confidence": 3,
         "source": [
             2004,
             2006,
-            2031,
             2035
         ]
     },
@@ -1020,9 +1004,6 @@
             "2030": {
                 "Token2": "1"
             },
-            "2031": {
-                "ForeignAsset": "4"
-            },
             "2032": {
                 "ForeignAsset": "10"
             },
@@ -1032,12 +1013,11 @@
                 "XCM": "6"
             }
         },
-        "confidence": 8,
+        "confidence": 7,
         "source": [
             2000,
             2006,
             2030,
-            2031,
             2032,
             2034,
             2035,
@@ -1440,6 +1420,62 @@
         "confidence": 1,
         "source": [
             2034
+        ]
+    },
+    "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0xca01a1d0993565291051daff390892518acfad3a\"}}]": {
+        "paraID": 2004,
+        "relayChain": "polkadot",
+        "nativeChainID": "moonbeam",
+        "symbol": "USDC.axl",
+        "decimals": 6,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2004
+            },
+            {
+                "palletInstance": 110
+            },
+            {
+                "accountKey20": {
+                    "network": null,
+                    "key": "0xca01a1d0993565291051daff390892518acfad3a"
+                }
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 2004
+                        },
+                        {
+                            "palletInstance": 110
+                        },
+                        {
+                            "accountKey20": {
+                                "network": null,
+                                "key": "0xca01a1d0993565291051daff390892518acfad3a"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2094": {
+                "XCM": "12"
+            }
+        },
+        "confidence": 1,
+        "source": [
+            2094
         ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0x3225edce8ad30ae282e62fa32e7418e4b9cf197b\"}}]": {
@@ -2693,434 +2729,12 @@
         },
         "xcCurrencyID": {
             "2004": "91372035960551235635465443179559840483",
-            "2031": "Native",
             "2034": "13"
         },
-        "confidence": 3,
+        "confidence": 2,
         "source": [
             2004,
-            2031,
             2034
-        ]
-    },
-    "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":42161}}},{\"accountKey20\":{\"network\":null,\"key\":\"0xaf88d065e77c8cc2239327c5edb3a432268e5831\"}}]": {
-        "paraID": 2031,
-        "relayChain": "polkadot",
-        "nativeChainID": "centrifuge",
-        "symbol": "LpArbUSDC",
-        "decimals": 6,
-        "interiorType": "x4",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 2031
-            },
-            {
-                "palletInstance": 103
-            },
-            {
-                "globalConsensus": {
-                    "ethereum": {
-                        "chainId": 42161
-                    }
-                }
-            },
-            {
-                "accountKey20": {
-                    "network": null,
-                    "key": "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
-                }
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x4": [
-                        {
-                            "parachain": 2031
-                        },
-                        {
-                            "palletInstance": 103
-                        },
-                        {
-                            "globalConsensus": {
-                                "ethereum": {
-                                    "chainId": 42161
-                                }
-                            }
-                        },
-                        {
-                            "accountKey20": {
-                                "network": null,
-                                "key": "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {},
-        "xcCurrencyID": {
-            "2031": {
-                "ForeignAsset": "100,003"
-            }
-        },
-        "confidence": 1,
-        "source": [
-            2031
-        ]
-    },
-    "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x853d955acef822db058eb8505911ed77f175b99e\"}}]": {
-        "paraID": 2031,
-        "relayChain": "polkadot",
-        "nativeChainID": "centrifuge",
-        "symbol": "LpFRAX",
-        "decimals": 18,
-        "interiorType": "x4",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 2031
-            },
-            {
-                "palletInstance": 103
-            },
-            {
-                "globalConsensus": {
-                    "ethereum": {
-                        "chainId": 1
-                    }
-                }
-            },
-            {
-                "accountKey20": {
-                    "network": null,
-                    "key": "0x853d955acef822db058eb8505911ed77f175b99e"
-                }
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x4": [
-                        {
-                            "parachain": 2031
-                        },
-                        {
-                            "palletInstance": 103
-                        },
-                        {
-                            "globalConsensus": {
-                                "ethereum": {
-                                    "chainId": 1
-                                }
-                            }
-                        },
-                        {
-                            "accountKey20": {
-                                "network": null,
-                                "key": "0x853d955acef822db058eb8505911ed77f175b99e"
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {},
-        "xcCurrencyID": {
-            "2031": {
-                "ForeignAsset": "100,005"
-            }
-        },
-        "confidence": 1,
-        "source": [
-            2031
-        ]
-    },
-    "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":42220}}},{\"accountKey20\":{\"network\":null,\"key\":\"0xceba9300f2b948710d2653dd7b07f33a8b32118c\"}}]": {
-        "paraID": 2031,
-        "relayChain": "polkadot",
-        "nativeChainID": "centrifuge",
-        "symbol": "LpCeloUSDC",
-        "decimals": 6,
-        "interiorType": "x4",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 2031
-            },
-            {
-                "palletInstance": 103
-            },
-            {
-                "globalConsensus": {
-                    "ethereum": {
-                        "chainId": 42220
-                    }
-                }
-            },
-            {
-                "accountKey20": {
-                    "network": null,
-                    "key": "0xceba9300f2b948710d2653dd7b07f33a8b32118c"
-                }
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x4": [
-                        {
-                            "parachain": 2031
-                        },
-                        {
-                            "palletInstance": 103
-                        },
-                        {
-                            "globalConsensus": {
-                                "ethereum": {
-                                    "chainId": 42220
-                                }
-                            }
-                        },
-                        {
-                            "accountKey20": {
-                                "network": null,
-                                "key": "0xceba9300f2b948710d2653dd7b07f33a8b32118c"
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {},
-        "xcCurrencyID": {
-            "2031": {
-                "ForeignAsset": "100,006"
-            }
-        },
-        "confidence": 1,
-        "source": [
-            2031
-        ]
-    },
-    "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":8453}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x833589fcd6edb6e08f4c7c32d4f71b54bda02913\"}}]": {
-        "paraID": 2031,
-        "relayChain": "polkadot",
-        "nativeChainID": "centrifuge",
-        "symbol": "LpBaseUSDC",
-        "decimals": 6,
-        "interiorType": "x4",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 2031
-            },
-            {
-                "palletInstance": 103
-            },
-            {
-                "globalConsensus": {
-                    "ethereum": {
-                        "chainId": 8453
-                    }
-                }
-            },
-            {
-                "accountKey20": {
-                    "network": null,
-                    "key": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
-                }
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x4": [
-                        {
-                            "parachain": 2031
-                        },
-                        {
-                            "palletInstance": 103
-                        },
-                        {
-                            "globalConsensus": {
-                                "ethereum": {
-                                    "chainId": 8453
-                                }
-                            }
-                        },
-                        {
-                            "accountKey20": {
-                                "network": null,
-                                "key": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {},
-        "xcCurrencyID": {
-            "2031": {
-                "ForeignAsset": "100,002"
-            }
-        },
-        "confidence": 1,
-        "source": [
-            2031
-        ]
-    },
-    "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\"}}]": {
-        "paraID": 2031,
-        "relayChain": "polkadot",
-        "nativeChainID": "centrifuge",
-        "symbol": "LpEthUSDC",
-        "decimals": 6,
-        "interiorType": "x4",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 2031
-            },
-            {
-                "palletInstance": 103
-            },
-            {
-                "globalConsensus": {
-                    "ethereum": {
-                        "chainId": 1
-                    }
-                }
-            },
-            {
-                "accountKey20": {
-                    "network": null,
-                    "key": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
-                }
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x4": [
-                        {
-                            "parachain": 2031
-                        },
-                        {
-                            "palletInstance": 103
-                        },
-                        {
-                            "globalConsensus": {
-                                "ethereum": {
-                                    "chainId": 1
-                                }
-                            }
-                        },
-                        {
-                            "accountKey20": {
-                                "network": null,
-                                "key": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {},
-        "xcCurrencyID": {
-            "2031": {
-                "ForeignAsset": "100,001"
-            }
-        },
-        "confidence": 1,
-        "source": [
-            2031
-        ]
-    },
-    "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":42220}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x37f750b7cc259a2f741af45294f6a16572cf5cad\"}}]": {
-        "paraID": 2031,
-        "relayChain": "polkadot",
-        "nativeChainID": "centrifuge",
-        "symbol": "LpCeloWormUSDC ",
-        "decimals": 6,
-        "interiorType": "x4",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 2031
-            },
-            {
-                "palletInstance": 103
-            },
-            {
-                "globalConsensus": {
-                    "ethereum": {
-                        "chainId": 42220
-                    }
-                }
-            },
-            {
-                "accountKey20": {
-                    "network": null,
-                    "key": "0x37f750b7cc259a2f741af45294f6a16572cf5cad"
-                }
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x4": [
-                        {
-                            "parachain": 2031
-                        },
-                        {
-                            "palletInstance": 103
-                        },
-                        {
-                            "globalConsensus": {
-                                "ethereum": {
-                                    "chainId": 42220
-                                }
-                            }
-                        },
-                        {
-                            "accountKey20": {
-                                "network": null,
-                                "key": "0x37f750b7cc259a2f741af45294f6a16572cf5cad"
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {},
-        "xcCurrencyID": {
-            "2031": {
-                "ForeignAsset": "100,004"
-            }
-        },
-        "confidence": 1,
-        "source": [
-            2031
         ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0001\"}]": {

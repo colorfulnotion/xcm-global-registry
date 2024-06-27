@@ -225,6 +225,18 @@
     },
     {
         "asset": {
+            "XCM": "12"
+        },
+        "name": "USDC (Axelar)",
+        "symbol": "USDC.axl",
+        "decimals": 6,
+        "currencyID": {
+            "XCM": "12"
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0xca01a1d0993565291051daff390892518acfad3a\"}}]"
+    },
+    {
+        "asset": {
             "XCM": "2"
         },
         "name": "USD Coin",
