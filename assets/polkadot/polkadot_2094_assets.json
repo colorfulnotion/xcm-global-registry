@@ -114,7 +114,7 @@
                 }
             }
         },
-        "name": "Stellar EURC",
+        "name": "Stellar Mykobo EURC",
         "symbol": "EURC.s",
         "decimals": 12,
         "currencyID": {
@@ -122,6 +122,32 @@
                 "AlphaNum4": {
                     "code": "EURC",
                     "issuer": "0x2112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c"
+                }
+            }
+        },
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":53},{\"generalIndex\":2},{\"generalKey\":\"0x45555243\"},{\"generalKey\":\"0x2112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c\"}]",
+        "inferred": true,
+        "confidence": 0
+    },
+    {
+        "asset": {
+            "Token": {
+                "Stellar": {
+                    "AlphaNum4": {
+                        "code": "EURC",
+                        "issuer": "0xcf4f5a26e2090bb3adcf02c7a9d73dbfe6659cc690461475b86437fa49c71136"
+                    }
+                }
+            }
+        },
+        "name": "Stellar Circle EURC",
+        "symbol": "EURC.s",
+        "decimals": 12,
+        "currencyID": {
+            "Stellar": {
+                "AlphaNum4": {
+                    "code": "EURC",
+                    "issuer": "0xcf4f5a26e2090bb3adcf02c7a9d73dbfe6659cc690461475b86437fa49c71136"
                 }
             }
         },
