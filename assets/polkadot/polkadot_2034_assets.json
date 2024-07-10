@@ -329,6 +329,16 @@
     },
     {
         "asset": {
+            "Token": "33"
+        },
+        "name": "Voucher ASTR",
+        "symbol": "vASTR",
+        "decimals": 18,
+        "currencyID": "33",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0903\"}]"
+    },
+    {
+        "asset": {
             "Token": "4"
         },
         "name": "Ethereum (Acala Wormhole)",

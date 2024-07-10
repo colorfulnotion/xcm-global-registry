@@ -3168,7 +3168,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "40",
+                "assetCnt": "41",
                 "data": [
                     {
                         "asset": {
@@ -3497,6 +3497,16 @@
                         "decimals": 12,
                         "currencyID": "32",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2051},{\"generalKey\":\"0x414a554e\"}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "33"
+                        },
+                        "name": "Voucher ASTR",
+                        "symbol": "vASTR",
+                        "decimals": 18,
+                        "currencyID": "33",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0903\"}]"
                     },
                     {
                         "asset": {
@@ -15343,7 +15353,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "34",
+                "xcAssetCnt": "35",
                 "data": [
                     {
                         "paraID": 0,
@@ -16145,6 +16155,44 @@
                             }
                         },
                         "asset": "14",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 2030,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "bifrost",
+                        "symbol": "vASTR",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2030
+                            },
+                            {
+                                "generalKey": "0x0903"
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2030
+                                        },
+                                        {
+                                            "generalKey": "0x0903"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "33",
                         "source": [
                             "2034"
                         ]
@@ -29805,13 +29853,15 @@
                         "2006": "18446744073709551632",
                         "2030": {
                             "VToken2": "3"
-                        }
+                        },
+                        "2034": "33"
                     },
-                    "confidence": 3,
+                    "confidence": 4,
                     "source": [
                         2004,
                         2006,
-                        2030
+                        2030,
+                        2034
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0403\"}]": {
