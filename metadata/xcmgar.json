@@ -2871,7 +2871,9 @@
                         "name": "CFG",
                         "symbol": "CFG",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]"
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]",
+                        "inferred": true,
+                        "confidence": 0
                     },
                     {
                         "asset": {
@@ -8213,7 +8215,9 @@
                         "name": "AIR",
                         "symbol": "AIR",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2088},{\"generalKey\":\"0x0001\"}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2088},{\"generalKey\":\"0x0001\"}]",
+                        "inferred": true,
+                        "confidence": 0
                     },
                     {
                         "asset": {
@@ -30059,19 +30063,16 @@
                             }
                         }
                     },
-                    "asset": {
-                        "ForeignAsset": "100,003"
-                    },
-                    "source": [
-                        2031
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2031": {
                             "ForeignAsset": "100,003"
                         }
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2031
+                    ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x853d955acef822db058eb8505911ed77f175b99e\"}}]": {
                     "paraID": 2031,
@@ -30132,19 +30133,16 @@
                             }
                         }
                     },
-                    "asset": {
-                        "ForeignAsset": "100,005"
-                    },
-                    "source": [
-                        2031
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2031": {
                             "ForeignAsset": "100,005"
                         }
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2031
+                    ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":42220}}},{\"accountKey20\":{\"network\":null,\"key\":\"0xceba9300f2b948710d2653dd7b07f33a8b32118c\"}}]": {
                     "paraID": 2031,
@@ -30205,19 +30203,16 @@
                             }
                         }
                     },
-                    "asset": {
-                        "ForeignAsset": "100,006"
-                    },
-                    "source": [
-                        2031
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2031": {
                             "ForeignAsset": "100,006"
                         }
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2031
+                    ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":8453}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x833589fcd6edb6e08f4c7c32d4f71b54bda02913\"}}]": {
                     "paraID": 2031,
@@ -30278,19 +30273,16 @@
                             }
                         }
                     },
-                    "asset": {
-                        "ForeignAsset": "100,002"
-                    },
-                    "source": [
-                        2031
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2031": {
                             "ForeignAsset": "100,002"
                         }
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2031
+                    ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\"}}]": {
                     "paraID": 2031,
@@ -30351,19 +30343,16 @@
                             }
                         }
                     },
-                    "asset": {
-                        "ForeignAsset": "100,001"
-                    },
-                    "source": [
-                        2031
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2031": {
                             "ForeignAsset": "100,001"
                         }
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2031
+                    ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"palletInstance\":103},{\"globalConsensus\":{\"ethereum\":{\"chainId\":42220}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x37f750b7cc259a2f741af45294f6a16572cf5cad\"}}]": {
                     "paraID": 2031,
@@ -30424,19 +30413,16 @@
                             }
                         }
                     },
-                    "asset": {
-                        "ForeignAsset": "100,004"
-                    },
-                    "source": [
-                        2031
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2031": {
                             "ForeignAsset": "100,004"
                         }
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2031
+                    ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2032},{\"generalKey\":\"0x0001\"}]": {
                     "paraID": 2032,
