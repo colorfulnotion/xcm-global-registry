@@ -223,8 +223,8 @@
                 ]
             }
         },
-        "name": "Anemoy DeFi Yield Fund 1 SP DeFi Yield Fund Token",
-        "symbol": "DYF",
+        "name": "DeFi Yield Fund Token",
+        "symbol": "DYF1",
         "decimals": 6,
         "currencyID": {
             "Tranche": [

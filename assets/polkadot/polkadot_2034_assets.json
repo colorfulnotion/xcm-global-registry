@@ -71,6 +71,26 @@
     },
     {
         "asset": {
+            "Token": "1000189"
+        },
+        "name": "Ethereum (Snowbridge)",
+        "symbol": "WETH",
+        "decimals": 18,
+        "currencyID": "1000189",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\"}}]"
+    },
+    {
+        "asset": {
+            "Token": "1000190"
+        },
+        "name": "Bitcoin (Snowbridge)",
+        "symbol": "WBTC",
+        "decimals": 8,
+        "currencyID": "1000190",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x2260fac5e5542a773aa44fbcfedf7c193bc2c599\"}}]"
+    },
+    {
+        "asset": {
             "Token": "101"
         },
         "name": "2-Pool",
