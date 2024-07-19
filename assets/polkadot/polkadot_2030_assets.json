@@ -114,6 +114,14 @@
     },
     {
         "asset": {
+            "Token2": "13"
+        },
+        "name": "Wrapped ETH",
+        "symbol": "WETH",
+        "decimals": 18
+    },
+    {
+        "asset": {
             "Token2": "2"
         },
         "name": "Tether USD",
