@@ -343,6 +343,58 @@
         "paraID": 2004,
         "relayChain": "polkadot",
         "nativeChainID": "moonbeam",
+        "symbol": "stDOT",
+        "decimals": 10,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2004
+            },
+            {
+                "palletInstance": 110
+            },
+            {
+                "accountKey20": {
+                    "network": null,
+                    "key": "0xbc7e02c4178a7df7d3e564323a5c359dc96c4db4"
+                }
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 2004
+                        },
+                        {
+                            "palletInstance": 110
+                        },
+                        {
+                            "accountKey20": {
+                                "network": null,
+                                "key": "0xbc7e02c4178a7df7d3e564323a5c359dc96c4db4"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "ForeignAsset": "15"
+        },
+        "source": [
+            "2032"
+        ]
+    },
+    {
+        "paraID": 2004,
+        "relayChain": "polkadot",
+        "nativeChainID": "moonbeam",
         "symbol": "GLMR",
         "decimals": 18,
         "interiorType": "x2",
@@ -598,6 +650,38 @@
         },
         "asset": {
             "ForeignAsset": "13"
+        },
+        "source": [
+            "2032"
+        ]
+    },
+    {
+        "paraID": 2035,
+        "relayChain": "polkadot",
+        "nativeChainID": "phala",
+        "symbol": "PHA",
+        "decimals": 12,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2035
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2035
+                    }
+                }
+            }
+        },
+        "asset": {
+            "ForeignAsset": "14"
         },
         "source": [
             "2032"

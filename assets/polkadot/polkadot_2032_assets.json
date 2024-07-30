@@ -51,6 +51,26 @@
     },
     {
         "asset": {
+            "ForeignAsset": "14"
+        },
+        "name": "Phala",
+        "symbol": "PHA",
+        "decimals": 12,
+        "currencyID": "14",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2035}]"
+    },
+    {
+        "asset": {
+            "ForeignAsset": "15"
+        },
+        "name": "StellaSwap Staked DOT",
+        "symbol": "stDOT",
+        "decimals": 10,
+        "currencyID": "15",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0xbc7e02c4178a7df7d3e564323a5c359dc96c4db4\"}}]"
+    },
+    {
+        "asset": {
             "ForeignAsset": "2"
         },
         "name": "Tether USD",

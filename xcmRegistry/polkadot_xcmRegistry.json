@@ -1384,6 +1384,62 @@
             2034
         ]
     },
+    "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0xbc7e02c4178a7df7d3e564323a5c359dc96c4db4\"}}]": {
+        "paraID": 2004,
+        "relayChain": "polkadot",
+        "nativeChainID": "moonbeam",
+        "symbol": "stDOT",
+        "decimals": 10,
+        "interiorType": "x3",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "parachain": 2004
+            },
+            {
+                "palletInstance": 110
+            },
+            {
+                "accountKey20": {
+                    "network": null,
+                    "key": "0xbc7e02c4178a7df7d3e564323a5c359dc96c4db4"
+                }
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x3": [
+                        {
+                            "parachain": 2004
+                        },
+                        {
+                            "palletInstance": 110
+                        },
+                        {
+                            "accountKey20": {
+                                "network": null,
+                                "key": "0xbc7e02c4178a7df7d3e564323a5c359dc96c4db4"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {},
+        "xcCurrencyID": {
+            "2032": {
+                "ForeignAsset": "15"
+            }
+        },
+        "confidence": 1,
+        "source": [
+            2032
+        ]
+    },
     "[{\"network\":\"polkadot\"},{\"parachain\":2004},{\"palletInstance\":110},{\"accountKey20\":{\"network\":null,\"key\":\"0xab3f0245b83feb11d15aaffefd7ad465a59817ed\"}}]": {
         "paraID": 2004,
         "relayChain": "polkadot",
@@ -3503,13 +3559,17 @@
             },
             "2004": "132685552157663328694213725410064821485",
             "2006": "18446744073709551622",
+            "2032": {
+                "ForeignAsset": "14"
+            },
             "2034": "8"
         },
-        "confidence": 4,
+        "confidence": 5,
         "source": [
             2000,
             2004,
             2006,
+            2032,
             2034
         ]
     },
