@@ -3196,7 +3196,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "assetCnt": "43",
+                "assetCnt": "44",
                 "data": [
                     {
                         "asset": {
@@ -3247,6 +3247,16 @@
                         "decimals": 12,
                         "currencyID": "1000081",
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2094},{\"palletInstance\":10}]"
+                    },
+                    {
+                        "asset": {
+                            "Token": "1000085"
+                        },
+                        "name": "Gavun Wud",
+                        "symbol": "WUD",
+                        "decimals": 10,
+                        "currencyID": "1000085",
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":31337}]"
                     },
                     {
                         "asset": {
@@ -15483,7 +15493,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2034,
                 "id": "hydra",
-                "xcAssetCnt": "37",
+                "xcAssetCnt": "38",
                 "data": [
                     {
                         "paraID": 0,
@@ -15655,6 +15665,50 @@
                             }
                         },
                         "asset": "10",
+                        "source": [
+                            "2034"
+                        ]
+                    },
+                    {
+                        "paraID": 1000,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "statemint",
+                        "symbol": "WUD",
+                        "decimals": 10,
+                        "interiorType": "x3",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 1000
+                            },
+                            {
+                                "palletInstance": 50
+                            },
+                            {
+                                "generalIndex": 31337
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x3": [
+                                        {
+                                            "parachain": 1000
+                                        },
+                                        {
+                                            "palletInstance": 50
+                                        },
+                                        {
+                                            "generalIndex": 31337
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": "1000085",
                         "source": [
                             "2034"
                         ]
@@ -27474,7 +27528,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "82",
+            "registryCnt": "83",
             "data": {
                 "[{\"network\":\"polkadot\"},\"here\"]": {
                     "paraID": 0,
@@ -28158,6 +28212,54 @@
                     "confidence": 1,
                     "source": [
                         2004
+                    ]
+                },
+                "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":31337}]": {
+                    "paraID": 1000,
+                    "relayChain": "polkadot",
+                    "nativeChainID": "statemint",
+                    "symbol": "WUD",
+                    "decimals": 10,
+                    "interiorType": "x3",
+                    "xcmV1Standardized": [
+                        {
+                            "network": "polkadot"
+                        },
+                        {
+                            "parachain": 1000
+                        },
+                        {
+                            "palletInstance": 50
+                        },
+                        {
+                            "generalIndex": 31337
+                        }
+                    ],
+                    "xcmV1MultiLocation": {
+                        "v1": {
+                            "parents": 1,
+                            "interior": {
+                                "x3": [
+                                    {
+                                        "parachain": 1000
+                                    },
+                                    {
+                                        "palletInstance": 50
+                                    },
+                                    {
+                                        "generalIndex": 31337
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "xcContractAddress": {},
+                    "xcCurrencyID": {
+                        "2034": "1000085"
+                    },
+                    "confidence": 1,
+                    "source": [
+                        2034
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x0003\"}]": {

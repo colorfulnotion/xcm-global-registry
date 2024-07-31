@@ -51,6 +51,16 @@
     },
     {
         "asset": {
+            "Token": "1000085"
+        },
+        "name": "Gavun Wud",
+        "symbol": "WUD",
+        "decimals": 10,
+        "currencyID": "1000085",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":31337}]"
+    },
+    {
+        "asset": {
             "Token": "1000099"
         },
         "name": "Acala",
