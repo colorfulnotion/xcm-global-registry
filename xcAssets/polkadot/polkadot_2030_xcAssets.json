@@ -3,6 +3,60 @@
         "paraID": 0,
         "relayChain": "polkadot",
         "nativeChainID": "polkadot",
+        "symbol": "WETH",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "globalConsensus": {
+                    "ethereum": {
+                        "chainId": 1
+                    }
+                }
+            },
+            {
+                "accountKey20": {
+                    "network": null,
+                    "key": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+                }
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "globalConsensus": {
+                                "ethereum": {
+                                    "chainId": 1
+                                }
+                            }
+                        },
+                        {
+                            "accountKey20": {
+                                "network": null,
+                                "key": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "asset": {
+            "Token2": "13"
+        },
+        "source": [
+            "2030"
+        ]
+    },
+    {
+        "paraID": 0,
+        "relayChain": "polkadot",
+        "nativeChainID": "polkadot",
         "symbol": "DOT",
         "decimals": 10,
         "interiorType": "here",
