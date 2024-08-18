@@ -276,6 +276,8 @@
         "name": "HKO",
         "symbol": "HKO",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2085},{\"generalKey\":\"0x484b4f\"}]"
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2085},{\"generalKey\":\"0x484b4f\"}]",
+        "inferred": true,
+        "confidence": 0
     }
 ]
