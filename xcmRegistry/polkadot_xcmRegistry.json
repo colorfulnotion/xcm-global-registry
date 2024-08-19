@@ -4136,15 +4136,14 @@
                 }
             }
         },
-        "asset": "1",
-        "source": [
-            2043
-        ],
+        "xcContractAddress": {},
         "xcCurrencyID": {
             "2043": "1"
         },
-        "xcContractAddress": {},
-        "confidence": 1
+        "confidence": 1,
+        "source": [
+            2043
+        ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2046},{\"palletInstance\":5}]": {
         "paraID": 2046,
