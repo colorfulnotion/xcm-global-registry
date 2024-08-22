@@ -333,7 +333,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2000,
                 "id": "acala",
-                "assetCnt": "36",
+                "assetCnt": "39",
                 "data": [
                     {
                         "asset": {
@@ -523,6 +523,33 @@
                         "symbol": "USDC",
                         "decimals": 6,
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]"
+                    },
+                    {
+                        "asset": {
+                            "ForeignAsset": "15"
+                        },
+                        "name": "Centrifuge",
+                        "symbol": "CFG",
+                        "decimals": 18,
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]"
+                    },
+                    {
+                        "asset": {
+                            "ForeignAsset": "16"
+                        },
+                        "name": "Polkadex",
+                        "symbol": "PDEX",
+                        "decimals": 12,
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2040}]"
+                    },
+                    {
+                        "asset": {
+                            "ForeignAsset": "17"
+                        },
+                        "name": "Hydration",
+                        "symbol": "HDX",
+                        "decimals": 12,
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2034},{\"generalIndex\":0}]"
                     },
                     {
                         "asset": {
@@ -9228,7 +9255,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2000,
                 "id": "acala",
-                "xcAssetCnt": "15",
+                "xcAssetCnt": "18",
                 "data": [
                     {
                         "paraID": 1000,
@@ -9677,6 +9704,46 @@
                         ]
                     },
                     {
+                        "paraID": 2031,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "centrifuge",
+                        "symbol": "CFG",
+                        "decimals": 18,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2031
+                            },
+                            {
+                                "generalKey": "0x0001"
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2031
+                                        },
+                                        {
+                                            "generalKey": "0x0001"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": {
+                            "ForeignAsset": "15"
+                        },
+                        "source": [
+                            "2000"
+                        ]
+                    },
+                    {
                         "paraID": 2032,
                         "relayChain": "polkadot",
                         "nativeChainID": "interlay",
@@ -9757,6 +9824,46 @@
                         ]
                     },
                     {
+                        "paraID": 2034,
+                        "relayChain": "polkadot",
+                        "nativeChainID": "hydra",
+                        "symbol": "HDX",
+                        "decimals": 12,
+                        "interiorType": "x2",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2034
+                            },
+                            {
+                                "generalIndex": 0
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x2": [
+                                        {
+                                            "parachain": 2034
+                                        },
+                                        {
+                                            "generalIndex": 0
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "asset": {
+                            "ForeignAsset": "17"
+                        },
+                        "source": [
+                            "2000"
+                        ]
+                    },
+                    {
                         "paraID": 2035,
                         "relayChain": "polkadot",
                         "nativeChainID": "phala",
@@ -9815,6 +9922,38 @@
                         },
                         "asset": {
                             "ForeignAsset": "10"
+                        },
+                        "source": [
+                            "2000"
+                        ]
+                    },
+                    {
+                        "paraID": 2040,
+                        "relayChain": "polkadot",
+                        "nativeChainID": null,
+                        "symbol": "PDEX",
+                        "decimals": 12,
+                        "interiorType": "x1",
+                        "xcmV1Standardized": [
+                            {
+                                "network": "polkadot"
+                            },
+                            {
+                                "parachain": 2040
+                            }
+                        ],
+                        "xcmV1MultiLocation": {
+                            "v1": {
+                                "parents": 1,
+                                "interior": {
+                                    "x1": {
+                                        "parachain": 2040
+                                    }
+                                }
+                            }
+                        },
+                        "asset": {
+                            "ForeignAsset": "16"
                         },
                         "source": [
                             "2000"
@@ -30897,12 +31036,16 @@
                         "2004": "0xffffffff44bd9d2ffee20b25d1cf9e78edb6eae3"
                     },
                     "xcCurrencyID": {
+                        "2000": {
+                            "ForeignAsset": "15"
+                        },
                         "2004": "91372035960551235635465443179559840483",
                         "2031": "Native",
                         "2034": "13"
                     },
-                    "confidence": 3,
+                    "confidence": 4,
                     "source": [
+                        2000,
                         2004,
                         2031,
                         2034
@@ -31488,6 +31631,9 @@
                         "2006": "0xffffffff0000000000000001000000000000000e"
                     },
                     "xcCurrencyID": {
+                        "2000": {
+                            "ForeignAsset": "17"
+                        },
                         "2004": "69606720909260275826784788104880799692",
                         "2006": "18446744073709551630",
                         "2032": {
@@ -31498,8 +31644,9 @@
                             "XCM": "8"
                         }
                     },
-                    "confidence": 5,
+                    "confidence": 6,
                     "source": [
+                        2000,
                         2004,
                         2006,
                         2032,
@@ -31632,13 +31779,17 @@
                         "2004": "0xffffffff43e0d9b84010b1b67ba501bc81e33c7a"
                     },
                     "xcCurrencyID": {
+                        "2000": {
+                            "ForeignAsset": "16"
+                        },
                         "2004": "90225766094594282577230355136633846906",
                         "2094": {
                             "XCM": "5"
                         }
                     },
-                    "confidence": 2,
+                    "confidence": 3,
                     "source": [
+                        2000,
                         2004,
                         2094
                     ]
