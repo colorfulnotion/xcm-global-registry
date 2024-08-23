@@ -6,8 +6,6 @@
         "name": "UNQ",
         "symbol": "UNQ",
         "decimals": 18,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2037}]",
-        "inferred": true,
-        "confidence": 0
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2037}]"
     }
 ]
