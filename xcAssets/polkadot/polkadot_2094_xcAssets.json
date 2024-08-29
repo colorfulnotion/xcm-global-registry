@@ -342,52 +342,6 @@
         ]
     },
     {
-        "paraID": 2011,
-        "relayChain": "polkadot",
-        "nativeChainID": "equilibrium",
-        "symbol": "EQD",
-        "decimals": 9,
-        "interiorType": "x3",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "parachain": 2011
-            },
-            {
-                "palletInstance": 11
-            },
-            {
-                "generalIndex": 6648164
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x3": [
-                        {
-                            "parachain": 2011
-                        },
-                        {
-                            "palletInstance": 11
-                        },
-                        {
-                            "generalIndex": 6648164
-                        }
-                    ]
-                }
-            }
-        },
-        "asset": {
-            "XCM": "3"
-        },
-        "source": [
-            "2094"
-        ]
-    },
-    {
         "paraID": 2030,
         "relayChain": "polkadot",
         "nativeChainID": "bifrost",

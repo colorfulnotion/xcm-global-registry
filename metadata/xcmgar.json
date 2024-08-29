@@ -3961,7 +3961,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2094,
                 "id": "pendulum",
-                "assetCnt": "23",
+                "assetCnt": "22",
                 "data": [
                     {
                         "asset": {
@@ -4236,18 +4236,6 @@
                             "XCM": "2"
                         },
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]"
-                    },
-                    {
-                        "asset": {
-                            "XCM": "3"
-                        },
-                        "name": "Equilibrium Dollar",
-                        "symbol": "EQD",
-                        "decimals": 9,
-                        "currencyID": {
-                            "XCM": "3"
-                        },
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2011},{\"palletInstance\":11},{\"generalIndex\":6648164}]"
                     },
                     {
                         "asset": {
@@ -17769,7 +17757,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2094,
                 "id": "pendulum",
-                "xcAssetCnt": "14",
+                "xcAssetCnt": "13",
                 "data": [
                     {
                         "paraID": 0,
@@ -18108,52 +18096,6 @@
                         },
                         "asset": {
                             "XCM": "9"
-                        },
-                        "source": [
-                            "2094"
-                        ]
-                    },
-                    {
-                        "paraID": 2011,
-                        "relayChain": "polkadot",
-                        "nativeChainID": "equilibrium",
-                        "symbol": "EQD",
-                        "decimals": 9,
-                        "interiorType": "x3",
-                        "xcmV1Standardized": [
-                            {
-                                "network": "polkadot"
-                            },
-                            {
-                                "parachain": 2011
-                            },
-                            {
-                                "palletInstance": 11
-                            },
-                            {
-                                "generalIndex": 6648164
-                            }
-                        ],
-                        "xcmV1MultiLocation": {
-                            "v1": {
-                                "parents": 1,
-                                "interior": {
-                                    "x3": [
-                                        {
-                                            "parachain": 2011
-                                        },
-                                        {
-                                            "palletInstance": 11
-                                        },
-                                        {
-                                            "generalIndex": 6648164
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        "asset": {
-                            "XCM": "3"
                         },
                         "source": [
                             "2094"
@@ -27720,7 +27662,7 @@
         },
         {
             "relayChain": "polkadot",
-            "registryCnt": "90",
+            "registryCnt": "89",
             "data": {
                 "[{\"network\":\"polkadot\"},\"here\"]": {
                     "paraID": 0,
@@ -29740,56 +29682,6 @@
                         2004,
                         2006,
                         2035
-                    ]
-                },
-                "[{\"network\":\"polkadot\"},{\"parachain\":2011},{\"palletInstance\":11},{\"generalIndex\":6648164}]": {
-                    "paraID": 2011,
-                    "relayChain": "polkadot",
-                    "nativeChainID": "equilibrium",
-                    "symbol": "EQD",
-                    "decimals": 9,
-                    "interiorType": "x3",
-                    "xcmV1Standardized": [
-                        {
-                            "network": "polkadot"
-                        },
-                        {
-                            "parachain": 2011
-                        },
-                        {
-                            "palletInstance": 11
-                        },
-                        {
-                            "generalIndex": 6648164
-                        }
-                    ],
-                    "xcmV1MultiLocation": {
-                        "v1": {
-                            "parents": 1,
-                            "interior": {
-                                "x3": [
-                                    {
-                                        "parachain": 2011
-                                    },
-                                    {
-                                        "palletInstance": 11
-                                    },
-                                    {
-                                        "generalIndex": 6648164
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "xcContractAddress": {},
-                    "xcCurrencyID": {
-                        "2094": {
-                            "XCM": "3"
-                        }
-                    },
-                    "confidence": 1,
-                    "source": [
-                        2094
                     ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2012},{\"generalKey\":\"0x50415241\"}]": {

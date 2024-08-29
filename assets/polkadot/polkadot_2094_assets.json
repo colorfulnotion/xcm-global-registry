@@ -275,18 +275,6 @@
     },
     {
         "asset": {
-            "XCM": "3"
-        },
-        "name": "Equilibrium Dollar",
-        "symbol": "EQD",
-        "decimals": 9,
-        "currencyID": {
-            "XCM": "3"
-        },
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2011},{\"palletInstance\":11},{\"generalIndex\":6648164}]"
-    },
-    {
-        "asset": {
             "XCM": "4"
         },
         "name": "Brazilian Real",
