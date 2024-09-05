@@ -123,6 +123,14 @@
     },
     {
         "asset": {
+            "Token2": "14"
+        },
+        "name": "Liquid Wave",
+        "symbol": "WAVE",
+        "decimals": 18
+    },
+    {
+        "asset": {
             "Token2": "2"
         },
         "name": "Tether USD",
