@@ -51,6 +51,16 @@
     },
     {
         "asset": {
+            "Token": "124105859028862849477017063633156007283"
+        },
+        "name": "Snowbridge wstETH",
+        "symbol": "wstETH.e",
+        "decimals": 18,
+        "currencyID": "124105859028862849477017063633156007283",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0\"}}]"
+    },
+    {
+        "asset": {
             "Token": "124463719055550872076363892993240202694"
         },
         "name": "DED",
@@ -168,6 +178,16 @@
         "decimals": 18,
         "currencyID": "166446646689194205559791995948102903873",
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2104}]"
+    },
+    {
+        "asset": {
+            "Token": "178794693648360392906933130845919698647"
+        },
+        "name": "Snowbridge WETH",
+        "symbol": "WETH.e",
+        "decimals": 18,
+        "currencyID": "178794693648360392906933130845919698647",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\"}}]"
     },
     {
         "asset": {
@@ -348,6 +368,16 @@
         "decimals": 12,
         "currencyID": "32615670524745285411807346420584982855",
         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2012},{\"generalKey\":\"0x50415241\"}]"
+    },
+    {
+        "asset": {
+            "Token": "36282181791341254438422467838694599751"
+        },
+        "name": "Snowbridge WBTC",
+        "symbol": "WBTC.e",
+        "decimals": 8,
+        "currencyID": "36282181791341254438422467838694599751",
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x2260fac5e5542a773aa44fbcfedf7c193bc2c599\"}}]"
     },
     {
         "asset": {

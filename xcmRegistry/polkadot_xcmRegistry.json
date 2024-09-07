@@ -1,4 +1,186 @@
 {
+    "[{\"network\":\"polkadot\"},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\"}}]": {
+        "paraID": 0,
+        "relayChain": "polkadot",
+        "nativeChainID": "polkadot",
+        "symbol": "WETH.e",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "globalConsensus": {
+                    "ethereum": {
+                        "chainId": 1
+                    }
+                }
+            },
+            {
+                "accountKey20": {
+                    "network": null,
+                    "key": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+                }
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "globalConsensus": {
+                                "ethereum": {
+                                    "chainId": 1
+                                }
+                            }
+                        },
+                        {
+                            "accountKey20": {
+                                "network": null,
+                                "key": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "2004": "0xffffffff86829afe1521ad2296719df3ace8ded7"
+        },
+        "xcCurrencyID": {
+            "2004": "178794693648360392906933130845919698647",
+            "2030": {
+                "Token2": "13"
+            },
+            "2034": "1000189"
+        },
+        "confidence": 3,
+        "source": [
+            2004,
+            2030,
+            2034
+        ]
+    },
+    "[{\"network\":\"polkadot\"},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0\"}}]": {
+        "paraID": 0,
+        "relayChain": "polkadot",
+        "nativeChainID": "polkadot",
+        "symbol": "wstETH.e",
+        "decimals": 18,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "globalConsensus": {
+                    "ethereum": {
+                        "chainId": 1
+                    }
+                }
+            },
+            {
+                "accountKey20": {
+                    "network": null,
+                    "key": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0"
+                }
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "globalConsensus": {
+                                "ethereum": {
+                                    "chainId": 1
+                                }
+                            }
+                        },
+                        {
+                            "accountKey20": {
+                                "network": null,
+                                "key": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "2004": "0xffffffff5d5deb44bf7278dee5381beb24cb6573"
+        },
+        "xcCurrencyID": {
+            "2004": "124105859028862849477017063633156007283"
+        },
+        "confidence": 1,
+        "source": [
+            2004
+        ]
+    },
+    "[{\"network\":\"polkadot\"},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x2260fac5e5542a773aa44fbcfedf7c193bc2c599\"}}]": {
+        "paraID": 0,
+        "relayChain": "polkadot",
+        "nativeChainID": "polkadot",
+        "symbol": "WBTC.e",
+        "decimals": 8,
+        "interiorType": "x2",
+        "xcmV1Standardized": [
+            {
+                "network": "polkadot"
+            },
+            {
+                "globalConsensus": {
+                    "ethereum": {
+                        "chainId": 1
+                    }
+                }
+            },
+            {
+                "accountKey20": {
+                    "network": null,
+                    "key": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+                }
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x2": [
+                        {
+                            "globalConsensus": {
+                                "ethereum": {
+                                    "chainId": 1
+                                }
+                            }
+                        },
+                        {
+                            "accountKey20": {
+                                "network": null,
+                                "key": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "xcContractAddress": {
+            "2004": "0xffffffff1b4bb1ac5749f73d866ffc91a3432c47"
+        },
+        "xcCurrencyID": {
+            "2004": "36282181791341254438422467838694599751",
+            "2034": "1000190"
+        },
+        "confidence": 2,
+        "source": [
+            2004,
+            2034
+        ]
+    },
     "[{\"network\":\"polkadot\"},\"here\"]": {
         "paraID": 0,
         "relayChain": "polkadot",
@@ -50,122 +232,6 @@
             2034,
             2035,
             2094
-        ]
-    },
-    "[{\"network\":\"polkadot\"},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\"}}]": {
-        "paraID": 0,
-        "relayChain": "polkadot",
-        "nativeChainID": "polkadot",
-        "symbol": "WETH",
-        "decimals": 18,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "globalConsensus": {
-                    "ethereum": {
-                        "chainId": 1
-                    }
-                }
-            },
-            {
-                "accountKey20": {
-                    "network": null,
-                    "key": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
-                }
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "globalConsensus": {
-                                "ethereum": {
-                                    "chainId": 1
-                                }
-                            }
-                        },
-                        {
-                            "accountKey20": {
-                                "network": null,
-                                "key": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {},
-        "xcCurrencyID": {
-            "2030": {
-                "Token2": "13"
-            },
-            "2034": "1000189"
-        },
-        "confidence": 2,
-        "source": [
-            2030,
-            2034
-        ]
-    },
-    "[{\"network\":\"polkadot\"},{\"globalConsensus\":{\"ethereum\":{\"chainId\":1}}},{\"accountKey20\":{\"network\":null,\"key\":\"0x2260fac5e5542a773aa44fbcfedf7c193bc2c599\"}}]": {
-        "paraID": 0,
-        "relayChain": "polkadot",
-        "nativeChainID": "polkadot",
-        "symbol": "WBTC",
-        "decimals": 8,
-        "interiorType": "x2",
-        "xcmV1Standardized": [
-            {
-                "network": "polkadot"
-            },
-            {
-                "globalConsensus": {
-                    "ethereum": {
-                        "chainId": 1
-                    }
-                }
-            },
-            {
-                "accountKey20": {
-                    "network": null,
-                    "key": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
-                }
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x2": [
-                        {
-                            "globalConsensus": {
-                                "ethereum": {
-                                    "chainId": 1
-                                }
-                            }
-                        },
-                        {
-                            "accountKey20": {
-                                "network": null,
-                                "key": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        "xcContractAddress": {},
-        "xcCurrencyID": {
-            "2034": "1000190"
-        },
-        "confidence": 1,
-        "source": [
-            2034
         ]
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":1000},{\"palletInstance\":50},{\"generalIndex\":1337}]": {
