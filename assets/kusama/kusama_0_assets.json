@@ -6,6 +6,8 @@
         "name": "KSM",
         "symbol": "KSM",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},\"here\"]"
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},\"here\"]",
+        "inferred": true,
+        "confidence": 0
     }
 ]

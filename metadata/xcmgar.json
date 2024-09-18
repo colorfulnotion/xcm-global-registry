@@ -4364,7 +4364,9 @@
                         "name": "KSM",
                         "symbol": "KSM",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},\"here\"]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},\"here\"]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -8321,7 +8323,9 @@
                         "name": "AIR",
                         "symbol": "AIR",
                         "decimals": 18,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2088},{\"generalKey\":\"0x0001\"}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2088},{\"generalKey\":\"0x0001\"}]",
+                        "inferred": true,
+                        "confidence": 0
                     },
                     {
                         "asset": {
