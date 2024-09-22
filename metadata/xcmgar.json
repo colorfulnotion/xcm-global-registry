@@ -9084,9 +9084,7 @@
                         "name": "TUR",
                         "symbol": "TUR",
                         "decimals": 10,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2114}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2114}]"
                     }
                 ]
             },
@@ -25140,12 +25138,9 @@
                         "2023": "42259045809535163221576417993425387648",
                         "2084": "12",
                         "2085": "100",
-                        "2088": {
-                            "ForeignAsset": "3"
-                        },
                         "2114": "1"
                     },
-                    "confidence": 8,
+                    "confidence": 7,
                     "source": [
                         2001,
                         2004,
@@ -25153,7 +25148,6 @@
                         2023,
                         2084,
                         2085,
-                        2088,
                         2114
                     ]
                 },
@@ -25271,15 +25265,12 @@
                         "2023": "311091173110107856861649819128533077277",
                         "2084": "14",
                         "2085": "102",
-                        "2088": {
-                            "ForeignAsset": "1"
-                        },
                         "2092": {
                             "ForeignAsset": "3"
                         },
                         "2110": "30"
                     },
-                    "confidence": 9,
+                    "confidence": 8,
                     "source": [
                         2000,
                         2001,
@@ -25287,7 +25278,6 @@
                         2023,
                         2084,
                         2085,
-                        2088,
                         2092,
                         2110
                     ]
@@ -25438,15 +25428,12 @@
                         "2012": "214920334981412447805621250067209749032",
                         "2023": "214920334981412447805621250067209749032",
                         "2084": "9",
-                        "2088": {
-                            "ForeignAsset": "2"
-                        },
                         "2092": {
                             "ForeignAsset": "1"
                         },
                         "2114": "2"
                     },
-                    "confidence": 9,
+                    "confidence": 8,
                     "source": [
                         2001,
                         2004,
@@ -25454,7 +25441,6 @@
                         2012,
                         2023,
                         2084,
-                        2088,
                         2092,
                         2114
                     ]
@@ -27019,14 +27005,15 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "6",
+                    "source": [
+                        2114
+                    ],
                     "xcCurrencyID": {
                         "2114": "6"
                     },
-                    "confidence": 1,
-                    "source": [
-                        2114
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 1
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2087}]": {
                     "paraID": 2087,
@@ -27103,13 +27090,11 @@
                     "xcCurrencyID": {
                         "2000": {
                             "ForeignAsset": "12"
-                        },
-                        "2088": "Native"
+                        }
                     },
-                    "confidence": 2,
+                    "confidence": 1,
                     "source": [
-                        2000,
-                        2088
+                        2000
                     ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2090},{\"generalIndex\":0}]": {
