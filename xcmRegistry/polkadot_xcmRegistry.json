@@ -3281,16 +3281,19 @@
                 }
             }
         },
-        "xcContractAddress": {},
+        "asset": {
+            "Token2": "12"
+        },
+        "source": [
+            2030
+        ],
         "xcCurrencyID": {
             "2030": {
                 "Token2": "12"
             }
         },
-        "confidence": 1,
-        "source": [
-            2030
-        ]
+        "xcContractAddress": {},
+        "confidence": 1
     },
     "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]": {
         "paraID": 2031,
