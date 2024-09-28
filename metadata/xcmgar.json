@@ -2217,7 +2217,9 @@
                         "name": "BNC",
                         "symbol": "BNC",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]"
+                        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]",
+                        "inferred": true,
+                        "confidence": 0
                     },
                     {
                         "asset": {
@@ -31139,19 +31141,16 @@
                             }
                         }
                     },
-                    "asset": {
-                        "Token2": "12"
-                    },
-                    "source": [
-                        2030
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2030": {
                             "Token2": "12"
                         }
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2030
+                    ]
                 },
                 "[{\"network\":\"polkadot\"},{\"parachain\":2031},{\"generalKey\":\"0x0001\"}]": {
                     "paraID": 2031,
