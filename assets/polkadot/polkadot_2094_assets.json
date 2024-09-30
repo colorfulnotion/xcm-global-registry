@@ -39,6 +39,29 @@
             "Token": {
                 "Stellar": {
                     "AlphaNum4": {
+                        "code": "0x41525300",
+                        "issuer": "0xb04f8bff207a0b001aec7b7659a8d106e54e659cdf9533528f468e079628fba1"
+                    }
+                }
+            }
+        },
+        "name": "Stellar Anclap ARS",
+        "symbol": "ARS.s",
+        "decimals": 12,
+        "currencyID": {
+            "Stellar": {
+                "AlphaNum4": {
+                    "code": "0x41525300",
+                    "issuer": "0xb04f8bff207a0b001aec7b7659a8d106e54e659cdf9533528f468e079628fba1"
+                }
+            }
+        }
+    },
+    {
+        "asset": {
+            "Token": {
+                "Stellar": {
+                    "AlphaNum4": {
                         "code": "0x42524c00",
                         "issuer": "0xeaac68d4d0e37b4c24c2536916e830735f032d0d6b2a1c8fca3bc5a25e083e3a"
                     }
@@ -53,6 +76,29 @@
                 "AlphaNum4": {
                     "code": "0x42524c00",
                     "issuer": "0xeaac68d4d0e37b4c24c2536916e830735f032d0d6b2a1c8fca3bc5a25e083e3a"
+                }
+            }
+        }
+    },
+    {
+        "asset": {
+            "Token": {
+                "Stellar": {
+                    "AlphaNum4": {
+                        "code": "0x50454e00",
+                        "issuer": "0x3931bdb4165f371c3b9aa9860c51a8277510033ff24c10364aa0a26a8128b0d0"
+                    }
+                }
+            }
+        },
+        "name": "Stellar Anclap PEN",
+        "symbol": "PEN.s",
+        "decimals": 12,
+        "currencyID": {
+            "Stellar": {
+                "AlphaNum4": {
+                    "code": "0x50454e00",
+                    "issuer": "0x3931bdb4165f371c3b9aa9860c51a8277510033ff24c10364aa0a26a8128b0d0"
                 }
             }
         }
