@@ -4410,9 +4410,7 @@
                         "name": "KSM",
                         "symbol": "KSM",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},\"here\"]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},\"here\"]"
                     }
                 ]
             },
@@ -9130,7 +9128,9 @@
                         "name": "TUR",
                         "symbol": "TUR",
                         "decimals": 10,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2114}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2114}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -27063,15 +27063,14 @@
                             }
                         }
                     },
-                    "asset": "6",
-                    "source": [
-                        2114
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2114": "6"
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2114
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2087}]": {
                     "paraID": 2087,
