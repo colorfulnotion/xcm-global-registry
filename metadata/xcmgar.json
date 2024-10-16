@@ -8295,9 +8295,7 @@
                         "name": "HKO",
                         "symbol": "HKO",
                         "decimals": 12,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2085},{\"generalKey\":\"0x484b4f\"}]",
-                        "inferred": true,
-                        "confidence": 0
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2085},{\"generalKey\":\"0x484b4f\"}]"
                     }
                 ]
             },
@@ -9130,7 +9128,9 @@
                         "name": "TUR",
                         "symbol": "TUR",
                         "decimals": 10,
-                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2114}]"
+                        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2114}]",
+                        "inferred": true,
+                        "confidence": 0
                     }
                 ]
             },
@@ -27017,18 +27017,19 @@
                             }
                         }
                     },
-                    "xcContractAddress": {},
+                    "asset": "1000",
+                    "source": [
+                        2085,
+                        2092
+                    ],
                     "xcCurrencyID": {
                         "2085": "1000",
                         "2092": {
                             "ForeignAsset": "6"
                         }
                     },
-                    "confidence": 2,
-                    "source": [
-                        2085,
-                        2092
-                    ]
+                    "xcContractAddress": {},
+                    "confidence": 2
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2085},{\"generalKey\":\"0x734b534d\"}]": {
                     "paraID": 2085,
@@ -27063,15 +27064,14 @@
                             }
                         }
                     },
-                    "asset": "6",
-                    "source": [
-                        2114
-                    ],
+                    "xcContractAddress": {},
                     "xcCurrencyID": {
                         "2114": "6"
                     },
-                    "xcContractAddress": {},
-                    "confidence": 1
+                    "confidence": 1,
+                    "source": [
+                        2114
+                    ]
                 },
                 "[{\"network\":\"kusama\"},{\"parachain\":2087}]": {
                     "paraID": 2087,
