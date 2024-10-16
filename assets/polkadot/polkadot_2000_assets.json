@@ -28,6 +28,15 @@
     },
     {
         "asset": {
+            "Erc20": "0x492f4e41bd378d6dbd92ab645ac4020b01784db3"
+        },
+        "name": "Tether USD (Portal from Ethereum)",
+        "symbol": "USDTet",
+        "decimals": 6,
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2000},{\"generalKey\":\"0x02492f4e41bd378d6dbd92ab645ac4020b01784db3\"}]"
+    },
+    {
+        "asset": {
             "Erc20": "0x54a37a01cd75b616d63e0ab665bffdb0143c52ae"
         },
         "name": "DAI Stablecoin (Portal)",
