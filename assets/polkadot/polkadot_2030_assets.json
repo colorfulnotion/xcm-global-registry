@@ -588,6 +588,14 @@
     },
     {
         "asset": {
+            "VToken": "BNC"
+        },
+        "name": "Voucher BNC",
+        "symbol": "vBNC",
+        "decimals": 12
+    },
+    {
+        "asset": {
             "VToken2": "0"
         },
         "name": "Voucher DOT",

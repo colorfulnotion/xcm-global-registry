@@ -2160,7 +2160,7 @@
                 "relayChain": "polkadot",
                 "paraID": 2030,
                 "id": "bifrost",
-                "assetCnt": "76",
+                "assetCnt": "77",
                 "data": [
                     {
                         "asset": {
@@ -2748,6 +2748,14 @@
                         "symbol": "vsDOT",
                         "decimals": 10,
                         "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0403\"}]"
+                    },
+                    {
+                        "asset": {
+                            "VToken": "BNC"
+                        },
+                        "name": "Voucher BNC",
+                        "symbol": "vBNC",
+                        "decimals": 12
                     },
                     {
                         "asset": {
