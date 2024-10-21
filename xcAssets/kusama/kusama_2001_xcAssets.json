@@ -213,9 +213,14 @@
             {
                 "parachain": 2001
             },
-            {
-                "generalKey": "0x0101"
-            }
+            [
+                {
+                    "generalKey": {
+                        "length": 2,
+                        "data": "0x0101000000000000000000000000000000000000000000000000000000000000"
+                    }
+                }
+            ]
         ],
         "xcmV1MultiLocation": {
             "v1": {
@@ -225,9 +230,14 @@
                         {
                             "parachain": 2001
                         },
-                        {
-                            "generalKey": "0x0101"
-                        }
+                        [
+                            {
+                                "generalKey": {
+                                    "length": 2,
+                                    "data": "0x0101000000000000000000000000000000000000000000000000000000000000"
+                                }
+                            }
+                        ]
                     ]
                 }
             }
@@ -253,9 +263,14 @@
             {
                 "parachain": 2001
             },
-            {
-                "generalKey": "0x010a"
-            }
+            [
+                {
+                    "generalKey": {
+                        "length": 2,
+                        "data": "0x010a000000000000000000000000000000000000000000000000000000000000"
+                    }
+                }
+            ]
         ],
         "xcmV1MultiLocation": {
             "v1": {
@@ -265,9 +280,14 @@
                         {
                             "parachain": 2001
                         },
-                        {
-                            "generalKey": "0x010a"
-                        }
+                        [
+                            {
+                                "generalKey": {
+                                    "length": 2,
+                                    "data": "0x010a000000000000000000000000000000000000000000000000000000000000"
+                                }
+                            }
+                        ]
                     ]
                 }
             }
@@ -293,9 +313,14 @@
             {
                 "parachain": 2001
             },
-            {
-                "generalKey": "0x0104"
-            }
+            [
+                {
+                    "generalKey": {
+                        "length": 2,
+                        "data": "0x0104000000000000000000000000000000000000000000000000000000000000"
+                    }
+                }
+            ]
         ],
         "xcmV1MultiLocation": {
             "v1": {
@@ -305,9 +330,14 @@
                         {
                             "parachain": 2001
                         },
-                        {
-                            "generalKey": "0x0104"
-                        }
+                        [
+                            {
+                                "generalKey": {
+                                    "length": 2,
+                                    "data": "0x0104000000000000000000000000000000000000000000000000000000000000"
+                                }
+                            }
+                        ]
                     ]
                 }
             }
@@ -333,9 +363,14 @@
             {
                 "parachain": 2001
             },
-            {
-                "generalKey": "0x0207"
-            }
+            [
+                {
+                    "generalKey": {
+                        "length": 2,
+                        "data": "0x0207000000000000000000000000000000000000000000000000000000000000"
+                    }
+                }
+            ]
         ],
         "xcmV1MultiLocation": {
             "v1": {
@@ -345,9 +380,14 @@
                         {
                             "parachain": 2001
                         },
-                        {
-                            "generalKey": "0x0207"
-                        }
+                        [
+                            {
+                                "generalKey": {
+                                    "length": 2,
+                                    "data": "0x0207000000000000000000000000000000000000000000000000000000000000"
+                                }
+                            }
+                        ]
                     ]
                 }
             }
@@ -373,9 +413,14 @@
             {
                 "parachain": 2001
             },
-            {
-                "generalKey": "0x0404"
-            }
+            [
+                {
+                    "generalKey": {
+                        "length": 2,
+                        "data": "0x0404000000000000000000000000000000000000000000000000000000000000"
+                    }
+                }
+            ]
         ],
         "xcmV1MultiLocation": {
             "v1": {
@@ -385,9 +430,14 @@
                         {
                             "parachain": 2001
                         },
-                        {
-                            "generalKey": "0x0404"
-                        }
+                        [
+                            {
+                                "generalKey": {
+                                    "length": 2,
+                                    "data": "0x0404000000000000000000000000000000000000000000000000000000000000"
+                                }
+                            }
+                        ]
                     ]
                 }
             }
@@ -413,9 +463,14 @@
             {
                 "parachain": 2001
             },
-            {
-                "generalKey": "0x0001"
-            }
+            [
+                {
+                    "generalKey": {
+                        "length": 2,
+                        "data": "0x0001000000000000000000000000000000000000000000000000000000000000"
+                    }
+                }
+            ]
         ],
         "xcmV1MultiLocation": {
             "v1": {
@@ -425,79 +480,20 @@
                         {
                             "parachain": 2001
                         },
-                        {
-                            "generalKey": "0x0001"
-                        }
+                        [
+                            {
+                                "generalKey": {
+                                    "length": 2,
+                                    "data": "0x0001000000000000000000000000000000000000000000000000000000000000"
+                                }
+                            }
+                        ]
                     ]
                 }
             }
         },
         "asset": {
             "Native": "BNC"
-        },
-        "source": [
-            "2001"
-        ]
-    },
-    {
-        "paraID": 2004,
-        "relayChain": "kusama",
-        "nativeChainID": "khala",
-        "symbol": "PHA",
-        "decimals": 12,
-        "interiorType": "x1",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2004
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x1": {
-                        "parachain": 2004
-                    }
-                }
-            }
-        },
-        "asset": {
-            "Token": "PHA"
-        },
-        "source": [
-            "2001"
-        ]
-    },
-    {
-        "paraID": 2007,
-        "relayChain": "kusama",
-        "nativeChainID": "shiden",
-        "symbol": "SDN",
-        "decimals": 18,
-        "interiorType": "x1",
-        "xcmV1Standardized": [
-            {
-                "network": "kusama"
-            },
-            {
-                "parachain": 2007
-            }
-        ],
-        "xcmV1MultiLocation": {
-            "v1": {
-                "parents": 1,
-                "interior": {
-                    "x1": {
-                        "parachain": 2007
-                    }
-                }
-            }
-        },
-        "asset": {
-            "Token2": "3"
         },
         "source": [
             "2001"
@@ -658,6 +654,68 @@
         },
         "asset": {
             "Token2": "4"
+        },
+        "source": [
+            "2001"
+        ]
+    },
+    {
+        "relayChain": "kusama",
+        "nativeChainID": null,
+        "symbol": "PHA",
+        "decimals": 12,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2004
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2004
+                    }
+                }
+            }
+        },
+        "asset": {
+            "Token": "PHA"
+        },
+        "source": [
+            "2001"
+        ]
+    },
+    {
+        "relayChain": "kusama",
+        "nativeChainID": null,
+        "symbol": "SDN",
+        "decimals": 18,
+        "interiorType": "x1",
+        "xcmV1Standardized": [
+            {
+                "network": "kusama"
+            },
+            {
+                "parachain": 2007
+            }
+        ],
+        "xcmV1MultiLocation": {
+            "v1": {
+                "parents": 1,
+                "interior": {
+                    "x1": {
+                        "parachain": 2007
+                    }
+                }
+            }
+        },
+        "asset": {
+            "Token2": "3"
         },
         "source": [
             "2001"

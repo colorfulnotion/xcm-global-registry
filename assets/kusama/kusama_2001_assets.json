@@ -38,7 +38,7 @@
         "name": "Bifrost",
         "symbol": "BNC",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]"
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},[{\"generalKey\":{\"length\":2,\"data\":\"0x0001000000000000000000000000000000000000000000000000000000000000\"}}]]"
     },
     {
         "asset": {
@@ -56,7 +56,7 @@
         "name": "BNC",
         "symbol": "BNC",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0001\"}]",
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},[{\"generalKey\":{\"length\":2,\"data\":\"0x0001000000000000000000000000000000000000000000000000000000000000\"}}]]",
         "inferred": true,
         "confidence": 0
     },
@@ -128,7 +128,7 @@
         "name": "Zenlink Network Token",
         "symbol": "ZLK",
         "decimals": 18,
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0207\"}]"
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},[{\"generalKey\":{\"length\":2,\"data\":\"0x0207000000000000000000000000000000000000000000000000000000000000\"}}]]"
     },
     {
         "asset": {
@@ -546,7 +546,7 @@
         "name": "Bifrost Voucher Slot Voucher Slot KSM",
         "symbol": "VSvsKSM",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0404\"}]"
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},[{\"generalKey\":{\"length\":2,\"data\":\"0x0404000000000000000000000000000000000000000000000000000000000000\"}}]]"
     },
     {
         "asset": {
@@ -555,7 +555,7 @@
         "name": "Voucher BNC",
         "symbol": "vBNC",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0101\"}]"
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},[{\"generalKey\":{\"length\":2,\"data\":\"0x0101000000000000000000000000000000000000000000000000000000000000\"}}]]"
     },
     {
         "asset": {
@@ -564,7 +564,7 @@
         "name": "Voucher KSM",
         "symbol": "vKSM",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x0104\"}]"
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},[{\"generalKey\":{\"length\":2,\"data\":\"0x0104000000000000000000000000000000000000000000000000000000000000\"}}]]"
     },
     {
         "asset": {
@@ -573,6 +573,6 @@
         "name": "Voucher MOVR",
         "symbol": "vMOVR",
         "decimals": 18,
-        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},{\"generalKey\":\"0x010a\"}]"
+        "xcmInteriorKey": "[{\"network\":\"kusama\"},{\"parachain\":2001},[{\"generalKey\":{\"length\":2,\"data\":\"0x010a000000000000000000000000000000000000000000000000000000000000\"}}]]"
     }
 ]
