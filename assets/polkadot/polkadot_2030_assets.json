@@ -54,7 +54,7 @@
         "name": "Bifrost Native Token",
         "symbol": "BNC",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0001\"}]"
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},[{\"generalKey\":{\"length\":2,\"data\":\"0x0001000000000000000000000000000000000000000000000000000000000000\"}}]]"
     },
     {
         "asset": {
@@ -110,7 +110,7 @@
         "name": "Pendulum",
         "symbol": "PEN",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"palletInstance\":10}]"
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},[{\"palletInstance\":10}]]"
     },
     {
         "asset": {
@@ -154,7 +154,7 @@
         "name": "Filecoin Network Token",
         "symbol": "FIL",
         "decimals": 18,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0804\"}]"
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},[{\"generalKey\":{\"length\":2,\"data\":\"0x0804000000000000000000000000000000000000000000000000000000000000\"}}]]"
     },
     {
         "asset": {
@@ -199,7 +199,7 @@
         "name": "bncs-20 inscription token BNCS",
         "symbol": "BNCS",
         "decimals": 12,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0809\"}]"
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},[{\"generalKey\":{\"length\":2,\"data\":\"0x0809000000000000000000000000000000000000000000000000000000000000\"}}]]"
     },
     {
         "asset": {
@@ -601,7 +601,7 @@
         "name": "Voucher DOT",
         "symbol": "vDOT",
         "decimals": 10,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0900\"}]"
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},[{\"generalKey\":{\"length\":2,\"data\":\"0x0900000000000000000000000000000000000000000000000000000000000000\"}}]]"
     },
     {
         "asset": {
@@ -610,7 +610,7 @@
         "name": "Voucher GLMR",
         "symbol": "vGLMR",
         "decimals": 18,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0901\"}]"
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},[{\"generalKey\":{\"length\":2,\"data\":\"0x0901000000000000000000000000000000000000000000000000000000000000\"}}]]"
     },
     {
         "asset": {
@@ -619,7 +619,7 @@
         "name": "Voucher ASTR",
         "symbol": "vASTR",
         "decimals": 18,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0903\"}]"
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},[{\"generalKey\":{\"length\":2,\"data\":\"0x0903000000000000000000000000000000000000000000000000000000000000\"}}]]"
     },
     {
         "asset": {
@@ -628,7 +628,7 @@
         "name": "Voucher FIL",
         "symbol": "vFIL",
         "decimals": 18,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0904\"}]"
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},[{\"generalKey\":{\"length\":2,\"data\":\"0x0904000000000000000000000000000000000000000000000000000000000000\"}}]]"
     },
     {
         "asset": {
@@ -637,6 +637,6 @@
         "name": "Voucher MANTA",
         "symbol": "vMANTA",
         "decimals": 18,
-        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},{\"generalKey\":\"0x0908\"}]"
+        "xcmInteriorKey": "[{\"network\":\"polkadot\"},{\"parachain\":2030},[{\"generalKey\":{\"length\":2,\"data\":\"0x0908000000000000000000000000000000000000000000000000000000000000\"}}]]"
     }
 ]
