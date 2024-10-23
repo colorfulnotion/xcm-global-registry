@@ -24,6 +24,7 @@ const CentrifugeParser = require("./chainParsers/centrifuge")
 const CloverParser = require("./chainParsers/clover")
 const OriginTrailParser = require("./chainParsers/origintrail")
 const PendulumParser = require("./chainParsers/pendulum")
+const DarwiniaParser = require("./chainParsers/darwinia")
 
 const {
     ApiPromise,
@@ -467,6 +468,8 @@ module.exports = class XCMGlobalAssetRegistryManager {
             chainParser = new OriginTrailParser(api, manager)
         } else if (this.isMatched(chainkey, ['polkadot-2094|pendulum'])) { //disable kusama-2124|amplitude for now
             chainParser = new PendulumParser(api, manager)
+        } else if (this.isMatched(chainkey, ['polkadot-2046|darwinia'])) {
+            chainParser = new DarwiniaParser(api, manager)
         } else {
             chainParser = new CommonChainParser(api, manager, false) // set isCustomParser to false
         }

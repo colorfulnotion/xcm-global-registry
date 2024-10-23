@@ -248,7 +248,7 @@
         "id": "crab",
         "paraID": 2105,
         "WSEndpoints": [
-            "wss://crab-parachain-rpc.darwinia.network/"
+            "wss://crab-rpc.darwinia.network"
         ],
         "relaychain": "kusama"
     },
