@@ -7,7 +7,6 @@ file with para name
 
 Support chains
 [polkadot-2046|darwinia]
-[kusama-2105|crab]
 */
 
 module.exports = class DarwiniaParser extends ChainParser {
@@ -29,12 +28,6 @@ module.exports = class DarwiniaParser extends ChainParser {
                 "Token": "RING"
             },
             xcmInteriorKey: '[{"network":"polkadot"},{"parachain":2046},{"palletInstance":5}]'
-        }],
-        'kusama-2105': [{
-            asset: {
-                "Token": "MOVR"
-            },
-            xcmInteriorKey: '[{"network":"kusama"},{"parachain":2105},{"palletInstance":5}]'
         }]
     }
 
