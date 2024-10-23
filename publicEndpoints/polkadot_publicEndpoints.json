@@ -248,7 +248,7 @@
     "id": "darwinia",
     "paraID": 2046,
     "WSEndpoints": [
-      "wss://parachain-rpc.darwinia.network"
+      "wss://rpc.darwinia.network"
     ],
     "relaychain": "polkadot"
   },
